@@ -46,7 +46,7 @@
 1. 规则需要在境外服务器，难以成功更新或更新缓慢的。
 2. 注明规则的名称、来源、作用
 3. 如果你需要加速的规则是 GitHub 的项目中的文件，请直接使用 jsDelivr 的语法加速项目文件即可，**无需提交请求**。
-`https://cdn.jsdelivr.net/gh/用户名/项目名@版本/加速文件`（版本可以省略，如 `https://cdn.jsdelivr.net/gh/Silentely/SS-Rule-Snippet/LICENSE`）
+`https://cdn.jsdelivr.net/gh/用户名/项目名@版本/加速文件`
 
 ## 🍔 使用方法
 **⚠️ 注意：** 该规则不是针对网络代理工具的，不要给 Surge、ShadowRocket、Quantumult(X)、Clash(X/A) 等类似工具使用！
