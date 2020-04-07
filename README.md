@@ -56,12 +56,12 @@
 
 |  🥑 规则名称   | 🚀 加速地址  |
 |  :----:  | :----:  |
-| Adguard Simplified Domain Names Filter | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/AdGuard Simplified Domain Names Filter.txt) |
-| Easylist China  | [加速](https://cdn.jsdelivr.net/ghSilentely/AdBlock-Acceleration/Easylist China.txt) |
-| EasyPrivacy | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Easylist Privacy.txt) |
-| I Don't Care About Cookies | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/I dont care about cookies.txt) |
+| Adguard Simplified Domain Names Filter | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/AdGuard_Simplified_Domain_Names_Filter.txt) |
+| Easylist China  | [加速](https://cdn.jsdelivr.net/ghSilentely/AdBlock-Acceleration/Easylist_China.txt) |
+| EasyPrivacy | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Easylist_Privacy.txt) |
+| I Don't Care About Cookies | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/I_dont_care_about_cookies.txt) |
 | HalfLife| [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/HalfLife.txt  ) |
-| CJX's EasyList Lite| [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/CJX's EasyList Lite.txt) |
-| CJX's Annoyance List | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/CJX's Annoyance List.txt) |
-| 乘风广告过滤 | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/xinggsf rule.txt ) |
-| 乘风视频过滤 | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/xinggsf mv.txt ) |
+| CJX's EasyList Lite| [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/CJX's_EasyList_Lite.txt) |
+| CJX's Annoyance List | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/CJX's_Annoyance_List.txt) |
+| 乘风广告过滤 | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/xinggsf_rule.txt ) |
+| 乘风视频过滤 | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/xinggsf_mv.txt ) |
