@@ -3,7 +3,7 @@ on:
   push:
     branches: [ master ]
   schedule: 
-    - cron:  '0 0 */1 * *' 
+    - cron:  '0 0 */2 * *' 
 
 jobs:
   update-adblock-rules-then-push:
@@ -83,4 +83,4 @@ jobs:
           github_token: ${{ secrets.TOKEN }}
           
       - name: WeChat notification
-        run: curl https://sc.ftqq.com/${{ secrets.ServerChan }}.send?text=${{ env.FILE_NAME }}今日规则已更新-GitHub Actions运行结束
+        run: curl https://sc.ftqq.com/${{ secrets.ServerChan }}.send?text=${{ env.FILE_NAME }}AdBlock规则已更新
