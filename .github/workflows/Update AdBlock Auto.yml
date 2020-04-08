@@ -3,7 +3,7 @@ on:
   push:
     branches: [ master ]
   schedule: 
-    - cron:  '0 0 */4 * *' 
+    - cron:  '0 0 */1 * *' 
 
 jobs:
   update-adblock-rules-then-push:
@@ -64,7 +64,7 @@ jobs:
         uses: carlosperate/download-file-action@v1.0.0
         with: 
           file-url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt
-          file-name: chenfeng_mv.txt
+          file-name: xinggsf_mv.txt
 
       - name: Commit Changes
         run: |
