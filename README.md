@@ -57,7 +57,7 @@
 |  🥑 规则名称   |   原始地址  |   加速地址  |
 |  :----:  | :----:  | :----:  |
 | Adguard Simplified Domain Names Filter | [原始](https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt) | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/AdGuard_Simplified_Domain_Names_Filter.txt) |
-| Easylist China | [原始](https://easylist-downloads.adblockplus.org/easylistchina.txt) | [加速](https://cdn.jsdelivr.net/ghSilentely/AdBlock-Acceleration/Easylist_China.txt) |
+| Easylist China | [原始](https://easylist-downloads.adblockplus.org/easylistchina.txt) | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Easylist_China.txt) |
 | Easy Privacy | [原始](https://easylist-downloads.adblockplus.org/easyprivacy.txt) | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Easylist_Privacy.txt) |
 | I Don't Care About Cookies | [原始](https://www.i-dont-care-about-cookies.eu/abp/) | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/I_dont_care_about_cookies.txt) |
 | HalfLife | [原始](https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad.txt ) | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/HalfLife.txt  ) |
