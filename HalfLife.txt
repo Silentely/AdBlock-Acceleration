@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: cPGNI6XNffOJyl+48qkKVw
+! Checksum: KcaW7JEdKLNaEl1h/T2k1Q
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202004080800
-! Last Modified: 2020年04月08日 08:00
+! Version: 202004081730
+! Last Modified: 2020年04月08日 17:30
 ! Homepage: https://adf.minggo.eu.org
 !
 !本规则合并自EasylistChina、EasylistLite、CJX'sAnnoyance
@@ -1466,6 +1466,7 @@ _xiuno_com_ad/
 ##img[src*=".sinaimg."][style="width:150px;height:300px"]
 ##script + #coupletBox
 ##script + #rbbox
+##A[href*=".chouchuai.com/"]
 ##script[src="/js/sy2.js"] + div[align="center"]
 ##span[title="neteasefooter"]
 ##table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"]
@@ -9177,6 +9178,8 @@ _yad_jsonp_
 ||hsfile.ws/all/p.all.js
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+fortunechina.com##.pinglunwindow
+fortunechina.com##.pinglunmask
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -11846,7 +11849,7 @@ vpsdx.com##.gsfha3-form
 kuhou.com,pcsoft.com.cn##.gsxz
 yxdown.com##.gsxz_ydw
 pcsoft.com.cn##.gsxzdl
-32r.com##.gsxzdz > span + p + ul > li > a:not([class])
+32r.com##span + p + ul > li > a:not([class])
 putclub.com##.gtest
 vpsdx.com##.gthfdsa
 58.com##.guaguabox
@@ -14353,6 +14356,7 @@ gohome.com.hk#@#div[id^="div-gpt-ad"]
 !---------------------------------URL Whitelist-------------------------------!
 @@&adurl=http://$domain=360bifen.cc|360bifen.com
 @@.adserver.$domain=litv.tv
+@@||mediav.com/js/reward_video_pc.min.js$domain=baiten.cn
 @@.com/adv/$domain=my.ctrip.com
 @@.gif#$domain=cnprint.org|huhupan.com|tgfcer.com|wgun.net
 @@.jpg#$domain=huhupan.com
@@ -18238,7 +18242,7 @@ xuehongxs.com##DIV[id^="cs_DIV_cscpvrich"]
 @@||onemanhua.com^$generichide
 @@||runative-syndicate.com/sdk/v1/n.js$domain=onemanhua.com
 @@||runative-syndicate.com^$script,domain=onemanhua.com
-onemanhua.com##.mn-related-container
+onemanhua.com##.mn-thumb
 onemanhua.com##[id*="ScriptRoot"]
 !#playno1.club
 @@||exosrv.com/ads-iframe-display.php$domain=getrelax.cc|sexylove.club

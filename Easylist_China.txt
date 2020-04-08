@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: TkHAuy/jaoTQlbguXQHkJw
-! Version: 202004080103
+! Checksum: 0rDV8RaK0fovIEu7Zz7kDA
+! Version: 202004080943
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last Modified: 08 Apr 2020 01:03 UTC
+! Last Modified: 08 Apr 2020 09:43 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: http://abpchina.org/forum/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -1065,6 +1065,7 @@ _xiuno_com_ad/
 ##img[src*=".sinaimg."][style="width:150px;height:300px"]
 ##script + #coupletBox
 ##script + #rbbox
+##A[href*=".chouchuai.com/"]
 ##script[src="/js/sy2.js"] + div[align="center"]
 ##span[title="neteasefooter"]
 ##table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"]
@@ -8776,6 +8777,8 @@ _yad_jsonp_
 ||hsfile.ws/all/p.all.js
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+fortunechina.com##.pinglunwindow
+fortunechina.com##.pinglunmask
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -11445,7 +11448,7 @@ vpsdx.com##.gsfha3-form
 kuhou.com,pcsoft.com.cn##.gsxz
 yxdown.com##.gsxz_ydw
 pcsoft.com.cn##.gsxzdl
-32r.com##.gsxzdz > span + p + ul > li > a:not([class])
+32r.com##span + p + ul > li > a:not([class])
 putclub.com##.gtest
 vpsdx.com##.gthfdsa
 58.com##.guaguabox
@@ -13952,6 +13955,7 @@ gohome.com.hk#@#div[id^="div-gpt-ad"]
 !---------------------------------URL Whitelist-------------------------------!
 @@&adurl=http://$domain=360bifen.cc|360bifen.com
 @@.adserver.$domain=litv.tv
+@@||mediav.com/js/reward_video_pc.min.js$domain=baiten.cn
 @@.com/adv/$domain=my.ctrip.com
 @@.gif#$domain=cnprint.org|huhupan.com|tgfcer.com|wgun.net
 @@.jpg#$domain=huhupan.com
