@@ -1,9 +1,10 @@
 name: Update AdBlock Auto
-on:
+on: 
   push:
-    branches: [ master ]
-  schedule: 
-    - cron:  '0 0 */2 * *' 
+    branches:
+    - master
+  schedule:
+  - cron: '0 */3 * * *'
 
 jobs:
   update-adblock-rules-then-push:

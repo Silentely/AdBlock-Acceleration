@@ -29,7 +29,7 @@
 💥 这个项目就是为了解决这一难题，无需通过任何代理即可光速更新规则。
 
 ## 🕹 项目原理
-项目使用了 GitHub Actions 在每天 UTC 时间 00:00 （每隔4小时更新一次）更新下载一次最新规则，然后推送到 GitHub Repo。
+项目使用了 GitHub Actions 在每天 UTC 时间 00:00 （每隔3小时更新一次）更新下载一次最新规则，然后推送到 GitHub Repo。
 配合 [jsDelivr](https://www.jsdelivr.com) 全球加速 CDN 来分发规则。
 从而实现秒秒钟更新所有去广告规则，简直不要太爽。
 
