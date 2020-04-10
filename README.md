@@ -29,14 +29,14 @@
 💥 这个项目就是为了解决这一难题，无需通过任何代理即可光速更新规则。
 
 ## 🕹 项目原理
-项目使用了 GitHub Actions 在每天 UTC 时间 00:00 （每隔3小时更新一次）更新下载一次最新规则，然后推送到 GitHub Repo。
-配合 [jsDelivr](https://www.jsdelivr.com) 全球加速 CDN 来分发规则。
+项目使用了 GitHub Actions 在每天 UTC 时间每隔4小时更新下载一次最新规则，然后推送到 GitHub Repo。
+配合 [jsDelivr](https://www.jsdelivr.com) 与 [staticdn](https://raw.staticdn.net) 全球加速 CDN 来分发规则。
 从而实现秒秒钟更新所有去广告规则，简直不要太爽。
 
 ## 🧪 个人测试
 正常网络环境下（无任何代理，在中国大陆网络环境下）
 * 使用加速链接前：更新 12 个规则最长可能需要 4 分钟 56 秒，而且有 3 个更新失败。
-* 使用加速链接后：所有规则在 7 秒内全部更新完成。
+* 使用加速链接后：所有规则在 10 秒内全部更新完成。
 
 ## 🚛 完善项目
 希望大家可以提交 Issue 或者 Request 来帮助我完善规则
@@ -54,14 +54,18 @@
 
 ## 📃 规则列表
 
-|  🥑 规则名称   |   原始地址  |   加速地址  |
-|  :----:  | :----:  | :----:  |
-| Adguard Simplified Domain Names Filter | [原始](https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt) | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/AdGuard_Simplified_Domain_Names_Filter.txt) |
-| EasyList China | [原始](https://easylist-downloads.adblockplus.org/easylistchina.txt) | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/EasyList_China.txt) |
-| EasyPrivacy | [原始](https://easylist-downloads.adblockplus.org/easyprivacy.txt) | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/EasyPrivacy.txt) |
-| I Don't Care About Cookies | [原始](https://www.i-dont-care-about-cookies.eu/abp/) | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/I_dont_care_about_cookies.txt) |
-| HalfLife | [原始](https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad.txt ) | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/HalfLife.txt  ) |
-| CJX's EasyList Lite | [原始](https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt) | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/CJX's_EasyList_Lite.txt) |
-| CJX's Annoyance List | [原始](https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt) | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/CJX's_Annoyance_List.txt) |
-| 乘风广告过滤 | [原始](https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt) | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt ) |
-| 乘风视频过滤 | [原始](https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt) | [加速](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt ) |
+|  🥑 规则名称   |    原始地址  |🚀 加速地址①  | 🚀 加速地址②  |
+|  :----:  | :----:  | :----:  | :----:  |
+| Adguard Simplified Domain Names Filter | [原始](https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/AdGuard_Simplified_Domain_Names_Filter.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/AdGuard_Simplified_Domain_Names_Filter.txt) |
+| EasyList China | [原始](https://easylist-downloads.adblockplus.org/easylistchina.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/EasyList_China.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/EasyList_China.txt) |
+| EasyPrivacy | [原始](https://easylist-downloads.adblockplus.org/easyprivacy.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/EasyPrivacy.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/EasyPrivacy.txt) |
+| I Don't Care About Cookies | [原始](https://www.i-dont-care-about-cookies.eu/abp/) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/I_dont_care_about_cookies.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/I_dont_care_about_cookies.txt) |
+| HalfLife | [原始](https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad.txt ) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/HalfLife.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/HalfLife.txt  ) |
+| CJX's EasyList Lite | [原始](https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/CJX's_EasyList_Lite.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/CJX's_EasyList_Lite.txt) |
+| CJX's Annoyance List | [原始](https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/CJX's_Annoyance_List.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/CJX's_Annoyance_List.txt) |
+| 乘风广告过滤 | [原始](https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt ) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt ) |
+| 乘风视频过滤 | [原始](https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt ) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt ) |
+
+## 🧪 特别感谢
+
+* [@Hackl0us](https://github.com/Hackl0us)
