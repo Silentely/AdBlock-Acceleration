@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: 9R03F/RbJUvgUtp8QsTLhQ
-! Version: 202004102353
+! Checksum: PzSf/VvnqVeA7isRG24tiA
+! Version: 202004110353
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last Modified: 10 Apr 2020 23:53 UTC
+! Last Modified: 11 Apr 2020 03:53 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: http://abpchina.org/forum/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -8784,8 +8784,13 @@ _yad_jsonp_
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||myqqjd.com/wp-content/plugins/wp-hiswcpqwxt/
+||8dhw.com/static/js2/v1.json
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+32r.com##.gsabtn
+32r.com##span + p + ul > li > a:not(.c_down)
+tcfzb.com##IMG[style="width:1180px;height:60px;margin-top:3px;border:1px solid #CDCDCD;"]
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -11450,7 +11455,8 @@ veryhuo.com##.gs2
 wanyx.com##.gs_down_common
 sci-hub.org.cn##.gs_r[data-cid=""]
 sci-hub.org.cn##.gs_red[style="color:#EB7F00"]
-32r.com,ddooo.com,xue51.com##.gsbtn
+ddooo.com,xue51.com##.gsbtn
+ddooo.com##.c_downgs[href="javascript:;"]
 yxdown.com##.gsdown
 33lc.com,cncrk.com##.gsdt
 jb51.net##.gsdw
@@ -12879,7 +12885,7 @@ qq.com##.xxskj
 cosxcos.org##.xxxabc
 wanyx.com##.xz_down
 xixiwg.com##.xz_left > ul:nth-last-child(3)
-ddooo.com##.xzgsa
+ddooo.com##.xzgsb
 05sun.com,xitongtiandi.net##.xzq
 moviesunusaaa.org##.yahooinner
 htcui.com##.yanshibtn
@@ -12964,7 +12970,6 @@ sinolub.com##[id^="xker"]
 32r.com##[onclick*="@"]
 zhangxinxu.com##[onclick*="Ad"]
 42xz.com##[onclick*="godownload"]
-ddooo.com##[onclick*="soft.ddooo."]
 duodada.com##[style^="width: 100%; height: auto; position: fixed;"]
 kisssub.org##a > img[src*=".0o0.ooo/"]
 5dm.tv##a > img[src*=".sinaimg."]
@@ -13734,7 +13739,6 @@ tukergo.com##section[class^="ch"]
 vs.cm##section[id^="ad_"]
 ~cbachina.sports.sohu.com,sohu.com##sohuadcode
 r3sub.com##source + img
-32r.com##span + p + ul > li > a:not([class])
 bbs.my0511.com##span.smalltxt
 163.com##span[class^="gg"]
 gamebase.com.tw##span[id^="aid_"]
@@ -13966,6 +13970,9 @@ gohome.com.hk#@#div[id^="div-gpt-ad"]
 !---------------------------------URL Whitelist-------------------------------!
 @@&adurl=http://$domain=360bifen.cc|360bifen.com
 @@.adserver.$domain=litv.tv
+@@||333nie.com/static/js/advertiser.js
+@@||onemanhua.com/js/ad/advertisement.js
+@@||8dhw.com/static/js2/advertising.js
 @@.com/adv/$domain=my.ctrip.com
 @@.gif#$domain=cnprint.org|huhupan.com|tgfcer.com|wgun.net
 @@.jpg#$domain=huhupan.com

@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202004102346
+! Version: 202004110334
 ! Title: EasyPrivacy
-! Last modified: 10 Apr 2020 23:46 UTC
+! Last modified: 11 Apr 2020 03:34 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -856,6 +856,7 @@
 /article_hit.php?
 /ArticleCounterLogger.
 /ArticleLog.aspx?
+/articleOmnitureTracking.
 /ArticleViewTracking/*
 /asdf/tracking-
 /asknet_tracking.
@@ -1370,6 +1371,7 @@
 /contador.gif?
 /containerTag.js
 /containertag?
+/content-targeting-
 /content-targeting-staging.js
 /contentanalytics/*
 /contentiq.js
@@ -2526,6 +2528,7 @@
 /livestats.php?
 /livezilla/server.php?request=track&
 /llbmetrics.
+/llntrack.
 /load.gif?
 /load.js.gz?
 /load_analytics.
@@ -3399,6 +3402,7 @@
 /realtimetracking/*
 /realytics-
 /realytics.js
+/rec-impression?
 /recommendtrack?
 /record-impressions.
 /record-impressions?
@@ -11707,7 +11711,7 @@ _mongo_stats/
 ||fastly.net/plw.js
 ||fastly.net/sp.js
 ! Unnecessary third-party scripts
-||js.trendmd.com/trendmd.min.js$third-party
+||js.trendmd.com/trendmd.min.js
 ||nsg.symantec.com^$third-party
 ||seal.godaddy.com^$third-party
 ||sealserver.trustwave.com^$third-party
@@ -12833,6 +12837,7 @@ _mongo_stats/
 ||buzzfeed.com^*/small.gif?
 ||buzzfeed.com^*/tracker.js
 ||buzzurl.jp/api/counter/
+||bwbx.io^*/javelin/js/abba/abba-$script,domain=bloomberg.com
 ||c.cdngeek.com^$domain=edugeek.net
 ||c.ipaddress.com^
 ||c.paypal.com^
@@ -16210,6 +16215,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ||beacon.itmedia.jp^
 ||bookoffonline.co.jp/files/inc_js/ac/
 ||bookoffonline.co.jp/files/tracking/
+||bwbx.io^*/javelin/js/abba/abba-$script,domain=bloomberg.co.jp
 ||carview.co.jp/include_api/log/
 ||cgi.tbs.co.jp^
 ||count.upc.rakuten.co.jp^
@@ -16555,7 +16561,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||analytics.edgekey.net/html5/akamaihtml5-min.js$domain=abcnews.go.com|foxbusiness.com|foxnews.com
 @@||analytics.edgekey.net/ma_library/html5/html5_malibrary.js$script,domain=mxplayer.in
 @@||analytics.edgesuite.net/config/beacon-*.xml$domain=foxnews.com
-@@||analytics.edgesuite.net/html5/akamaihtml5-min.js$domain=abcnews.go.com|foxbusiness.com|foxnews.com|resignationbrewery.com|threenow.co.nz
+@@||analytics.edgesuite.net/html5/akamaihtml5-min.js$domain=abcnews.go.com|foxbusiness.com|foxnews.com|threenow.co.nz
 @@||analytics.logsss.com/logsss*.min.js$script,domain=rosegal.com
 @@||analytics.snidigital.com^$script,domain=hgtv.com
 @@||analytics.twitter.com^$domain=analytics.twitter.com
@@ -16651,7 +16657,6 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||flagshipmerchantservices.com/clickpathmedia.js
 @@||flippingbook.com^*/static/analytics.js$script,~third-party
 @@||flsenate.gov/Scripts/GoogleAnalytics.js$~third-party
-@@||flurry.com/js/flurry.js$domain=pocketdice.io|slantnews.com
 @@||fncstatic.com^*/visitorapi.js$script,domain=foxbusiness.com|foxnews.com
 @@||gannettdigital.com/universal-web-client/master/latest/elements/$xmlhttprequest
 @@||gatsbyjs.org/packages/$xmlhttprequest
@@ -16712,8 +16717,6 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||medianetworkinternational.com/js/fingerprint2.js$script
 @@||medicare.gov/SharedResources/widgets/foresee/foresee-trigger.js
 @@||mercedes-benz-mobile.com/js/tracking/tracker.min.js?
-@@||metric.gstatic.com/ip.js$domain=ipv6test.google.com
-@@||metric.gstatic.com/ipv6test/$image,domain=ipv6test.google.com
 @@||metrics.mozilla.com^$~third-party
 @@||metrics.torproject.org^$~third-party
 @@||mixpanel.com/track/?data=$xmlhttprequest,domain=greentoe.com
