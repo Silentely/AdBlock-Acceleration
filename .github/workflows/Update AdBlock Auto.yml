@@ -67,6 +67,11 @@ jobs:
           file-url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt
           file-name: Xinggsf_mv.txt
 
+      - name: ADgk手机去广告规则
+        uses: carlosperate/download-file-action@v1.0.0
+        with: 
+          file-url: https://gitee.com/banbendalao/adguard/raw/master/ADgk.txt
+          file-name: ADgk.txt
       - name: Commit Changes
         run: |
           if [ -z "$(git status --porcelain)" ]; then 
