@@ -3,7 +3,7 @@
 ! Description: Filter composed from several other filters (English filter, Social media filter, Spyware filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2020-04-13T20:38:46.899Z
+! Last modified: 2020-04-14T17:37:20.988Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.7
 !
@@ -34,7 +34,6 @@
 ||adw.sapo.pt^
 ||dozcpc.com^
 ||midan.io^
-||elcomercio.pe^
 ||myownads.space^
 ||lojapremio.com.br^
 ||comandosfilmes.org^
@@ -4143,6 +4142,11 @@ adbetnet.com
 ||zhangguangzong.com^
 ||taoguohe.com^
 ||kolsh.cn^
+||mycloudbook.xyz^
+||enrilov.info^
+||ikikik.xyz^
+||sex1.party^
+||catwenbat.com^
 ||curarmbin.club^
 ||zop381q5o0q1.com^
 ||irtyd.com^
@@ -5730,6 +5734,7 @@ www.llllllllllll.net^
 !
 ! Section contains the list of advertising networks, which are hosted on non advertising sites as subdomains
 !
+||d3c3uihon9kmp.cloudfront.net^
 ||d18g6t7whf8ejf.cloudfront.net^
 ||ads-media.gameforge.com^
 ||benefits.sovendus.com^
@@ -6416,7 +6421,6 @@ www.llllllllllll.net^
 ||h5.wannaplay.cn^
 ||adsapi.manhuaren.com^
 ||euadsapi.manhuaren.com^
-||cdn1.ettoday.net^
 ||msg.ettoday.net^
 ||d1zkodo2u3p4pe.cloudfront.net^
 ||ad-ettoday.cdn.hinet.net^
@@ -7984,6 +7988,7 @@ www.llllllllllll.net^
 ||sloeri.com^
 ||smenqskfmpfxnb.bid^
 ||soagrist.net^
+||solicensusuntf.site^
 ||soofeest.net^
 ||sousaira.com^
 ||soza6rsz3ezi.com^
@@ -15935,6 +15940,7 @@ www.llllllllllll.net^
 ||expsevdkqyr.com^
 ||exrmlhihaj.com^
 ||exrnrdnebas.com^
+||extyoasigus.com^
 ||exvrvcnlfc.com^
 ||exwcadanpfc.com^
 ||exyubuwtwmepqi.com^
@@ -17082,6 +17088,7 @@ www.llllllllllll.net^
 ||jdtufqcyumvb.com^
 ||jducqfnxeypyw.com^
 ||jdwimtfp.com^
+||jdwxjtwue.com^
 ||jecbbkrnfn.com^
 ||jeeumttalzwt.com^
 ||jegugqcvo.com^
@@ -17186,6 +17193,7 @@ www.llllllllllll.net^
 ||jmxecxpqq.com^
 ||jmxjqlagfwz.com^
 ||jmxphjxsxd.com^
+||jmykbogg.com^
 ||jndnkgjqlxr.com^
 ||jngxxwythaf.com^
 ||jnhjvkapqf.com^
@@ -17892,6 +17900,7 @@ www.llllllllllll.net^
 ||maysrqdev.com^
 ||mbbjrwsl.com^
 ||mbcperyc.com^
+||mbctxigml.com^
 ||mbixofultnnd.com^
 ||mbjrejhbcaihz.com^
 ||mbmjqinvsil.com^
@@ -18182,6 +18191,7 @@ www.llllllllllll.net^
 ||nczlhwsguwc.com^
 ||ndddttxkqyh.com^
 ||ndfegyhf.com^
+||ndikvccwz.com^
 ||ndilzwjgblea.com^
 ||ndkaxtyhxy.com^
 ||ndndasyo.com^
@@ -19250,6 +19260,7 @@ www.llllllllllll.net^
 ||prmvrxcn.bid^
 ||prncfucwvi.bid^
 ||prnxtmtbbqs.bid^
+||probanzfbbdix.com^
 ||prpkhpjxghhn.com^
 ||prqivgpcjxpp.com^
 ||prqqmfkedev.com^
@@ -19789,6 +19800,7 @@ www.llllllllllll.net^
 ||qqylzyrqnewl.com^
 ||qqztmozc.bid^
 ||qrcsppwzjryh.com^
+||qrcvlmxqu.com^
 ||qrecxvdoewmztq.com^
 ||qregqtqtuisj.com^
 ||qreoifgajnoor.com^
@@ -20432,6 +20444,7 @@ www.llllllllllll.net^
 ||sutdpikbwpvi.com^
 ||svbfcmumrj.com^
 ||svbsvbwci.com^
+||svclqyctlijue.com^
 ||svdmxetbyfyg.com^
 ||svdnqszxgucgd.com^
 ||svevbvsjeicl.com^
@@ -23192,24 +23205,6 @@ www.llllllllllll.net^
 ||widebanner.com^
 ||yobee.it^
 ||zodiakactive.com^
-
-!
-! Source name: AdGuard Tracking Protection filter third-party trackers
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/tracking_servers.txt
-!
-!
-! Blocking Firebase crash reporting is quite problematic:
-! https://github.com/AdguardTeam/AdguardForAndroid/issues/1334#issuecomment-319302543
-! ||app-measurement.com^
-!
-! Crashlytics is commented by @ameshkov.
-! The reason for unblocking crashlytics is to not make developers life worse by breaking crash reporting.
-! In a hostile network like when an ad blocker is present, apps might be crashing, and these errors need to be
-! reported to devs, otherwise they won't learn about the issue and won't fix it.
-! Also, it is not a common third-party analytics tracker, Crashlytics is not used for collecting users' data.
-! ||e.crashlytics.com^
-! ||settings.crashlytics.com^
-!
 ||hits-i.iubenda.com^
 ||lk.vectoranalytics.ru^
 ||track.ilonofficial.com^
@@ -24017,6 +24012,8 @@ t.yesware.com
 ||um-public-panel-prod.s3.amazonaws.com^
 ||collection-endpoint-prod.herokuapp.com^
 ||collection-endpoint-staging.herokuapp.com^
+!
+||spkrth.scw.systems^
 ||rrss.abc.es^
 ||analytics.htmedia.in^
 ||spxl.socy.es^
@@ -24715,6 +24712,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||track.appsflyer.com^
 !+ NOT_PLATFORM(ios, ext_safari, ext_android_cb)
 !
+||byteoversea.com^
 ||sq.requestads.com^
 ||insight.ucweb.com^
 ||gjapplog.ucweb.com^
