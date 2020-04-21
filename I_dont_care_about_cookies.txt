@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 315.202004201610
+! Version: 315.202004210940
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 20 Apr 2020 14:10 UTC
+! Last modified: 21 Apr 2020 07:40 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -10140,7 +10140,7 @@
 ###magecomp-cookie-template
 ###__nuxt #__layout .Consent.is-open
 ###root div[class*="CookieConsent__root"]
-##.journal-content-article .cookie-policy-dialog
+##.cookie-policy-dialog
 ##.gdlr-core-privacy-box-wrap
 ###cookie-disclaimer-vue
 ##.content-wrapper > #gdpr[style*="display"]
@@ -11383,6 +11383,12 @@
 ###cpnb_warningBoxBgOverlay
 ##.wp-cookie-notice
 ###root div[class*="CookiesBar"]
+###headerbar_privacy
+##.js-cookie-corner
+##.cookie-banner__overlay
+##.dsgvoBanner
+##.dsvgo-cookie-overlay
+##.cookieLeiste
 !
 ! CUSTOM RULES
 !
@@ -16133,7 +16139,6 @@ hemnet.se##.consent-modal__overlay
 cote.co.uk###root > div > .fixed
 decathlon.com.br##.cookie-policies
 decathlon.fr##.rgpd_message, .rgpd_message + .rgpd_box
-dlford.io###floating-footer
 opusteno.rs###conditions-l
 erleben-im-alltag.de##.alertbanner
 tus-almena.de##.alertbanner
@@ -17678,6 +17683,15 @@ mate-tee.de##.cc-container
 rp-giessen.de##footer .note
 wimdu.de##.footer ~ .react-onclickoutside
 timeforpaws.co.uk##.notify-banner
+kaggle.com###site-content ~ div
+healthifyme.com###popup-wrapper
+dlford.io###gatsby-focus-wrapper > div > footer
+buerger.de###consent-modal, .reveal-modal-bg
+ralfgrabuschnig.com##.chimpify-popup
+ncov2019.live###dcon-gdpr-container
+all-hashtag.com##.disclaimer-container
+natuurfotografie.nl###cookieSettings
+fastighetsbyran.com###root > div > section > div > .w-full
 !
 ! SCRIPT BLOCKING
 !
