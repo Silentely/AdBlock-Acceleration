@@ -25,19 +25,19 @@ jobs:
           file-url: https://easylist-downloads.adblockplus.org/easylistchina.txt
           file-name: EasyList_China.txt
 
-      - name: EasyPrivacy:去除隐私
+      - name: EasyPrivacy #隐私保护规则
         uses: carlosperate/download-file-action@v1.0.0
         with: 
           file-url: https://easylist.to/easylist/easyprivacy.txt
           file-name: EasyPrivacy.txt
       
-      - name: I dont care about cookies:去除我明白cookie提示
+      - name: I dont care about cookies #去除我明白cookie提示
         uses: carlosperate/download-file-action@v1.0.0
         with: 
           file-url: https://www.i-dont-care-about-cookies.eu/abp/
           file-name: I_dont_care_about_cookies.txt      
       
-      - name: HalfLife:合并自EasylistChina,EasylistLite,CJX'sAnnoyance,并补充了贴吧过滤规则
+      - name: HalfLife #合并自EasylistChina,EasylistLite,CJX'sAnnoyance,并补充了贴吧过滤规则
         uses: carlosperate/download-file-action@v1.0.0
         with: 
           file-url: https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad.txt
@@ -55,31 +55,31 @@ jobs:
           file-url: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
           file-name: CJX's_Annoyance_List.txt  
           
-      - name: 乘风广告过滤
+      - name: ABP-rule #乘风广告过滤
         uses: carlosperate/download-file-action@v1.0.0
         with: 
           file-url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
           file-name: Xinggsf_rule.txt
 
-      - name: 乘风视频过滤
+      - name: ABP-mv #乘风视频过滤
         uses: carlosperate/download-file-action@v1.0.0
         with: 
           file-url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt
           file-name: Xinggsf_mv.txt
 
-      - name: ADgk手机去广告
+      - name: ADgk #手机去广告
         uses: carlosperate/download-file-action@v1.0.0
         with: 
           file-url: https://gitee.com/banbendalao/adguard/raw/master/ADgk.txt
           file-name: ADgk.txt
           
-      - name: 大圣净化:主要针对国内视频网站
+      - name: 大圣净化 #主要针对国内视频网站
         uses: carlosperate/download-file-action@v1.0.0
         with: 
           file-url: https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
           file-name: ds_hosts.txt
           
-      - name: 1024_hosts:去色情网站和澳门皇家赌场
+      - name: 1024_hosts #去色情网站和澳门皇家赌场
         uses: carlosperate/download-file-action@v1.0.0
         with: 
           file-url: https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts
@@ -96,10 +96,10 @@ jobs:
               git commit -m "Updated at $(date)" -a
             fi
             
-      - name: GitHub Push
+      - name: GitHub Push #推送至库
         uses: ad-m/github-push-action@v0.5.0
         with:
           github_token: ${{ secrets.TOKEN }}
           
-      - name: WeChat notification
-        run: curl https://sc.ftqq.com/${{ secrets.ServerChan }}.send?text=${{ env.FILE_NAME }}AdBlock规则已更新
+#      - name: WeChat notification #用于微信推送通知（如有需要删除行头注释）
+#        run: curl https://sc.ftqq.com/${{ secrets.ServerChan }}.send?text=${{ env.FILE_NAME }}AdBlock规则已更新
