@@ -3,7 +3,7 @@
 ! Description: Filter composed from several other filters (English filter, Social media filter, Spyware filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2020-04-21T20:28:57.204Z
+! Last modified: 2020-04-22T14:04:58.501Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.8
 !
@@ -143,6 +143,8 @@
 !
 ! Содержит доменные имена, использующиеся рекламными сетями.
 !
+||ad.zima.kg^
+||8c9cz5kp0o.com^
 ||9haa5i5j2hw10u.com^
 ||zusbzr.com^
 ||phwten.com^
@@ -4119,6 +4121,8 @@ adbetnet.com
 ||kolsh.cn^
 !END: Chinese ad servers
 !
+||mopnixhem.com^
+||wokfirsax.com^
 ||passtechusa.com^
 ||wandara113.xyz^
 ||ad.pornimg.xyz^
@@ -15871,6 +15875,7 @@ www.llllllllllll.net^
 ||excqjoor.com^
 ||exgkfejvm.com^
 ||exikxnbxula.com^
+||exjozegvbaresw.com^
 ||exkruwviyy.com^
 ||expsevdkqyr.com^
 ||exrmlhihaj.com^
@@ -17097,6 +17102,7 @@ www.llllllllllll.net^
 ||jivnpidyteh.com^
 ||jiyairvjgfqk.com^
 ||jiyvkdfab.com^
+||jjfankvlnhhm.com^
 ||jjhnnzef.com^
 ||jjireaqdzdll.com^
 ||jjkllkhsaj.com^
@@ -17702,6 +17708,7 @@ www.llllllllllll.net^
 ||lnhkqohy.com^
 ||lnicyniqxdxg.com^
 ||lnpqqigowz.com^
+||lnueliai.com^
 ||lnvnzrqdajau.com^
 ||lnwbiuetoymifj.com^
 ||lnwqvhcqw.com^
@@ -18363,6 +18370,7 @@ www.llllllllllll.net^
 ||nyvqazwtcwk.com^
 ||nywpxugigwfzb.com^
 ||nywuthdzdacoq.com^
+||nyxvhfwfbmh.com^
 ||nzbbsxujqlhjn.com^
 ||nzcjjhkd.com^
 ||nzhuswwhd.com^
@@ -20469,6 +20477,7 @@ www.llllllllllll.net^
 ||tahkezux.com^
 ||takmuany.com^
 ||taljnpgg.com^
+||tamhdxkh.com^
 ||tamrczjeedauh.com^
 ||taowjygwtm.com^
 ||taozgpkjzpdtgr.com^
@@ -21074,6 +21083,7 @@ www.llllllllllll.net^
 ||vhktunniggbd.com^
 ||vhouorcd.com^
 ||vhpmiipdpjq.com^
+||vhtadetq.com^
 ||vhvuvmjxdo.com^
 ||vhzgmzakn.com^
 ||vickgdkdrwpdt.com^
@@ -21651,6 +21661,7 @@ www.llllllllllll.net^
 ||xlspkqpnnqj.com^
 ||xlxamrkeiawkco.com^
 ||xmazvzvbqli.com^
+||xmdwlpwvzt.com^
 ||xmegspwsjzvvh.com^
 ||xmevsiig.com^
 ||xmgrjuqqc.com^
@@ -23210,6 +23221,27 @@ www.llllllllllll.net^
 ||widebanner.com^
 ||yobee.it^
 ||zodiakactive.com^
+
+!
+! Source name: AdGuard Tracking Protection filter third-party trackers
+! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/tracking_servers.txt
+!
+!
+! Blocking Firebase crash reporting is quite problematic:
+! https://github.com/AdguardTeam/AdguardForAndroid/issues/1334#issuecomment-319302543
+! ||app-measurement.com^
+!
+! Crashlytics is commented by @ameshkov.
+! The reason for unblocking crashlytics is to not make developers life worse by breaking crash reporting.
+! In a hostile network like when an ad blocker is present, apps might be crashing, and these errors need to be
+! reported to devs, otherwise they won't learn about the issue and won't fix it.
+! Also, it is not a common third-party analytics tracker, Crashlytics is not used for collecting users' data.
+! ||e.crashlytics.com^
+! ||settings.crashlytics.com^
+!
+! ||ensighten.com^$third-party - not a tracker
+!
+||sys.refocus.ru^
 ||apn.c.appier.net^
 ||doorbrazil.com^
 ||dmzls.safe-installation.com^
@@ -26090,6 +26122,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||ipgp.net^
 ||ipinfodb.com^
 ||ipinyou.com.cn^
+||iplist.cc^
 ||iplocationtools.com^
 ||ipro.com^
 ||iproanalytics.com^
@@ -28570,6 +28603,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||smart-counter.net^
 ||smartnews-ads.com^
 ||speee-ad.jp^
+||taxel.jp^
 ||team-rec.jp^
 ||tgknt.com^
 ||trackfeed.com^
@@ -29924,7 +29958,6 @@ charlestownwyllie.oaklawnnonantum.com^
 ||omniture.eaeurope.eu^
 ||orbidder.otto.de^
 ||px.staticfiles.at^
-||quiz.stroeermediabrands.de^
 ||retrack.q-divisioncdn.de^
 ||stat.clichehosting.de^
 ||stat4.edev.at^
@@ -30707,12 +30740,13 @@ vkcdnservice.appspot.com^
 !
 ! Title: hostsVN
 ! Description: The filter contains ad and tracking networks in Vietnam.
-! Last modified: 20 Apr 2020 16:38 UTC+7
-! Version: 2004201638
-! Blocked: 396 rules
+! Last modified: 22 Apr 2020 15:19 UTC+7
+! Version: 2004221519
+! Blocked: 399 rules
 ! Expires: 1 days (update frequency)
 ! Homepage: https://bigdargon.github.io/hostsVN/
 !
+||123c.vn^
 ||24h*-ad.24hstatic.com^
 ||ad*.24hstatic.com^
 ||ad.org.vn^
@@ -30800,6 +30834,7 @@ vkcdnservice.appspot.com^
 ||ohchat.net^
 ||phanquang.vn^
 ||philacct.com^
+||photo-ads.zaloapp.com^
 ||pinetech.vn^
 ||polyad.net^
 ||pushdi.com^
@@ -30844,7 +30879,6 @@ vkcdnservice.appspot.com^
 ||zminer.zaloapp.com^
 ||zplayer-trk.zdn.vn^
 ||zplayer.trk.zapps.vn^
-||123c.vn^
 ||ad-admin.vnay.vn^
 ||ad-img.icheck.com.vn^
 ||ad.24h.com.vn^
@@ -30876,6 +30910,7 @@ vkcdnservice.appspot.com^
 ||ads.itsgroup.vn^
 ||ads.khoahocdoisong.vn^
 ||ads.phunuonline.com.vn^
+||ads.thesaigontimes.vn^
 ||ads.tiki.vn^
 ||ads.tinmoi.vn^
 ||ads.vietbao.vn^
@@ -30902,6 +30937,7 @@ vkcdnservice.appspot.com^
 ||banhtv.org^
 ||banner.5giay.vn^
 ||bgadx.com^
+||cdn-ads.thesaigontimes.vn^
 ||chiasephim.xyz^
 ||clevernet.vn^
 ||click.xdeal.vn^
@@ -31114,7 +31150,7 @@ vkcdnservice.appspot.com^
 ! Source name: EasyList China ad servers
 ! Source: https://easylist-downloads.adblockplus.org/easylistchina.txt
 !
-||b96bcea4.cc^
+||aqugame.com^
 ||0024aaaa.com^
 ||00880808.com^
 ||008844.cc^
@@ -31448,6 +31484,7 @@ vkcdnservice.appspot.com^
 ||b588866.com^
 ||b7nkd.cn^
 ||b9377h.com^
+||b96bcea4.cc^
 ||b99u.top^
 ||baiapk.com^
 ||baiduace.com^
@@ -33542,7 +33579,7 @@ vkcdnservice.appspot.com^
 @@||yzzkb.com.cn^*ad.
 ||immedlinkum.info^
 ||xayah.date^
-||bd.gdyjs.com^
+||sbpb1.chuiyue.com^
 ||003store.com^
 ||1.01fy.cn^
 ||1.1010pic.com^
@@ -33879,6 +33916,7 @@ vkcdnservice.appspot.com^
 ||g1.taijuba.com^
 ||gccode.gongchang.com^
 ||gcw*.2liang.cn^
+||gdyjs.com^
 ||gg.egouz.com^
 ||gg1.mengchongzu.com^
 ||ggdm1.nhaidu.net^
@@ -33937,7 +33975,6 @@ vkcdnservice.appspot.com^
 ||jiyan.net^
 ||jke1.jianke.com^
 ||js.23yy.com^
-||js.gdyjs.com^
 ||js.jianbihuadq.com^
 ||js.kt250.com^
 ||js.ruiwen.com^
@@ -34258,6 +34295,15 @@ vkcdnservice.appspot.com^
 ||runkao.net^
 ||stunninglover.com^
 ||cryptaloot.pro^
+||zzbyc.xyz^
+||grjs06.com^
+||45le.cn^
+||vhhhkpf.cn^
+||hanqingstudio.com^
+||xn--4gqvdz18f.xyz^
+||hatbiz.cn^
+||kpfufdh.cn^
+||abie12.top^
 ||01w47q.cn^
 ||0217qpineuxbcdhopswkvf.xyz^
 ||0224fqpowiuxybnmvdfghj.xyz^
