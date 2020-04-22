@@ -3,7 +3,7 @@
 ! Description: Filter composed from several other filters (English filter, Social media filter, Spyware filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2020-04-21T14:04:07.997Z
+! Last modified: 2020-04-21T20:28:57.204Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.8
 !
@@ -3780,6 +3780,7 @@ adbetnet.com
 !
 ! Section contains the list of advertising networks, which are hosted on non advertising sites as subdomains
 !
+||d31nb97nd8ha11.cloudfront.net^
 ||advast.sibnet.ru^
 ||nov.evmenov37.ru^
 ||firm.bidtizadd.ru^
@@ -18611,6 +18612,7 @@ www.llllllllllll.net^
 ||olazspdsld.bid^
 ||olcqpdykme.com^
 ||olctpejrnnfh.com^
+||oldqsuoemchpr.com^
 ||olejgcdzgb.bid^
 ||olgjzpgp.com^
 ||olhupniause.com^
@@ -20189,6 +20191,7 @@ www.llllllllllll.net^
 ||ryrrhgpmlif.com^
 ||ryvqkjfsnmrya.com^
 ||ryybhoklizmuew.com^
+||rzajohyjxff.com^
 ||rzbozucqgmostr.com^
 ||rzddlsybql.com^
 ||rzdpobutiy.com^
@@ -21290,6 +21293,7 @@ www.llllllllllll.net^
 ||wclkmumbolsmqd.com^
 ||wclurprkyk.com^
 ||wcobqyeqpckkzh.com^
+||wcpkhkyuzp.com^
 ||wcwcypfnvih.com^
 ||wcwdjojsxbbl.com^
 ||wcwzzauws.com^
@@ -23206,26 +23210,6 @@ www.llllllllllll.net^
 ||widebanner.com^
 ||yobee.it^
 ||zodiakactive.com^
-
-!
-! Source name: AdGuard Tracking Protection filter third-party trackers
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/tracking_servers.txt
-!
-!
-! Blocking Firebase crash reporting is quite problematic:
-! https://github.com/AdguardTeam/AdguardForAndroid/issues/1334#issuecomment-319302543
-! ||app-measurement.com^
-!
-! Crashlytics is commented by @ameshkov.
-! The reason for unblocking crashlytics is to not make developers life worse by breaking crash reporting.
-! In a hostile network like when an ad blocker is present, apps might be crashing, and these errors need to be
-! reported to devs, otherwise they won't learn about the issue and won't fix it.
-! Also, it is not a common third-party analytics tracker, Crashlytics is not used for collecting users' data.
-! ||e.crashlytics.com^
-! ||settings.crashlytics.com^
-!
-! ||ensighten.com^$third-party - not a tracker
-!
 ||apn.c.appier.net^
 ||doorbrazil.com^
 ||dmzls.safe-installation.com^
@@ -36933,6 +36917,8 @@ vkcdnservice.appspot.com^
 ! Once you enable private DNS, Android 9 starts resolving random domains looking like
 ! `*-dnsotls-ds.metric.gstatic.com` (for instance, `a5a6380f-dnsotls-ds.metric.gstatic.com`).
 !
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/304
+@@||cindyholbrook.lpages.co^|
 ! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/296
 @@||click.mailsf.coinpayments.net^|
 ! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/289
