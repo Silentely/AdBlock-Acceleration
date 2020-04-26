@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 315.202004230722
+! Version: 314.202004260827
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 23 Apr 2020 05:22 UTC
+! Last modified: 26 Apr 2020 06:27 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -164,7 +164,7 @@
 ###privacy-cookieMessage
 ###xanda-cookie-policy
 ##.future-cookie-bar:not(body):not(html)
-~kalenderwoche.de,~hawle.de,~makelaarsland.nl###cookie-notice
+~kalenderwoche.de,~hawle.de,~pruadviser.co.uk,~makelaarsland.nl###cookie-notice
 ###cookie-notice ~ #popmake-overlay
 ###block-cookie-compliance-cookie-compliance
 ###openglobal_privacy_widget
@@ -795,7 +795,7 @@
 ###showCookieInfo
 ###ccconsent
 ##.cookie-compliance-container
-##.cookie-disclaimer:not(body):not(html)
+~axa-im.fr##.cookie-disclaimer:not(body):not(html)
 ###cookie_popup
 ##.cookie_ribon:not(body):not(html)
 ##.infoCookies:not(body):not(html)
@@ -11416,6 +11416,33 @@
 ##notification-block[data-notice*="cookie-disclosure"]
 ###cookiebanner-overlay
 ##.cookiesUseAgree
+##.cookie[data-cookiecnil]
+##.intgrtn-cookie-popup
+##.cookies-widget-wrapper
+##.cookiebar-block
+##.position-fixed[class*="cookie-policy"]
+##.tx-mp-cookie-control
+##.sticker div[class*="consent-Container"]
+##.jc-cookiemanager
+##.cookie-preference-modal
+##.alert[id*="usodeicookies"]
+##.cdk-overlay-container base-cookies-modal
+###dap-cookie-bar
+###cookieGDPR
+##.dv-cookie-banner
+###__next div[data-testid*="cookie-banner"]
+###cookieconsent-settings-popup
+###privacy-policy-prompt
+##.blockCookieNotice
+###gdprBar
+###ecm_cookieConsentBanner
+##.cookie-acceptance-modal
+##.showCookiebanner
+##.cookie-permission-container
+##.rstbox[data-title*="RODO"]
+##.rstbox[data-title*="RODO"] ~ .rstbox_overlay
+##.cookie_banner_background
+##.mrf-cmp-welcome
 !
 ! CUSTOM RULES
 !
@@ -11434,7 +11461,7 @@ moneysavingexpert.com###alertBar
 soundcloud.com##.announcements
 debenhams.com###debCNwrap
 hostgator.com###alertBar
-theregister.co.uk###RegCCO
+theregister.co.uk###RegCTBWF
 rapturetv.com###apDiv1
 civilsociety.co.uk##.announcement-banner
 cofunds.co.uk###idrMasthead .idrPageRow .smContainer
@@ -11495,7 +11522,6 @@ epiotrkow.pl##.user_politic_pop
 bygningskultur2015.dk###lbmodal-overlay, #lbmodal
 racjonalista.pl###_ci
 xtremmedia.com###mensacok
-aliexpress.com###j-aliexpress-notice, .site-notice-header
 herbaciani.pl##body > div:not([id]):not([class])
 waw.pl###wip.stability, .alert-warning, .komunikat
 costco.co.uk##.site-messages-container
@@ -14267,7 +14293,6 @@ growdiaries.com##.popup_secure
 y8.com###policy-validation
 drivereasy.com##.float-bar
 unigine.com##.bottom-notice
-der-farang.com###consent_overlay
 elespanol.com##.modal-cookies
 emma-matras.nl##.ucn-block
 raider.io##div[class*="cookieFooter-module"]
@@ -16034,7 +16059,6 @@ accobrands.com##.Promotional-corner, .gdpr--popup
 meineabgeordneten.at###privatBanner h2 ~ div[style*="center"] ~ *
 infozona.hr##.popup-overlay
 shoestring.de###privacyDisclaimer
-webrazzi.com###kvkk_r
 ritdye.com##.footer ~ div[class*="peach-300"]
 racquetballwarehouse.com###data_protection
 elegantthemes.com##.et_cookie_consent
@@ -16137,7 +16161,6 @@ warka.com.pl###rodo_env, .cookies
 dialight.com##.notice
 depo.lv##.depo-cookies
 2ask.de###cadvise_bar
-freeletics.com##div[class*="CookieConsent"]
 story.tl##div[class*="CookieConsent"]
 rohan.co.uk###ccpop
 assura.ch###__next > div > div[width]
@@ -17649,8 +17672,9 @@ izotcomputers.com##body [id^="aiva"]
 akvarista.cz###topcookies
 current-news.co.uk##.c-notice
 theguardian.com###app > div > main ~ footer ~ div, div[data-island="cookie-banner"], #cmpContainer, body > #cmp
+theguardian.com.###app > div > main ~ footer ~ div, div[data-island="cookie-banner"], #cmpContainer, body > #cmp
 ristorantino.no##.privacy-policy-container
-deviantart.com###root > div:last-child:not([id])
+deviantart.com###root > div ~ div:last-child:not([id])
 datacamp.com##.dc-cookie-banner-wrapper
 photoeffets.com###TopSubscriptionPopUpBg1
 photoeffekte.com###TopSubscriptionPopUpBg1
@@ -17736,6 +17760,23 @@ bearable.app##.elementor-popup-modal
 caixabank.cat##.cookies-region
 caixabank.es##.cookies-region
 sixt.co.uk##.cro-background-shadow
+uslugi.gov.mk##.gdpr
+specialarad.ro###cookies
+designingbuildings.co.uk###overlay-designingBuildingsAnywhere
+unitedway.org##.footer-notification
+epri.com##.cookie-sheet, .md-scroll-mask
+moddrop.com###app > .cm-row
+weerstatistieken.nl###darker
+silicagel.de##body > div:not([id]):not([class])
+verkuendung-bayern.de##.vkp-cookie-message
+nowlighting.co.uk###nfPPBar
+clipartlogo.com##.navbar-qards
+clipart.me##.navbar-qards
+yves-rocher.be##.privacy-manager
+estetiq.pl##.config-messages
+aliexpress.com###j-aliexpress-notice, #root > #wrapper + div[class^="_"]:not([id]), .site-notice-header
+thetechden.com.au###shopify-section-fixed-message
+riotgames.com##.riotbar-alert
 !
 ! SCRIPT BLOCKING
 !
@@ -18249,7 +18290,7 @@ sdk.privacy-center.org$domain=~telegraaf.nl|~dumpert.nl|~funradio.fr|~rtl.fr
 /cookiesWidget/widget.js
 /ads/rgpd.js
 ||consent-manager.metomic.io/embed.js$script
-consent.cookiebot.com$domain=~live.slam.nl|~saveur.com|~popsci.com|~cineplex.de|~digitaltrends.com|~werder.de|~scubadiving.com
+consent.cookiebot.com$domain=~live.slam.nl|~saveur.com|~popsci.com|~cineplex.de|~digitaltrends.com|~werder.de|~danbolig.dk|~scubadiving.com
 /jquery.cookieBar$domain=~kvv.de|~germany.ru
 /atresplayer/assets/web/cmp
 /ccp-sites/components/structure/cookie-notification/*
@@ -18313,6 +18354,8 @@ breakfastboat.com
 /cookienotice-bootstrap.js
 /api/snippets/js/consent-banner
 /wp-content/plugins/cookieEuGH
+/cookiebar.js
+/gdpr/cookie-notice
 /frontend/ajax/cookies$domain=romstal.ro
 /policy-update-banner.js$domain=gamepedia.com
 cookie-service.js$domain=smart.com
