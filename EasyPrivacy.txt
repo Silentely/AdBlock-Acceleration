@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202004271424
+! Version: 202004271912
 ! Title: EasyPrivacy
-! Last modified: 27 Apr 2020 14:24 UTC
+! Last modified: 27 Apr 2020 19:12 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1425,6 +1425,8 @@
 /CountContent?
 /counter-js.php
 /counter.*&referer=
+/counter.*&referrer=
+/counter.*?event=
 /Counter.ashx?
 /counter.asp?
 /counter.aspx?
@@ -3952,6 +3954,7 @@
 /statsd_proxy
 /StatsHelper.gif?
 /StatsMngrWebInterface.
+/StatSNA.js
 /StatsPage.
 /statspider?
 /statspixel.
@@ -16337,6 +16340,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ! Korean
 ||chosun.com/hitlog/
 ||count.munhwa.com^
+||gmarket.co.kr/js/common/uuid.js
 ||hits.zdnet.co.kr^
 ||l.m.naver.com^
 ||log.sv.pandora.tv^
@@ -16427,6 +16431,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ||consultant.ru/js/counter.js
 ||cosmo.ru/*/.js?i=*&r=
 ||counter.drom.ru^
+||counter.sibnet.ru^
 ||data.glamour.ru^
 ||dot-stat.radikal.ru^
 ||drom.ru/dummy.
@@ -16654,6 +16659,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||ancestrycdn.com/ui-static/lib/tracking/$domain=ancestry.com
 @@||api-track.delhivery.com/track?waybillId=$~third-party,xmlhttprequest
 @@||api.academia.edu^*/stats?callback$script,~third-party
+@@||api.getmakerlog.com/discussions/$~third-party,websocket,xmlhttprequest
 @@||api.perfops.net^$script,xmlhttprequest,domain=cdnperf.com|dnsperf.com
 @@||api.segment.io/v1/$xmlhttprequest,domain=instacart.com
 @@||api.vidaxl.com^*/trackingservice/customerportal/*?$xmlhttprequest,domain=tracking.vidaxl.com
