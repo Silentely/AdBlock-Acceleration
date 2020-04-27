@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: FO9sZUGvTYsPhvVMzAWe4w
-! Version: 202004271153
+! Checksum: IJqTFjqccTrA2meNb2XdIw
+! Version: 202004271553
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last Modified: 27 Apr 2020 11:53 UTC
+! Last Modified: 27 Apr 2020 15:53 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: http://abpchina.org/forum/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -561,7 +561,6 @@ _xiuno_com_ad/
 ###MyMoveAd
 ###QQ_Full
 ###ZAML
-###\31 280_adv
 ###aafoot.top_box
 ###aafoot[class^="top_box"]
 ###aaheadtop
@@ -1072,6 +1071,7 @@ _xiuno_com_ad/
 ##img[src*=".sinaimg."][style="width:150px;height:300px"]
 ##script + #coupletBox
 ##script + #rbbox
+###\31 280_adv
 ##script[src="/js/sy2.js"] + div[align="center"]
 ##span[title="neteasefooter"]
 ##table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"]
@@ -4996,6 +4996,7 @@ _yad_jsonp_
 ||aliyuncs.com/pool/20180829221932.png
 ||aliyuncs.com/vss/haotu.js
 ||aliyuncs.com/wjy99re/
+||aliyuncs.com/img/$domain=ddrk.me
 ||aliyuncs.com^$domain=5kym.com
 ||allbeauty.com.tw/GoldPrice/*_CF.php
 ||alu.cn*/aluad/
@@ -8841,6 +8842,9 @@ _yad_jsonp_
 ||alicdn.com/kf/Hd502cbfb24a74a469a3f70f010818498m.gif
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+anoneko.com,dmhy.org##DIV[id$="_ad"] > A:first-child > IMG
+rrys2019.com###globalNav1
+rrys2019.com###globalNav2
 chinapdf.com###floatleft
 chinapdf.com###floatright
 bimibimi.me##A[href*=".taobao.com"]
@@ -13476,7 +13480,6 @@ heirui.cn##div[id$="MASK"]
 mail.126.com,mail.163.com##div[id$="_AdDiv"]
 mail.126.com,mail.163.com##div[id$="_BannerDiv"]
 mail.126.com,mail.163.com##div[id$="_FooterDiv"]
-dmhy.org##div[id$="_ad"]
 58.com##div[id$="_gdbg"]
 mail.126.com,mail.163.com##div[id$="_succAd"]
 pixnet.net##div[id*="-AD-"]
