@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 314.202004260827
+! Version: 315.202004270924
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 26 Apr 2020 06:27 UTC
+! Last modified: 27 Apr 2020 07:24 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -4941,7 +4941,7 @@
 ###cookie_jar_container
 ###cookiesInfoBar
 ##.notification-layout[ng-class="cookie-bar"]
-~gillet-baustoffe.de,~goetzmoriz.com##.modal-cookie:not(body):not(html):not(.show)
+~gillet-baustoffe.de,~goetzmoriz.com,~moelders.de##.modal-cookie:not(body):not(html):not(.show)
 ###Footer1_cCookiePopUp1_pnlDisclaimerPopup
 ###cookie-bar-module
 ###cookie-privacy-banner
@@ -11443,6 +11443,10 @@
 ##.rstbox[data-title*="RODO"] ~ .rstbox_overlay
 ##.cookie_banner_background
 ##.mrf-cmp-welcome
+##.cookie-consent[data-component="CookieConsent"]
+###cookie-confirm-banner
+##cookie-wrapper
+###divOneTrustButton
 !
 ! CUSTOM RULES
 !
@@ -17777,6 +17781,10 @@ estetiq.pl##.config-messages
 aliexpress.com###j-aliexpress-notice, #root > #wrapper + div[class^="_"]:not([id]), .site-notice-header
 thetechden.com.au###shopify-section-fixed-message
 riotgames.com##.riotbar-alert
+sweet.tv###privacy_policy
+enzahome.com.tr##.kvkkFixed
+homeairguides.com###wpfront-notification-bar-spacer
+wunderino.com###root div[class*="Snackbar"]
 !
 ! SCRIPT BLOCKING
 !
