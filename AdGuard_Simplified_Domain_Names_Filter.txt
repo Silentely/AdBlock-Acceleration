@@ -3,7 +3,7 @@
 ! Description: Filter composed from several other filters (English filter, Social media filter, Spyware filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2020-04-29T14:08:02.470Z
+! Last modified: 2020-04-30T11:34:27.117Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.8
 !
@@ -143,6 +143,11 @@
 !
 ! Содержит доменные имена, использующиеся рекламными сетями.
 !
+||unzpc.com^
+||ahaclub.ru^
+||chsrkred.com^
+||q0yxfvuo32.ru^
+||bezelbuzz13.live^
 ||almasatten.com^
 ||wimyrea.ru^
 ||bcnewltd.club^
@@ -4129,6 +4134,9 @@ adbetnet.com
 ||kolsh.cn^
 !END: Chinese ad servers
 !
+||putfeepea.site^
+||gagpetwet.com^
+||wastesshimssat.world^
 ||hfsn.info^
 ||st-n.pc3ads.com^
 ||betteradsystem.com^
@@ -4140,7 +4148,6 @@ adbetnet.com
 ||lyferere.pro^
 ||max-adserv.com^
 ||mehebborc.com^
-||letheyemo.site^
 ||offgashah.club^
 ||hisfryyes.com^
 ||2cnjuh34jbhub.com^
@@ -7278,6 +7285,7 @@ www.llllllllllll.net^
 ||bityah-sym.com^
 ||bl0uxepb4o.com^
 ||blablablaaa.xyz^
+||blockadsnot.com^
 ||bloglife24.com^
 ||bmkz57b79pxk.com^
 ||bnrsis.com^
@@ -7298,6 +7306,7 @@ www.llllllllllll.net^
 ||bursagarc.com^
 ||busfarmum.com^
 ||butashasp.site^
+||bwhjcwnbbwsd.com^
 ||byhz.xyz^
 ||c26e9ccd4e063b.com^
 ||c50021876c67fd14.com^
@@ -7336,6 +7345,7 @@ www.llllllllllll.net^
 ||clickathere.com^
 ||clickcdn.co^
 ||clineddivoryr.site^
+||cobdieink.com^
 ||codedexchange.com^
 ||coinadster.com^
 ||collectpush.com^
@@ -7394,10 +7404,12 @@ www.llllllllllll.net^
 ||dhappeasesem.site^
 ||diantcummiere.info^
 ||dimessing-parker.com^
+||dimpawlam.com^
 ||dingsincernett.info^
 ||dingviewjeep.info^
 ||disappenedy.site^
 ||discoverapp.xyz^
+||displayvertising.com^
 ||distinesseqe.site^
 ||ditookry.com^
 ||dlb1uotpjs6s.com^
@@ -7463,6 +7475,7 @@ www.llllllllllll.net^
 ||enseptedsome.info^
 ||entstronicsform.info^
 ||entualagreetsd.info^
+||eondunpea.com^
 ||epresententifi.info^
 ||eralsstroying.info^
 ||eraltradiansid.info^
@@ -7659,6 +7672,7 @@ www.llllllllllll.net^
 ||kikoucuy.net^
 ||kitferdog.site^
 ||kitrigthy.com^
+||kkqusrnaf.com^
 ||kniferasatte.info^
 ||knottishhuntilc.info^
 ||koocaucy.com^
@@ -7686,6 +7700,7 @@ www.llllllllllll.net^
 ||lereforeightc.site^
 ||lesburghmoloki.site^
 ||lessite.pro^
+||letheyemo.site^
 ||levenileheshe.site^
 ||libanyelm.com^
 ||liketube.xyz^
@@ -7869,6 +7884,7 @@ www.llllllllllll.net^
 ||padsecs.com^
 ||pagiwp.com^
 ||pagnookr.net^
+||paraterinchest.site^
 ||paratingsulik.site^
 ||parketbedde.info^
 ||pasaigul.com^
@@ -7952,6 +7968,7 @@ www.llllllllllll.net^
 ||redappeneticfr.info^
 ||redewdit.pro^
 ||redirect2719.ws^
+||reforeightolikm.site^
 ||refunsiy.net^
 ||refyewdye.com^
 ||releasurezesa.site^
@@ -8100,6 +8117,7 @@ www.llllllllllll.net^
 ||tionpronomyim.info^
 ||tiontablyvern.site^
 ||tithewtog.com^
+||titleefen.club^
 ||titoaktop.com^
 ||tiveacquisitsprett.info^
 ||tj9pcnb2ws.com^
@@ -8125,6 +8143,7 @@ www.llllllllllll.net^
 ||uagesspecifica.info^
 ||ufoukolt.com^
 ||ugoupams.com^
+||uh9qulew9rjj.com^
 ||uinelypresse.info^
 ||uitabletublis.info^
 ||ukcomparends.pro^
@@ -8229,6 +8248,7 @@ www.llllllllllll.net^
 ||zroundancez.site^
 ||zudrurta.com^
 ||zxxtkrkzfyy3.com^
+||zzdb5p4upiug.com^
 ! Third-party
 ||0azx1.com^
 ||0emn.com^
@@ -23386,6 +23406,27 @@ www.llllllllllll.net^
 ||widebanner.com^
 ||yobee.it^
 ||zodiakactive.com^
+
+!
+! Source name: AdGuard Tracking Protection filter third-party trackers
+! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/tracking_servers.txt
+!
+!
+! Blocking Firebase crash reporting is quite problematic:
+! https://github.com/AdguardTeam/AdguardForAndroid/issues/1334#issuecomment-319302543
+! ||app-measurement.com^
+!
+! Crashlytics is commented by @ameshkov.
+! The reason for unblocking crashlytics is to not make developers life worse by breaking crash reporting.
+! In a hostile network like when an ad blocker is present, apps might be crashing, and these errors need to be
+! reported to devs, otherwise they won't learn about the issue and won't fix it.
+! Also, it is not a common third-party analytics tracker, Crashlytics is not used for collecting users' data.
+! ||e.crashlytics.com^
+! ||settings.crashlytics.com^
+!
+! ||ensighten.com^$third-party - not a tracker
+!
+||cicero-mit.com^
 ||sys.refocus.ru^
 ||apn.c.appier.net^
 ||doorbrazil.com^
@@ -28642,6 +28683,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ! Greek
 ||linkwi.se^
 ! Hebrew
+||analyti.io^
 ||erate.co.il^
 ||fortvision.com^
 ||hetchi.com^
@@ -28855,6 +28897,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||denakop.com^
 ||engageya.com^
 ||marktest.pt^
+||orquideassp.com^
 ||percycle.com^
 ||rdstation.com.br^
 ||sambaads.com^
@@ -29192,6 +29235,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||analyze.full-marke.com^
 ||ape-tagit.timeinc.net^
 ||api.wipmania.com^
+||argos.citruserve.com^
 ||ariane.abtasty.com^
 ||aserve.directorym.com^
 ||attributiontrackingga.googlecode.com^
@@ -30365,6 +30409,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||sstats.mora.jp^
 ||sync.shinobi.jp^
 ||t.adlpo.com^
+||t.felmat.net^
 ||torimochi.line-apps.com^
 ||track.thebase.in^
 ||userdive.com^
@@ -31324,6 +31369,8 @@ vkcdnservice.appspot.com^
 ! Source name: EasyList China ad servers
 ! Source: https://easylist-downloads.adblockplus.org/easylistchina.txt
 !
+||safe555.xyz^
+||jjhaolin.com^
 ||0024aaaa.com^
 ||00880808.com^
 ||008844.cc^
@@ -34478,6 +34525,7 @@ vkcdnservice.appspot.com^
 ||runkao.net^
 ||stunninglover.com^
 ||cryptaloot.pro^
+||abie13.top^
 ||01w47q.cn^
 ||0217qpineuxbcdhopswkvf.xyz^
 ||0224fqpowiuxybnmvdfghj.xyz^
@@ -37163,6 +37211,8 @@ vkcdnservice.appspot.com^
 ! Once you enable private DNS, Android 9 starts resolving random domains looking like
 ! `*-dnsotls-ds.metric.gstatic.com` (for instance, `a5a6380f-dnsotls-ds.metric.gstatic.com`).
 !
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/312
+@@||grp07.ias.rakuten.co.jp^|
 ! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/306
 @@||click.dream.snhu.edu^|
 ! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/304
