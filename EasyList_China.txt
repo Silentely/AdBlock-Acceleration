@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: qYdNDsHJaRbpvVSSl1FVtQ
-! Version: 202005010753
+! Checksum: av4CpzFMTvCWnq698wyihQ
+! Version: 202005011153
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last Modified: 01 May 2020 07:53 UTC
+! Last Modified: 01 May 2020 11:53 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: http://abpchina.org/forum/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -423,8 +423,8 @@
 /shehuik618cn/images/k.js
 /show.js?aid=*&pushid=
 /show.js?sp=*&oid=
-/sitejs/clys.js
-/sitejs/content/clyscontent.js
+/clys.js?2020
+/content/clyscontent.js
 /sobt_adv.js
 /sogouAD.
 /source/plugin/mama_tips/*
@@ -1072,6 +1072,7 @@ _xiuno_com_ad/
 ##img[src*=".sinaimg."][style="width:150px;height:300px"]
 ##script + #coupletBox
 ##script + #rbbox
+##a[href*=".dongtaisteel.com/"]
 ##script[src="/js/sy2.js"] + div[align="center"]
 ##span[title="neteasefooter"]
 ##table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"]
@@ -5699,7 +5700,6 @@ _yad_jsonp_
 ||dbw.cn/eap/js/hl/hlj_ad
 ||dd3200.com/js/favshare.js
 ||ddrk.me/ad
-||ddrk.me/wp-content/uploads/*.js
 ||ddshu.net/a_d_code/
 ||de.as.pptv.com^
 ||dealmoon.com/hotdeals/hotdeals_scroller.php
@@ -8843,8 +8843,12 @@ _yad_jsonp_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
 ||myqqjd.com^$csp=script-src 'self' * 'unsafe-inline'
+$script,third-party,domain=ohmanhua.com
+||diyibanzhu555.com/js/html
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+ddrk.me##IMG[id]
+ddrk.me##P > A > IMG
 32r.com##.gsbbtn
 32r.com##SPAN + P + UL > DT
 05sun.com###gsxza
@@ -14047,6 +14051,7 @@ i-cable.com#@#.video_ad
 bitauto.com,yinyuetai.com#@#a[href^="http://ad.doubleclick.net/"]
 brandsales.58.com#@#div[id^="ad_"]
 gohome.com.hk#@#div[id^="div-gpt-ad"]
+ohmanhua.com#@#.gg1000
 !---------------------------------URL Whitelist-------------------------------!
 @@&adurl=http://$domain=360bifen.cc|360bifen.com
 @@.adserver.$domain=litv.tv
@@ -15812,6 +15817,7 @@ hh010.com##.a_hong_t
 @@||hh010.com^$generichide
 ||hh010.com/static/image/fff/
 !#hpjav.tv
+||watakaw133.xyz^
 ?key=$popup,domain=verystream.com
 @@||tsyndicate.com/sdk/v1/n.js$domain=hpjav.tv
 hpjav.tv##body > div[style^="position: fixed;"]
