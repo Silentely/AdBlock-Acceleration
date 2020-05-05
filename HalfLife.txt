@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: aPyI67+ZHDkYMlw6ZXs4RQ
+! Checksum: 4H8fE1xOnRlAUAG+Y0v0xg
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202005051230
-! Last Modified: 2020年05月05日 12:30
+! Version: 202005051930
+! Last Modified: 2020年05月05日 19:30
 ! Homepage: https://adf.minggo.eu.org
 !
 !本规则合并自EasylistChina、EasylistLite、CJX'sAnnoyance
@@ -6105,7 +6105,6 @@ _yad_jsonp_
 ||dbw.cn/eap/js/db/dbwad_
 ||dbw.cn/eap/js/hl/hlj_ad
 ||dd3200.com/js/favshare.js
-||ddrk.me/ad
 ||ddshu.net/a_d_code/
 ||de.as.pptv.com^
 ||dealmoon.com/hotdeals/hotdeals_scroller.php
@@ -10196,8 +10195,6 @@ hexun.com###newsPopWin
 live.win007.com###notify > a[target="_blank"]
 qq.com###nqsnqsad02
 ssnn.net###nrk_gg
-ddrk.me###obay_hf
-ddrk.me###obay_hf_i
 fx168.com###oilTopAd
 3g.qq.com###omgad-wechat-bigpic
 duba.com###one-mid
@@ -13431,7 +13428,6 @@ jjwxc.net##[id^="adp_"]
 ghoffice.com,ksbbs.com,kshot.com##[id^="ads_"]
 1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com##[id^="spreadad_"]
 sinolub.com##[id^="xker"]
-ddrk.me##[onclick*="()"]
 3322.cc##[onclick*=".gsxzq."]
 32r.com##[onclick*="@"]
 zhangxinxu.com##[onclick*="Ad"]
@@ -13441,7 +13437,7 @@ kisssub.org##a > img[src*=".0o0.ooo/"]
 5dm.tv##a > img[src*=".sinaimg."]
 ruanyifeng.com##a > img[src*="wangbase.com/blogimg/asset/"]
 acgnx.se##a > img[src^="/images/"]
-ddrk.me##a img:not(#trk_hcaptcha):not([src^="https://captcha.su.baidu.com"])
+ddrk.me##a[href^="javascript"]  img:not(#trk_hcaptcha):not([src^="https://captcha.su.baidu.com"])
 tieba.baidu.com,wapp.baidu.com##a.fixed_bar
 onlinedown.net##a.qrcode_show
 maiche.com##a.some-img
@@ -13734,7 +13730,6 @@ cnbeta.com#?#.items-area > .item:-abp-has(> dl > dt > a[href^="http"]:not([href*
 cnzol.com#?#li:-abp-has(> a[href*=".taobao.com"])
 cnzol.com#?#li:-abp-has(> a[href*="mmtp.net"])
 dilidili.wang#?#article:first-child
-ddrk.me##div > a > img
 steamcn.com##div > a[href*=".taobao.com"]
 bitauto.com##div > ins[data-type="ad_play"]
 324324.cn##div > script ~ a
@@ -13991,7 +13986,6 @@ u17.com##div[id^="u17-advert"]
 lnd.com.cn##div[id^="wflash"]
 ghpym.com##div[id^="wpcom-html-ad-"]
 eyuyao.com##div[id^="x_ad_"]
-ddrk.me##div[id^="zmda"]
 oschina.net##div[name="detail_show_footer"]
 oschina.net##div[name="floatAdbox"]
 oschina.net##div[name^="index_banner_"]
@@ -14198,7 +14192,6 @@ news.baidu.com#?#.index-list-item:-abp-has(.tip-time:-abp-contains(广告))
 news.sohu.com,www.sohu.com#?#.list16 > ul > li:-abp-contains(广告)
 china.com##object[width="360"][height="300"]
 sina.com.cn##p + .article-video
-ddrk.me##p > a > img
 muchong.com##p[onclick="view_ok();"]
 aeink.com##p[style*=".alicdn.com/"]
 aeink.com##p[style*="82px;background:"]
@@ -19346,6 +19339,7 @@ _box_ad_
 ||looyu.com^$third-party
 ||lxbjs.baidu.com^$third-party
 ||meiqia.com^$third-party
+||miduoke.net^$third-party
 ||mylikechat.com^$third-party
 ||ntalker.com^
 ||pop800.com^$third-party
@@ -19674,7 +19668,11 @@ _box_ad_
 ||zupulu.com/scripts/app/app.js
 ||yunzhan365.com/resourceFiles/js/weixin-share.js
 ||127.net/m/*/promPic.jpg
+||xyj321.com/static/xyj/js/foot_slide_bar_
+||xyj321.com/static/zx/js/zx-con-jsq_
+||sinaimg.cn/wap/project/blog_to_news_banner/
 !------------------------Specific element hiding rules------------------------!
+xyj321.com##.foot_alert_wrap
 doc88.com##.dk-side-gif
 ltn.com.tw##.evt.e22
 epubee.com##.vipNoteBar
