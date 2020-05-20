@@ -3,7 +3,7 @@
 ! Description: Filter composed from several other filters (English filter, Social media filter, Spyware filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2020-05-19T20:27:16.567Z
+! Last modified: 2020-05-20T14:21:00.276Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.8
 !
@@ -143,6 +143,7 @@
 ! Содержит доменные имена, использующиеся рекламными сетями.
 !
 ||csnem.ru^
+||rocketme.top^
 ||kdkdkd.pro^
 ||umcbbt.com^
 ||starikanadstarikan.ru^
@@ -4164,6 +4165,7 @@ adbetnet.com
 ||kolsh.cn^
 !END: Chinese ad servers
 !
+||dostophog.com^
 ||newsunads.com^
 ||smart2cnjuh34jb.com^
 ||pophahwot.com^
@@ -6320,6 +6322,10 @@ www.llllllllllll.net^
 ||plugin.mobopay.baidu.com^
 ||mo.freeindoapp.com^
 !
+||api.applovefrom.com^
+||api.adnet.mob.com^
+||snssdk.com^
+||sf3-ttcdn-tos.pstatp.com^
 ||iam.datasavannah.com^
 ||a.f590906c3e6c07bb5f80801f2dfc4295.com^
 ||a.eed1729eebe45b8cd49e10f2dd80e297.com^
@@ -7199,6 +7205,7 @@ www.llllllllllll.net^
 ||4232f0badcf.com^
 ||4481bff8825.com^
 ||456c11816f.com^
+||4dds.s4d.xyz^
 ||4prgkoj870j9.com^
 ||4t6u1amm3t3n.com^
 ||508ec56533e3937e.com^
@@ -7679,6 +7686,7 @@ www.llllllllllll.net^
 ||fixsirrod.site^
 ||fkart.xyz^
 ||flowwiththetide.xyz^
+||fnacgbik9v14.com^
 ||fnx2n3rqbuw7.com^
 ||fontainsuny.club^
 ||forcementsawe.site^
@@ -7736,6 +7744,7 @@ www.llllllllllll.net^
 ||grampouz.net^
 ||granticaffodily.club^
 ||graunada.com^
+||greatmentef.club^
 ||greatvideos.xyz^
 ||grementessenti.info^
 ||grenatorkovsh.site^
@@ -7786,6 +7795,7 @@ www.llllllllllll.net^
 ||iglaique.net^
 ||imounsos.com^
 ||in6ej4pbpnih.com^
+||incommandary.club^
 ||indicaterhools.site^
 ||ineffieldinforget.site^
 ||ingcigarettbarro.info^
@@ -7911,6 +7921,7 @@ www.llllllllllll.net^
 ||megmobpoi.club^
 ||mehhueboy.club^
 ||melo.space^
+||memoralegil.site^
 ||mentalbackie.site^
 ||menuladshy.life^
 ||meowpushnot.com^
@@ -8126,6 +8137,7 @@ www.llllllllllll.net^
 ||prographiciko.site^
 ||promiserkololla.site^
 ||propeanfanku.site^
+||propeanikob.site^
 ||properatery.club^
 ||protection-booster.club^
 ||protection-cleaner.club^
@@ -8165,6 +8177,7 @@ www.llllllllllll.net^
 ||realtime-bid.com^
 ||reasonalattracke.info^
 ||reckedmane.club^
+||recruisefukiby.club^
 ||redads.biz^
 ||redappeneticfr.info^
 ||redewdit.pro^
@@ -8233,6 +8246,7 @@ www.llllllllllll.net^
 ||saturalerdax.site^
 ||sbroughhig.info^
 ||sculifinanthools.site^
+||sdf4.s4d.xyz^
 ||sdhfbvd.com^
 ||sdkfjxjertertry.com^
 ||seaboblit.com^
@@ -8241,6 +8255,7 @@ www.llllllllllll.net^
 ||secured-iphone.club^
 ||secured-phone.club^
 ||seepsocu.net^
+||separenujilo.club^
 ||setemoump.com^
 ||seventual.site^
 ||sexagogal.site^
@@ -8313,6 +8328,7 @@ www.llllllllllll.net^
 ||syphilohmmaging.site^
 ||taifouwo.com^
 ||tamechangekn.info^
+||tanit-dio.com^
 ||tarawerap.com^
 ||tartoals.net^
 ||taryarguestio.info^
@@ -8487,6 +8503,7 @@ www.llllllllllll.net^
 ||zaivikuk.com^
 ||zaugroaw.net^
 ||zaushegi.net^
+||zi8ivy4b0c7l.com^
 ||zooahm2fx2v1.com^
 ||zop381q5o0q1.com^
 ||zrnedsainsteady.info^
@@ -23660,6 +23677,27 @@ www.llllllllllll.net^
 ||widebanner.com^
 ||yobee.it^
 ||zodiakactive.com^
+
+!
+! Source name: AdGuard Tracking Protection filter third-party trackers
+! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/tracking_servers.txt
+!
+!
+! Blocking Firebase crash reporting is quite problematic:
+! https://github.com/AdguardTeam/AdguardForAndroid/issues/1334#issuecomment-319302543
+! ||app-measurement.com^
+!
+! Crashlytics is commented by @ameshkov.
+! The reason for unblocking crashlytics is to not make developers life worse by breaking crash reporting.
+! In a hostile network like when an ad blocker is present, apps might be crashing, and these errors need to be
+! reported to devs, otherwise they won't learn about the issue and won't fix it.
+! Also, it is not a common third-party analytics tracker, Crashlytics is not used for collecting users' data.
+! ||e.crashlytics.com^
+! ||settings.crashlytics.com^
+!
+! ||ensighten.com^$third-party - not a tracker
+!
+||causecherry.com^
 ||tr.infopanel.jp^
 ||blok.link^
 ||cicero-mit.com^
@@ -25181,6 +25219,10 @@ charlestownwyllie.oaklawnnonantum.com^
 ||track.appsflyer.com^
 !+ NOT_PLATFORM(ios, ext_safari, ext_android_cb)
 !
+||api.share.mob.com^
+||m.data.mob.com^
+||bi.manhuaren.com^
+||c.data.mob.com^
 ||analytics.datasavannah.com^
 ||sq.requestads.com^
 ||insight.ucweb.com^
@@ -31129,6 +31171,7 @@ vkcdnservice.appspot.com^
 ||offerjuice.me^
 ||ofphanpytor.com^
 ||ojeergoy.com^
+||olkrzytv.com^
 ||olmsoneenh.info^
 ||onclkds.com^
 ||openadserving.com^
@@ -31652,9 +31695,6 @@ vkcdnservice.appspot.com^
 ! Source name: EasyList China ad servers
 ! Source: https://easylist-downloads.adblockplus.org/easylistchina.txt
 !
-||65tgh.com^
-||tyh887.com^
-||bzbsecs.cn^
 ||0024aaaa.com^
 ||00880808.com^
 ||008844.cc^
@@ -31809,6 +31849,7 @@ vkcdnservice.appspot.com^
 ||626uc.com^
 ||643226.com^
 ||652748.com^
+||65tgh.com^
 ||6612151.cn^
 ||6612152.cn^
 ||664gp.com^
@@ -32068,6 +32109,7 @@ vkcdnservice.appspot.com^
 ||bxjt518.com^
 ||bydonline.com^
 ||bypbwm.cn^
+||bzbsecs.cn^
 ||cachesit.com^
 ||cadsips.com^
 ||caicool.co^
@@ -33265,6 +33307,7 @@ vkcdnservice.appspot.com^
 ||txt2019.cc^
 ||txzs168.net^
 ||ty229.com^
+||tyh887.com^
 ||tylll.com^
 ||u.huoying666.com^
 ||uadsaa.com^
@@ -33744,6 +33787,7 @@ vkcdnservice.appspot.com^
 ||614514.com^
 ||63ef.com^*.js
 ||6665432.com^*.gif
+||7hjb8.com^*.php
 ||7mad.7m.cn^
 ||7xsf3h.com1.z0.glb.clouddn.com^
 ||8*.tianya.cn^
@@ -34090,7 +34134,6 @@ vkcdnservice.appspot.com^
 ||zkrdy.com^
 ||zt2088.com^
 ||ztyumn.ifeng.com^
-||7hjb8.com^*.php
 @@||95599.cn^*ad
 @@||abchina.com^*ad
 @@||ad.10010.com^
@@ -34842,9 +34885,8 @@ vkcdnservice.appspot.com^
 ||stunninglover.com^
 ||watakaw133.xyz^
 ||cryptaloot.pro^
-||kkhuhct.cn^
-||xn--ddua45lfy1c.ink^
-||gralfusnzpo003.top^
+||yzftqx.cn^
+||dapskja.cn^
 ||01w47q.cn^
 ||0217qpineuxbcdhopswkvf.xyz^
 ||0224fqpowiuxybnmvdfghj.xyz^
@@ -35589,6 +35631,7 @@ vkcdnservice.appspot.com^
 ||gotooback.com^
 ||gou1zhe.com^
 ||goulanmeng.cn^
+||gralfusnzpo003.top^
 ||gringrin.cn^
 ||grjs02.com^
 ||grjs06.com^
@@ -35919,6 +35962,7 @@ vkcdnservice.appspot.com^
 ||kjdw.com.cn^
 ||kjfhe.com^
 ||kjhfy.com^
+||kkhuhct.cn^
 ||kl6636.net^
 ||klgzzs.cn^
 ||klorn.cn^
@@ -36721,6 +36765,7 @@ vkcdnservice.appspot.com^
 ||xn--2qux23c9ziyrq.icu^
 ||xn--2qux23confgml.club^
 ||xn--4gqvdz18f.xyz^
+||xn--ddua45lfy1c.ink^
 ||xn--i6qs37am6iwyqffc.com^
 ||xn--i7qt52bvsr0u0a.cc^
 ||xn--mtsr39cnql.video^
