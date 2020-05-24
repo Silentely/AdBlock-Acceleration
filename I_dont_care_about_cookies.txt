@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 316.202005210900
+! Version: 317.202005240759
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 21 May 2020 07:00 UTC
+! Last modified: 24 May 2020 05:59 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -275,7 +275,7 @@
 ###CookieReportsPanel
 ###cookie-panel
 ###cookieConsentBar
-##[aria-labelledby="ui-dialog-title-cookiebox"]
+##div[aria-labelledby*="cookiebox"]
 ##.cp-alert-message:not(body):not(html)
 ##.cookie_law_container
 ###cookie-legislation
@@ -336,8 +336,8 @@
 ###cookiemsg
 ##.cookie-warning:not(body):not(html):not(#Web):not(#Container)
 ##.cookie-warn:not(body):not(html)
-##[data-notification="CookiePolicyAgreement"]:not(body):not(html)
-##[data-name="cookieNotice"]:not(body):not(html)
+##div[data-notification="CookiePolicyAgreement"]
+##div[data-name="cookieNotice"]
 ###cookie-acceptance
 ##.cookiePrompt_outerWrapper
 ###popupCookie
@@ -353,7 +353,7 @@
 ###ctn_cookies
 ##.ctn_cookies:not(body):not(html)
 ##.cookie-wrap:not(body):not(html)
-~cexpr.es,~correosexpress.com,~travelchannel.co.uk,~puzzels.ad.nl,~puzzels.trouw.nl,~puzzels.parool.nl,~puzzels.volkskrant.nl##.cookie-wrapper:not(body):not(html)
+~cexpr.es,~correosexpress.com,~correosexpress.pt,~travelchannel.co.uk,~puzzels.ad.nl,~puzzels.trouw.nl,~puzzels.parool.nl,~puzzels.volkskrant.nl##.cookie-wrapper:not(body):not(html)
 ###cookiewarningiframe
 ###cookies-notice
 ###cookieNoteWrap
@@ -482,7 +482,7 @@
 ###popcc12
 ###cookie-note
 ##.cdp-cookies-alerta:not(body):not(html)
-##[aria-describedby="dialog-eu-cookie-law"]:not(body):not(html)
+##div[aria-describedby="dialog-eu-cookie-law"]
 ###policy_wrapper
 ###mirvanoscookie
 ###eucookielawcontainer
@@ -563,7 +563,7 @@
 ###cookie_info
 ###cookie-information-wrapper
 ~lauritz.com,~qxl.de,~qxl.dk,~qxl.fi,~qxl.se,~qxl.no,~reidl.de###cookie-container
-~rodekruis.be###cookies-banner
+~vias.be,~rodekruis.be###cookies-banner
 ###ctl00_pnlCookie
 ##.cookie-popup__content
 ##.cookie-popup__heading
@@ -714,7 +714,7 @@
 ##.cookies-popup:not(body):not(html)
 ###user-cookie-message
 ###cookie-information
-##[aria-describedby="cookie-information"]:not(body):not(html)
+##div[aria-describedby*="cookie-info"]
 ###cookieLawHeader
 ###cookieWetgeving
 ##.cookieWetgeving:not(body):not(html)
@@ -955,7 +955,7 @@
 ###gm-cookies
 ##.CookieNotice:not(body):not(html)
 ###cookies-guide
-##[data-key="cookies-warning"]:not(body):not(html)
+##div[data-key="cookies-warning"]
 ##.aroundCookie:not(body):not(html)
 ###af_cookies-bar
 ###cookie_ustawa
@@ -1573,7 +1573,7 @@
 ###cookies-compliance
 ###informacja-o-cookies
 ###cookies-layer
-##[data-veci="cookies-policy"]:not(body):not(html)
+##div[data-veci="cookies-policy"]
 ##.cookie-info-box:not(body):not(html)
 ##.cookie-messages:not(body):not(html)
 ###cookies_legislation
@@ -1956,7 +1956,7 @@
 ###expat_cookies
 ###ph-cookies-akkoord
 ###cookiebar-cookiepolicy
-##.alert-info[data-block-track="euCookieNotice"]
+##.alert-info[data-block-track*="CookieNotice"]
 ###confirm_cookie_use
 ###CookieNotice
 ###missatge_cookie
@@ -3034,7 +3034,7 @@
 ###DisclaimCookie
 ###tmrc_cookie_footer_info
 ##.biscuit-usage:not(body):not(html)
-##[data-type="cookie-addsense"]:not(body):not(html)
+##div[data-type="cookie-addsense"]
 ##.cookies-area:not(body):not(html)
 ###cookiesMessageContainer
 ###cookiePopin
@@ -3827,7 +3827,7 @@
 ###stormCookieMelding
 ###intser_cookie
 ###popupcookie
-##[data-react-class="EUCookieBanner"]:not(body):not(html)
+##div[data-react-class="EUCookieBanner"]
 ###loreal-cookie
 ##.alertPolicyCookies:not(body):not(html)
 ###cookie_pop
@@ -3996,7 +3996,7 @@
 ###dinamoPrivacyPopup
 ##.cookie-cont:not(body):not(html)
 ##.section-cookies:not(body):not(html)
-##[data-cookie="uso-accept-cookies"]:not(body):not(html)
+##div[data-cookie="uso-accept-cookies"]
 ##.footer-cookie-warning
 ###cookiecontrol
 ###form_CookieOK
@@ -5045,7 +5045,7 @@
 ##.cookiehinweis:not(body):not(html)
 ###cookieArea
 ##.bs-cookie-notice:not(body):not(html)
-##body.ccCookiesAllowed > #cc
+##.ccCookiesAllowed > #cc
 ##.i-am-ok-with-cookies
 ##.adv-cookie:not(body):not(html)
 ##.cookierinfor:not(body):not(html)
@@ -5064,7 +5064,7 @@
 ###cookie-bar-prompt
 ##.uc-cookie:not(body):not(html)
 ###cookies_wrapper
-##.infobanner:not(body):not(html)[data-cookie]
+##.infobanner[data-cookie]
 ##.b-cookie-warning:not(body):not(html)
 ###jwsdw-cookieHint
 ###cookiesRequest
@@ -5442,7 +5442,7 @@
 ###cookie-open img[src*="coockie"]
 ###module-cookies
 ##.cookie_tajekoztato:not(body):not(html)
-##.modal-strip:not(body):not(html)[data-cookie]
+##.modal-strip[data-cookie]
 ###cookieDropDown
 ###ens_pr_mini.ens_pr_mini
 ###ob-cookies
@@ -5478,7 +5478,7 @@
 ###capaAvisoCookie
 ###cookiesCheck
 ##.cookie-law-banner:not(body):not(html)
-~cexpr.es,~correosexpress.com##.message-cookie:not(body):not(html)
+~cexpr.es,~correosexpress.com,~correosexpress.pt##.message-cookie:not(body):not(html)
 ##.tm-cookie-container:not(body):not(html)
 ###cookieallowbar
 ###footerCookieaccept
@@ -5599,7 +5599,7 @@
 ##.bnt_cookieBar:not(body):not(html)
 ##.cookie-mention:not(body):not(html)
 ##.cookieBoxWrap:not(body):not(html)
-##.eu_cookie_wrapper_2:not(body):not(html)
+##.eu_cookie_wrapper_2
 ##.philoro_cookies--popover
 ##cookie-policy
 ###cookies-top-bloc
@@ -7049,7 +7049,7 @@
 ###hb-cc-wrap
 ###privacy.navbar-fixed-bottom
 ###bannerCnil.alert-footer
-###__ic-notice > #__ic-notice-container
+###__ic-notice-container
 ###cookie_fascia
 ###we_use_cookie_container
 ###informativa_cookie_box
@@ -7735,7 +7735,7 @@
 ###notificare-cookies
 ##gfp-cookie-policy-notice
 ###aio-gdpr-cookie-notice
-##[data-test-id="cookie-consent-banner"]
+##div[data-test-id="cookie-consent-banner"]
 ###startsiden-gdpr-disclaimer
 ##body > .cc-popup[style*="block"]
 ##.ec-cookie-bar:not(body):not(html)
@@ -10012,7 +10012,7 @@
 ##.s-cookie-popup:not(body):not(html)
 ##body[data-file-load-icon*="geberit"] .page-hint-box
 ##.fa-cookie.active[data-fa-cookie-inited]
-##[aria-describedby="cookies-policy-message"]
+##div[aria-describedby="cookies-policy-message"]
 ##.cookie-permission-banner
 ##.alertbar.alertbar--trackingVertical
 ##.alertbar.alertbar--trackingHorizontal
@@ -10821,7 +10821,7 @@
 ##.s-cookie-hint
 ###allowcookiebanner
 ##.b-content-asset_cookie_hint
-###root div[class*="CookiePolicy__Sticky"]
+###root div[class*="CookiePolicy"]
 ##.gdpr-cookie-bar
 ##.gdpr-cookie-bar-bottom
 ###APP div[id*="PrivacyPolicyToast"]
@@ -11152,7 +11152,7 @@
 ##.system-notification-container div[id*="privacy-policy"]
 ##.system-notification-container div[id*="cookies-policy"]
 ##ui-cookie-advisory-banner
-###root div[class*="CookiePolicy__Wrapper"]
+###root div[class*="cookie-disclaimer"]
 ###cookie-warning-popup
 ###cookieslawcheck
 ##.hd-cookie-notice-wrapper
@@ -11608,6 +11608,14 @@
 ##.ccpa-banner
 ##.gdpr-component .banner-container
 ###notice-cookie-block-wrapper
+###notice-cookie-block-overlay
+###cookie\ warning
+###boxCookiesAccept
+##.eu_cookie_wrapper
+##.amgdprcookie-bar-template
+##.site-footer ~ .gdpr
+##.iCookie.iCookie-whitered
+##.q-cookie-consent__container
 !
 ! CUSTOM RULES
 !
@@ -18065,6 +18073,17 @@ talktomeinkorean.com##.woocommerce-store-notice
 e-marcom.pl###cook
 bielawa.pl###wiadomosccookie
 educationplatform.co.uk###App > div > .container ~ div[class^="Wrap"]:last-child
+mi-home.no###cookie
+juedische-allgemeine.de##body > .cc
+stoiximan.gr##.sticky-notification
+muenzenwert.de###callout
+changehero.io##.privacy-notify
+edpb.europa.eu###edp-cookies-banner
+psd-rheinneckarsaar.de###cookieContent
+northamptonshiresurprise.com###popupbanner
+esanum.de##esn-cookie-disclaimer
+animade.tv##body > div[data-react-class="Cookies"]
+localsearch.ch###root > div:first-child
 !
 ! SCRIPT BLOCKING
 !
@@ -18622,6 +18641,7 @@ cmp.osano.com
 ||wpcc.io/lib$script
 ||tmgrup.com.tr/tmd-consent$script
 /cookie-banner.js$domain=~labs.strava.com
+/slr_js/allowCookies.js
 /cookiepopup.js
 /js/consent-modal.js
 ||static.trbo.com/plugin$script
@@ -18636,7 +18656,7 @@ consent.cookiefirst.com$domain=~swietawdomu.pl
 /modules/cookiesplus/views/js/cookiesplus.js
 /gdpr-popup.js
 ||tagcommander.com/privacy$script,domain=~labanquepostale.fr
-/ajax/libs/cookieconsent2$domain=~membersuite.com|~rijbewijskeuringennederland.nl
+/ajax/libs/cookieconsent2$domain=~membersuite.com|~rijbewijskeuringennederland.nl|~download.pixelexperience.org
 breakfastboat.com
 /cookie-consent.js$domain=~lacoste.com
 /cookienotice-bootstrap.js
@@ -18710,7 +18730,6 @@ mmm.carbuyer$domain=carbuyer.co.uk
 /vendor/cookies$domain=norma-connect.de
 /CookiePolicy/*$domain=test-aankoop.be
 aliveachiever.com$domain=dailydot.com
-/allowCookies.js$domain=kitsforcash.com
 cookie-bar.salessquad.co.uk$domain=blochworld.com
 /coobann$domain=aida.de
 /dsgvoCC.js$domain=strabag-pfs.de
