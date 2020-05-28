@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: 74cYbFtCEAhBKkL462ZuyA
+! Checksum: ZhRXrYFrXy3wG6uKW+f2lg
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202005280730
-! Last Modified: 2020年05月28日 07:30
+! Version: 202005281200
+! Last Modified: 2020年05月28日 12:00
 ! Homepage: https://adf.minggo.eu.org
 !
 !本规则合并自EasylistChina、EasylistLite、CJX'sAnnoyance
@@ -1481,6 +1481,7 @@ _xiuno_com_ad/
 ##img[src*=".sinaimg."][style="width:150px;height:300px"]
 ##script + #coupletBox
 ##script + #rbbox
+##.gglist
 ##script[src="/js/sy2.js"] + div[align="center"]
 ##span[title="neteasefooter"]
 ##table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"]
@@ -4725,7 +4726,7 @@ _yad_jsonp_
 ||188soft.com/js/PCsoftDetailAD.js
 ||189.cn/dns/
 ||18avday.*/aa/
-||18comic.*/iframe?
+||18comic.*/iframe
 ||18comic.*/static/resources/images/168/
 ||18comic.*/templates/frontend/airav/js/c911d19b.js
 ||18comic.*/templates/frontend/airav/js/d
@@ -7346,8 +7347,6 @@ _yad_jsonp_
 ||lgmi.com/windows/*-Advert.
 ||lgmi.com^*_gg
 ||lh168.net^*/attachment/portal/
-||liangchan.net/aaddaadd/
-||liangchan.net/adf/
 ||liangjan.com/js/show_
 ||lianmeng.la/ad1/
 ||liantu.cn/script/index.asp
@@ -9326,6 +9325,7 @@ _yad_jsonp_
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||lanrenzhijia.com/Public/images/head_right_top.gif
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
 szxx.com.cn###A1
@@ -11969,7 +11969,6 @@ cww.net.cn##.ggbar
 baidu.com##.ggbtm-vip-close
 55188.com##.ggdistich
 chazidian.com##.ggin
-eastday.com##.gglist
 romzhijia.net##.ggposition
 rising.cn##.ggqh
 weather.com.cn##.ggt
@@ -12628,10 +12627,6 @@ dilidili.wang##.overflow-box > ul > li > a[href^="http"]:not([href*=".dilidili."
 avsuggest.com##.overlay
 udn.com##.overlay-container
 lalulalu.com##.overture_banner
-allhabit.com##.overture_forumlist
-allhabit.com##.overture_threadlist
-allhabit.com##.overture_threadlist_single
-allhabit.com##.overture_top_banner
 appledaily.com.tw##.owl-lazy[tcode^="AD:"]
 sgcn.com##.oyad2.cl
 quanmin.tv##.p-room_ad
@@ -14562,6 +14557,7 @@ gohome.com.hk#@#div[id^="div-gpt-ad"]
 !---------------------------------URL Whitelist-------------------------------!
 @@&adurl=http://$domain=360bifen.cc|360bifen.com
 @@.adserver.$domain=litv.tv
+@@||doubleclick.net/instream/ad_status.js$domain=investing.com
 @@.com/adv/$domain=my.ctrip.com
 @@.gif#$domain=cnprint.org|huhupan.com|tgfcer.com|wgun.net
 @@.jpg#$domain=huhupan.com
