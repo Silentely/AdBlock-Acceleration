@@ -13,7 +13,7 @@
 * 📺 路由器端
   * [AdGuard Home](https://adguard.com/zh_cn/adguard-home/overview.html)
   * [KoolProxyR](https://github.com/user1121114685/koolproxyR)
-  * Adbyby
+  * [Adbyby](http://www.adbyby.com/)
   * [阿呆喵](http://www.admflt.com)
 * 📱 移动端
   * [AdGuard for Android](https://adguard.com/zh_cn/adguard-android/overview.html)
@@ -31,12 +31,12 @@
 ## 🕹 项目原理
 项目使用了 GitHub Actions 在每天 UTC 时间每隔4小时更新下载一次最新规则，然后推送到 GitHub Repo。
 配合 [jsDelivr](https://www.jsdelivr.com) 与 [staticdn](https://raw.staticdn.net) 全球加速 CDN 来分发规则。
-从而实现秒秒钟更新所有去广告规则，简直不要太爽。
+从而实现秒秒钟更新所有去广告规则。
 
 ## 🧪 个人测试
 正常网络环境下（无任何代理，在中国大陆网络环境下）
-* 使用加速链接前：更新 12 个规则最长可能需要 4 分钟 56 秒，而且有 3 个更新失败。
-* 使用加速链接后：所有规则在 10 秒内全部更新完成。
+* 使用加速链接前：更新 13 个规则最长可能需要 5 分钟 12 秒，而且有 4 个更新失败。
+* 使用加速链接后：所有规则在 15秒内全部更新完成。
 
 ## 🚛 完善项目
 希望大家可以提交 Issue 或者 Request 来帮助我完善规则
@@ -69,6 +69,6 @@
 | 大圣净化 | [原始](https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/ds_hosts.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/ds_hosts.txt) |
 | 1024 hosts | [原始](https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/1024_hosts.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/1024_hosts.txt) |
 
-##    特别感谢
+##    特别鸣谢
 
 * [@Hackl0us](https://github.com/Hackl0us)
