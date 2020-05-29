@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 317.202005240759
+! Version: 317.202005290521
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 24 May 2020 05:59 UTC
+! Last modified: 29 May 2020 03:21 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -1927,7 +1927,7 @@
 ###informacja_ciastka
 ###cookie-notice-top-banner
 ###cookieSignpost
-###cookie-accept:not(button):not(.btn):not(.button)
+~mycall.no###cookie-accept:not(button):not(.btn):not(.button)
 ###cookieAgreementContent
 ##.cookie-info-bar:not(body):not(html)
 ###cookie-section
@@ -9633,7 +9633,7 @@
 ###cookieConsentHolder
 ##.bottom-cookie-consent
 ###bannerCookieLaw
-~tele2.nl,~t-mobile.nl##.footer ~ .cookie[style*="block"]
+~tele2.nl,~t-mobile.nl##.footer ~ .cookie
 ###cookieConfirmDiv
 ###site-banner-gdpr
 ###keks_notice
@@ -10252,7 +10252,7 @@
 ##.cookies-prompt.section.--shown
 ##.cookie_information--bar
 ###gh-cookie-hint
-~ffm.to##.privacy-notice-gdpr
+~ffm.to,~orcd.co##.privacy-notice-gdpr
 ###wf_cookie_notice_wrapper
 ###BorlabsCookieBox
 ###gdprToolbar
@@ -10357,7 +10357,7 @@
 ###CookieInformDiv
 ##body > #trackingcookies
 ##.comp-cookie-bar:not(body):not(html)
-##.footer ~ .cookie.cookie--show
+##.m-cookies-info
 ###js-cookie-dialog.cookie-dialog-container
 ##.bloc_cookie_tracking
 ###trackers-ask-consent-gdpr
@@ -10470,7 +10470,7 @@
 ###sicmsCookieInfoWrapper
 ###wrapper > .cookie.active
 ###main-section.with-cookie-info > .block-info.cookie
-###main > .footer ~ .cookie
+###dsgvo_hint
 ##.cookie[data-shelf-name*="Notification"]
 ##.header > .cookie.visible
 ##.done-gdpr-alert-box-wrapper
@@ -11616,6 +11616,17 @@
 ##.site-footer ~ .gdpr
 ##.iCookie.iCookie-whitered
 ##.q-cookie-consent__container
+##.alert-info[aria-label*="GDPR"]
+###cmsCookieChoiceBanner
+##.gdpr-consent-box
+##.gdprdiv
+##.dialogCookieWarning
+###cookiesOnSite
+##.ucp-cookiebanner-wrapper
+##.gdpr > .gdpr__wrapper
+##.gdpr__wrapper.cookies
+###CookieDialog[role="alertdialog"]
+##.cookie-message__overlay
 !
 ! CUSTOM RULES
 !
@@ -18013,7 +18024,6 @@ proxyparts.com##.cookies
 top-dent.cz##body > .CA
 montersi.pl##.motersi-cookie-notice
 anhaenger-bayern.de###privacyPolicyWindow
-xing.com##div[class*="CookieConsent"], .consent_wrapper
 radio.de###main > div[class]:not(:only-child):last-child
 radio.fr###main > div[class]:not(:only-child):last-child
 radio.at###main > div[class]:not(:only-child):last-child
@@ -18084,6 +18094,12 @@ northamptonshiresurprise.com###popupbanner
 esanum.de##esn-cookie-disclaimer
 animade.tv##body > div[data-react-class="Cookies"]
 localsearch.ch###root > div:first-child
+forum.tele2.nl###targetedPopupFrame
+gyproc.it##.disclaimer
+gokom.eu###gokom-cookies
+gfycat.com##.toast-notification[class*="privacy"], .announcement-banner
+joeallen.co.uk###wp-notification
+nhc.no###dpm-consent-form
 !
 ! SCRIPT BLOCKING
 !
@@ -18166,7 +18182,7 @@ cookieprivacygenerator.js
 ||bobulous.org.uk/javascript-head-sitewide.js$script
 ||promoracing.it/cookies/popup.cookie.js$script
 ||harazd.net/info_o_cookie_utf8.js$script
-||iubenda.com/cookie_solution$script,domain=~radiomontecarlo.net
+||iubenda.com/cookie_solution$script,domain=~radiomontecarlo.net|~video.repubblica.it|~video.lastampa.it
 cookie_acceptance_modal.js
 eurail_responsive_law_cookie_banner.js
 ||cdn.dometic.com/ui/dometic/dist/components/cookiescomponent$script
@@ -18548,7 +18564,6 @@ cmp-loader.choice.faktor.io
 /web/components/cookieusage/clientlib
 /wp-content/plugins/eagerly-tools-cookie
 /scripts/cookiebar
-/cookielex/kwdnt.js
 /resources/CookieConsent/cookies.js
 /privacypolicy/styles/all/template/remove_url.js
 /assets/consent-manager.js
