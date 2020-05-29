@@ -3,7 +3,7 @@
 ! Description: Filter composed from several other filters (English filter, Social media filter, Spyware filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2020-05-29T14:25:40.204Z
+! Last modified: 2020-05-29T18:36:19.512Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.8
 !
@@ -142,6 +142,11 @@
 !
 ! Содержит доменные имена, использующиеся рекламными сетями.
 !
+||zxsddfs.pro^
+||fxfahn.com^
+||icilfj.com^
+||rzjirk.com^
+||ivpraz.com^
 ||messiupal.com^
 ||urchinflare.com^
 ||glattepush.com^
@@ -4185,6 +4190,7 @@ adbetnet.com
 ||kolsh.cn^
 !END: Chinese ad servers
 !
+||iiprpq1bsedg.com^
 ||rotdubboy.com^
 ||roujaufu.net^
 ||m2track.co^
@@ -7013,6 +7019,9 @@ www.llllllllllll.net^
 ! Eimg.jp
 ||adingo.jp.eimg.jp^
 !
+||act1-1.info^
+||ads-connect.com^
+||blogroll.livedoor.net^
 ||ueuodgnrhb.com^
 ||shqbsdjatunl.com^
 ||dis.hogei.info^
@@ -23807,26 +23816,6 @@ www.llllllllllll.net^
 ||widebanner.com^
 ||yobee.it^
 ||zodiakactive.com^
-
-!
-! Source name: AdGuard Tracking Protection filter third-party trackers
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/tracking_servers.txt
-!
-!
-! Blocking Firebase crash reporting is quite problematic:
-! https://github.com/AdguardTeam/AdguardForAndroid/issues/1334#issuecomment-319302543
-! ||app-measurement.com^
-!
-! Crashlytics is commented by @ameshkov.
-! The reason for unblocking crashlytics is to not make developers life worse by breaking crash reporting.
-! In a hostile network like when an ad blocker is present, apps might be crashing, and these errors need to be
-! reported to devs, otherwise they won't learn about the issue and won't fix it.
-! Also, it is not a common third-party analytics tracker, Crashlytics is not used for collecting users' data.
-! ||e.crashlytics.com^
-! ||settings.crashlytics.com^
-!
-! ||ensighten.com^$third-party - not a tracker
-!
 ||collect.feefo.com^
 ||js.ptengine.jp^
 ||c.tgknt.com^
@@ -25379,6 +25368,11 @@ charlestownwyllie.oaklawnnonantum.com^
 ||plbslog.umeng.com^
 ||analysys.cn^
 ||logs.supersonic.com^
+!
+! Swiftkey(Microsoft) Keyboard 
+||telemetry.api.swiftkey.com^
+||telemetry.swiftkey.com^
+||touchtype-fluency.com^
 !
 ! Appsflyer
 !
@@ -31363,8 +31357,8 @@ vkcdnservice.appspot.com^
 !
 ! Title: hostsVN
 ! Description: The filter contains ad and tracking networks in Vietnam.
-! Last modified: 29 May 2020 15:14 UTC+7
-! Version: 2005291514
+! Last modified: 29 May 2020 23:09 UTC+7
+! Version: 2005292309
 ! Blocked: 444 rules
 ! Expires: 1 days (update frequency)
 ! Homepage: https://bigdargon.github.io/hostsVN/
@@ -37792,6 +37786,9 @@ vkcdnservice.appspot.com^
 ! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/333
 @@||click.virt.s*.exacttarget.com^|
 !
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/345
+! Blocked by alimama.com alias
+@@||click.simba.taobao.com^|
 ! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/340
 @@||cs.silverpop.com^|
 ! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/312
