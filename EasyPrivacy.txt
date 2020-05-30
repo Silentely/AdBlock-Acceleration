@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202005300004
+! Version: 202005300358
 ! Title: EasyPrivacy
-! Last modified: 30 May 2020 00:04 UTC
+! Last modified: 30 May 2020 03:58 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3010,6 +3010,7 @@
 /onfocus-tag.
 /onlinecount.php
 /onsitegeo.
+/onstuimig-tag-
 /opdc.gif?
 /opdc.js
 /open.aspx?
@@ -11716,9 +11717,9 @@ _mongo_stats/
 ||zoover.co.uk/tracking/
 ||zope.net^*/ghs_wa.js
 ! uBO-CNAME (Specific whitelists)
-||go.techtarget.com^
+||go.techtarget.com^$image,script
 ||trk.techtarget.com^
-||users.techtarget.com^
+||users.techtarget.com^*/GetCookiesWithCallback?
 ! akamai
 ||akamai.com/crs/lgsitewise.js
 ||akamai.net/*.babylon.com/trans_box/
@@ -12597,7 +12598,6 @@ _mongo_stats/
 ||advancedmp3players.co.uk/support/visitor/index.php?
 ||advancedtracker.appspot.com^
 ||advfn.com/space.gif?
-||aexp-static.com/api/axpi/omniture/s_code_serve.js?$domain=serve.com
 ||affiliate.resellerclub.com^
 ||affiliates.genealogybank.com^
 ||affiliates.londonmarketing.com^
@@ -12653,6 +12653,7 @@ _mongo_stats/
 ||amazonaws.com^*/pzyche.js
 ||amcnets.com/cgi-bin/true-ip.cgi
 ||amd.com/us/as/vwo/vwo_
+||americanexpress.com/beacon
 ||americanexpress.com/monitoring/
 ||amy.gs/track/
 ||analytic.imlive.com^
@@ -13096,6 +13097,7 @@ _mongo_stats/
 ||dominos.co.uk^*/universal.html?
 ||dp.shoprunner.com^
 ||dragonstatic.com/parking/js/track.js
+||drop.com/impressionsBeacon
 ||dropbox.com/alternate_
 ||dropbox.com/el/?b=open:
 ||dropbox.com/log/
@@ -13598,7 +13600,6 @@ _mongo_stats/
 ||kelkoo.co.uk/kk_track?
 ||kelkoo.co.uk^*/tracker/
 ||kelkoo.com/kk_track?
-||kg.aws.mashable.com^
 ||killerstartups.com^*/adsensev
 ||kinesisproxy.hearstlabs.com^
 ||king.com/api/events?
@@ -13612,8 +13613,7 @@ _mongo_stats/
 ||kohls.com/_bm/_data
 ||kohls.com/test_rum?
 ||kosmix.com^*.txt?pvid=
-||kyte.tv/flash/MarbachMetricsOmniture.swf
-||kyte.tv/flash/MarbachMetricsProvider.swf
+||krakenlyrics.com/view?
 ||laas.americanexpress.com^
 ||lancasteronline.com/javascript/ga.php
 ||landrover.com/system/logging/
@@ -13710,8 +13710,7 @@ _mongo_stats/
 ||marketing.nodesource.com^
 ||marriott.com^*/Bootstrap.js
 ||marriott.com^*/mi_customer_survey.js
-||mashable.com/pv.xml
-||massdrop.com*^/pixelrb?
+||mashable.com/s/js/zad.js
 ||mastercard.com^*/Analytics/
 ||matchesfashion.com/js/Track.js
 ||mate1.com^*/iframe/pixel/
@@ -13807,9 +13806,9 @@ _mongo_stats/
 ||mozilla.com/js/track.js
 ||mozilla.net^*/webtrends/
 ||mozilla.org/includes/min/*=js_stats
-||mp3lyrics.org^*/cnt.php?
 ||mql5.com/tr?
 ||msecnd.net^*/wt.js?
+||mshcdn.com/assets/lib/aab-$script,domain=mashable.com
 ||msn.com/collect/
 ||msn.com/ro.aspx?
 ||msn.com/script/tracking*.js
@@ -15082,6 +15081,7 @@ _mongo_stats/
 ||zytpirwai.net/track/
 ! Ebay trackers
 ! https://nullsweep.com/why-is-this-website-port-scanning-me/
+/^https?:\/\/ir\.ebaystatic\.com\/rs\/v\/[a-zA-Z0-9]{18,}\.js/$script,domain=vipr.ebaydesc.com
 ||127.0.0.1^$third-party,domain=ebay.at|ebay.be|ebay.ca|ebay.ch|ebay.cn|ebay.co.uk|ebay.com|ebay.com.au|ebay.com.hk|ebay.com.my|ebay.com.sg|ebay.de|ebay.es|ebay.fr|ebay.ie|ebay.it|ebay.nl|ebay.ph|ebay.pl
 ||ebay.com/nkfytkqtoxtljvzb.js$script,domain=ebay.com
 ||ebay.com/nkfytkqtoxtljvzbxhr.js$script,domain=ebay.com
@@ -15429,7 +15429,6 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ! Preliminarily blocking Omniture s_code tracking scripts (versions H.25 - H.25.2) due to breakage (https://adblockplus.org/forum/viewtopic.php?f=10&t=11378)
 ||abc.com/service/gremlin/js/files/s_code.js?$domain=abc.go.com
 ||adobe.com^*/omniture_s_code.js
-||aexp-static.com/api/axpi/omniture/s_code_myca_context.js$domain=americanexpress.com
 ||aircanada.com/shared/common/sitecatalyst/s_code.js
 ||announcements.uk.com^*/s_code.js
 ||atgstores.com/js/lowesca_s_code.js$domain=lowes.ca
