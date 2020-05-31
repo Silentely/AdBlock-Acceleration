@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! title: 乘风 视频广告过滤规则
-! Version: 202003271
+! Version: 202005311
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 
 v.youku.com##.control-phonewatch,#right-title-ad-banner
-v.youku.com##+js(nano-stb)
+!v.youku.com##+js(nano-stb)
 ||atm.youku.com/
 ||cibntv.net/youku/$media
 ||valipl.cp31.ott.cibntv.net/$media
@@ -17,7 +17,7 @@ v.youku.com##+js(nano-stb)
 
 iqiyi.com##div[data-adzone][adid]
 !iqiyi.com##+js(nano-sib)
-!iqiyi.com##+js(aopr, DOMParser)
+iqiyi.com##+js(aopr, DOMParser)
 ||t7z.cupid.iqiyi.com/show$script
 ||static.iqiyi.com/js/common/mars_v.js$script
 !||iqiyi.com/videos/other/20$xmlhttprequest,object-subrequest
@@ -79,6 +79,7 @@ le.com##.banner_ad,#rightBottomPop,div.banner_left,div.banner_right,div.column_r
 douyu.com##div[class$="-ad"],div[class|=ad],div.no-login
 ||douyucdn.cn/adxdsp/$image
 ||wan.douyu.com/
+huya.com###hy-ad,#hy-ab
 ||g.huya.com/
 
 ||pub.funshion.com

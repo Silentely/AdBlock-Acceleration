@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202005310540
+! Version: 202005311105
 ! Title: EasyPrivacy
-! Last modified: 31 May 2020 05:40 UTC
+! Last modified: 31 May 2020 11:05 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1699,6 +1699,7 @@
 /emtj_tracker.
 /end.gif?
 /endpoint/stats.
+/EndpointTracker/*
 /engine/ping?
 /ent_counter?
 /entry.count.image?
@@ -4648,6 +4649,7 @@
 /v1/pixel?
 /v1/r.gif?
 /v1/tracker.js
+/v2/tracking/*
 /v4/analytics.
 /v4/analytics/*$~xmlhttprequest
 /v5.3nse.
@@ -6841,6 +6843,7 @@ _mongo_stats/
 ||mediaarmor.com^$third-party
 ||mediaforgews.com^$third-party
 ||mediagauge.com^$third-party
+||mediaglacier.com^$third-party
 ||mediametrics.ru^$third-party
 ||mediaplex.com^$third-party
 ||mediarithmics.com^$third-party
@@ -7484,6 +7487,7 @@ _mongo_stats/
 ||smart-dmp.com^$third-party
 ||smart-ip.net^$third-party
 ||smart-traffik.com^$third-party
+||smartclip-services.com^$third-party
 ||smartctr.com^$third-party
 ||smarterhq.io^$third-party
 ||smarterremarketer.net^$third-party
@@ -10163,6 +10167,7 @@ _mongo_stats/
 ||collector-*.tvsquared.com^
 ||collector-api.99designs.com^
 ||collector.automote.co.nz^
+||collector.clareity.net^
 ||collector.contentexchange.me^$third-party
 ||collector.mazeberry.com^
 ||collector.roistat.com^
@@ -10557,6 +10562,7 @@ _mongo_stats/
 ||go.com/capmon/GetDE/?
 ||go.optifuze.com^
 ||go.toutapp.com^$third-party
+||go.trouter.skype.com^
 ||goadv.com^*/track.js
 ||goaww.com/stats.php
 ||godaddy.com/js/gdwebbeacon.js
@@ -11750,15 +11756,19 @@ _mongo_stats/
 ||zoover.co.uk/tracking/
 ||zope.net^*/ghs_wa.js
 ! Fingerprinting
+||apps-pro.tid.es/external/tailormade-no-jquery-
 ||bcicdn.com^*/hg.js
 ||cloudfront.net/js/grin-sdk.js
 ||dingxiang-inc.com/ctu-group/constid-js/index.js
+||fyrsbckgi-c.global.ssl.fastly.net^
 ||he7ll.com/api/js/ec-
 ||ltwebstatic.com^*/assets/common.$script
 ||mhxk.com^*/main/entry.common.$script
 ||nofraud.com/js/device.js
 ||nofraud.com^*/customer_code.js
+||pgimgs.com^*/desktop_js_header.js
 ||poll-maker.com^*/scpolls.js
+||promo.ge/res/delivery/delivery.js
 ||realperson.de/system/third-party/rpfp/rpfp.min.js
 ||ref.dealerinspire.com^
 ||resu.io/scripts/resclient.min.js
@@ -15141,6 +15151,8 @@ _mongo_stats/
 ||ebay.com/nkfytkqtoxtljvzbxhr.js$script,domain=ebay.com
 ||ebaystatic.com^*/10341xh50yz21mhhydueu4m5wad.js$script,domain=ebay.com
 ||ebaystatic.com^*/g52yxhxv2mzcbealmlkri4kn5av.js$script,domain=ebay.com
+! Fingerprint
+||tipsport.org/scripts/closure.js
 ! Forter
 /^https?:\/\/.*[a-f0-9]{6,}\.cdn.*\.forter\.com\//$script,third-party
 ||forter.com/events
@@ -17150,8 +17162,9 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||d2wzl9lnvjz3bh.cloudfront.net/frosmo.easy.js$domain=lippu.fi
 @@||dynamicyield.com/api/$script,domain=gigantti.fi
 @@||frosmo.com^$xmlhttprequest,domain=kauppahalli24.fi
-@@||googletagmanager.com/gtm.js?$domain=cdon.fi
+@@||googletagmanager.com/gtm.js$script,domain=cdon.fi|como.fi|episodi.fi|fum.fi|inferno.fi|rumba.fi|soundi.fi|tilt.fi
 @@||inpref.s3.amazonaws.com/sites/$script,domain=kauppahalli24.fi
+@@||kiwi45.leiki.com/focus/$script,domain=como.fi|episodi.fi|fum.fi|inferno.fi|rumba.fi|soundi.fi|tilt.fi
 @@||lekane.net/lekane/dialogue-tracking.js?$script
 ! Hebrew
 @@||amazonaws.com/static.madlan.co.il/*/heatmap.json?$xmlhttprequest
