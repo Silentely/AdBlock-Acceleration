@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202006051128
+! Version: 202006051538
 ! Title: EasyPrivacy
-! Last modified: 05 Jun 2020 11:28 UTC
+! Last modified: 05 Jun 2020 15:38 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -917,6 +917,8 @@
 /awAnalytics.
 /awe/ccs.
 /awesc.php?
+/awp.log
+/awpys.log
 /aws-analytics.js
 /awstats.js
 /awstats_misc_tracker
@@ -6316,7 +6318,6 @@ _mongo_stats/
 ||flashgamestats.com^$third-party
 ||flashtalking.com^$third-party
 ||flcounter.com^$third-party
-||flix360.com^$third-party
 ||flixfacts.co.uk^$third-party
 ||flixsyndication.net^$third-party
 ||fluencymedia.com^$third-party
@@ -10505,6 +10506,7 @@ _mongo_stats/
 ||flex.msn.com/mstag/
 ||flix360.com/beat?
 ||flixcar.com/delivery/
+||flixcar.com/gvid
 ||flixcdn.com^*/track.js
 ||flixster.com^*/analytics.
 ||flocktory.com^*/tracks/
@@ -11185,6 +11187,7 @@ _mongo_stats/
 ||royalecms.com/statistics.php?
 ||rs.sinajs.cn^
 ||rss.tmgrup.com.tr^
+||rt.flix360.com^
 ||rtt.campanja.com^
 ||ru4.com/click?
 ||rum.conde.io^
@@ -17013,6 +17016,8 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||zappos.com/js/trackingPixel/mercentTracker.js
 @@||zylom.com/images/site/zylom/scripts/google-analytics.js
 @@||zynga.com/current/iframe/track.php?$domain=apps.facebook.com
+! Cloudflare hcaptcha test
+@@/cdn-cgi/images/trace/captcha/js/h/transparent.gif$image,~third-party
 ! uBO-CNAME (Specific whitelists)
 @@||n8s.jp^$script,domain=nikkei.com
 ! facebook related (https://forums.lanik.us/viewtopic.php?f=64&t=43722)
