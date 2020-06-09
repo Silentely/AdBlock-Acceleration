@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: WOdiHRXMcyeo0Qp1+zD76Q
+! Checksum: 4pq7BQMvPZFQn5P3uFmKFA
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202006092000
-! Last Modified: 2020年06月09日 20:00
+! Version: 202006092330
+! Last Modified: 2020年06月09日 23:30
 ! Homepage: https://adf.minggo.eu.org
 !
 !本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
@@ -77,7 +77,7 @@ xhamster.com##.sponsorBottom
 @@||apis.google.com^$domain=openload.co|oload.tv|javno.me|imagebam.com|imagevenue.com|playvid.com|4horlover.com|linkshrink.net
 @@||cdn.bootcss.com^$domain=openload.co|oload.tv|javno.me|imagebam.com|imagevenue.com|playvid.com|4horlover.com|linkshrink.net
 @@||googleapis.com^$domain=openload.co|oload.tv|javno.me|imagebam.com|imagevenue.com|playvid.com|4horlover.com|linkshrink.net
-@@||googletagmanager.com/gtm.js$domain=www.nintendo.co.jp
+!@@||googletagmanager.com/gtm.js$domain=www.nintendo.co.jp
 @@/js/ads.$domain=shrinklink.co
 ||115.com/static/plug/video_play/qrcode.js
 ||ad.directrev.com^$popup
@@ -13665,7 +13665,7 @@ sinolub.com##[id^="xker"]
 32r.com##[onclick*="@"]
 zhangxinxu.com##[onclick*="Ad"]
 42xz.com##[onclick*="godownload"]
-duodada.com##[style^="width: 100%; height: auto; position: fixed;"]
+duodada.com##[style*="position: fixed; left: 0px;"]
 kisssub.org##a > img[src*=".0o0.ooo/"]
 5dm.tv##a > img[src*=".sinaimg."]
 ruanyifeng.com##a > img[src*="wangbase.com/blogimg/asset/"]
@@ -20078,6 +20078,7 @@ _box_ad_
 ||gaosan.com/js/b.js
 ||igo99.cn/js/freetest.js
 !------------------------Specific element hiding rules------------------------!
+douyu.com##.PrivilegeGiftModalDialog
 igo99.cn##.adBG
 danzhaowang.com##.qxzx_scho
 redocn.com##.big_vip_gg
