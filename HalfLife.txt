@@ -1,13 +1,13 @@
 [Adblock Plus 2.0]
-! Checksum: oyFxS2nsNKwMjVpBDvQmmA
+! Checksum: WOdiHRXMcyeo0Qp1+zD76Q
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202006091000
-! Last Modified: 2020年06月09日 10:00
+! Version: 202006092000
+! Last Modified: 2020年06月09日 20:00
 ! Homepage: https://adf.minggo.eu.org
 !
-!本规则合并自EasylistChina、EasylistLite、CJX'sAnnoyance
-!并补充了贴吧过滤规则，感谢各位大大的分享！
+!本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
+!并补充了贴吧过滤规则，感谢各位前辈的分享！
 !如有任何疑问、意见或建议，请反馈至：HalfLife吧
 !
 ! Fix for MS Edge
@@ -77,6 +77,7 @@ xhamster.com##.sponsorBottom
 @@||apis.google.com^$domain=openload.co|oload.tv|javno.me|imagebam.com|imagevenue.com|playvid.com|4horlover.com|linkshrink.net
 @@||cdn.bootcss.com^$domain=openload.co|oload.tv|javno.me|imagebam.com|imagevenue.com|playvid.com|4horlover.com|linkshrink.net
 @@||googleapis.com^$domain=openload.co|oload.tv|javno.me|imagebam.com|imagevenue.com|playvid.com|4horlover.com|linkshrink.net
+@@||googletagmanager.com/gtm.js$domain=www.nintendo.co.jp
 @@/js/ads.$domain=shrinklink.co
 ||115.com/static/plug/video_play/qrcode.js
 ||ad.directrev.com^$popup
@@ -252,11 +253,11 @@ cam4.com##.xmlAdsWrapper
 chaturbate.com##IMG[rel="nofollow"]
 chaturbate.com##.ad
 chaturbate.com##.banner
-! �л�������2���ӹ��
+! 中华网闲置2分钟广告
 junshi.china.com###mod-box
 junshi.china.com##.w_xiao>.side_bdgg
 toutiao.china.com###js-free-time-show
-! �Ͷ�Ӱ��
+! 低端影视
 ||ddrk.me/vjs-plugins/videojs.das.min.js
 ! Facebook
 www.facebook.com###pagelet_side_ads
@@ -420,7 +421,101 @@ tieba.baidu.com##.light_top_ext_area
 tieba.baidu.com##.j_click_stats, .j_click_stats+*
 tieba.baidu.com##.more_btn_package
 tieba.baidu.com##.tuijian-wrap
-! EasyList China
+! 乘风 视频广告过滤规则
+
+v.youku.com##.control-phonewatch,#right-title-ad-banner
+!v.youku.com##+js(nano-stb)
+||atm.youku.com/
+||cibntv.net/youku/$media
+||valipl.cp31.ott.cibntv.net/$media
+|https://static.youku.com/index/js/ikuAdapterNew.js
+|https://js.ykimg.com/youku/dist/js/lib/ikuAdapterNew.js
+!||ykimg.com/material/$image
+!youku.com##.ad-wrap
+||sealine.youku.com/yk/*callback=adpagesdk$script
+
+iqiyi.com##div[data-adzone][adid]
+!iqiyi.com##+js(nano-sib)
+iqiyi.com##+js(aopr, DOMParser)
+||t7z.cupid.iqiyi.com/show$script
+||static.iqiyi.com/js/common/mars_v.js$script
+!||iqiyi.com/videos/other/20$xmlhttprequest,object-subrequest
+||ssports.iqiyi.com/app/$object-subrequest
+
+qq.com##.mod_ad
+v.qq.com##+js(json-prune,adList ad)
+v.qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
+@@||qq.com/fcgi-bin/
+||adss.video.qq.com/
+||gtimg.com/qqlive/
+||miaozhen.com/
+||reachmax.cn/
+||tencentmind.com/
+||xtgreat.com/
+
+bilibili.com##.gg-floor-module,#slide_ad
+||api.bilibili.com/x/web-show/res/loc?pf=$~script
+||hdslb.com/bfs/sycp/creative_img/$image
+
+acfun.cn###ad-comment,#ad-player-view
+||aixifan.com/static/*/appGuide/
+
+cctv.com###bgAd_div
+||imall.cctv.com/$subdocument
+||bjcathay.com/
+
+pptv.com##div[id^=afp_],div[id$=-afp],#video-download-game
+||synacast.com
+||de.as.pptv.com^
+||g.pptv.com/game/$subdocument
+
+@@||tb.mgtv.com/sdk/*/ad-sdk.js$script
+||video.da.mgtv.com/$media
+||da.mgtv.com/mediafiles/wiad_creative/$image
+
+@@||js.tv.itc.cn/gg.seed.js
+||css.tv.itc.cn/m/img/player/dlBanner.$image
+||data.vod.itc.cn/*&prod=ad&$media
+||api.my.tv.sohu.com/wm/getads.do?
+||aty.sohu.com/
+||go.sohu.com/
+||tv.sohu.com/upload/csad/admaster/$image
+tv.sohu.com##.x-dl-shake.x-download-panel, #playerBar > div.area ~a
+
+1905.com##.ad-couplet,#hd-tab-label4,div.bd-tab.video-list:last-child
+||aliyun.com^$domain=1905.com
+||aliyuncs.com^$domain=1905.com
+
+@@||ark.letv.com/adx?adzone=
+@@||stat.letv.com/$script
+*/letv-gug/$media,object-subrequest
+||letvimg.com/$object,object-subrequest
+||letvimg.com/*_gugwl/$image
+||js.letvcdn.com/*_banner_$script
+||banana.le.com/
+adxvip.com
+behe.com
+biddingx.com
+cr-nielsen.com
+kejet.net
+||jd.com/$domain=le.com
+ulmdb.cn
+yoyi.com.cn
+zhiziyun.com
+le.com##.banner_ad,#rightBottomPop,div.banner_left,div.banner_right,div.column_right>.lh_box
+
+douyu.com##div[class$="-ad"],div[class|=ad],div.no-login
+||douyucdn.cn/adxdsp/$image
+||wan.douyu.com/
+huya.com###hy-ad,#hy-ab
+||g.huya.com/
+
+||pub.funshion.com
+||www.dililitv.com/*.php?ad=$script
+
+*/preroll/$media,domain=91porn.com
+||91p20.space^
+||waust.at^! EasyList China
 !-----------------------General advert blocking filters-----------------------!
 -1688-wp-media/ads/
 -880-80-4.jpg
@@ -1491,6 +1586,7 @@ _xiuno_com_ad/
 ##table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"]
 !----------------------------------Ads-Union----------------------------------!
 .8ox.cn
+||manhuachi.com^
 .cc/s.php?id=$script,third-party
 .cn/?ss=$script,third-party
 .cn/s.php?id=$script,third-party
@@ -4423,7 +4519,7 @@ $popup,third-party,domain=520cc.cc|520cc.me|5278.cc|5278bbs.com|67.212.233.37|76
 !----------------------Specific advert blocking filters-----------------------!
 $image,domain=ip.cn
 $image,third-party,domain=lady1.top
-$script,third-party,domain=52movieba.com|66s.cc|ab126.com|audio699.com|dm530.net|kan-tv.com|m.manhuadui.com|m.supfree.net|mp4pa.com|ohmanhua.com|onemanhua.com|torrentkitty.se|torrentkitty.tv|torrentkittyzw.info|wltmv.com|wnacg.com|xiepp.com
+$script,third-party,domain=52movieba.com|66s.cc|ab126.com|audio699.com|dm530.net|kan-tv.com|m.manhuabei.com|m.supfree.net|mp4pa.com|ohmanhua.com|onemanhua.com|torrentkitty.se|torrentkitty.tv|torrentkittyzw.info|wltmv.com|wnacg.com|xiepp.com
 $script,third-party,websocket,domain=52codes.net|m.ting56.com
 $script,third-party,xmlhttprequest,domain=bteve.com
 $websocket,domain=5nj.com|cechi8.com
@@ -14836,7 +14932,7 @@ gohome.com.hk#@#div[id^="div-gpt-ad"]
 @@||ccb.com^*^ad
 @@||ccllaa.com^$generichide
 @@||cdn.doublemax.net/js/rwd_cap.js$domain=ibf.tw
-@@||cdn.staticfile.org^$script,domain=manhuadui.com
+@@||cdn.staticfile.org^$script,domain=manhuabei.com
 @@||cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/*/videojs.ads.min.js$domain=linetv.tw
 @@||changyou.com^$generichide
 @@||chdbits.co/pic/cattrans.gif
@@ -16436,6 +16532,7 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|00sy.c
 @@||cdn.staticfile.org^$script,domain=00ksw.com|00sy.com|147xiaoshuo.com|31xiaoshuo.org|49zw.com|biququ.info|tsxsw.net|ziyouge.com
 @@||gtimg.com/libs/$domain=18xs.org
 @@||libs.baidu.com^$domain=138txt.com|18xs.org|1biqu.com|1kanshu.cc|230book.com|23hh.com|23txt.com|23wxx.com|258zw.com|27xsw.com|2baob.com|30sy.com|33yq.com|365book.net|37zw.net|39shubao.com|3yt.com|52biquge.com|58xs.com|5ccc.tw|63xs.com|78zw.com|81zw.me|88106.com|8jzw.com|99mk.com|99shumeng.net|abiqugew.com|aikantxt.la|aixs.org|aoyuge.com|balingtxt.com|baoshuu.com|biduo.cc|biqiuge.com|biqubao.com|biqudu.tv|biquga.com|biquge.com.cn|biquge.info|biquge.lu|biquge.tv|biquge.tw|biquge11.com|biquge6.com|biquge98.com|biqugecd.com|biqugecom.com|biqugego.com|biqugeii.com|biqugemm.com|biqukan.com|biquku.la|biqusan.com|biqutxt.com|bixia.org|biyuwu.cc|bodekang.net|boluoxs.com|bookbao.org|bookbao9.net|booksky.cc|bxwx.org|bxwx.tw|bxwx8.la|bxwxorg.com|cits0871.com|clewx.com|dashenxiaoshuo.com|day66.com|ddxs.cc|ddxsku.com|dianjiangxin.com|dushuge.net|farpop.com|fhxiaoshuo.org|gdbzkz.com|guaili.org|hatxt.com|hbfie.org|hehuamei.com|heikexs.com|heiyanwang.com|hongyeshuzhai.com|hybiquge.com|imiaobige.com|ishisetianxia.com|ixs.la|ixuanquge.com|jianlaixiaoshuo.com|jx.la|liewen.la|lindiankanshu.cc|liudatxt.com|lwtxt.net|lwxstxt.com|mianhuatang.cc|paoshu8.com|pfwx.com|piaotianxs.com|pingshuku.com|qbxs8.net|qianrenge.cc|qiqint.com|qishudu.com|qq717.com|quledu.net|qushuba.com|rmxs8.com|shenshu.info|shu008.com|shuhaige.com|shuhuangge.org|shuquge.com|siluke.tv|soxs.cc|tangsanshu.com|tpsxs.com|ttzw.tv|txshuku.com|tycqxs.com|u33.cc|vipzw.com|wanwenhui.com|wenxuem.com|wrltxt.com|x23us.me|x81zw.com|xbiquge.la|xbiqugecc.com|xbiqugew.net|xbiquke.com|xbqge.net|xcmxsw.com|xdingdiann.com|xiaoshuosk.com|xieyixs.com|xinxs.la|xqishuta.com|xqiushu.com|xs222.co|xs5200.com|xs98.com|xsjtxt.com|xsw55.com|xszww.com|xuehong.cc|xuehongxs.com|yawenb.com|yikanxiaoshuo.com|yq-888.com|yruan.com|yssm.tv|yunxs.com|zbzw.la|zhuaji.org|zwdu.com|zzs5.com
+||mababa.info^
 ###downdiv > .downcode
 ##.readerListADbox
 ##a[href*="://mgzs.cdn.bcebos.com/"]
