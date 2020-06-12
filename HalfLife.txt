@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: NtLNqY6m8jyLo+LqYVVn+w
+! Checksum: nfmwxnx6AMKkemM5DxcPzg
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202006120800
-! Last Modified: 2020年06月12日 08:00
+! Version: 202006121100
+! Last Modified: 2020年06月12日 11:00
 ! Homepage: https://adf.minggo.eu.org
 !
 !本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
@@ -522,6 +522,8 @@ huya.com###hy-ad,#hy-ab
 ! EasyList China
 !-----------------------General advert blocking filters-----------------------!
 -1688-wp-media/ads/
+/fage/ad.js
+/fage/sjad.js
 -880-80-4.jpg
 -90mh-gg.
 .bid/ads/
@@ -1591,6 +1593,8 @@ _xiuno_com_ad/
 ##table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"]
 !----------------------------------Ads-Union----------------------------------!
 .8ox.cn
+||wanfem.com^
+||xin365.org^$third-party
 .cc/s.php?id=$script,third-party
 .cn/?ss=$script,third-party
 .cn/s.php?id=$script,third-party
@@ -9046,8 +9050,10 @@ _yad_jsonp_
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||doubiy.com/js/top.js
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+acgcku.com##A[href]:not([href*="acgcku."]) > IMG[src*="acgcku.com/wp-content/"]
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2

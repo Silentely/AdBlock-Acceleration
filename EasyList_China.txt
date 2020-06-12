@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: 1KbRgp4WxCPvHHhRTzn+ng
-! Version: 202006120003
+! Checksum: 1bJblmIKZ0EnNuEH6Mk93Q
+! Version: 202006120353
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last Modified: 12 Jun 2020 00:03 UTC
+! Last Modified: 12 Jun 2020 03:53 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: http://abpchina.org/forum/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -14,6 +14,8 @@
 !
 !-----------------------General advert blocking filters-----------------------!
 -1688-wp-media/ads/
+/fage/ad.js
+/fage/sjad.js
 -880-80-4.jpg
 -90mh-gg.
 .bid/ads/
@@ -1083,6 +1085,8 @@ _xiuno_com_ad/
 ##table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"]
 !----------------------------------Ads-Union----------------------------------!
 .8ox.cn
+||wanfem.com^
+||xin365.org^$third-party
 .cc/s.php?id=$script,third-party
 .cn/?ss=$script,third-party
 .cn/s.php?id=$script,third-party
@@ -8538,8 +8542,10 @@ _yad_jsonp_
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||doubiy.com/js/top.js
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+acgcku.com##A[href]:not([href*="acgcku."]) > IMG[src*="acgcku.com/wp-content/"]
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -13786,9 +13792,12 @@ i-cable.com#@#.video_ad
 bitauto.com,yinyuetai.com#@#a[href^="http://ad.doubleclick.net/"]
 brandsales.58.com#@#div[id^="ad_"]
 gohome.com.hk#@#div[id^="div-gpt-ad"]
+logi.im#@#.adsbygoogle
 !---------------------------------URL Whitelist-------------------------------!
 @@&adurl=http://$domain=360bifen.cc|360bifen.com
 @@.adserver.$domain=litv.tv
+@@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl$domain=logi.im
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=logi.im
 @@.com/adv/$domain=my.ctrip.com
 @@.gif#$domain=cnprint.org|huhupan.com|tgfcer.com|wgun.net
 @@.jpg#$domain=huhupan.com
