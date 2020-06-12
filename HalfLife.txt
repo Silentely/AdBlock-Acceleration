@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: nfmwxnx6AMKkemM5DxcPzg
+! Checksum: y5XIMs+uiwfjjFArjeiPkQ
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202006121100
-! Last Modified: 2020年06月12日 11:00
+! Version: 202006121330
+! Last Modified: 2020年06月12日 13:30
 ! Homepage: https://adf.minggo.eu.org
 !
 !本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
@@ -522,6 +522,7 @@ huya.com###hy-ad,#hy-ab
 ! EasyList China
 !-----------------------General advert blocking filters-----------------------!
 -1688-wp-media/ads/
+/nForum/files/adv/*
 /fage/ad.js
 /fage/sjad.js
 -880-80-4.jpg
@@ -7419,9 +7420,6 @@ _yad_jsonp_
 ||news.sina.com.tw/js/ti.js
 ||news.ssp.qq.com/app
 ||news18a.com/image/ad_ina/
-||newsmth.net/nForum/baiduunion/
-||newsmth.net/nForum/files/adv/
-||newsmth.net/nForum/googlead/
 ||newsres.cn/temp/tempad
 ||newume.com/v1/data/ume-
 ||newyx.net/j/down_yd.js
@@ -14300,9 +14298,12 @@ i-cable.com#@#.video_ad
 bitauto.com,yinyuetai.com#@#a[href^="http://ad.doubleclick.net/"]
 brandsales.58.com#@#div[id^="ad_"]
 gohome.com.hk#@#div[id^="div-gpt-ad"]
+logi.im#@#.adsbygoogle
 !---------------------------------URL Whitelist-------------------------------!
 @@&adurl=http://$domain=360bifen.cc|360bifen.com
 @@.adserver.$domain=litv.tv
+@@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl$domain=logi.im
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=logi.im
 @@.com/adv/$domain=my.ctrip.com
 @@.gif#$domain=cnprint.org|huhupan.com|tgfcer.com|wgun.net
 @@.jpg#$domain=huhupan.com
