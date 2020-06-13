@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: bvlVnMZy5FymxuqetybElQ
+! Checksum: MQo3vvuqE/N03gNp0dRGoA
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202006131130
-! Last Modified: 2020年06月13日 11:30
+! Version: 202006132000
+! Last Modified: 2020年06月13日 20:00
 ! Homepage: https://adf.minggo.eu.org
 !
 !本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
@@ -437,7 +437,7 @@ v.youku.com##.control-phonewatch,#right-title-ad-banner
 iqiyi.com##div[data-adzone][adid]
 !iqiyi.com##+js(nano-sib)
 iqiyi.com##+js(aopr, DOMParser)
-||t7z.cupid.iqiyi.com/show$script
+||t7z.cupid.iqiyi.com/show$script,important
 ||static.iqiyi.com/js/common/mars_v.js$script
 !||iqiyi.com/videos/other/20$xmlhttprequest,object-subrequest
 ||ssports.iqiyi.com/app/$object-subrequest
@@ -505,7 +505,7 @@ kejet.net
 ulmdb.cn
 yoyi.com.cn
 zhiziyun.com
-le.com##.banner_ad,#rightBottomPop,div.banner_left,div.banner_right,div.column_right>.lh_box
+le.com##.banner_ad,#rightBottomPop,div.banner_left,div.banner_right,[id^=pause_a_content_h5ad]
 
 douyu.com##div[class$="-ad"],div[class|=ad],div.no-login
 ||douyucdn.cn/adxdsp/$image
