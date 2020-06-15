@@ -3,7 +3,7 @@
 ! Description: Filter composed from several other filters (English filter, Social media filter, Spyware filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2020-06-14T14:34:49.678Z
+! Last modified: 2020-06-15T14:35:23.120Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.8
 !
@@ -143,6 +143,7 @@
 !
 ! Содержит доменные имена, использующиеся рекламными сетями.
 !
+||ankunding.biz^
 ||zismone.ru^
 ||promoggaqjkd.ru^
 ||rstbtmd.com^
@@ -4207,6 +4208,11 @@ adbetnet.com
 ||qaops.jgwsmqx.com^
 ||zhangguangzong.com^
 ||kolsh.cn^
+!END: Chinese ad servers
+!
+||ughhimtoy.com^
+||vg4u8rvq65t6.com^
+||ridferbad.com^
 ||hadsokz.com^
 ||bestdealfor20.life^
 ||api.myhappyads.com^
@@ -5786,6 +5792,7 @@ www.llllllllllll.net^
 !
 ! Section contains the list of advertising networks, which are hosted on non advertising sites as subdomains
 !
+||d36zfztxfflmqo.cloudfront.net^
 ||dl5ft52dtazxd.cloudfront.net^
 ||d3v3bqdndm4erx.cloudfront.net^
 ||dkyp75kj7ldlr.cloudfront.net^
@@ -7338,6 +7345,7 @@ www.llllllllllll.net^
 ||adreach.me^
 ||adservi.com^
 ||adsrv.me^
+||adstonesik.club^
 ||adultterritory.net^
 ||advancellsclo.site^
 ||adziondin.club^
@@ -7604,6 +7612,7 @@ www.llllllllllll.net^
 ||counevan.pro^
 ||countertrck.com^
 ||courselfnorter.site^
+||courthereb.club^
 ||cowbumply.com^
 ||coysotown.com^
 ||cp7gyw5w94c7.com^
@@ -7835,6 +7844,7 @@ www.llllllllllll.net^
 ||ffortyimagist.info^
 ||fibpeeode.site^
 ||fibusedie.site^
+||fimpromote.club^
 ||findicaterperty.site^
 ||fingahvf.top^
 ||finized.co^
@@ -8127,6 +8137,7 @@ www.llllllllllll.net^
 ||malharvoice.pro^
 ||manatomicbru.site^
 ||mancehostic.site^
+||marketeret.club^
 ||martafatass.pro^
 ||martyappear.pro^
 ||marwinhitted.site^
@@ -8315,6 +8326,7 @@ www.llllllllllll.net^
 ||orcjagpox.com^
 ||ordinggrandt.fun^
 ||originedreting.site^
+||ornamedev.club^
 ||ortantchangem.info^
 ||oselyprepartie.info^
 ||osmondards.pro^
@@ -8549,6 +8561,7 @@ www.llllllllllll.net^
 ||saumooly.net^
 ||sbc7wfnaakau.com^
 ||sbroughhig.info^
+||scientialy.club^
 ||sculifinanthools.site^
 ||sdhfbvd.com^
 ||sdkfjxjertertry.com^
@@ -8744,6 +8757,7 @@ www.llllllllllll.net^
 ||undedfracted.club^
 ||undedsunbese.site^
 ||underwards.site^
+||unknowlejir.club^
 ||unlomblam.pro^
 ||unreshiramor.com^
 ||untabilityde.site^
@@ -23823,6 +23837,27 @@ www.llllllllllll.net^
 ||widebanner.com^
 ||yobee.it^
 ||zodiakactive.com^
+
+!
+! Source name: AdGuard Tracking Protection filter third-party trackers
+! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/tracking_servers.txt
+!
+!
+! Blocking Firebase crash reporting is quite problematic:
+! https://github.com/AdguardTeam/AdguardForAndroid/issues/1334#issuecomment-319302543
+! ||app-measurement.com^
+!
+! Crashlytics is commented by @ameshkov.
+! The reason for unblocking crashlytics is to not make developers life worse by breaking crash reporting.
+! In a hostile network like when an ad blocker is present, apps might be crashing, and these errors need to be
+! reported to devs, otherwise they won't learn about the issue and won't fix it.
+! Also, it is not a common third-party analytics tracker, Crashlytics is not used for collecting users' data.
+! ||e.crashlytics.com^
+! ||settings.crashlytics.com^
+!
+! ||ensighten.com^$third-party - not a tracker
+!
+||collector.getyourguide.com^
 ||5baf1288cf.dl8.me^
 ||stat.sm-it.space^
 ||collect.feefo.com^
@@ -24670,6 +24705,12 @@ t.yesware.com
 ||um-public-panel-prod.s3.amazonaws.com^
 ||collection-endpoint-prod.herokuapp.com^
 ||collection-endpoint-staging.herokuapp.com^
+! end:
+!
+! This rule breaks Australian sites
+!+ NOT_PLATFORM(ios, ext_safari, ext_android_cb)
+!
+||d5etv3akk3gsa.cloudfront.net^
 ||ttauri.laptopmag.com^
 ||d1rszqblq924lq.cloudfront.net^
 ||d2o5idwacg3gyw.cloudfront.net^
@@ -28149,6 +28190,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||zengenti.com^
 ||zeotap.com^
 ||zesep.com^
+||zeustechnology.com^
 ||zoomanalytics.co^
 ||zoomflow.com^
 ||zoomino.com^
@@ -31405,7 +31447,6 @@ vkcdnservice.appspot.com^
 ||window-close.ga^
 ||www.iwtserve.com^
 ||www.olenation.org^
-||www.shqbsdjatunl.com^
 ||yesads.com^
 ||yhig.info^
 ||yllix.com^
@@ -31419,9 +31460,9 @@ vkcdnservice.appspot.com^
 !
 ! Title: hostsVN
 ! Description: The filter contains ad and tracking networks in Vietnam.
-! Last modified: 12 Jun 2020 14:30 UTC+7
-! Version: 2006121430
-! Blocked: 465 rules
+! Last modified: 15 Jun 2020 10:44 UTC+7
+! Version: 2006151044
+! Blocked: 467 rules
 ! Expires: 1 days (update frequency)
 ! Homepage: https://bigdargon.github.io/hostsVN/
 !
@@ -31725,6 +31766,7 @@ vkcdnservice.appspot.com^
 ||log.infonet.vn^
 ||log.kienthuc.net.vn^
 ||log.ngaynay.vn^
+||log.nhipcaudautu.vn^
 ||log.sggp.org.vn^
 ||log.tapchitaichinh.vn^
 ||log.thanhnien.vn^
@@ -31751,6 +31793,7 @@ vkcdnservice.appspot.com^
 ||staticad.thethao247.vn^
 ||stats.bizweb.vn^
 ||stats.dongphim.net^
+||stats.petrotimes.vn^
 ||stats.vietnammoi.vn^
 ||sv-api-event.headlines.pw^
 ||thongke.24h.com.vn^
@@ -31895,7 +31938,7 @@ vkcdnservice.appspot.com^
 ! Source name: EasyList China ad servers
 ! Source: https://easylist-downloads.adblockplus.org/easylistchina.txt
 !
-||1jsskipuf8sd.com^
+||3c3c3.com^
 ||0024aaaa.com^
 ||00880808.com^
 ||008844.cc^
@@ -31947,6 +31990,7 @@ vkcdnservice.appspot.com^
 ||1d1px.net^
 ||1haosuo.com^
 ||1i580.com^
+||1jsskipuf8sd.com^
 ||1kmb.cn^
 ||1kzh.com^
 ||1l1.cc^
@@ -34729,9 +34773,8 @@ vkcdnservice.appspot.com^
 ||runkao.net^
 ||stunninglover.com^
 ||watakaw133.xyz^
-||yingjiawm.com^
-||ylkqw.com^
-||5zi5.top^
+||gralfusnzpo008.top^
+||abie18.top^
 ||01w47q.cn^
 ||0217qpineuxbcdhopswkvf.xyz^
 ||0224fqpowiuxybnmvdfghj.xyz^
@@ -34825,6 +34868,7 @@ vkcdnservice.appspot.com^
 ||5x0f.cn^
 ||5zi2.top^
 ||5zi3.top^
+||5zi5.top^
 ||605296.com^
 ||606w.cn^
 ||609623.com^
@@ -36245,6 +36289,7 @@ vkcdnservice.appspot.com^
 ||yikuaiqian.com.cn^
 ||yimai51.cn^
 ||yimeize.cn^
+||yingjiawm.com^
 ||yinlt.com^
 ||yinzantouzi.com^
 ||yiqima.xyz^
@@ -36254,6 +36299,7 @@ vkcdnservice.appspot.com^
 ||yizhijin.cn^
 ||yjiaj.com^
 ||yljmeishi.cn^
+||ylkqw.com^
 ||ymmdpk.cn^
 ||ynbzxh.com^
 ||yndushi.cn^
