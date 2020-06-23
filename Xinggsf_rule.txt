@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 202006101
+! Version: 202006231
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -142,7 +142,7 @@ pageMediaControl*$script
 @@||patch.ali213.net/js/pop.js^$script
 */pop.js^
 *.pop.js^$script
-*popup.js^$domain=~qzone.qq.com|~fupin832.com|~yinyuetai.com|~mgpyh.com|~baidu.com|~qidian.com|~mop.com|~gameapp.qq.com
+*popup.js^$domain=~qzone.qq.com|~fupin832.com|~yinyuetai.com|~mgpyh.com|~fifedu.com|~baidu.com|~qidian.com|~mop.com|~gameapp.qq.com
 */float.js|
 *gonggao.js|$domain=~lol.qq.com
 */tan.$script
@@ -323,7 +323,7 @@ sports.qq.com##.ad-wrapper,#focus_jordon,.ad_r_85,div[class|=gg],div.layout.mt35
 ||caipiao.163.com/$subdocument
 ||lofter.com/$subdocument,third-party
 |https://nex.163.com/q?
-163.com##.gg200,.gg300,.gg200x300,.N-nav-bottom~*,[class$="_ad"],div.mod_ad_text,#bobo,#layout-bobo,.txt-bobo,#js_a_bobo,.bobo-area,.imglist-bobo-app,#layout-love,#layout-shop,.top-banner,div.float-bar,div.post_adtop_main,div.post_adtop_side,a.tie-ad-bar,#fixed_foot_ad,#js-epTabDS,#js-epBobo
+163.com##.gg200,.gg300,.gg200x300,[class$="_ad"],div.mod_ad_text,#bobo,#layout-bobo,.txt-bobo,#js_a_bobo,.bobo-area,.imglist-bobo-app,#layout-love,#layout-shop,.top-banner,div.post_adtop_main,div.post_adtop_side,a.tie-ad-bar,#fixed_foot_ad,#js-epTabDS,#js-epBobo
 
 blog.163.com###lofter_single,div.f-trans
 news.163.com###js-cnxh-content~:not(#js-epTabRank)
@@ -555,6 +555,7 @@ dygang.com,hao6v.com###gd
 ||www.hao6v.com/d/$script
 ||www.dygang.com/d/$script
 
+czywssj.com
 88btbtt.com##body > a
 ||88btbtt.com/$inline-script,script
 ||88btbtt.com/view/image/$image
@@ -573,6 +574,10 @@ quandangdang.net
 !-- 天天美剧 ttmeiju.me ----
 dieka888.com
 !-------------------视频站点--------------------
+||mtime.cn/library/*/Goods$script
+trade.mtime.com
+!service.mall.mtime.com
+
 !-- kan.jinbaozy.com
 kolinay.com
 mieyisi.com
