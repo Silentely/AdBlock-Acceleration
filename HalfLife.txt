@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: /MN74ujS0LSLI3+3p9q/mg
+! Checksum: DC/ej0icRRQo5JkqjXYjlA
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202006281200
-! Last Modified: 2020年06月28日 12:00
+! Version: 202006281330
+! Last Modified: 2020年06月28日 13:30
 ! Homepage: https://adf.minggo.eu.org
 !
 !本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
@@ -9069,6 +9069,8 @@ _yad_jsonp_
 ||qhimgs1.com/t029762bc960d5104ef.jpg
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+kaitao.cn###ad-tit
+kaitao.cn##A[href*="/a.php?id="]
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -14078,7 +14080,7 @@ linkedin.com#?#.core-rail > div > div[id^="ember"]:-abp-has(.feed-shared-actor__
 linkedin.com#?#.core-rail > div > div[id^="ember"]:-abp-has(.feed-shared-actor__sub-description span:-abp-contains(/促銷內容|广告/))
 m.thepaper.cn#?#.t_news:-abp-has(img[alt="广告"])
 muchong.com#?#.forum_Post_index:-abp-has(nobr:-abp-contains(18))
-mydrivers.com#?#.news_info > p:-abp-has(> br + strong)
+mydrivers.com#?#.news_info > p:-abp-has(strong ~ .f14_link)
 news.baidu.com#?#.index-list-item:-abp-has(.tip-time:-abp-contains(广告))
 news.sohu.com,www.sohu.com#?#.list16 > ul > li:-abp-contains(广告)
 nfmovies.com#?#div[id]:-abp-has(>img[onclick="openurl()"])
@@ -14337,6 +14339,7 @@ brandsales.58.com#@#div[id^="ad_"]
 gohome.com.hk#@#div[id^="div-gpt-ad"]
 !---------------------------------URL Whitelist-------------------------------!
 @@&adurl=http://$domain=360bifen.cc|360bifen.com
+@@||kaitao.cn/public/wenda/ad/css/ds-un-detail.css
 @@.adserver.$domain=litv.tv
 @@.com/adv/$domain=my.ctrip.com
 @@.gif#$domain=cnprint.org|huhupan.com|tgfcer.com|wgun.net
