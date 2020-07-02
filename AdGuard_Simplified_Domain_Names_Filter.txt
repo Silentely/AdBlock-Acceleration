@@ -1,9 +1,9 @@
 !
-! Title: AdGuard Simplified Domain Names filter
+! Title: AdGuard DNS filter
 ! Description: Filter composed from several other filters (English filter, Social media filter, Spyware filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2020-07-01T17:23:18.040Z
+! Last modified: 2020-07-02T14:45:19.926Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.8
 !
@@ -3914,7 +3914,7 @@ adbetnet.com
 ||embed.tonews.org^
 ||ew.politros.com^
 ||info.inamo.ru^
-||up.gtorrent.ru^
+||up.gtorrent.org^
 ||ad.velomania.ru^
 ||a.kidstaff.net^
 ||d1uw69x4c2zrim.cloudfront.net^
@@ -7459,6 +7459,7 @@ www.llllllllllll.net^
 ||apearkcan.club^
 ||apologixopyr.site^
 ||apparentsav.club^
+||appresentikv.club^
 ||appropeanes.club^
 ||appropolyfunt.site^
 ||aptashant.club^
@@ -7491,6 +7492,7 @@ www.llllllllllll.net^
 ||asoulrox.com^
 ||aspartbib.site^
 ||aspaskaim.club^
+||assionwreckl.top^
 ||assiumyikg.club^
 ||assumineuron.site^
 ||ataijeeg.net^
@@ -7686,6 +7688,7 @@ www.llllllllllll.net^
 ||compensions.pro^
 ||concentleconse.site^
 ||concertainwqa.club^
+||condindered.club^
 ||congregorysun.site^
 ||conjeller-chikemon.com^
 ||consesculifin.site^
@@ -7708,6 +7711,7 @@ www.llllllllllll.net^
 ||cpcmart.com^
 ||creathere.club^
 ||creativetv.pro^
+||cretaiformac.top^
 ||crimentasaju.site^
 ||criminglynuk.pro^
 ||croomskosmos.site^
@@ -8913,6 +8917,7 @@ www.llllllllllll.net^
 ||tarawerap.com^
 ||tartoals.net^
 ||taryarguestio.info^
+||tasterdayuns.top^
 ||taveredezeri.site^
 ||teachievedim.site^
 ||televeniesuc.pro^
@@ -9018,6 +9023,7 @@ www.llllllllllll.net^
 ||urchrevening.info^
 ||urdercomp.space^
 ||uremechangec.info^
+||ureticrelingse.top^
 ||urgwritishimpos.info^
 ||urimteku.com^
 ||url.rw^
@@ -23556,26 +23562,7 @@ www.llllllllllll.net^
 ||widebanner.com^
 ||yobee.it^
 ||zodiakactive.com^
-
-!
-! Source name: AdGuard Tracking Protection filter third-party trackers
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/tracking_servers.txt
-!
-!
-! Blocking Firebase crash reporting is quite problematic:
-! https://github.com/AdguardTeam/AdguardForAndroid/issues/1334#issuecomment-319302543
-! ||app-measurement.com^
-!
-! Crashlytics is commented by @ameshkov.
-! The reason for unblocking crashlytics is to not make developers life worse by breaking crash reporting.
-! In a hostile network like when an ad blocker is present, apps might be crashing, and these errors need to be
-! reported to devs, otherwise they won't learn about the issue and won't fix it.
-! Also, it is not a common third-party analytics tracker, Crashlytics is not used for collecting users' data.
-! ||e.crashlytics.com^
-! ||settings.crashlytics.com^
-!
-! ||ensighten.com^$third-party - not a tracker
-!
+||realytics.net^
 ||eue.d-teknoloji.com.tr^
 ||track.thevtk.com^
 ||track.mp3vizor.com^
@@ -24442,6 +24429,12 @@ t.yesware.com
 ||um-public-panel-prod.s3.amazonaws.com^
 ||collection-endpoint-prod.herokuapp.com^
 ||collection-endpoint-staging.herokuapp.com^
+! end:
+!
+! This rule breaks Australian sites
+!+ NOT_PLATFORM(ios, ext_safari, ext_android_cb)
+!
+||stores-counters.wix.com^
 ||tracker.remp.impresa.pt^
 ||bl.impresa.pt^
 ||d2u1npnnqecmpq.cloudfront.net^
@@ -31194,9 +31187,9 @@ vkcdnservice.appspot.com^
 !
 ! Title: hostsVN
 ! Description: The filter contains ad and tracking networks in Vietnam.
-! Last modified: 01 Jul 2020 15:24 UTC+7
-! Version: 2007011524
-! Blocked: 471 rules
+! Last modified: 02 Jul 2020 15:56 UTC+7
+! Version: 2007021556
+! Blocked: 475 rules
 ! Expires: 1 days (update frequency)
 ! Homepage: https://bigdargon.github.io/hostsVN/
 !
@@ -31481,6 +31474,7 @@ vkcdnservice.appspot.com^
 ||lg.lotus.vn^
 ||log.anninhthudo.vn^
 ||log.baodatviet.vn^
+||log.baodauthau.vn^
 ||log.baomoi.com^
 ||log.baophapluat.vn^
 ||log.batdongsan.com.vn^
@@ -31569,6 +31563,7 @@ vkcdnservice.appspot.com^
 ||bong99.com^
 ||bong99.fun^
 ||cacuoc247.com^
+||cacuoc79.com^
 ||casino888vn.com^
 ||datcuoc247.com^
 ||debet.com^
@@ -31628,8 +31623,10 @@ vkcdnservice.appspot.com^
 ||red88.com^
 ||ric.win^
 ||sbc31.com^
+||sieubomtan.com^
 ||sun.win^
 ||tai789.net^
+||taimacau.club^
 ||taiv8.com^
 ||thethaofb88.com^
 ||top88.club^
@@ -31676,8 +31673,9 @@ vkcdnservice.appspot.com^
 ! Source name: EasyList China ad servers
 ! Source: https://easylist-downloads.adblockplus.org/easylistchina.txt
 !
-||coolfenxi.com^
-||xmrzw.cn^
+||xylmdm.top^
+||169bj.cn^
+||toolset.vip^
 ||0024aaaa.com^
 ||00880808.com^
 ||008844.cc^
@@ -32092,6 +32090,7 @@ vkcdnservice.appspot.com^
 ||cnzz.com.so^
 ||code222.com^
 ||code668.com^
+||coolfenxi.com^
 ||cosoyoo.com^
 ||cpms.cc^
 ||cpro.baidu.com^
@@ -33204,6 +33203,7 @@ vkcdnservice.appspot.com^
 ||xm9178.com^
 ||xmliw.com^
 ||xmrepair.com^
+||xmrzw.cn^
 ||xmtsyg.com^
 ||xmxxwl.com^
 ||xn--2qu92fhtx4ff.icu^
@@ -34525,10 +34525,15 @@ vkcdnservice.appspot.com^
 ||runkao.net^
 ||stunninglover.com^
 ||watakaw133.xyz^
-||grjs08.com^
-||sysycloud.com^
-||wangkeduo.cn^
-||333bj.cloud^
+||ywxtmox.cn^
+||jacklm1.com^
+||yaba.org.cn^
+||eeer.ren^
+||2227q.com^
+||k9wz7.cn^
+||h9wk2.cn^
+||ts2a1s.com^
+||ox11.com^
 ||01w47q.cn^
 ||0217qpineuxbcdhopswkvf.xyz^
 ||0224fqpowiuxybnmvdfghj.xyz^
@@ -34588,6 +34593,7 @@ vkcdnservice.appspot.com^
 ||2scjbg.com^
 ||2shoushi.com^
 ||2zm4.cn^
+||333bj.cloud^
 ||360zuowen.net^
 ||365syt.cn^
 ||365yigou.cn^
@@ -35123,6 +35129,7 @@ vkcdnservice.appspot.com^
 ||gralfusnzpo008.top^
 ||grjs02.com^
 ||grjs06.com^
+||grjs08.com^
 ||grtnahd.cn^
 ||gtchong.com^
 ||gtifund.cn^
@@ -35618,6 +35625,7 @@ vkcdnservice.appspot.com^
 ||pqwtrq.xyz^
 ||prazpf.cn^
 ||primusu.com^
+||prpcoin.com^*.gif
 ||psgch.xyz^
 ||ptgezc.com^
 ||ptummn.cn^
@@ -35815,6 +35823,7 @@ vkcdnservice.appspot.com^
 ||syooys.com^
 ||sysadult.cn^
 ||sysal.cn^
+||sysycloud.com^
 ||sytsr.com^
 ||syxchj.cn^
 ||syxsa.cn^
@@ -35921,6 +35930,7 @@ vkcdnservice.appspot.com^
 ||vwb4p.cn^
 ||w13qh.cn^
 ||wagenlux.cn^
+||wangkeduo.cn^
 ||wangliqin.top^
 ||wangqing7.top^
 ||wanrenshe.com^
