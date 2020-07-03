@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202007030008
+! Version: 202007030325
 ! Title: EasyPrivacy
-! Last modified: 03 Jul 2020 00:08 UTC
+! Last modified: 03 Jul 2020 03:25 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -11096,6 +11096,7 @@ _mongo_stats/
 ||pixel.glimr.io^
 ||pixel.indieclicktv.com/annonymous/
 ||pixel.newscred.com^
+||pixel.parsely.com^
 ||pixel.roymorgan.com^
 ||pixel.s3xified.com^
 ||pixel.solvemedia.com^
@@ -13503,7 +13504,6 @@ _mongo_stats/
 ||github.com/_stats
 ||github.com/hydro_browser_events
 ||giveitlove.com/stats/
-||gj.mmstat.com^
 ||glamourmagazine.co.uk^*/LogPageView
 ||glassmoni.researchgate.net^
 ||global.canon^*/analytics.js
@@ -14073,8 +14073,8 @@ _mongo_stats/
 ||omniture.stuff.co.nz^
 ||omniture.theglobeandmail.com^
 ||oms.expedia.com^
-||oneid.mmstat.com^
 ||onetravel.com/TrackOnetravelAds.js
+||online.citi.com^*/fp.min.js
 ||oodle.co.uk/event/track-first-view/
 ||oodle.com/js/suntracking.js
 ||open.mkt1397.com^
@@ -15218,17 +15218,21 @@ _mongo_stats/
 ||zylom.com^*/global_tracking.jsp?
 ||zylom.com^*/tracking_spotlight.js
 ||zytpirwai.net/track/
-! Ebay trackers
+! Aliexpress
+||aliyuncs.com/r.png
+||gj.mmstat.com^
+||oneid.mmstat.com^
+! Port scanning Fingerprinting Trackers (Privacy and CPU abuse)
 ! https://nullsweep.com/why-is-this-website-port-scanning-me/
 /^https?:\/\/ir\.ebaystatic\.com\/rs\/v\/[a-zA-Z0-9]{18,}\.js/$script,domain=vipr.ebaydesc.com
 /^https?:\/\/nav\.sciencedirect\.com\/[a-zA-Z0-9]{14,}\.js/$script,domain=sciencedirect.com
-||127.0.0.1^$third-party,domain=ameriprise.com|beachbody.com|chick-fil-a.com|citi.com|ebay.at|ebay.be|ebay.ca|ebay.ch|ebay.cn|ebay.co.uk|ebay.com|ebay.com.au|ebay.com.hk|ebay.com.my|ebay.com.sg|ebay.de|ebay.es|ebay.fr|ebay.ie|ebay.it|ebay.nl|ebay.ph|ebay.pl|equifax.com|gumtree.com|lendup.com|mbna.ca|sciencedirect.com|sky.com|td.com|tiaa.org|vedacheck.com|wepay.com
+/^https?:\/\/pov\.spectrum\.net\/[a-zA-Z0-9]{14,}\.js/$script,domain=spectrum.net
+/^https?:\/\/tmx\.td\.com\/[a-z0-9]{14,18}\.js.*/$script,domain=mbna.ca|td.com
+||127.0.0.1^$third-party,domain=ameriprise.com|beachbody.com|chick-fil-a.com|citi.com|ebay.at|ebay.be|ebay.ca|ebay.ch|ebay.cn|ebay.co.uk|ebay.com|ebay.com.au|ebay.com.hk|ebay.com.my|ebay.com.sg|ebay.de|ebay.es|ebay.fr|ebay.ie|ebay.it|ebay.nl|ebay.ph|ebay.pl|equifax.com|gumtree.com|lendup.com|mbna.ca|sciencedirect.com|sky.com|spectrum.net|td.com|tiaa.org|vedacheck.com|wepay.com
 ||ebay.com/nkfytkqtoxtljvzb.js$script,domain=ebay.com
 ||ebay.com/nkfytkqtoxtljvzbxhr.js$script,domain=ebay.com
 ||ebaystatic.com^*/10341xh50yz21mhhydueu4m5wad.js$script,domain=ebay.com
 ||ebaystatic.com^*/g52yxhxv2mzcbealmlkri4kn5av.js$script,domain=ebay.com
-! authentication.mbna.ca | authentication.td.com  (fingerprint)
-/^https?:\/\/tmx\.td\.com\/[a-z0-9]{14,18}\.js.*/$script,domain=mbna.ca|td.com
 ! Fingerprint
 ||tipsport.org/scripts/closure.js
 ! Forter
@@ -15244,6 +15248,7 @@ _mongo_stats/
 ||carbon38.com/7G7BfRT2/
 ||carolina.com/2gSJHc90/
 ||carolsdaughter.com/IZ/
+||change.org/NsLC0Hv5/
 ||cookpad.com^*/init.js
 ||couchsurfing.com/bEcn7fQX/
 ||creativemarket.com/OfRh1WNK/
