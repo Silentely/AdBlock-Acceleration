@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202007070014
+! Version: 202007070655
 ! Title: EasyPrivacy
-! Last modified: 07 Jul 2020 00:14 UTC
+! Last modified: 07 Jul 2020 06:55 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -5261,6 +5261,8 @@ _xiti_js-
 _zag_cookie.
 cgi-bin/counter
 ||meetrics.netbb-
+! Akamai fingerprinting
+/^https?:\/\/.*\/(public|resources|static|assets)\/([a-f0-9]){28,32}$/$script,~third-party,xmlhttprequest
 ! Cloudflare fingerprinting
 /cgi-bin/bm/cv/*$script
 ! Admiral
@@ -7220,6 +7222,7 @@ _mongo_stats/
 ||proofpositivemedia.com^$third-party
 ||propeller-tracking.com^$third-party
 ||provenpixel.com^$third-party
+||prprocess.com^$third-party
 ||prtracker.com^$third-party
 ||pstats.com^$third-party
 ||pt-trx.com^$third-party
@@ -13724,7 +13727,9 @@ _mongo_stats/
 ||jakpost.net/jptracker/
 ||jal.co.jp/common_rn/js/rtam.js
 ||jaludo.com/pm.php?
+||javhd.com/ascripts/gcu.js
 ||javhd.com/click/
+||javhd.com/t/
 ||javher.com/analytics.js
 ||jessops.com/js/JessopsTracking.
 ||jetsetter.com/tracker.php
@@ -15090,6 +15095,8 @@ _mongo_stats/
 ||weeklyblitz.net/tracker.js
 ||wego.com/farmer/
 ||wellness.com/proxy.asp
+||wellsfargo.com/AIDO/trx.js
+||wellsfargo.com/tracking/
 ||wellsphere.com/?hit=
 ||whatcar.com/Client/Stats/
 ||whistleout.com.au/track
