@@ -3,7 +3,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2020-07-10T14:50:47.679Z
+! Last modified: 2020-07-10T17:11:53.583Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.8
 !
@@ -3877,7 +3877,6 @@ us6odtasve.ru
 !
 ! Ads reinjection (For apps only)
 !
-!#if (adguard_app_windows || adguard_app_mac || adguard_app_android)
 ||4jiqzr.ru^
 ||csp-oz66pp.ru^
 ||d38dub.ru^
@@ -3893,7 +3892,6 @@ us6odtasve.ru
 ||vt4dlx.ru^
 ||xifg6h.ru^
 ||zfvklk.ru^
-!#endif
 !
 !+ PLATFORM(ios, ext_android_cb, ext_safari)
 adbetnet.com
@@ -5849,16 +5847,15 @@ www.llllllllllll.net^
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/31688
 !
+||analyticsq.com^
+||d71e6dd31a026d45.com
+||cb8717377086c72d.com^
+||go.mobiprotg.com^
+!
 ! https://github.com/AdguardTeam/AdguardFilters/issues/23271
 ||samsungads.com^
 ! https://github.com/AdguardTeam/AdGuardHome/issues/1046
 ||samsungtvads.com^
-!
-!#if (adguard_ext_safari || adguard_app_ios || adguard_ext_android_cb)
-||analyticsq.com^
-||d71e6dd31a026d45.com*^
-||cb8717377086c72d.com^
-||go.mobiprotg.com^
 ||centent.streamp1ay.cc^
 ||dz5bomaog2c5t.cloudfront.net^
 ||s.remonti.org^
@@ -7747,6 +7744,7 @@ www.llllllllllll.net^
 ||companiedoml.site^
 ||comparencelabl.site^
 ||compensions.pro^
+||complified.club^
 ||concentleconse.site^
 ||concertainwqa.club^
 ||condindered.club^
@@ -23625,6 +23623,7 @@ www.llllllllllll.net^
 !||i.snssdk.com/log/*
 !||i.snssdk.com/slardar/sdk.js
 !
+||tagmanager.alright.network^
 ||tattle.api.osano.com^
 ||nta1vb6cdlrl.com^
 ||js.rush-member.com^
@@ -24490,9 +24489,7 @@ t.yesware.com
 !
 ! Section contains the list of tracking servers, which are hosted on useful sites as subdomains
 !
-!#if (!adguard_ext_safari || !adguard_app_ios || !adguard_ext_android_cb)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/25467
-!#endif
 !
 ! Big Star Labs
 ||ben.crxmouse.com^
