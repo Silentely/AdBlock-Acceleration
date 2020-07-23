@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202007231114
+! Version: 202007231506
 ! Title: EasyPrivacy
-! Last modified: 23 Jul 2020 11:14 UTC
+! Last modified: 23 Jul 2020 15:06 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -5098,6 +5098,7 @@
 ?_siteid=
 ?act=counter&
 ?action=event&
+?action=log_promo_impression
 ?action=track_visitor&
 ?action=tracking_script
 ?ad_played=
@@ -7433,6 +7434,7 @@ _mongo_stats/
 ||rtrk.com^$third-party
 ||ru4.com^$third-party
 ||rumanalytics.com^$third-party
+||rumble.com^$ping,third-party
 ||rumpelstiltskinhead.com^$third-party
 ||runtnc.net^$third-party
 ||rztrkr.com^$third-party
@@ -15130,9 +15132,7 @@ _mongo_stats/
 ||vidxden.com^*/tracker.js
 ||vietnamnet.vn^*/tracking.js
 ||villarenters.com/inttrack.aspx
-||vimeo.com/log/
-||vimeo.com^*?type=$ping
-||vimeocdn.com/js_opt/ablincoln_combined.min.js
+||vimeo.com/ablincoln/
 ||viralnova.com/track.php
 ||viralogy.com/javascript/viralogy_tracker.js
 ||virginholidays.co.uk/_assets/js/dc_storm/track.js
@@ -17686,6 +17686,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||amplitude.com/libs/$script,domain=elconfidencial.com
 @@||ampproject.org/v0/amp-analytics-$script,domain=cnnespanol.cnn.com
 @@||ara.cat/static/BB3Core/images/pixel.gif?hash=$image,domain=ara.cat
+@@||bancosantander.es/pagos-inmediatos/common/js/modules/tealium.js$~third-party
 @@||c5n.com^*/angulartics-google-analytics.min.js
 @@||cloudfront.net/libs/amplitude-$script,domain=elconfidencial.com
 @@||elconfidencial.com^*/EventTracker.js
