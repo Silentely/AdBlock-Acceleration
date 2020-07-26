@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202007260352
+! Version: 202007260745
 ! Title: EasyPrivacy
-! Last modified: 26 Jul 2020 03:52 UTC
+! Last modified: 26 Jul 2020 07:45 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -9347,7 +9347,6 @@ _mongo_stats/
 ||leiki.com^$third-party
 ||m-brain.fi^$third-party
 ||netmonitor.fi^$third-party
-||reactandshare.com^$third-party
 ||stat.www.fi^$third-party
 ||tracking*.euroads.fi^$third-party
 ||vihtori-analytics.fi^$third-party
@@ -10376,7 +10375,6 @@ _mongo_stats/
 ||conversions.genieventures.co.uk^
 ||convertflow.co^*/events/
 ||convertflow.co^*/visitors/
-||convsgmp.taboola.com^
 ||cookies.livepartners.com^
 ||cookietracker.cloudapp.net^
 ||cookiex.ngd.yahoo.com^
@@ -11179,7 +11177,6 @@ _mongo_stats/
 ||ooyala.com/verify?
 ||ooyala.com^*/report?log
 ||open.delivery.net^
-||opps.taboola.com^
 ||optimizely.appspot.com^$third-party
 ||ora.tv/j/ora_evttracking.js
 ||orb.ee/collect
@@ -11584,12 +11581,6 @@ _mongo_stats/
 ||t.signalayer.com^
 ||t.smile.eu^
 ||t2.t2b.click^
-||taboola.com/?uid=
-||taboola.com/tb?
-||taboola.com^*/log/
-||taboola.com^*/notify-impression?$third-party
-||taboolasyndication.com/log/
-||taboolasyndication.com^*/log/
 ||tag.aticdn.net^
 ||tag.aumago.com^
 ||tag.brandcdn.com^
@@ -11824,7 +11815,6 @@ _mongo_stats/
 ||uplynk.com/session/ping/
 ||upt.graphiq.com^
 ||uptime.com/static/rum/$third-party
-||urc.taboolasyndication.com^
 ||usefathom.com/tracker.js
 ||usercentrics.eu/session/$image
 ||usersegment.wpdigital.net^
@@ -11905,7 +11895,6 @@ _mongo_stats/
 ||webworx24.co.uk/123trace.php
 ||webzel.com/counter/
 ||wetpaint.com^*/track?
-||wf.taboola.com^
 ||whosread.com/counter/
 ||widgeo.net/compteur.php?
 ||widgeo.net/geocompteur/
@@ -11966,6 +11955,18 @@ _mongo_stats/
 ||zoomtv.me^*?pixel=
 ||zoover.co.uk/tracking/
 ||zope.net^*/ghs_wa.js
+! taboola
+||convsgmp.taboola.com^
+||la-sync.taboola.com^
+||opps.taboola.com^
+||taboola.com/?uid=
+||taboola.com/tb?
+||taboola.com^*/log/
+||taboola.com^*/notify-impression?$third-party
+||taboolasyndication.com/log/
+||taboolasyndication.com^*/log/
+||urc.taboolasyndication.com^
+||wf.taboola.com^
 ! wix
 ||frog.wix.com/da-client?
 ||frog.wix.com/fed?
@@ -13642,7 +13643,6 @@ _mongo_stats/
 ||geo.nbcsports.com^
 ||geo.play.it^
 ||geo.yahoo.com^
-||geoapi.indiatimes.com^
 ||geobeacon.ign.com^
 ||geoip-lookup.vice.com^
 ||geoip.al.com^
@@ -16514,6 +16514,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ||webstatistieken.xs4all.nl^
 ! Finnish
 ||analytics.sanoma.fi^
+||data.reactandshare.com^
 ||dp.alma.iltalehti.fi/v1/cookie
 ||events.il.fi^
 ||hs.fi/stats
@@ -17070,7 +17071,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||dpm.demdex.net/id?$xmlhttprequest,domain=foxnews.com
 @@||dw.cbsi.com/anonc.js$domain=gamespot.com|giantbomb.com
 @@||dw.com.com/js/dw.js$domain=cbsnews.com|gamespot.com|tv.com
-@@||dynamicyield.com/api/$script,domain=zalora.com.my|zalora.com.ph|zalora.sg
+@@||dynamicyield.com/api/$script,domain=flytap.com|thewarehouse.co.nz|zalora.com.my|zalora.com.ph|zalora.sg
 @@||dynamicyield.com/st?$script,domain=computeruniverse.net|zalora.com.my|zalora.com.ph|zalora.sg
 @@||e2e-comms.pearson.com/osbrowserchecker/prd/thirdPartyCookie.html?$subdocument,domain=pearsonmylabandmastering.com
 @@||easyship.com/api/v1/track/$xmlhttprequest,domain=trackmyshipment.co
@@ -17290,6 +17291,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||unileversolutions.com^*/config/analytics.js
 @@||unisys.com^*/track.gif$image,~third-party
 @@||unpkg.com/@optimizely/$domain=nike.com
+@@||va.msg.liveperson.net^$websocket,domain=online.citi.com
 @@||varagesale.com/assets/analytics-$script,~third-party
 @@||vast.com/vimpressions.js$domain=everycarlisted.com
 @@||vice.com^*/AdobeAnalyticsSDK.min.js
