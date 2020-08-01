@@ -1,6 +1,6 @@
 ﻿[Adblock Plus 2.0]
 ! title: 乘风 广告过滤规则
-! Version: 202007031
+! Version: 202008011
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 @@*$stylesheet
@@ -23,7 +23,6 @@
 ||crs.baidu.com/
 ||entry.baidu.com/$subdocument
 ||hm.baidu.com/
-||list.video.baidu.com/pc_static/promotion/
 @@||baidu.com/customer_search/api/
 ||znsv.baidu.com/
 ||pups.bdimg.com/
@@ -75,7 +74,11 @@ tieba.baidu.com###j_p_postlist>div.l_post_bright:has(a.j_click_stats.img_wrap)
 ||189.cn/$popunder
 ||greenet.cn/$popunder
 ||189.gd/$popunder
-||51.la^
+37cs.com
+
+wsdvs.com
+51.la
+
 ||admaster.com
 ||admaster.com.cn
 ||market.aliyun.com/
@@ -92,16 +95,20 @@ adservice.google.com
 ||googlesyndication.com
 ||google-analytics.com
 gshtrl.top
+he2d.com
 ||irs01.
 ||x.jd.com/
 u-x.jd.com
+q1qfc323.com
 sdqoi2d.com
+shifen.com
 @@||s.click.taobao.com^$third-party,popup
 ||click.taobao.com/$third-party,popunder
 ||union.
 ||vamaker.com/$third-party
 */vamaker/
 wrating.com
+wsglb0.com
 ~ziodslzz.zez##.ad,div.ad960-90,div.ad-side,table.adtable,div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#side-ad,#preAdContent,div.adbox
 ~mail.google.com##.adsbygoogle,div.ads
 ||com/ads
@@ -439,7 +446,7 @@ cnbeta.com##.cbv,#artibody~*,#upcoming_box,div.article-global,div.meta > span.fr
 ||img-ads.csdn.net/
 csdn.net##div[class^=ad_],#ad_left,#ad_right,div.AD.mb-bg
 
-mydrivers.com##.duilian,div.news_info > p:last-of-type,a[href*="jd.com/"]
+mydrivers.com##.duilian,div.news_info > div:first-of-type,a[href*="jd.com/"]
 ||icons.mydrivers.com/news/2018/ry$image
 ||icons.mydrivers.com/20*.gif^$image
 ||mydrivers.com/*_728_90.$image

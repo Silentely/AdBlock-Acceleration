@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! title: 乘风 视频广告过滤规则
-! Version: 202007171
+! Version: 202008011
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -20,12 +20,12 @@ iqiyi.com##div[data-adzone][adid],#block-V
 iqiyi.com##+js(set, Object.prototype.parseXML, noopFunc)
 !||t7z.cupid.iqiyi.com/show$script,important
 ||static.iqiyi.com/js/common/mars_v.js$script
-!||iqiyi.com/videos/other/20$xmlhttprequest,object-subrequest
+||iqiyi.com/videos/other/20$xmlhttprequest,object-subrequest
 ||ssports.iqiyi.com/app/$object-subrequest
 
 qq.com##.mod_ad
-v.qq.com##+js(json-prune,ad,errCode)
-v.qq.com##+js(json-prune, ad, vinfo)
+v.qq.com,sports.qq.com##+js(json-prune,ad,errCode)
+v.qq.com,sports.qq.com##+js(json-prune, ad, vinfo)
 !v.qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
 @@||qq.com/fcgi-bin/
 ||adss.video.qq.com/
@@ -81,8 +81,6 @@ behe.com
 biddingx.com
 cr-nielsen.com
 fancyapi.com
-gentags.net
-gtags.net
 kejet.net
 ||jd.com/$domain=le.com
 ulmdb.cn
