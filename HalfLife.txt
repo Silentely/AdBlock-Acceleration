@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: 9pO1mNgsT0m3r2CqLQw7kQ
+! Checksum: 3C9JN2twF6RbViVxZcXSng
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202008020730
-! Last Modified: 2020年08月02日 07:30
+! Version: 202008021200
+! Last Modified: 2020年08月02日 12:00
 ! Homepage: https://adf.minggo.eu.org
 !
 !本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
@@ -259,6 +259,34 @@ junshi.china.com##.w_xiao>.side_bdgg
 toutiao.china.com###js-free-time-show
 ! 低端影视
 ||ddrk.me/vjs-plugins/videojs.das.min.js
+!通用去除dplayer播放器logo   https://bbs.kafan.cn/forum.php?mod=redirect&goto=findpost&ptid=2180923&pid=46929896
+##.dplayer-logo
+###sponsorAdDiv
+###sponsorAdCountdown
+###adleft
+###adright
+nfmovies.com##[src*="/pic/tu/"]
+nfmovies.com##[src*="/static/"]
+||nfmovies.com/templets/default/images/js/layer/layer.js
+nfmovies.com###aaaDiv
+nfmovies.com###zzzif
+nfmovies.com###zzzif2
+nfmovies.com###aaaCountdown
+nfmovies.com###aaaDiv2
+nfmovies.com##.fa fa-volume-down
+nfmovies.com##.close-box.tips
+nfmovies.com##.hidden-xs.dropdown-hover
+nfmovies.com##li.dropdown-hover:nth-of-type(9)
+nfmovies.com##.myui-player__operate > li:nth-of-type(1)
+nfmovies.com##.myui-player__operate > li:nth-of-type(4)
+nfmovies.com##.myui-player__operate > li:nth-of-type(5)
+nfmovies.com##+js(nano-sib)
+nfmovies.com##+js(nostif, container)
+nfmovies.com##body:style(opacity:1!important)
+nfmovies.com##body > div.hidden-xs
+@@||www.nfmovies.com/static/side.jpg
+@@||www.nfmovies.com/pic/tu/banner-03.jpg
+@@||www.nfmovies.com/pic/tu/banner03.jpg
 ! Facebook
 www.facebook.com###pagelet_side_ads
 www.facebook.com##.egoOrganicColumn+*
@@ -443,9 +471,9 @@ iqiyi.com##+js(set, Object.prototype.parseXML, noopFunc)
 ||ssports.iqiyi.com/app/$object-subrequest
 
 qq.com##.mod_ad
-v.qq.com,sports.qq.com##+js(json-prune,ad,errCode)
-v.qq.com,sports.qq.com##+js(json-prune, ad, vinfo)
-!v.qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
+v.qq.com,sports.qq.com##+js(json-prune,ad,errCode vinfo adList adLoc)
+||qq.com/*.1.mp4?*fmt=shd^$mp4,domain=v.qq.com
+v.qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
 @@||qq.com/fcgi-bin/
 ||adss.video.qq.com/
 ||gtimg.com/qqlive/
@@ -1603,7 +1631,7 @@ _xiuno_com_ad/
 ##table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"]
 !----------------------------------Ads-Union----------------------------------!
 .8ox.cn
-||jinfu.love^
+||jinfu.love/maizhan/
 .cc/s.php?id=$script,third-party
 .cn/?ss=$script,third-party
 .cn/s.php?id=$script,third-party
@@ -9117,8 +9145,11 @@ _yad_jsonp_
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||alicdn.com^$domain=1090ys1.com
+||123-bt.cn/Public/static/images/*-
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+pconline.com.cn##.jcz-focus
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
