@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202008021958
+! Version: 202008022324
 ! Title: EasyPrivacy
-! Last modified: 02 Aug 2020 19:58 UTC
+! Last modified: 02 Aug 2020 23:24 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -5296,7 +5296,7 @@ cgi-bin/counter
 /pg*.js?PID=$xmlhttprequest
 ! Akamai fingerprinting
 ! https://publicwww.com/websites/%22_cf.push%22/
-/^https?:\/\/.*\/(public|resources|static|assets)\/([a-f0-9]){28,30}$/$script,~third-party,xmlhttprequest
+/^https?:\/\/.*\/(public|resources|static|assets)\/([a-f0-9]){28,30}$/$script,~third-party,xmlhttprequest,domain=~cand.li
 ! Cloudflare fingerprinting
 /cgi-bin/bm/cv/*$script
 ! Admiral
@@ -11310,6 +11310,8 @@ _mongo_stats/
 ||s3-tracking.synthasite.net.s3.amazonaws.com^
 ||s5labs.io/common/i?impressionId$image
 ||sadv.dadapro.com^$third-party
+||sail-horizon.com/horizon/$third-party
+||sail-horizon.com/spm/
 ||sailthru.com/img/$image,third-party
 ||sailthru.com/Sailthru_spacer_1x1.gif
 ||sajari.com/js/sj.js$third-party
@@ -14274,6 +14276,7 @@ _mongo_stats/
 ||policeone.com/stat/
 ||politico.com/resource/assets/js.min/video-tracking$script
 ||popcap.com^*/interstitial_zones.js
+||poptropica.com/brain/track.php?
 ||porndoo.com/lib/ajax/track.php
 ||pornhd.com/api/user/tracking
 ||porntube.com^*/track
@@ -17154,6 +17157,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||puch-ersatzteile.at^*/google-analytics.min.js
 @@||px-cdn.net/api/v2/collector/ocaptcha$xmlhttprequest
 @@||quantcast.com/wp-content/themes/quantcast/$domain=quantcast.com
+@@||quantcast.mgr.consensu.org/cmp.js$script,domain=ladbible.com
 @@||quantserve.com/quant.js$domain=apps.facebook.com|nymag.com
 @@||rasset.ie/dotie/js/tracker.js$domain=rte.ie
 @@||rba-screen.healthsafe-id.com/fp/tags.js$script,domain=myuhc.com
