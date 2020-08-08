@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: MFluUlcomHoceSO6FLSbQQ
+! Checksum: laojU9HHpA34lRx7jYjwYA
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202008081200
-! Last Modified: 2020年08月08日 12:00
+! Version: 202008082000
+! Last Modified: 2020年08月08日 20:00
 ! Homepage: https://adf.minggo.eu.org
 !
 !本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
@@ -1635,6 +1635,7 @@ _xiuno_com_ad/
 ##table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"]
 !----------------------------------Ads-Union----------------------------------!
 .8ox.cn
+||gaobata.com^
 .cc/s.php?id=$script,third-party
 .cn/?ss=$script,third-party
 .cn/s.php?id=$script,third-party
@@ -9147,6 +9148,7 @@ _yad_jsonp_
 ||mydrivers.com^*/tb88.
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+yahoo.com##.stream-items[data-wf-beacons]
 qncye.com##.ad
 qncye.com##.adv
 qncye.com##.bbaner
@@ -12407,7 +12409,7 @@ oschina.net##.news_detai_above_ad
 mydrivers.com##.news_info > div[style*="height:"]
 mydrivers.com##.news_left > div[style*="height:"]
 07073.com##.news_list1_tu
-mydrivers.com##.news_xg + style + div[class]
+mydrivers.com##.news_xg + style + div
 chinamedevice.cn##.news_ylqx
 chinamedevice.cn##.news_ylqx3
 mitbbs.ca,mitbbs.com##.newskuang2
@@ -14477,7 +14479,7 @@ gohome.com.hk#@#div[id^="div-gpt-ad"]
 @@_ads_cpc_$domain=90lover.cn
 @@_cpc_cpm_$domain=ygo-sem.cn
 @@u-ads.adap.tv*youku.$domain=youku.com
-@@|http*://$script,subdocument,third-party,domain=tingfm.com
+@@|http*://$image,script,subdocument,xmlhttprequest,third-party,domain=tingfm.com
 @@||012.tw^$script,domain=apk.tw
 @@||060s.com/images_ad/*.png
 @@||073img.com/*,*,
@@ -18192,7 +18194,7 @@ piaotian5.com##script + div[style="padding:15px;"]
 !#onemanhua.com
 @@/js/ads/*$image,script,domain=onemanhua.com
 @@||cnzz.com^$script,domain=onemanhua.com
-@@||iyunys.com/js/a_d/to.js$domain=onemanhua.com
+@@.com/js/a_d/$domain=ohmanhua.com
 @@||onemanhua.com^$generichide
 @@||runative-syndicate.com/sdk/v1/n.js$domain=onemanhua.com
 @@||runative-syndicate.com^$script,domain=onemanhua.com
