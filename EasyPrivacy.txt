@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202008090803
+! Version: 202008091200
 ! Title: EasyPrivacy
-! Last modified: 09 Aug 2020 08:03 UTC
+! Last modified: 09 Aug 2020 12:00 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -7565,6 +7565,7 @@ _mongo_stats/
 ||sitelabweb.com^$third-party
 ||sitelinktrack.com^$third-party
 ||sitemeter.com^$third-party
+||siteplug.com^$third-party
 ||sitereport.org^$third-party
 ||sitestat.com^$third-party
 ||siteswithcontent.com^$third-party
@@ -13061,7 +13062,7 @@ _mongo_stats/
 ||bidz.com/contentarea/BidzHomePixel
 ||binaries4all.nl/misc/misc.php?*&url=http
 ||bing.com*^/c.gif?$image
-||bing.com/fd/ls/$~ping
+||bing.com/fd/ls/
 ||bing.com/partner/primedns
 ||bing.com/widget/metrics.js
 ||bing.com^*/GLinkPing.aspx
@@ -13378,6 +13379,7 @@ _mongo_stats/
 ||eec.crunchyroll.com^
 ||efukt.com^*?hub=
 ||egg.com/rum/data.gif?
+||egg.fbnpeprojects.com/client/log
 ||eharmony.ca/fd/
 ||eharmony.co.uk/bd/
 ||ehow.com/services/jslogging/log/?
@@ -13862,6 +13864,7 @@ _mongo_stats/
 ||lastpass.com/analytics2.php
 ||lastpass.com^*/analyticsjs$script,~third-party
 ||lastpass.com^*/loadanalytics.js
+||activate.latimes.com/pc/caltimes/?pulse2001=
 ||latimes.com/images/pixel.gif
 ||lcs.naver.
 ||legalmatch.com/scripts/lmtracker.js
@@ -15049,6 +15052,10 @@ _mongo_stats/
 ||txmblr.com^*/pixel^
 ||typepad.com/t/stats?
 ||u.tv/utvplayer/everywhere/tracking.aspx?
+||u44.pnc.com^
+||u45.pnc.com^
+||u46.pnc.com^
+||u47.pnc.com^
 ||ucoz.com/stat/
 ||ucweb.com/collect/
 ||ui-portal.com/1and1/mailcom/s?
@@ -15758,6 +15765,11 @@ $third-party,websocket,domain=ameriprise.com|beachbody.com|chick-fil-a.com|citi.
 ||zrw1.destinia.jp^
 ||zsi7.destinia.do^
 ||zyq2.destinia.sk^
+! McClatchy sites
+://media.*/escenic$script,~third-party,domain=bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|elnuevoherald.com|fresnobee.com|heraldonline.com|heraldsun.com|idahostatesman.com|islandpacket.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|macon.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com
+://media.*/micb.js|$script,~third-party,domain=bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|elnuevoherald.com|fresnobee.com|heraldonline.com|heraldsun.com|idahostatesman.com|islandpacket.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|macon.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com
+/yozons-lib/*$script,~third-party,domain=bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|elnuevoherald.com|fresnobee.com|heraldonline.com|heraldsun.com|idahostatesman.com|islandpacket.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|macon.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com
+://media.*/misites/$script,~third-party,domain=bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|elnuevoherald.com|fresnobee.com|heraldonline.com|heraldsun.com|idahostatesman.com|islandpacket.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|macon.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com
 ! Fingerprintjs
 /^https?:\/\/.*www\.bhphotovideo\.com\/[a-z0-9]{19,}\.js/$script,xmlhttprequest
 /^https?:\/\/.*www\.corsair\.(fr|ci|ca|gp|mq|re)\/[a-z0-9]{19,}\.js/$script,xmlhttprequest
@@ -16274,6 +16286,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ||pagesjaunes.fr/bva/track.js
 ||pagesjaunes.fr/crmmetrix/
 ||pagesjaunes.fr/stats/
+||pixel.ionos.fr^
 ||pwa.telephoneannuaire.fr^
 ||rdtdlv.laredoute.fr^
 ||rtbf.be/log
