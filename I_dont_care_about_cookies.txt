@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 320.202008211019
+! Version: 321.202008281020
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 21 Aug 2020 08:19 UTC
+! Last modified: 28 Aug 2020 08:20 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -50,7 +50,7 @@
 ###cookie-barbody .fixed
 ###cookie-notice-wrapper
 ###mmmmm-cookies
-~hscollective.org,~geefvoorzorgverleners.nl,~conradconnect.com,~biotechusa.hu,~biotechusa.fr,~officiallondontheatre.com,~nieuwspoort.nl,~atro-provita.de###cookie-consent:not([class*="fancybox"])
+~indiearenabooth.com,~hscollective.org,~geefvoorzorgverleners.nl,~conradconnect.com,~biotechusa.hu,~biotechusa.fr,~officiallondontheatre.com,~nieuwspoort.nl,~atro-provita.de###cookie-consent:not([class*="fancybox"])
 ###cookienote
 ~aixfoam.com,~aixfoam.de,~aixfoam.dk,~aixfoam.fi,~aixfoam.fr,~aixfoam.nl,~aixfoam.se###cc-notification
 ##.cc-cookies:not(body):not(html)
@@ -1777,7 +1777,7 @@
 ###cookiePreferences_front-end
 ##.cookieheight:not(body):not(html)
 ###cookie-consent-box
-~thule.com##.cookie-consent-box:not(body):not(html)
+~indiearenabooth.com,~thule.com##.cookie-consent-box:not(body):not(html)
 ###bandeauCookie
 ###cookies-license
 ##.box_cookies:not(body):not(html)
@@ -9432,7 +9432,7 @@
 ##.common-cookie[data-cookie-container]
 ##.sticky_top[data-control="cookie_bar"]
 ###footer ~ #section-cookies
-###center_col #taw #epbar[style*="block"]
+###rcnt #center_col #taw
 ###cookie-popup2-sticky-wrapper
 ###alertpop-privacypolicy
 ##.e-cookie .e-cookie-wrapper
@@ -12013,6 +12013,13 @@
 ##.privacy_cookies_policy
 ###Div_CookieNag
 ###jsCookieNotification
+###cookie_info_container
+##.page-footer ~ div[class*="cookie-banner"]
+##.BannerPrivacyInformation
+###app div[class*="CookieWarning"]
+###pnlPrivacy
+##.component-cookie-banner
+###__next div[class*="GdprBanner"]
 !
 ! CUSTOM RULES
 !
@@ -14338,7 +14345,6 @@ nextpharmajob.com##.userBar
 seifensieder.at###SITE_ROOT ~ .siteAspectsContainer
 wurmberg.de##.datenschutz
 fisherinvestments.com###privNotice
-interrail.eu##.overlay
 101xp.com##.ui-notification-wrapper
 carnevale.venezia.it###privacySlider
 shortpixel.com###shortpixel-cookies
@@ -14819,7 +14825,6 @@ raider.io##div[class*="cookieFooter-module"]
 independer.nl##.ind-cbar
 emclient.com###emcCookieNotification
 drugs.com##.ddc-overlay, .ddc-modal
-haustechnikdialog.de##.cookieOuter
 vesselfinder.com##.pprem_active
 keithurban.net###important-notice
 onvz.nl##.popup_overlay
@@ -14887,7 +14892,6 @@ tomtop.com##.m_privacy_statement
 revouninstallerpro.com###consentAccepted
 freeimages.com##.navbar-qards
 datafox.de##.popup-banner
-thewindowsclub.com##body > div[style*="transparent"]
 producthunt.com###app > div > div[class*="container"]:first-child, #app > div > div[role="navigation"] > div:not([style]) > div[class*="container"]
 lyricsmode.com##body > div:not([id]):not([class])
 recurly.com##.recurly-gdpr
@@ -18118,7 +18122,6 @@ famework.io##.notifications
 aioinissaydowa.eu###cookies
 fesztivalonkentes.hu##.fo-cookie
 tego.fr##.fixed-bottom
-molotov.tv###app > div > div:last-child:not(:only-child):not([style])
 2x2tv.ru##.cook-web
 icontext.ru##.policy-disclaimer
 travelrepublic.co.uk##.sc-c-panel--offset.sc-c-panel--disable-gutters-x
@@ -18735,7 +18738,6 @@ tableau.com##.cTableau_CookieConsent
 niceshop.co##div[class*="InformationModal"]
 ndzperformance.com##.footer #myModal
 adventurecorner.de###ac-consent-overlay
-my-htd.de###pnlPrivacy
 hijobs.net##.snackbar-container
 advanzia.com###cookie
 christopherward.com##.veil
@@ -18832,6 +18834,12 @@ skarda.de##.mod_cms_accept_tags
 trdevents.no##.warning-message
 ubs.com##.lightbox__container
 goteborgenergi.se##.Ge-Msg--cookie
+regnest.com##.cookies
+vigo-krankenversicherung.de###cwarning
+lkh.de##.cc-blur, .cc-overlay
+crew-united.com##.opt-visibility-container
+mercedes-creditcard.de###cookie
+molotov.tv###app > div > div + div:not([class*=" "])
 !
 ! SCRIPT BLOCKING
 !
@@ -19126,7 +19134,7 @@ consent.cookiefirst.com$domain=~swietawdomu.pl
 /modules/cookiesplus/views/js/cookiesplus.js
 /mws-cookie-solution.min.js
 /ajax/libs/cookieconsent2$domain=~membersuite.com|~rijbewijskeuringennederland.nl|~download.pixelexperience.org
-/cookie-consent.js$domain=~lacoste.com
+/cookie-consent.js$domain=~lacoste.com|~indiearenabooth.com
 /cookienotice-bootstrap.js
 /wp-content/plugins/cookieEuGH
 /cookiebar.js
@@ -19149,6 +19157,9 @@ up-cookiemon.wavecdn.net
 /pxpcookies.js
 /website-cookie-consent/*
 /cookie/uccb-main
+/cookie_consent_min_js.js
+/onlinemanufaktur-cookie-notice/*
+/mq_cookieconsent/*
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -19196,6 +19207,7 @@ cmp.uniconsent.com
 /gdpr/consent.js
 ||snigelweb.com/adconsent$script
 choices.consentframework.com
+consentserve.mgr.consensu.org
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -19244,7 +19256,7 @@ gdpr-banner.awsmpsa.com
 ||prizelogic.com/gdpr/third-party-optin.min.js$script
 /gdpr-popup.js
 /wordpress-ptchrgdprplugin/*
-gdpr-wrapper.privacymanager.io$domain=~geenstijl.nl
+gdpr-wrapper.privacymanager.io$domain=~geenstijl.nl|~weeronline.nl
 ||evidon.com/pub/gdprnotice.js$script
 /wp-content/plugins/ct-ultimate-gdpr
 ||gdpr.mandarin-medien.de/manager.js$script
@@ -19277,6 +19289,7 @@ sdk.privacy-center.org$domain=~telegraaf.nl|~dumpert.nl|~funradio.fr|~rtl.fr|~mu
 ||isgprivacy.cbsi.com/dist/optanon.js$script
 /contao-privacy-center.js
 privacy-mgmt.com$domain=~ekstrabladet.dk|~manager-magazin.de|~spiegel.de|~vtm.be
+privacy-policy.u-lab.nl
 ||cmp.nextday.media/cmp$script,domain=~vi.nl|~omroepwest.nl
 cmp.dreamlab.pl
 /media/cmp/int_cmp_banner
@@ -19546,7 +19559,6 @@ fxCookies$domain=haus-des-meeres.at
 /cookienote/*$domain=wittetools.com
 /gdpr-idgy$domain=vejutechnika.lt
 /pltk.js$domain=goodcontent.pl
-/mq_cookieconsent/*$domain=fein.com
 /sibbo-cmp$domain=eldiario.es
 /surbma-yes-no-popup/*$domain=bysarahkhan.com
 /consentMgmt/*$domain=comdirect.de
@@ -19563,6 +19575,9 @@ cmp.parkers.co.uk$domain=parkers.co.uk
 lovelydrum.com$domain=insidermonkey.com
 /intuCookieConsent.js$domain=intu.co.uk
 tags.tiqcdn.com/utag$script,domain=123-reg.co.uk
+stormyachiever.com$domain=thewindowsclub.com
+thirstylettuce.com$domain=thewindowsclub.com
+/gcb/*$domain=gallup.com
 !
 ! FILTERLIST ONLY
 !
