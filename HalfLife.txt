@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: wRzfrB09gMyD2WZyVK8+OQ
+! Checksum: C1uwCJndSnkcbO4/DcFF5g
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202008280800
-! Last Modified: 2020年08月28日 08:00
+! Version: 202008281100
+! Last Modified: 2020年08月28日 11:00
 ! Homepage: https://adf.minggo.eu.org
 !
 !本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
@@ -553,6 +553,7 @@ huya.com###hy-ad,#hy-ab,#huya-ab
 !-----------------------General advert blocking filters-----------------------!
 -1688-wp-media/ads/
 -880-80-4.jpg
+/matongwu/img/gg_
 -90mh-gg.
 .bid/ads/
 .cc/ad/
@@ -9195,9 +9196,12 @@ _yad_jsonp_
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||alicdn.com/kf/H64440f8e4d654f20b5c84e6be2b632b8x.gif
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+qiaobutang.com##.overlay
 szxx.com.cn###A1
+matongwu.com.cn##DIV[style="height:90px;clear:both;"]
 szxx.com.cn###A2
 gpcxw.com###AA2
 yahoo.com###ACT_crazy
@@ -14457,6 +14461,7 @@ gohome.com.hk#@#div[id^="div-gpt-ad"]
 !---------------------------------URL Whitelist-------------------------------!
 @@&adurl=http://$domain=360bifen.cc|360bifen.com
 @@.adserver.$domain=litv.tv
+@@||cpro.baidustatic.com/cpro/ui/cm.js$domain=down.ali213.net
 @@.com/adv/$domain=my.ctrip.com
 @@.gif#$domain=cnprint.org|huhupan.com|tgfcer.com|wgun.net
 @@.jpg#$domain=huhupan.com
@@ -19620,7 +19625,11 @@ _box_ad_
 ||feedou.com/nzq/style/pc/js/zt_bottom.js
 ||66zhuang.com/public_2017/js/count-gou.js
 ||xuexila.com^*-xxl.js
+||sogoucdn.com/translate/ssr/static/img/banner-
+||cls.cn/v2/web/ad?
 !------------------------Specific element hiding rules------------------------!
+qiaobutang.com##.fixed-footer-wrap
+fanyi.baidu.com###app-read
 pan.baidu.com##.phone-banner
 epubee.com##.reader-to-vip
 news.163.com##.mod_netes_origina
