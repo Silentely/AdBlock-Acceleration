@@ -19,6 +19,12 @@ jobs:
           file-url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
           file-name: AdGuard_Simplified_Domain_Names_Filter.txt
 
+      - name: Anti-AD #号称是目前中文区命中率最高的广告过滤列表，实现了精确的广告屏蔽和隐私保护
+        uses: carlosperate/download-file-action@v1.0.0
+        with: 
+          file-url: https://anti-ad.net/easylist.txt
+          file-name: Anti_AD_Easylist.txt
+
       - name: EasyList China
         uses: carlosperate/download-file-action@v1.0.0
         with: 
@@ -84,6 +90,24 @@ jobs:
         with: 
           file-url: https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts
           file-name: 1024_hosts.txt
+          
+      - name: iOSAdblockList #海外维护针对移动网站的广告主机列表
+        uses: carlosperate/download-file-action@v1.0.0
+        with: 
+          file-url: https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt
+          file-name: iPv4_hosts.txt
+          
+      - name: StevenBlack #国外维护比较知名的屏幕广告主机列表,整合和扩展多个精心设计的主机文件
+        uses: carlosperate/download-file-action@v1.0.0
+        with: 
+          file-url: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+          file-name: Steven_hosts
+          
+      - name: Hblock #自动提取来自很多规则源的恶意广告主机列表
+        uses: carlosperate/download-file-action@v1.0.0
+        with: 
+          file-url: https://hblock.molinero.dev/hosts
+          file-name: Hblock_hosts
           
       - name: Commit Changes
         run: |
