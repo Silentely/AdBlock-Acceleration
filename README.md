@@ -1,3 +1,5 @@
+![Anurag’s github stats](https://github-readme-stats.vercel.app/api?username=Silentely&show_icons=true&theme=merko)
+
 # AdBlock-Acceleration
 
 国内加速过滤广告规则订阅
@@ -66,7 +68,7 @@
 | CJX's Annoyance List | [原始](https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/CJX's_Annoyance_List.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/CJX's_Annoyance_List.txt) |
 | 乘风广告过滤 | [原始](https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/Xinggsf_rule.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt) |
 | 乘风视频过滤 | [原始](https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/Xinggsf_mv.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt) |
-| ADgk手机去广告规则 | [原始](https://gitee.com/banbendalao/adguard/raw/master/ADgk.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/ADgk.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/ADgk.txt) |
+| ADgk | [原始](https://gitee.com/banbendalao/adguard/raw/master/ADgk.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/ADgk.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/ADgk.txt) |
 | 大圣净化 | [原始](https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/ds_hosts.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/ds_hosts.txt) |
 | 1024 hosts | [原始](https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/1024_hosts.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/1024_hosts.txt) |
 | iOSAdblockList | [原始](https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/iPv4_hosts.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/iPv4_hosts.txt) |
