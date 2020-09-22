@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: oSmXmuT9NpPEcndCnKyV7A
-! Version: 202009211953
+! Checksum: p6uaZzBrGqzEkRzSfNrziw
+! Version: 202009220023
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last Modified: 21 Sep 2020 19:53 UTC
+! Last Modified: 22 Sep 2020 00:23 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: http://abpchina.org/forum/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -1025,6 +1025,7 @@ _xiuno_com_ad/
 ##a[href*=".bayiyy.com/download."]
 ##a[href*=".biwbmsyt.cn"]
 ##a[href*=".cangpie.com/"]
+##a[href*=".caohang.com.cn/"]
 ##a[href*=".chouchuai.com/"]
 ##a[href*=".chuairan.com/"]
 ##a[href*=".com/?Extend="]
@@ -1105,17 +1106,11 @@ _xiuno_com_ad/
 ##img[src*=".sinaimg."][style="width:150px;height:300px"]
 ##script + #coupletBox
 ##script + #rbbox
-##A[href*=".caohang.com.cn/"]
 ##script[src="/js/sy2.js"] + div[align="center"]
 ##span[title="neteasefooter"]
 ##table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"]
 !----------------------------------Ads-Union----------------------------------!
 .8ox.cn
-||201n.com^
-||ye2017.com^
-||zzpzero.com^
-||lmepskqkrrya.com^
-||eossbuqccjrfs.com^
 .cc/s.php?id=$script,third-party
 .cn/?ss=$script,third-party
 .cn/s.php?id=$script,third-party
@@ -1363,6 +1358,7 @@ ubmcmm.baidustatic.com
 ||201071.com^
 ||2012ui.com^
 ||2018haoyunlai.com^
+||201n.com^
 ||210.65.10.32^$third-party
 ||211.103.159.32^
 ||211.149.225.23^
@@ -2091,6 +2087,7 @@ ubmcmm.baidustatic.com
 ||eleobj.com^
 ||emarbox.com^$third-party
 ||enohb.com^
+||eossbuqccjrfs.com^
 ||erdsyzb.com^
 ||erosyndc.com^
 ||erqimall.net^
@@ -2644,6 +2641,7 @@ ubmcmm.baidustatic.com
 ||llqss.top^
 ||llrnlzl.cn^
 ||lm.35.com^$third-party
+||lmepskqkrrya.com^
 ||lnr1.com^$third-party
 ||log.interest.mix.sina.com.cn^
 ||lolmp4.com^$third-party
@@ -3534,6 +3532,7 @@ ubmcmm.baidustatic.com
 ||ycjisa.cn^
 ||ydcpc.com^$third-party
 ||ydqzkj.com^
+||ye2017.com^
 ||ye3.com^$third-party
 ||yenlm.com^
 ||yese115.com^
@@ -3720,6 +3719,7 @@ ubmcmm.baidustatic.com
 ||zzad.com^$third-party
 ||zzbaowen.com^
 ||zzkoubei.com^
+||zzpzero.com^
 ||zzsssy.com^
 ||zzwflxs.com^
 ||zzwpsm.cn^
@@ -3903,8 +3903,7 @@ $websocket,domain=5nj.com|cechi8.com
 ://*btbtt.*/view/image/QT_
 ://ads.$domain=520cc.cc|520cc.me
 ://dmhy.org^*?$image
-://www.*.js|$script,third-party,domain=r3sub.com
-://www.*.js|$script,third-party,domain=159i.com|thisav.com
+://www.*.js|$script,third-party,domain=159i.com|r3sub.com|thisav.com
 :88/lighttpd/default/
 ?method=baidu.ting.commercial.tactics&
 _!!1731999033.
@@ -5769,6 +5768,7 @@ _yad_jsonp_
 ||ecma.bdimg.com^
 ||ecmb.bdimg.com^
 ||ecpoc.com/style/ad
+||edmontonchina.*/pic/
 ||educity.cn/self_text/text_disp.aspx?id=
 ||eduuu.com/website/public_js/pc_aso.js
 ||ee021.com/Runtime/js/
@@ -6464,6 +6464,7 @@ _yad_jsonp_
 ||itc.cn/mdevp/*-advert/
 ||itc.cn/w/u/0/old-insertAd-
 ||itheat.com/?show=
+||ithome.com.tw/media/serve?
 ||ithome.com/api/lapin/
 ||ithome.com/file/js/lapin-load.js
 ||ithome.com/file/js/money/
@@ -7010,6 +7011,7 @@ _yad_jsonp_
 ||mop.com/js/common/watermark.js
 ||mop.com/newIndex/gg.html
 ||moratame.tw/img/contents/banner
+||mortgagecentres.net/banner.gif
 ||movshow.com/*portal/
 ||mowenxi.com/1.png
 ||mp3.haogeba.com^$image,object
@@ -8707,12 +8709,9 @@ _yad_jsonp_
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
-||ithome.com.tw/media/serve?
-||edmontonchina.*/pic/
-||mortgagecentres.net/banner.gif
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
-rfidworld.com.cn###placeHolderR
+gameinns.com##A[url^="/api/ads?"]
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -9710,6 +9709,7 @@ blog.sina.cn###pl-blog-artad
 blog.sina.cn###pl-blog-tbyy
 blog.sina.cn###pl-float-bar
 weibo.com###pl_common_ali
+rfidworld.com.cn###placeHolderR
 hao.360.cn,hao.360.com###plane > .plane-hd
 hao.360.cn,hao.360.com###plane-ria
 1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com###plat_order_head
@@ -15877,15 +15877,15 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 @@||gtimg.com/libs/$domain=18xs.org
 @@||libs.baidu.com^$domain=138txt.com|18xs.org|1biqu.com|1kanshu.cc|230book.com|23hh.com|23txt.com|23wxx.com|258zw.com|27xsw.com|2baob.com|30sy.com|33yq.com|365book.net|37zw.net|39shubao.com|3yt.com|52biquge.com|58xs.com|5ccc.tw|78zw.com|81zw.me|8jzw.com|99mk.com|99shumeng.net|aikantxt.la|balingtxt.com|baoshuu.com|bbiqugew.com|biduo.cc|biqiuge.com|biqubao.com|biqudu.tv|biquga.com|biquge.com.cn|biquge.info|biquge.lu|biquge.tv|biquge.tw|biquge11.com|biquge6.com|biquge98.com|biqugecd.com|biqugego.com|biqugeii.com|biqugemm.com|biqugesc.com|biqukan.com|biquku.la|biqusan.com|biqutxt.com|bixia.org|biyuwu.cc|bodekang.net|boluoxs.com|bookbao.org|bookbao9.net|booksky.cc|booktxt.net|bshuku.com|bxwx.org|bxwx.tw|bxwx8.la|bxwxorg.com|cits0871.com|clewx.com|dashenxiaoshuo.com|day66.com|ddxs.cc|ddxsku.com|dushuge.net|farpop.com|fhxiaoshuo.org|gdbzkz.com|guaili.org|hatxt.com|hbfie.org|hehuamei.com|heikexs.com|heiyanwang.com|hongyeshuzhai.com|hybiquge.com|imiaobige.com|iqishu.la|ishisetianxia.com|ixiatxt.com|ixs.la|ixuanquge.com|jianlaixiaoshuo.com|jx.la|liewen.la|lindiankanshu.cc|liudatxt.com|lwtxt.net|lwxstxt.com|mhtwx.la|mubige.com|paoshu8.com|pfwx.com|piaotianxs.com|pingshuku.com|qbxs8.net|qianrenge.cc|qiqint.la|qishudu.com|qq717.com|quledu.net|qushuba.com|rmxs8.com|sbiquge18.com|shenshu.info|shu008.com|shuhaige.net|shuhaiwu.com|shumil.co|shuquge.com|siluke.tv|soxs.cc|tangsanshu.com|tpszw.com|ttzw.tv|txshuku.net|tycqxs.com|u33.cc|v63xs.com|vipxs.la|wanwenhui.com|wenxuem.com|wrlwx.com|x23us.me|x81zw.com|xaixs.org|xbiquge.la|xbiqugecc.com|xbiqugew.net|xbiquke.com|xbqge.net|xcmxsw.com|xdingdiann.com|xiangcunxiaoshuo.com|xiaoshuosk.com|xieyixs.com|xinxs.la|xqiushu.com|xs222.co|xs5200.com|xs98.com|xsw55.com|xszww.com|xuehong.cc|xuehongxs.com|yawenb.com|yikanxiaoshuo.com|yq-888.com|yruan.com|yssm.tv|yunxs.com|zbzw.la|zhuaji.org|zwdu.com|zzs5.com
 !#Novels
-||zdovrb.cn^
-||bigcooa.xyz^
-bxwx666.org###addiv3
-bxwx666.org###bdstatic
 ###downdiv > .downcode
 ##.box_con[style="border-radius:10px;background-color:#ff0000;padding:15px;"]
+##.layui-row[style="height:160px;border-radius:10px;background-color:#ff0000;padding:15px;margin:15px;"]
+##.readerListADbox
+##a[href*=".com/tg.html?id="]
+##a[href*="://mgzs.cdn.bcebos.com/"]
+##a[href="/ad2.html"]
 .ca.bxwx3.org^
 .com/code.php?a=index&z=$script,third-party,xmlhttprequest
-##.layui-row[style="height:160px;border-radius:10px;background-color:#ff0000;padding:15px;margin:15px;"]
 .m.23txt.com^
 .m.biduo.cc^
 .m.biquge5200.cc^
@@ -15906,8 +15906,6 @@ bxwx666.org###bdstatic
 .m.zineworm.com^
 .m.zwda.com^
 .m.zwdu.com^
-duanwenxue.com##.qgzdwx
-##.readerListADbox
 .wap.x4399.com^
 .wap.yb3.cc^
 /2me3/true.js
@@ -15918,20 +15916,20 @@ duanwenxue.com##.qgzdwx
 /xxgg/book.js
 /xxgg/gzh.js
 /xxgg/xsggs.js
+52biquge.com##[onclick*="app"]
+52biquge.com##a[href^="http://html.350.com/"]
 @@||31xiaoshuo.org/style/pxne5d.js
 @@||dzz8.com/public/ptcms/*.js?g=$domain=m.daizhuzai.com
 @@||meiwenfen.com^$xmlhttprequest,domain=520tingshu.com
-xuehongxs.com##DIV[id^="cs_DIV_cscpvrich"]
-jx.la##[onclick*="apk"]
-52biquge.com##[onclick*="app"]
-dukankan.com,ibqg5200.com,snwx3.com##[style*="fixed"]
-##a[href*=".com/tg.html?id="]
-##a[href*="://mgzs.cdn.bcebos.com/"]
-##a[href="/ad2.html"]
-52biquge.com##a[href^="http://html.350.com/"]
-bixia.org##dd[style*="bottom:"]
 biqubao.com##div[style="width:976px;"]
+bixia.org##dd[style*="bottom:"]
+bxwx666.org###addiv3
+bxwx666.org###bdstatic
+duanwenxue.com##.qgzdwx
+dukankan.com,ibqg5200.com,snwx3.com##[style*="fixed"]
+jx.la##[onclick*="apk"]
 piaotian5.com##script + div[style="padding:15px;"]
+xuehongxs.com##DIV[id^="cs_DIV_cscpvrich"]
 ||01w47q.cn^
 ||0217qpineuxbcdhopswkvf.xyz^
 ||0224fqpowiuxybnmvdfghj.xyz^
@@ -16239,6 +16237,7 @@ piaotian5.com##script + div[style="padding:15px;"]
 ||bhyddc.com^
 ||bianxianwu.com^
 ||bibi91.com^
+||bigcooa.xyz^
 ||bigcoob.xyz^
 ||bigcooc.xyz^
 ||bigcood.xyz^
@@ -17851,6 +17850,7 @@ piaotian5.com##script + div[style="padding:15px;"]
 ||zazkkk.com^
 ||zbieo.com^
 ||zcand.com^
+||zdovrb.cn^
 ||zenwq.com^
 ||zfanc.com^
 ||zfood029.com^
