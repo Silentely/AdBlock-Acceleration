@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202009251739
+! Version: 202009260027
 ! Title: EasyPrivacy
-! Last modified: 25 Sep 2020 17:39 UTC
+! Last modified: 26 Sep 2020 00:27 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -10114,6 +10114,7 @@ _mongo_stats/
 ||ask.com^*/i.gif?
 ||assoc-amazon.*^e/ir?t=$image
 ||asterpix.com/tagcloudview/
+||atcdn.co.uk/frostbite/
 ||atdmt.com/action/
 ||atdmt.com/iaction/
 ||atdmt.com/jaction/
@@ -17159,6 +17160,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||adobedtm.com/*_source.min.js$script,domain=kroger.com
 @@||adobedtm.com/extensions/$script,domain=atresplayer.com
 @@||adobedtm.com/launch-$script
+@@||adobedtm.com^*/AppMeasurement.min.js$script,domain=apple.com
 @@||adobedtm.com^*/launch-$script,xmlhttprequest
 @@||adobedtm.com^*/mbox-contents-$script,domain=absa.co.za|ally.com|americanexpress.com|costco.com|fcbarcelona.com|firststatesuper.com.au|hgtv.com|lenovo.com|lowes.com|newyorker.com|nfl.com|oprah.com|pnc.com|shoppersdrugmart.ca|usanetwork.com|vanityfair.com|wired.com|wowway.net
 @@||adobedtm.com^*/s-code-$script
@@ -17534,6 +17536,9 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||zappos.com/js/trackingPixel/mercentTracker.js
 @@||zylom.com/images/site/zylom/scripts/google-analytics.js
 @@||zynga.com/current/iframe/track.php?$domain=apps.facebook.com
+! Consent Fixes
+@@||notice.sp-prod.net^$subdocument,domain=telegraph.co.uk
+@@||sourcepoint.telegraph.co.uk^$~third-party,xmlhttprequest
 ! Stackoverflow-related. https://forums.lanik.us/viewtopic.php?f=64&t=44747
 @@||askubuntu.com/tags/$~third-party,xmlhttprequest
 @@||mathoverflow.net/tags/$~third-party,xmlhttprequest
