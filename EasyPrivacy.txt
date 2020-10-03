@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202010022352
+! Version: 202010030334
 ! Title: EasyPrivacy
-! Last modified: 02 Oct 2020 23:52 UTC
+! Last modified: 03 Oct 2020 03:34 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1918,9 +1918,14 @@
 /FoxAnalyticsExtension.
 /FoxBlueKaiPlugIn.
 /FoxComScore.
+/fp/*?org_id=
 /fp/check.js
-/fp/clear.png?
+/fp/clear.png
+/fp/clear2.png
+/fp/clear3.png
+/fp/fp.swf
 /fp/tags.js?
+/fp/top_fp.
 /fpc.pl?a=
 /fpcookie?
 /fpcount.exe
@@ -5111,8 +5116,10 @@
 ://adclear.*/acc?
 ://adclear.*/acv?
 ://analytics.*/collect
-://analytics.*/events
+://analytics.*/event
+://analytics.*/hits/
 ://analytics.*/page_entry
+://analytics.*/pageview/
 ://analytics.*/tracker.
 ://anx.*/anx.gif?
 ://apex.*/apexTarget?
@@ -9544,6 +9551,7 @@ _mongo_stats/
 ||genieedmp.com^$third-party
 ||genieessp.jp^$third-party
 ||gmodmp.jp^$third-party
+||gmossp-sp.jp^$third-party
 ||gsspcln.jp^$third-party
 ||hitgraph.jp^$third-party
 ||i2ad.jp^$third-party
@@ -10302,6 +10310,7 @@ _mongo_stats/
 ||cgicounter.puretec.de^
 ||chanalytics.merchantadvantage.com^
 ||chartaca.com.s3.amazonaws.com^
+||check.ddos-guard.net^$third-party
 ||checkout.com/logger/
 ||chicoryapp.com/widget_v2/
 ||choicestream.com^*/pixel/
@@ -10333,6 +10342,7 @@ _mongo_stats/
 ||clipsyndicate.com/cs_api/cliplog?
 ||clnk.me/_t.gif?
 ||cloudapp.net/l/
+||clouderrorreporting.googleapis.com^
 ||cloudfront-labs.amazonaws.com^
 ||cloudfront.net*/keywee.min.js
 ||cloudfront.net*/sp.js|
@@ -10422,6 +10432,7 @@ _mongo_stats/
 ||contactatonce.com/VisitorContext.aspx?
 ||content.cpcache.com^*/js/ga.js
 ||contentpass.net/stats?$third-party
+||contents-tracking.beop.io^
 ||control.cityofcairns.com^$third-party
 ||conversions.genieventures.co.uk^
 ||convertflow.co^*/events/
@@ -11623,6 +11634,7 @@ _mongo_stats/
 ||systemmonitoring.badgeville.com^
 ||t-staging.powerreviews.com^
 ||t.a3cloud.net^
+||t.beop.io^
 ||t.beopinion.com^
 ||t.bimvid.com^
 ||t.brand-server.com^
@@ -16710,6 +16722,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ||logs.ggweb.nl^
 ||marktplaats.nl/add_counter_image.
 ||marktplaats.nl/metrics/
+||marktplaats.nl/px/
 ||rtl.nl/system/track/
 ||sanoma.nl/pixel/
 ||sat.sanoma.fi^
