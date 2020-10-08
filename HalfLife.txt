@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: VUAmCE9cgNROK3U3wrbciw
+! Checksum: bHBOx5BWTQTtTXuTT5FrUw
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202010080816
-! Last Modified: 2020年10月08日 08:16
+! Version: 202010081206
+! Last Modified: 2020年10月08日 12:06
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -11737,7 +11737,6 @@ douyu.com##.f-sign-cont
 user.qzone.qq.com##.f-single-biz
 nwell.net##.f14hui[width="25%"]
 xiaobaipan.com##.f_ad
-m.sohu.com##.f_rec[href^="//m.sohu.com/promotion?"][href*="/f/"]
 sgcn.com,wangjing.cn##.fad
 mobile01.com##.fast-ad
 duote.com##.fast-down-btn
@@ -13587,7 +13586,6 @@ dzbhdm.com##a[href*="/xzgg/"]
 tingvoa.com##a[href*="?adid="]
 ruanyifeng.com##a[href*="?utm_source="]
 dilidili.wang##a[href*="Game"]
-sohu.com##a[href*="_Click_Flow_recommend_"]
 eworldship.com##a[href*="ad_click&"]
 xitek.com##a[href*="adclick"] + .info
 guilinlife.com##a[href*="adclicks&"]
@@ -14553,6 +14551,7 @@ gohome.com.hk#@#div[id^="div-gpt-ad"]
 !---------------------------------URL Whitelist-------------------------------!
 @@&adurl=http://$domain=360bifen.cc|360bifen.com
 @@.adserver.$domain=litv.tv
+@@||pochou.com/img/ad/
 @@.com/adv/$domain=my.ctrip.com
 @@.gif#$domain=cnprint.org|huhupan.com|tgfcer.com|wgun.net
 @@.jpg#$domain=huhupan.com
@@ -16502,7 +16501,8 @@ duanwenxue.com##.qgzdwx
 dukankan.com,ibqg5200.com,snwx3.com##[style*="fixed"]
 jx.la##[onclick*="apk"]
 piaotian5.com##script + div[style="padding:15px;"]
-shengyijia8.com##div[style="padding:10px;border-radius:10px;background-color:green;"]
+###chaptername + div > div[style="padding:10px;border-radius:10px;background-color:green;"]
+##DIV[style="border-radius:8px;background-color:#005737;padding:6px;"]
 xuehongxs.com##div[id^="cs_DIV_cscpvrich"]
 ||01w47q.cn^
 ||0217qpineuxbcdhopswkvf.xyz^
