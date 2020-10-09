@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: xhAcpy22jYU9Q7Q8L7ERrw
-! Version: 202010090023
+! Checksum: MFaSzOL5iwbt0bQF9pDgOA
+! Version: 202010090403
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last Modified: 09 Oct 2020 00:23 UTC
+! Last Modified: 09 Oct 2020 04:03 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: http://abpchina.org/forum/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -1119,6 +1119,7 @@ _xiuno_com_ad/
 ##img[src*=".sinaimg."][style="width:150px;height:300px"]
 ##script + #coupletBox
 ##script + #rbbox
+###fixed-bottom-modal[style="right: 82.5px; display: block;"]
 ##script[src="/js/sy2.js"] + div[align="center"]
 ##span[title="neteasefooter"]
 ##table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"]
@@ -7848,7 +7849,6 @@ _yad_jsonp_
 ||szkaidi.cn/statics/g
 ||sznews.com/*.files/$image,object
 ||sznews.com/s?z=
-||szonline.net/zhongyuan
 ||szyepu8.com/data/AADDimg/
 ||szyhqj.com/js/
 ||t.cn/RkHfjHk|
@@ -8735,6 +8735,8 @@ _yad_jsonp_
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||szonline.net/static/js/ads.js
+||c.mipcdn.com^$domain=manhuabei.com
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
 szxx.com.cn###A1
@@ -11431,8 +11433,6 @@ cnlinfo.net##.guanggao-right
 hkwb.net##.guanggao2
 tukergo.com##.guanggaoBox
 gasaq.com##.guanggao_ime_big
-shm.com.cn##.guanggaowei2
-shm.com.cn##.guanggaowei3
 downhot.com##.guans
 daohang.qq.com##.guess
 hao.qq.com##.guess.m
@@ -13465,7 +13465,6 @@ ali213.net##div[id^="ali-ad-js-"]
 jdbbs.com##div[id^="archy_ad"]
 qbiao.com##div[id^="aup"]
 qianzhan.com##div[id^="baidu_ad_"]
-shm.com.cn##div[id^="baidu_clb_slot_"]
 ncnews.com.cn##div[id^="ban"]
 recruit.com.hk##div[id^="banner"]
 2345.com##div[id^="bd-search-ad"]
