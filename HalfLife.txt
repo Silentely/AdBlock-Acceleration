@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: bJwK8x46oR8wYgmkwzgN/Q
+! Checksum: VcnR/mvvKsGkCRpjZodMIA
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202010140840
-! Last Modified: 2020年10月14日 08:40
+! Version: 202010141216
+! Last Modified: 2020年10月14日 12:16
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -727,7 +727,6 @@ youle55.com
 /api/apiFetchAdsData
 /api/autosda.php
 /app_ad/slade.js
-/Appapi/adlist.php
 /Appapi/jjlist.php
 /apps/misc.php?action=advert&
 /assets/banners/600x100/*
@@ -9287,6 +9286,7 @@ _yad_jsonp_
 ||zzzyk.com/js/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+toolfk.com##.desc.center
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -14211,7 +14211,7 @@ bbs.my0511.com##embed[width="970"][height="70"]
 engadget.com#?#.Py\(40px\):-abp-has(> article > .D\(f\) > .Pos\(r\)[data-ylk*=":AD;"])
 guilinlife.com#?#li:-abp-has(> div > .content-other > .content-type:-abp-contains(广告))
 cnbeta.com##h2 > a[href^="https://active.greatroma.com"]
-hboav.com#?#div:-abp-has(>div>.cc5278_banner_ad_cb)
+hboav.com#?#script + div:-abp-has(>div>.cc5278_banner_ad_cb)
 ifeng.com#?#.box_list:-abp-has(.tuig)
 ifeng.com#?#div[class^="titleImg-"]:-abp-has(span[class^="source-"]:-abp-contains(推广))
 sina.cn##iframe[id^="sinaadtk_"]
