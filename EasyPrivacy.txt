@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202010132004
+! Version: 202010132346
 ! Title: EasyPrivacy
-! Last modified: 13 Oct 2020 20:04 UTC
+! Last modified: 13 Oct 2020 23:46 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -10017,6 +10017,7 @@ _mongo_stats/
 ||amazonaws.com/prod/entities
 ||amazonaws.com/prod/main?ref=$image,third-party
 ||amazonaws.com/prod/report-only
+||amazonaws.com/production_beacon
 ||amazonaws.com/searchdiscovery-satellite-production/
 ||amazonaws.com/statics.reedge.com/
 ||amazonaws.com/wgntrk/
@@ -14859,6 +14860,7 @@ _mongo_stats/
 ||sp.zanesvilletimesrecorder.com^
 ||spanids.dictionary.com^
 ||spanids.thesaurus.com^
+||spankbang.com/auth_fetch?$xmlhttprequest
 ||spankbang.com/fetch$xmlhttprequest
 ||spankbang.com^$ping
 ||speakertext.com/analytics/
@@ -15479,6 +15481,7 @@ _mongo_stats/
 ||yopmail.com/c.swf
 ||youandyourwedding.co.uk^*/EAS_tag.
 ||youandyourwedding.co.uk^*/socialtracking/
+||youjizzlive.com/api/metrics
 ||younewstv.com/js/easyxdm.min.js
 ||youporn.com^*/tracker.js
 ||yourbittorrent.com/collect.php
@@ -17558,7 +17561,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||px-cdn.net/api/v2/collector/ocaptcha$xmlhttprequest
 @@||quantcast.com/wp-content/themes/quantcast/$domain=quantcast.com
 @@||quantcast.mgr.consensu.org/cmp.js$script,domain=cyclingnews.com|independent.co.uk|ladbible.com
-@@||quantcast.mgr.consensu.org^*/cmp2.js$script,domain=cyclingnews.com|independent.co.uk|ladbible.com|mirror.co.uk
+@@||quantcast.mgr.consensu.org^*/cmp2.js$script,domain=cyclingnews.com|independent.co.uk|ladbible.com|mirror.co.uk|tumblr.com
 @@||quantserve.com/quant.js$domain=apps.facebook.com|nymag.com
 @@||rasset.ie/dotie/js/tracker.js$domain=rte.ie
 @@||rba-screen.healthsafe-id.com/fp/tags.js$script,domain=myuhc.com
@@ -17578,10 +17581,11 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||sealserver.trustwave.com/seal.js$domain=zoom.us
 @@||sears.com^*/analytics.sitecatalyst.js
 @@||secure.logmein.com/scripts/Tracking/$script,domain=logme.in|logmein.com
-@@||segment.com/analytics.js/*/analytics.min.js$script
+! @@||segment.com/analytics.js/*/analytics.min.js$script
 @@||segment.com/v1/projects/$xmlhttprequest,domain=benchling.com
 @@||segment.io/analytics.js/*/analytics.min.js$script
 @@||segment.io/v1/$xmlhttprequest,domain=greentoe.com
+@@||serve-ts.amagi.tv^*/beacon?$xmlhttprequest,domain=watch.truecrimenetworktv.com
 @@||siteapps.caa.co.uk/scripts/plugins/analytics/ga.min.js$script,~third-party
 @@||smartclient.com/smartclient/isomorphic/system/modules/isc_analytics.js$xmlhttprequest
 @@||songza.com/static/*/songza/systems/$script
