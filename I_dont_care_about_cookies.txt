@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 323.202010140931
+! Version: 323.202010151003
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 14 Oct 2020 07:31 UTC
+! Last modified: 15 Oct 2020 08:03 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -462,7 +462,7 @@
 ###cookie_2
 ###avcn_notification
 ###cookie_agree
-###cookie_agreement
+~kruk.eu###cookie_agreement
 ###polityka-cookie
 ##.policy-box:not(body):not(html)
 ###WP-cookie-info
@@ -947,7 +947,7 @@
 ###politykaPrywatnosciHolder
 ###cookie-law-info
 ###cookis-bg
-~enbw.com##.cookie-agreement:not(body):not(html)
+~kruk.eu,~enbw.com##.cookie-agreement:not(body):not(html)
 ###barracookie
 ###barracookies
 ###cnilCookie
@@ -1412,7 +1412,7 @@
 ###cookies_notification
 ###topCookie
 ###cookieComplianceMessage
-###cookie_accept
+~kruk.eu###cookie_accept
 ##.coockie_banner:not(body):not(html)
 ###cookie-nb-msg
 ###dCookies
@@ -1995,7 +1995,7 @@
 ###head-bar-cookie-info
 ###cookies-alerta
 ###cookiesBannerContainer
-###cookie-agreement
+~kruk.eu###cookie-agreement
 ##.jw-widget-show-cookies-policy
 ###cookie_acc_wrap
 ##.block-lsw-cookie:not(body):not(html)
@@ -2909,7 +2909,7 @@
 ###cookieheader
 ###cookiestext
 ##.box-info-cookie:not(body):not(html)
-~uniroyal.pl,~continental-reifen.de##.privacyhint:not(body):not(html)
+~uniroyal.de,~uniroyal.pl,~continental-reifen.de##.privacyhint:not(body):not(html)
 ###cookieAlertWrap
 ###cookinfo
 ###popCookie
@@ -4337,7 +4337,7 @@
 ###eucookies
 ###chellocookies-bar
 ###sg-cookies-wrapper-outside
-~uniroyal.pl,~continental-reifen.de##.js-cookie-banner:not(body):not(html)
+~uniroyal.de,~uniroyal.pl,~continental-reifen.de##.js-cookie-banner:not(body):not(html)
 ###ms-cookie-policy
 ###d-policy-disclaimer
 ###privacyCookie
@@ -7423,7 +7423,7 @@
 ###CookieInformationRoot
 ##.notice--cookie:not(body):not(html)
 ##.neo-footer__cookieBar
-###perpetuum-cookie-bar.visible
+##.cookies-disclaimer__wrapper
 ###cookieChoiceInfo_general
 ###react-cookie-bar
 ##.capaCookiesNew:not(body):not(html)
@@ -12247,6 +12247,27 @@
 ##.consent__cookies
 ###___gatsby div[class*="CookieBox"]
 ##.sticky-footer-cookie-info
+##.cookie-policy-banner-bar
+###ms-cookie-consent-banner
+##.cookie-disclaimer-component
+###CookiePlus.cookieplus
+##tui-cookie-consent
+##.popup-cookie-background
+##.cookie-accept-popup
+###jive-cookie-overlay
+###gdpr-banner-module
+###trackingcookie-banner
+###cct-box[data-ccid*="cookie_consent"]
+###app div[class*="CookieNotification"]
+###GDPR-acceptDialogWrapper
+###cookieSimpleHint
+##.overlay__shadow--cookie-consent
+##.privacy_consent
+###gdc-cookieSettings
+###root div[data-dmid*="cookiebar"]
+###notice.cookies
+###cookieDialogue
+##.CookieConsent-wrapper
 !
 ! CUSTOM RULES
 !
@@ -14532,7 +14553,6 @@ placelibertine.com##.cookieText
 tim.it###privacy_disclaimer
 plaques-immatriculation.info###cookies
 lottosurprise.be##._cookies-cookie
-agendadigitale.eu##.accetta-container
 oksofas.es##.jCookie
 mescommercantsdugrandhainaut.com###divacacher
 winteroutlet.ro###haveCookie
@@ -16110,7 +16130,6 @@ fidelidade.pt###cookies
 plume.com###root > div[class*="GDPR"]
 versobooks.com##.banner, #banner
 sadzawka.pl###cookie
-dynavap.com###cookie
 jemogfix.dk###cookie
 lawebdelprogramador.com###cookie
 m4sport.hu###cookie
@@ -19266,6 +19285,32 @@ comprovendolibri.it###CVLR_AdvPrivacy, #CVLR_AdvPrivacy ~ table
 soft8soft.com##.total-plus-privacy-policy
 spiel.digital###root > div:not([style])
 kartoteka.by##.privacy-popup
+pc-college.de###clayer
+compassesgreenfield.co.uk##.cookies-wrpr
+vinidex.com.au###tde-gdpr
+boehringer-ingelheim.com###bi-eu-cookie-disclaimer
+att.com###vt-ccb-notify
+stoffen-hemmers.nl##.cookie
+riteintherain.com###screen-overlay-white
+fantasy.motogp.com###root > div
+info-retraite.fr##.cookies
+was-reimt-sich-auf.de###cookies-modal, #cookies-backdrop
+jimdosite.com##main ~ div
+okpedia.it##.privacy
+uswitch.com###us-cookies
+surveymonkey.com##.mds-gdpr-cookie-banner, .wds-overlay
+frameworktraining.co.uk##.fwt_cookie
+aarsfjv.dk##dffedb-cookie-consent
+djv.de###cc
+megascena.pl###cookies
+steigenberger.com###privacymanager
+optima.hr##.cookies
+troha-dil.hr###kvnotice
+tokic.hr##.cookie
+deceuninck.hr##.page-wrapper > .popup
+dynavap.com###cookie
+gutscheine.de##div[data-ssr-consent]
+7mind.de##.cookie
 !
 ! SCRIPT BLOCKING
 !
@@ -19820,7 +19865,7 @@ jquery.smartCookie.min.js
 /tracking-permission-dialog.js
 ||origin-images.wikia.com/fandom-ae-assets/tracking-opt-in$script
 /tracking-opt-in.min.js
-quantcast.mgr.consensu.org$domain=~sourceforge.net|~tumblr.com|~vi.nl|~independent.co.uk|~joe.ie|~cnews.fr
+quantcast.mgr.consensu.org$domain=~sourceforge.net|~tumblr.com|~vi.nl|~independent.co.uk|~joe.ie|~joe.co.uk|~cnews.fr
 gemius.mgr.consensu.org
 sddan.mgr.consensu.org
 digitrust.mgr.consensu.org
@@ -20079,6 +20124,6 @@ guideitech.com##.pea_cook_wrapper
 fifa.com##.mdl-overlay
 lubliniec.eu###cadre_alert_cookies
 cnet.com###-e_xobwhg_utggxk
-epson.com,3mpolska.pl,bosch-professional.com,cisco.com,command.pl,e.huawei.com,logitech.com,logitechg.com,post-it.pl,vacansoleil.pl###__tealiumGDPRecModal
+epson.com,americanbar.org,3mpolska.pl,bosch-professional.com,cisco.com,command.pl,e.huawei.com,logitech.com,logitechg.com,post-it.pl,vacansoleil.pl###__tealiumGDPRecModal
 @@||nf.pl/js/libs/cookiesDirective.js$script
 overdrive.com###bkgOverlay
