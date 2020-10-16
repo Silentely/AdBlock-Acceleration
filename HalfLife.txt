@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: L6dKNuVSHeWFlFVDMYYkbw
+! Checksum: bk9130XxJtGMKRa4OTUOWg
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202010160018
-! Last Modified: 2020年10月16日 00:18
+! Version: 202010160415
+! Last Modified: 2020年10月16日 04:15
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -451,6 +451,110 @@ tieba.baidu.com##.light_top_ext_area
 tieba.baidu.com##.j_click_stats, .j_click_stats+*
 tieba.baidu.com##.more_btn_package
 tieba.baidu.com##.tuijian-wrap
+! 乘风 视频广告过滤规则
+v.youku.com##.control-phonewatch,#right-title-ad-banner
+!v.youku.com##+js(nano-stb)
+||atm.youku.com/
+||cibntv.net/youku/$media
+||valipl.cp31.ott.cibntv.net/$media
+|https://static.youku.com/index/js/ikuAdapterNew.js
+|https://js.ykimg.com/youku/dist/js/lib/ikuAdapterNew.js
+!||ykimg.com/material/$image
+!youku.com##.ad-wrap
+||sealine.youku.com/yk/*callback=adpagesdk$script
+iqiyi.com##div[data-adzone],#block-V
+!iqiyi.com##+js(nano-sib)
+iqiyi.com##+js(set, Object.prototype.parseXML, noopFunc)
+!||t7z.cupid.iqiyi.com/show$script,important
+||static.iqiyi.com/js/common/mars_v.js$script
+||iqiyi.com/videos/other/20$xmlhttprequest,object-subrequest
+||iqiyipic.com/image/20*_100000$image
+||ssports.iqiyi.com/app/$object-subrequest
+qq.com##.mod_ad
+v.qq.com,sports.qq.com##+js(json-prune,ad,vinfo)
+v.qq.com,sports.qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
+@@||qq.com/fcgi-bin/
+||adss.video.qq.com/
+||gtimg.com/qqlive/
+||miaozhen.com/
+||reachmax.cn/
+||tencentmind.com/
+||xtgreat.com/
+bilibili.com##.gg-floor-module,#slide_ad
+||api.bilibili.com/x/web-show/res/loc?pf=$~script
+||hdslb.com/bfs/sycp/creative_img/$image
+acfun.cn##.pause-display-container,#ad-comment,#ad-player-view
+||aixifan.com/static/*/appGuide/
+cctv.com###bgAd_div
+||imall.cctv.com/$subdocument
+||bjcathay.com/
+pptv.com##div[id^=afp_],div[id$=-afp],#video-download-game
+||synacast.com
+||de.as.pptv.com^
+||g.pptv.com/game/$subdocument
+@@||tb.mgtv.com/sdk/*/ad-sdk.js$script
+||video.da.mgtv.com/$media
+ys.da.mgtv.com
+||da.mgtv.com/mediafiles/wiad_creative/$image
+@@||js.tv.itc.cn/gg.seed.js
+||css.tv.itc.cn/m/img/player/dlBanner.$image
+||data.vod.itc.cn/*&prod=ad&$media
+||api.my.tv.sohu.com/wm/getads.do?
+||aty.sohu.com/
+||go.sohu.com/
+||tv.sohu.com/upload/csad/admaster/$image
+tv.sohu.com##.x-dl-shake.x-download-panel, #playerBar > div.area ~a
+1905.com##.ad-couplet,#hd-tab-label4,div.bd-tab.video-list:last-child
+||aliyun.com^$domain=1905.com
+||aliyuncs.com^$domain=1905.com
+@@||ark.letv.com/adx?adzone=
+@@||stat.letv.com/$script
+*/letv-gug/$media,object-subrequest
+||letvimg.com/$object,object-subrequest
+||letvimg.com/*_gugwl/$image
+||js.letvcdn.com/*_banner_$script
+||banana.le.com/
+adxvip.com
+behe.com
+biddingx.com
+cr-nielsen.com
+fancyapi.com
+kejet.net
+||jd.com/$domain=le.com
+ulmdb.cn
+yoyi.com.cn
+zhiziyun.com
+le.com##.banner_ad,#rightBottomPop,div.banner_left,div.banner_right,[id^=pause_a_content_h5ad]
+douyu.com##div[class$="-ad"],div[class|=ad],div.no-login
+||douyucdn.cn/adxdsp/$image
+||wan.douyu.com/
+douyu.com,huya.com##a[href^="https://g.wan."]
+huya.com###hy-ad,#hy-ab,#huya-ab
+||g.huya.com/
+||pub.funshion.com
+*/preroll/$media,domain=91porn.com
+||91p20.space^
+||waust.at^
+||www.dililitv.com/*.php?ad=$script
+www.dililitv.com,www.hmtv.me,imeiju.io,www.kalidm.com,www.zxfun.net##+js(acis, console.log, Object.defineProperty)
+www.dyjihe.com##.tempWrap
+haitur.com,www.haicaoys.com,www.cdfdy.com,www.labays.com,www.meiyuktv.cn##.dplayer-web-fullscreen-fix .float-box
+haitur.com##.container:style(max-width:90%!important;width:90%!important)
+haitur.com##.left-content:style(width:77%!important)
+www.imomoe.in,hehua.net,kakadm.com##+js(ra, target, a[href^="/"])
+www.imomoe.in###adl,#adr
+yatu.tv###loadtop,[id^=myas],#myds1,#daohang
+3z9e.cn
+anquanzhuomian.com
+ch-hr12333.com
+g1c5.com
+ieeod0.com
+tracker.novage.com.ua
+tracker.openwebtorrent.com
+fourier.taobao.com
+v4dwkcv.com
+youle55.com
+||www.yatu.tv/image/*.gif^$image
 ! EasyList China
 !-----------------------General advert blocking filters-----------------------!
 -1688-wp-media/ads/
