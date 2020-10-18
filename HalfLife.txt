@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: QhTf5QZf0bzq8BWQiF2CBw
+! Checksum: SgNUW9yGi+MlDoN5qfGxFQ
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202010180017
-! Last Modified: 2020年10月18日 00:17
+! Version: 202010180415
+! Last Modified: 2020年10月18日 04:15
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -475,7 +475,8 @@ iqiyi.com##+js(set, Object.prototype.parseXML, noopFunc)
 qq.com##.mod_ad
 v.qq.com,sports.qq.com##+js(json-prune,ad,vinfo)
 v.qq.com,sports.qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
-@@||qq.com/fcgi-bin/
+@@||video.qq.com/fcgi-bin/
+||mark.l.qq.com/fcgi-bin/get_video_mark_all?idlist=
 ||adss.video.qq.com/
 ||gtimg.com/qqlive/
 ||miaozhen.com/
@@ -543,8 +544,9 @@ www.dyjihe.com##.tempWrap
 haitur.com,www.haicaoys.com,www.cdfdy.com,www.labays.com,www.meiyuktv.cn##.dplayer-web-fullscreen-fix .float-box
 haitur.com##.container:style(max-width:90%!important;width:90%!important)
 haitur.com##.left-content:style(width:77%!important)
-www.imomoe.in,hehua.net,kakadm.com##+js(ra, target, a[href^="/"])
-www.imomoe.in###adl,#adr
+www.imomoe.ai,hehua.net,kakadm.com##+js(ra, target, a[href^="/"])
+www.imomoe.ai###adl,#adr
+||alicdn.com/$image,domain=api.xiaomingming.org
 yatu.tv###loadtop,[id^=myas],#myds1,#daohang
 3z9e.cn
 anquanzhuomian.com
