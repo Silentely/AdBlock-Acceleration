@@ -58,7 +58,7 @@
 
 |  🥑 规则名称   |    原始地址  |🚀 加速地址①  | 🚀 加速地址②  |
 |  :----:  | :----:  | :----:  | :----:  |
-| Adguard Simplified Domain Names Filter | [原始](https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/AdGuard_Simplified_Domain_Names_Filter.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/AdGuard_Simplified_Domain_Names_Filter.txt) |
+| AdGuard DNS filter | [原始](https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/AdGuard_Simplified_Domain_Names_Filter.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/AdGuard_Simplified_Domain_Names_Filter.txt) |
 | Anti-AD | [原始](https://anti-ad.net/easylist.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/Anti_AD_Easylist.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Anti_AD_Easylist.txt) |
 | EasyList China | [原始](https://easylist-downloads.adblockplus.org/easylistchina.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/EasyList_China.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/EasyList_China.txt) |
 | EasyPrivacy | [原始](https://easylist-downloads.adblockplus.org/easyprivacy.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/EasyPrivacy.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/EasyPrivacy.txt) |
@@ -74,6 +74,10 @@
 | iOSAdblockList | [原始](https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/iPv4Hosts.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/iPv4_hosts.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/iPv4_hosts.txt) |
 | StevenBlack | [原始](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/Steven_hosts) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Steven_hosts) |
 | Hblock | [原始](https://hblock.molinero.dev/hosts) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/Hblock_hosts) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Hblock_hosts) |
+| Malware Domain List | [原始](https://www.malwaredomainlist.com/hostslist/hosts.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/Malware_host.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Malware_hosts.txt) |
+| Adblock Warning Removal List | [原始](https://easylist-downloads.adblockplus.org/antiadblockfilters.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/antiadblockfilters.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/antiadblockfilters.txt) |
+| Fanboy’s Annoyances List | [原始](https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/fanboy-annoyance.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/fanboy-annoyance.txt) |
+
 
 ##    特别鸣谢
 
