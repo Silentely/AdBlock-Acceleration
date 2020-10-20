@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 324.202010190959
+! Version: 324.202010200933
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 19 Oct 2020 07:59 UTC
+! Last modified: 20 Oct 2020 07:33 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -9810,7 +9810,7 @@
 ##.block-artwhere-gdpr:not(body):not(html)
 ##.notificationbar[data-notification*="Cookies"]
 ##.vw_system_notification_opt_in
-###cookie-layer[style*="display"]
+~swrag.de###cookie-layer[style*="display"]
 ###app.page > .policy-notifier
 ##.bba-popup-cookies:not(body):not(html)
 ###js-popup-cookies
@@ -12300,6 +12300,23 @@
 ##.message.global.cookie
 ###mmMS--bottom-notification
 ###mmMS--notification
+###bnp_cookie_banner
+##.GrowmarkGDPR_Wrapper
+##.cookies-main-overlay
+##.cookies-confirm-block
+##.cookie-banner-body-overlay
+###CookieOverlayBox
+###cookiesplus-overlay
+###cookiesplus-modal-container
+##.mp-cookies.mp-show-cookies
+##.page-wrap--cookie-permission ~ .js--overlay
+###cookiesConsentBar
+##.gdpr-cookie-wrap
+##.cookies-content.fixed
+###privacy_blockscreen
+##.cookie-consent-splash
+##.p-cookie-layer
+##.ch-cookie-consent
 !
 ! CUSTOM RULES
 !
@@ -13790,7 +13807,6 @@ spglobal.com###privacyPlicyBanner
 maregel.net##.banner, #banner
 barclays.it###boxTextCookie
 cantinesettesoli.it##.modal-privacy.attiva
-solgar.it###mk-cookie
 hdr-photographer.com###rn_container
 piensasolutions.com##.head .top
 dnbfeed.no##body > div:not([id]):not([class])
@@ -14073,7 +14089,6 @@ trekking-koenig.de##.cookie5
 pierotofy.it##body > div:not([id]):not([class])
 fishersci.es###legalMessageWrapper
 efinancialcareers.de###pageMessages
-supergres.com###mk-cookie
 dokumentyzastrzezone.pl###gkTopBar
 ftopadova.it###SITE_ROOT ~ div[data-reactid*="siteAspectsContainer"]
 symmotos.ch##.policy-window
@@ -14129,7 +14144,6 @@ desokupa.com###SITE_ROOT ~ div[data-reactid*="siteAspectsContainer"]
 bib-cclachatrestesevere.net###info_message
 kepmegoszto.com###cw
 mercedes-benz.com##.cLayer, [class*="vs-cookie-layer"], #cLayer, .bottom.notice, #emb-cp-overlay, #emb-cp-dialog, #cPageOverlay
-italbastoni.it###mk-cookie
 guglwald.at###tx_tracking
 symfrance.com##.policy-window
 rymer.org###divzasobu
@@ -18455,6 +18469,7 @@ hearingaidknow.com##.gdpr
 coolors.co##.banner.is-visible
 popnable.com###roar-alert
 hansaplast.ch###popup, .popup
+hansaplast.hu###popup, .popup
 hansaplast.de###popup, .popup
 hansaplast.es###popup, .popup
 hansaplast.nl###popup, .popup
@@ -18605,7 +18620,6 @@ littlepeckers.co.uk##.notify-banner
 vy.no###App .page > section, #center > section
 mecindo.se###c-bar
 comtradeshop.com##body > div:not([id]):not([class])
-boehringer-ingelheim.de###bi-eu-cookie-disclaimer
 interamt.de##.ia-m-cookie-flyout
 hitachiaircon.ru##.cookies-modal
 sj.no###root > header > .MuiBox-root:first-child, .root .experiencefragment > .MuiContainer-root:first-child
@@ -19113,7 +19127,6 @@ brandwatch.com###bw-cookie-sys-active
 kunstsammlung.de###cookie
 f8.com##.v-snack--top
 eredivisie.pl##[id^="viewCookies"]
-admiralmarkets.com##.mp-cookies
 tesco.com##.beans-cookies-notification__container, div[class*="NotificationBar"]
 k65-system.com###header .ncoi---behind
 ergon.nl###ergcb
@@ -19301,7 +19314,6 @@ kartoteka.by##.privacy-popup
 pc-college.de###clayer
 compassesgreenfield.co.uk##.cookies-wrpr
 vinidex.com.au###tde-gdpr
-boehringer-ingelheim.com###bi-eu-cookie-disclaimer
 att.com###vt-ccb-notify
 stoffen-hemmers.nl##.cookie
 riteintherain.com###screen-overlay-white
@@ -19384,11 +19396,35 @@ herkules-transporte.de##main ~ div
 kontaktlinsenforum.de##.m-cookie
 skyfoxlabs.com##.m-cookie
 vergoelst.de##.m-cookie
+profi-reifen.at##.m-cookie
 hotel-neue-post.de##.evconsent-dialog-container
 claudiakookt.nl###sticky
 estadao.com.br##.lgpd-wrapper
 elexgame.com###cookie
 cc.com###balaMainContainer, .module-container-bala
+appyshop.co.uk##.cookies
+poco.de##.w18lara_tgplugin_consent_window_bodyback, #w18lara_tgplugin_consent_window
+speakout7eleven.ca###speakout-cookie-template
+antenne.at##.cdk-overlay-container
+greakariert.at##main ~ div
+ar-packaging.com###disclaimer
+gumtree.com##.notification-box
+gamefreak.gr##.notification-wrapper
+spbtvonline.ru###agreeC
+omg.de##.modal-backdrop
+nzxt.com##.cookie-consent
+ogrzewanie-domu.pl###cookie
+boehringer-ingelheim.com###bi-eu-cookie-disclaimer
+boehringer-ingelheim.de###bi-eu-cookie-disclaimer
+boehringer-ingelheim.at###bi-eu-cookie-disclaimer
+inpartiet.no##.oc_cb_wrapper
+pinkernells-shop.de##.lightbox-backdrop
+keramiko.pl###popAdvertising
+salto.fr###__brk > div > div > .not-empty
+fzone.cz##.sys-alert
+koco-shop.de##.lightbox-backdrop
+supergres.com###mk-cookie
+lavoroeconcorsi.com###mk-cookie
 !
 ! SCRIPT BLOCKING
 !
