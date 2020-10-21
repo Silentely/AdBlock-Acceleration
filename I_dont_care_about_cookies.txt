@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 324.202010200933
+! Version: 324.202010212006
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 20 Oct 2020 07:33 UTC
+! Last modified: 21 Oct 2020 18:06 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -222,7 +222,7 @@
 ###cookie_alert
 ###eu-cookie-bar
 ###cookiefooter
-~eplan-software.com###cookie_container
+###cookie_container
 ###cookie_mess
 ~gberardi.com###cookie_message
 ###eprivacy-outer
@@ -3719,7 +3719,7 @@
 ##.acceptCookieContainer
 ###osomcookie
 ##.cookiebalk:not(body):not(html)
-~modellbau-metz.com,~gulbenkian.pt,~auchan.hu,~auchan.pl,~markets.com,~trans-missions.eu,~e-horyzont.pl,~gezondeideetjes.nl,~bookchoice.com,~boligsiden.dk,~doka.com,~eplan.education,~bokadirekt.se,~puzzels.ad.nl,~puzzels.bndestem.nl,~puzzels.bd.nl,~puzzels.gelderlander.nl,~puzzels.destentor.nl,~puzzels.ed.nl,~puzzels.pzc.nl,~puzzels.tubantia.nl,~puzzels.trouw.nl,~puzzels.parool.nl,~puzzels.volkskrant.nl##.cookie-modal:not(body):not(html):not(.in):not(.mfp-hide)
+~modellbau-metz.com,~gulbenkian.pt,~auchan.hu,~auchan.pl,~markets.com,~trans-missions.eu,~e-horyzont.pl,~gezondeideetjes.nl,~bookchoice.com,~boligsiden.dk,~doka.com,~bokadirekt.se,~puzzels.ad.nl,~puzzels.bndestem.nl,~puzzels.bd.nl,~puzzels.gelderlander.nl,~puzzels.destentor.nl,~puzzels.ed.nl,~puzzels.pzc.nl,~puzzels.tubantia.nl,~puzzels.trouw.nl,~puzzels.parool.nl,~puzzels.volkskrant.nl##.cookie-modal:not(body):not(html):not(.in):not(.mfp-hide)
 ###EUCookieNote
 ##.fragment[data-fragment="disclaimer-layer"]
 ###app-page-site-cookies
@@ -12317,6 +12317,10 @@
 ##.cookie-consent-splash
 ##.p-cookie-layer
 ##.ch-cookie-consent
+###cookieModalOverlay
+###ccc > .ccc-popup
+##.exponea-banner--cookie
+###gp-cookie-agreements
 !
 ! CUSTOM RULES
 !
@@ -12628,12 +12632,6 @@ polomarket.pl##body > div:not([id]):not([class])
 les-champignons.com###pub
 beko.es##.sayfaIcDiv .row300
 centrumpiwowarstwa.pl##.page > div > div[style*="gray"]
-eplan.ch###fancybox-overlay, #fancybox-wrap
-eplan.de###fancybox-overlay, #fancybox-wrap
-eplan.co.uk###fancybox-overlay, #fancybox-wrap
-eplan.hr###fancybox-overlay, #fancybox-wrap
-eplan.es###fancybox-overlay, #fancybox-wrap
-eplan.at###fancybox-overlay, #fancybox-wrap
 superstart.se##body > div > div > div[style*="777"]
 discounto.de##.alert-dismissible, .alert-dismissable, .alert--dismissable, .pmd-alert-dismissible
 prezzoforte.it###bottombar
@@ -15176,7 +15174,6 @@ weber.ee##.flash-info
 figyelo.hu##.consent, #consent
 bancobpi.pt##div[id^="webcarePopup"] > div[id^="bbo_"]
 vip-usedom.de###confirmation
-polki.pl##.disclaimer-container
 tf1.fr##div[id^="msgctrw"]
 csmarket.pt##body > div[style*="black"]
 isaca.org###isaca-consent-wrapper
@@ -15344,7 +15341,6 @@ ps.com.pl###ckInfo
 voat.co##.eppnotice
 dina.se##.dina-cookiebanner
 capterra.com##.welcome-banner
-meinvorsorgemanagement.de###mhp-cl
 cliquojeux.com###cook_aff
 enmark2.com###cookies
 audio-parts.de##.popup_notification
@@ -18982,7 +18978,7 @@ abo.faz.net##.veil
 pracuj.pl##header > div:last-child:not([data-test])
 onzetaal.nl##.consent
 mindmeister.com###cb-wrapper
-yandex.ru##.gdpr, div[data-react-widget-id="Gdpr"]
+yandex.ru##.gdpr, div[data-react-widget-id="Gdpr"], .lc-gdpr
 testo.com###colorbox, #cboxOverlay
 carrefour.eu##.cf-oil[data-qa="oil-Layer"]
 latendresseencuisine.com##.mdc-snackbar
@@ -19425,6 +19421,27 @@ fzone.cz##.sys-alert
 koco-shop.de##.lightbox-backdrop
 supergres.com###mk-cookie
 lavoroeconcorsi.com###mk-cookie
+eplan.si###fancybox-overlay, #fancybox-wrap
+eplan.bg###fancybox-overlay, #fancybox-wrap
+eplan.com.cn###fancybox-overlay, #fancybox-wrap
+eplan.hr###fancybox-overlay, #fancybox-wrap
+eplan.ro###fancybox-overlay, #fancybox-wrap
+eplan.ch###fancybox-overlay, #fancybox-wrap
+eplan-sk.sk###fancybox-overlay, #fancybox-wrap
+eplan.hu###fancybox-overlay, #fancybox-wrap
+eplan.com.tr###fancybox-overlay, #fancybox-wrap
+pschyrembel.de###cbAlert
+unserkunde.de###mhp-cl
+vivo.com##.common-prompt-privacy-bg, .common-prompt-cookie-bg
+hygiene-onlineshop.de##div[id^="ecomas-scch"]
+dbna.com##.consentbar
+ableton.com###biscuits-overlay
+ebuyer.com##.cookies-not-accepted
+craftsportswear.com##.slide-in.bottom
+next-decision.fr##.activebar-container
+media.pl##.ui-notificationbar
+dkv-euroservice.com##.ui-widget-overlay
+meistertask.com###cb-wrapper
 !
 ! SCRIPT BLOCKING
 !
@@ -19774,6 +19791,9 @@ up-cookiemon.wavecdn.net
 /echonetcookie.js
 /cookie-policy-en.js
 /bb_cookieconsent/*
+/?tx_z7cookiemanager
+/typo3conf/ext/kmacookies/*
+||edipresse.pl/tcf/cookie.js$script
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -19878,7 +19898,7 @@ gdpr-wrapper.privacymanager.io$domain=~geenstijl.nl|~futurezone.at|~profil.at|~k
 ||evidon.com/pub/gdprnotice.js$script
 /wp-content/plugins/ct-ultimate-gdpr
 ||gdpr.mandarin-medien.de/manager.js$script
-gdpr-tcfv2.sp-prod.net$domain=~ekstrabladet.dk|~computerbild.de|~welt.de|~sport1.de
+gdpr-tcfv2.sp-prod.net$domain=~ekstrabladet.dk|~computerbild.de|~welt.de|~sport1.de|~ostsee-zeitung.de
 ||yastatic.net/s3/gdpr$script
 ||mediavine.com/tags/gdprModal/$script
 /zgdpr.min.js
@@ -20003,6 +20023,7 @@ shinystat.mgr.consensu.org
 /js/rodo/rodo.js
 /js/rodo.js
 ||rodo.agora.pl/agreement/check$script
+/min-js?f=js/rodo.js
 ||www.capitol.fr/streaming/cnil/cnil.js$script
 ||prismamediadigital.com/cnil.min.js$script
 ||newsletters.ftv-preprod.fr/cnil/js$script
@@ -20101,6 +20122,7 @@ notice.sp-prod.net$domain=~telegraph.co.uk
 ||wpcc.io/lib$script
 ||app.usercentrics.eu/browser-ui$script
 tag.goadopt.io
+/typo3conf/ext/supi/*
 /frontend/ajax/cookies$domain=romstal.ro
 cookie-service.js$domain=smart.com
 /rodo-agreement-$domain=gremimedia.pl|zw.com.pl
@@ -20199,7 +20221,6 @@ fxCookies$domain=haus-des-meeres.at
 /cookiesettings.js$domain=aarhusmotion.dk
 cookie$domain=metro.de
 /oil$domain=tv2.dk
-/Supi.min.js$domain=austria-email.at
 /cookieajx$domain=goettgen.de
 cmp.parkers.co.uk$domain=parkers.co.uk
 lovelydrum.com$domain=insidermonkey.com
