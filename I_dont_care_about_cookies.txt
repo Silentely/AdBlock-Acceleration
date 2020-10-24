@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 324.202010230902
+! Version: 324.202010240702
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 23 Oct 2020 07:02 UTC
+! Last modified: 24 Oct 2020 05:02 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -12297,7 +12297,6 @@
 ##.tab2-rodo-bar
 ###__next div[class*="CookieModal"]
 ##.cookie_gdpr
-##.message.global.cookie
 ###mmMS--bottom-notification
 ###mmMS--notification
 ###bnp_cookie_banner
@@ -12330,6 +12329,16 @@
 ###cookie-erlaubnis-wrapper
 ##.CookieControlBanner
 ##.mode-cookie-tip
+###ConsentCookiePopup
+###cookies-layout-banner
+##.cp-popup-content[data-title*="GDPR"]
+##.js-cookie--modal
+###bandeau-dxlabs-cookie
+###hellotrust_cookie_popup
+##.c-cookie-consent-modal
+###mhp-cl.mhp-cl
+##.cookie-notice-overlay
+###dcCookieHelper--bg
 !
 ! CUSTOM RULES
 !
@@ -13936,7 +13945,6 @@ motorsport.com##.ms-footer-fixbox, .ms-header-messages, #privacy_accept
 lifeisstrange.com##.comp-flash-notice
 zumba.com##.privacy-policy
 beaute-test.com###bt__cookie
-seriea.pl###viewCookies
 bgdnes.bg###cookie-b
 acquabella-construplas.com###ico_wrapper
 gorillaz.com###footer
@@ -14907,7 +14915,6 @@ livesmarter.pl###rodo
 ghostery.com##.piwik-notice-container
 funpot.net###message, .message
 tetrisfriends.com##.iziToast-wrapper
-etsy.com##.ui-toolkit[data-etsy-promo-banner]
 irisnet.be###cookieIndicator
 alarabiya.net##.consent, #consent
 netdyredoktor.dk##.ct-popup
@@ -17363,7 +17370,6 @@ lightinthebox.com##.pop_has_cookies
 reifen-dinser.de##.cookies
 tang-freres.fr##.welcome
 spotify.com###main > .Root > section, .mh-message-bar
-arbeitsagentur.de###ba-header-disclaimer, #piwik-banner-container
 ovplaza.nl##.cookie-consent
 spox.com##.spxcib.open
 scholieren.com##.cookie-consent
@@ -18393,10 +18399,6 @@ proxyparts.com##.cookies
 top-dent.cz##body > .CA
 montersi.pl##.motersi-cookie-notice
 anhaenger-bayern.de###privacyPolicyWindow
-radio.de###main > div[class]:not(:only-child):last-child
-radio.fr###main > div[class]:not(:only-child):last-child
-radio.at###main > div[class]:not(:only-child):last-child
-radio.net###main > div[class]:not(:only-child):last-child
 betsson.com##snack-bar-container
 pubpub.org##.legal-banner-component
 direct.money.pl##.cookie
@@ -19435,7 +19437,6 @@ eplan-sk.sk###fancybox-overlay, #fancybox-wrap
 eplan.hu###fancybox-overlay, #fancybox-wrap
 eplan.com.tr###fancybox-overlay, #fancybox-wrap
 pschyrembel.de###cbAlert
-unserkunde.de###mhp-cl
 vivo.com##.common-prompt-privacy-bg, .common-prompt-cookie-bg
 hygiene-onlineshop.de##div[id^="ecomas-scch"]
 dbna.com##.consentbar
@@ -19463,6 +19464,19 @@ catpublications.com###gtmAlert
 solid-thueringen.de##.disclaimer
 wiltmann.de###cde
 homebook.pl##.hb-layout ~ div
+etsy.com##.ui-toolkit[data-etsy-promo-banner]
+spielzeugmuseum-seiffen.de##.d_co_box
+seriea.pl##[id^="viewCookies"]
+undo.net###fullpersonal, #fullboxpersonal
+packlink.com##.snack-bar
+deandavid.at##.v-overlay, .v-dialog__content
+boley.de##.ckmsg
+totallywicked-eliquid.co.uk##.cookie
+sebgroup.com##.disclaimer-container
+cornelsen.de##.cvcm-consent
+arbeitsagentur.de###ba-header-disclaimer, #piwik-banner-container
+greenpandagames.com##.snackbar
+deces-en-france.fr##.s-app-cookies
 !
 ! SCRIPT BLOCKING
 !
@@ -19816,6 +19830,7 @@ up-cookiemon.wavecdn.net
 /typo3conf/ext/kmacookies/*
 ||edipresse.pl/tcf/cookie.js$script
 /in2cookiemodal/*
+/_hw_cookie_dialog.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -19921,7 +19936,7 @@ gdpr-wrapper.privacymanager.io$domain=~geenstijl.nl|~futurezone.at|~profil.at|~k
 ||evidon.com/pub/gdprnotice.js$script
 /wp-content/plugins/ct-ultimate-gdpr
 ||gdpr.mandarin-medien.de/manager.js$script
-gdpr-tcfv2.sp-prod.net$domain=~ekstrabladet.dk|~computerbild.de|~welt.de|~sport1.de|~ostsee-zeitung.de
+gdpr-tcfv2.sp-prod.net$domain=~ekstrabladet.dk|~computerbild.de|~welt.de|~sport1.de|~ostsee-zeitung.de|~radio.fr|~radio.at|~radio.de|~radio.net|~radio.pl|~radio.it
 ||yastatic.net/s3/gdpr$script
 ||mediavine.com/tags/gdprModal/$script
 /zgdpr.min.js
@@ -19953,7 +19968,7 @@ sdk.privacy-center.org$domain=~telegraaf.nl|~gamepro.de|~gamestar.de|~dumpert.nl
 ||privacy-proxy.usercentrics.eu/latest$script
 ||isgprivacy.cbsi.com/dist/optanon$script
 /contao-privacy-center.js
-privacy-mgmt.com$domain=~bild.de|~ekstrabladet.dk|~computerbild.de|~welt.de|~focus.de|~chip.de|~faz.net|~n-tv.de|~manager-magazin.de|~spiegel.de|~vtm.be|~selbst.de|~giga.de
+privacy-mgmt.com$domain=~bild.de|~ekstrabladet.dk|~computerbild.de|~welt.de|~focus.de|~chip.de|~faz.net|~n-tv.de|~manager-magazin.de|~spiegel.de|~vtm.be|~selbst.de|~giga.de|~radio.fr|~radio.at|~radio.de|~radio.net|~radio.pl|~radio.it
 privacy-policy.u-lab.nl
 ||trustcommander.net/privacy$script
 app.eprivacy-keeper.eu
