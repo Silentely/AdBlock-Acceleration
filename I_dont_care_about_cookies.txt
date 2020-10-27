@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 324.202010260850
+! Version: 324.202010270914
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 26 Oct 2020 07:50 UTC
+! Last modified: 27 Oct 2020 08:14 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -428,7 +428,7 @@
 ###cookiespolicymessage
 ###cookie_toolbar
 ###eulaw
-~shoot-club.de,~bund.de,~bamf.de,~duvel.com,~materna.de,~jetzt.thw.de###cookiebanner
+~shoot-club.de,~bund.de,~onlinezugangsgesetz.de,~bamf.de,~duvel.com,~materna.de,~jetzt.thw.de###cookiebanner
 ~duvel.com,~materna.de,~jetzt.thw.de,~advodan.dk,~technikmuseum.berlin##.cookiebanner:not(body):not(html):not(#header)
 ##.cookieHolder:not(body):not(html)
 ###cookieAgree
@@ -466,7 +466,7 @@
 ###polityka-cookie
 ##.policy-box:not(body):not(html)
 ###WP-cookie-info
-~dehn.at,~hetwkz.nl,~umcutrecht.nl,~ecb.europa.eu,~ticsante.com,~techopital.com,~sandro-paris.com,~lunar.app,~ad.win.nl,~conclude.com,~thinkproject.com,~cst.com,~dehn.de###cookieConsent
+~dehn.at,~rubberduckvba.com,~hetwkz.nl,~umcutrecht.nl,~ecb.europa.eu,~ticsante.com,~techopital.com,~sandro-paris.com,~lunar.app,~ad.win.nl,~conclude.com,~thinkproject.com,~cst.com,~dehn.de###cookieConsent
 ###cookie-info-box
 ##.avs-cookie-message:not(body):not(html)
 ###header-cookie
@@ -2410,7 +2410,7 @@
 ###cookie_cont
 ###cookies_ack
 ##.cookies-bullshit:not(body):not(html)
-~modellbau-metz.com,~cancercentrum.se,~gruener-punkt.de,~etos.nl,~peaks.com,~infineon.com,~lifecell.net,~elsevier.com,~wuestenrot.cz,~zlm.nl,~bokadirekt.se###cookie-modal:not(.reveal)
+~easyname.at,~modellbau-metz.com,~cancercentrum.se,~gruener-punkt.de,~etos.nl,~peaks.com,~infineon.com,~lifecell.net,~elsevier.com,~wuestenrot.cz,~zlm.nl,~bokadirekt.se###cookie-modal:not(.reveal)
 ###mrcookies-wrapper
 ###CookieIntro
 ###box_cookie_advert
@@ -3792,7 +3792,7 @@
 ##.allow-cookie-stripe:not(body):not(html)
 ##.box-cookie-eu-law:not(body):not(html)
 ##.message-cookie-consent
-##consent
+###alertsBox div[id*="cookiesAlert"]
 ##.win_cookies:not(body):not(html)
 ###eu-cookie-wrap
 ##.cookies-layout-module
@@ -11528,7 +11528,7 @@
 ##.cookie-ntf-wrapper
 ##.cookies-policy-widget-overlay
 ##.cp-cookie-tip
-###cookie_opt_in_box_wrapper
+###cookalert-holder
 ##.footer-cookiebar
 ##.gdpr_cookies
 ###__next div[data-name="cookie-confirmation-banner"]
@@ -12356,7 +12356,16 @@
 ###vt-ccb-notify
 ##.cmnstr-activated
 ##.pum-open-overlay-disabled .pum[class*="cookie-policy"]
-###alertsBox div[id*="cookiesAlert"]
+##.block-cipix-cookiecontrol
+##.policy-notification--privacy-policy
+##.gdpr #cmpBanner
+###paperplane-cookie-notice
+##.fnn-cookiemanager
+##.uk-position-fixed.cookies
+###ccp-overlay.ccp-overlay-fullscreen
+###bottom-cookie[ng-if*="CookieNotification"]
+###cookieoverlay_outer
+##.ew-cookie-note
 !
 ! CUSTOM RULES
 !
@@ -15036,7 +15045,6 @@ planeteanimal.com##.consent, #consent
 tsb.co.uk###cookies
 lyricsfreak.com##.wrapper ~ div
 flertkontakt.com###overlay-content
-thefreedictionary.com##body > div:not([id]):not([class])
 avherald.com###avhcookieconsent
 sparbau-dortmund.de##.sg-scn
 kongregate.com##.policy-bar
@@ -17421,7 +17429,6 @@ puma.com##puma-cookie-banner
 alapblog.hu##.sutiSzorny
 woningnetregioamsterdam.nl##.growlcontainer
 woningnetregiomiddenholland.nl##.growlcontainer
-wago.com##.wg-cookie
 monety.it##.disclaimer
 boxcryptor.com##.mdl-layout__inner-container > .mdl-layout__header ~ div[style*="transform"]
 hilleberg.com###subBar
@@ -18609,7 +18616,6 @@ geek17.com##body > div:not([id]):not([class])
 my-meteo.com###cookies
 systweak.com##.footer-info
 volkswagen-we.com##.system-notification
-haus-des-meeres.at###fxCookieInfoWindowBackground
 tutolino.net##.elementor-popup-modal
 niveau-huile.com##.modal
 verein-vpt.at###announcement_popup
@@ -19003,7 +19009,6 @@ nordcheckout.com###__next > .App > div
 cnam-bretagne.fr##.ojc_consent
 walkonthewildside.de###GcCookieBox
 expressen.se##.site-wrapper > .pa-dialog
-freiberg.de##.fnn-cookiemanager
 vectorizer.io##.alert, #alert
 randomhouse.de##.cl-window
 pcoptimum.ca##.lds__privacy-policy
@@ -19029,7 +19034,6 @@ droneacademy.com##.elementor-popup-modal
 curve.com##nav#nav > div:not([id])
 modelmanagement.com###cookie_exp
 td-csk.ru##.cociess
-infranken.de###ccp-overlay
 komoedie-steinstrasse.de###cookie-row
 infomusic.pl###privacy-alert
 redhead-shop.de##.lightbox-backdrop
@@ -19274,7 +19278,6 @@ thairath.co.th##main > div > footer ~ div
 insighttimer.com###footer ~ .rounded
 risekombucha.com##body > .widget
 rechtslupe.de###dsChoice
-calendly.com##[class*="consent-Container"]
 bgbasket.com###private_info
 pixlr.com###agreement-wrapper
 yuden.co.jp##[id^="yuden_gdpr"]
@@ -19524,6 +19527,21 @@ szekelyhon.ro###page-mask
 stec.es##div[id^="cookies"]
 envialia.com##.tco-content-dock
 byclickeat.fr##.cdk-overlay-container
+wago.com##.wg-modal__overlay
+medidata.ch##.cookie
+gannikus-original.de##.cookies
+wsz-marburg.de###js-cookie-text
+weilburger.com##.lus-cookie
+opito.com###app > footer ~ div
+zonmw.nl##.header-notice
+aditum.de###c_bg
+novadb.com###gatsby-focus-wrapper > footer ~ div
+klevv.com##.google_line_tracking
+alfakassan.se###cookies
+dnvgl.com##.cookie-consent
+dhl.ru###modcookie
+gehrplastics.com##.module-dataprotection
+gehr.de##.module-dataprotection
 !
 ! SCRIPT BLOCKING
 !
@@ -19652,7 +19670,7 @@ informacja_cookies.js
 eurocookie.galilcloud.wixapps.net
 /cookie-terms.min.js
 /js/cookieStatement.js
-||wawona.hu/cookie-box/cookie.php$script
+||wawona.hu/cookie-box/$script
 /js/components/cookiescomponent
 /cookiesinfo/cookieinfo.min.js
 /cookie-consent/cookie-consent.umd.js
@@ -19738,7 +19756,6 @@ cookieconsentnotice.js
 /components/cookie-modal/cookie-modal.js
 /cookies-window.min.js
 /cookiewall-inline-for-popup.js
-/cookie-bar/cookieconsent.min.js
 /wp-content/plugins/cc-cookie-consent/*
 /cookiePolicyV4.js
 /modules/cookiechoices.js
@@ -19832,7 +19849,7 @@ consent.cookiefirst.com$domain=~swietawdomu.pl
 /cookie-banner/webc/*
 /cookie-alert.js
 up-cookiemon.wavecdn.net
-/cookieBanner.$domain=~nectar.com|~neckermann.de
+/cookieBanner.$domain=~nectar.com|~neckermann.de|~exali.de
 /politica-cookies/leyCookies.js
 /trwcookieconsent/*
 /dc_components/site/cookie-control/*
@@ -19844,7 +19861,7 @@ up-cookiemon.wavecdn.net
 /onlinemanufaktur-cookie-notice/*
 /mq_cookieconsent/*
 /static/cookies/cookie-layer-wc-
-/cookie-bar/*
+/cookie-bar/*$domain=~vectra.pl
 /cookiebar/scripts.js
 /fileadmin/cookieconsent/*
 /cookieopt-min.js
@@ -19879,6 +19896,8 @@ up-cookiemon.wavecdn.net
 /in2cookiemodal/*
 /_hw_cookie_dialog.js
 /cookie-consent-settings-ui/*
+||cookietrust.eu/script$script
+bs-cookie.staging.springbok.agency
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -19985,7 +20004,7 @@ gdpr-wrapper.privacymanager.io$domain=~geenstijl.nl|~futurezone.at|~profil.at|~k
 ||evidon.com/pub/gdprnotice.js$script
 /wp-content/plugins/ct-ultimate-gdpr
 ||gdpr.mandarin-medien.de/manager.js$script
-gdpr-tcfv2.sp-prod.net$domain=~ekstrabladet.dk|~computerbild.de|~welt.de|~sport1.de|~ostsee-zeitung.de|~radio.fr|~radio.at|~radio.de|~radio.net|~radio.pl|~radio.it
+gdpr-tcfv2.sp-prod.net$domain=~ekstrabladet.dk|~computerbild.de|~welt.de|~sport1.de|~ostsee-zeitung.de|~radio.fr|~radio.at|~radio.de|~radio.net|~radio.pl|~radio.it|~lvz.de|~mein-schoener-garten.de
 ||yastatic.net/s3/gdpr$script
 ||mediavine.com/tags/gdprModal/$script
 /zgdpr.min.js
@@ -20017,7 +20036,7 @@ sdk.privacy-center.org$domain=~telegraaf.nl|~gamepro.de|~gamestar.de|~dumpert.nl
 ||privacy-proxy.usercentrics.eu/latest$script
 ||isgprivacy.cbsi.com/dist/optanon$script
 /contao-privacy-center.js
-privacy-mgmt.com$domain=~bild.de|~ekstrabladet.dk|~computerbild.de|~welt.de|~focus.de|~chip.de|~faz.net|~n-tv.de|~manager-magazin.de|~spiegel.de|~vtm.be|~selbst.de|~giga.de|~radio.fr|~radio.at|~radio.de|~radio.net|~radio.pl|~radio.it
+privacy-mgmt.com$domain=~bild.de|~ekstrabladet.dk|~computerbild.de|~welt.de|~focus.de|~chip.de|~faz.net|~n-tv.de|~manager-magazin.de|~spiegel.de|~vtm.be|~selbst.de|~giga.de|~radio.fr|~radio.at|~radio.de|~radio.net|~radio.pl|~radio.it|~mein-schoener-garten.de
 privacy-policy.u-lab.nl
 ||trustcommander.net/privacy$script
 app.eprivacy-keeper.eu
@@ -20045,6 +20064,7 @@ cmp.faktor.mgr.consensu.org$domain=~omroepwest.nl|~consent.talpanetwork.com
 ||almamedia.fi/almacmp$script
 ||snigelweb.com/sncmp$script
 ||gravito.net/cmp$script
+cdncmp.richaudience.com
 ||gofundme.com/js/3.0/visitorCookie.js$script
 /CookiesDirective
 CookieAccept/affirmation.js
@@ -20081,6 +20101,7 @@ marfeel.mgr.consensu.org
 shinystat.mgr.consensu.org
 dan.mgr.consensu.org
 ogury.mgr.consensu.org
+inforpl.mgr.consensu.org
 ||ciasteczkowapolityka.pl/getscript$script
 ||bsl.nl/extern/smbv-incl/script.js$script
 ||ssl.synovite-scripts.com/ut$script
@@ -20276,6 +20297,7 @@ cookie-bar.salessquad.co.uk$domain=blochworld.com
 /cm-body.js$domain=tarnkappe.info
 /idgy_gdpr.js$domain=metallumnovum.lt
 /jw.cookies.js$domain=jacquelinewilson.co.uk
+/cmp$domain=gameswelt.de
 /consent_$domain=iban-rechner.de
 /kameleoon.js$domain=hanseaticbank.de
 /eloqua$domain=visma.fi|visma.no|visma.se|visma.nl|visma.com
@@ -20290,7 +20312,6 @@ cookie-bar.salessquad.co.uk$domain=blochworld.com
 cookies.js$domain=winbrok.es
 /eurogdpr$domain=jcbeurope.eu
 /ig_cookie_frontend$domain=volksbund.de
-/cookie-box$domain=elrongmbh.de
 bounceexchange.com$domain=lumberliquidators.com
 /cookie.js$domain=keltendorf-mitterkirchen.at|mitterkirchen.at|vils.at|raggal.at|haugsdorf.at|umhausen.at|jugendregion.at
 /onstuimig-tag-manager/*$domain=laurasbakery.nl
@@ -20298,7 +20319,6 @@ bounceexchange.com$domain=lumberliquidators.com
 CheckCookiePolicy$domain=remixshop.com
 /japfg/*$domain=myfridgefood.com
 /tfcookie.js$domain=aktien-mag.de|traderfox.de
-fxCookies$domain=haus-des-meeres.at
 /cookienote/*$domain=wittetools.com
 /gdpr-idgy$domain=vejutechnika.lt
 /pltk.js$domain=goodcontent.pl
@@ -20344,8 +20364,9 @@ spellsalsa.com$domain=interestingengineering.com
 /cookieconsent$domain=adlkofen.de
 /cc_cookie.js$domain=klinikwersbach.de
 /CookieWall/clb.js$domain=innogy.pl
-edgecastcdn.net$domain=meteomedia.de
+edgecastcdn.net$domain=meteomedia.de|wetter24.de
 /easycmp$domain=lagerhaus.at
+/cmp.js$domain=la7.it
 !
 ! FILTERLIST ONLY
 !
