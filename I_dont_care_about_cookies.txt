@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 324.202010270914
+! Version: 324.202010280920
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 27 Oct 2020 08:14 UTC
+! Last modified: 28 Oct 2020 08:20 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -11613,7 +11613,7 @@
 ###cookie\ warning
 ###boxCookiesAccept
 ##.eu_cookie_wrapper
-##.amgdprcookie-bar-template
+~direct.de##.amgdprcookie-bar-template
 ##.site-footer ~ .gdpr
 ##.iCookie.iCookie-whitered
 ##.q-cookie-consent__container
@@ -12366,6 +12366,21 @@
 ###bottom-cookie[ng-if*="CookieNotification"]
 ###cookieoverlay_outer
 ##.ew-cookie-note
+##.cookie-consent-footer
+###overlay.cookie-consent-show
+##.dsgvo-consent--popup
+##.cookie-inquiry--settings
+###gdrpNotification
+###wcpConsentBannerCtrl
+##.react--module__cookies
+##.cookies-modal__background
+##.cookies-modal__background ~ .cookies-modal
+##.footer-section-cookie
+##.d-cc--modal[aria-label*="Datenschutz"]
+##.d-cc--modal-backdrop
+###gdprCookiePolicy
+##.vw-header--accept-cookies
+##.cookies-agreement-wrapper
 !
 ! CUSTOM RULES
 !
@@ -14930,7 +14945,6 @@ polimarky.pl##.navbar-fixed-bottom
 hareskovskole.dk###jGrowl
 pabo.nl##.disclaimer_wrapper
 dashlane.com##.js-privacy-module
-playstation.com###privacy-header
 weersvoorspelling.nl##body > div:not([id]):not([class])
 openclassrooms.com###showDisclaimer
 unitymedia.de##body > div:not([id]):not([class])
@@ -15353,7 +15367,6 @@ sportskeeda.com##.consent-pop-up
 tzorg.nl##.notification
 bitzarium.com###textBox, #masque, #BoutClose
 get-in-engineering.de###getIn_cookie_notice
-ol.fr##.privacy-warning
 greengenius.lt##.cookies-sticky
 frognews.bg##.hover-mask, .gdpr-blk
 dekk1.no##.ModuleGroup.name_infobar
@@ -15606,7 +15619,6 @@ lpexpress.lt###cookies-block
 blockchainsecurity.services##.infobar
 factorymarket.de##.header-notification
 paladins.com##section.footer ~ div
-medcalc.org###consentframe
 webyog.com###top-banner
 fran.si##body > div:not([id]):not([class])[style*="fixed"], body > div:not([id]):not([class])[style*="absolute"]
 datarecoverynederland.nl###cookie-contest
@@ -18340,7 +18352,6 @@ sanook.com###__next > div > footer ~ div
 atu.de###App .notificationBar
 magio.tv###root > div[style]:not([class]):not([id])
 newworld.com###ags-CookieDisclaimer
-twe.no###root_id > div:last-of-type
 udemy.com##.ud-component--footer--eu-cookie-message
 financialexpress.com##div[id^="google_ads_iframe"][id*="GDPR"]
 coinloan.io##.cookies
@@ -19177,7 +19188,6 @@ schauhoehle-breitscheid.de##.uk-notification
 retrosix.co.uk##.ec-notices
 visionexpress.pl###bpr_cookie-alert
 drogeriedepot.de###light-box-bg
-selbstauskunft.net##.d-cc--modal, .d-cc--modal-backdrop
 cleanmymac.com##.bottom-banner
 widewalls.ch##.ww-c-cookies__container
 intercom.com###intercom-cookie-consent-banner
@@ -19542,6 +19552,35 @@ dnvgl.com##.cookie-consent
 dhl.ru###modcookie
 gehrplastics.com##.module-dataprotection
 gehr.de##.module-dataprotection
+canbeuseful.com###cookies
+thenakedpharmacy.com##.cookie
+qbilon.net##.cookie
+tu-clausthal.de###accessibility-selector
+playstation.com##.psw-bottom-left[data-qa="gdpr-setting"]
+atozmath.com###consentframe
+medcalc.org###consentframe
+labyrinthos.co##.floating.bottom
+esmarket.gr###mstm-cookie
+cajeando.com##.cookies
+mediq.nl##.privacy-warning
+guckaistuben-poppenhausen.de##main ~ div
+cbc.ca###alert_modal.privacy
+aromatika.com.pl###cookie
+onsite.fun##.MuiSnackbar-root
+twe.no##body > div > div:last-child
+supermedia.pl###cookie
+bild-online.dk###fixedDiv2
+spbtv.com###app > div > div > [class*="container"]
+easypark.fr##.header > [style*="visible"]
+dragonshop.gr##.header-banner
+medici-stomatologi.ro###cookbox
+multibook.pl###cookie
+sozialleistungen.info##.toast
+notebookgalerie.de##.loading-mask
+niunuernberg.de##main ~ div
+howsmart.pl##.elementor-popup-modal
+kyero.com##.k-ns > [data-cookie-toast]
+spw.ru##.confidential-block
 !
 ! SCRIPT BLOCKING
 !
@@ -19952,6 +19991,7 @@ analytics-consent-manager.azureedge.net
 /gsso_consent_manager.js
 ||avandor.com/consent$script
 /typo3conf/ext/data_consent/*
+||smart.idmnet.pl/consent$script
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -20367,6 +20407,7 @@ spellsalsa.com$domain=interestingengineering.com
 edgecastcdn.net$domain=meteomedia.de|wetter24.de
 /easycmp$domain=lagerhaus.at
 /cmp.js$domain=la7.it
+/cookielab/*$domain=ol.fr
 !
 ! FILTERLIST ONLY
 !
