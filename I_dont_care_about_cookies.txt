@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 324.202010300908
+! Version: 324.202011021503
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 30 Oct 2020 08:08 UTC
+! Last modified: 02 Nov 2020 14:03 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -50,7 +50,7 @@
 ###cookie-barbody .fixed
 ###cookie-notice-wrapper
 ###mmmmm-cookies
-~qwic.de,~vu.nl,~indiearenabooth.com,~hscollective.org,~geefvoorzorgverleners.nl,~conradconnect.com,~biotechusa.hu,~biotechusa.fr,~officiallondontheatre.com,~nieuwspoort.nl,~atro-provita.de###cookie-consent:not([class*="fancybox"])
+~o2.fr,~qwic.de,~vu.nl,~indiearenabooth.com,~hscollective.org,~geefvoorzorgverleners.nl,~conradconnect.com,~biotechusa.hu,~biotechusa.fr,~officiallondontheatre.com,~nieuwspoort.nl,~atro-provita.de###cookie-consent:not([class*="fancybox"])
 ###cookienote
 ~aixfoam.com,~aixfoam.de,~aixfoam.dk,~aixfoam.fi,~aixfoam.fr,~aixfoam.nl,~aixfoam.se###cc-notification
 ##.cc-cookies:not(body):not(html)
@@ -1475,7 +1475,7 @@
 ###cookie_ok1
 ##.cookies_bandeau:not(body):not(html)
 ###wk_cookiebar
-~bioplanete.com,~acerta.be,~miltenyibiotec.com###modal-cookie
+~promondo.de,~bioplanete.com,~acerta.be,~miltenyibiotec.com###modal-cookie
 ###modal-cookie + .reveal-modal-bg
 ##.cookies-information:not(body):not(html)
 ###toolbar_cookies
@@ -5631,7 +5631,7 @@
 ##cookie-drawer-policy
 ##.o-cookie-message:not(body):not(html)
 ###gabarit_cnilcookie
-###content-de-hinweis-cookie-richtlinie
+###SRP_Cookie_Barre
 ###cookie_alert_content
 ##.js-cookies-consent:not(body):not(html)
 ##.cookieRichtline_container
@@ -10852,8 +10852,8 @@
 ###react-cookie-approval
 ###js-gdpr-cookie-popup
 ###js-gdpr-cookie-open
-##ytd-app > ytd-consent-bump-lightbox
-##ytd-app ~ iron-overlay-backdrop
+##.as-oil[data-qa="oil-Layer"] ~ #oil-overlay
+##.gdprResetButton[onclick*="AS_OIL"]
 ##.floating-cookie-policy
 ###vhb-consentlayer
 ##.confirm-cookies-container
@@ -11943,7 +11943,7 @@
 ##.pn-cookies-banner
 ###main-cookies-banner-container
 ###gdpr-cookie-wall
-###agreementPrivacy
+~promondo.de###agreementPrivacy
 ###advgdprpopin-global
 ##.section-popup-gdpr
 ###bw-gdpr_toaster
@@ -12392,10 +12392,24 @@
 ##.popup.cookie-consent
 ###consent-tracking.consent__wrapper
 ###notification_of_cookie
-##.as-oil[data-qa="oil-Layer"] ~ #oil-overlay
-##.gdprResetButton[onclick*="AS_OIL"]
 ###cookiePolicyAgreement
 ###cookie-mask.show
+##.banner-aceptacion-cookies
+##.mrpix--cookie-permission--overhead-container
+###ps_cookiebar_cookies
+##.gdpr-cookie-banner-wrapper
+###DivCookiesMessage
+###datenschutz-consent
+##.tancmbnr
+###LCookieBar
+##.change-priv[href*="Cookiebot"]
+##.cmp-cookie.cmp-modal
+##.gdpr-component-holder
+##.zpconsentinfo
+##.zpconsentinfo ~ div[id^="consent"]
+##.cookie-consent-manager
+##.cookie-consent-manager ~ .backdrop
+###root-header div[class*="GdprPopup"]
 !
 ! CUSTOM RULES
 !
@@ -16281,7 +16295,6 @@ brfares.com##.consent, #consent
 about.clasohlson.com###toast, .toast
 ituudised.ee##div[class*="CookieBar"]
 add0n.com###cookie
-sligro.nl###galleta-main
 mayflower.org.uk##.bottomBanner
 transparency.org##.mk-c-modal
 printn1.ru###info-bott-message
@@ -17763,7 +17776,6 @@ correos.es###myCookies
 laborx.io##.header-index.with-cookie
 urteile-gesetze.de###stickyFooter
 mojedenred.sk##edn-cookie
-educative.io##div[class*="commonBanner-enter"]
 make-it-in-germany.com###nagscreen
 przystanekhistoria.pl##.JSWrapper
 montecarlosbm.com###cookieLab
@@ -18181,7 +18193,6 @@ scamadviser.com##.cookie-nav
 steller.co###root > div[class]
 trombocyter.se###consent-wrap
 grunerundjahr.de##.cookie
-bbc.com###root > header > [class^="Wrapper"], #root #header-content div[class*="DialogBackdrop"]
 nytco.com##.a-cookie
 aliexpress.ru###ae-ru-privacy-banner
 keesvanderspek.nl###cookies
@@ -18918,7 +18929,6 @@ quermania.de###cookiefeld
 kraken.com##.kraken-cookie-warning
 libertex.com##.disclaimer__item.center-md
 arkadbudapest.hu###mdl-overlay, .mdl-modal
-schindelhauerbikes.com###etrpop
 switcher.com##.ec-notices
 reisacher.de##.ch_banner-wrapper
 ichhabediewahl.de###idCP33Message
@@ -19616,6 +19626,28 @@ nxtbookmedia.com###gdpr-pop
 nxm.ro##.footer_notif
 rondel.pl###rondelpl_cookies
 apricon.se###glass, #approvebox
+brico.be##.mxd-new-cookie-bar
+schindelhauerbikes.com###etrpop
+nivea.pl##.policy-info
+trainsweateat.com###root > div > div:first-child > div + div:last-child
+vivaconagua.org###sccBanner
+amd.com###privacy-popup
+nedeljnik.rs###kuki_upozorenje
+wohnkonzept.co.at##.ConsentBanner
+playsnake.org##.cookies
+playtictactoe.org##.cookies
+content.de##div[id*="hinweis-cookie"]
+livexlive.com##.tos-footer
+kissnofrog.com##.nt-cc
+egumenita.ro##.cookies
+bbc.com###root > header > [class^="Wrapper"], #root #header-content div[class*="DialogBackdrop"]
+mcfit.com###app ~ [class^="Layout"]
+spandidos-publications.com##.footer > #navbar
+educative.io###__next > div > .visible
+jobbsafari.se###__next > [class^="Ufti"]
+grdf.fr###cookie, .modal-backdrop
+plaster-miodu.pl###growls-br
+dialdirect.co.uk##.elementor-popup-modal
 !
 ! SCRIPT BLOCKING
 !
@@ -20087,6 +20119,7 @@ gdpr-tcfv2.sp-prod.net$domain=~ekstrabladet.dk|~computerbild.de|~welt.de|~sport1
 /zgdpr.min.js
 /gdpr/pp_agreement.pc.
 /gdpr/cmp/cmpBundle.min.js
+gdpr.privacymanager.io
 /media/plg_system_eprivacy
 ||recepttar.hu/js/privacy.js$script
 cmp.dmgmediaprivacy.co.uk$domain=~metro.co.uk
@@ -20293,7 +20326,8 @@ wpjslib-chunk-notification.js
 /datenschutz.min.js
 /ccm19.js
 /wrapperMessagingWithoutDetection.js$domain=~bild.de|~sport1.de|~focus.de|~chip.de|~n-tv.de|~selbst.de|~wunderweib.de|~tvmovie.de|~praxisvita.de|~cosmopolitan.de|~lecker.de|~autozeitung.de
-/iubenda_cs
+/app.dsgvo.min.js
+/iubenda_cs$domain=~radiomontecarlo.net|~video.repubblica.it|~video.lastampa.it|~buondi.it
 /amp-user-notification-
 ||sn.sanoma.fi/js/sccm$script
 /api/rest/settings/public?fields=endUserAgreement
@@ -20449,6 +20483,9 @@ edgecastcdn.net$domain=meteomedia.de|wetter24.de
 /cookielab/*$domain=ol.fr
 /thcookie.js$domain=megadruck.de
 /consent.min.js$domain=strato-hosting.co.uk
+/msmCookieConsent.js$domain=moneysupermarket.com
+/syno_cookie_element.js$domain=synology.com
+/eon-com-tracking-consent$domain=eon.com
 !
 ! FILTERLIST ONLY
 !
