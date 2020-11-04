@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: LNHwSLVm/ACOsrj6SsRh6w
-! Version: 202011041203
+! Checksum: OKertzCbP+Uwh8ZzjOkNrQ
+! Version: 202011041603
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last Modified: 04 Nov 2020 12:03 UTC
+! Last Modified: 04 Nov 2020 16:03 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: http://abpchina.org/forum/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -8818,6 +8818,7 @@ _yad_jsonp_
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
 szxx.com.cn###A1
+jiyingw.net##.textwidget > P > A > IMG
 szxx.com.cn###A2
 gpcxw.com###AA2
 yahoo.com###ACT_crazy
@@ -15705,9 +15706,12 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com##style[id^="s-"] + 
 ||zuowen.hydcd.com^
 ||zxw51.com^$third-party
 !#bejson.com
-bejson.com###shuangshi1Modal
+bejson.com##.top-link
+bejson.com##DIV[id^="shuangshi"]
+bejson.com##.modal-backdrop
+bejson.com##.float-right
+bejson.com##DIV[class^="xf-"]
 bejson.com##.be-json2-gap
-bejson.com##.xf-gg-left
 bejson.com##a[href*="layui.com"]
 bejson.com#?#:-abp-has(> [data-href*="://t.cn/"])
 bejson.com#?#:-abp-has(> a[href*="://t.cn/"])
@@ -16027,6 +16031,7 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 @@||zmtt.net^$script,domain=luoqiuzw.com
 !#Novels
 ||hxsjxw.cn^
+||amghvzn.cn^
 ||b2b5.net^
 ||haiyinsiwang.com^
 ||xixizaix.cn^
