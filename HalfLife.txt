@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: qY+8d/CoML89HZ2hGCYdRA
+! Checksum: IFZHQv/o4fWBHVYNnc6pdA
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202011042013
-! Last Modified: 2020年11月04日 20:13
+! Version: 202011050020
+! Last Modified: 2020年11月05日 00:20
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -9366,6 +9366,7 @@ _yad_jsonp_
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
 szxx.com.cn###A1
+jiyingw.net##.textwidget > P > A > IMG
 szxx.com.cn###A2
 gpcxw.com###AA2
 yahoo.com###ACT_crazy
@@ -16249,9 +16250,12 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com##style[id^="s-"] + 
 ||zuowen.hydcd.com^
 ||zxw51.com^$third-party
 !#bejson.com
-bejson.com###shuangshi1Modal
+bejson.com##.top-link
+bejson.com##DIV[id^="shuangshi"]
+bejson.com##.modal-backdrop
+bejson.com##.float-right
+bejson.com##DIV[class^="xf-"]
 bejson.com##.be-json2-gap
-bejson.com##.xf-gg-left
 bejson.com##a[href*="layui.com"]
 bejson.com#?#:-abp-has(> [data-href*="://t.cn/"])
 bejson.com#?#:-abp-has(> a[href*="://t.cn/"])
@@ -16567,6 +16571,7 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 @@||zmtt.net^$script,domain=luoqiuzw.com
 !#Novels
 ||hxsjxw.cn^
+||amghvzn.cn^
 ||b2b5.net^
 ||haiyinsiwang.com^
 ||xixizaix.cn^
