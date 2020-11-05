@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: UhNJww++yMPhr6MGPLf95w
+! Checksum: HdcwSyfmQBLt4MCQxm9oZQ
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202011051214
-! Last Modified: 2020年11月05日 12:14
+! Version: 202011051612
+! Last Modified: 2020年11月05日 16:12
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -9367,6 +9367,7 @@ _yad_jsonp_
 ||ax1x.com^$domain=hktvyb.com
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+bilibili.com##A[href*="cm.bilibili.com"][data-target-url]:not([data-target-url*=".bili"])
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -16573,6 +16574,8 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 @@||zmtt.net^$script,domain=luoqiuzw.com
 !#Novels
 ||fuligrs.cn^
+||am77p.cn^
+||naolifanghealth.com^
 ###chaptername + div > div[style="padding:10px;border-radius:10px;background-color:green;"]
 ###downdiv > .downcode
 ##.box_con[style="border-radius:10px;background-color:#ff0000;padding:15px;"]
