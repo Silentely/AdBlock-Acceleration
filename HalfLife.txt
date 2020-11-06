@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: E+RMD8D0sQFwAu6HEf8jLA
+! Checksum: Nb8nPWFczsyhFDSpeTbXRA
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202011062014
-! Last Modified: 2020年11月06日 20:14
+! Version: 202011070022
+! Last Modified: 2020年11月07日 00:22
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -9376,6 +9376,7 @@ _yad_jsonp_
 ||rijutv.com/statics/skin/hjtv-wap/js/plus.js
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+mydrivers.com##A[href*="/tourl.ashx?go="]
 yxlady.com##.game_wrap
 toolfk.com##WAVY ~ A
 hao123.com###puzzleBox
@@ -16268,19 +16269,14 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com##style[id^="s-"] + 
 ||zuowen.hydcd.com^
 ||zxw51.com^$third-party
 !#bejson.com
-bejson.com##.be-json2-gap
-bejson.com##.float-right
-bejson.com##.fxf-gg-left
+bejson.com##A[href*="/kuaikuai."]
+bejson.com##DIV[id^="shua"] + FONT[color="red"]
+bejson.com##UL[class^="top-link"]
 bejson.com##.modal-backdrop
-bejson.com##.t-big-margin[style="width: 200px;float: right"]
-bejson.com##.top-link
-bejson.com##.top-link1
 bejson.com##a[href*="layui.com"]
 bejson.com#?#:-abp-has(> [data-href*="://t.cn/"])
 bejson.com#?#:-abp-has(> a[href*="://t.cn/"])
-bejson.com##div[class^="xf-"]
 bejson.com##div[id^="shuangshi"]
-||bejson.com/static/ydxyt/
 !#bde4.com
 @@||jsdelivr.net/gh/bde4admin/*/prebid-ads.js$domain=bde4.com
 ||bde4.com^$csp=script-src 'self' * 'unsafe-inline'
@@ -18812,8 +18808,8 @@ getrelax.cc,sexylove.club##.loaded-popup-wrapper
 qq.com#@#.adsbox
 qq.com#@#.side_ad
 ##.txp_ad_center
-||*^sdtfrom=^$rewrite=abp-resource:blank-mp3,domain=qq.com
-||lts*.qq.com^*.ts?index=$rewrite=abp-resource:blank-mp3,domain=qq.com
+||*^sdtfrom=^$media,rewrite=abp-resource:blank-mp3,domain=qq.com
+||lts*.qq.com^*.ts?index=$media,rewrite=abp-resource:blank-mp3,domain=qq.com
 !#Rewrite filters
 !#Rijutv.com
 $script,third-party,domain=rijutv.com
