@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: lCTwp6Hkea+DwH0l8GC1kA
-! Version: 202011091203
+! Checksum: RilMTRHdANvqysxTpjoOJw
+! Version: 202011091613
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last Modified: 09 Nov 2020 12:03 UTC
+! Last Modified: 09 Nov 2020 16:13 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: http://abpchina.org/forum/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -6249,7 +6249,7 @@ _yad_jsonp_
 ||haosf.com/kan.htm
 ||haoxxoo.com/player/ad.html
 ||happyhongkong.com/images/client/
-||hboav.com/guga/
+||hboav.com/guga/$~subdocument
 ||hbzhan.com/images/index/*.swf
 ||hc360.com/images/14826/289x90.jpg
 ||hc360.com/js/*hezuo.js
@@ -15741,6 +15741,9 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com##style[id^="s-"] + 
 ||zuowen.hydcd.com^
 ||zxw51.com^$third-party
 !#bejson.com
+bejson.com#?#body>:not(ul):not(div):-abp-has(>:-abp-contains(香港))
+bejson.com##img[src^="data"]
+bejson.com#?#body>:-abp-contains(新人会场)
 bejson.com##.alert-dismissable
 bejson.com##.modal-backdrop
 bejson.com##.t-small-margin > ul:first-child
