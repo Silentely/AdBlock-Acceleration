@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 324.202011070749
+! Version: 325.202011090858
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 07 Nov 2020 06:49 UTC
+! Last modified: 09 Nov 2020 07:58 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -355,7 +355,7 @@
 ##.cookie-wrap:not(body):not(html)
 ~cexpr.es,~correosexpress.com,~correosexpress.pt,~travelchannel.co.uk,~puzzels.ad.nl,~puzzels.trouw.nl,~puzzels.parool.nl,~puzzels.volkskrant.nl##.cookie-wrapper:not(body):not(html)
 ###cookiewarningiframe
-###cookies-notice
+~leirovins.be###cookies-notice
 ###cookieNoteWrap
 ###acceptCookiePolicy
 ~wesendit.com###acceptCookie
@@ -704,7 +704,7 @@
 ##.eucookie:not(body):not(html)
 ##.coockie:not(body):not(html)
 ##.container-cookie-notice
-~msn.com,~nu.nl,~crfashionbook.com,~usgamer.net,~rockpapershotgun.com,~eurogamer.net,~eurogamer.pl,~zdnet.com,~vg247.com,~mensjournal.com,~autoweek.nl,~cbsnews.com,~assetstore.unity.com,~gmx.com,~gmx.es,~gmx.fr,~gmx.co.uk,~mail.com,~kruidvat.nl,~tvn24.pl,~popsugar.co.uk###cookie-preferences
+~msn.com,~nu.nl,~crfashionbook.com,~usgamer.net,~rockpapershotgun.com,~eurogamer.net,~eurogamer.pl,~zdnet.com,~vg247.com,~mensjournal.com,~autoweek.nl,~cbsnews.com,~assetstore.unity.com,~gmx.com,~gmx.es,~gmx.fr,~gmx.co.uk,~mail.com,~kruidvat.nl,~tvn24.pl,~popsugar.co.uk,~rte.ie###cookie-preferences
 ###notificacio-cookies
 ##.cookies-message:not(body):not(html)
 ###scc-consent
@@ -10190,7 +10190,7 @@
 ##.cookie-prompt__wrap
 ###rgpd__info__
 ~hotelsbarriere.com,~ufz.de##footer ~ div[id*="cookie-banner"]
-~msn.com,~nu.nl,~crfashionbook.com,~usgamer.net,~rockpapershotgun.com,~eurogamer.net,~eurogamer.pl,~zdnet.com,~vg247.com,~mensjournal.com,~autoweek.nl,~cbsnews.com,~assetstore.unity.com,~gmx.com,~gmx.es,~gmx.fr,~gmx.co.uk,~mail.com,~kruidvat.nl,~tvn24.pl,~popsugar.co.uk###onetrust-consent-sdk
+~msn.com,~nu.nl,~crfashionbook.com,~usgamer.net,~rockpapershotgun.com,~eurogamer.net,~eurogamer.pl,~zdnet.com,~vg247.com,~mensjournal.com,~autoweek.nl,~cbsnews.com,~assetstore.unity.com,~gmx.com,~gmx.es,~gmx.fr,~gmx.co.uk,~mail.com,~kruidvat.nl,~tvn24.pl,~popsugar.co.uk,~rte.ie###onetrust-consent-sdk
 ###park-cookiebar-el
 ###cerezsorgula.cerezsorgula
 ##.gdprNotice:not(body):not(html)
@@ -12443,6 +12443,16 @@
 ##.cookiemonster-container
 ##app-cookie-policy
 ###__layout > .layout.hoverable > .notification[style*="bottom"]
+##.v-cookieconsent
+###cookiePermission
+###cookie_notices
+##.cookie-cnf-banner--background
+##.propeller-cookieconsent
+##.cpOverlay[data-cookie-consent-overlay]
+###divi-life-cookie-popup
+##.c-cookies-consent
+###acceptCookieModalTemplate
+##.oneTrustLayer
 !
 ! CUSTOM RULES
 !
@@ -18506,7 +18516,6 @@ totallymoney.com##.tm-cookie-banner, .tm-cookie-banner__spacer
 mind-ware.nl##.dcd-avg-banner, .dcd-avg-banner-bg
 eyescan.nl##.cookie-cta
 pacoguns.de##.lightbox-backdrop
-innsbruck-airport.com###header-notification
 wiesenhof-online.de##.wsh-cookie-overlay
 josephmoog.com###POPUPS_ROOT
 kup.pl.canalplus.com##.cookies
@@ -19066,7 +19075,6 @@ lausitznews.de###modal_cookie-consent
 thecompleteuniversityguide.co.uk###ckpod
 sicomputers.nl###mm-cc-wrap
 jus.com.br##.gdpr
-toggl.com##.toggl-cw-body
 andreaminini.com##.privacy
 ambientedirect.com##.ConsentOverlay, .ModalBackground
 esanum.de##esn-cookie-disclaimer
@@ -19742,6 +19750,31 @@ flowkey.com###gatsby-focus-wrapper > [role="alert"]
 cassart.co.uk##.global-promotion
 model-bazar.cz###cookie
 privacy.net##.di-cookie-consent-pop
+helpucover.co.uk###consent
+finex.cz##.finex-cookiebar
+prosenectute.ch###cookie
+popsockets.co.uk##.veil, .modal-backdrop
+allgeier-core.com##.mod_cms_accept_tags
+largenet.de###largenet_consent
+tw.de##.uk-notification
+techpackmobileandgadgetcover.co.uk##body > .alert:nth-of-type(1)
+boords.com##body > div > .fixed
+zs1mm.home.pl##body > div:not([id]):not([class])
+astleyclarke.com###ac-cookie-notice
+polskieskarby.pl##.cookies
+parentclub.scot##.cookie
+cimetieres-de-france.fr###js-header-cookie
+calimove.com###overlay
+kartell.com###gdprPopup
+orderbird.com###modal
+toggl.com##.toggl-cw-body, .consent-wrapper
+kora.fr##.cookie
+zurich.co.uk###opnotification
+whitepages.com##.v-snack__wrapper
+jiosaavn.com##.c-toast
+wegrow.info##.modal-backdrop
+clickandtoner.es###beapp_cookies
+stadtwerke-hockenheim.de##body > [id^="idHrSysGips"]
 !
 ! SCRIPT BLOCKING
 !
@@ -20219,7 +20252,6 @@ gdpr-tcfv2.sp-prod.net$domain=~ekstrabladet.dk|~computerbild.de|~welt.de|~sport1
 /zgdpr.min.js
 /gdpr/pp_agreement.pc.
 /gdpr/cmp/cmpBundle.min.js
-gdpr.privacymanager.io
 /media/plg_system_eprivacy
 ||recepttar.hu/js/privacy.js$script
 cmp.dmgmediaprivacy.co.uk$domain=~metro.co.uk
@@ -20388,6 +20420,7 @@ cdn.truendo.com
 widgets.legalmonster.com
 /teenytinycellar.com
 /lovelydrum.com
+nexus.ensighten.com
 ||pcz.pl/static/js/moo-cooker.js$script
 /eucd/eucd.min.js
 ||cinabre.sudoc.abes.fr/psi_gui/js/bandeau.js$script
@@ -20462,7 +20495,7 @@ consent.truste.com$domain=oracle.com
 /cui-cookie-policy$domain=congstar.de
 /gdpr.js$domain=bitly.com|qcnet.com
 /privacy/popup.js$domain=cdaction.pl
-/cookies.js$domain=knaufdoehetzelf.nl|cashconverters.es
+/cookies.js$domain=knaufdoehetzelf.nl|cashconverters.es|dragnsurvey.com
 /utag.js$domain=louisvuitton.com|saturn.de|mediamarkt.de
 /spmsg_addetection.js$domain=tvspielfilm.de
 /firebox-gdpr.js$domain=thelittleboxoffice.com
@@ -20590,6 +20623,8 @@ edgecastcdn.net$domain=meteomedia.de|wetter24.de
 /consent-manager/*$domain=interhyp.de
 /cp01.js$domain=jzzo.com
 /klaro/*$domain=salesviewer.com
+gdpr.privacymanager.io$domain=mediacourant.nl
+/consent-management/*$domain=plasteurope.com
 !
 ! FILTERLIST ONLY
 !
