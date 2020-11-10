@@ -109,11 +109,11 @@ jobs:
           file-url: https://hblock.molinero.dev/hosts
           file-name: Hblock_hosts
 
-      - name: Malware Domain List  #恶意软件过滤规则
-        uses: carlosperate/download-file-action@v1.0.3
-        with: 
-          file-url: https://www.malwaredomainlist.com/hostslist/hosts.txt
-          file-name: Malware_host.txt
+#      - name: Malware Domain List  #恶意软件过滤规则
+#        uses: carlosperate/download-file-action@v1.0.3
+#        with: 
+#          file-url: https://www.malwaredomainlist.com/hostslist/hosts.txt
+#          file-name: Malware_host.txt
 
       - name: Adblock Warning Removal List  #去除禁止广告拦截提示规则
         uses: carlosperate/download-file-action@v1.0.3
