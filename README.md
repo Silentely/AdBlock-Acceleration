@@ -16,7 +16,7 @@ Filtering tools：
   * [AdGuard Home](https://adguard.com/zh_cn/adguard-home/overview.html)
   * [KoolProxyR](https://github.com/user1121114685/koolproxyR)
   * [Adbyby](http://www.adbyby.com/)
-  * [阿呆喵](http://www.admflt.com)
+  * [admflt](http://www.admflt.com)
 * 📱 mobile 
   * [AdGuard for Android](https://adguard.com/zh_cn/adguard-android/overview.html)
   * [AdGuard for iOS](https://adguard.com/zh_cn/adguard-ios/overview.html)
