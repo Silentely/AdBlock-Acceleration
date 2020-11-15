@@ -2,7 +2,7 @@
 
 # AdBlock-Acceleration
 
-国内加速过滤广告规则订阅
+国际/中国加速过滤广告规则订阅（[English instructions](https://github.com/Silentely/AdBlock-Acceleration/master/README.md)）
 
 ## 🔖 过滤工具推荐
 
@@ -56,7 +56,7 @@
 
 ## 📃 规则列表
 
-|  🥑 规则名称   |    原始地址  |🚀 加速地址①  | 🚀 加速地址②  |
+|  🥑 规则名称   |    原始地址  | 🚀 加速地址（大陆）  | 🚀 加速地址（国际）  |
 |  :----:  | :----:  | :----:  | :----:  |
 | AdGuard DNS filter | [原始](https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/AdGuard_Simplified_Domain_Names_Filter.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/AdGuard_Simplified_Domain_Names_Filter.txt) |
 | Anti-AD | [原始](https://anti-ad.net/easylist.txt) | [加速①](https://raw.staticdn.net/Silentely/AdBlock-Acceleration/master/Anti_AD_Easylist.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Anti_AD_Easylist.txt) |
