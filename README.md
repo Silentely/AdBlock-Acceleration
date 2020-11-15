@@ -48,7 +48,7 @@ Submit the rules that you think you need to update for acceleration. The followi
 1. the rules need to be on an offshore server, difficult to successfully update or slow to update.
 2. indicate the name, source, and function of the rule.
 3. If the rule you want to speed up is a file in a GitHub project, just use the jsDelivr syntax to speed up the project file **without submitting a request**.
-`https://cdn.jsdelivr.net/gh/用户名/项目名@version/accelerate files`.
+`https://cdn.jsdelivr.net/gh/username/project name@version/accelerate files`.
 
 ## 🍔 Usage
 **⚠️ Note: ** This rule is not for web proxy tools, don't give it to Surge, ShadowRocket, Quantumult(X), Clash(X/A) and similar tools!
