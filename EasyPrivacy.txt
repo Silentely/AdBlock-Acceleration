@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202011181456
+! Version: 202011181956
 ! Title: EasyPrivacy
-! Last modified: 18 Nov 2020 14:56 UTC
+! Last modified: 18 Nov 2020 19:56 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -10024,7 +10024,8 @@ _mongo_stats/
 ||afrigator.com/track/
 ||agendize.com^*/counts.jsp?
 ||aiya.com.cn/stat.js
-||akamaized.net/sc/$domain=msn.com
+||akamaized.net/sc/*.gif$domain=msn.com
+||akamaized.net/sc/*.js$domain=msn.com
 ||akanoo.com/tracker/
 ||akatracking.esearchvision.com^
 ||aklamio.com/ovlbtntrk?
@@ -17895,10 +17896,14 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||ksta.de^*/tracking/tracking.js$domain=ksta.de
 @@||orginio.de/api/analytics/$~third-party,xmlhttprequest
 @@||rtl.de^*/videotracking.min.js$domain=rtl.de
+@@||showheroes.com/playlist/vast3?$xmlhttprequest,domain=rtl.de
+@@||showheroes.com/publishertag.js$domain=rtl.de
+@@||showheroes.com/pubtag.js$domain=rtl.de
+@@||showheroes.com/spot/iframe?pageurl=$script,subdocument,domain=rtl.de
 @@||spatialbuzz.com/piwik/piwik.js$domain=spatialbuzz.com
 @@||spiegel.de/layout/js/http/netmind-$script
 @@||sunday.de/skin/*/googleanalytics.js$script
-@@||taboola.com/libtrc/impl.$script,domain=bild.de|bz-berlin.de|computerbild.de|fitbook.de|jetzt.de|metal-hammer.de|musikexpress.de|noizz.de|rollingstone.de|stylebook.de|techbook.de|travelbook.de|wieistmeineip.at|wieistmeineip.ch|wieistmeineip.de
+@@||taboola.com/libtrc/impl.$script,domain=bild.de|bz-berlin.de|computerbild.de|fitbook.de|jetzt.de|metal-hammer.de|musikexpress.de|noizz.de|rollingstone.de|stylebook.de|techbook.de|travelbook.de|welt.de|wieistmeineip.at|wieistmeineip.ch|wieistmeineip.de
 @@||tipico.de/js/modules/fingerprintjs2/fingerprint2.min.js$script,~third-party
 @@||uim.tifbs.net/js/$script,domain=web.de
 @@||widgets.trustedshops.com/reviews/tsSticker/$domain=koziol-shop.de
