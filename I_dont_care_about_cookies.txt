@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 325.202011190905
+! Version: 325.202011201155
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 19 Nov 2020 08:05 UTC
+! Last modified: 20 Nov 2020 10:55 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -776,7 +776,7 @@
 ###cookieWrap
 ~saa.nl##.popup-cookie:not(body):not(html)
 ##.popup-cookies:not(body):not(html)
-##.cookieConsent:not(body):not(html)
+~invk.nl##.cookieConsent:not(body):not(html)
 ###cookieAcceptBar
 ###inpl_cp_cnt
 ###cookieNote:not(.in)
@@ -795,7 +795,7 @@
 ###showCookieInfo
 ###ccconsent
 ##.cookie-compliance-container
-~metro.de,~axa-im.fr##.cookie-disclaimer:not(body):not(html)
+~metro.de,~axa-im.fr,~pronovabkk.de##.cookie-disclaimer:not(body):not(html)
 ###cookie_popup
 ##.cookie_ribon:not(body):not(html)
 ##.infoCookies:not(body):not(html)
@@ -1583,7 +1583,7 @@
 ##.cookies-v2:not(body):not(html)
 ###aa_privacy_module
 ##.cookie-noticebar:not(body):not(html)
-~urgibl.de###CookieMessage
+~urgibl.de,~kunzbaumschulen.ch###CookieMessage
 ##.cookies-disclaimer:not(body):not(html)
 ##.divLeyCookies:not(body):not(html)
 ###policyCookies
@@ -2276,7 +2276,7 @@
 ###cookiesWarningBanner
 ###cookiesAdrenaline
 ###notice-cookie
-~511tactical.com,~arbeiterkammer.at,~technikum.pl,~teb.pl,~bazzar.hr,~mediathekviewweb.de,~frankfurt.de,~vvebelang.nl,~lomax.dk,~engie-energie.nl,~knative.dev,~stadt-kuehlungsborn.de,~thule.com,~mltracker.co.uk,~tropicana.fr,~xm.com,~moderne-landwirtschaft.de,~brieftip.pl,~kaliber.pl###cookieModal:not(.countryCookieModalContainer):not(.idcac)
+~invk.nl,~mirells.se,~511tactical.com,~arbeiterkammer.at,~technikum.pl,~teb.pl,~bazzar.hr,~mediathekviewweb.de,~frankfurt.de,~vvebelang.nl,~lomax.dk,~engie-energie.nl,~knative.dev,~stadt-kuehlungsborn.de,~thule.com,~mltracker.co.uk,~tropicana.fr,~xm.com,~moderne-landwirtschaft.de,~brieftip.pl,~kaliber.pl###cookieModal:not(.countryCookieModalContainer):not(.idcac)
 ###wp_insert_vi_consent_popup_wrapper
 ##div[data-cookie="on"]
 ###gk-cookie-law
@@ -4325,7 +4325,7 @@
 ###cookies-box-outer-layer
 ###cookies-box-inner
 ###nCookie
-###AcceptCookies
+###AcceptCookies:not(button)
 ##.cookies-info-box:not(body):not(html)
 ##.sliding-privacy-popup
 ##.barWrap[data-id="cookieBar"]
@@ -4352,8 +4352,8 @@
 ###cookie_souhlas_div
 ###gs-cookie-policy
 ###cookies-infos
-~forbes.com,~tmz.com,~sap.com,~proximustv.be,~proximus.be##.truste_overlay:not(body):not(html)
-~forbes.com,~tmz.com,~sap.com,~proximustv.be,~proximus.be##.truste_box_overlay
+~sap.com,~forbes.com,~tmz.com,~proximustv.be,~proximus.be,~tripit.com##.truste_overlay:not(body):not(html)
+~sap.com,~forbes.com,~tmz.com,~proximustv.be,~proximus.be,~tripit.com##.truste_box_overlay
 ###CookiesBar
 ##.msg-cookies:not(body):not(html)
 ###bys-cookiemessage
@@ -8169,7 +8169,7 @@
 ##.sentence--cookie--container
 ###ewcm2_container
 ##.thcookie-overlay
-##.fixed-cookie-prl
+###banner_cookiebar
 ##.cookies__banner__wrapper
 ##.cookiemanager_banner--container
 ##.avCookieLaw:not(body):not(html)
@@ -12498,6 +12498,16 @@
 ##.-s-cookie-bar
 ###tarteaucitron-root
 ###oc_cb_wrapper.oc_cb_wrapper
+##.cookie-consent__container
+###CookieConsentContainer
+##.new-cookie-banner
+###DSGVO_container
+###flex_cookie_popup
+###flex_cookie_popup ~ .modal-backdrop
+##.flex_cookie_popup_bottom
+###SubscribeBox.PopupBox ~ #bottompopup.bottompopup
+##.elfsight-widget-cookie-consent
+##.tx-conn-cookie-consent
 !
 ! CUSTOM RULES
 !
@@ -18918,7 +18928,6 @@ dnbeiendom.no##77
 yourkit.com###terms-wrapper-id
 petcure.be###fancybox-overlay, #fancybox-wrap
 nindo.de###root > article > .box-shadow
-naturalnews.com###bottompopup
 owasp.org###disclaimer-container
 360.cymru###negesCaniatad
 s4c.cymru##.s4c-cookie-alert
@@ -19717,7 +19726,6 @@ genickbruch.com##body > div > div[style*="fixed"]
 hw-zuschuss.daimler.com##.cdk-overlay-container
 xentry.daimler.com##.xf-cookie-hint-color
 cataloxy.es###cookies_cond
-terrorism.news###bottompopup
 nigiara.it##.privacy
 blitzortung.org###topdiv
 flotte.de###rodo
@@ -19878,6 +19886,22 @@ dstreet.pl###ToplayerCover, #ToplayerConsent
 athlinks.com###footer-container ~ div
 skysails-marine.com##.am-notification
 checkmyfile.com###messageBanner
+shpr.fr###script_analytics
+drewag.de##.mcfCookieAcceptanceContainer
+studieren.at###cookie-settings-wrapper
+regionalnetze-linzgau.de###backgroundMessagebox
+services.gov.gr##.MuiSnackbar-root
+datasite.com##.policybar
+dow.com##.screenBlockOverlay
+checkmate.gr##.uk-notification
+helium.com##article > footer ~ div
+delicatessengriega.com##.lightbox-backdrop
+mausefallemuelheim.info##main ~ div
+it-shop24.pl###cookie
+degum.de###cookiemanager
+nespresso.com###nes_cookie_banner_wrapper
+surfachem.pl##.rcsc-popup
+tri-shop24.de##.cookie
 !
 ! SCRIPT BLOCKING
 !
@@ -20247,6 +20271,7 @@ flipdish-cookie-consent
 cookieconsent.syreta.com
 /js/deferred/cookie-consent
 /js/rodo-cookie
+/hw-cookie-dialog.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -20282,7 +20307,7 @@ browser-consent-front.coco.s-cloud.fi
 /consent.webmasterplan.com/v2
 /js/adsconsent.min.js
 ||consent.truste.com/get?name=notice.js$script
-||consent.trustarc.com/notice$script
+||consent.trustarc.com/notice$script,domain=~tripit.com
 consent-manager.metomic.io
 cmp.uniconsent.com
 /consent-banner-bootstrap
@@ -20393,6 +20418,7 @@ privacy-policy.u-lab.nl
 ||trustcommander.net/privacy$script
 app.eprivacy-keeper.eu
 /wp-content/plugins/en-privacy-notification/*
+privacy.claytonhomes.com
 ||cmp.nextday.media/cmp$script,domain=~vi.nl|~omroepwest.nl
 cmp.dreamlab.pl
 /media/cmp/int_cmp_banner
@@ -20748,6 +20774,7 @@ edgecastcdn.net$domain=meteomedia.de|wetter24.de
 /usercentrics-sdk/*$domain=verivox.de
 /cookie-consent/*$domain=lux-residence.com
 /cookie-approval.js$domain=deutsche-apotheker-zeitung.de
+privacy-manager-v$domain=df.eu
 !
 ! FILTERLIST ONLY
 !
