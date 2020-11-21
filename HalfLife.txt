@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: grKntfPU47+sgsAk4C4uEw
+! Checksum: GGLL0hfbNRxV/aR7fzxGDQ
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202011212013
-! Last Modified: 2020年11月21日 20:13
+! Version: 202011220016
+! Last Modified: 2020年11月22日 00:16
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -1695,6 +1695,8 @@ _xiuno_com_ad/
 !----------------------------------Ads-Union----------------------------------!
 .8ox.cn
 ||ak0429.com^
+||xnmcmnt.cn^
+||xyad316ea.vip^
 .cc/s.php?id=$script,third-party
 .cn/?ss=$script,third-party
 .cn/s.php?id=$script,third-party
@@ -4194,7 +4196,6 @@ ubmcmm.baidustatic.com
 ||yanglaopt.net^
 ||yaohq.com^
 ||yaoxiaoli.com^
-||yaoyl.com^
 ||yatemy.cn^
 ||ycfgnau.cn^
 ||ychml.com^
@@ -7821,7 +7822,7 @@ _yad_jsonp_
 ||news18a.com/image/ad_ina/
 ||newsres.cn/temp/tempad
 ||newume.com/v1/data/ume-
-||newyx.net/j/down_yd.js
+||newyx.net^*/down_yd.js
 ||nex.163.com/q?
 ||nfmovies.com/pic/tu/*_863x59.
 ||nfmovies.com/pic/tu/*_banner
@@ -9418,8 +9419,10 @@ _yad_jsonp_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
 ||baidu.com/forum/pic/item/aec379310a55b319b1963d3754a98226cffc1700.jpg
+||yaoyl.com/js/ds.js
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+newyx.net##.gs
 mcbbs.net###lsform + .y
 cn-healthcare.com##.fh_ad_wrap
 cn-healthcare.com##.fh_advent_wrap
@@ -19288,7 +19291,7 @@ fqsousou.com,kengso.com#@#.user-share
 @@||simba.taobao.com/?name=tcmad&$domain=www.taobao.com
 @@||sinajs.cn/open/analytics/js/suda.js$domain=weibo.com|~widget.weibo.com
 @@||sogou.com/pv.gif?*&stype=showskinpanel
-@@||sohu.com/cityjson$domain=114shouji.com|51credit.com|castech.com|eduyun.cn|jdboshi.com|jialingmm.net|lcm88.com|mop.com|shouji.com.cn|skk.moe|vivo.com.cn|yxdm.me
+@@||sohu.com/cityjson$domain=platinum-pen.com.cn|114shouji.com|51credit.com|castech.com|eduyun.cn|jdboshi.com|jialingmm.net|lcm88.com|mop.com|shouji.com.cn|skk.moe|vivo.com.cn|yxdm.me
 @@||sohu.com/integration-api/mix/region/*&refer=http
 @@||soufunimg.com/count/uvbforpc.js
 @@||stjscn.s-msn.com/portal/hp/2011/udctrack.
@@ -19311,6 +19314,7 @@ fqsousou.com,kengso.com#@#.user-share
 ||hjfile.cn/analytics/site/TrackEvent.js
 !---------------------------------Temporary-----------------------------------!
 ! EasyList Lite
+/ad/images/*
 /adshow/*
 /new/ads/*
 ##.right-ad
@@ -20219,6 +20223,7 @@ _box_ad_
 ||csdnimg.cn/common/redpack/redpack.js
 ||w3cschool.cn/index/*Advert
 !------------------------Specific element hiding rules------------------------!
+offcn.com###offcn_yx
 3dmgame.com##.modAD
 csdn.net###passportbox
 csdn.net##.login-mark
