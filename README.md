@@ -51,7 +51,7 @@ Submit the rules that you think you need to update for acceleration. The followi
 `https://cdn.jsdelivr.net/gh/username/project name@version/accelerate files`.
 
 ## 🍔 Usage
-**⚠️ Note: ** This rule is not for web proxy tools, don't give it to Surge, ShadowRocket, Quantumult(X), Clash(X/A) and similar tools!
+⚠️ Note: This rule is not for web proxy tools, don't give it to Surge, ShadowRocket, Quantumult(X), Clash(X/A) and similar tools!
 Just copy the table below and use the accelerated address of the corresponding rule as a link to the subscription rule for the de-advertising tool.
 
 ## 📃 List of rules
