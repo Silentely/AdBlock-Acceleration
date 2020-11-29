@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: ALhIi5GAV242FZnVd+HfoA
-! Version: 202011290802
+! Checksum: 017h/B8B/haZpHMIJE5yrw
+! Version: 202011291202
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last Modified: 29 Nov 2020 08:02 UTC
+! Last Modified: 29 Nov 2020 12:02 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: http://abpchina.org/forum/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -940,8 +940,9 @@ _xiuno_com_ad/
 ##.mod + #bottomBox
 ##.my-cat.my-cat-header
 ##.mylist > a > img[width^="9"][height="80"]
-##.mylist > a[target="_bank"] > img[src*=".alicdn.com/"]
-##.mylist > a[target="_bank"] > img[src*="kanjiantu."]
+###hellobox > .mylist
+###mainbody:nth-child(5) > .mylist
+##.mylist + #topthree
 ##.newstyle > .container > a[target="_blank"]
 ##.overBanner.dowloadBtn
 ##.pagead_3
@@ -8891,6 +8892,7 @@ _yad_jsonp_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
 ||radikal.ru^$domain=18board.com|18p2p.com
+||alicdn.com/img/ibank/*_1776866723.
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
 18board.com,18p2p.com##.altbg2 > TD[width="33%"]
@@ -14168,7 +14170,7 @@ jd.com#@#.ads-item
 gsxt.gov.cn#@#.ads-right
 159i.com,techroomage.com,zhaopin.com#@#.adsBox
 4gtv.tv,80s.ai,ft.com,ftchinese.com,ftchinese.com.sz-dns.net,kartinfo.me,long7.qq.com,reh.tw,typecho.wiki#@#.adsbox
-1point3acres.com,alotof.software,android-doc.com,apk.tw,battlecats-db.com,chtoen.com,dizhishengcheng.com,doitwell.tw,epinv.com,ff14angler.com,fxpan.com,haoweichi.com,logi.im,moa.tw,numberempire.com,playok.com,shenfendaquan.com,tingfm.com,yabook.org#@#.adsbygoogle
+alotof.software,android-doc.com,apk.tw,battlecats-db.com,chtoen.com,dizhishengcheng.com,doitwell.tw,epinv.com,ff14angler.com,fxpan.com,haoweichi.com,logi.im,moa.tw,numberempire.com,playok.com,shenfendaquan.com,tingfm.com,yabook.org#@#.adsbygoogle
 qq.com#@#.adside
 gdmm.com,gkstk.com,youquba.net#@#.adtop
 bdp.cn#@#.adv-list
@@ -14216,6 +14218,7 @@ brandsales.58.com#@#div[id^="ad_"]
 gohome.com.hk#@#div[id^="div-gpt-ad"]
 !---------------------------------URL Whitelist-------------------------------!
 @@&adurl=http://$domain=360bifen.cc|360bifen.com
+@@||1point3acres.com^$generichide
 @@.adserver.$domain=litv.tv
 @@.com/adv/$domain=my.ctrip.com
 @@.gif#$domain=cnprint.org|huhupan.com|tgfcer.com|wgun.net
