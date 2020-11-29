@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: /a2RaFz+VieoGMG+fuHSCQ
+! Checksum: TMQRY4TheWPravRQT7tvfA
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202011291614
-! Last Modified: 2020年11月29日 16:14
+! Version: 202011292016
+! Last Modified: 2020年11月29日 20:16
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -1488,8 +1488,9 @@ _xiuno_com_ad/
 ##.mod + #bottomBox
 ##.my-cat.my-cat-header
 ##.mylist > a > img[width^="9"][height="80"]
-##.mylist > a[target="_bank"] > img[src*=".alicdn.com/"]
-##.mylist > a[target="_bank"] > img[src*="kanjiantu."]
+###hellobox > .mylist
+###mainbody:nth-child(5) > .mylist
+##.mylist + #topthree
 ##.newstyle > .container > a[target="_blank"]
 ##.overBanner.dowloadBtn
 ##.pagead_3
@@ -9439,6 +9440,7 @@ _yad_jsonp_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
 ||radikal.ru^$domain=18board.com|18p2p.com
+||alicdn.com/img/ibank/*_1776866723.
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
 18board.com,18p2p.com##.altbg2 > TD[width="33%"]
@@ -14716,7 +14718,7 @@ jd.com#@#.ads-item
 gsxt.gov.cn#@#.ads-right
 159i.com,techroomage.com,zhaopin.com#@#.adsBox
 4gtv.tv,80s.ai,ft.com,ftchinese.com,ftchinese.com.sz-dns.net,kartinfo.me,long7.qq.com,reh.tw,typecho.wiki#@#.adsbox
-1point3acres.com,alotof.software,android-doc.com,apk.tw,battlecats-db.com,chtoen.com,dizhishengcheng.com,doitwell.tw,epinv.com,ff14angler.com,fxpan.com,haoweichi.com,logi.im,moa.tw,numberempire.com,playok.com,shenfendaquan.com,tingfm.com,yabook.org#@#.adsbygoogle
+alotof.software,android-doc.com,apk.tw,battlecats-db.com,chtoen.com,dizhishengcheng.com,doitwell.tw,epinv.com,ff14angler.com,fxpan.com,haoweichi.com,logi.im,moa.tw,numberempire.com,playok.com,shenfendaquan.com,tingfm.com,yabook.org#@#.adsbygoogle
 qq.com#@#.adside
 gdmm.com,gkstk.com,youquba.net#@#.adtop
 bdp.cn#@#.adv-list
@@ -14764,6 +14766,7 @@ brandsales.58.com#@#div[id^="ad_"]
 gohome.com.hk#@#div[id^="div-gpt-ad"]
 !---------------------------------URL Whitelist-------------------------------!
 @@&adurl=http://$domain=360bifen.cc|360bifen.com
+@@||1point3acres.com^$generichide
 @@.adserver.$domain=litv.tv
 @@.com/adv/$domain=my.ctrip.com
 @@.gif#$domain=cnprint.org|huhupan.com|tgfcer.com|wgun.net
@@ -20031,7 +20034,6 @@ _box_ad_
 ||gtimg.com/pingjs/ext2020/dc2017/dist/m_tips/tips.js
 ||gz-chengkao.com/js/duo.js
 ||hahamx.cn/images/banner/
-||hanjutv.com/public/js/layer/layer.js
 ||hao123img.com/v4/MB/xU/jy/VY/YX/MBxUjyVYYX.js
 ||heiguang.com/_r/2015/js/hrBottomBar.
 ||hexun.com/2016/pc/618.swf
@@ -20284,6 +20286,7 @@ _box_ad_
 ||w3cschool.cn/index/*Advert
 ||sinaimg.cn/news/pushApp/index2/static/js/index.
 !------------------------Specific element hiding rules------------------------!
+xdf.cn##.popup-wrap
 sina.com.cn##.redPacketCont
 offcn.com###offcn_yx
 3dmgame.com##.modAD
@@ -20410,7 +20413,6 @@ znds.com###diy_mobanbus_view_right2
 meijuxingqiu.com##.fixed-bottom-bar
 iqiyi.com##.m-hotWords-bottom
 3dmgame.com##A[href^="http://web.3dmgame.com/h5/game?"]
-hanjutv.com###widget-weixin
 ifeng.com##DIV[class^="enquiry_bottom"]
 ifeng.com##div[class^="bottom_box"]
 ifeng.com##div[class^="bottomSlide"]
@@ -20948,7 +20950,6 @@ nen.com.cn##.for3gagzy
 tmall.com##.fp-lazyload-con[data-path*="/floor-ad-"]
 it168.com##.fu1020_box
 eastmoney.com##.fund-pop
-hanjutv.com##.ggw_fr
 55haitao.com##.global-dialog
 1kkk.com,dm5.com##.guide
 baixing.com##.guide-video-app
