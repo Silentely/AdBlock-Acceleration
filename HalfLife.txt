@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: 1/LTHFTB60iZSsIUlBQjQw
+! Checksum: KDvhHkUzJg7ajaha73TyYQ
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202012131217
-! Last Modified: 2020年12月13日 12:17
+! Version: 202012132018
+! Last Modified: 2020年12月13日 20:18
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -6205,8 +6205,7 @@ _yad_jsonp_
 ||content.xilu.com^$object
 ||coolaler.com/index_ads/
 ||coolpc.com.tw/img/topweb.html
-||cosxcos.cc/uploads/*bb
-||cosxcos.cc/uploads/*my
+||cosxcos.cc/uploads/aaybabc/
 ||cp121.com/js2/
 ||cp2.eastmoney.com^
 ||cpbl-elta.cdn.hinet.net/web/images/ad_
@@ -16635,9 +16634,7 @@ fuliba.net,uliba.net##.widget_custom_html:nth-child(2)
 !#g
 !#hboav.com
 @@$image,xmlhttprequest,domain=hboav.com
-@@||5278.cc/js/AD_tv.js
-@@||5278.cc/js/gg0.js
-@@||5278.cc/js/ggtop.js
+@@||5278.cc^$xmlhttprequest,~third-party
 @@||5278.cc^$script,domain=hboav.com
 @@||hboav.com/guga/$script,~third-party
 @@||hboav.com^$generichide
@@ -20375,6 +20372,8 @@ _box_ad_
 ||msstatic.com/huya/main3/widget/DiyActLayer/DiyActLayer_*.js
 ||iviewui.com/v1/*?name=
 !------------------------Specific element hiding rules------------------------!
+wendu.com##.foot_adv
+wendu.com##.head-banner
 baidu.com##.search-box-wrapper + .pager-container
 baidu.com##.fufei-activity-bar
 360doc.com##.floatqrcode
