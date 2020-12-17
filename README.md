@@ -4,7 +4,7 @@
 
 International/China accelerated ad filtering rules subscription（[中文说明](https://github.com/Silentely/AdBlock-Acceleration/blob/master/README_CN.md)）
 
-## 🔖 Filter Tool Recommendations
+## 🔖 Filter Tool Recommendations 
 
 Filtering tools：
 * 🌍 browser plug-in
