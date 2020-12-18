@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: 65rGglkxrO0OribPJssj/A
+! Checksum: 64iHdujYYtk2boVn+0TA0w
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202012180840
-! Last Modified: 2020年12月18日 08:40
+! Version: 202012181219
+! Last Modified: 2020年12月18日 12:19
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -1696,6 +1696,7 @@ _xiuno_com_ad/
 ##script[src="/js/sy2.js"] + div[align="center"]
 ##script[src="/templates/frontend/frontend-jiucao/js/jquery.lazyload.min.js"] + .footer_app_box
 ##span[title="neteasefooter"]
+##A[href*=".yuanmengbi.com/"]
 ##table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"]
 !----------------------------------Ads-Union----------------------------------!
 .8ox.cn
@@ -9460,6 +9461,7 @@ _yad_jsonp_
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||tucao.one/uploadfile/20*/20*.gif
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
 szxx.com.cn###A1
@@ -10184,7 +10186,7 @@ maxthon.cn###header-float-promote
 3g.qq.com###header-mlcz
 2345.com###header-news
 hao.360.cn,hao.360.com###header-patch
-aiqiyivip.com###header-top + div[style]
+aiqiyivip.com##[onclick]
 060s.com###header4
 bdinfo.net###header_AD
 131458.com###header_gg
