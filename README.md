@@ -36,7 +36,7 @@ The rules are distributed in conjunction with a globally accelerated CDN provide
 ①[staticdn](https://raw.staticdn.net) (with caching)  
 ②[jsDelivr](https://www.jsdelivr.com) (with caching)   
 ③[Vercel](https://vercel.com) (live updates)   
-④[FastGit](https://raw.fastgit.org) (Real-time update)  
+④[FastGit](https://raw.fastgit.org) (live updates)  
 The result is a second-by-second update of all de-advertising rules.
 
 ## 🧪 personal test
