@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: OaWsAaG7I2KkXClBqxtG7w
+! Checksum: dVRF8dTL3hPx6b3jq+KKGg
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202012210843
-! Last Modified: 2020年12月21日 08:43
+! Version: 202012211221
+! Last Modified: 2020年12月21日 12:21
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -9468,8 +9468,10 @@ _yad_jsonp_
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||zlyk.com^*/ysapp.
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+jiumodiary.com###forum-panel
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -13995,7 +13997,7 @@ frdic.com,godic.net##a[onclick*="/ads/"]
 pcsoft.com.cn##a[onclick*="_ad"]
 caibaojian.com##a[onclick*="aliyun"]
 caibaojian.com##a[onclick*="aly"]
-3dmgame.com##a[onclick="goxiazai()"]
+3dmgame.com##A[onclick^="goxiazai"]
 jokerlu.com,jokerlu1.com##a[onclick^="_czc."]
 fixdown.com##a[onclick^="count_down"]
 52pk.com##a[onclick^="ga"]
@@ -14197,7 +14199,6 @@ oschina.net##div[data-traceid*="_ad_"]
 oschina.net##div[data-tracepid="question_detai_above"]
 zhihu.com##div[data-type="ad"]
 le.com##div[data-type="bottomLayerView"]
-zhihu.com##div[data-za-detail-view-path-is_ad]
 weibo.com##div[feedtype="ad"]
 heirui.cn##div[id$="MASK"]
 mail.126.com,mail.163.com##div[id$="_AdDiv"]
@@ -16778,6 +16779,7 @@ bxwx666.org###bdstatic
 ##.box_con[style="border-radius:10px;background-color:#ff0000;padding:15px;"]
 .ca.bxwx3.org^
 .com/code.php?a=index&z=$script,third-party,xmlhttprequest
+##.layui-row[style="border-radius:10px;background-color:#ff0000;padding:15px;margin:15px;margin-right:0px;margin-left:0px;"]
 ##.layui-row[style="border-radius:10px;background-color:#ff0000;padding:15px;margin:15px;"]
 ##.layui-row[style="height:160px;border-radius:10px;background-color:#ff0000;padding:15px;margin:15px;"]
 .m.23txt.com^
@@ -19511,6 +19513,7 @@ fqsousou.com,kengso.com#@#.user-share
 @@||yimg.com/ss/rapid3.js$domain=style.yahoo.com.tw|tw.answers.yahoo.com
 @@||youku.com/cms/player/userinfo/
 @@||youku.com/cms/playlog/get?
+@@||bytedance.com/ttwid/union/register/
 ||hjfile.cn/analytics/site/TrackEvent.js
 !---------------------------------Temporary-----------------------------------!
 ! EasyList Lite
