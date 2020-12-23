@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: Es+c++dsfogkvIs+rHlZ8Q
-! Version: 202012230421
+! Checksum: nExlgD+kg9YUnk0tx6aagA
+! Version: 202012230811
 ! Title: Fanboy's Annoyance List
-! Last modified: 23 Dec 2020 04:21 UTC
+! Last modified: 23 Dec 2020 08:11 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! License: http://creativecommons.org/licenses/by/3.0/
@@ -5783,6 +5783,7 @@ _site_cookie_
 ###singlesignup
 ###sleek-subscribe
 ###slidead-popup
+###sr-subscribe-popup
 ###ssnewsletter
 ###sssubscribe-wrapper
 ###st-email-signup
@@ -7113,6 +7114,7 @@ _site_cookie_
 ##.tsq_sailthru_newsletter_widget
 ##.tve-leads-lightbox
 ##.type-InsetNewsletterSignup
+##.type-newsletter-signup
 ##.ue-c-newsletter-widget
 ##.ui-front.newsletter-signup-overlay
 ##.ui-home-newsletter
@@ -9257,16 +9259,6 @@ _site_cookie_
 ###footer-share-list
 ###footer-share-twitter
 ###footer-social
-###footer-social-block
-###footer-social-icones
-###footer-social-links
-###footer-social-main-container
-###footer-social-media
-###footer-social-media-buttons
-###footer-social-menu
-###footer-social-networks
-###footer-social-popup
-###footer-social-universal
 ###footer-social_share
 ###footer-socials
 ###footer-title-social
@@ -11417,6 +11409,7 @@ _site_cookie_
 ##.SidebarSocialLinks
 ##.Sidebar_followus
 ##.SingleArticleSocialContainer
+##.SiteFooter__follow
 ##.SiteHeader__social-links
 ##.Social-link
 ##.SocialAccordion
@@ -11815,32 +11808,6 @@ _site_cookie_
 ##.article-rail__social
 ##.article-selection-shares
 ##.article-share
-##.article-share-actions
-##.article-share-amount
-##.article-share-area
-##.article-share-bar
-##.article-share-block
-##.article-share-bottom
-##.article-share-box
-##.article-share-btn
-##.article-share-btns
-##.article-share-buttons
-##.article-share-cnt
-##.article-share-column
-##.article-share-container
-##.article-share-count
-##.article-share-count-container
-##.article-share-fixed
-##.article-share-icon
-##.article-share-link-items
-##.article-share-list
-##.article-share-outer
-##.article-share-sheet
-##.article-share-slide
-##.article-share-slider
-##.article-share-tools
-##.article-share-top
-##.article-share-widget
 ##.article-share__item
 ##.article-share__link
 ##.article-share_badges
@@ -12685,23 +12652,6 @@ _site_cookie_
 ##.cb-widget-social-media
 ##.cb_share_block
 ##.cbn-socials
-##.cc-sharebuttons-digg
-##.cc-sharebuttons-element
-##.cc-sharebuttons-evernote
-##.cc-sharebuttons-facebook
-##.cc-sharebuttons-hatena
-##.cc-sharebuttons-line
-##.cc-sharebuttons-linkedin
-##.cc-sharebuttons-mail
-##.cc-sharebuttons-nk
-##.cc-sharebuttons-reddit
-##.cc-sharebuttons-tuenti
-##.cc-sharebuttons-tumblr
-##.cc-sharebuttons-twitter
-##.cc-sharebuttons-vkontakte
-##.cc-sharebuttons-wykop
-##.cc-sharebuttons-xing
-##.cc-sharebuttons-yoolink
 ##.ccm-block-social-links
 ##.ccm_social__box
 ##.ccm_social_buttons
@@ -18100,15 +18050,6 @@ _site_cookie_
 ##.sidebar-share-item-twitter
 ##.sidebar-share-widget
 ##.sidebar-social
-##.sidebar-social-btns
-##.sidebar-social-button
-##.sidebar-social-buttons
-##.sidebar-social-follow
-##.sidebar-social-icons
-##.sidebar-social-links
-##.sidebar-social-nw
-##.sidebar-social-top
-##.sidebar-social-widget
 ##.sidebar-socila
 ##.sidebar-tile-facebook
 ##.sidebar-twitter
@@ -18188,15 +18129,6 @@ _site_cookie_
 ##.site-footer-follow
 ##.site-footer-google-plus
 ##.site-footer-instagram
-##.site-footer-social
-##.site-footer-social-icon-item
-##.site-footer-social-icon-link
-##.site-footer-social-icon-list
-##.site-footer-social-links
-##.site-footer-social-media
-##.site-footer-social-menu__item
-##.site-footer-social-wrapper
-##.site-footer-social__link
 ##.site-footer-twitter
 ##.site-footer-youtube
 ##.site-footer__social
@@ -21566,8 +21498,10 @@ _site_cookie_
 ##div[class^="ShareLinks_"]
 ##div[class^="SocialIconsGroup"]
 ##div[class^="SocialTool"]
+##div[class^="article-share-"]
 ##div[class^="article-sticky-share_"]
 ##div[class^="article__shared_bar"]
+##div[class^="cc-sharebuttons-"]
 ##div[class^="follow-links-"]
 ##div[class^="footer-social-"]
 ##div[class^="footerSocial_"]
@@ -21578,6 +21512,8 @@ _site_cookie_
 ##div[class^="numberShares_"]
 ##div[class^="shareBar_"]
 ##div[class^="shareButton_"]
+##div[class^="sidebar-social-"]
+##div[class^="site-footer-social"]
 ##div[class^="socialMediaIcon"]
 ##div[class^="socialPanel_"]
 ##div[class^="socialShareWrapper_"]
@@ -21591,6 +21527,8 @@ _site_cookie_
 ##div[id^="content-share-buttons-"]
 ##div[id^="digg-widget-"]
 ##div[id^="fixsocial-"]
+##div[id^="footer-social-"]
+##div[id^="footer-social_"]
 ##div[id^="gigya_share_button"]
 ##div[id^="penci-social-counter-"]
 ##div[id^="pw_widget_"]
@@ -39001,6 +38939,7 @@ njtvonline.org##.head-email-signup
 twitch.tv##.header-announcement__wrapper
 tasteofhome.com##.header-banner-container
 theprovince.com,torontosun.com##.header-breaking__secondary
+spendwithpennies.com##.header-cta
 paleohacks.com##.header-optin
 nextcity.org##.header-tools
 rightwingwatch.org##.header__top
@@ -39342,6 +39281,7 @@ breakingnews.ie##.subscribe-box-articles
 albawaba.com,rt.com,sport360.com##.subscribe-btn
 middleeastmonitor.com##.subscribe-container
 todayonline.com##.subscribe-content
+spendwithpennies.com##.subscribe-cta
 nutritioninsight.com##.subscribe-div
 afp.com,albawaba.com,gulfnews.com##.subscribe-footer
 financialbuzz.com,maclife.com,segmentnext.com##.subscribe-form
@@ -40178,6 +40118,7 @@ ocaholic.co.uk##.a2a_svg
 imdb.com##.ab_facebook
 imdb.com##.ab_twitter
 abc.go.com##.abc-facebook-like
+spendwithpennies.com##.access_container_inner
 mainichi.jp##.accounts
 buzzfeed.com,latimes.com,marriott.com##.action-bar
 slideshare.net##.action-btns-container
