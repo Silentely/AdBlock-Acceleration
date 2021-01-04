@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 327.202101020933
+! Version: 327.202101041116
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 02 Jan 2021 08:33 UTC
+! Last modified: 04 Jan 2021 10:16 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -865,7 +865,7 @@
 ##.cookie_optin_box:not(body):not(html)
 ###CookieContainer
 ###jumper_cookies
-~pagetiger.com,~bakken.nl##.cookie-info:not(body):not(html)
+~dish.co,~pagetiger.com,~bakken.nl##.cookie-info:not(body):not(html)
 ###cookieCopy
 ###eu_cookie
 ###cookies_warning
@@ -6134,7 +6134,7 @@
 ###eu-susenka
 ##.acceptCookieButton:not(body):not(html)
 ###qubit-eu-cookie
-###euCookieBanner
+~dish.co###euCookieBanner
 ###bloquecookies
 ###allow-cookie-message
 ##.cookie-notice-bar:not(body):not(html)
@@ -9998,7 +9998,7 @@
 ##footer ~ cookie > #cookie
 ##footer ~ div[id*="cookie-bar"]
 ##body > script[src*="optout.betrad.com"] ~ #__ev_bc
-##.cookie-disclosure.bottom
+##.cookie-disclosure
 ###footer ~ #gdpr_agree
 ###root div[data-cookie-law-banner-selector]
 ###dxCookieConsentContainer
@@ -10252,7 +10252,7 @@
 ##.cookies-prompt.section.--shown
 ##.cookie_information--bar
 ###gh-cookie-hint
-~ffm.to,~orcd.co,~backl.ink##.privacy-notice-gdpr
+~ffm.to,~orcd.co,~ditto.fm,~backl.ink##.privacy-notice-gdpr
 ###wf_cookie_notice_wrapper
 ###BorlabsCookieBox
 ###gdprToolbar
@@ -12669,6 +12669,17 @@
 ##.poswp-databar
 ###gdpr_cookie_modal
 ###cookieify
+##.cookie-law-block
+###idium-cookies-notification-bar
+##.fr-c-message-wrap
+##cookies-policy
+###cookiesNotifier
+##.show[class*="cookie-notice"]
+###cookiesUsageFooter
+###gdprComponent .consent__container
+###nestigo-cookie-notice
+##.mm-slideout > #cc-layer
+###pnlEUCookieBanner
 !
 ! CUSTOM RULES
 !
@@ -15428,7 +15439,6 @@ france-galop.com##body > div:not([id]):not([class])
 edoc.site###EDOCSITE_cookie_box
 hollywoodreporter.com##.tos-change
 omnium.cat##.omnium_cookies_popup_wrapper
-schauinsland-reisen.de###trackingInfo
 poulpeo.com##.legal-banner
 team-neusta.de##.c-slide-up, .c-slide-up ~ div
 swissgrid.ch##.swg-overlay-cookie
@@ -19303,7 +19313,6 @@ winfuture.mobi###message_id
 qz.com###main ~ div
 getraenke089.de##.DS_banner_wrapper
 magdalena24.pl###cookie
-frankonia.de##.fr-c-message-wrap
 cnbc.com###cnbcgdpr
 ihk-akademie.de###privacy-statement
 solaranlagen-portal.com##.cookie-consent-modal
@@ -19349,9 +19358,7 @@ lagranja.janto.es###web5 > div > div:not([id]):last-child
 kmweg.de###colorbox, #cboxOverlay
 arm.com##.fixedPolicyBox
 yuumari.com##footer ~ .banner-container
-mydeck.de###cc-layer
 kottenstedte.com##.ageverform
-honeywellhome.com##.homes-bp-cookiebanner
 claravital.de###consentmanager
 linz.de###sfCookie
 cliffordchance.com###div_cc_cc
@@ -20264,6 +20271,23 @@ orleans-metropole.fr##.cookie_enabled
 bitcoin.org###root > .flex > div[class*="max"]
 feld-eitorf.de##.feld-cookienotice
 feld-eitorf.at##.feld-cookienotice
+hotels.com###root > footer ~ section
+lottofy.com###alertsMarquee
+beckmann-kg.de###consentLayer
+symbox.de##app-cookies
+homeful.ly###__next > .container
+schauinsland-reisen.de###block-trackinginformationen
+patrickholford.com###cookies
+tryggivann.no###panCookiedisc
+honeywellhome.com##.homes-bp-cookiebanner
+what-matters.fr###__next > div:last-child > div:last-child
+concrete-jungle.de##.banner
+infovac.ch##.eb-acc
+onb.ac.at##.notification-wrapper
+sass-ag.de##.ccp
+adoc.pub###ADOCPUB_cookie_box
+auto-motor.at###footer ~ #myModal
+dementedarego-merch.com##main ~ div
 !
 ! SCRIPT BLOCKING
 !
@@ -20652,6 +20676,9 @@ cookiemon.atcom.gr
 ||bascom.nl/cookies/consent.js$script
 /fluvius-eu-cookies.js
 /lyxor-cookies-disclaimer.js
+/grt-cookie-consent.js
+/bundles/cookiebar
+/avia-snippet-cookieconsent.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
