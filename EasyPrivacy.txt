@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202101050016
+! Version: 202101050421
 ! Title: EasyPrivacy
-! Last modified: 05 Jan 2021 00:16 UTC
+! Last modified: 05 Jan 2021 04:21 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -958,6 +958,7 @@
 /azion-pulse.js
 /aztrack.
 /aztracker.
+/azure-perfops.
 /b/s/beacon
 /b/ss/*&aqe=
 /b/ss/*&ce=iso-8859-1&
@@ -1176,6 +1177,7 @@
 /cdn.stats2?
 /cdn5.js?
 /cdn_cookie_service.$image
+/cdnperf-rum.
 /cds-webanalytics.
 /cdx-radar/*
 /cdx.gif?
@@ -3070,6 +3072,7 @@
 /nofastat.
 /notifications/analytics
 /np?log=
+/npm/perfops-rom
 /npssurvey.
 /nsimpression/*
 /nStat/*
@@ -3249,6 +3252,7 @@
 /perf-beacon-
 /perflog/*
 /perfmetrics.js
+/perfops-cc.
 /performance-logger.
 /performance-metrics.js
 /performance.fcgi?
@@ -7425,6 +7429,7 @@ _mongo_stats/
 ||perfdrive.com^$third-party
 ||perfectaudience.com^$third-party
 ||perfiliate.com^$third-party
+||perfops.io^$third-party
 ||perfops.net^$third-party
 ||performanceanalyser.net^$third-party
 ||performancerevenues.com^$third-party
@@ -8417,6 +8422,19 @@ _mongo_stats/
 ||zroitracker.com^$third-party
 ||ztsrv.com^$third-party
 ||zuzab.com^$third-party
+! https://www.opensubtitles.org/
+||5centscdn.com^$third-party,xmlhttprequest
+||azioncdn.net^$third-party,xmlhttprequest
+||azureedge.net^$third-party,xmlhttprequest
+||belugacdn.link^$third-party,xmlhttprequest
+||blazingcdn.net^$third-party,xmlhttprequest
+||cdn-tech.io^$third-party,xmlhttprequest
+||cf-china.info^$third-party,xmlhttprequest
+||doracdn.com^$third-party,xmlhttprequest
+||gocache.net^$third-party,xmlhttprequest
+||mncdn.com^$third-party,xmlhttprequest
+||psychz.net^$third-party,xmlhttprequest
+||worldssl.net^$third-party,xmlhttprequest
 ! https://blog.confiant.com/the-trend-of-client-side-fingerprinting-in-cloaked-landing-pages-21915eb473df
 ||artfin.club^
 ||bemarts.club^
@@ -10784,6 +10802,7 @@ _mongo_stats/
 ||d27s92d8z1yatv.cloudfront.net/js/jquery.jw.analitycs.js
 ||d28g9g3vb08y70.cloudfront.net^
 ||d2as12kgjg8gw5.cloudfront.net^
+||d2axgrpnciinw7.cloudfront.net^
 ||d2cpw6kwpff7n5.cloudfront.net^
 ||d2gbtcuv3w9qyv.cloudfront.net^
 ||d2ibu2ug0mt5qp.cloudfront.net^
@@ -10935,6 +10954,7 @@ _mongo_stats/
 ||emihosting.com^*/tracking/
 ||endorsal.io/check/
 ||ensighten.com/error/e.php?
+||entitlement.auth.adobe.com^$third-party
 ||epl.paypal-communication.com^
 ||epromote.co.za/track/
 ||erne.co/tags?
@@ -11979,6 +11999,7 @@ _mongo_stats/
 ||te.supportfreecontent.com^
 ||technorati.com/technoratimedia-pixel.js
 ||techweb.com/beacon/
+||telemetrics.klaviyo.com^
 ||telemetry.api.wmcdp.io^
 ||telemetry.reembed.com^
 ||telemetry.soundcloud.com^
@@ -13768,6 +13789,7 @@ _mongo_stats/
 ||db.com^*/stats.js?
 ||dc.banggood.com^
 ||dccss.banggood.com^
+||dcf.espn.com^
 ||dd.nytimes.com^
 ||dealnews.com/lw/ul.php?
 ||debtconsolidationcare.com/affiliate/tracker/
@@ -18111,7 +18133,6 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||abc.com/b/ss/$image
 @@||amazoncustomerservice.d2.sc.omtrdc.net/b/ss/*/H.25.1/$image
 @@||castorama.fr/b/ss/$image
-@@||espn.com/b/ss/$image
 @@||fandango.com/b/ss/$image
 @@||globalnews.ca/b/ss/$image
 @@||go.com/b/ss/$image
