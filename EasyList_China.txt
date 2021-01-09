@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: M6Goryp1z68wsqPMcLTnLA
-! Version: 202101090812
+! Checksum: jfVPkB3MOU5MMh3pecuITg
+! Version: 202101091212
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last Modified: 09 Jan 2021 08:12 UTC
+! Last Modified: 09 Jan 2021 12:12 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: http://abpchina.org/forum/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -1155,6 +1155,7 @@ _xiuno_com_ad/
 ##img[src*=".sinaimg."][style="width:150px;height:300px"]
 ##script + #coupletBox
 ##script + #rbbox
+##.top_ad_ban
 ##script[src="/js/sy2.js"] + div[align="center"]
 ##script[src="/templates/frontend/frontend-jiucao/js/jquery.lazyload.min.js"] + .footer_app_box
 ##span[title="neteasefooter"]
@@ -8972,6 +8973,9 @@ _yad_jsonp_
 ||kxmusic.top/tc/js/script.js
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+22vd.com##.ad
+icourse163.org##.promotion-banner-wrapper
+22vd.com##.widget_custom_html:last-child
 kxmusic.top##A[href*="smsf8.com"]
 kxmusic.cn##A[href*="smsf8.com"]
 szxx.com.cn###A1
@@ -14984,7 +14988,7 @@ gohome.com.hk#@#div[id^="div-gpt-ad"]
 @@||ttrar.com/statics/pos_js/jquery.gotop.js
 @@||tui.click/js/ads.js
 @@||tui.click^$generichide
-@@||tvb.com/player/*/videojs.ads.
+@@||tvb.com^*/videojs.ads.
 @@||twpkinfo.com/js/ads.min.js
 @@||udndata.com/ndapp/ads/$~third-party
 @@||udnplay.com/js/momo/adsbygoogle.js
@@ -16313,6 +16317,7 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 !#Novels
 ||huosuniao.com^
 ||mohaijishu.cn^
+##.appguide-wrap[onclick*="bcebos.com"]
 ###chaptername + div > div[style="padding:10px;border-radius:10px;background-color:green;"]
 ###downdiv > .downcode
 ##.box_con[style="border-radius:10px;background-color:#ff0000;padding:15px;"]
