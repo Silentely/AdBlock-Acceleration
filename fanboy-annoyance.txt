@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: cMhiR6nb6YAnOfITNj3M/A
-! Version: 202101160101
+! Checksum: tdnvIs95/P/K1Rtsws+Zqg
+! Version: 202101160441
 ! Title: Fanboy's Annoyance List
-! Last modified: 16 Jan 2021 01:01 UTC
+! Last modified: 16 Jan 2021 04:41 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! License: http://creativecommons.org/licenses/by/3.0/
@@ -3740,6 +3740,7 @@ _youtube_social_
 -consent-banner.
 -cookie-banner-
 -cookie-banner.
+-cookie-bar.
 -cookie-cnil.
 -cookie-consent-$~script
 -cookie-consent.$~script
@@ -3772,6 +3773,7 @@ _youtube_social_
 -eu-cookies/$script
 -eucookie.
 -gdpr-compliance/
+-gdpr-consents/
 -gdpr-cookie-$~script
 -gdpr-min.
 -gdpr-popup.
@@ -3807,14 +3809,16 @@ _youtube_social_
 .fscookieconsent.
 .gdpr-banner.
 .gdpr.js
+.gdpr.min
 .javascript.gdpr.
 .notificationCookies.
 .PrivacyDataNotice.
 /1_cookie.
-/2018-gdpr.js
+/2018-gdpr.
 /24cookiebar.
 /24cookiebarutils.
 /?spu_action=*spu_load&
+/?tx_z7cookiemanager
 /__cookie_js.php
 /ac_cookiesvalidation/*
 /accept-cookie.
@@ -3832,6 +3836,7 @@ _youtube_social_
 /ajw_gdpr.
 /alertcookie.
 /alertcookies.
+/am2-gdpr-public.
 /amCookieApproval.
 /amgdpr/*
 /amp-consent-
@@ -3885,6 +3890,7 @@ _youtube_social_
 /cmp/cmp.js
 /cmp/cmp.min.js
 /cmp/cmpui-
+/cmp/consent-
 /cmp/int_cmp.
 /cmp/privacy_manager?
 /cmp/tmcookie.
@@ -3908,6 +3914,7 @@ _youtube_social_
 /coCookiesDisclaimer.
 /component-CookieConsent.
 /consent-banner-
+/consent-dialog.
 /consent-management.js
 /consent-manager.
 /consent-tracking-
@@ -3916,6 +3923,8 @@ _youtube_social_
 /consent/message.js
 /consent_non-eu.
 /consentcontroller.fallback/epaas.
+/consentcookie.js
+/consentcookie.min.js
 /ConsentTracking-
 /consentUI/*
 /coobann/*
@@ -3923,6 +3932,8 @@ _youtube_social_
 /cookie-alert.
 /cookie-bandeau.
 /cookie-banner
+/cookie-banner-
+/cookie-banner/*
 /cookie-banners.
 /cookie-bar-
 /cookie-bar.
@@ -3936,6 +3947,7 @@ _youtube_social_
 /cookie-consent-manager.
 /cookie-consent-modals.
 /cookie-consent-overlay.
+/cookie-consent-settings-
 /cookie-consent.
 /cookie-consent/*
 /cookie-consent?
@@ -3953,6 +3965,7 @@ _youtube_social_
 /cookie-law-$~script
 /cookie-law-info-public.js
 /cookie-law.js
+/cookie-layer-
 /cookie-madeincima.
 /cookie-madeincima/*
 /cookie-manager.
@@ -4012,6 +4025,7 @@ _youtube_social_
 /cookie/policy-
 /cookie/require-
 /cookie/support-
+/cookie/uccb-
 /cookie2.jsx
 /cookie_acceptance_
 /cookie_ack/*
@@ -4111,6 +4125,7 @@ _youtube_social_
 /cookieLaw-vanilla.js
 /cookielaw.$~stylesheet
 /cookielaw/*
+/cookielaw_mip.
 /cookielawinfo.$~script
 /CookieLawProduct/*
 /cookielegal.
@@ -4123,6 +4138,7 @@ _youtube_social_
 /cookiemonster.mg
 /cookieMonster.min.js
 /cookiemsg.
+/cookieMunchr.
 /cookienote/*
 /cookienotice-
 /cookienotice.
@@ -4134,6 +4150,7 @@ _youtube_social_
 /CookieNotifier.
 /cookienotify-
 /cookieok.js
+/cookieopt-min.
 /cookieparty.
 /cookieplugin/cookie.
 /cookiepolicy-
@@ -4221,7 +4238,7 @@ _youtube_social_
 /CookieSettingsManager?
 /cookiesgdpr?
 /cookiesJS.
-/cookiesLayer.js
+/cookiesLayer.
 /cookieslegal.
 /cookiesLegales.
 /CookiesManager.
@@ -4265,6 +4282,7 @@ _youtube_social_
 /dx/cmpui.
 /dywc.js
 /easy-cookies-
+/echonetcookie.
 /ecookie_check/*
 /edcc.js
 /ee-cookies-min.
@@ -4275,6 +4293,7 @@ _youtube_social_
 /ercookiebar.
 /et_gdpr_
 /eu-cookie-$~script,~stylesheet
+/eu-cookie-law-
 /eu-cookie.
 /eu-cookie/*
 /EU-cookielaw.
@@ -4283,7 +4302,7 @@ _youtube_social_
 /eu_cookies.
 /eu_privacy.js
 /eu_rp_cookie.
-/euc_cookie.js
+/euc_cookie.
 /eucookie.
 /EUcookie/*
 /eucookiecompliance.
@@ -4301,10 +4320,13 @@ _youtube_social_
 /evidon-banner.
 /evidon-cmp.
 /evidon-sitenotice-tag.
+/ext/jscookieconsent
+/ext/kmacookies
 /eznovacookieconsent.
 /Flurrybox_EnhancedPrivacy/*
 /fp_cookie.
 /fxCookiesV3.
+/g361-cookies-
 /g4cookies.
 /gdpr-assets-
 /gdpr-banner.
@@ -4320,15 +4342,17 @@ _youtube_social_
 /gdpr-desc
 /gdpr-lfc.
 /gdpr-min.
+/gdpr-popup.
 /gdpr-public.
 /gdpr-transparency-
 /gdpr-v2.
 /gdpr.eu.htm
 /gdpr.htm
 /gdpr.js
-/gdpr.min.js
+/gdpr.min.
 /gdpr/assets/*
 /gdpr/bundle.
+/gdpr/cmp/*
 /GDPR/consentStorage.
 /gdpr/cookie-
 /gdpr/CookieConsent
@@ -4336,16 +4360,20 @@ _youtube_social_
 /gdpr/disp.js
 /gdpr/gdpr-
 /gdpr/gdpr.$script
+/gdpr/gdpr.js
 /gdpr/gdpr_
 /gdpr/img/*
 /gdpr/messaging.
 /gdpr/optInCookieSSR?
 /gdpr/script_
+/gdpr/spd.
+/gdpr/third-party-
 /gdpr_check.
 /gdpr_consent.
 /gdpr_css/*
 /gdpr_footer.
 /gdpr_js/*
+/gdpr_ncoi.
 /gdpr_notice.
 /gdpr_optout.
 /gdpr_plugin.
@@ -4354,6 +4382,7 @@ _youtube_social_
 /GDPRCard/*
 /gdprcompliance/*
 /gdprcookie.
+/gdprmain/*
 /GDPRModalCounter.
 /gdprnotice.
 /gdprpopup.
@@ -4369,6 +4398,7 @@ _youtube_social_
 /headerCookies_
 /hi-cookie-
 /homepage-cookie-
+/hw-cookie-
 /i_CookieConsent.
 /iab-vendorlist.
 /ibeugdpr.
@@ -4378,6 +4408,7 @@ _youtube_social_
 /icocookies.
 /icon/cookie-
 /idg-consent.
+/idxcookies/*
 /ig_cookie_
 /ik-rgpd.
 /im_eucookie.
@@ -4419,6 +4450,7 @@ _youtube_social_
 /legal/cookies/?
 /legal_cookie.
 /legalcookie.
+/leyCookies.
 /libraries/cookie.
 /ll_cookie_
 /lma-cookie.
@@ -4433,6 +4465,7 @@ _youtube_social_
 /mod_cookiesaccept/*$~stylesheet
 /mod_jbcookies/*
 /mpc_cookie_
+/mq_cookieconsent/*
 /msmCookieConsent.
 /mweb.cookie/*$script
 /mws-cookie-
@@ -4443,6 +4476,7 @@ _youtube_social_
 /nibirumail.cookie.min.js
 /nl-cookie-law.js
 /notification.js*browserId=$script
+/nsd-cookie-
 /o-cookielaw.
 /ocgcookie?
 /oil.*-RELEASE.min.js
@@ -4460,6 +4494,7 @@ _youtube_social_
 /plugins/cookie-$~script,~stylesheet
 /plugins/gdpr/*
 /pm_assets/privacy/*$script
+/policies/gdpr.
 /policy_cookie.
 /policy_cookieCMP.
 /policyaccept.
@@ -4492,6 +4527,7 @@ _youtube_social_
 /pum-site-scripts-
 /pum-site-scripts.
 /pwcookielaw.js
+/pxpcookies.
 /quantastCmp.js
 /rb/cookie/*
 /rbicookiepolicy.
@@ -4543,6 +4579,7 @@ _youtube_social_
 /syncCookie/*
 /syno_cookie_
 /tarteaucitron.
+/tcf/cookie.
 /terms_of_service.js
 /thcookie.
 /tm.cookie.js
@@ -4556,6 +4593,7 @@ _youtube_social_
 /tracking/get?
 /trackingProtection/*
 /trustArcHelper.js
+/trwcookieconsent/*
 /ttCmpApi.min.js
 /ttgcookieconsent-
 /TWCCookies/*
@@ -4626,6 +4664,7 @@ _cookiebar.
 _cookiebar_
 _cookieCgu.
 _CookieConsent.js
+_cookieconsent/
 _cookielaw_mip.
 _CookieLegalNotice.
 _cookieMsgBox/
@@ -4643,9 +4682,11 @@ _europecookielaw.
 _gdpr_callback_
 _gdpr_consent.
 _gdpr_cookie_
+_hw_cookie_dialog.
 _js__cookie_functions.
 _logikamentecookielaw/
 _site_cookie_
+_vpcookieconsent/
 ! https://github.com/AdguardTeam/AdguardFilters/blob/master/AnnoyancesFilter/sections/cookies_specific.txt#L53
 /pp-t-a-c.js$script
 !------------------------General element hiding rules-------------------------!
@@ -5935,6 +5976,7 @@ _site_cookie_
 ##.SignupFooter
 ##.StageNewsletter
 ##.a-newsletter
+##.aa_widget_newsletter
 ##.actions-newsletter
 ##.acymailing_module
 ##.adweek_article_newsletters_block_mod
