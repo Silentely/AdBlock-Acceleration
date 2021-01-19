@@ -89,8 +89,8 @@
 
 
 
-### 历史 Star 数
+## 历史 Star 数
 ![](https://starchart.cc/Silentely/AdBlock-Acceleration.svg)
 
-### 访问量
+## 访问量
 ![](http://profile-counter.glitch.me/silentely/count.svg)
