@@ -86,3 +86,11 @@
 ##    特别鸣谢
 
 * [@Hackl0us](https://github.com/Hackl0us)
+
+
+
+### 历史 Star 数
+![](https://starchart.cc/Silentely/AdBlock-Acceleration.svg)
+
+### 访问量
+![](http://profile-counter.glitch.me/silentely/count.svg)
