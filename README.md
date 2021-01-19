@@ -88,3 +88,11 @@ Just copy the table below and use the accelerated address of the corresponding r
 * [@Hackl0us](https://github.com/Hackl0us)
 
 
+## Number of historical stars
+![](https://starchart.cc/Silentely/AdBlock-Acceleration.svg)
+
+## Views
+![](http://profile-counter.glitch.me/silentely/count.svg)
+
+
+
