@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 328.202101211251
+! Version: 328.202101230725
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 21 Jan 2021 11:51 UTC
+! Last modified: 23 Jan 2021 06:25 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -4103,7 +4103,7 @@
 ###hmcf_cookie_notice
 ###barra_legal_cookie
 ###cookies_sid_info
-##cookie-notice
+~noodweer.be##cookie-notice
 ###cookieAlerte
 ###bandeaucookies
 ##.cookieTool:not(body):not(html)
@@ -11614,7 +11614,7 @@
 ###cookie\ warning
 ###boxCookiesAccept
 ##.eu_cookie_wrapper
-~direct.de##.amgdprcookie-bar-template
+~direct.de,~redable.nl##.amgdprcookie-bar-template
 ##.site-footer ~ .gdpr
 ##.iCookie.iCookie-whitered
 ##.q-cookie-consent__container
@@ -11737,7 +11737,7 @@
 ##.cleanslate.browser-consent
 ##.modal-accept-cookie.custom-modal
 ###clarip-cookie-consent-banner-container
-~prosieben.de##cmp-banner
+~joyn.de,~prosieben.de##cmp-banner
 ###cookie-sticky
 ###privacyProtectionBanner
 ##.site-cookiebar
@@ -12766,6 +12766,11 @@
 ###cookiera_figyelmezteto_doboz
 ###LGPDdisclaimer
 ##.w-cookie.center
+###info_cookie_background
+##cookie-wrap
+##.twododigital--cookie
+##.eboxCookieLaw
+##.cookie-setting-bottom-bar
 !
 ! CUSTOM RULES
 !
@@ -18576,7 +18581,7 @@ verkuendung-bayern.de##.vkp-cookie-message
 clipartlogo.com##.navbar-qards
 clipart.me##.navbar-qards
 estetiq.pl##.config-messages
-aliexpress.com###j-aliexpress-notice, #root > div:not([id]):not([class*=" "]):not([style]):nth-last-child(2), .site-notice-header
+aliexpress.com###j-aliexpress-notice, #container-for-smart-banner ~ div:not([id]):not([class*=" "]):not([style]):nth-last-child(2), .site-notice-header
 riotgames.com##.riotbar-alert
 sweet.tv###privacy_policy
 enzahome.com.tr##.kvkkFixed
@@ -18794,7 +18799,7 @@ mondedommagementnavigo.com###app > div > .text-center
 yavitrina.ru##.cookie
 huisjetehuur.nl###home ~ div[id]:not([class])
 booli.se###app > main ~ div
-mi.com##div[class^="policy"], .privacy_agreement, .agree-tokens-modal, .top-notify
+mi.com##div[class^="policy"], .agree-tokens-modal, .top-notify
 vattenfalleldistribution.se##vfdso-cookie-consent
 mortonsalt.com##.ms-privacy-disclaimer
 tonerpartner.cz##.CookiesOk
@@ -20458,6 +20463,12 @@ ihk-nuernberg.de###overlay
 townsmith.de##.cdk-overlay-container
 gemu-group.com###notification
 infogreffe.com###lightbox-cnil, .dijitDialogUnderlayWrapper
+99airdrops.com##.legal-notice
+bati-info.be##div[class*="cookie-alert"]
+tecedo.at##.msg-banner
+lsdlibri.it###inibisci_sfondo, .fullscreen_box_legale
+ubuntu18.com##.notice
+xalingo.com.br###wrng-agrmnt
 !
 ! SCRIPT BLOCKING
 !
@@ -20980,7 +20991,7 @@ gdpr-wrapper.privacymanager.io$domain=~geenstijl.nl|~omroepbrabant.nl|~futurezon
 ||evidon.com/pub/gdprnotice.js$script
 /wp-content/plugins/ct-ultimate-gdpr
 ||gdpr.mandarin-medien.de/manager.js$script
-gdpr-tcfv2.sp-prod.net$domain=~ekstrabladet.dk|~computerbild.de|~welt.de|~sport1.de|~ostsee-zeitung.de|~radio.fr|~radio.at|~radio.de|~radio.net|~radio.pl|~radio.it|~lvz.de|~mein-schoener-garten.de|~autobild.de|~bike-bild.de|~bz-berlin.de|~travelbook.de|~businessinsider.de|~clever-tanken.de|~fitbook.de|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~noizz.de|~politico.eu|~rollingstone.de|~stylebook.de|~techbook.de|~testbild.de|~wieistmeineip.at|~wieistmeineip.de|~wieistmeineip.ch
+gdpr-tcfv2.sp-prod.net$domain=~ekstrabladet.dk|~computerbild.de|~bold.dk|~welt.de|~sport1.de|~ostsee-zeitung.de|~radio.fr|~radio.at|~radio.de|~radio.net|~radio.pl|~radio.it|~lvz.de|~mein-schoener-garten.de|~autobild.de|~bike-bild.de|~bz-berlin.de|~travelbook.de|~businessinsider.de|~clever-tanken.de|~fitbook.de|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~noizz.de|~politico.eu|~rollingstone.de|~stylebook.de|~techbook.de|~testbild.de|~wieistmeineip.at|~wieistmeineip.de|~wieistmeineip.ch
 ||yastatic.net/s3/gdpr$script
 ||mediavine.com/tags/gdprModal$script
 /zgdpr.min.js
@@ -21015,7 +21026,7 @@ sdk.privacy-center.org$domain=~lequipe.fr|~marianne.net|~allocine.fr|~telegraaf.
 ||privacy-proxy.usercentrics.eu/latest$script,domain=~haix.de
 ||isgprivacy.cbsi.com/dist/optanon$script,domain=~cbsnews.com
 /contao-privacy-center.js
-privacy-mgmt.com$domain=~bild.de|~ekstrabladet.dk|~computerbild.de|~welt.de|~focus.de|~chip.de|~faz.net|~n-tv.de|~manager-magazin.de|~spiegel.de|~vtm.be|~privacy-mgmt.com|~selbst.de|~giga.de|~radio.fr|~radio.at|~radio.de|~radio.net|~radio.pl|~radio.it|~mein-schoener-garten.de|~boerse-online.de|~tvspielfilm.de|~autobild.de|~bike-bild.de|~bz-berlin.de|~jyllands-posten.dk|~cyberport.at|~cyberport.de|~golem.de|~express.de|~volkskrant.nl|~rtl2.de|~11freunde.de|~finanzen.at|~finanzen.net|~insider.com|~transfermarkt.at|~transfermarkt.ch|~transfermarkt.co.uk|~transfermarkt.com|~transfermarkt.com.tr|~transfermarkt.de|~transfermarkt.fr|~transfermarkt.it|~transfermarkt.nl|~transfermarkt.pl|~transfermarkt.pt|~transfermarkt.us|~vip.de|~businessinsider.de|~clever-tanken.de|~fitbook.de|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~noizz.de|~politico.eu|~rollingstone.de|~stylebook.de|~techbook.de|~testbild.de|~wieistmeineip.at|~wieistmeineip.de|~wieistmeineip.ch
+privacy-mgmt.com$domain=~bild.de|~ekstrabladet.dk|~computerbild.de|~bold.dk|~welt.de|~focus.de|~chip.de|~faz.net|~n-tv.de|~manager-magazin.de|~spiegel.de|~vtm.be|~privacy-mgmt.com|~selbst.de|~giga.de|~radio.fr|~radio.at|~radio.de|~radio.net|~radio.pl|~radio.it|~mein-schoener-garten.de|~boerse-online.de|~tvspielfilm.de|~autobild.de|~bike-bild.de|~bz-berlin.de|~jyllands-posten.dk|~cyberport.at|~cyberport.de|~golem.de|~express.de|~volkskrant.nl|~rtl2.de|~11freunde.de|~finanzen.at|~finanzen.net|~insider.com|~transfermarkt.at|~transfermarkt.ch|~transfermarkt.co.uk|~transfermarkt.com|~transfermarkt.com.tr|~transfermarkt.de|~transfermarkt.fr|~transfermarkt.it|~transfermarkt.nl|~transfermarkt.pl|~transfermarkt.pt|~transfermarkt.us|~vip.de|~businessinsider.de|~clever-tanken.de|~fitbook.de|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~noizz.de|~politico.eu|~rollingstone.de|~stylebook.de|~techbook.de|~testbild.de|~wieistmeineip.at|~wieistmeineip.de|~wieistmeineip.ch
 privacy-policy.u-lab.nl
 ||trustcommander.net/privacy$script
 app.eprivacy-keeper.eu
@@ -21216,7 +21227,7 @@ wpjslib-chunk-notification.js
 ||dialogue.sp-prod.net/messagingWithoutDetection.js$script,domain=~globalplayer.com
 /datenschutz.min.js
 /ccm19.js
-/wrapperMessagingWithoutDetection.js$domain=~bild.de|~ekstrabladet.dk|~computerbild.de|~welt.de|~sport1.de|~focus.de|~chip.de|~faz.net|~n-tv.de|~selbst.de|~wunderweib.de|~tvmovie.de|~praxisvita.de|~cosmopolitan.de|~lecker.de|~autozeitung.de|~giga.de|~radio.fr|~radio.de|~radio.net|~radio.pl|~radio.it|~mein-schoener-garten.de|~boerse-online.de|~tvspielfilm.de|~bike-bild.de|~bz-berlin.de|~travelbook.de|~jyllands-posten.dk|~cyberport.at|~cyberport.de|~golem.de|~express.de|~ksta.de|~bndestem.nl|~volkskrant.nl|~rundschau-online.de|~rtl2.de|~11freunde.de|~finanzen.at|~finanzen.net|~insider.com|~transfermarkt.at|~transfermarkt.ch|~transfermarkt.co.uk|~transfermarkt.com|~transfermarkt.com.tr|~transfermarkt.de|~transfermarkt.fr|~transfermarkt.it|~transfermarkt.nl|~transfermarkt.pl|~transfermarkt.pt|~transfermarkt.us|~vip.de|~businessinsider.de|~clever-tanken.de|~fitbook.de|~idealo.at|~idealo.co.uk|~idealo.de|~idealo.es|~idealo.fr|~idealo.it|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~noizz.de|~politico.eu|~rollingstone.de|~stylebook.de|~techbook.de|~testbild.de|~wieistmeineip.at|~wieistmeineip.de|~wieistmeineip.ch
+/wrapperMessagingWithoutDetection.js$domain=~bild.de|~ekstrabladet.dk|~computerbild.de|~bold.dk|~welt.de|~sport1.de|~focus.de|~chip.de|~faz.net|~n-tv.de|~selbst.de|~wunderweib.de|~tvmovie.de|~praxisvita.de|~cosmopolitan.de|~lecker.de|~autozeitung.de|~giga.de|~radio.fr|~radio.de|~radio.net|~radio.pl|~radio.it|~mein-schoener-garten.de|~boerse-online.de|~tvspielfilm.de|~bike-bild.de|~bz-berlin.de|~travelbook.de|~jyllands-posten.dk|~cyberport.at|~cyberport.de|~golem.de|~express.de|~ksta.de|~bndestem.nl|~volkskrant.nl|~rundschau-online.de|~rtl2.de|~11freunde.de|~finanzen.at|~finanzen.net|~insider.com|~transfermarkt.at|~transfermarkt.ch|~transfermarkt.co.uk|~transfermarkt.com|~transfermarkt.com.tr|~transfermarkt.de|~transfermarkt.fr|~transfermarkt.it|~transfermarkt.nl|~transfermarkt.pl|~transfermarkt.pt|~transfermarkt.us|~vip.de|~businessinsider.de|~clever-tanken.de|~fitbook.de|~idealo.at|~idealo.co.uk|~idealo.de|~idealo.es|~idealo.fr|~idealo.it|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~noizz.de|~politico.eu|~rollingstone.de|~stylebook.de|~techbook.de|~testbild.de|~wieistmeineip.at|~wieistmeineip.de|~wieistmeineip.ch
 /app.dsgvo.min.js
 /trigoAboveBox.jquery.js
 /dsgvoinit.min.js
@@ -21405,6 +21416,7 @@ privacy-manager-v$domain=df.eu
 /accept.js$domain=oreluniver.ru
 /doria.js$domain=lactease.com
 /ilovecookies.min.js$domain=feringa-katzenfutter.de
+/esb-privacy.js$domain=erstebank.hr
 !
 ! FILTERLIST ONLY
 !
