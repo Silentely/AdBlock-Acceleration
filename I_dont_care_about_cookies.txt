@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 328.202102101011
+! Version: 328.202102110859
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 10 Feb 2021 09:11 UTC
+! Last modified: 11 Feb 2021 07:59 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -3859,7 +3859,7 @@
 ##.cookies-caja-texto:not(body):not(html)
 ###cookieAlarmBar
 ##.cookies_modal:not(body):not(html)
-~samsonite.ch,~samsonite.de,~samsonite.fr,~samsonite.nl,~samsonite.cz,~samsonite.it,~samsonite.co.uk##.cookie-consent-overlay
+~samsonite.ch,~samsonite.de,~samsonite.fr,~samsonite.nl,~samsonite.cz,~samsonite.it,~samsonite.es,~samsonite.co.uk##.cookie-consent-overlay
 ###CCookie
 ##.cookie-banner-info:not(body):not(html)
 ###privacyCookiesPolicyMessageContainer
@@ -12866,6 +12866,16 @@
 ##.akku-cookie-tools-design-toggler
 ##.bg-cookie-bar
 ##.cookies-policy-trigger
+##.cookie-consent-dialog
+##.js-form-set-gdpr-consent-cookie
+###politykaPrywatnosciDiv
+##.data-consent-container
+##.cookies-wrpr
+###acepted_privacy_policy
+###cookiesAlarm
+###___gatsby div[class*="CookiePopup"]
+###cookietip
+##.cookies-accept-message
 !
 ! CUSTOM RULES
 !
@@ -15516,7 +15526,6 @@ digiromania.ro###gdpr, #gdpr-modal
 maxict.nl##.wallpop-overlay
 flightview.com###eea-confirmation-outer
 square-enix-games.com##footer > div[class*="notice"]
-ybs.co.uk##.notification-container
 arkivmusic.com###gdpr-modal
 opisopvoordeelshop.nl##.cv-notifier-container
 lachainemeteo.com###cookies
@@ -18150,7 +18159,6 @@ amazingfables.com###cookie_consent ~ #overlay
 bouwinfo.be##div[class^="bi-cookie-alert"]
 sanuslife.com##footer ~ div[class^="cookie"]
 konsument.at###cc-overlay
-reddit.com##.infobar-toaster-container, #SHORTCUT_FOCUSABLE_DIV > div[class=""] > div[class] > form, #SHORTCUT_FOCUSABLE_DIV > div[class*="Subreddit"] > div > form
 citifirst.com###popup-disclaimer
 currencyrate.today##.cc-alert
 esm.europa.eu###block-esm-base-cookie-message-footer
@@ -19054,7 +19062,6 @@ elderscrollsonline.com##.notice-warning
 papajohns.pl##footer ~ div[style*="bottom"]
 24opony.pl##.easyNotificationBck
 jooble.org###root > div > div + div[class^="_"]:last-child
-al.to###app-TopBar > div > div:first-child
 heizoel24.de##.ui-widget-overlay
 textlocal.com###dallas-optin
 servocode.com##.coockies
@@ -19567,7 +19574,6 @@ soft8soft.com##.total-plus-privacy-policy
 spiel.digital###root > div:not([style])
 kartoteka.by##.privacy-popup
 pc-college.de###clayer
-compassesgreenfield.co.uk##.cookies-wrpr
 vinidex.com.au###tde-gdpr
 stoffen-hemmers.nl##.cookie
 riteintherain.com###screen-overlay-white
@@ -20431,7 +20437,6 @@ jeanfil.fr##.modal-cookie
 apollographql.com###gatsby-focus-wrapper > .body ~ div
 toner.shop##.CookiesOk
 artemiskliniken.de###myCookie
-kraken.com##.kraken-cookie-warning
 minitab.com###cpToaster
 severeweather.wmo.int##.gdpr
 dzieje.pl###cookies
@@ -20698,6 +20703,19 @@ vibus.de###cw
 centreforaviation.com##.cookieConsent_consent_geb
 antiquariat.de##.confirm-cookie
 orange.jobs##.dgt-opt-inout
+reddit.com###SHORTCUT_FOCUSABLE_DIV > div[class=""] > div[class] > form, #SHORTCUT_FOCUSABLE_DIV > div[class*="subreddit"] > div > form
+kraken.com##.kraken-cookie-warning.show
+qmee.com###FooterContainer-react-component > div
+prothomalo.com###gdpr-policy
+sphinxcomputer.de###sphinxcookie
+allegro.eu##.idm-cookie-overlay, .idm-cookie-policy
+patisserie-cabosse.fr##.cabosseadsbottom
+grifols.com###cookie-intro-modal, .aui-overlay
+verve5.de###lux-cookie-dialog, #lux-cookie-show-modal-dialog, .backdrop, ._dialog_overlay
+al.to###app > div:first-child > div
+ybs.co.uk###fullpage-filter
+zentia.com##.enigmaint_cookie-notice
+textil-mode.de##.vtm-cookiebanner
 !
 ! SCRIPT BLOCKING
 !
@@ -21096,6 +21114,7 @@ cookiemon.atcom.gr
 /typo3conf/ext/ne_cookies/*
 /in2cookiemodal.js
 /cookie-bar.min.js
+/ilovecookies.min.js
 /luxcookieconsent/*
 /cookiehint/*
 /cookieOptIn.min.js
@@ -21176,6 +21195,7 @@ analytics-consent-manager.azureedge.net
 ||ampproject.org/v0/amp-consent$script
 ||consent.trustarc.com/v2/notice$script
 /resources/onetrust/js/consent.js
+/consent-manager/lazy-consent-manager
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -21255,7 +21275,7 @@ privacy.schibsted.com
 /privacyopt.js
 /privacypolicy/styles/all/template/remove_url.js
 ||psi.schibsted.com/api/v2/privacy/notification$script
-sdk.privacy-center.org$domain=~lequipe.fr|~marianne.net|~allocine.fr|~telegraaf.nl|~gamepro.de|~gamestar.de|~dumpert.nl|~funradio.fr|~rtl.fr|~mundodeportivo.com|~gofeminin.de|~onmeda.de
+sdk.privacy-center.org$domain=~lequipe.fr|~marianne.net|~allocine.fr|~standaard.be|~telegraaf.nl|~gamepro.de|~gamestar.de|~dumpert.nl|~funradio.fr|~rtl.fr|~mundodeportivo.com|~gofeminin.de|~onmeda.de
 /wp-content/plugins/privacy-policy-info/*
 /e-privacy.min.js
 /privacyConsentBar.js
@@ -21437,6 +21457,7 @@ nexus.ensighten.com
 /planesorder.com
 /ubiquitousyard.com
 /spottednoise.com
+cc.cdn.civiccomputing.com
 ||pcz.pl/static/js/moo-cooker.js$script
 /eucd/eucd.min.js
 ||cinabre.sudoc.abes.fr/psi_gui/js/bandeau.js$script
@@ -21661,7 +21682,6 @@ privacy-manager-v$domain=df.eu
 /legal/*$domain=kamkabel.ru
 /accept.js$domain=oreluniver.ru
 /doria.js$domain=lactease.com
-/ilovecookies.min.js$domain=feringa-katzenfutter.de
 /esb-privacy.js$domain=erstebank.hr
 /mediamus-cookie.js$domain=swl-unser-stadtwerk.de
 /vinegar.js$domain=stadtwerke-herne.de
@@ -21675,6 +21695,7 @@ privacy-manager-v$domain=df.eu
 /cookieCutter$domain=thebureauinvestigates.com
 /tracking/*$domain=elitepartner.de
 /cookie.bundle.js$domain=fastbill.com
+/Consent.js$domain=gaming-style.com
 !
 ! FILTERLIST ONLY
 !
