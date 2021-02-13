@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 328.202102110859
+! Version: 328.202102130700
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 11 Feb 2021 07:59 UTC
+! Last modified: 13 Feb 2021 06:00 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -3987,7 +3987,7 @@
 ###flashCookies
 ##.sc-cookies:not(body):not(html)
 ###MSoftCookieWarn
-~bricoman.fr##.cookie-accept:not(body):not(html):not(.btn):not(button)
+~takarekbank.hu,~bricoman.fr##.cookie-accept:not(body):not(html):not(.btn):not(button)
 ##.am-cookie-notice:not(body):not(html)
 ###biscuitFormDiv
 ###okno_rcookie
@@ -5350,7 +5350,7 @@
 ###LleiCookies
 ###acookiesRoot
 ###intercept-cookies
-##.dhl-cgk:not(body):not(html)
+##.dhl-cgk
 ###cookie_management_header
 ##.bdcookies:not(body):not(html)
 ##.cookie-warning-message
@@ -6013,7 +6013,7 @@
 ##.c-cookie-message:not(body):not(html)
 ###footerCookieDirective
 ##.ppr_priv_document_cookie_banner
-##.js-cookie-container:not(body):not(html)
+~takarekbank.hu##.js-cookie-container:not(body):not(html)
 ##ytd-consent-bump-renderer
 ##.ud-component--eu-cookie-message--app
 ###weusecookies
@@ -7022,7 +7022,7 @@
 ###cookie-policy-pop-in
 ##.eu-compliance-mobile
 ##.cookie-compliance-bar
-##.pui-alert-cookies:not(body):not(html)
+##.pui-alert-cookies
 ##.c-cookiesBox:not(body):not(html)
 ###cookiesAccepted:not(button)
 ###Datenschutzhinweis:not(input)
@@ -12876,6 +12876,18 @@
 ###___gatsby div[class*="CookiePopup"]
 ###cookietip
 ##.cookies-accept-message
+##.fm-cookie-agreement-message
+##.som-cookie-banner
+###cookiebanner-root
+###root div[data-test*="cookieInfo"]
+###__next div[class*="cookieconsent"]
+##.js-cookieConsent
+###lgpd.lgpd
+##.cerez-uyarisi
+###cookiechoice-wrapper-outer
+##.html-alert-is-cookie
+###cookie_noti
+##.hinweis_cookie_desktop
 !
 ! CUSTOM RULES
 !
@@ -16227,7 +16239,6 @@ carhartt.com###consentModal, .reveal-modal-bg
 operadeparis.fr##.bloc-notifications
 shadertoy.com###compliance
 zanotti.com###ll_banner, #ll_info, .ll_link_bottom
-comfortclick.com##.navbar-fixed-bottom
 shrm.org##.shrm-gdpr
 mvagusta.com##div[class^="bannerContainer"]
 mediafour.com###wpnb-bar
@@ -20716,6 +20727,26 @@ al.to###app > div:first-child > div
 ybs.co.uk###fullpage-filter
 zentia.com##.enigmaint_cookie-notice
 textil-mode.de##.vtm-cookiebanner
+comfortclick.com##.footer ~ div
+hof-lenze.de##main ~ div
+bb-service.info##main ~ div
+haarem.de###consent
+susanneeisenmann.de###bbcdBanner
+simplydhl.com###ixp-gate-frame
+parrotcoffee.com###growls
+huzaro.pl###cookie
+5ka.ru###app > .message
+cargraf.store##.lightbox-backdrop
+oed.com##.cookies-attention
+open-office.es###cookies
+elperiodicodeaqui.com###infop
+voip.ms##.gdpr
+mrowka.com.pl##.cookies-header
+tweakbit.com###privacy-popup
+mio.se##div[data-am-cookiesdisclaimer]
+faszination-suedostasien.de###legal-notice
+abmotorcycles.de##.uk-notification
+uniprot.org###privacy-panel
 !
 ! SCRIPT BLOCKING
 !
@@ -20904,7 +20935,7 @@ jquery.cookiepol.js
 /cookie-message.js
 /javascript/cookieconsent.min.js
 /cookies-banner.js
-||doitonlinemedia.nl/global-js/avg-cookie.js$script
+||doitonlinemedia.nl/global-js/avg-cookie.js$script,domain=~palazzogroep.nl
 ||privacy.digimedia.com/check_cookie_country_code.js$script
 /fortune_cookie_popup.js
 /cookiecsnt2/js/cookie.min.js
@@ -21127,6 +21158,7 @@ cookiemon.atcom.gr
 /mod_jt_cookies/*
 /js/dist/cookieAcceptance
 /cookiebanner/*
+/acc.cookienotification.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -21310,7 +21342,6 @@ cmp.osano.com
 ||vlitag.com/plugins/cmp$script
 cmp.md-nx.com
 cdn.opencmp.net
-||get.optad360.io/new.cmp.bundle.js$script
 cmp.faktor.mgr.consensu.org$domain=~omroepwest.nl|~consent.talpanetwork.com
 ||almamedia.fi/almacmp$script
 ||snigelweb.com/sncmp$script
@@ -21526,6 +21557,7 @@ tag.goadopt.io
 /usercentrics-sdk/*
 /koriolis_gtm/theshield
 ||fourmizz.fr/rgpd$script
+||hu-manity.co/hu-banner$script
 /frontend/ajax/cookies$domain=romstal.ro
 cookie-service.js$domain=smart.com
 /rodo-agreement-$domain=gremimedia.pl|zw.com.pl
