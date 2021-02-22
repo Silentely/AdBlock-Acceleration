@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 329.202102191207
+! Version: 329.202102221107
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 19 Feb 2021 11:07 UTC
+! Last modified: 22 Feb 2021 10:07 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -866,7 +866,7 @@
 ##.cookie_optin_box:not(body):not(html)
 ###CookieContainer
 ###jumper_cookies
-~dish.co,~pagetiger.com,~bakken.nl##.cookie-info:not(body):not(html)
+~lmt.lv,~dish.co,~pagetiger.com,~bakken.nl##.cookie-info:not(body):not(html)
 ###cookieCopy
 ###eu_cookie
 ###cookies_warning
@@ -1584,7 +1584,7 @@
 ##.cookies-v2:not(body):not(html)
 ###aa_privacy_module
 ##.cookie-noticebar:not(body):not(html)
-~urgibl.de,~kunzbaumschulen.ch,~gartencenter-seebauer.de###CookieMessage
+~urgibl.de,~kunzbaumschulen.ch,~gartencenter-seebauer.de,~rammes-gruenland.com###CookieMessage
 ##.cookies-disclaimer:not(body):not(html)
 ##.divLeyCookies:not(body):not(html)
 ###policyCookies
@@ -1938,7 +1938,7 @@
 ###CookieBannerNew
 ###CNILMessage
 ###M_cookieWarning
-##.cookie_richtlinien:not(body):not(html)
+##.cookie_richtlinien
 ###cookieaccept
 ###div_coockies
 ###cookie-info-outer
@@ -7479,7 +7479,7 @@
 ##.GdprBanner__bg:not(body):not(html)
 ##.datenschutzcookie:not(body):not(html)
 ###cookies_box_disclaimer
-##.tvp-cookie-overlay:not(body):not(html)
+##.cookie-information-banner-wrapper
 ##.js-global-privacy-messages
 ##.stripe[class*="cookieBanner"]
 ###cookieInfoOutline
@@ -12907,6 +12907,13 @@
 ##.privacysettings__iframeLightBox
 ###mod-eu-cookies
 ###mod-eu-cookies-overlay
+###cookie-disclaimer-box
+##.privacy-consent-banner__overlay
+###cookie_richtlinie
+##.bandeau-information-cookies
+##.shop-gdpr-container
+###MemoGadgetCookiebotDialog
+###cookie-banner ~ .modal-backdrop
 !
 ! CUSTOM RULES
 !
@@ -19275,7 +19282,6 @@ kristeligt-dagblad.dk##.consent, #consent
 nedsecure.co.za###divnedbankretailcookie
 speedtest.net##.privacy-update, .notification-container
 ctshop.rs##body > div:not([id]):not([class])
-community.plus.net##body > .cf
 thunderfulgames.com##.uk-notification
 babanet.hu###cookie
 generaltire.com##.gt-privacy-popup
@@ -19651,7 +19657,6 @@ konversionskraft.de##.kkcb_portal
 esanum.fr##esn-cookie-disclaimer
 itopvpn.com##.footer ~ .content
 i-posciel.pl###cookie
-plus.net##.cf__visible
 servicestatus.net##.cf__visible
 nanu-nana.de###overlay
 lebegesund.de##lgv-cookie-manager
@@ -19864,7 +19869,6 @@ fleurop.nl##.app-info
 heizpellets24.de##.ui-widget-overlay
 immobilien-zeitung.de##iz-cookie-banner
 surveymonkey.de##.mds-gdpr-cookie-banner, .wds-overlay
-lmt.lv##.lmt-cookies
 groupelaposte.com###root > div > div
 schoenbrunn.at###modal-cookie-notice, .modal-backdrop
 gerarddarel.com###cookieLab
@@ -20178,8 +20182,6 @@ heinrich-heine-schule.net###consent
 mocopinus.com##.disclaimer
 co.aptoide.com###news
 deno.land##.bg-black > .max-w-screen-xl
-gira.de##.gi-cookie-banner, #cms-element-ac, #ac_frame
-gira.com##.gi-cookie-banner, #cms-element-ac, #ac_frame
 hub.hr###perpetuum-cookie-bar.visible
 ekosklad.si###cookie
 manus-zeitforum.de###cookie-shit
@@ -20506,7 +20508,6 @@ mundschutzgermany.de##.lightbox-backdrop
 portugeseproducten.nl##.lightbox-backdrop
 der-hexenkessel.de##.lightbox-backdrop
 gc.ca##.CookieModal
-pri.org###__next [class*="CtaMessage"]
 okpedia.org##.privacy
 scamner.com##.cookies
 schulze-immobilien.de##.wrap__undone
@@ -20782,6 +20783,25 @@ tcf.org##.modal
 woodbrass.com##.bgBleuC
 ravenind.com##.hello-bar
 litebringer.com###cookie-app
+museum.nl##.overlay
+aloys.news###jbcookies
+hostgreen.com###obal
+elkar.eus###cookie_oharra
+sigma-photo.fr##.choc-banner
+avfc.co.uk##.footer ~ .popup-wrapper
+music-city.cz###js-agreement-stripe
+deincamchat.de###age-verification
+turtlewax.com##.cozy-crd__modal-bar
+nils-bollenbach.de##main ~ div
+lotteriadegliscontrini.gov.it###coockie
+csirt.gov.it##footer ~ .fixed
+liceisgf.gov.it###zf--alerts-panel
+theweather.com###gpdr
+darksearch.io##.application--wrap > .blue--text
+gira.de###consent-dialog-wrapper, #cms-element-ac, #ac_frame
+gira.com###consent-dialog-wrapper, #cms-element-ac
+yestersen.com##main > .d-print-none
+pri.org###__next [class*="CtaMessage"], #cta_prompt_bottom
 !
 ! SCRIPT BLOCKING
 !
@@ -20806,7 +20826,6 @@ cookie_law.js
 cookiesamtykke.js
 /modules/mod_pescookies
 /cookiesdirective
-/cookie/cookie_msg.js
 ||global.mercedes-benz-classic.com/cookie/cookie.js$script
 /webapps/bb-cookie-disclosure
 cookie-use-policy.js
@@ -21194,6 +21213,7 @@ cookiemon.atcom.gr
 /cookiepolicy.js
 cookie_api/cccframe
 /metro?sc_device=webcomponent&components=cookie
+/cookie_msg.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -21310,7 +21330,7 @@ gdpr-banner.awsmpsa.com
 ||prizelogic.com/gdpr/third-party-optin.min.js$script
 /gdpr-popup.js
 /wordpress-ptchrgdprplugin/*
-gdpr-wrapper.privacymanager.io$domain=~geenstijl.nl|~rtvnoord.nl|~omroepbrabant.nl|~futurezone.at|~profil.at|~kurier.at|~weeronline.nl|~lablue.de
+gdpr-wrapper.privacymanager.io$domain=~geenstijl.nl|~dailybuzz.nl|~rtvnoord.nl|~omroepbrabant.nl|~futurezone.at|~profil.at|~kurier.at|~weeronline.nl|~lablue.de
 ||evidon.com/pub/gdprnotice.js$script
 /wp-content/plugins/ct-ultimate-gdpr
 ||gdpr.mandarin-medien.de/manager.js$script
@@ -21343,7 +21363,7 @@ privacy.schibsted.com
 /privacyopt.js
 /privacypolicy/styles/all/template/remove_url.js
 ||psi.schibsted.com/api/v2/privacy/notification$script
-sdk.privacy-center.org$domain=~lequipe.fr|~marianne.net|~allocine.fr|~standaard.be|~telegraaf.nl|~gamepro.de|~gamestar.de|~dumpert.nl|~funradio.fr|~rtl.fr|~mundodeportivo.com|~gofeminin.de|~onmeda.de
+sdk.privacy-center.org$domain=~lequipe.fr|~marianne.net|~allocine.fr|~standaard.be|~telegraaf.nl|~gamepro.de|~gamestar.de|~dumpert.nl|~funradio.fr|~rtl.fr|~mundodeportivo.com|~franceinter.fr|~franceculture.fr|~gofeminin.de|~onmeda.de
 /wp-content/plugins/privacy-policy-info/*
 /e-privacy.min.js
 /privacyConsentBar.js
@@ -21424,6 +21444,7 @@ jquery.smartCookie.min.js
 /components/CookieManager/js/app.js
 /getCookieConsent
 /kssCookieManager/*
+/ModalCookiesPrivacy.php
 quantcast.mgr.consensu.org$domain=~sourceforge.net|~tumblr.com|~indy100.com|~vi.nl|~independent.co.uk|~joe.ie|~joe.co.uk|~standard.co.uk|~cnews.fr|~adslzone.net|~avsforum.com|~filmvandaag.nl
 gemius.mgr.consensu.org
 sddan.mgr.consensu.org
@@ -21487,7 +21508,6 @@ fundingchoicesmessages.google.com
 ||spiffymachine.com/v2/$script
 cdn.userdatatrust.com
 ||cdn.pubguru.com/pg.js$script
-/basketballbelieve.com
 ||qualtrics.com/WRSiteInterceptEngine$script,domain=~logmeininc.com
 a.svtrd.com$domain=~ns.nl
 ||foolcdn.com/mms/resources/js/international-visitor-notice-js$script
@@ -21508,23 +21528,14 @@ cdn.truendo.com
 ||intelligentscissors.com/v2$script
 ||cdn.adnuntius.com/adn.dmp.js$script
 ||cct-pubweb.com/ccpa$script
-/breakfastboat.com
-/railwayreason.com
-/enormousearth.com
 widgets.legalmonster.com
+nexus.ensighten.com
+||einfachonline.com/sid$script
+cc.cdn.civiccomputing.com
+/railwayreason.com
 /teenytinycellar.com
 /lovelydrum.com
-nexus.ensighten.com
-/placidperson.com
-/movemeal.com
 /hatefulrequest.com
-/scaredsnake.com
-||einfachonline.com/sid$script
-/squeakzinc.com
-/planesorder.com
-/ubiquitousyard.com
-/spottednoise.com
-cc.cdn.civiccomputing.com
 ||pcz.pl/static/js/moo-cooker.js$script
 /eucd/eucd.min.js
 ||cinabre.sudoc.abes.fr/psi_gui/js/bandeau.js$script
@@ -21595,6 +21606,9 @@ tag.goadopt.io
 ||fourmizz.fr/rgpd$script
 ||hu-manity.co/hu-banner$script
 ||exm-medienserver.de/cman$script
+/ConsentManager,Sticky
+/js/rgpd/*
+/module-rgpd/*
 /frontend/ajax/cookies$domain=romstal.ro
 cookie-service.js$domain=smart.com
 /rodo-agreement-$domain=gremimedia.pl|zw.com.pl
@@ -21721,7 +21735,7 @@ spellsalsa.com$domain=interestingengineering.com
 /website-cookie-preferences$domain=nationaltrust.org.uk
 /cookie-bundle$domain=zoopla.co.uk
 /cookie-wall$domain=xebia.com
-/otBannerSdk.js$domain=dhl.com|gusto.at|mintos.com|thetrainline.com
+/otBannerSdk.js$domain=dhl.com|gusto.at|mintos.com|thetrainline.com|elmundo.es
 /cp01.js$domain=jzzo.com
 /klaro/*$domain=salesviewer.com
 /gdpr.bundle.js$domain=immobilienscout24.de|mediacourant.nl
@@ -21766,6 +21780,8 @@ privacy-manager-v$domain=df.eu
 /Consent.js$domain=gaming-style.com
 /cc.js$domain=transparenzregister.de
 /uc/*$domain=mcmakler.de
+/tvp-tcfapi.js$domain=tvp.pl
+/uc-version$domain=geberit.cz
 !
 ! FILTERLIST ONLY
 !
