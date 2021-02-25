@@ -1,6 +1,7 @@
 ![Anurag’s github stats](https://github-readme-stats.vercel.app/api?username=Silentely&show_icons=true&theme=merko)
 
 # AdBlock-Acceleration
+[![deepcode](https://www.deepcode.ai/api/gh/badge?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF0Zm9ybTEiOiJnaCIsIm93bmVyMSI6IlNpbGVudGVseSIsInJlcG8xIjoiQWRCbG9jay1BY2NlbGVyYXRpb24iLCJpbmNsdWRlTGludCI6ZmFsc2UsImF1dGhvcklkIjoyNzQ2MiwiaWF0IjoxNjE0MjI0MzExfQ.xU2nL6W7rirL2Ypbm43784nnAbttXwYK5UV0KqJhN9M)](https://www.deepcode.ai/app/gh/Silentely/AdBlock-Acceleration/_/dashboard?utm_content=gh%2FSilentely%2FAdBlock-Acceleration)
 
 国际/中国加速过滤广告规则订阅（[English instructions](https://github.com/Silentely/AdBlock-Acceleration/blob/master/README.md)）
 
