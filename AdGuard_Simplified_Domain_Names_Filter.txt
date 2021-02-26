@@ -3,7 +3,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2021-02-26T12:03:33.769Z
+! Last modified: 2021-02-26T15:40:33.003Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.10
 !
@@ -1237,7 +1237,6 @@
 ||cryaptall.club^
 ||artantash.club^
 ||onewastansepa.pro^
-||bestcontentfood.top^
 ||oukruque.com^
 ||foazasis.com^
 ||grooksom.com^
@@ -13524,6 +13523,7 @@ vkcdnservice.appspot.com^
 ||best5ex.com^
 ||bestcasinopartner.com^
 ||bestcontentcompany.top^
+||bestcontentfood.top^
 ||bestcontentsoftware.top^
 ||bestdeals.ws^
 ||bestforexpartners.com^
@@ -15810,7 +15810,6 @@ vkcdnservice.appspot.com^
 ||publicityclerks.com^
 ||publift.com^
 ||publir.com^
-||publish0x.com^
 ||publisheradnetwork.com^
 ||publited.com^
 ||pubmatic.com^
@@ -18642,6 +18641,14 @@ vkcdnservice.appspot.com^
 ||visilabs.com^
 ||visilabs.net^
 !
+||adsmetadata.mobileadexchange.net^
+||adsmetadata.startappk8s.com^
+||counter.yandro.ru^
+||track-aws.notsy.io^
+||cdn.notsy.io^
+||cdn-b.notsy.io^
+||track.notsy.io^
+||log.ca.gov.vn^
 ||tracking.gpm-rtv.ru^
 ||pvk.jp^
 ||uncn.jp^
@@ -22606,6 +22613,19 @@ t.yesware.com
 ! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/344
 ! Disabled in DNS filter
 !
+||track.libii.cn^
+||track.oasis.magictavern.com^
+||kooappslogs.com^
+||log.zepeto.io^
+||apptracker.gamedock.io^
+||applog.zaycev.net^
+||events.cardsmobile.ru^
+||eventstream.dodopizza.com^
+||analytics.74.ru^
+||intake-logging.wikimedia.org^
+||event.chitai-gorod.ru^
+||counter.nv.ua^
+||metrika.myseldon.com^
 ||t.lidyana.com^
 ||stats.muasamcong.gov.vn^
 ||beacon.watch.impress.co.jp^
@@ -24146,6 +24166,7 @@ charlestownwyllie.oaklawnnonantum.com^
 !+ PLATFORM(ios, android)
 !+ NOT_PLATFORM(ios, ext_safari, ext_android_cb)
 !
+||analytics.jodelapis.com^
 ||analytics.mobilegamestats.com^
 ||p.statp.com^
 ||api.imqtyik.com^
@@ -24995,7 +25016,6 @@ charlestownwyllie.oaklawnnonantum.com^
 ||leadsrx.com^
 ||leafmedia.io^
 ||leokross.com^
-||linkifier.com^
 ||livesegmentservice.com^
 ||livesession.io^
 ||livetrafficfeed.com^
@@ -26580,6 +26600,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||dl8.me^
 ||etrust.eu^
 ||giga-abs.de^
+||haymarketstat.de^
 ||hstrck.com^
 ||htm1.ch^
 ||ingenioustech.biz^
@@ -26959,6 +26980,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||analytics.cnd-motionmedia.de^
 ||analytics.gameforge.de^
 ||analytics.loop-cloud.de^
+||analytics.media-proweb.de^
 ||analytics.praetor.im^
 ||beagle.prod.tda.link^
 ||blacktri-a.akamaihd.net^
@@ -27443,6 +27465,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ! `window.adswellBaseDomain`
 ! https://damskiy.xyz/vendor/lib/oY.js
 !
+||advertiseru.net^
 ||kijkxx.com^
 ||escatedint.work^
 ||hranakel.xyz^
@@ -31426,6 +31449,8 @@ adbetnet.com
 !
 ! Section contains the list of advertising networks, which are hosted on non advertising sites as subdomains
 !
+||ads.interfax.ru^
+||banner.profile.ru^
 ||yad.pandafilms.best^
 ||adbn.masterinvest.info^
 ||bs.orsk.ru^
@@ -36808,6 +36833,9 @@ adbetnet.com
 ||runkao.net^
 ||stunninglover.com^
 ||watakaw133.xyz^
+||nongfumg.com^
+||njcyt.com^
+||hnjcdjx.com^
 ||ez2kyh.cn^
 ||kypzu.cn^
 ||01w47q.cn^
@@ -39272,6 +39300,12 @@ adbetnet.com
 ! `*-dnsotls-ds.metric.gstatic.com` (for instance, `a5a6380f-dnsotls-ds.metric.gstatic.com`).
 !
 !
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/574
+! Blocked by ||relevant-digital.com^
+@@||oneline.nextday.media^|
+! https://github.com/AdguardTeam/AdguardFilters/issues/75663
+! Blocked by ||rdstation.com.br^
+@@||digital.fcamara.com.br^|
 ! Reported via Telegram: https://t.me/AdGuard_chinese/13741
 @@|ftp.bmp.ovh^|
 ! Related to '||mkto-*.com^$third-party'
