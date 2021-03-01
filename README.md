@@ -3,6 +3,7 @@
 <img src="https://img.shields.io/github/stars/Silentely/AdBlock-Acceleration?color=yellow">
 <img src="https://img.shields.io/github/forks/Silentely/AdBlock-Acceleration?color=orange">
 <img src="https://img.shields.io/github/issues/Silentely/AdBlock-Acceleration?color=green">
+ <br>
 <img src="https://img.shields.io/github/license/Silentely/AdBlock-Acceleration?color=ff69b4">
 <img src="https://img.shields.io/github/languages/code-size/Silentely/AdBlock-Acceleration?color=blueviolet">
 <img src="https://www.deepcode.ai/api/gh/badge?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF0Zm9ybTEiOiJnaCIsIm93bmVyMSI6IlNpbGVudGVseSIsInJlcG8xIjoiQWRCbG9jay1BY2NlbGVyYXRpb24iLCJpbmNsdWRlTGludCI6ZmFsc2UsImF1dGhvcklkIjoyNzQ2MiwiaWF0IjoxNjE0MjI0MzExfQ.xU2nL6W7rirL2Ypbm43784nnAbttXwYK5UV0KqJhN9M">
