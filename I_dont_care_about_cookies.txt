@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 329.202103080917
+! Version: 330.202103140857
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 08 Mar 2021 08:17 UTC
+! Last modified: 14 Mar 2021 07:57 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -175,7 +175,7 @@
 ###legal_cookie_privacy
 ###gdprContainer
 ###cookiesBanner
-~video.corriere.it,~video.gazzanet.gazzetta.it,~la7.it###_evh-ric
+~la7.it###_evh-ric
 ###_evh-button
 ##.dhtmlx_modal_boxbody .dhtmlx-confirm
 ##.euPolicy:not(body):not(html)
@@ -9634,7 +9634,7 @@
 ###cookieConsentHolder
 ##.bottom-cookie-consent
 ###bannerCookieLaw
-~tele2.nl,~t-mobile.nl##.footer ~ .cookie
+~coolblue.nl,~coolblue.be,~coolblue.de,~tele2.nl,~t-mobile.nl##.footer ~ .cookie
 ###cookieConfirmDiv
 ###site-banner-gdpr
 ###keks_notice
@@ -10732,7 +10732,7 @@
 ##.common-header-js .common-header-gdpr
 ###ensModalWrapper[aria-labelledby*="Consent"]
 ##.l-container.c-cookie__container
-##.cookie-consent__wrapper
+~deichmann.com##.cookie-consent__wrapper
 ##.module-cookies.cookie-bar--is-visible
 ###cookie-notice-popup
 ###page > #tenantAcceptText
@@ -12791,7 +12791,7 @@
 ##.privacy-policy-consent
 ###privacyCookieDisclaimer
 ##.lgpd-message
-##.ant-notification-notice-closable
+##.responsive > .otPlaceholder
 ###cookie-banner-wrap
 ##.hos-is-active > .hos-bar
 ###lisa-consent-container
@@ -13002,6 +13002,12 @@
 ###BarCookiesContainer
 ###navbar ~ music-notification-ribbon
 ##.CookiesHandlerWrapper
+###cookieplease.cookieplease
+###__next div[class*="cookieConsent"]
+###cookie_policy ~ .modal-backdrop
+###tooltip-cookies
+###cookie-site-container-box
+###__next div[data-test*="cookie-notification"]
 !
 ! CUSTOM RULES
 !
@@ -14635,7 +14641,6 @@ messe.de##.user-notes-notification
 ragusanews.com###barra
 curverstyle.pl##body > div:not([id]):not([class])
 pro-bikegear.com###message, .message
-cinquantamila.corriere.it###privacy_advisor
 helicomicro.com##.cp-info-bar
 pendlerinfo.org###containerDataProtection
 stargazerslounge.com##.ipsfocus-globalMessage
@@ -20207,7 +20212,7 @@ finansavisen.no###finansavisen-gdpr-disclaimer
 kapital.no###finansavisen-gdpr-disclaimer
 vzajemna.si###cookie
 akubiz.biz###cookie
-gov.br###lgpd-cookie-banner-janela
+gov.br###lgpd-cookie-banner-janela, #politicaPrivacidade
 csub.edu###consent-box
 heinrich-heine-schule.net###consent
 mocopinus.com##.disclaimer
@@ -20597,7 +20602,6 @@ spoferan.com##.fixed.overlay--active
 codit.eu##.langSelector
 ketnet.be###root > div > div:last-child
 valitor.is##.disclaimer
-robinhood.com###__next > [class*="banner"]
 hejto.pl##footer ~ .fixed
 hrt.hr###__next > div > .fixed
 bridgestone.gr##div[class*="cookiebar"]
@@ -20992,6 +20996,13 @@ giffits.de##.overlay
 tata.com##.overlayPop
 berendsen.pl##.site--wrapper ~ div
 rtl.hr##.app__content ~ div
+mediamarkt.at###mms-consent-portal-container
+syncfusion.com###cookie
+bibliotheques-specialisees.paris.fr##div[role="alertdialog"]
+robinhood.com###__next > [class*="banner"]
+goldpreis.de###cc_div
+tecnocasa.it##.cookie-status
+pwabuilder.com###gdprDiv
 !
 ! SCRIPT BLOCKING
 !
@@ -21409,7 +21420,6 @@ js.cookietagmanager.net
 /js_cookies_legal.js
 /ys_cookie_consent/*
 /cookie-consent-v2/*
-/cookieplease.js/*
 /beautiful-and-responsive-cookie-consent/*
 /cookie/banner
 /widget-module-cookies
@@ -21740,6 +21750,7 @@ nexus.ensighten.com
 /teenytinycellar.com
 /lovelydrum.com
 /hatefulrequest.com
+/aloofvest.com
 ||pcz.pl/static/js/moo-cooker.js$script
 /eucd/eucd.min.js
 ||cinabre.sudoc.abes.fr/psi_gui/js/bandeau.js$script
