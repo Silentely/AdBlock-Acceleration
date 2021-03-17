@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202103170328
+! Version: 202103170813
 ! Title: EasyPrivacy
-! Last modified: 17 Mar 2021 03:28 UTC
+! Last modified: 17 Mar 2021 08:13 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -7974,6 +7974,7 @@ _mongo_stats/
 ||sojern.com^$third-party
 ||soko.ai^$third-party
 ||sokrati.com^$third-party
+||sol-data.com^$third-party
 ||solosegment.com^$third-party
 ||solutionshindsight.net^$third-party
 ||sometrics.com^$third-party
@@ -13933,6 +13934,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||direct-events-collector.spot.im^
 ||discordapp.com^*/track
 ||discordbots.org/api/auctions/impression
+||discover-metrics.cloud.seek.com.au^
 ||discover.com/staticweb/
 ||displaymate.com/cgi-bin/stat/
 ||divxden.com^*/tracker.js
@@ -15621,6 +15623,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tracking.chacha.com^
 ||tracking.christianpost.com^
 ||tracking.conduit.com^
+||tracking.engineering.cloud.seek.com.au^
 ||tracking.epicgames.com^
 ||tracking.eurosport.com^
 ||tracking.gfycat.com/viewCount/
@@ -21696,6 +21699,7 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||bluecare.express/js/tracking/$script,~third-party
 @@||bobbibrowncosmetics.com^*/analytics.min.js$~third-party
 @@||bookmate.com^*/impressions?$xmlhttprequest
+@@||cleverpush.com/channel/$script,domain=bsdex.de
 ! @@||browser.sentry-cdn.com^$domain=cardiffmedia.co.uk|connect.shore.com|crrowd.com|eco-clobber.co.uk|gina-phillips.com|gracevanberkum.com|imperial.ac.uk|loveotv.com|onginnovations.com|simonparkes.org|stockforecasttoday.com|tekku.co.za|theangryviking1776.com|thegivingblock.com|thepittsburghoratory.org|truenews4u.com|washingtonpost.com|wix.com
 @@||brsrvr.com/api/$xmlhttprequest,domain=dollargeneral.com
 @@||c.paypal.com/da/r/fb.js$script
@@ -21775,7 +21779,6 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||friendbuy.com^$domain=butcherbox.com
 @@||gatsbyjs.com/page-data/$~third-party,xmlhttprequest
 @@||gem.cbc.ca/public/vendor/comscore.js$script,~third-party
-@@||geni.us/snippet.min.js$script,domain=pcmonitors.info
 @@||geo-targetly.com/geolocation?id$script,third-party
 @@||geo.ngtv.io/locate/$domain=hbo.com
 @@||geoip-db.com/jsonp/$script,third-party
@@ -22000,12 +22003,9 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 ! Cloudflare hcaptcha test
 @@/cdn-cgi/images/trace/captcha/js/h/transparent.gif$image,~third-party
 ! uBO-CNAME (Specific allowlists)
+@@||mycleverpush.com/iframe?$domain=bsdex.de
 @@||n8s.jp^$script,domain=nikkei.com
 @@||takeda.com.dxcloud.episerver.net^$domain=takeda.com
-! Tegna news sites
-@@/comscore.min.js$script,domain=1007sandiego.com|10tv.com|11alive.com|12news.com|12newsnow.com|13wmaz.com|760kfmb.com|971thefan.com|9news.com|abc10.com|cbs19.tv|cbs8.com|firstcoastnews.com|fox15abilene.com|kagstv.com|kare11.com|kcentv.com|kens5.com|kgw.com|khou.com|kiiitv.com|king5.com|kold.com|krem.com|ksdk.com|ktvb.com|kvue.com|myatltv.com|myfoxzone.com|newscentermaine.com|newswest9.com|thv11.com|wbir.com|wcnc.com|wfaa.com|wfmynews2.com|wgrz.com|whas11.com|wkyc.com|wltx.com|wthr.com|wtol.com|wtsp.com|wusa9.com|wvec.com|wwltv.com|wzzm13.com
-! Expedia search breakage
-@@||travel-assets.com/platform-analytics-prime/$script
 ! Mining-related allowlists
 @@||api.nyda.pro^$websocket
 @@||szukajka.tv/jsverify.php$~third-party,xmlhttprequest
@@ -22013,46 +22013,19 @@ $csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.
 @@||ws.webcaster.pro^$websocket
 ! Chrome bug (Endless loading causing site to crash https://forums.lanik.us/viewtopic.php?f=64&t=25152)
 ! Preliminarily allowlists Omniture s_code tracking pixels (script versions H.25 - H.25.2) due to breakage (https://adblockplus.org/forum/viewtopic.php?f=10&t=11378) if blocking the script causes issues
-@@||112.2o7.net/b/ss/$image,domain=espn.com.br|mtv.co.uk|nissan-global.com
-@@||122.2o7.net/b/ss/$image,domain=billetnet.dk|billettservice.no|citibank.co.in|goal.com|lippupalvelu.fi|nbcsports.com|pcworld.com|riverisland.com|techhive.com|ticketmaster.ae|ticketmaster.co.uk|ticketmaster.de|ticketmaster.ie|ticketmaster.nl|ticnet.se
 @@||abc.com/b/ss/$image
-@@||amazoncustomerservice.d2.sc.omtrdc.net/b/ss/*/H.25.1/$image
-@@||castorama.fr/b/ss/$image
-@@||fandango.com/b/ss/$image
-@@||globalnews.ca/b/ss/$image
 @@||go.com/b/ss/$image
-@@||guidestar.org/ga.$~third-party,xmlhttprequest
-@@||info.seek.com/b/ss/$image,domain=seek.com.au
-@@||kaspersky.co.uk/b/ss/$image
 @@||kohls.com/b/ss/$image
 @@||metrics.ancestry.com/b/ss/$image
-@@||metrics.brooksbrothers.com/b/ss/$image
-@@||metrics.consumerreports.org/b/ss/$image
-@@||metrics.howstuffworks.com/b/ss/$image
-@@||metrics.nationwide.co.uk/b/ss/$image
-@@||metrics.nissanusa.com/b/ss/$image
-@@||metrics.target.com/b/ss/$image
-@@||metrics.thetrainline.com/b/ss/$image
-@@||metrics.ticketmaster.com/b/ss/$image
 @@||mlb.com/b/ss/$image
-@@||nokia.com/b/ss/$image,domain=here.com
 @@||omns.americanexpress.com/b/ss/
 @@||oms.dowjoneson.com/b/ss/$image,domain=wsj.com
 @@||omtrdc.net/b/ss/$image,domain=britishairways.com|costco.com|halifax-online.co.uk|logmein.com|macworld.com|msnbc.com|nbc.com|pcworld.com|techhive.com|usanetwork.com
 @@||omtrdc.net/rest/$xmlhttprequest
-@@||royalmail.com/b/ss/$image
-@@||scorecardresearch.com/r2?$image,domain=ancestry.com|billetnet.dk|billettservice.no|lippupalvelu.fi|pcworld.com|techhive.com|ticketmaster.ae|ticketmaster.co.uk|ticketmaster.de|ticketmaster.ie|ticketmaster.nl|ticnet.se|wsj.com
-@@||scorecardresearch.com/r?$image,domain=ancestry.com|billetnet.dk|billettservice.no|lippupalvelu.fi|macworld.com|pcworld.com|techhive.com|ticketmaster.ae|ticketmaster.co.uk|ticketmaster.de|ticketmaster.ie|ticketmaster.nl|ticnet.se|wsj.com
 @@||securemetrics.apple.com/b/ss/$image
-@@||simyo.de/b/ss/$image
 @@||smetrics.aem.playstation.com/b/ss/$image
 @@||smetrics.farnell.com/b/ss/$image
 @@||smetrics.rtl.nl/b/ss/$image
-@@||smetrics.target.com/b/ss/$image
-@@||smetrics.ticketmaster.com/b/ss/$image
-@@||stat.safeway.com/b/ss/$image
-@@||sw88.disney.co.jp^$image
-@@||walmart.com/b/ss/$image
 ! Allowlists to fix broken pages of tracking companies
 ! Heatmap
 @@||heatmap.it^$domain=heatmap.com|heatmap.it|heatmap.me|heatmap.org
