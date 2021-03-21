@@ -1,10 +1,13 @@
 name: 'Auto Update AdBlock'
 on: 
-  push:
-    branches:
-    - master
+#  push:
+#    branches:
+#    - master
   schedule:
   - cron: '0 */4 * * *'
+  watch:
+    types: started
+  workflow_dispatch:
 
 jobs:
   update-adblock-rules-then-push:
