@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 330.202104081621
+! Version: 330.202104090852
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 08 Apr 2021 14:21 UTC
+! Last modified: 09 Apr 2021 06:52 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -13048,6 +13048,11 @@
 ###cookie-acceptance-layer
 ###cookiePrefPopup
 ##.cmp-ban-nocookie
+##.cf-oil[data-qa="oil-Layer"]
+##.x-cookies-banner
+##eu-cookie-action-bar
+##.gdpr-information-dialog__container
+###cookiebarBox
 !
 ! CUSTOM RULES
 !
@@ -19370,7 +19375,6 @@ onzetaal.nl##.consent
 mindmeister.com###cb-wrapper
 yandex.ru##.gdpr, div[data-react-widget-id="Gdpr"], .lc-gdpr
 testo.com###colorbox, #cboxOverlay
-carrefour.eu##.cf-oil[data-qa="oil-Layer"]
 latendresseencuisine.com##.mdc-snackbar
 fashionunited.de##.mdc-snackbar
 nordcheckout.com###__next > .App > div
@@ -20033,7 +20037,6 @@ sync.me###cookies
 futbollab.com###overbox-politica
 ivideon.com##.iv-ui-website-cookie-compliance, .iv-persistent-notification[data-id*="cookie"], .iv-ui-q2a-cookie-compliance
 oxi-corp.com##.cookies-modal
-aok.de###___gatsby footer > .fixed
 cam4.com###promptArea
 cam4.es###promptArea
 cam4.fr###promptArea
@@ -21088,6 +21091,10 @@ rnbee.ru###yw-cookie-gdpr
 jeanscentre.nl###gatsby-focus-wrapper > div:last-child
 infopedia.pt###klaro-pe-window
 uni-tuebingen.de##.in2-modal__blackbox, #privacy-background, #privacy-container
+eifel-antik.de##.jmg-googlemaps-dsgvo-notification
+flyrotax.com###CookieSettingsContainer
+amorespossiveis.com.br###idLGPD
+aok.de###___gatsby footer > .fixed
 !
 ! SCRIPT BLOCKING
 !
@@ -22103,7 +22110,7 @@ cookies$domain=pirolam.pl
 /he-consent/*$domain=dennree.de
 /uc_cookie$domain=gastro24.de
 /Privacy$domain=bopla.de
-cmp.$domain=lemonde.fr|nouvelobs.com|huffingtonpost.fr|telerama.fr|courrierinternational.com
+cmp.$domain=lemonde.fr|nouvelobs.com|huffingtonpost.fr|telerama.fr|courrierinternational.com|vodkaster.com
 brsimg.com/gdpr$script,domain=boursorama.com
 trcking.min.js$domain=canalplus.com
 !
