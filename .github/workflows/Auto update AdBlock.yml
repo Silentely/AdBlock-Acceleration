@@ -141,7 +141,7 @@ jobs:
               git commit -m "Updated at $(date)" -a
             fi
 
-      - name: GitHub Push sync #推送至远程库
+      - name: GitHub Push #推送至远程库
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.TOKEN }}
