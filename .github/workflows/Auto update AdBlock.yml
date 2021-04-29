@@ -141,14 +141,10 @@ jobs:
               git commit -m "Updated at $(date)" -a
             fi
 
-
       - name: GitHub Push sync #推送至远程库
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.TOKEN }}
-          branch: ${{ github.ref }}
-          repository: 'Silentely/AdBlock-Acceleration'
-          force: true
 
           
 #      - name: WeChat notification #用于微信推送通知（如有需要删除行头注释）
