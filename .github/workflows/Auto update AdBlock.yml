@@ -147,10 +147,11 @@ jobs:
           personal_token: ${{ secrets.GITHUB_TOKEN }}
           external_repository: 'Silentely/AdBlock-Acceleration'
           publish_branch: 'master'
-          publish_dir: 
           user_name: 'github-actions[bot]'
           user_email: '22141172+Silentely@users.noreply.github.com'
           full_commit_message: "Update docs from ${{ github.ref }}"
+          directory: 'AdBlock-Acceleration'
+          force: true
           
 #      - name: WeChat notification #用于微信推送通知（如有需要删除行头注释）
 #        run: curl https://sc.ftqq.com/${{ secrets.ServerChan }}.send?text=${{ env.FILE_NAME }}AdBlock规则已更新
