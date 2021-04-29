@@ -145,16 +145,14 @@ jobs:
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.GIT_TOKEN }}
-
-      - name: Commit and push changes
-        uses: peaceiris/actions-gh-pages@v3
+          
+      - name: GitHub Push sync #推送至远程库
+        uses: ad-m/github-push-action@v0.6.0
         with:
-          personal_token: ${{ secrets.TOKEN }}
-          external_repository: 'Silentely/AdBlock-Acceleration'
-          publish_branch: 'master'
-          user_name: 'github-actions[bot]'
-          user_email: '22141172+Silentely@users.noreply.github.com'
-          full_commit_message: "Update docs from ${{ github.ref }}"
+          github_token: ${{ secrets.TOKEN }}
+          branch: ${{ github.ref }}
+          repository: 'Silentely/AdBlock-Acceleration'
+
           
 #      - name: WeChat notification #用于微信推送通知（如有需要删除行头注释）
 #        run: curl https://sc.ftqq.com/${{ secrets.ServerChan }}.send?text=${{ env.FILE_NAME }}AdBlock规则已更新
