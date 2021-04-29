@@ -130,6 +130,14 @@ jobs:
           file-url: https://secure.fanboy.co.nz/fanboy-annoyance.txt
           file-name: fanboy-annoyance.txt
 
+      - name: Checkout github pages
+        uses: actions/checkout@v2
+        with:
+          repository: 'Silentely/AdBlock-Acceleration'
+          path: './'
+          persist-credentials: false
+          fetch-depth: 0
+
       - name: Commit Changes
         run: |
           if [ -z "$(git status --porcelain)" ]; then 
@@ -145,7 +153,8 @@ jobs:
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.TOKEN }}
-#          repository: "Silentely/AdBlock-Acceleration"
+          repository: 'Silentely/AdBlock-Acceleration'
+          directory: ./
           
 #      - name: WeChat notification #用于微信推送通知（如有需要删除行头注释）
 #        run: curl https://sc.ftqq.com/${{ secrets.ServerChan }}.send?text=${{ env.FILE_NAME }}AdBlock规则已更新
