@@ -144,7 +144,7 @@ jobs:
       - name: Commit and push changes
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           external_repository: 'Silentely/AdBlock-Acceleration'
           publish_branch: 'master'
           user_name: 'github-actions[bot]'
