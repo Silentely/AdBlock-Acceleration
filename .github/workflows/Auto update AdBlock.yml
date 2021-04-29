@@ -144,12 +144,12 @@ jobs:
       - name: GitHub Push #推送至库
         uses: ad-m/github-push-action@v0.6.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GIT_TOKEN }}
 
       - name: Commit and push changes
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.GIT_TOKEN }}
+          personal_token: ${{ secrets.TOKEN }}
           external_repository: 'Silentely/AdBlock-Acceleration'
           publish_branch: 'master'
           user_name: 'github-actions[bot]'
