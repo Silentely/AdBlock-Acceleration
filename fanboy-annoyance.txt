@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: vxVj4NT+k8CQ4WSe7zO0ew
-! Version: 202105020800
+! Checksum: AtHxU/lOZSJN9zP3v8e/3Q
+! Version: 202105040400
 ! Title: Fanboy's Annoyance List
-! Last modified: 2021-05-02 08:00 UTC
+! Last modified: 2021-05-04 04:00 UTC
 ! Expires: 9 days (update frequency)
 ! Homepage: https://easylist.to/
 ! License: http://creativecommons.org/licenses/by/3.0/
@@ -6463,6 +6463,7 @@ _vpcookieconsent/
 ##.mobile-subscribeBox
 ##.mobile_newsletter
 ##.mobileadvert
+##.mod-newsletter-signup
 ##.mod-newsletters
 ##.modal--newsletter
 ##.modal-email-widget
@@ -8409,6 +8410,7 @@ _vpcookieconsent/
 ##.push-notification-opt-in
 ##.push-notification-popover
 ##.push-notification-prompt
+##.push-notifications-primer
 ##.push-overlay
 ##.push-popup
 ##.push-subscription-alert
@@ -21855,6 +21857,7 @@ _vpcookieconsent/
 ###AlertaCookies
 ###AllowCookieContainer
 ###AllowCookiesMessage
+###AllowCookiesModal
 ###AllowCookiesWrapper
 ###AnalyticsPrompt
 ###AppCookieBar
@@ -35590,6 +35593,7 @@ _vpcookieconsent/
 ||consent.23g.io^
 ||consent.cmp.oath.com^
 ||consent.theneweuropean.co.uk^
+||cookies.lmt.lv^
 ||dam.bbcchannels.com^*/outside-iframe.js
 ||duotonesports.com^*/public/ccm
 ||emerse.com/consent.js
@@ -36209,6 +36213,7 @@ bplans.com###footer-liveplan
 wired.co.uk###footer-main
 mpora.com###footer-nag
 thepostgame.com###footer-overlay-container
+lmt.lv###footerBanner
 computerworlduk.com###footerIcons
 viking-direct.co.uk###footerPersistent
 becomegorgeous.com###footerPopSS
@@ -39196,7 +39201,7 @@ conversationalist.org,martechadvisor.com,worldcrunch.com###myModal
 insideclimatenews.org###news-signup
 epicurious.com###newsLetter
 irishtimes.com###newsdigest-widget
-6wunderkinder.com,7digital.com,aawsat.com,about.com,bloomberg.com,boldsky.com,buzznet.com,celebuzz.com,cjr.org,dailymaverick.co.za,digitaltrends.com,disclose.tv,download3k.com,drivespark.com,etonline.com,filmibeat.com,fyiliving.com,gardeningaustralia.com.au,gizbot.com,healthguru.com,infoworld.com,langenscheidt.com,lessthan3.com,malwarebytes.org,mayoclinic.com,mcvuk.com,mediaite.com,movies.com,nativeplanet.com,nme.com,ohmyrockness.com,oneindia.com,opendemocracy.net,paleohacks.com,penny-arcade.com,pewforum.org,pewresearch.org,pinknews.co.uk,publicradio.org,quantamagazine.org,runningtimes.com,salemnews.net,si.com,styleite.com,techvert.com,theamericanscholar.org,thecommentator.com,themarysue.com,thetruthaboutcars.com,thewalrus.ca,tomshardware.com,usatoday.com,vetstreet.com,wdcb.org,wimp.com,youbeauty.com###newsletter
+6wunderkinder.com,7digital.com,aawsat.com,about.com,bloomberg.com,boldsky.com,buzznet.com,celebuzz.com,cjr.org,codefresh.io,dailymaverick.co.za,digitaltrends.com,disclose.tv,download3k.com,drivespark.com,etonline.com,filmibeat.com,fyiliving.com,gardeningaustralia.com.au,gizbot.com,healthguru.com,infoworld.com,langenscheidt.com,lessthan3.com,malwarebytes.org,mayoclinic.com,mcvuk.com,mediaite.com,movies.com,nativeplanet.com,nme.com,ohmyrockness.com,oneindia.com,opendemocracy.net,paleohacks.com,penny-arcade.com,pewforum.org,pewresearch.org,pinknews.co.uk,publicradio.org,quantamagazine.org,runningtimes.com,salemnews.net,si.com,styleite.com,techvert.com,theamericanscholar.org,thecommentator.com,themarysue.com,thetruthaboutcars.com,thewalrus.ca,tomshardware.com,usatoday.com,vetstreet.com,wdcb.org,wimp.com,youbeauty.com###newsletter
 details.com,gossipcop.com,gq.com,salon.com,self.com,soft112.com###newsletter-form
 wbur.org###newsletter-signup-1
 hardware.info###newsletterForm
@@ -40409,6 +40414,9 @@ stereogum.com##.zergnet-holder
 ! Bug in uBo: https://github.com/gorhill/uBlock/issues/1885
 newyorker.com##div[class^="NewsletterSubscribe_"]
 buzzfeed.com##div[id^="mod-newsletter-signup-"]
+! Include ubO specific
+!#include easylist_cookie/easylist_cookie_specific_uBO.txt
+!#include fanboy_annoyance_specific_uBO.txt
 kizi.com###kizi-popover-dialog
 livejapan.com###ptcd_modal_dialog
 google.com###pushdown
@@ -41901,6 +41909,8 @@ google.ae,google.at,google.be,google.bg,google.by,google.ca,google.ch,google.cl,
 ndtv.com##a[href^="https://twitter.com/intent/tweet?"]
 ndtv.com##a[href^="https://www.facebook.com/sharer.php?u="]
 bbc.com##div[class*="TagShareWrapper"]
+! Include ubO specific
+!#include fanboy_social_specific_uBO.txt
 jman.tv###ActionBar
 sausageandciderfestival.co.uk###CC_Bar
 ambulance-photos.com,bus-and-coach-photos.com,classic-and-vintage-cars.com,construction-and-excavation.com,dream-car-photos.com,fire-engine-photos.com,forklift-photos.com,hotrods-customcars.com,military-vehicle-photos.com,motorcycles-motorbikes.com,oilrig-photos.com,planesandchoppers.com,racing-car-photos.com,shipsandharbours.com,taxi-photos.com,traction-engines.net,tractor-photos.com,train-photos.com,transport-models.com,truck-photos.net,vehicle-livery.net,yourboatphotos.com###CQ
@@ -42852,6 +42862,8 @@ walmart.ca##.privacy-open > div > [class] > div[class^="css"]
 bing.com##div[data-cookie]
 ! Multi-national sites
 spot-a-shop.at,spot-a-shop.de,spot-a-shop.fi,spot-a-shop.fr,spot-a-shop.pl,spot-a-shop.se###__next > div > div > div[class^="css"]
+! Include ubO specific
+!#include easylist_cookie_specific_uBO.txt
 !------------------------Specific ABP/uBO rules ------------------------!
 ! ABP Sepecific fixes
 ! ABP Sepecific fixes
@@ -46140,6 +46152,7 @@ macorlux.pt##.cookie
 abola.pt,assismatica.pt,conforama.pt,metalomarao.pt,perfumesclub.pt##.cookies
 tudogostoso.com.br##.disclaimer
 ericeirasurfskate.pt##.footer-fixed-bar
+infojobs.com.br##.modal-backdrop
 lidl.pt##.notification
 jaguarportugal.pt,landrover.pt##.notificationBars
 timing.pt##.policy
@@ -47049,6 +47062,7 @@ nvidia.pl#@#.social-newsletter
 linkis.com#@#.social-panel
 techspot.com,tuba.pl#@#.social-popup
 chrisblattman.com#@#.social-post
+kingjamesbibleonline.org#@#.social-sec
 infox.ru#@#.social-section
 lafeltrinelli.it#@#.social-separator
 daenischesbettenlager.at,daenischesbettenlager.de,howtogeek.com,jysk-ks.com,jysk.al,jysk.am,jysk.ba,jysk.be,jysk.bg,jysk.by,jysk.ca,jysk.ch,jysk.co.id,jysk.co.uk,jysk.com,jysk.com.cy,jysk.com.kw,jysk.com.mt,jysk.cz,jysk.dk,jysk.ee,jysk.es,jysk.fi,jysk.fr,jysk.ge,jysk.gr,jysk.hr,jysk.hu,jysk.ie,jysk.it,jysk.kz,jysk.lt,jysk.lv,jysk.md,jysk.me,jysk.mk,jysk.nl,jysk.no,jysk.pl,jysk.pt,jysk.ro,jysk.rs,jysk.se,jysk.si,jysk.sk,jysk.ua,jysk.vn,jyskthailand.com,pisiffik.gl,rumfatalagerinn.is,skemman.fo#@#.social-share
@@ -47207,6 +47221,7 @@ franziskaner-weissbier.de,xmradio.nl#@##accept-cookies
 epolisbari.com#@##accept_cookie
 aixfoam.com,aixfoam.de,aixfoam.dk,aixfoam.fi,aixfoam.fr,aixfoam.nl,aixfoam.se#@##cc-notification
 aixfoam.com,aixfoam.de,aixfoam.dk,aixfoam.fi,aixfoam.fr,aixfoam.nl,aixfoam.se#@##cc-notification-wrapper
+bundesanzeiger.de#@##cc_banner
 bing.com#@##cc_container
 datakauppa.fi#@##cliSettingsPopup
 youtube.com#@##consent-bump
@@ -47662,7 +47677,7 @@ yoigo.com#@#thor-cookies
 @@||quantcast.mgr.consensu.org^*/choice.js$domain=bikeperfect.com|cyclingnews.com|digitalcameraworld.com|einthusan.tv|gamesradar.com|guitarplayer.com|independent.co.uk|indy100.com|laptopmag.com|livescience.com|livingetc.com|mahjong.com|musicradar.com|pcgamer.com|realhomes.com|space.com|t3.com|techradar.com|tomsguide.com|tomshardware.com|whathifi.com|whattowatch.com
 @@||riwal.com/includes/js/components/cookiebar.js$script
 @@||santepubliquefrance.fr/rgpd/smarttag.js$script,~third-party
-@@||sdk.privacy-center.org^$script,domain=allocine.fr|corrieredellosport.it|franceculture.fr|franceinter.fr|francetvinfo.fr|gamestar.de|ivoox.com|lavanguardia.com|mundodeportivo.com|tuttosport.com
+@@||sdk.privacy-center.org^$script,domain=allocine.fr|corrieredellosport.it|franceculture.fr|franceinter.fr|francetvinfo.fr|gamestar.de|ivoox.com|jeuxvideo.com|lavanguardia.com|mundodeportivo.com|tuttosport.com
 @@||shop.dangerfield.com.au/min/$script,stylesheet
 @@||sky.com^*_cookie_$script
 @@||socialtigers.pl/js/plugins/jquery.cookiepolicy.js
