@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202105051210
+! Version: 202105051542
 ! Title: EasyPrivacy
-! Last modified: 05 May 2021 12:10 UTC
+! Last modified: 05 May 2021 15:42 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -4098,6 +4098,7 @@
 /stats-js.cgi?
 /stats-listener.js
 /stats-tracking.js
+/stats.*/event
 /stats.*/hits/*
 /stats.*/tracker.
 /stats.asp?id
@@ -7330,6 +7331,7 @@ _mongo_stats/
 ||mediaweaver.jp^$third-party
 ||mediego.com^$third-party
 ||mega-stats.com^$third-party
+||megastats.net^$third-party
 ||memecounter.com^$third-party
 ||memo.co^$third-party
 ||mercadoclics.com^$third-party
@@ -12733,6 +12735,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||datacomm.ch^*/count.cgi?
 ||et.twyn.com^
 ||events.kaloo.ga^$third-party
+||events.onet.pl^
 ||export.newscube.de^$~subdocument
 ||fc.webmasterpro.de^$third-party
 ||filmaster.tv^*/flm.tracker.min.js
@@ -15148,7 +15151,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||quintcareers.4jobs.com/Common/JavaScript/functions.tracking.js
 ||quora.com/ajax/batched_log_
 ||quotesonic.com/vendor/pixel.cfm
-||qwant.com/v2/api/ux/surveys?
+||qwant.com/*/api/ux/surveys?
+||qwant.com/apm/intake/*/rum/events
 ||qz.com/log
 ||r.bbci.co.uk^
 ||r.my.com^
@@ -24126,12 +24130,14 @@ ytics.disneyplus.com^
 ||marktplaats.nl/add_counter_image.
 ||marktplaats.nl/metrics/
 ||marktplaats.nl/px/
+||npo-data.nl/tag/v3/npotag.js
 ||rtl.nl/system/track/
 ||sanoma.nl/pixel/
 ||sat.sanoma.fi^
 ||stats.fd.nl^
 ||temptation.ad.nl^
 ||tijd.be/fb/?
+||topspin.npo.nl^
 ||tweakers.net/x/scripts/min/TyYQlL.js
 ||tweakers.net^*&p=$image
 ||vroom.be^*/stats.js?
