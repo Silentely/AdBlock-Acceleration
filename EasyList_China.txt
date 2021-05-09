@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: dCevQfYPVASIZtpzB3PMvg
-! Version: 202105091212
+! Checksum: CJ6MUdgpJomkI8J0/SqBsg
+! Version: 202105091622
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last Modified: 09 May 2021 12:12 UTC
+! Last Modified: 09 May 2021 16:22 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: http://abpchina.org/forum/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -1219,6 +1219,7 @@ _xiuno_com_ad/
 ##table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"]
 !----------------------------------Ads-Union----------------------------------!
 .8ox.cn
+||abc88866.com^
 .cc/s.php?id=$script,third-party
 .cn/?ss=$script,third-party
 .cn/d/*-*-*.ap|$script,third-party
@@ -8665,6 +8666,7 @@ _yad_jsonp_
 ||zzzyk.com/js/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+zhideqiang.com##A[href*=".taobao.com"]
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -18119,10 +18121,6 @@ qq.com#@#.side_ad
 ||*^sdtfrom=^$media,rewrite=abp-resource:blank-mp3,domain=qq.com
 ||lts*.qq.com^*.ts?index=$media,rewrite=abp-resource:blank-mp3,domain=qq.com
 !#Rewrite filters
-!#Rijutv.com
-$script,third-party,domain=rijutv.com
-@@||cdn.bootcss.com^$script,domain=rijutv.com
-@@||cdn.staticfile.org^$script,domain=rijutv.com
 !#Rjno1.com
 rjno1.com##div[style="display:none"]
 ||rjno1.com^$csp=script-src 'self' *;style-src
