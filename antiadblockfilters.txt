@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: sb64rJBsNaFmmpPQbUAuTw
-! Version: 202105210820
+! Checksum: WVlhJNesCWQDsVDWLQ7SSg
+! Version: 202105310900
 ! Title: Adblock Warning Removal List
-! Last modified: 21 May 2021 08:20 UTC
+! Last modified: 31 May 2021 09:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -46,15 +46,28 @@ rtlxl.nl##.adblock
 spele.nl##.adblocker
 koolhydraatarmerecepten.info##body > [style^="z-index: 1000000; "]
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_english.txt ***
+! General block
+/adblock-alerter/js/adblock_alerter.js
+/adblock-img.
+! General hide
+##.ad-blocker-warning
+##.pane-emediate
+! Specific block
+||amazonaws.com^*/abb-msg.js$domain=hardocp.com
+||corrosif.science^$domain=filerev.cc|pencurimovie.pw
+||rockradio.com^*/blockadblock-$script,domain=rockradio.com
+||static.game-state.com/images/main/alert/replacement/
+||www.google.*/ajax/pi/phd?abd=0$xmlhttprequest
+! Specific hide
+mediafire.com###abnotify
 flightradar24.com###bottomRightPanel
 videofun.me###flowplayer > div[class][style]:first-child
 abc-fonts.me###galepro-core-adb-enabled
 yocast.tv###ra9e
 flightradar24.com###responsiveBottomPanel
+outlook.live.com##.N3k7EN5vRGTrONWBPg250
 myanimelist.net##._unit
-##.pane-emediate
 ##.ad-blocker-warning
-mediafire.com###abnotify
 biggestplayer.me##.adblock + *
 nexusmods.com##.areplacer
 hearthhead.com,wowhead.com##.block-bg
@@ -70,20 +83,14 @@ toolslib.net##.row > .col-md-7 > .panel-default
 hearthhead.com,thottbot.com,wowhead.com##.sidebar-bg
 biggestplayer.me##.soret
 spanishdict.com##.whitelist
-pkmods.com##body > div[style*="z-index"][style*="background"]
-/adblock-alerter/js/adblock_alerter.js
-/adblock-img.
 play44.net,videobug.net,videofun.me,vidzur.com,yucache.net##[style^="position: absolute; width: 100%;"]
+pkmods.com##body > div[style*="z-index"][style*="background"]
 strikeout.co,vipbox.sx,vipleague.co,vipleague.is##div[style="display: block;"]
 nexusmods.com##div[style="float: left; width: 728px; height: 90px; background: #313131;"]
 playonlinux.com##div[style="text-align:center;  border-radius:7px; width:160px;  border:1px solid #666666;  margin-left:5px;padding-right:5px;color:#FFF;  background-color:#666;font-family:Maven Pro,century gothic, arial, helvetica, sans serif;padding-top:94px;  height:600px;  padding-left:5px; font-size:18px; "]
 byzoo.org,videobug.net##div[style^="position: absolute; width: 300px;"]
+outlook.live.com._6tqjFb_HmyQup_NPe6dhC
 homerun.re,strikeout.co,vipbox.sx,vipleague.ch,vipleague.co,vipleague.is,vipleague.me##span[id][style] > div[id]:first-child:last-child
-||amazonaws.com^*/abb-msg.js$domain=hardocp.com
-||corrosif.science^$domain=filerev.cc|pencurimovie.pw
-||rockradio.com^*/blockadblock-$script,domain=rockradio.com
-||static.game-state.com/images/main/alert/replacement/
-||www.google.*/ajax/pi/phd?abd=0$xmlhttprequest
 ! NSFW
 redtube.com###as_131
 redtube.com###slidePanelContainerAB
@@ -464,6 +471,7 @@ peers.tv##.moanerwrap
 megatest.online##.msg-AdBlock
 ykt.ru##.n-banner--adblocked
 animeland.su,itcats.ru,nekto.me,noadsradio.ru,sharkgame.ru,studies.in.ua,w10.jeanzzz.ru##.no-adb
+yarik-sat.com##.noadb
 mail.rambler.ru##.notification-warning
 delfi.lv##.notification-widget
 radio.yandex.by,radio.yandex.kz,radio.yandex.ru,radio.yandex.ua##.notify
@@ -521,7 +529,7 @@ torrnado.win##body > div > .a-overlay
 olegon.ru##body > div:not([id]):not([class])[style^="color"][style*="position: fixed; width: 99%"]
 finget.ru,katalog-aktsii.ru,rp5.by,rp5.kz,rp5.ru,rp5.ua,vikings-warofclans.ru##body > div:not([id]):not([class])[style^="position"][style*="background"][style*="z-index"]
 just-for-fun.ru##body > div[class*="-container"][class*="-hide"]
-gametech.ru,mixnews.lv,vesty.co.il,woman.ru,www.ixbt.com##body > div[class]:not([id])[style*="position"][style*="fixed"][style*="z-index:"][style*="background-color"]
+gametech.ru,mixnews.lv,reshish.ru,vesty.co.il,woman.ru,www.ixbt.com##body > div[class]:not([id])[style*="position"][style*="fixed"][style*="z-index:"][style*="background-color"]
 factorio.su##body > div[class][style*="background"][style*="display: block"]
 gdekluet.ru##body > div[class^="stop-block"]
 admin.rainbow-online.ru,fastpic.ru,gitjournal.tech,logist.uxxo.ru,maxpark.com,meteoservice.ru,newsland.com,pawno-info.ru,scrin.org,smolensk-auto.ru,smolensk-auto.site##body > div[id]:not([class])[style="display: block;"]
@@ -576,7 +584,7 @@ bigpuzzle.ru##td[valign="top"][width="240px"][height="600"]
 ||buhgalter911.com^*/blocker.
 ||fainaidea.com/wp-content/uploads/*/*?ver=$script,stylesheet,domain=fainaidea.com
 ||fairtop.in/template/js/fdetect.js
-||fundingchoicesmessages.google.com^$domain=gametech.ru|mixnews.lv|vesty.co.il|woman.ru|www.ixbt.com
+||fundingchoicesmessages.google.com^$domain=gametech.ru|mixnews.lv|reshish.ru|vesty.co.il|woman.ru|www.ixbt.com
 ||gamemag.ru/assets/*/js.cookie.js
 ||helpsetup.ru/home/solnisko.php
 ||i140.ru/js/etxm*.js|$script
