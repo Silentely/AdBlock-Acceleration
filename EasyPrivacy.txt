@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202105310851
+! Version: 202106012155
 ! Title: EasyPrivacy
-! Last modified: 31 May 2021 08:51 UTC
+! Last modified: 01 Jun 2021 21:55 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1145,6 +1145,7 @@
 /bundles/tracciamento?
 /busting/*/gtm-
 /buzz_stats.
+/bypassma.js
 /bypassmajs|
 /bypasspiphp?
 /byside_webcare.
@@ -2216,11 +2217,11 @@
 /google_analytics.$~image
 /google_analytics/*
 /google_analytics3_
-/google_analytics_$domain=~github.com
+/google_analytics_$script,domain=~github.com
 /google_page_track
 /google_tag.
 /google_tag/*
-/google_tag_
+/google_tag_$script
 /google_tracker.
 /GoogleAdnalyticsJs?
 /googleana.
@@ -5550,6 +5551,7 @@ cgi-bin/counter
 .ct.sendgrid.net/$image
 .delivery-status.com/open?
 .demdex.net/event?
+.doubleclick.net/$image
 .duolingo.com/open/
 .efeedbacktrk.com/$third-party
 .emltrk.com/
@@ -8191,8 +8193,10 @@ _mongo_stats/
 ||t-analytics.com^$third-party
 ||tag4arm.com^$third-party
 ||tagcommander.com^$third-party
+||tagdatax.com^$third-party
 ||tagmngrs.com^$third-party
 ||tagsrvcs.com^$third-party
+||tagstaticx.com^$third-party
 ||tagtray.com/api^$third-party
 ||tamgrt.com^$third-party
 ||tapad.com^$third-party
@@ -9738,6 +9742,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tyxo.bg^$third-party
 ! Chinese
 ||180.76.2.18^$third-party,domain=~baidu.ip
+||365dmp.com^$third-party
 ||50bang.org^$third-party
 ||51yes.com^$third-party
 ||99click.com^$third-party
@@ -10436,6 +10441,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||amazonaws.com/initialize/$third-party
 ||amazonaws.com/js/reach.js
 ||amazonaws.com/ki.js/
+||amazonaws.com/lp/js/tag.js?
 ||amazonaws.com/new.cetrk.com/
 ||amazonaws.com/prod/entities
 ||amazonaws.com/prod/main?ref=$image,third-party
@@ -11764,6 +11770,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||optimizely.appspot.com^$third-party
 ||ora.tv/j/ora_evttracking.js
 ||orb.ee/collect
+||ordergroove.com/log/offer?
 ||orts.wixawin.com^$third-party
 ||outbrain.com/nanoWidget/externals/cookie/
 ||outbrain.com/widgetOBUserSync/
@@ -12685,6 +12692,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||he7ll.com/api/js/ec-
 ||ipqualityscore.com/api/$third-party
 ||mhxk.com^*/main/entry.common.$script
+||mjca-yijws.global.ssl.fastly.net^
 ||nofraud.com/js/device.js
 ||nofraud.com^*/customer_code.js
 ||poll-maker.com^*/scpolls.js
@@ -15299,6 +15307,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||reuters.com^*/widget-rta-poc.js
 ||reutersmedia.net^*/tracker-article*.js
 ||revsci.tvguide.com^
+||rfk.biglots.com^
 ||rgbstock.com/logsearch/
 ||rightmove.co.uk/ps/images/logging/timer.gif?
 ||rightstuf.com/phplive/ajax/footprints.php
@@ -15752,6 +15761,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||thefashionspot.com^*/pb.track.js
 ||thefilter.com^*/CaptureRest.ashx?cmd=
 ||thefind.com/page/sizelog?
+||thefreedictionary.com/_/tr.ashx?
 ||thefreedictionary.com/x/tp.ashx
 ||thefreedictionary.com^*/track.ashx?
 ||thefrisky.com/?act=
