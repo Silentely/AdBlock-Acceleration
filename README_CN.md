@@ -103,4 +103,4 @@
 ![](https://starchart.cc/Silentely/AdBlock-Acceleration.svg)
 
 ## 访问量
-![](http://profile-counter.glitch.me/silentely/count.svg)
+![](http://profile-counter.glitch.me/Silentely/count.svg)

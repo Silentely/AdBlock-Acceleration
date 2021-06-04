@@ -102,7 +102,7 @@ Just copy the table below and use the accelerated address of the corresponding r
 ![](https://starchart.cc/Silentely/AdBlock-Acceleration.svg)
 
 ## Views
-![](http://profile-counter.glitch.me/silentely/count.svg)
+![](http://profile-counter.glitch.me/Silentely/count.svg)
 
 
 
