@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: GqvYkAUtMFkF41DWp8hqSQ
-! Version: 202106180800
+! Checksum: jDwBtLGvB713kNt5NOetgQ
+! Version: 202106181200
 ! Title: Fanboy's Annoyance List
-! Last modified: 2021-06-18 08:00 UTC
+! Last modified: 2021-06-18 12:00 UTC
 ! Expires: 9 days (update frequency)
 ! Homepage: https://easylist.to/
 ! License: http://creativecommons.org/licenses/by/3.0/
@@ -3933,7 +3933,7 @@ _youtube_social_
 /cookie-prompt.
 /cookie-reglement.
 /cookie-richtlinie.
-/cookie-script.
+/cookie-script.$domain=~cookie-script.com
 /cookie-service/*
 /cookie-terms.
 /cookie-warning.
@@ -26046,6 +26046,7 @@ _vpcookieconsent/
 ###enablecookies
 ###enedue_cookieBox
 ###enhanced-privacy-popup
+###ensConsentWidget
 ###ensModalWrapper[aria-labelledby*="Consent"]
 ###ensNotifyBanner
 ###ens_pr_mini.ens_pr_mini
@@ -31753,8 +31754,8 @@ _vpcookieconsent/
 ##.eu-cookie
 ##.eu-cookie-banner
 ##.eu-cookie-bar-notification
-##.eu-cookie-compliance-banner
 ##.eu-cookie-compliance-banner-info
+##.eu-cookie-compliance-banner:not(body):not(html)
 ##.eu-cookie-compliance-popup-open
 ##.eu-cookie-info
 ##.eu-cookie-law
@@ -42723,6 +42724,7 @@ linkedin.com##.global-alert
 houseoffraser.co.uk##.global-messages
 mozilla.org##.global-notice
 wankz.com##.global-notif
+cookiebot.com##.granify-widget-container
 guggenheim.org##.guggen-consent
 office.com##.headPopup
 veeam.com##.header-component__messages-overlay
