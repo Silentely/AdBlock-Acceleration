@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 331.202106241531
+! Version: 331.202106281415
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 24 Jun 2021 13:31 UTC
+! Last modified: 28 Jun 2021 12:15 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -1085,7 +1085,7 @@
 ###metaCiasteczko
 ###cookiesTab
 ###cookies_contain
-~stihl.de,~camping.info##.cookie-layer:not(body):not(html)
+###spa-root div[class*="CookiesAlert"]
 ##.cookie-layerbody #cookier + #cortina
 ##.nav__cookies:not(body):not(html)
 ###cookie-policy-info
@@ -1684,7 +1684,7 @@
 ###id_msgCnil
 ###jQAlertAcceptCookie
 ###cookies-toolbar
-~imoradar24.ro,~viberate.io,~autopunkt.pl###modal-cookies
+###cookie-policy-app
 ##.cookie-slide-container
 ###a3_cookie
 ###header-info-cookie
@@ -10158,7 +10158,7 @@
 ##.eu-coookie-toolbar:not(body):not(html)
 ##app-footer .cookies_use
 ###gdpr_cookies.cookies.visible
-##footer #yourCookieChoices
+###yourCookieChoices
 ##.a-cookiebar:not(body):not(html)
 ###ensNotifyBanner ~ .ensModalBackdrop
 ##.cookiesBarOverlay
@@ -11407,7 +11407,7 @@
 ##.cookie-consent-notification
 ###cookie-data-container
 ##.go-cookies-warning
-~bienvenue-a-la-ferme.com,~normandiealaferme.com,~lagazettedemontpellier.fr,~sufilog.com###orejime > .orejime-AppContainer
+~bienvenue-a-la-ferme.com,~normandiealaferme.com,~lagazettedemontpellier.fr,~sufilog.com##.orejime-AppContainer
 ##.cookies-rodo
 ###bongdpr
 ##.fixed-bottom[data-name*="CookieConsent"]
@@ -13105,8 +13105,8 @@
 ##.eu-cookie-tips
 ##.cookie-tips
 ###footer ~ div .oreo-message
-###spa-root div[class*="CookiesAlert"]
-###cookie-policy-app
+###cookieBarRGPDOverlay
+###cookieBarRGPDPop
 !
 ! CUSTOM RULES
 !
@@ -17511,7 +17511,6 @@ sainsburysenergy.com###cookie
 tunnelmb.net###app-root > footer ~ div
 cryps.info###cook
 mforos.com##body > style + div[id][class]:not([style])
-uol.com.br##.m1-footer-messages
 cesanta.com##body > div:not([id]):not([class])
 littlethings.com###___gatsby > div[role="group"] .headroom-wrapper + div[class^="css"]
 elca.ch##.elca-gdpr
@@ -18610,7 +18609,6 @@ ebz-bildung.de##.cookie
 fbhvc.co.uk###cookies
 hackdoor.io##.snackbar
 fh-dortmund.de###cookies
-smitegame.com##.acq-footer ~ div, .home-community ~ div
 lifebutiken.se###top-anchor ~ div ~ div:last-child
 cafe.se##.cookie-consent
 psychicmonday.com###lawdiv
@@ -20609,7 +20607,6 @@ hrt.hr###__next > div > .fixed
 bridgestone.gr##div[class*="cookiebar"]
 genesis.com##.privacy-dialog
 3dprinting.com##.mdl-js-bigsnackbar
-belgium.be##.cookies
 sammyspizza.de##.responsiveFooterBar
 oishisushi.club##.responsiveFooterBar
 daffer.sk##footer + div + div
@@ -21200,6 +21197,14 @@ groovy.bot###__layout > div > .fixed
 revolut.com##div[role="dialog"][aria-label="Cookie preferences"]
 focus-home.com###app > nav + div
 wayofleaf.com###cpop
+crucial.com##.app-light > div[style*="fixed"]
+concursosnobrasil.com.br###lgpd
+uol.com.br##.ntv-lgpd-consent, .ms-footer-message
+japanmotors.pl##.cookie
+nordiskporselen.com###kjeks
+belgium.be##.cookies
+smitegame.com##.page > .is-visible
+ryd.one##.xy-consent
 !
 ! SCRIPT BLOCKING
 !
@@ -22237,6 +22242,7 @@ trcking.min.js$domain=canalplus.com|canal-plus.com
 /ccm/*$domain=silverfast.com
 /messagingNoTcfApi.js$domain=aftenposten.no
 /consent-layer/*$domain=bahn.de
+/checkcookies.js$domain=iracing.com
 !
 ! FILTERLIST ONLY
 !
