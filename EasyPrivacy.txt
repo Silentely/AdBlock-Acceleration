@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202107100731
+! Version: 202107101116
 ! Title: EasyPrivacy
-! Last modified: 10 Jul 2021 07:31 UTC
+! Last modified: 10 Jul 2021 11:16 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -2209,10 +2209,10 @@
 /google-analyticator/*
 /google-analytics-$~image
 /google-analytics.$~image
-/google-analytics/*$domain=~webapps.stackexchange.com
+/google-analytics/*$domain=~stackexchange.com|~superuser.com
 /google-nielsen-analytics.
 /google-tag-manager.
-/google-tag-manager/*
+/google-tag-manager/*$domain=~stackexchange.com|~superuser.com
 /google-tracking/*
 /google.analytics.
 /google/analytics.js
@@ -5330,6 +5330,7 @@
 ://stats.*/index.js
 ://stats.*/script.js
 ://stats.*/stats.aspx
+://temptation.*/temptation.js
 ://track.*/collect
 ://track.*/visitor/
 ://tracker.*/pageview
@@ -27064,6 +27065,8 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=extratorrent.cd|sky
 @@||online.tivo.com/assets/tve/common/js/vendor/jsnlog/$script,~third-party
 @@||realtor.com/rentals/api/optimizely.js$script,~third-party
 @@||shop.bmw.com.au/assets/analytics-setup.js$~third-party
+@@||starbucks.ca/weblx/static/optimizely.$script
+@@||starbucks.com/weblx/static/optimizely.$script
 @@||static.foxnews.com^*/VisitorAPI.js$domain=foxbusiness.com|foxnews.com
 @@||static.wikia.nocookie.net^*/tracking-opt-in.min.js$script,domain=fandom.com
 @@||tapinfluence.com/tap.js$script,domain=titus2homemaker.com
