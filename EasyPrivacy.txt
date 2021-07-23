@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202107221640
+! Version: 202107230402
 ! Title: EasyPrivacy
-! Last modified: 22 Jul 2021 16:40 UTC
+! Last modified: 23 Jul 2021 04:02 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -539,6 +539,7 @@
 /analytics-facade.
 /analytics-gcp.
 /analytics-helper.
+/analytics-hit?
 /analytics-ingestion/*
 /analytics-ingress-
 /analytics-initial-
@@ -5799,6 +5800,7 @@ _mongo_stats/
 ||affilae.com^$third-party
 ||affiliateedge.eu^$third-party
 ||affiliatly.com^$third-party
+||affilired.com^$third-party
 ||affinesystems.com^$third-party
 ||affinitymatrix.com^$third-party
 ||affistats.com^$third-party
@@ -10069,81 +10071,43 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ! -----------------Third-party tracking services-----------------!
 ! *** easylist:easyprivacy/easyprivacy_thirdparty.txt ***
 ||100widgets.com^$third-party
-||101apps.com/tracker.ashx?
 ||105app.com/report/?
 ||216.18.176.4/logger/
-||24option.com/?oftc=$image,third-party
-||360buyimg.com^*/unit/log/*/log.js
-||3crowd.com^*/3c1px.gif
+||360buyimg.com/jdf/1.0.0/unit/log/
 ||3p-geo.yahoo.com^
-||3qsdn.com/watchtime?
 ||51network.com^$third-party
-||5251.net/stat.jsp?
-||6waves.com/edm.php?uid=$image
 ||99widgets.com/counters/
 ||a.mobify.com^
 ||aan.amazon.com^$third-party
-||aao.org/aao/sdc/track.js
-||abc.hearst.co.uk^$third-party
-||abcotvs.net^*/fban_
-||acces-charme.com/fakebar/track.php?
-||acount.alley.ws^$third-party
-||acs86.com/t.js
-||activecommerce.net/collector.gif
 ||activengage.com/overwatch/
-||activetracker.activehotels.com^$third-party
-||activities.niagara.comedycentral.com^
-||activity.*.miui.com^
-||actonservice.com^*/tracker/
 ||ad-shield.io^$third-party
-||ad.aloodo.com^$third-party
+||ad.aloodo.com^
 ||ad.atdmt.com/c/
 ||ad.atdmt.com/e/
-||ad.atdmt.com/i/*=
-||ad.atdmt.com/i/go;
-||ad.atdmt.com/i/img/
+||ad.atdmt.com/i/
 ||ad.atdmt.com/m/
 ||ad.atdmt.com/s/
-||adchemy-content.com^*/tracking.js
-||addnow.com/tracker/
 ||addthis.com/at/
 ||addthis.com/live/
-||addthis.com/red/$script,third-party
-||addthis.com/red/p.png?
-||addthis.com^*/p.json?*&ref=
-||addthiscdn.com/*.gif?uid=
 ||addthiscdn.com/live/
 ||addthisedge.com/live/
 ||addtoany.com/menu/transparent.gif
-||adf.ly/ad/conv?
 ||adfox.yandex.ru^
 ||adlog.com.com^
-||admission.net^*/displaytracker.js
 ||ads-trk.vidible.tv^
-||ads.bridgetrack.com^$image
-||adsv7.com/t/
-||adultmastercash.com/e1.php$third-party
-||affiliate.iamplify.com^
 ||affiliate.mediatemple.net^$~third-party
 ||affiliates.mgmmirage.com^
-||affiliates.minglematch.com^$third-party
-||affiliates.purevpn.com^$third-party
-||affilired.com/analytic/$third-party
+||affiliates.minglematch.com^
 ||affirm.com/api/v2/cookie_sent
 ||affirm.com/api/v2/session/touch_track
-||afrigator.com/track/
-||agendize.com^*/counts.jsp?
+||agendize.com/web/scheduling.js
 ||air.audioeye.com^
-||aiya.com.cn/stat.js
 ||akamaihd.net/p1lakjen.gif
 ||akamaized.net/cookie_check/
-||akanoo.com/tracker/
 ||akatracking.esearchvision.com^
-||aklamio.com/ovlbtntrk?
 ||aktion.esprit-club.com^$image
-||alenty.com/trk/
 ||alex.leonard.ie/misc-images/transparent.png
-||alexa.com/minisiteinfo/$third-party
+||alexa.com/minisiteinfo/
 ||alexa.com/traffic/
 ||alexandria.marfeelcdn.com^
 ||algolia.io/1/isalive
@@ -10993,6 +10957,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||followistic.com/widget/stat/
 ||footballmedia.com/tracking/
 ||forms.aweber.com^*/displays.htm?id=
+||foureyes.io/fe-init.js
 ||fourmtagservices.appspot.com^
 ||foxcontent.com/tracking/
 ||fp-cdn.azureedge.net/prod/
@@ -11659,7 +11624,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||px.marchex.io^
 ||px.owneriq.net^
 ||px.spiceworks.com^
-||pxchk.net/api/v2/collector
 ||pxchk.net/b/s
 ||pxt.daz3d.com^
 ||qcloud.com/report.go?
@@ -13432,7 +13396,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||apartments.com/clientvisit/al.gif?
 ||apkpure.com/analytics_
 ||appanalysis.banggood.com^
-||archive.org/includes/analytics.js
 ||arstechnica.com/keys/arstechnica.com/p.js
 ||atrack.allposters.com^
 ||ats.alot.com^
@@ -13563,6 +13526,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||eporner.com/dot/
 ||eproof.drudgereport.com^
 ||equirodi.*/addstat.php
+||error.fc2.com^
 ||et.nytimes.com^
 ||etsy.com/bcn/beacon
 ||etui.fs.ml.com^
@@ -13594,6 +13558,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||fathom.app.silverbeak.com^
 ||fathom.status.im^
 ||fathom.tdvm.net^
+||fc2.com/ana/analyzer.php
+||fc2.com/ana/processor.php?
 ||fc2.com/counter_img.php?
 ||fdt.kraken.com^
 ||firebaselogging.googleapis.com^
@@ -25283,7 +25249,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=extratorrent.cd|sky
 ||baidu.com/push.js
 ||baidu.com/tb/pms/img/st.gif?
 ||baidu.com^*/adlog?
-||baidu.com^*/w.gif?
 ||baofeng.com/script/baidu_
 ||bc.qunar.com^
 ||bdwblog.eastmoney.com^
@@ -25322,6 +25287,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=extratorrent.cd|sky
 ||eastmoney.com/counter.js?
 ||ebook.tianya.cn/js/stat.js
 ||eclick.baidu.com^
+||event.csdn.net^
 ||fang.com/stats/
 ||firefoxchina.cn/*/trac.js
 ||forum.zuvio.com.tw/api/article/finish
