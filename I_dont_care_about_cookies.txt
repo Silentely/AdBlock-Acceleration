@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 332.202107210845
+! Version: 332.202107231216
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 21 Jul 2021 06:45 UTC
+! Last modified: 23 Jul 2021 10:16 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -1410,7 +1410,7 @@
 ###synergi_inner_information
 ###cookiePolicyTooltip
 ##.cookie_info_box1:not(body):not(html)
-###cookie-manager
+~aubi-plus.de###cookie-manager
 ###cookies_notification
 ###topCookie
 ###cookieComplianceMessage
@@ -9406,7 +9406,7 @@
 ##.satv-cookie-notification
 ##body > #clayer.clayer
 ##body > #CLayer[style*="fixed"]
-###tos-agreement
+###cookie_bar_edit_button
 ##body > .cookieagreement
 ##devsite-snackbar[type*="cookie-notification"]
 ##.cookienote__base:not(body):not(html)
@@ -13139,6 +13139,7 @@
 ###cc__modal__container
 ###cc__pageBlock
 ###consent.cookiecons
+##.fr-c-message-wrap
 !
 ! CUSTOM RULES
 !
@@ -16925,7 +16926,6 @@ idw-online.de###idwcookie
 aktionen.payback.de##.notification
 vizrt.com##div[data-module="CookieBanner"]
 badtaste.it##.premium-float-footer
-idoctors.it##.privacy_bottom
 weblium.com##.weblium-notify
 taboola.com###tbp-consent
 hs-wismar.de##.hswBannerOverlay
@@ -21169,7 +21169,6 @@ yopmail.com###cons-pop
 aftenposten.no###data-controller-stripe
 get-in-engineering.de###GetIn_CookieConsentBox
 skatteverket.se##skv-cookie-banner
-backmarket.com###main_container ~ div
 share-now.com##.banner-placeholder
 gittigidiyor.com###__next main > div:not([class]), .policy-alert-v2.show-policy
 alo.bg###consent_main
@@ -21267,6 +21266,16 @@ g2g.com##.q-page ~ div > .fixed-bottom
 myminifactory.com##.footerBottom ~ div
 findhs.codes###PrivacyAlert
 animeschedule.net###consent-popup-wrapper
+sberbankdirect.de##.cm
+toner-dumping.de##.js--overlay
+ticketswap.com##reach-portal + ticketswap-portal
+ticketswap.nl##reach-portal + ticketswap-portal
+ticketswap.fr##reach-portal + ticketswap-portal
+bazarchic.com###react-footer > div > div:not([class])
+lotuscars.com###consent-modal
+alko-garden.de###divDisabledBackground
+edclub.com##.__CC_popup
+vastervik.se##.cookies
 !
 ! SCRIPT BLOCKING
 !
@@ -21699,6 +21708,8 @@ cookies.ae-webdesign.com
 /usercentrics/cookiebox
 /hw-cookie-consent/*
 /cookie-banner.js$domain=~labs.strava.com
+/website-cookie-consent/*
+/w4.cookiebar.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -22310,6 +22321,8 @@ trcking.min.js$domain=canalplus.com|canal-plus.com
 /fnGdpr.js$domain=financer.com
 /sygnal42-gdpr/*$domain=blitzrechner.de
 /CookieLayer.js$domain=multipower.com
+/cookie_management.js$domain=meteoradar.ch
+/Cookie/*$domain=nif.no
 !
 ! FILTERLIST ONLY
 !
