@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202107240257
+! Version: 202107240653
 ! Title: EasyPrivacy
-! Last modified: 24 Jul 2021 02:57 UTC
+! Last modified: 24 Jul 2021 06:53 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1860,6 +1860,7 @@
 /flip-stats-queue?
 /flow_statistic.
 /flowplayer.ganalytics.
+/flushimpressions?
 /flv_tracking.
 /footer-tracking.js
 /footer_tag_iframe.
@@ -3677,6 +3678,7 @@
 /rum_cmp?
 /rumstat.
 /rumtag.
+/run/perf
 /runtimejs/intercept/*
 /ruxitagentjs_
 /rwtag.gif?
@@ -4846,6 +4848,7 @@
 /ViewCounter/*
 /viewcounterjqueryproxy.
 /viewcounterproxy.
+/viewerimpressions?
 /views/vw.js
 /views_tracking/*
 /viewstats.aspx?
@@ -5656,6 +5659,7 @@ _mongo_stats/
 ||mors22.com^
 ||nxakpj4ac8gkd53.info^
 ||propeller-tracking.com^
+||r42tag.com^
 ||sbgsodufuosmmvsdf.info^
 ||site24x7rum.eu^
 ||truffle.bid^
@@ -7506,7 +7510,6 @@ _mongo_stats/
 ||pushauction.com^$third-party
 ||putags.com^$third-party
 ||pvd.to^$third-party
-||px-cloud.net^$third-party
 ||pxaction.com^$third-party
 ||pxf.io^$third-party
 ||pxi.pub^$third-party
@@ -10899,6 +10902,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||events.jokerly.com^
 ||events.jotform.com^
 ||events.launchdarkly.com^$third-party
+||events.mapbox.com^
 ||events.matterport.com^
 ||events.medio.com^
 ||events.ocdn.eu^
@@ -14226,7 +14230,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||rte.ie/player/playertracker.js
 ||rtn.thestar.com^
 ||rum.kobo.com^
-||rumble.com/l/$image
+||rumble.com/l/
 ||runnersworld.com^*/universalpixel.html
 ||russellgrant.com/hostedsearch/panelcounter.aspx
 ||rv.modanisa.com^$script
@@ -15133,7 +15137,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||zylom.com^*/tracking_spotlight.js
 ||zytpirwai.net/track/
 ! Plausible selfhosted
-||jeremiahlee.com/p/js/script.js
+||jeremiahlee.com/fanboynz.js
 ! confection.io
 ||hubspot.com/collected-forms/$xmlhttprequest,domain=confection.io
 ||s3.amazonaws.com/downloads.mailchimp.com/$script,domain=confection.io
@@ -15198,19 +15202,14 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ! PerimeterX
 ||apartmenttherapy.com/jAYekY18/init.js
 ||auctionzip.com/eKtvxkQ2/init.js
-||bhphotovideo.com/3D8mkYG1/init.js
 ||bloomberg.com/8FCGYgk4/init.js
 ||booktopia.com.au/Ns7aBMIv/init.js
 ||carbon38.com/A44kxi5a/init.js
-||carolina.com/2gSJHc90/init.js
-||carolsdaughter.com^*/init.js
-||cookpad.com^*/init.js
+||carolsdaughter.com/IZ/uaPO0cuk/init.js
 ||couchsurfing.com/bEcn7fQX/init.js
 ||crunchbase.com/rw7M6iAV/init.js
 ||drupal.org/VnPBBfwe/init.js
-||eatgeek.com/aG6ZzoXU/init.js
 ||fiverr.com/px/client/PXK3bezZfO/main.min.js
-||flixcart.com/px/gNtTli3A/init.js
 ||flooranddecor.com/v1HqbVho/init.js
 ||foodora.fi/lJuB4eTB/init.js
 ||foodora.se/lJuB4eTB/init.js
@@ -15222,19 +15221,16 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||foodpanda.sg/lJuB4eTB/init.js
 ||hotpads.com/xOR1K5b6/init.js
 ||joann.com/qXTWmr91/init.js
-||kerastase-usa.com^*/init.js
+||kerastase-usa.com/IZ/PXXiuO7QTJ/init.js
 ||kickstarter.com/Uy3R669N/init.js
-||kiehls.com^*/init.js
+||kiehls.com/IZ/PXG8ATFja1/init.js
 ||kiva.org/r3pNVz1F/init.js
-||lancome-usa.com^*/init.js
+||lancome-usa.com/IZ/PXq99AlOxk/init.js
 ||lulus.com/px/client/main.min.js
 ||madlan.co.il/o4wPDYYd/init.js
-||nyxcosmetics.com^*/init.js
+||nyxcosmetics.com/IZ/PXLZNv2dn4/init.js
 ||octopart.com/kdRQnL15/init.js
 ||priceline.com/9aTjSd0n/init.js
-||ralphlauren.co.uk^*/init.js
-||ralphlauren.de^*/init.js
-||ralphlauren.fr^*/init.js
 ||seekingalpha.com/xgCxM9By/init.js
 ||skechers.com/dL6GOSf9/init.js
 ||sweetwater.com/p2TBVNJZ/init.js
@@ -15290,19 +15286,13 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||vg247.com/wp-content/themes/vg247/scripts/mvg247-fsm.js
 ! McClatchy sites
 /yozons-lib/*$script,~third-party,domain=bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|elnuevoherald.com|fresnobee.com|heraldonline.com|heraldsun.com|idahostatesman.com|islandpacket.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|macon.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com
-://media.*/escenic$script,~third-party,domain=bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|elnuevoherald.com|fresnobee.com|heraldonline.com|heraldsun.com|idahostatesman.com|islandpacket.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|macon.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com
-://media.*/micb.js|$script,~third-party,domain=bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|elnuevoherald.com|fresnobee.com|heraldonline.com|heraldsun.com|idahostatesman.com|islandpacket.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|macon.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com
 ://media.*/misites/$script,~third-party,domain=bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|elnuevoherald.com|fresnobee.com|heraldonline.com|heraldsun.com|idahostatesman.com|islandpacket.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|macon.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|thenewstribune.com|theolympian.com|thestate.com|tri-cityherald.com
 ! Fingerprintjs
-/^https?:\/\/.*\.corsair\.(fr|ci|ca|gp|mq|re)\/[a-z0-9]{19,}\?/$script,xmlhttprequest
 ||aerlingus.com/ahktqsewxjhguuxe.js
 ||aerlingus.com/ahktqsewxjhguuxexhr.js
 ||greenmangaming.com/omnopfddrdlevbbh.js
 ||paxful.com/bmlsclxndnomunnk.js
 ||teepublic.com/binfgkxpxaizujgk.js
-! stackoverflow
-/client-timings$domain=askubuntu.com|mathoverflow.net|serverfault.com|stackexchange.com|stackoverflow.com|superuser.com
-/gps/event$domain=askubuntu.com|mathoverflow.net|serverfault.com|stackexchange.com|stackoverflow.com|superuser.com
 ! Mining
 $subdocument,third-party,domain=estream.to
 $third-party,xmlhttprequest,domain=alltube.pl|alltube.tv
@@ -15332,60 +15322,6 @@ $xmlhttprequest,domain=auroravid.to|catrumahminimalis.me|dekoder.ws|estream.to|f
 ! CSP Mining
 $csp=child-src 'none'; frame-src 'self' *; worker-src 'none',domain=fileone.tv|theappguruz.com
 $csp=child-src 'none'; frame-src *; worker-src 'none',domain=extratorrent.cd|skyback.ru|szukajka.tv|thepiratebay.org|vidoza.net
-! Preliminarily blocking Omniture s_code tracking scripts (versions H.25 - H.25.2) due to breakage (https://adblockplus.org/forum/viewtopic.php?f=10&t=11378)
-||abc.com/service/gremlin/js/files/s_code.js?$domain=abc.go.com
-||adobe.com^*/omniture_s_code.js
-||aircanada.com/shared/common/sitecatalyst/s_code.js
-||announcements.uk.com^*/s_code.js
-||atgstores.com/js/lowesca_s_code.js$domain=lowes.ca
-||bitdefender.com/resources/scripts/omniture/*/code.js
-||bleacherreport.net/pkg/javascripts/*_omniture.js
-||cdnds.net/js/s_code.js$domain=digitalspy.ca|digitalspy.co.nz|digitalspy.co.uk|digitalspy.com|digitalspy.com.au|digitalspy.ie
-||chip.de/js/omniture_somtr_code_vH.25.js
-||consumerreports.org^*/s_code.js
-||csmonitor.com/extension/csm_base/design/csm_design/javascript/omniture/s_code.js
-||csmonitor.com/extension/csm_base/design/standard/javascript/adobe/s_code.js
-||demandware.edgesuite.net^*/omniture.js$domain=otterbox.com
-||disneylandparis.fr^*/s_code.js
-||eltiempo.com/js/produccion/s_code_*.js
-||event-analytics.yesware.com^
-||expressen.se/static/scripts/s_code.js?
-||ge.com/sites/all/themes/ge_2012/assets/js/bin/s_code.js
-||hayneedle.com/js/s_code.min.*.js
-||images-amazon.com/images/*/wcs-help-omniture/wcs-help-omniture-$script
-||img-bahn.de/v/*/js/s_code.js$domain=bahn.de
-||jsfiddle.net/xdmuj68e/
-||loc.gov/js/*/s_code.js
-||mercedes-benz.ca/js/omniture.js
-||mercola.com/Assets/js/omniture/sitecatalyst/mercola_s_code.js
-||mercuryinsurance.com/static/js/s_code.js
-||michaelkors.com/common/js/extern/omniture/s_code.js
-||mnginteractive.com/live/js/omniture/SiteCatalystCode_H_22_1_NC.js
-||mnginteractive.com/live/omniture/custom_scripts/omnicore-blogs.js$domain=mercurynews.com
-||mnginteractive.com/live/omniture/sccore.js$domain=denverpost.com
-||mnginteractive.com/live/omniture/sccore_NEW.js$domain=pasadenastarnews.com|presstelegram.com
-||mnginteractive.com/live/omniture/sccore_NEW_JRC.js
-||navyfederal.org/js/s_code.js
-||nwsource.com/shared/js/s_code.js?$domain=seattletimes.com
-||nyteknik.se/ver02/javascript/2012_s_code_global.js
-||paypal.com/acquisition-app/static/js/s_code.js
-||playstation.com/pscomauth/groups/public/documents/webasset/community_secured_s_code.js
-||r7.com/scode/s_code_portal_$script
-||redbox.com^*/scripts/s_code.js
-||riverisland.com^*/s_code.min.omniture_$script
-||sephora.com/javascripts/analytics/wa2.js
-||skypeassets.com/i/tracking/js/s_code_20121127.js$domain=skype.com
-||skypeassets.com/static/skype.skypeloginstatic/js/s_code.js$domain=skype.com
-||sltrib.com/csp/mediapool/sites/Shared/assets/csp/includes/omniture/SiteCatalystCode_H_17.js
-||ssl-images-amazon.com^*/wcs-help-omniture-$script
-||ticketmaster.eu^*/omniture_tracker.js
-||timeinc.net/tii/omniture/h/config/timesi.js$domain=si.com
-||vitacost.com/Javascripts/s_code.js
-||vmware.com/files/templates/inc/s_code_my.js
-||wp.com/wp-content/themes/vip/metrouk/js/site-catalyst.js$domain=metro.co.uk
-||yell.com/js/omniture-H.25.js
-! Blocking filters due to High-CPU usage bug (https://adblockplus.org/forum/viewtopic.php?f=11&t=23368)
-||radio-canada.ca/omniture/omni_stats_base.js?
 ! Specific filters necessary for sites allowlisting with $genericblock filter option
 /__utm.gif$domain=autobild.de|quoka.de|tellows.de|transfermarkt.de
 /csi?v=*&action=$domain=tellows.de
