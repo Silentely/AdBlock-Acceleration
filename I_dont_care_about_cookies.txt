@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 332.202107231216
+! Version: 332.202107270824
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 23 Jul 2021 10:16 UTC
+! Last modified: 27 Jul 2021 06:24 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -6015,7 +6015,7 @@
 ###footerCookieDirective
 ##.ppr_priv_document_cookie_banner
 ~takarekbank.hu##.js-cookie-container:not(body):not(html)
-##ytd-consent-bump-renderer
+##.fr-c-message-wrap
 ##.ud-component--eu-cookie-message--app
 ###weusecookies
 ##.c-cookie-warning:not(body):not(html)
@@ -9082,7 +9082,7 @@
 ###cookie-notice-container
 ##.creatim-cookie-notice
 ###cookiesSection > .cookies
-##ytd-mealbar-promo-renderer
+###consent.cookiecons
 ##.dot-cookie-prompt:not(body):not(html)
 ##.valu-cookie-notice:not(body):not(html)
 ###cooky_policy
@@ -13138,11 +13138,14 @@
 ###cookie_overlay ~ [id*="eucp"]
 ###cc__modal__container
 ###cc__pageBlock
-###consent.cookiecons
-##.fr-c-message-wrap
+##.cookie-notifikasjon
+##app-accept-cookie
+##.cookieConsentFooter
+###moto-cookies-container
 !
 ! CUSTOM RULES
 !
+youtube.com##ytd-consent-bump-v2-lightbox, tp-yt-iron-overlay-backdrop, ytd-consent-bump-renderer, ytd-mealbar-promo-renderer
 linkedin.com###js-notification-wrapper[role="alert"], .global-alert.global-alert--yield, #global-alert-queue, #artdeco-global-alert-container, .alert, #alert
 yahoo.com###gdpr[style*="padding"], #y-shade, #applet_p_50000174, .tdv2-applet-nagbar, .login-body + .login-footer
 duckduckgo.com##.badge-link.ddg-extension-hide
@@ -21276,6 +21279,9 @@ lotuscars.com###consent-modal
 alko-garden.de###divDisabledBackground
 edclub.com##.__CC_popup
 vastervik.se##.cookies
+webflow.com###consent-container
+amplerbikes.com##.ab-cookies-banner
+motorola.com.br###motorola-cookies
 !
 ! SCRIPT BLOCKING
 !
@@ -21710,6 +21716,7 @@ cookies.ae-webdesign.com
 /cookie-banner.js$domain=~labs.strava.com
 /website-cookie-consent/*
 /w4.cookiebar.js
+/wp-content/plugins/cookielay/*
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -21725,7 +21732,7 @@ wpjslib-chunk-consent-form.js
 ||libertatea.ro/consent/config.js$script
 consent-notice.magix.com
 /taunton-user-consent-eu
-||consensu.org/t/consent_$script
+||consensu.org/t/consent_$script,domain=~softzone.es
 consentmanager.mgr.consensu.org$domain=~sourceforge.net|~webfail.com|~sudoku-aktuell.de
 /consently.min.js
 ||s.adroll.com/j/consent.js$script
@@ -21785,6 +21792,7 @@ analytics-consent-manager.azureedge.net
 /kconsent/kconsent29.js
 /consent-layer/js/consent-layer-loader.js
 ||sncmp.com/adconsent$script
+/tm-gdpr-consent/*
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
