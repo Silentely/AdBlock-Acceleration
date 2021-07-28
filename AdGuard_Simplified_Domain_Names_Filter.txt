@@ -3,7 +3,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2021-07-28T06:03:53.549Z
+! Last modified: 2021-07-28T12:06:00.178Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -18,6 +18,9 @@
 !
 !! https://a.bestcontentitem.top/warp/*?r=
 !
+||pbprof.com^
+||admost-banner.b-cdn.net^
+||claring-loccelkin.com^
 ||auchoons.net^
 ||deliberatelycube.com^
 ||gardourd.com^
@@ -2761,6 +2764,7 @@ www.llllllllllll.net^
 !
 ! Section contains the list of advertising networks, which are hosted on non advertising sites as subdomains
 !
+||ads-dot-fbc-web-2018.uc.r.appspot.com^
 ||awrfds3.pornpapa.com^
 ||d1tpwjufge3qqa.cloudfront.net^
 ||d1ev866ubw90c6.cloudfront.net^
@@ -18106,6 +18110,8 @@ vkcdnservice.appspot.com^
 !||i.snssdk.com/log/*
 !||i.snssdk.com/slardar/sdk.js
 !
+||tag.search.sensefuel.live^
+||api.dataunlocker.com^
 ||microanalytics.io^
 ||tracking.sexcash.com^
 ||fastly-insights.com^
@@ -22178,10 +22184,11 @@ vkcdnservice.appspot.com^
 ! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/344
 ! Disabled in DNS filter
 !
+||monitoring.youronlinechoices.com^
+||1bw7etm93lf.www.woodbrass.com^
 ||t.imgur.com^
 ||counter1.fc2.com^
 ||analyzer*.fc2.com^
-||analyzer52.fc2.com^
 ||klik.nrc.nl^
 ||uie.data.cbc.ca^
 ||ub.finanzfrage.net^
@@ -24206,6 +24213,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||g8715710740.co^
 ||g8913795075.co^
 ||g9111879410.co^
+||ldnlyap.com^
 ||lltrck.com^
 ||loloclicks.biz^
 ||mors22.com^
@@ -32118,6 +32126,24 @@ charlestownwyllie.oaklawnnonantum.com^
 ||yqrta.xyz^
 ||zjgfq.com^
 !
+! Source name: AdGuard Dutch filter ad servers
+! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/DutchFilter/sections/adservers.txt
+!
+!
+! Section contains list of advertising networks
+!
+||pexi.nl^
+||adconfigproxy.azurewebsites.net^
+
+!
+! Source name: AdGuard Dutch filter ad servers first-party
+! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/DutchFilter/sections/adservers_firstparty.txt
+!
+!
+! Section contains the list of advertising networks, which are hosted on non advertising sites as subdomains
+!
+||content2.nrc.nl^
+!
 ! Source name: EasyList Germany ad servers
 ! Source: https://raw.githubusercontent.com/easylist/easylistgermany/master/easylistgermany/easylistgermany_adservers.txt
 !
@@ -36336,6 +36362,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||runkao.net^
 ||stunninglover.com^
 ||watakaw133.xyz^
+||rtkyvd.xyz^
 ||huzhu.group^
 ||jwyl.ltd^
 ||iwucoz.cn^
@@ -38378,6 +38405,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||adc.api.nine.com.au^
 ! https://github.com/AdguardTeam/AdguardDNS/issues/52
 ||mobileanalytics.*.amazonaws.com^
+||analyzer52.fc2.com^
 ||clientlog.portal.office.com^
 ||collect.sas.com^
 ||collect2.sas.com^
