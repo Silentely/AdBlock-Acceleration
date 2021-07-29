@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: LV1XQ3OlBg5EnNtr6NIrYw
-! Version: 202107290800
+! Checksum: oJviJ7vuUZjJArbkxtbogA
+! Version: 202107291200
 ! Title: Fanboy's Annoyance List
-! Last modified: 2021-07-29 08:00 UTC
+! Last modified: 2021-07-29 12:00 UTC
 ! Expires: 9 days (update frequency)
 ! Homepage: https://easylist.to/
 ! License: http://creativecommons.org/licenses/by/3.0/
@@ -784,6 +784,7 @@ _backToTop.
 /site-notification-desk.
 /sna-pushwoosh.
 /t2push.
+/wdt_notifyjson.
 /web-push-
 /web-push-worker.
 /web-push.
@@ -29724,6 +29725,7 @@ _vpcookieconsent/
 ##.connect-cookie-bar
 ##.consent-at-bottom
 ##.consent-banner
+##.consent-banner-container:not(body):not(html)
 ##.consent-bar
 ##.consent-bg:not(html):not(body)
 ##.consent-confirmation-banner
@@ -30477,6 +30479,7 @@ _vpcookieconsent/
 ##.cookie-wrap
 ##.cookie-wrap-content
 ##.cookie-wrap-tip
+##.cookie-wrapp
 ##.cookie-wrapper
 ##.cookie-wrapper ~ div[class*="overlay-cookie"]
 ##.cookie-wrn-wrapper
@@ -32656,6 +32659,7 @@ _vpcookieconsent/
 ##.js-main-cookie-banner
 ##.js-message-cookies
 ##.js-nanobar-first-login
+##.js-nn-cookie
 ##.js-notify-cookie
 ##.js-np-cookie-notice
 ##.js-page-cookies
@@ -33115,6 +33119,7 @@ _vpcookieconsent/
 ##.njt-gdpr-full_width
 ##.njt-gdpr-popup
 ##.nk-cookie-alert
+##.nk-cookie-banner
 ##.nkmcookiealert
 ##.nl-cookie-bar
 ##.nl-cookiepolicy
@@ -34439,6 +34444,7 @@ _vpcookieconsent/
 ##div[class^="GDPR-module"]
 ##div[class^="GDPRBanner_"]
 ##div[class^="GdprBanner_"]
+##div[class^="ModalCookiestyle"]
 ##div[class^="_CookieNotice_"]
 ##div[class^="__alertCookie"]
 ##div[class^="__cookie-banner"]
@@ -36727,7 +36733,6 @@ fashionmagazine.com###kittycatfish_ad_content
 washingtonpost.com###knowmore
 doubleviking.com###kt_pane
 doubleviking.com###kt_toolbar_wrapper
-699pic.com###landlord
 scientificamerican.com###latestFloat
 cambridge.org###lawEU
 sulekha.com###lcf-outer
@@ -38896,8 +38901,6 @@ wired.com##.sponsored-stories-component
 blogcritics.org,labnol.org##.spread
 9gag.com##.spread-bar
 collinsdictionary.com##.spread_the_word
-699pic.com##.springtime-floatLink
-699pic.com##.springtime-pop
 the-line-up.com,thestack.com,xredmedia.com##.spu-box
 sandiegouniontribune.com##.sr-outer
 skysports.com##.ss-art-tools
@@ -39137,7 +39140,6 @@ xhamster.com##.wih-cams-thumb-widget
 xhamster.com,xhamster.desi,xhamster.one##.wih-cams-widget
 wildammo.com##.wild_ammo-tabs
 healthgrades.com##.wing
-699pic.com##.winpopbg
 theatlanticwire.com##.wire-to-go
 wetpaint.com##.wp-article-recommender
 washingtonpost.com##.wp-float-bar
@@ -43641,6 +43643,7 @@ jarir.com##a[title="top"]
 ! ---------- Chinese Site Specific Hiding Rules ----------
 !
 acfun.cn###btn-top-shortcut
+699pic.com###landlord
 thestandnews.com###mc_embed_signup
 thepaper.cn###pjax-switch
 xiachufang.com###scrollTop
@@ -43648,21 +43651,28 @@ udn.com###story_related
 bcc.com.tw###topx
 huanqiukexue.com###totop
 cna.com.tw##.Subscription
+juejin.cn##.app-link
 sputniknews.cn##.arrowup
 wanda.cn##.backtop
 worldjournal.com##.btn-top
 4399.cn,cna.com.tw,cts.com.tw,digitimes.com.tw,weather.com.cn##.gotop
 baidu.com##.gotop-button
+fanyi.sogou.com##.img-banner
 sogou.com##.index-top
 hisense.com##.js-return-top
 baike.com##.li-top
 cyberctm.com##.news-control
 am730.com.hk##.news-pagination
+juejin.cn##.recommend-box
 metrodaily.hk##.rss
 4gtv.tv##.scrollUP
+699pic.com##.springtime-floatLink
+699pic.com##.springtime-pop
 qq.com##.top_announce_mobileqq
 mtime.com##.topbar
 am730.com.hk##.topic-pagination
+699pic.com##.viewLimit
+699pic.com##.winpopbg
 ||4gtv.tv^*/scriptUP.
 !
 ! ---------- Croatian Site Specific Hiding Rules ----------
@@ -46094,7 +46104,7 @@ terveystalo.com##.st-consent-banner
 lehtodigital.fi##[class^="__ld_cookie_"]
 sttinfo.fi##[class^="styledBarNotification__BarNotificationWrapper"]
 dplay.fi##div[class^="notification"]
-scandinavianphoto.fi##div[style="opacity: 1; height: 77px;"]
+scandinavianphoto.fi##div[style^="opacity: 1; height: "][style$="px;"]
 linnunrata.org##div[style^="position:fixed;right:0;top:0;"]
 !
 ! ---------- Greek ----------
@@ -48062,7 +48072,7 @@ openfiber.it#@#[aria-label="cookieconsent"]
 atutszkola.pl,meethue.com,mydziewczyny.pl,philips-hue.com,philips.ae,philips.am,philips.at,philips.az,philips.be,philips.bg,philips.by,philips.ca,philips.ch,philips.cl,philips.co.id,philips.co.il,philips.co.in,philips.co.jp,philips.co.ke,philips.co.kr,philips.co.nz,philips.co.th,philips.co.uk,philips.co.za,philips.com,philips.com.ar,philips.com.au,philips.com.bh,philips.com.br,philips.com.cn,philips.com.co,philips.com.eg,philips.com.ge,philips.com.gh,philips.com.hk,philips.com.kw,philips.com.lb,philips.com.mx,philips.com.my,philips.com.om,philips.com.pe,philips.com.ph,philips.com.pk,philips.com.qa,philips.com.sg,philips.com.tr,philips.com.tw,philips.com.uy,philips.com.vn,philips.cz,philips.de,philips.dk,philips.ee,philips.es,philips.fi,philips.fr,philips.gr,philips.hr,philips.hu,philips.ie,philips.iq,philips.it,philips.jo,philips.kz,philips.lt,philips.lv,philips.ma,philips.ng,philips.nl,philips.no,philips.pl,philips.pt,philips.ro,philips.rs,philips.ru,philips.sa,philips.se,philips.si,philips.sk,philips.ua,philips.uz#@#[data-cookie-id]
 apple.com#@#consent.consent
 mymuesli.com#@#cookies_consent
-litebit.eu#@#div[class*="CookieConsent"]
+litebit.eu,vr.fi#@#div[class*="CookieConsent"]
 telenor.se#@#div[class*="cookie-consent-modal_"]
 what3words.com#@#div[class^="CookieNotice"]
 ee.co.uk,monese.com,ukvcas.co.uk#@#div[class^="cookie-banner"]
