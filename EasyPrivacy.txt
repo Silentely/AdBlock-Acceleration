@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202108050705
+! Version: 202108051200
 ! Title: EasyPrivacy
-! Last modified: 05 Aug 2021 07:05 UTC
+! Last modified: 05 Aug 2021 12:00 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -4046,6 +4046,7 @@
 /stats/pv.
 /stats/record.php?
 /stats/services/*
+/stats/survey.
 /stats/track.asp?
 /stats/tracker.js
 /stats/tracking.
@@ -10846,6 +10847,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ebaystatic.com^*/pulsar.js
 ||ebaystatic.com^*/rover_$script
 ||ebaystatic.com^*/tracking_RaptorheaderJS.js
+||ec.walkme.com^
 ||ecomm.events^
 ||ecommstats.s3.amazonaws.com^$third-party
 ||ecustomeropinions.com/survey/nojs.php?
@@ -13202,6 +13204,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||bigday.ru/counter.php?
 ||browser-updater.yandex.net^
 ||c.bigmir.net^
+||cdn-rum.ngenix.net^
 ||climatecontrol.ru/counters/
 ||cnstats.cdev.eu^
 ||cnt.krasland.ru^
@@ -13758,6 +13761,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||log.hypebeast.com^
 ||log.mappy.net^
 ||log.optimizely.com^
+||log.quora.com^
 ||log.snapdeal.com^
 ||log.webnovel.com^
 ||logg.kiwi.com^
@@ -24261,6 +24265,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||tut.by/stat/
 ||vedomosti.ru/boom?
 ||vesti.ru/counter/
+||xapi.ozon.ru^
 ||yandex.ru/clck/click
 ||yandex.ru/clck/jclck/
 ||yandex.ru/log?
@@ -24935,6 +24940,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||aixifan.com^*/sensorsdata.min.js?$domain=acfun.cn
 @@||dynamicyield.com/api/$script,domain=zalora.com.hk|zalora.com.tw
 @@||google-analytics.com/analytics.js$domain=news.gamme.com.tw
+@@||hk.on.cc/js/v4/urchin.js
 @@||tianxun.com^*/js/tracker.js
 @@||tianyancha.com^*/sensorsdata.$script,~third-party
 @@||uwants.com/include/*/swfaddress.js
@@ -25218,6 +25224,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||mts.ru/app/vendor/angular-google-analytics.min.js
 @@||mycargo.rzd.ru/dst/scripts/common/analytics-helper.js$~third-party
 @@||online.bcs.ru^*/piwik.bcs.js$script
+@@||ozone.ru/assets/analytics.$script,~third-party
 @@||pl.smotrim.ru/js/stat.js$script,domain=player.vgtrk.com
 @@||pladform.ru/dive/$xmlhttprequest
 @@||pladform.ru/player$subdocument
