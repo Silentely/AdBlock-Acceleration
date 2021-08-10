@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: 2rDCcBOk1r0rZPUpLTFSVA
-! Version: 202108100400
+! Checksum: 7hXy/LeLCQBuakfnidaLFw
+! Version: 202108100800
 ! Title: Fanboy's Annoyance List
-! Last modified: 2021-08-10 04:00 UTC
+! Last modified: 2021-08-10 08:00 UTC
 ! Expires: 9 days (update frequency)
 ! Homepage: https://easylist.to/
 ! License: http://creativecommons.org/licenses/by/3.0/
@@ -371,6 +371,7 @@
 /redesign/newsletter/*
 /reg_newsletter.
 /registrazione/newsletter/*
+/sapo_newsletters.
 /site/newsletter-
 /social/newsletters_
 /sph_newsletter/*
@@ -720,6 +721,7 @@ _site/gotop.
 /get_onesignal_
 /ilabspush.
 /inpl.webpush.
+/jquery-notification.
 /mp-web-notification.
 /multi-desktop-notification.
 /myPushDc.
@@ -792,6 +794,7 @@ _site/gotop.
 /web-push-
 /web-push-worker.
 /web-push.
+/web-push/init.
 /webalert-notification
 /webnotf.js
 /webpush-production.js
@@ -8540,6 +8543,8 @@ _vpcookieconsent/
 ##.z-bit-smartbanner
 ##a[href^="http://www.mobi24.net/"]
 ##a[href^="https://www.mobi24.net/"]
+! International
+###uutiskirje-nosto
 ###AKDSocialBottom
 ###BF_BUZZBOX
 ###BmkDigg
@@ -20937,6 +20942,7 @@ _vpcookieconsent/
 ##.vertical-sharing-block
 ##.vertical-social
 ##.vertical-social-icons
+##.vertical-social-links
 ##.vf-share-bar
 ##.vf-share-bar-vertical
 ##.vf-share-button
@@ -21716,6 +21722,8 @@ _vpcookieconsent/
 ##a[title="Follow on snapchat"]
 ##a[title="Follow on twitter"]
 ##a[title="Follow on youtube"]
+##a[title="Nous suivre sur Facebook"]
+##a[title="Nous suivre sur Twitter"]
 ##a[title="Partilhar no Facebook"]
 ##a[title="Partilhar no LinkedIn"]
 ##a[title="Partilhar no Pinterest"]
@@ -26522,7 +26530,6 @@ _vpcookieconsent/
 ###gdpr-warning
 ###gdpr-widget
 ###gdpr-wrp
-###gdpr:not(body):not(html):not(input):not(button)
 ###gdprAgree
 ###gdprAlert
 ###gdprBanner
@@ -28914,7 +28921,7 @@ _vpcookieconsent/
 ##.accept-cookies-prompt
 ##.accept-cookies-toast
 ##.accept-cookies-wrapper
-##.accept-cookies:not(html)
+##.accept-cookies:not(html):not(button)
 ##.accept-my-cookie
 ##.accept-privacypolicy
 ##.acceptCookie
@@ -29758,6 +29765,7 @@ _vpcookieconsent/
 ##.consent-cookies
 ##.consent-cookies-dialog
 ##.consent-dialog:not(body):not(html)
+##.consent-holder
 ##.consent-layer
 ##.consent-management-simple
 ##.consent-manager-layer
@@ -29767,6 +29775,7 @@ _vpcookieconsent/
 ##.consent-panel
 ##.consent-popover
 ##.consent-popup
+##.consent-show
 ##.consent-summary-shown:not(body)
 ##.consent-toast
 ##.consent-toolbar
@@ -30098,6 +30107,7 @@ _vpcookieconsent/
 ##.cookie-eu-msg
 ##.cookie-event-block
 ##.cookie-fade
+##.cookie-fixed
 ##.cookie-fixed-hint
 ##.cookie-flash
 ##.cookie-footer
@@ -35850,6 +35860,8 @@ _vpcookieconsent/
 ||flashscore.fr^*/build/notifications.
 ||horoscope.fr/notifications/
 ||push.neko-san.fr^
+||rd.fi/sites/default/files/mini_banner.jpg
+||rd.fi/sites/default/files/vp-uutiskirje$image
 ||tut.by/push/
 ||3dmark.com/proxycon/images/front-some-fb.png
 ||76.my/Auc/
@@ -40866,6 +40878,7 @@ buzzfeed.com##div[id^="mod-newsletter-signup-"]
 !#include easylist_cookie/easylist_cookie_specific_uBO.txt
 !#include fanboy_annoyance_specific_uBO.txt
 tbsnews.net###___tbspushdiv
+deepl.com###dl_app_banner_popup
 kizi.com###kizi-popover-dialog
 livejapan.com###ptcd_modal_dialog
 google.com###pushdown
@@ -40887,6 +40900,7 @@ reddit.com##.xPromoAppStoreFooter
 ! International
 aerzteblatt.de###pushy
 formulatv.com###resetUI
+rd.fi###zone-header-wrapper
 romait.it##.alert
 ziare.com##.modal-backdrop
 ziare.com##.modal__wp
@@ -40900,6 +40914,7 @@ fanpage.it##.overlay-content-wrapper
 mail.ru##.ph-balloo
 estadao.com.br##.push-body
 flvto.biz##.push-offer
+rd.fi##.region-sidebar-second-inner > .block-block
 diariandorra.ad##.subscribe-notifications
 ! Mobile app Notifications
 thefastmode.com###ChromeAppPromotion
@@ -44978,6 +44993,10 @@ knack.be##.toolbar
 epochtimes.nl##.tools
 ||sanoma.nl/media/static/images/icon_zienl.png
 !
+!---------- Finnish Specific Social Media Elements ----------
+!
+||rd.fi/sites/default/files/vp-fbssa-banner$image
+!
 !---------- Greek Specific Social Media Elements ----------
 !
 sputniknews.gr##.article__google-news
@@ -45931,6 +45950,7 @@ tupperware.fr##.topRibbon
 le-dictionnaire.com##.topdisclaimer
 ugc.fr##.ui-dialog[aria-describedby*="gdpr"] ~ .ui-widget-overlay
 cafpi.fr##.warning
+quellecompagnie.com##.whatever
 businessinsider.fr,voici.fr##div[class^="sp_message_container"]
 sportetstyle.fr##div[id^="cookie"]
 tf1.fr##div[id^="msgctrw"]
@@ -46154,7 +46174,7 @@ napsu.fi###napsu_cc
 sentraali.fi###popmake-4055
 paakallo.fi###privacy
 pihlajalinna.fi###root > div[aria-live="polite"][role="alert"]
-alppimatkat.fi###toast-container
+alppimatkat.fi,kuntarekry.fi###toast-container
 yhteiso.telia.fi###yhteiso-evasteet
 satakunnanautotalo.fi##.AVS-evasteseloste-container
 kulttuurivihkot.fi##.activebar-container
@@ -46827,6 +46847,7 @@ aliexpress.ru##.PrivacyPolicyBanner-styles_wrapper__1qbIl
 drweb.ru##.SHOWIT-msg_showed
 ngnovoros.ru##._1TNYbgH
 sberbank.ru##._3KWyaRBN-Zc2EeT_YjLEUV
+2gis.ru##._nlniiu
 oreluniver.ru##.accept
 volia.com##.agreeCookie\.component__cookieWrapper
 bancaintesa.ru##.agreement-substrate
@@ -47915,7 +47936,7 @@ makelaarsland.nl#@##cookie-notice
 danbolig.dk,finanzen.ch#@##cookie-overlay
 patient.info#@##cookie-policy
 flybe.com#@##cookie-policy-modal
-bk.com,burgerking.co.nz###cookie-popup:not(html):not(body)
+bk.com,burgerking.co.nz,defencediscountservice.co.uk###cookie-popup:not(html):not(body)
 danskebank.fi#@##cookie-text
 lauritz.com,qxl.de,qxl.dk,qxl.fi,qxl.no,qxl.se#@##cookie-wrapper
 media.netflix.com#@##cookieAlert
@@ -47955,7 +47976,6 @@ ibs.it#@##divPrivacy
 gamewatcher.com,ivoox.com,poszalu.pl,tappedout.net,visionexpress.pl#@##gdpr-modal
 n26.com#@##gdpr-notice
 pekao.com.pl#@##gdpr-popup
-mirjan24.pl#@##gdpr:not(body):not(html):not(input):not(button)
 airfrance.ae,airfrance.am,airfrance.at,airfrance.be,airfrance.bf,airfrance.bg,airfrance.bj,airfrance.ca,airfrance.cd,airfrance.cg,airfrance.ch,airfrance.cl,airfrance.cm,airfrance.co.ao,airfrance.co.il,airfrance.co.jp,airfrance.co.kr,airfrance.co.th,airfrance.co.uk,airfrance.co.za,airfrance.com,airfrance.com.ar,airfrance.com.au,airfrance.com.br,airfrance.com.cn,airfrance.com.co,airfrance.com.do,airfrance.com.eg,airfrance.com.hk,airfrance.com.jo,airfrance.com.kh,airfrance.com.lb,airfrance.com.mx,airfrance.com.tr,airfrance.com.tw,airfrance.com.uy,airfrance.cz,airfrance.de,airfrance.dj,airfrance.dk,airfrance.dz,airfrance.es,airfrance.fi,airfrance.fr,airfrance.ga,airfrance.gf,airfrance.gp,airfrance.hr,airfrance.ht,airfrance.hu,airfrance.id,airfrance.ie,airfrance.in,airfrance.it,airfrance.lu,airfrance.ma,airfrance.mg,airfrance.ml,airfrance.mq,airfrance.mu,airfrance.my,airfrance.nc,airfrance.ne,airfrance.ng,airfrance.nl,airfrance.no,airfrance.pa,airfrance.pe,airfrance.pf,airfrance.pl,airfrance.pt,airfrance.re,airfrance.ro,airfrance.rs,airfrance.ru,airfrance.sa,airfrance.se,airfrance.sg,airfrance.si,airfrance.sk,airfrance.sn,airfrance.tg,airfrance.tn,airfrance.ua,airfrance.us,airfrance.vn#@##gdpr_popin
 taloon.com#@##gdprpopup
 ansa.it,capital.it,huffingtonpost.it,leggo.it,m2o.it,meteo.it,rockol.it,video.deejay.it,video.espresso.repubblica.it,video.ilsecoloxix.it,video.lanuovasardegna.it,video.lastampa.it,video.rep.repubblica.it,video.repubblica.it#@##iubenda-cs-banner
@@ -48290,6 +48310,7 @@ yoigo.com#@#thor-cookies
 @@||businessinsider.in/gdpr_js/version-12,minify-1.cms$script,~third-party
 @@||c.evidon.com/sitenotice/evidon-sitenotice-tag.js$script,domain=southpark.de|southparkstudios.nu
 @@||carport-diagnose.de/script/cookieconsent.min.js$script,~third-party
+@@||cdn.almamedia.fi/almacmp/$script,domain=iltalehti.fi
 @@||cdn.cookielaw.org^$script,stylesheet,xmlhttprequest,domain=cnn.com|comicbook.com|crfashionbook.com|crunchyroll.com|doctoroz.com|eurogamer.net|gamespot.com|gmx.com|gq-magazine.co.uk|mail.com|popculture.com|reuters.com|rockpapershotgun.com|rp-online.de|rte.ie|trustpilot.com|tvn24.pl|uefa.com|vimeo.com|wargaming.net|worldsurfleague.com
 @@||chasecdn.com^*/cookie.js$script,domain=chase.com
 @@||civiccomputing.com^*/cookieControl-$script,domain=amplitude.com|msi.com|romania-insider.com|videogameschronicle.com

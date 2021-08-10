@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202108100416
+! Version: 202108100753
 ! Title: EasyPrivacy
-! Last modified: 10 Aug 2021 04:16 UTC
+! Last modified: 10 Aug 2021 07:53 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1046,6 +1046,7 @@
 /bypassmajs|
 /bypasspiphp?
 /byside_webcare.
+/bz?*__comet_req=
 /c.gif?
 /c.php?r=
 /c.wrating.com/*
@@ -1625,7 +1626,7 @@
 /DynamicAnalytics.
 /dynamictag.
 /dynamicyield/*
-/dynatrace-
+/dynatrace-$domain=~dynatrace.com
 /dynaTraceMonitor^
 /dynimpression?rkey=
 /e.gif?
@@ -5125,6 +5126,8 @@
 ://metrika.*/analytics.
 ://mint.*/?js
 ://piwik.$domain=~matomo.org|~piwik.pro
+://segment-api.
+://segment-cdn.
 ://stats.*/index.js
 ://stats.*/script.js
 ://stats.*/stats.aspx
@@ -9511,6 +9514,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ipinyou.com^$third-party
 ||irs09.com^$third-party
 ||jiankongbao.com^$third-party
+||jpush.cn^$third-party
 ||lndata.com^$third-party
 ||logly.co.jp^$third-party
 ||mediav.com^$third-party
@@ -10937,7 +10941,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||facebook.com*/impression.php
 ||facebook.com/adnw_request?
 ||facebook.com/ai.php?
-||facebook.com/ajax/bz?*__comet_req=
 ||facebook.com/brandlift.php
 ||facebook.com/common/cavalry_endpoint.php?
 ||facebook.com/method/links.getstats?
@@ -11705,6 +11708,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||reevoo.com/track_url/
 ||reevoo.com^*/track/
 ||refer.ccbill.com^
+||refer.wordpress.com^$third-party
 ||referrer.disqus.com^
 ||reflow.tv/pixels/
 ||rejoiner.com/tracker/
@@ -12889,6 +12893,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||toruk.tanx.com^
 ||tr.n2.hk^
 ||track.ra.icast.cn^
+||track.tomwx.net^
 ||tracking.cat898.com^
 ||union.360.cn/1899.js
 ||useg.nextdigital.com.hk^
@@ -23627,6 +23632,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||ens.tagblatt.ch^
 ||fc.vodafone.de^
 ||froglytics.eventfrog.ch^
+||geoip.finanzen.net^
 ||golem.de/staticrl/scripts/golem_cpxl_
 ||hartgeld.com/cgi-sys/Count.cgi?
 ||horizont.net/stats/
@@ -23730,6 +23736,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||tracking.alarabiya.net^
 ! Bulgarian
 ! Chinese
+||104.com.tw/log/
 ||17173.com/ping.js
 ||17173.com/pv?
 ||55bbs.com/east.html
@@ -23755,6 +23762,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||collect.tianya.cn^
 ||count5.pconline.com.cn^
 ||counter.people.cn^
+||dcard.tw/v1/events
 ||douyucdn.cn/fish3/1.gif
 ||eclick.baidu.com^
 ||event.csdn.net^
@@ -23765,6 +23773,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||hdslb.com/images/isptrack.js
 ||his.tv.sohu.com/his/ping.do?
 ||hisense.com/ta.js
+||i-cable.com/ci/tracking/
 ||ifeng.com/i?p=
 ||imgstat.baidu.com^
 ||jcm.jd.com^$script,third-party
@@ -23820,15 +23829,18 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||pvx.xcar.com.cn^
 ||qhimg.com/11.0.1.js$script
 ||qihucdn.com/11.0.1.js$script
+||qq.com/code.cgi?
 ||qq.com/kvcollect?
 ||qq.com/p?
 ||qq.com/qqcom/
+||qq.com/report.cgi?
+||qq.com/report/$image,xmlhttprequest
 ||qq.com/stdlog
 ||qreport.qunar.com^
+||qzone.qq.com/wspeed.qq.com^
 ||rcgi.video.qq.com^
 ||rec.udn.com^
 ||referer.pixplug.in^
-||report.qq.com^
 ||reportsk.web.sdo.com^
 ||retcode.taobao.com^
 ||rgd.com.cn/counter/
@@ -23889,6 +23901,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||toutiao.com^*/user_log/
 ||tr.discuss.com.hk^
 ||tr.price.com.hk^
+||trace.qq.com^
 ||track.sohu.com^
 ||tracker.ai.xiaomi.com^
 ||trackjay.cool3c.com^
@@ -23903,6 +23916,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||wenku.baidu.com/tongji/
 ||wkctj.baidu.com^
 ||wl.jd.com^
+||wspeed.qq.com^
 ||wumii.com/images/pixel.png
 ||xcar.com.cn/exp/
 ||xiaomi.com/js/mstr.js?
@@ -24225,6 +24239,8 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||uol.com.br/stats?
 ! Russian
 ||2ch.hk^*/tracker.js?
+||2gis.ru/_/log
+||2gis.ru/_/metrics
 ||3dnews.ru/track
 ||4pda.ru/stat/
 ||ad7.bigmir.net^
