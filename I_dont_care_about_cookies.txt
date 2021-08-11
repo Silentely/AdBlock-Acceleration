@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 332.202108091039
+! Version: 332.202108110750
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 09 Aug 2021 08:39 UTC
+! Last modified: 11 Aug 2021 05:50 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -31,7 +31,7 @@
 ###cookiesToolbar
 ###privacy_notice
 ###cookiesdirective
-~vetzoo.se,~animail.se,~alexanderhall.co.uk,~basenio.de,~foxtons.co.uk,~smdv.de,~voelkner.de,~digitalo.de,~getgoods.com,~telekom.hu###cookie_consent
+~vetzoo.se,~animail.se,~alexanderhall.co.uk,~basenio.de,~foxtons.co.uk,~telekom.hu###cookie_consent
 ###cookieBannerD
 ~amd-moebel.de,~lansberg.de,~texels.nl,~wahre-superstars.de,~klang-hamburg.de###cookieNotice
 ~tweakers.net##.cookieNotice:not(body):not(html)
@@ -3646,7 +3646,7 @@
 ##.mnd-cookies:not(body):not(html)
 ###capa_cookies
 ###et_cookie_law
-##.cookie_consent:not(body):not(html):not(.modal):not([id*="container"])
+~digitalo.de##.cookie_consent:not(body):not(html):not(.modal):not([id*="container"])
 ###cookiesoverview
 ##.site-message--cookies
 ###ukCookiePopup
@@ -6986,7 +6986,7 @@
 ##.hidden-print[data-test-id*="cookie-alert"]
 ###cookie-p[ng-controller="cookiePolicyController"]
 ###exp_cookie_compliance-wrap
-##div[data-cookie-banner]
+~continental.com##div[data-cookie-banner]
 ###cookie-tajekoztato
 ##cookie-law-el
 ###c-hinweis-cookie
@@ -13149,6 +13149,7 @@
 ###cookieWarnLayer
 ###CookieDisclaimerBanner
 ###cw-cookie-warning
+##.js-cookie-banner-container
 !
 ! CUSTOM RULES
 !
@@ -15805,7 +15806,6 @@ forumrowerowe.org##.ckg
 opswat.com###cookie-ntc
 planet.com##.pl-cookies-cta-contain
 dormando.de###up-cookie
-direct-assurance.fr###_cc_
 tomtop.com##.m_privacy_statement
 revouninstallerpro.com###consentAccepted
 freeimages.com##.navbar-qards
@@ -17658,7 +17658,6 @@ simba-dickie-group.com##.cookie_block
 bob-emploi.fr###app > div > div > div > div > nav ~ div[style*="hidden"] > div > section ~ div
 fathers-4-justice.org###snppopup-welcome
 streamlabs.com##.s-callout--cookies
-sentry.io###gatsby-focus-wrapper > div > footer ~ div
 openwire.tv###popup-container
 tierpark-ueckermuende.de##.cookie-einwilligung
 varma.fi##.ng-scope[ng-controller="CookieCtrl"]
@@ -21302,6 +21301,11 @@ easycosmetic.de##.overlay
 easycosmetic.be##.overlay
 easycosmetic.ch##.overlay
 easycosmetic.at##.overlay
+webcontinental.com.br##.wc-accept-cookies
+sentry.io###sentry-consent-widget
+medium.com###root ~ div > div:not([role])
+mapcarta.com##.consent
+quantum-inspire.com##.cookie
 !
 ! SCRIPT BLOCKING
 !
@@ -21740,6 +21744,7 @@ cookies.ae-webdesign.com
 plugin-cookie-consent/build
 /cookie/onetrust/*
 /cookie-consent-settings-modal/*
+/k_cookies/views/js/tarteaucitron.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -22023,6 +22028,7 @@ inforpl.mgr.consensu.org
 ||static.trbo.com/plugin$script
 /wp-content/plugins/fb-pixel-dsgvo/*
 ||id-ward.com/static/idw_plugin$script
+/ishop-plugins/ishop-cp
 /acton/bn/tracker
 ||etracker.de/optin_overlay.php$script
 /libraries/google/do-not-track.js
