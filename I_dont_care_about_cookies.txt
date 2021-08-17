@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 332.202108110750
+! Version: 333.202108170833
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 11 Aug 2021 05:50 UTC
+! Last modified: 17 Aug 2021 06:33 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -13150,6 +13150,10 @@
 ###CookieDisclaimerBanner
 ###cw-cookie-warning
 ##.js-cookie-banner-container
+###klaroDIV .klaro
+###root ~ script[src*="cdn-client.medium.com"] ~ div > div:not([role])
+###gdpr-cookie-message-overlay
+###klaro div[class*="cookie-modal"]
 !
 ! CUSTOM RULES
 !
@@ -15359,7 +15363,6 @@ ttunited.com##div[id$="FrameHolder"] > iframe
 accenture.com##.cookie-nav
 vlajo.org###vlajoCookieLegalContainer
 renaultkatowice.pl##.fixedInfo
-paulcamper.de##div[class^="cookieBanner"]
 assuronline.com##.bottom_cookie
 vespa-forum.at###dkmcookie
 fontfreak.com###sticky-popup
@@ -18991,7 +18994,6 @@ india.com###co-container
 vapstore.de###header-promo
 ueberlingen-bodensee.de###__next > footer ~ div
 ipass4sures.com###blockCookie
-liftoff-game.com##.klaro
 polskieradio.pl##.rodo, .footer ~ .termsOfUse, .rodo-modal
 radkutsche.de###pc
 vrporn.com##.noticepopup
@@ -19023,8 +19025,6 @@ salesmate.io##.footer-popup
 pandahurt.pl##.panda_cookies_accept
 signupgenius.com##.sug-notice--privacy
 anpost.ie###scg_banner
-buecher.de###klaro
-nur-positive-nachrichten.de###klaro
 zamika.pl##body > div:not([id]):not([class])
 carrefour.fr##.m-alert-privacy
 stadiblidene.lv###mrcoockie
@@ -19267,7 +19267,6 @@ varfurdo.hu##body > div:not([id]):not([class])
 ticketco.events###tcCookiesMessage
 tvtv.us##.MuiSnackbar-root
 sixthcontinent.com##.MuiSnackbar-root
-nunido.de###klaro
 furnitex.pl##.bottomWarning
 linergy.de###linergy-cookie-accept
 rareaquaticplants.com##.art-postcontent > p:first-child
@@ -19509,7 +19508,6 @@ guesty.com##.guesty-cookie-notice
 startdevchange.com##.cookies-nav
 ponte.hu##.gdpr
 officiallifeintheuk.co.uk##.shield, div[id*="cookie-preferences"]
-visitberlin.de###klaro
 trustmate.io##div[class*="CookiesWrapper"]
 birminghammidshires.co.uk###cookies
 motor-stickers.com##.notification-wrapper
@@ -21054,7 +21052,6 @@ qmee.com##.dashboard-disclaimer + div
 labellevie.com###confidentiality
 rnbee.ru###yw-cookie-gdpr
 jeanscentre.nl###gatsby-focus-wrapper > div:last-child
-infopedia.pt###klaro-pe-window, #klaro-pe-overlay
 uni-tuebingen.de##.in2-modal__blackbox, #privacy-background, #privacy-container
 eifel-antik.de##.jmg-googlemaps-dsgvo-notification
 flyrotax.com###CookieSettingsContainer
@@ -21303,9 +21300,13 @@ easycosmetic.ch##.overlay
 easycosmetic.at##.overlay
 webcontinental.com.br##.wc-accept-cookies
 sentry.io###sentry-consent-widget
-medium.com###root ~ div > div:not([role])
 mapcarta.com##.consent
 quantum-inspire.com##.cookie
+buecher.de###klaro
+nur-positive-nachrichten.de###klaro
+nunido.de###klaro
+infopedia.pt###klaro-pe-window, #klaro-pe-overlay
+paulcamper.de##.mainContainer > [class*="banner"]
 !
 ! SCRIPT BLOCKING
 !
@@ -22180,7 +22181,7 @@ consent.truste.com$domain=oracle.com
 /cui-cookie-policy$domain=congstar.de
 /gdpr.js$domain=bitly.com|qcnet.com
 /privacy/popup.js$domain=cdaction.pl
-/cookies.js$domain=knaufdoehetzelf.nl|cashconverters.es|dragnsurvey.com
+/cookies.js$domain=knaufdoehetzelf.nl|cashconverters.es|dragnsurvey.com|guldsmykket.dk
 /utag.js$domain=louisvuitton.com|saturn.de|mediamarkt.de|total.com|total.nl|esprit.de|ing.es|stepstone.de|stepstone.at|santander.pl|swisscom.ch
 /spmsg_addetection.js$domain=tvspielfilm.de
 /firebox-gdpr.js$domain=thelittleboxoffice.com
