@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202108171810
+! Version: 202108180039
 ! Title: EasyPrivacy
-! Last modified: 17 Aug 2021 18:10 UTC
+! Last modified: 18 Aug 2021 00:39 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -5516,10 +5516,12 @@ _sdcTrackingCode.
 ?proxy=ws://$script,websocket
 ?proxy=wss://$script,websocket
 ! google tracking
-/client_204?
-/csi_204?
-/gen_204?
-/generate_204
+/client_204?$image,other,ping,script
+/csi_204?$image,other,ping,script
+/gen_204?$image,other,ping,script
+/generate_204$image,other,ping,script
+||googleapis.com^*/gen_204?
+||gstatic.com/gen_204?
 ! Adblock tracking
 ,adb=*&referer=
 -logabpstatus.
@@ -7325,6 +7327,7 @@ _mongo_stats/
 ||ownpage.fr^$third-party
 ||ox-bio.com^$third-party
 ||oxidy.com^$third-party
+||p-analytics.life^$third-party
 ||p-td.com^$third-party
 ||p.raasnet.com^$third-party
 ||p0.raasnet.com^$third-party
@@ -13574,7 +13577,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||flipboard.com/usage?
 ||flipkart.com/api/3/data/collector/
 ||flirt4free.com/pixel/
-||flyasiana.com/wlo/
 ||flyasiana.com/ykjEIhcZLYg2zoOOoA/
 ||foodcouture.net/public_html/ra/script.php
 ||foxsports.com.au/akam/
@@ -23625,6 +23627,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||batiactu.com/cap_
 ||compteur.developpez.com^
 ||developpez.com/public/js/track.js
+||ecranlarge.com/stat
 ||franceculture.fr/static/js/xtcore-
 ||fsm.lapresse.ca^
 ||gamergen.com/ajax/actualites/addVue
