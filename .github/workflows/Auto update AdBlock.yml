@@ -146,7 +146,7 @@ jobs:
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.TOKEN }}
-          branch: main
+          branch: ${{ github.ref }}
 
           
 #      - name: WeChat notification #用于微信推送通知（如有需要删除行头注释）
