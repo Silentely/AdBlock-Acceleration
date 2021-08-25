@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 333.202108230904
+! Version: 333.202108250904
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 23 Aug 2021 07:04 UTC
+! Last modified: 25 Aug 2021 07:04 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -1459,7 +1459,7 @@
 ###cookielawwarning
 ###ban-cookie
 ###cookieStartMessage
-##.cookiewarning:not(body):not(html):not(.main)
+~vaillant.com,~vaillant.info,~vaillant.co.uk,~vaillant.com.ro,~vaillant.no,~vaillant.pl,~vaillant.nl,~vaillant.de,~vaillant.it,~vaillant.fr,~vaillant.es,~vaillant.be,~vaillant.hr,~vaillant.sk,~vaillant.se,~vaillant.ua,~vaillant.at,~vaillant.cz,~vaillant.fi,~vaillant.si,~vaillant.dk,~vaillant.hu,~vaillant.rs##.cookiewarning:not(body):not(html):not(.main)
 ##.cookies_header:not(body):not(html)
 ###cookies-wiadomosc-box
 ~patient.info##.alert--cookie:not(body):not(html)
@@ -11865,7 +11865,7 @@
 ###cookieInfoWindow
 ##.org-cookie-mini.fixed
 ###nfPPBar
-~jku.at,~oekolandbau.de###cookieman-modal:not([style])
+~jku.at,~oekolandbau.de,~wu.ac.at###cookieman-modal:not([style])
 ##.component-cookie-info-bar
 ##.nu-cookies-alert-container
 ###__next div[class*="CookieWidget"]
@@ -12545,7 +12545,7 @@
 ##.cookie-message__wrap
 ###CookieReportsBannerAZ
 ###EUcookieBanner
-###root ~ script[src*="cdn-client.medium.com"] ~ div > div:not([role])
+###root ~ script[src*="cdn-client.medium.com"] ~ div > div:not([role]):not([tabindex])
 ###gdpr-cookie-message-overlay
 ###unitcookieonpageBar
 ##.mm-cookie-banner
@@ -12724,7 +12724,7 @@
 ##.osw-privacy
 ~kaufland.de###consentOverlay
 ##.cookie_tips
-##app-cookies
+~frag.jetzt,~particify.de##app-cookies
 ##.cookies-used-notice
 ##.cookiesInfo_modal
 ##.cookie-hu-container
@@ -13154,6 +13154,9 @@
 ##.cookies-band-overlay
 ###__next [data-debug-name*="cookie-consent"]
 ##app-cookie-nofication
+##.Cookie.Cookie--bottom
+##.cookie-notice--isVisible
+##.component-cookie-message.show
 !
 ! CUSTOM RULES
 !
@@ -17737,7 +17740,6 @@ streema.com##.footer ~ .alert
 ecoreporter.de###cookieTop
 skd.se##.consent, #consent
 ichip.ru##.disclamer
-aoc.com##.country-popup
 i-fundusze.pl##.modal-backdrop
 tbs.com###toast-container
 columbia.edu##.sticky-notice-wrap
@@ -20868,7 +20870,6 @@ inkoma.com###eatcoockies
 shopsmartfoods.com##.privacy
 gradesfixer.com###warning_popup
 njpw1972.com###gdpr
-nytimes.com##.free-form-content > .banner__container, .CookieBanner > .banner__container, #alertBannerMount
 quadlockcase.eu##.ip_cookie
 quadlockcase.co.uk##.ip_cookie
 fairtrade.at###cc
@@ -21139,7 +21140,6 @@ lego.com##div[class*="CookieDisclaimer"], #footer ~ [class*="emotion-cache"], #p
 oceanmata.com##.banner
 jamiebalfour.scot###cookies
 bolighed.dk##.cookie__manager
-aok.de###___gatsby footer > .fixed
 audiofanzine.com##.af-cookies, .af-cookies-background
 chess.com##.bottom-banner-component
 splu-engineers.com###frontpage-banner-cover
@@ -21330,7 +21330,6 @@ texasclub.pl##.configMessages
 toysrus.ca##.cookie-modal
 tinder.com##.App > [data-nosnippet], #___gatsby > [data-nosnippet]
 cnnbrasil.com.br###pop__gdpr
-loxam.fr##.Cookie
 kudyznudy.cz##.sx-cookies
 tp-link.com###tp-cookie
 pikapolonica.si##.gdpr-modal-wrapper, .modals-overlay
@@ -21355,6 +21354,18 @@ elblandkliniken.de###Datenschutz
 ryobitools.eu##div[class*="OneTrustOverlay"]
 bagaggio.com.br##.lgpd
 lineheart.lu###policy_banner, .policy-banner-overlay
+creality3dofficial.com##.pub-tip
+zig-star.com##.md-consent
+aok.de##.csm[data-module="cookie-manager-dialog"]
+aoc.com##.cookies
+isawitfirst.com##.main-cpu[data-pu*="cookies"]
+chinahighlights.com##.web_cookie
+fertighaus.de##.BannerWrapper
+sslplus.de###ccmRoot
+nytimes.com##.free-form-content > .banner__container, .CookieBanner > .banner__container, #alertBannerMount
+sportshop.com###solar-app ~ div
+stoertebeker.com###overlay
+cv.fr###toast-container
 !
 ! SCRIPT BLOCKING
 !
@@ -22377,7 +22388,6 @@ privacy-manager-v$domain=df.eu
 /ob_rgpd/*$domain=orangebank.fr
 /syno_cookie_element$domain=synology.com
 /jcookie/*$domain=javhd.com
-/dg-governance/*$domain=nytimes.com
 /PoliticaCookies.js$domain=fincaraiz.com.co
 /Team23_SimpleCookie/*$domain=kleiderhelden.com
 /cookieCutter$domain=thebureauinvestigates.com
@@ -22417,6 +22427,7 @@ trcking.min.js$domain=canalplus.com|canal-plus.com
 /klaro-no-css.js$domain=frag-einen-anwalt.de
 /cookieconsent/*$domain=stema.de
 /cookieBox.js$domain=vinos.de
+/dg-governance/*$domain=nytimes.com|inyt.com
 !
 ! FILTERLIST ONLY
 !
