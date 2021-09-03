@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 333.202108290754
+! Version: 333.202109031416
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 29 Aug 2021 05:54 UTC
+! Last modified: 03 Sep 2021 12:16 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -354,7 +354,7 @@
 ###ctn_cookies
 ##.ctn_cookies:not(body):not(html)
 ##.cookie-wrap:not(body):not(html)
-~case-score.de,~gov.lv,~riga.lv,~cexpr.es,~correosexpress.com,~correosexpress.pt,~travelchannel.co.uk,~puzzels.ad.nl,~puzzels.trouw.nl,~puzzels.parool.nl,~puzzels.volkskrant.nl##.cookie-wrapper:not(body):not(html)
+~case-score.de,~gov.lv,~riga.lv,~cexpr.es,~correosexpress.com,~correosexpress.pt,~travelchannel.co.uk,~puzzels.ad.nl,~puzzels.trouw.nl,~puzzels.parool.nl##.cookie-wrapper:not(body):not(html)
 ###cookiewarningiframe
 ~leirovins.be###cookies-notice
 ###cookieNoteWrap
@@ -758,7 +758,7 @@
 ###ckieprompt
 ##.w-cookie-banner:not(body):not(html)
 ###gacookiemessage
-~mol.hu,~mifcom.de,~kupbilecik.pl,~kupbilecik.de,~kupbilecik.com,~metro.de,~metro.fr,~metro.hu,~makro.nl,~wins.pl,~falter.at,~reidl.de,~puzzels.trouw.nl,~puzzels.parool.nl,~puzzels.volkskrant.nl##.cookie-container:not(body):not(html)
+~mol.hu,~mifcom.de,~kupbilecik.pl,~kupbilecik.de,~kupbilecik.com,~metro.de,~metro.fr,~metro.hu,~makro.nl,~wins.pl,~falter.at,~reidl.de,~puzzels.trouw.nl,~puzzels.parool.nl##.cookie-container:not(body):not(html)
 ###euCookie
 ##.euCookie:not(body):not(html)
 ##.pf-cookie-directive:not(body):not(html)
@@ -1902,7 +1902,7 @@
 ##.barre_cookie:not(body):not(html)
 ##.barre_cookies:not(body):not(html)
 ###_cookieNotificationBar
-~realme.com,~joingoodcompany.nl,~markets.com,~tele2.nl,~t-mobile.nl,~reidl.de,~puzzels.ad.nl,~puzzels.bndestem.nl,~puzzels.bndestem.nl,~puzzels.bd.nl,~puzzels.bd.nl,~puzzels.gelderlander.nl,~puzzels.gelderlander.nl,~puzzels.destentor.nl,~puzzels.destentor.nl,~puzzels.ed.nl,~puzzels.ed.nl,~puzzels.pzc.nl,~puzzels.pzc.nl,~puzzels.tubantia.nl,~puzzels.tubantia.nl,~puzzels.trouw.nl,~puzzels.parool.nl,~puzzels.volkskrant.nl##.cookie-header:not(body):not(html)
+~realme.com,~joingoodcompany.nl,~markets.com,~tele2.nl,~t-mobile.nl,~reidl.de,~puzzels.ad.nl,~puzzels.bndestem.nl,~puzzels.bndestem.nl,~puzzels.bd.nl,~puzzels.bd.nl,~puzzels.gelderlander.nl,~puzzels.gelderlander.nl,~puzzels.destentor.nl,~puzzels.destentor.nl,~puzzels.ed.nl,~puzzels.ed.nl,~puzzels.pzc.nl,~puzzels.pzc.nl,~puzzels.tubantia.nl,~puzzels.tubantia.nl,~puzzels.trouw.nl,~puzzels.parool.nl##.cookie-header:not(body):not(html)
 ###cookie-header
 ###_CookieText
 ###koekbalk
@@ -2159,7 +2159,7 @@
 ###lawEU
 ~mediamarkt.ch##.cookie-info-header:not(body):not(html)
 ###popin-accept-cookie
-~openfoodnetwork.org.uk##.cookies-banner:not(body):not(html)
+~ankerkraut.de,~openfoodnetwork.org.uk##.cookies-banner:not(body):not(html)
 ##.cookies_banner:not(body):not(html)
 ##.loi_hamon:not(body):not(html)
 ###cookies_men
@@ -13057,7 +13057,7 @@
 ##.ui-cookie-consent
 ##.alert[aria-describedby*="cookie-info"]
 ##.cookies-disclaimer-kamino
-##.sv-layout div[class*="CookieBar"]
+##.sv-layout .cookie-consent
 ##.eu-cookie-compliance-popup-open::before
 ###react-cookie
 ##.th-cookie-banner
@@ -13157,6 +13157,11 @@
 ##.Cookie.Cookie--bottom
 ##.cookie-notice--isVisible
 ##.component-cookie-message.show
+###plugin-agree-Plugin.plugin-agree-modal-container
+###GDPRModal > .gdpr-modal-modal
+##.cookie_consent_container
+##.MuiGrid-root[class*="CookiePopUp"]
+###rgpd_bandeau
 !
 ! CUSTOM RULES
 !
@@ -19389,7 +19394,6 @@ cookpad.com##.flex[data-id="cookie_dialog"]
 reiseversicherung.de###erv-cookie
 leagueoflegends.com##.riotbar-alert
 codility.com##.cookies
-ankerkraut.de###cc_container
 abo.faz.net##.veil
 onzetaal.nl##.consent
 mindmeister.com###cb-wrapper
@@ -21365,6 +21369,8 @@ stoertebeker.com###overlay
 cv.fr###toast-container
 coinbase.com###root > div[class*="Layout"] ~ div[class^="sc"]:last-child, #page_content > div + div:last-child, div[class*="ContentHub__FooterWrapper"] ~ div:last-child, #root > div[class^="Flex"] > div > [data-element-handle="step-loaded-active"] > [class^="sc"]:last-child
 uvex-sports.com##.as__cookie-banner
+ohmydev.pl###__next > [style*="transform"]
+womodoc.de##main ~ div
 !
 ! SCRIPT BLOCKING
 !
@@ -21805,6 +21811,7 @@ plugin-cookie-consent/build
 /cookie-consent-settings-modal/*
 /k_cookies/views/js/tarteaucitron.js
 /components/consent-cookie/*
+/cookie-consent-service.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -22018,6 +22025,7 @@ cmp.cls.pm
 /truendo_cmp.pid.js
 cmp.optad360.io
 ||snigelweb.com/sncmp$script
+||seznam.cz/js/cmp$script
 ||gofundme.com/js/3.0/visitorCookie.js$script
 /CookiesDirective
 CookieAccept/affirmation.js
