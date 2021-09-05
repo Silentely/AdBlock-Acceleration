@@ -6,7 +6,6 @@
  <br>
 <img src="https://img.shields.io/github/license/Silentely/AdBlock-Acceleration?color=ff69b4">
 <img src="https://img.shields.io/github/languages/code-size/Silentely/AdBlock-Acceleration?color=blueviolet">
-<img src="https://www.deepcode.ai/api/gh/badge?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF0Zm9ybTEiOiJnaCIsIm93bmVyMSI6IlNpbGVudGVseSIsInJlcG8xIjoiQWRCbG9jay1BY2NlbGVyYXRpb24iLCJpbmNsdWRlTGludCI6ZmFsc2UsImF1dGhvcklkIjoyNzQ2MiwiaWF0IjoxNjE0MjI0MzExfQ.xU2nL6W7rirL2Ypbm43784nnAbttXwYK5UV0KqJhN9M">
 <img src="https://img.shields.io/badge/dynamic/json?label=GitHub%20Followers&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3DSilentely&labelColor=282c34&color=181717&logo=github&longCache=true "关注数量">
 </div>
 
