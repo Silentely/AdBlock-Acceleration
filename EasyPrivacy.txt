@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202109070024
+! Version: 202109070349
 ! Title: EasyPrivacy
-! Last modified: 07 Sep 2021 00:24 UTC
+! Last modified: 07 Sep 2021 03:49 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1303,6 +1303,7 @@
 /collect/stats?
 /collect/tracking.
 /collect/view?
+/collect/view_count?
 /collect?appName
 /collect?callback=
 /collect?d=
@@ -5557,6 +5558,7 @@ _mongo_stats/
 ! -----------------Third-party tracking domains-----------------!
 ! *** easylist:easyprivacy/easyprivacy_trackingservers.txt ***
 ! Revolving trackers
+||adnext.co^
 ||affvantage.com^
 ||altopd.com^
 ||apxl.io^
@@ -6636,6 +6638,7 @@ _mongo_stats/
 ||goldstats.com^$third-party
 ||goneviral.com^$third-party
 ||goodcounter.org^$third-party
+||goodmeasure.io^$third-party
 ||google-analytics.com^$third-party
 ||googleadservices.com^$third-party
 ||googleoptimize.com^$third-party
@@ -6830,6 +6833,7 @@ _mongo_stats/
 ||iovation.com^$third-party
 ||ip-api.com^$third-party
 ||ip-label.net^$third-party
+||ip2c.org^$third-party
 ||ip2location.com^$third-party
 ||ip2map.com^$third-party
 ||ip2phrase.com^$third-party
@@ -8988,7 +8992,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ringplayground.com^$third-party
 ||ritzykey.com^$third-party
 ||roofrelation.com^$third-party
-||rusticprice.com^$third-party
+||rusticprice.com^
 ||ruthlessdegree.com^$third-party
 ||sablesong.com^$third-party
 ||satisfycork.com^$third-party
@@ -9030,7 +9034,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||spiffymachine.com^$third-party
 ||spookysleet.com^
 ||spotlessstamp.com^
-||spottednoise.com^$third-party
+||spottednoise.com^
 ||spuriousbase.com^$third-party
 ||spurioussteam.com^$third-party
 ||squeakzinc.com^$third-party
@@ -10281,6 +10285,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||appspot.com/analytics/
 ||appspot.com/api/track/
 ||appspot.com/collect
+||appspot.com/display?
 ||appspot.com/stats?
 ||arclk.net/trax?
 ||areyouahuman.com/kitten?
@@ -10344,11 +10349,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||beacon.aimtell.com^
 ||beacon.errorception.com^
 ||beacon.flow.io^
-||beacon.gcion.com^
-||beacon.gu-web.net^
-||beacon.heliumnetwork.com^
-||beacon.indieclick.com^
-||beacon.livefyre.com^
 ||beacon.nrholding.net^
 ||beacon.riskified.com^
 ||beacon.rum.dynapis.com^
@@ -10365,52 +10365,26 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||beacons.mediamelon.com^
 ||beam.mjhlifesciences.com^
 ||bento.agoda.com^
-||bestofmedia.com^*/beacons/$~image
-||bfnsoftware.com^*/environment.cgi?
 ||bhphotovideo.com/imp/
+||bi.medscape.com^
 ||bidsystem.com/ppc/sendtracker.aspx?
-||bing.com/aclick/$third-party
-||bing.com/action/
 ||birdsend.email/pixel
 ||bit.ly/stats?
 ||bitclouds.ru/trd
-||bitdash-reporting.appspot.com^
-||bitgravity.com/b.gif$third-party
-||bitgravity.com^*/tracking/
-||bitmovin.com/impression
 ||bitrix.info/ba.js
-||bizrate-images.co.uk^*/tracker.js
-||bizrate-images.com^*/tracker.js
-||bizrate.co.uk/js/survey_
-||bizrate.com^*/survey_
 ||bizsolutions.strands.com^
-||blinkx.com/thirdparty/iab/$third-party
 ||blip.bizrate.com^$script
 ||blogblog.com/tracker/
 ||bmrg.reflected.net^
 ||bobparsons.com/image.aspx?
-||bolt.com^*/log?$third-party
-||bonsai.internetbrands.com^
+||bolt.com/v1/log?
 ||bpath.com/count.dll?
-||brain.foresee.com^
 ||branch.io^$third-party
-||brandaffinity.net/icetrack/
 ||brandcdn.com/pixel/
 ||bravenet.com/counter/
-||break.com/apextracker/
-||break.com/break/js/brktrkr.js$third-party
-||breakingburner.com/stats.html?
-||breakmedia.com/track.jpg?
-||bright.bncnt.com^
-||browserscope.org/user/beacon/
 ||bs.yandex.ru^
-||btn.clickability.com^
-||btrace.video.qq.com^
 ||bucklemail.com/a/$image
 ||bufferapp.com/wf/open?upn=$third-party
-||bumpin.com^*/analytics.html
-||business.sharedcount.com^$third-party
-||buybox.click/analytics.js
 ||bytedance.com/pixel/
 ||byteoversea.com/captcha/report
 ||byteoversea.com/monitor_browser/
@@ -10560,6 +10534,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||coinbase.com/assets/application-*.js$third-party
 ||collect.*.miui.com^
 ||collect.igodigital.com^$script
+||collect.iteam-dress.com^
 ||collect.rewardstyle.com^
 ||collect.usefathom.com^
 ||collector-*.px-client.net^
@@ -10702,6 +10677,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||d2nxi61n77zqpl.cloudfront.net^
 ||d2o67tzzxkqap2.cloudfront.net^
 ||d2oh4tlt9mrke9.cloudfront.net^
+||d2r1yp2w7bby2u.cloudfront.net^
 ||d2rnkf2kqy5m6h.cloudfront.net^
 ||d2ry9vue95px0b.cloudfront.net^
 ||d2san7t27xb2pn.cloudfront.net^
@@ -11109,6 +11085,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||imprvdosrv.com^$image,third-party
 ||incapdns.net/monitor.js
 ||ind.sh/view.php?$third-party
+||indoleads.com/api/pixel-content/
 ||infinityid.condenastdigital.com^
 ||infogr.am/logger.php?
 ||informer.yandex.ru^
@@ -11206,6 +11183,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||letv.com/env/
 ||levelaccess.net/analytics/
 ||licdn.com/*.gif?rnd=
+||licensing.bitmovin.com/impression
 ||lift.acquia.com^
 ||ligatus.com/push/url.gif?
 ||ligatus.com/rms/rend?
@@ -11297,6 +11275,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||marketingautomation.services/koi
 ||marketo.com/gw1/
 ||marketo.com/rtp-api/
+||marsflag.com/mf2file/site/ext/tr.js
 ||martech.condenastdigital.com^
 ||mas.nth.ch^
 ||mashery.com/analytics/
@@ -11604,6 +11583,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||raygun.io/events?
 ||rbl.ms/res/users/tracking/
 ||rc.rlcdn.com^
+||readcube.com/assets/track_
 ||realm.hearst3pcc.com^
 ||rebel.ai/track?
 ||recart.com/tracking/
@@ -13581,6 +13561,9 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||inq.com/tagserver/
 ||instagram.com/ajax/bz
 ||instructables.com/counter
+||intent.cmo.com.au^
+||intent.goodgearguide.com.au^
+||intent.pcworld.idg.com.au^
 ||internetslang.com/jass/
 ||intg.snapchat.com^
 ||intuitcdn.net/analytics/
@@ -13665,6 +13648,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||modanisa.com/al/j/analytics.js
 ||moneycontrol.com/news/services/get_comscore_pageview/
 ||monitor.channel4.com^
+||mov.t-mobile.com/p/js/1.js
 ||mps.nbcuni.com/request/page/json/params/*&adunits=$xmlhttprequest
 ||msn.com/collect/
 ||msn.com/OneCollector/
