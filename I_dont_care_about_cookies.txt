@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 333.202109031416
+! Version: 333.202109081016
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 03 Sep 2021 12:16 UTC
+! Last modified: 08 Sep 2021 08:16 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -137,10 +137,10 @@
 ~singaporeair.com###cookie-notification
 ~future-x.de###cookieBar
 ###cookie_policy-0
-##.cookieBanner:not(body):not(html):not(#sprd-main)
+~hl.co.uk##.cookieBanner:not(body):not(html):not(#sprd-main)
 ###cookie_bg
 ###cookie_header
-~regioneo.pl,~wiadomosci-lodz.pl,~msales.com,~theorie-musik.de###cookie-law-info-bar
+~regioneo.pl,~czyodebrac.pl###cookie-law-info-bar
 ###cookie-div
 ##.cookieLight:not(body):not(html)
 ###cookiePopUp
@@ -4393,7 +4393,7 @@
 ###cookieopt
 ###cookieMessageBar
 ##.privacy-message:not(body):not(html)
-##.c-cookie-banner:not(body):not(html)
+~myunidays.com##.c-cookie-banner:not(body):not(html)
 ##.cookies-law:not(body):not(html)
 ###uni_accept_cookie
 ##.eu-pruda-cookies:not(body):not(html)
@@ -7414,7 +7414,7 @@
 ##.cookies.is-visible:not(body):not(html)
 ##onl-cookie
 ~just-eat.co.uk,~just-eat.ie,~just-eat.es,~justeat.it,~quora.com##div[class*="CookieBanner"]:not(.app):not(.page)
-~just-eat.co.uk,~just-eat.ie,~just-eat.es,~justeat.it##div[class*="cookieBanner"]:not([id*="main"]):not(.cookieBannerDisabled)
+~hl.co.uk,~just-eat.co.uk,~just-eat.ie,~just-eat.es,~justeat.it##div[class*="cookieBanner"]:not([id*="main"]):not(.cookieBannerDisabled)
 ###smart-cmp-host
 ###gdprsticky
 ##.gdpr-optin-view:not(body):not(html)
@@ -12032,7 +12032,7 @@
 ##.mf-cookie-banner
 ###cookie-dim
 ##.usercookiemanagement
-###cliSettingsPopup
+~regioneo.pl,~czyodebrac.pl###cliSettingsPopup
 ###flash-container ~ div div[data-testid="main-cookies-banner-container"]
 ###prompt-cookies
 ###gdpr_message
@@ -13149,7 +13149,7 @@
 ###cookieWarnLayer
 ###CookieDisclaimerBanner
 ###cw-cookie-warning
-##.js-cookie-banner-container
+~myunidays.com##.js-cookie-banner-container
 ###klaroDIV .klaro
 ##.cookies-band-overlay
 ###__next [data-debug-name*="cookie-consent"]
@@ -13162,6 +13162,14 @@
 ##.cookie_consent_container
 ##.MuiGrid-root[class*="CookiePopUp"]
 ###rgpd_bandeau
+###CookieModalOverlay
+##.cookies-cmp-trigger
+##.klaro div[class*="cookie-modal"]
+###cc-cookie-overlay
+###cc-cookie-message
+###tc_privacy_wrapper
+###cl-consent.cl-consent
+###GDPRAcceptBanner
 !
 ! CUSTOM RULES
 !
@@ -16449,7 +16457,6 @@ shrm.org##.shrm-gdpr
 mvagusta.com##div[class^="bannerContainer"]
 mediafour.com###wpnb-bar
 messe-kassel.de##.note
-fancentro.com##.consent-message
 askthepsych.com###cks
 iboysoft.com###user_popup
 durszlak.pl##.privacy-layer
@@ -16797,7 +16804,6 @@ startnext.com###toast, .toast
 domeble.com###toast, .toast
 ilovepdf.com###toast, .toast
 nautic-way.com###toast, .toast
-myunidays.com###toast, .toast
 mygon.com###toast, .toast
 toradex.com###toast, .toast
 iloveimg.com###toast, .toast
@@ -16818,7 +16824,6 @@ vouchers.dailyselect.co.uk###privacy, .privacy
 e-codepromo.fr###privacy, .privacy
 emezeta.com###privacy, .privacy
 explicite.info###privacy, .privacy
-ldlc-pro.com###privacy, .privacy
 domuswire.com###privacy, .privacy
 mieszko.pl###privacy, .privacy
 spectrumled.pl###privacy, .privacy
@@ -19562,7 +19567,6 @@ buchbinder-auktion.de###cookieSettings, #cookieBlur
 andyhayler.com##.cookie
 iperdi.de###consent_info
 uptain.de###overlay
-lagranja.janto.es###web5 > div > div:not([id]):last-child
 kmweg.de###colorbox, #cboxOverlay
 yuumari.com##footer ~ .banner-container
 claravital.de###consentmanager
@@ -19641,7 +19645,6 @@ astroreveal.com##.EU2018
 kobietaxl.pl##.cookie_al
 swissre.com##.Notification
 kbv.de##.layer-cookie
-teknofilo.com###cl-consent
 wissenstexte.de##body > dialog
 aquanox.com###cookie
 diaexpert.de##.dx_cookiebanner
@@ -19804,7 +19807,6 @@ deandavid.at##.v-overlay, .v-dialog__content
 boley.de##.ckmsg
 totallywicked-eliquid.co.uk##.cookie
 sebgroup.com##.disclaimer-container
-arbeitsagentur.de###ba-header-disclaimer, #piwik-banner-container, .ba-cookie-hinweis
 greenpandagames.com##.snackbar
 deces-en-france.fr##.s-app-cookies
 ultraedit.com###pp_b
@@ -20970,7 +20972,6 @@ tata.com##.overlayPop
 berendsen.pl##.site--wrapper ~ div
 mediamarkt.at###mms-consent-portal-container
 syncfusion.com###cookie
-bibliotheques-specialisees.paris.fr##div[role="alertdialog"]
 tecnocasa.it##.cookie-status
 pwabuilder.com###gdprDiv
 spainhouses.net##.persistentMessage
@@ -21371,6 +21372,24 @@ coinbase.com###root > div[class*="Layout"] ~ div[class^="sc"]:last-child, #page_
 uvex-sports.com##.as__cookie-banner
 ohmydev.pl###__next > [style*="transform"]
 womodoc.de##main ~ div
+dava.dk###CookieModal
+sonnenverlauf.de###cc_div
+tulli.fi###root [aria-label="Cookie banner"]
+olhardigital.com.br###lgpd_optall
+terra.com.br##.navbar-disclaimer[data-button-url*="cookies"]
+terra.bio###root [aria-label="cookie consent banner"]
+myunidays.com##.toast
+bibliotheques-specialisees.paris.fr##div[role="alertdialog"]
+paris.fr##.paris-cookies-banner
+naturgenussfestival.de##.disclaimer
+janto.es###Transparente, #widgetCookiesPpal
+auditoriodetenerife.com###Transparente, #widgetCookiesPpal
+dare2compete.com##.cookies-save
+pccomponentes.com##main ~ div
+nakedwines.com##nkd-cookie-banner
+hellowatt.fr###cookie-modal__container
+unchained-horizon.com##main ~ div
+fancentro.com##.MuiContainer-root > div > header ~ div
 !
 ! SCRIPT BLOCKING
 !
@@ -21545,7 +21564,7 @@ cookies.innershed.co.uk
 /cookiebar_tls.js
 /wp-content/plugins/smart-cookie-kit/*
 /cookie-notice.js
-/wp-content/plugins/cookie-law-info/*$domain=~wmagazine.com|~moneytoplist.com
+/wp-content/plugins/cookie-law-info/*$domain=~wmagazine.com|~czyodebrac.pl|~moneytoplist.com
 /CookiePolicy/resources/scripts/cookie.policy.min.js
 /modules/cookieconsent/js/*
 jquery.cookiepol.js
@@ -21812,6 +21831,7 @@ plugin-cookie-consent/build
 /k_cookies/views/js/tarteaucitron.js
 /components/consent-cookie/*
 /cookie-consent-service.js
+/gdpr/assets/js/cookieconsent.min.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -22252,7 +22272,7 @@ consent.truste.com$domain=oracle.com
 /cui-cookie-policy$domain=congstar.de
 /gdpr.js$domain=bitly.com|qcnet.com
 /privacy/popup.js$domain=cdaction.pl
-/cookies.js$domain=knaufdoehetzelf.nl|cashconverters.es|dragnsurvey.com|guldsmykket.dk|zukunftsheizen.de
+/cookies.js$domain=knaufdoehetzelf.nl|cashconverters.es|dragnsurvey.com|guldsmykket.dk|zukunftsheizen.de|truphone.com
 /utag.js$domain=louisvuitton.com|saturn.de|mediamarkt.de|total.com|total.nl|esprit.de|ing.es|stepstone.de|stepstone.at|santander.pl|swisscom.ch
 /spmsg_addetection.js$domain=tvspielfilm.de
 /firebox-gdpr.js$domain=thelittleboxoffice.com
