@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: wh/AdRwC0xsNW8OArwbb3Q
-! Version: 202109090023
+! Checksum: +Ytrs9xcMz/5n+U0l8DWAA
+! Version: 202109090403
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last Modified: 09 Sep 2021 00:23 UTC
+! Last Modified: 09 Sep 2021 04:03 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: http://abpchina.org/forum/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -1339,6 +1339,10 @@ _xiuno_com_ad/
 ##script[src="/templates/frontend/frontend-jiucao/js/jquery.lazyload.min.js"] + .footer_app_box
 ##span[title="neteasefooter"]
 ##style + .vdgdo
+##.bjxhf
+##.qzdhf
+##.opt > A[target="_blank"] > IMG[src*=".360buyimg.com"]
+##.video-holder > A[target="_blank"] > IMG[src*=".360buyimg.com"]
 ##table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"]
 !----------------------------------Ads-Union----------------------------------!
 .8ox.cn
@@ -8963,6 +8967,7 @@ _yad_jsonp_
 szxx.com.cn###A0
 dzbhdm.com##A[href^="https://www.dzbhdm.com/news/"] > IMG[src^="https://www.dzbhdm.com/"]
 szxx.com.cn###A1
+hao.360.cn##.hot-word
 szxx.com.cn###A2
 gpcxw.com###AA2
 yahoo.com###ACT_crazy
@@ -16551,6 +16556,7 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 !#Novels
 ||rtrete.store^
 ||hswfj.cn^
+||venber.cn^
 ###chaptername + div > div[style="padding:10px;border-radius:10px;background-color:green;"]
 ###content > div[style="padding:10px!important;border-radius:10px;background-color:green;"]
 ###downdiv > .downcode
