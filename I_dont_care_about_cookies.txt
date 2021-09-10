@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 333.202109081016
+! Version: 333.202109101345
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 08 Sep 2021 08:16 UTC
+! Last modified: 10 Sep 2021 11:45 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -11738,7 +11738,7 @@
 ##.cleanslate.browser-consent
 ##.modal-accept-cookie.custom-modal
 ###clarip-cookie-consent-banner-container
-~joyn.de,~prosieben.de##cmp-banner
+~joyn.de,~esports.com,~prosieben.de##cmp-banner
 ###cookie-sticky
 ###privacyProtectionBanner
 ##.site-cookiebar
@@ -13170,6 +13170,7 @@
 ###tc_privacy_wrapper
 ###cl-consent.cl-consent
 ###GDPRAcceptBanner
+##.aviso-privacidade
 !
 ! CUSTOM RULES
 !
@@ -21219,7 +21220,6 @@ pepeenergy.com##.modal-cookie
 vauen.de###cookieman-modal
 immunspender.com###cookieman-modal
 easybell.de###cookieman-modal
-bund.de###bfr-cookielaw, .datahint
 boc24.de##.cookie-layer
 elasticemail.com###elastic-cookie-notice
 churchs.com###ccpa
@@ -21390,6 +21390,12 @@ nakedwines.com##nkd-cookie-banner
 hellowatt.fr###cookie-modal__container
 unchained-horizon.com##main ~ div
 fancentro.com##.MuiContainer-root > div > header ~ div
+yoys.no###section-cookies
+cirklo.io##snack-bar-container
+bund.de###bfr-cookielaw, .datahint
+shopfacil.com.br##.modal-lgpd__wrapper
+tiktok.com##.tiktok-sdk-cookie-banner
+bt.com###cookiePreference
 !
 ! SCRIPT BLOCKING
 !
@@ -21520,7 +21526,6 @@ eurocookie.galilcloud.wixapps.net
 /js/components/cookiescomponent
 /cookiesinfo/cookieinfo.min.js
 /cookie-consent/cookie-consent.umd.js
-||bt.com/consumer/cookie/client$script
 /cookiebanner.$domain=~huk24.de|~huk.de|~adtipp.de|~nectar.com|~neckermann.de|~exali.de|~check24.de
 /common/cpol/cookiepolicy.php
 /cookie-widget/latest/cookiewidget.js
@@ -21832,6 +21837,7 @@ plugin-cookie-consent/build
 /components/consent-cookie/*
 /cookie-consent-service.js
 /gdpr/assets/js/cookieconsent.min.js
+/cookieconsent.bundle.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -22000,7 +22006,7 @@ sdk.privacy-center.org$domain=~lequipe.fr|~metronieuws.nl|~marianne.net|~allocin
 /e-privacy.min.js
 /privacyConsentBar.js
 ||tagcommander.com/privacy$script,domain=~labanquepostale.fr
-||privacy-proxy.usercentrics.eu/latest$script,domain=~haix.de|~badische-zeitung.de
+||privacy-proxy.usercentrics.eu/latest$script,domain=~haix.de|~badische-zeitung.de|~bobsys.com
 ||isgprivacy.cbsi.com/dist/optanon$script,domain=~cbsnews.com
 /contao-privacy-center.js
 privacy-mgmt.com$domain=~bild.de|~computerbild.de|~bold.dk|~welt.de|~focus.de|~chip.de|~faz.net|~n-tv.de|~spiegel.de|~privacy-mgmt.com|~wunderweib.de|~tvmovie.de|~praxisvita.de|~cosmopolitan.de|~giga.de|~ostsee-zeitung.de|~lvz.de|~mein-schoener-garten.de|~boerse-online.de|~tvspielfilm.de|~autobild.de|~bike-bild.de|~bz-berlin.de|~cyberport.at|~cyberport.de|~golem.de|~express.de|~volkskrant.nl|~rtl2.de|~si.com|~derstandard.de|~derstandard.at|~rtl.de|~11freunde.de|~finanzen.at|~finanzen.net|~insider.com|~transfermarkt.at|~transfermarkt.ch|~transfermarkt.co.uk|~transfermarkt.com|~transfermarkt.com.tr|~transfermarkt.de|~transfermarkt.fr|~transfermarkt.it|~transfermarkt.nl|~transfermarkt.pl|~transfermarkt.pt|~transfermarkt.us|~vip.de|~businessinsider.de|~clever-tanken.de|~fitbook.de|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~noizz.de|~politico.eu|~rollingstone.de|~stylebook.de|~techbook.de|~testbild.de|~wieistmeineip.at|~wieistmeineip.de|~wieistmeineip.ch
@@ -22226,6 +22232,7 @@ wpjslib-chunk-notification.js
 /tvp-tcfapi.js
 /ccm19/public/app.js
 ||ccm19.de/app/public/app.js$script
+||ccm.ceasy.de/public/app.js$script
 /iubenda_cs$domain=~radiomontecarlo.net|~video.repubblica.it|~video.lastampa.it|~nablawave.com|~buondi.it|~telerama.fr|~tgcom24.mediaset.it
 /amp-user-notification-
 ||sn.sanoma.fi/js/sccm$script
@@ -22243,7 +22250,7 @@ connect.danone.es
 notice.sp-prod.net
 ||htmedia.in/analytics-js$script
 ||wpcc.io/lib$script
-||app.usercentrics.eu/browser-ui$script,domain=~badische-zeitung.de|~esports.com|~immonet.de
+||app.usercentrics.eu/browser-ui$script,domain=~badische-zeitung.de|~bobsys.com|~esports.com|~immonet.de
 tag.goadopt.io
 /typo3conf/ext/supi/*
 ||omnigrafitalia.it/policy$script
@@ -22259,6 +22266,7 @@ tag.goadopt.io
 /rcs_cpmt/*
 /bloc/django/ckcsfrg
 ccm19.vucx.de
+/consumer/cookie/client$domain=bt.com
 /frontend/ajax/cookies$domain=romstal.ro
 /rodo-agreement-$domain=gremimedia.pl|zw.com.pl
 /important_banner.js$domain=flightradar24.com
