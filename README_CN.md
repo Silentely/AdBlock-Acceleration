@@ -11,7 +11,7 @@
 
 # 项目说明
 
-国际/中国加速过滤广告规则订阅（[English instructions](https://github.com/Silentely/AdBlock-Acceleration/blob/master/README.md)）
+国际/中国加速过滤广告规则订阅（[English instructions](https://github.com/Silentely/AdBlock-Acceleration/blob/main/README.md)）
 
 ## 🔖 过滤工具推荐
 

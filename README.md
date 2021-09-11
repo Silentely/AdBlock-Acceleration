@@ -11,7 +11,7 @@
 
 # Project instruction 
 
-International/China accelerated ad filtering rules subscription（[中文说明](https://github.com/Silentely/AdBlock-Acceleration/blob/master/README_CN.md)）
+International/China accelerated ad filtering rules subscription（[中文说明](https://github.com/Silentely/AdBlock-Acceleration/blob/main/README_CN.md)）
 
 ## 🔖 Filter Tool Recommendations
 
