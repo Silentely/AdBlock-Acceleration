@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202109120005
+! Version: 202109120344
 ! Title: EasyPrivacy
-! Last modified: 12 Sep 2021 00:05 UTC
+! Last modified: 12 Sep 2021 03:44 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -11791,6 +11791,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||sulia.com/papi/sulia_partner.js/$third-party
 ||sundaysky.com/sst.gif?
 ||sundaysky.com/vop/$third-party
+||sunlightmetrics.b-cdn.net^
 ||sunset.com/tia/
 ||survey.interquest.com^
 ||survey.io/log?
@@ -23663,6 +23664,9 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||on.cc^*/checkrev.gif?
 ||p-log.ykimg.com^
 ||p.data.cctv.com^
+||pan.baidu.com/api/report/
+||pan.baidu.com/pcloud/counter/refreshcount?
+||pan.baidu.com/recent/report?
 ||pb.i.sogou.com^
 ||people.cn/js/pa.js
 ||pingback.sogou.com^
@@ -23751,6 +23755,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||trace.qq.com^
 ||track.sohu.com^
 ||tracker.ai.xiaomi.com^
+||tracker.tv.sohu.com^
 ||trackjay.cool3c.com^
 ||tv.sohu.com/upload/trace/
 ||uestat.video.qiyi.com^
@@ -24398,7 +24403,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||humaninterest.com/api/analytics/$script,~third-party
 @@||js.taplytics.com/jssdk/$domain=foxnews.com
 @@||kbctouch.kbc.be^*/dynatrace-$script,~third-party
-@@||lenovo.com/fea/js/adobeAnalytics/adobeAnalytics-searchComponent.js$xmlhttprequest,domain=lenovo.com
+@@||lenovo.com/fea/js/adobeAnalytics/$script,~third-party,xmlhttprequest
 @@||live.house.gov/js/analytics.$script,~third-party
 @@||online.tivo.com/assets/tve/common/js/vendor/jsnlog/$script,~third-party
 @@||realtor.com/rentals/api/optimizely.js$script,~third-party
@@ -24888,10 +24893,11 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||googletagmanager.com/gtm.js$script,domain=cdon.fi|como.fi|episodi.fi|fum.fi|inferno.fi|rumba.fi|soundi.fi|tilt.fi|veho.fi
 @@||high.auriro.net/http/600x400/$image,domain=afterdawn.com|hardware.fi
 @@||images.sprinklecontent.com^$image,domain=como.fi|episodi.fi|fum.fi|inferno.fi|kaaoszine.fi|rumba.fi|soundi.fi|tilt.fi
-@@||inpref.s3.amazonaws.com/frosmo.easy.js$domain=kauppahalli24.fi
+@@||inpref.s3.amazonaws.com/frosmo.easy.js$domain=elisa.fi|kauppahalli24.fi
 @@||inpref.s3.amazonaws.com/sites/$script,domain=kauppahalli24.fi
 @@||leiki.com/focus/$script,domain=anna.fi|como.fi|episodi.fi|fum.fi|inferno.fi|kaksplus.fi|rumba.fi|seura.fi|soundi.fi|tilt.fi
 @@||lekane.net/lekane/dialogue-tracking.js?$script
+@@||mpsnare.iesnare.com/snare.js$script,domain=power.fi
 @@||nettix.fi^*_analytics.js$domain=nettiauto.com|nettikaravaani.com|nettikone.com|nettimokki.com|nettimoto.com|nettivaraosa.com
 @@||scdn.cxense.com/cx.js$script,domain=ksml.fi|savonsanomat.fi
 @@||widgets.spklw.com/v1/$xmlhttprequest,domain=como.fi|episodi.fi|fum.fi|inferno.fi|kaaoszine.fi|rumba.fi|soundi.fi|tilt.fi
@@ -24968,7 +24974,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||ad.pr.ameba.jp/tpc/list/$xmlhttprequest
 @@||adobedtm.com^*-libraryCode_source.min.js$script,domain=disneyplus.disney.co.jp
 @@||adobedtm.com^*/mbox-contents-$script,domain=fcbarcelona.jp|sony.jp
-@@||adobedtm.com^*/satelliteLib-$script,domain=fcbarcelona.jp|radiko.jp|sony.jp
+@@||adobedtm.com^*/satelliteLib-$script,domain=fcbarcelona.jp|radiko.jp|sony.jp|support.nec-lavie.jp
 @@||allabout.co.jp/mtx_cnt.js$script,~third-party
 @@||analytics.edgekey.net/config/$xmlhttprequest,domain=nhk.or.jp
 @@||analytics.edgekey.net/html5/akamaihtml5-min.js$domain=nhk.or.jp
