@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202109200804
+! Version: 202109201144
 ! Title: EasyPrivacy
-! Last modified: 20 Sep 2021 08:04 UTC
+! Last modified: 20 Sep 2021 11:44 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -5116,6 +5116,7 @@
 ://geoip.*/country.json
 ://ivwextern.
 ://lightning.*/launch/
+://matomo.
 ://metrika.*/analytics.
 ://mint.*/?js
 ://piwik.$domain=~matomo.org|~piwik.pro
@@ -5644,6 +5645,8 @@ _mongo_stats/
 ||glimr.io^
 ||go-mpulse.net^
 ||googletagmanager.com^
+||hs-analytics.net^
+||hsadspixel.net^
 ||i218435.net^
 ||id5-sync.com^
 ||impactcdn.com^
@@ -5652,6 +5655,7 @@ _mongo_stats/
 ||irs01.com^
 ||krxd.net^
 ||ldnlyap.com^
+||liadm.com^
 ||lijit.com^
 ||liveyield.com^
 ||lltrck.com^
@@ -5670,6 +5674,8 @@ _mongo_stats/
 ||quantserve.com^
 ||r42tag.com^
 ||rezync.com^
+||rkdms.com^
+||rlcdn.com^
 ||s-onetag.com^
 ||sbgsodufuosmmvsdf.info^
 ||seoab.io^
@@ -6767,8 +6773,6 @@ _mongo_stats/
 ||hotjar.com^$third-party
 ||hotjar.io^$third-party
 ||hotlog.ru^$third-party
-||hs-analytics.net^$third-party
-||hsadspixel.net^$third-party
 ||hscta.net^$third-party
 ||htlbid.com^$third-party
 ||hubvisor.io^$third-party
@@ -7009,7 +7013,6 @@ _mongo_stats/
 ||levexis.com^$third-party
 ||lexity.com^$third-party
 ||lfov.net^$third-party
-||liadm.com^$third-party
 ||linezing.com^$third-party
 ||link-smart.com^$third-party
 ||linkconnector.com^$third-party
@@ -7618,10 +7621,8 @@ _mongo_stats/
 ||rightmoveanalytics.co.uk^$third-party
 ||ritecounter.com^$third-party
 ||rivrai.com^$third-party
-||rkdms.com^$third-party
 ||rktch.com^$third-party
 ||rktu.com^$third-party
-||rlcdn.com^$third-party
 ||rlets.com^$third-party
 ||rmtag.com^$third-party
 ||rnengage.com^$third-party
@@ -25150,6 +25151,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||cdn-ds.com/analytics/sockjs.js$script,domain=tuttleclickgenesis.com
 @@||cdn-net.com/cc.js$script,domain=butterfieldonline.com|uber.com|ubereats.com
 @@||cdn.optimizely.com/js/*.js$domain=compassion.com|creditsesame.com|freeshipping.com|heroku.com
+@@||cdn.segment.com/analytics.js/$script,domain=fender.com
 @@||certona.net^*/scripts/resonance.js$script,domain=canadiantire.ca|finishline.com
 @@||chasecdn.com^*/@ccb-blueanalytics/$script,domain=chase.com
 @@||check.ddos-guard.net/check.js$script
