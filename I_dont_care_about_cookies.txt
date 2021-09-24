@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 334.202109221049
+! Version: 334.202109241247
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 22 Sep 2021 08:49 UTC
+! Last modified: 24 Sep 2021 10:47 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -31,7 +31,7 @@
 ###cookiesToolbar
 ###privacy_notice
 ###cookiesdirective
-~vetzoo.se,~animail.se,~mustijamirri.fi,~alexanderhall.co.uk,~basenio.de,~foxtons.co.uk,~telekom.hu###cookie_consent
+~vetzoo.se,~animail.se,~mustijamirri.fi,~musti.no,~alexanderhall.co.uk,~basenio.de,~foxtons.co.uk,~telekom.hu###cookie_consent
 ###cookieBannerD
 ~amd-moebel.de,~lansberg.de,~texels.nl,~wahre-superstars.de,~klang-hamburg.de###cookieNotice
 ~tweakers.net##.cookieNotice:not(body):not(html)
@@ -1394,7 +1394,7 @@
 ###cookie-cnt
 ##.browserfeatures-cookiesneeded
 ##.cookie_inf:not(body):not(html)
-~vetzoo.se,~animail.se,~mustijamirri.fi##.cookie_info:not(body):not(html)
+~vetzoo.se,~animail.se,~mustijamirri.fi,~musti.no##.cookie_info:not(body):not(html)
 ##.cookies_warning:not(body):not(html)
 ##.cookieShowClass:not(body):not(html)
 ###cookiePrefIntro
@@ -2722,7 +2722,7 @@
 ###zonaCookies
 ###use_cookie
 ##.cookie_section:not(body):not(html)
-~vetzoo.se,~animail.se,~mustijamirri.fi###cookieform
+~vetzoo.se,~animail.se,~mustijamirri.fi,~musti.no###cookieform
 ##.abtasty-banner-cookie
 ###CookieAlertBox
 ###CookieDisclaimer
@@ -3734,7 +3734,7 @@
 ##.ghost-cookiebar:not(body):not(html)
 ###userConsentDatas
 ##.cookiepolicy-wrapper
-~vetzoo.se,~animail.se,~mustijamirri.fi##.cookie_check:not(body):not(html)
+~vetzoo.se,~animail.se,~mustijamirri.fi,~musti.no##.cookie_check:not(body):not(html)
 ###DivIdealCookLight
 ###block-hp-cookie-consent
 ##.disclaimerCookie:not(body):not(html)
@@ -4237,7 +4237,7 @@
 ###ccservice-cookiesinfo
 ###google-policy-box
 ##.cookies-claim:not(body):not(html)
-~vetzoo.se,~animail.se,~mustijamirri.fi##.cookie_body:not(body):not(html)
+~vetzoo.se,~animail.se,~mustijamirri.fi,~musti.no##.cookie_body:not(body):not(html)
 ##.j-cookie:not(body):not(html)
 ###pnl-cookies:not(.modal)
 ##.wd_cookie:not(body):not(html)
@@ -13104,7 +13104,7 @@
 ##.ccpa-banner-container
 ##.eu-cookie-tips
 ##.cookie-tips
-##.page:not(.overflow--hidden) #footer ~ div .oreo-message
+##.aGrid--fixed[data-t-c*="cookiesMessage"]
 ###cookieBarRGPDOverlay
 ###cookieBarRGPDPop
 ###cookieAlertWrapper
@@ -13197,6 +13197,11 @@
 ##.tx_fe_cookies
 ###cb-cookie_consent
 ##._cookie-bar
+##.nonmodal--cookie
+###__next div[class*="CookiesTooltip"]
+###gb-consent-management
+###cookie-consent-prompt
+##.cookie-consent-prompt-launcher
 !
 ! CUSTOM RULES
 !
@@ -13885,7 +13890,6 @@ volvo.com##.headerNotification
 geekhebdo.com##.cookiegeek
 essilorpro.co.uk###mentions
 bouwformatie.nl###stickyHeader
-smartphonehoesjes.nl###bar
 itwayvad.com###light
 nousmotards.com##.csa-popup
 game-ready.com##.ly-cookie
@@ -16689,7 +16693,6 @@ lawine.at##.header-notification
 ipax.at###ipaxCC
 acehighradio.com##.widget-footer section > div:not([class])
 grandswissbangkok.com##.footer-fix-popup
-eyeem.com##.reactRoot > div:not([class])
 ritzau.dk##.footer__notification
 utlandssvenskar.com###my-welcome-message
 fotosik.pl##.modal-backdrop, #rodo-info
@@ -19675,7 +19678,6 @@ abetterrouteplanner.com##div[data-e2e="menu-button"] + div:not([data-e2e])
 feinewerkzeuge.de###cookiefeinewerkzeuge
 fine-tools.com###cookiefeinewerkzeuge
 utensiliprofessionali.com###cookiefeinewerkzeuge
-eloccidental.com.mx###oemaceptacion
 nowonline.com.br##div[id^="cookies"]
 easycookasia.de##.elementor-popup-modal
 spectyou.com##snack-bar-container
@@ -21211,7 +21213,6 @@ aliexpress.com##.ui-mask, .gdpr-dialog-class, #j-aliexpress-notice, #container-f
 gorillas.io###cookie-settings
 hampel-auctions.com###consentmanager
 compress-or-die.com##.module_consent__main
-jooble.org###root div[class*="GdprPopup"]
 theater-essen.de##.dataprotection
 mfa.bg###cookies
 platforma-karaulov.ru##.using-cookie
@@ -21257,7 +21258,6 @@ ticketswap.nl##reach-portal + ticketswap-portal
 ticketswap.fr##reach-portal + ticketswap-portal
 bazarchic.com###react-footer > div > div:not([class])
 lotuscars.com###consent-modal
-alko-garden.de###divDisabledBackground
 edclub.com##.__CC_popup
 vastervik.se##.cookies
 webflow.com###consent-container
@@ -21347,7 +21347,6 @@ unicajabanco.es##.CC05:not(.cc05-privada) #cookieModalStart
 detmir.ru###app-container footer ~ div
 br.de###brCookieBanner, #__next > .fixed, #__next [class*="CookieContainer"]
 mycinema.pro##footer + div ~ div[class]
-hotcleaner.com##footer + div ~ div[class]
 anwb.nl##.TRCO-application, .critical-dialog
 chip.com.tr##efilli-riza
 petz.com.br##.policy-warning-banner
@@ -21456,6 +21455,17 @@ hotroxuk.com##.dot_cookies
 packrafting-store.de###basharModal
 red-gate.com##.cookie-consent
 laenderbahn.com##.cc-overlay
+dobrzemieszkaj.pl##.rodo
+hotcleaner.com##footer + div + noscript ~ div[class], footer + noscript ~ div[class]
+alko-garden.de###divDisabledBackground
+alko-garden.hu###divDisabledBackground
+alko-garden.pl###divDisabledBackground
+alko-garden.it###divDisabledBackground
+frp.no##.gdpr__btn
+ihk-krefeld.de###overlay
+eloccidental.com.mx###oemaceptacion
+elsoldepuebla.com.mx###oemaceptacion
+jooble.org###root div[data-test-name="_termsOfServices"]
 !
 ! SCRIPT BLOCKING
 !
@@ -22150,7 +22160,7 @@ jquery.smartCookie.min.js^
 /ModalCookiesPrivacy.php
 /CookiesManager/CookiesManager.js
 /components/CookieManager/*
-quantcast.mgr.consensu.org$domain=~sourceforge.net|~tumblr.com|~indy100.com|~vi.nl|~independent.co.uk|~express.co.uk|~joe.ie|~joe.co.uk|~standard.co.uk|~cnews.fr|~avsforum.com|~filmvandaag.nl|~gamesradar.com
+quantcast.mgr.consensu.org$domain=~sourceforge.net|~tumblr.com|~indy100.com|~vi.nl|~independent.co.uk|~express.co.uk|~joe.ie|~joe.co.uk|~standard.co.uk|~cnews.fr|~avsforum.com|~filmvandaag.nl|~gamesradar.com|~iol.pt
 gemius.mgr.consensu.org
 sddan.mgr.consensu.org
 digitrust.mgr.consensu.org
@@ -22214,7 +22224,7 @@ nanoGDPR.min.js^
 ||tdn.r42tag.com/lib/ut$script
 ||c.betrad.com/pub/third.js$script
 fundingchoices.google.com
-fundingchoicesmessages.google.com$domain=~rtl.hr|~fernsehserien.de|~bbc.com
+fundingchoicesmessages.google.com$domain=~rtl.hr|~fernsehserien.de|~bbc.com|~iol.pt
 ||spiffymachine.com/v2/$script
 cdn.userdatatrust.com
 ||cdn.pubguru.com/pg.js$script
@@ -22286,7 +22296,7 @@ wpjslib-chunk-notification.js^
 ||dialogue.sp-prod.net/messagingWithoutDetection.js$script,domain=~globalplayer.com
 /datenschutz.min.js
 /ccm19.js
-/wrapperMessagingWithoutDetection.js$domain=~bild.de|~computerbild.de|~bold.dk|~welt.de|~sport1.de|~focus.de|~chip.de|~faz.net|~n-tv.de|~wunderweib.de|~tvmovie.de|~praxisvita.de|~cosmopolitan.de|~giga.de|~ostsee-zeitung.de|~lvz.de|~mein-schoener-garten.de|~boerse-online.de|~tvspielfilm.de|~autobild.de|~bike-bild.de|~bz-berlin.de|~travelbook.de|~cyberport.at|~cyberport.de|~golem.de|~express.de|~ksta.de|~bndestem.nl|~volkskrant.nl|~rundschau-online.de|~rtl2.de|~derstandard.de|~derstandard.at|~unsere-helden.com|~rtl.de|~stern.de|~nu.nl|~dpgmedia.nl|~dpgmedia.be|~11freunde.de|~finanzen.at|~finanzen.net|~insider.com|~transfermarkt.at|~transfermarkt.ch|~transfermarkt.co.uk|~transfermarkt.com|~transfermarkt.com.tr|~transfermarkt.de|~transfermarkt.fr|~transfermarkt.it|~transfermarkt.nl|~transfermarkt.pl|~transfermarkt.pt|~transfermarkt.us|~vip.de|~businessinsider.de|~clever-tanken.de|~fitbook.de|~idealo.at|~idealo.co.uk|~idealo.de|~idealo.es|~idealo.fr|~idealo.it|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~noizz.de|~politico.eu|~rollingstone.de|~stylebook.de|~techbook.de|~testbild.de|~wieistmeineip.at|~wieistmeineip.de|~wieistmeineip.ch
+/wrapperMessagingWithoutDetection.js$domain=~bild.de|~computerbild.de|~bold.dk|~welt.de|~sport1.de|~focus.de|~chip.de|~faz.net|~n-tv.de|~wunderweib.de|~tvmovie.de|~praxisvita.de|~cosmopolitan.de|~giga.de|~ostsee-zeitung.de|~lvz.de|~mein-schoener-garten.de|~boerse-online.de|~tvspielfilm.de|~autobild.de|~bike-bild.de|~bz-berlin.de|~travelbook.de|~cyberport.at|~cyberport.de|~golem.de|~express.de|~ksta.de|~bndestem.nl|~volkskrant.nl|~rundschau-online.de|~rtl2.de|~derstandard.de|~derstandard.at|~unsere-helden.com|~rtl.de|~stern.de|~myaccount.hln.be|~nu.nl|~dpgmedia.nl|~dpgmedia.be|~11freunde.de|~finanzen.at|~finanzen.net|~insider.com|~transfermarkt.at|~transfermarkt.ch|~transfermarkt.co.uk|~transfermarkt.com|~transfermarkt.com.tr|~transfermarkt.de|~transfermarkt.fr|~transfermarkt.it|~transfermarkt.nl|~transfermarkt.pl|~transfermarkt.pt|~transfermarkt.us|~vip.de|~businessinsider.de|~clever-tanken.de|~fitbook.de|~idealo.at|~idealo.co.uk|~idealo.de|~idealo.es|~idealo.fr|~idealo.it|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~noizz.de|~politico.eu|~rollingstone.de|~stylebook.de|~techbook.de|~testbild.de|~wieistmeineip.at|~wieistmeineip.de|~wieistmeineip.ch
 /app.dsgvo.min.js
 /trigoAboveBox.jquery.js
 /dsgvoinit.min.js
@@ -22527,6 +22537,7 @@ trcking.min.js^$domain=canalplus.com|canal-plus.com
 /dg-governance/*$domain=nytimes.com|inyt.com
 /cookiesjsr.min.js$domain=landshut.de|sagemcom.com
 /it-cc.js$domain=geze.de|geze.pl
+/ConsentInit.min.js$domain=smartphonehoesjes.nl
 !
 ! FILTERLIST ONLY
 !
