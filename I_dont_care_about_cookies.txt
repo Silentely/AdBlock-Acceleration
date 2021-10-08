@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 334.202110041405
+! Version: 334.202110081046
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 04 Oct 2021 12:05 UTC
+! Last modified: 08 Oct 2021 08:46 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -536,7 +536,7 @@
 ###cookienotification_background
 ###cookienotification
 ###s2m_cookies_optin_dialog
-~g-star.com,~mega.io,~mega.nz,~kh.hu,~mietz.app,~tele2.nl,~t-mobile.nl,~danbolig.dk##.cookie-dialog:not(body):not(html)
+~volkswagen-newsroom.com,~g-star.com,~mega.io,~mega.nz,~kh.hu,~mietz.app,~tele2.nl,~t-mobile.nl,~danbolig.dk##.cookie-dialog:not(body):not(html)
 ###divCookieAlert
 ##.contenedorcookies
 ###Banner_cookie_1
@@ -905,7 +905,7 @@
 ##.e-cookie-info:not(body):not(html)
 ##.CookieChoiceContainer
 ##.cookieMaster:not(body):not(html)
-##.cookiedisclaimer:not(body):not(html)
+~stromnetz.berlin##.cookiedisclaimer:not(body):not(html)
 ##.cookieDisclaimerContainerWrapper
 ##.cookiesDisabledBanner
 ##.cookie-information:not(body):not(html)
@@ -1115,7 +1115,7 @@
 ##.privacy-policy-cookies
 ##.cookies-alert:not(body):not(html)
 ###cookiePolicyZone
-~dawonia.de,~rittal.com##.cookie-overlay:not(body):not(html)
+~stromnetz.berlin,~dawonia.de,~rittal.com##.cookie-overlay:not(body):not(html)
 ##.disclaimer-cookies:not(body):not(html)
 ###cnil-cookie-panel
 ##.cookie-alert-msk:not(body):not(html)
@@ -3560,7 +3560,7 @@
 ##.cookiesNote:not(body):not(html)
 ###main-privacy
 ##.alma-cookie-disclaimer
-###cookiedisclaimer
+~stromnetz.berlin###cookiedisclaimer
 ###GodBlessEUCookies
 ##.modulesden-cookies-bar
 ###cookieBG
@@ -11560,7 +11560,7 @@
 ##.vue-app div[class*="cookie-bar"]
 ###CakewalkBanner
 ##.tpl-cookie-info-bar-widget
-~airam.fi###__nuxt .cookie-consent
+~uktv.co.uk,~airam.fi###__nuxt .cookie-consent
 ###Page ~ .cookie-consent
 ###lb ~ div > c-wiz > div[jscontroller] > div[style*="block"]
 ##.consent-banner-container
@@ -12219,7 +12219,7 @@
 ###metisCookieTopBar
 ##.lds-cookie-consent
 ##.arsorsCookie_wrapper
-###app .cookie-consent:not(.lightbox)
+~uktv.co.uk###app .cookie-consent:not(.lightbox)
 ##.alert-gdpr
 ##.js-gdprAlert
 ##.Cookie-consent-block
@@ -13220,6 +13220,13 @@
 ##.cookieConsentWrapper
 ~lcp.fr###cookiesjsr
 ###consent-banner-container
+###mch-cookie-consent
+##cookie-alert
+###cookie_banner_footer
+##.cookie_banner_footer
+###CookiePrivacyNotice
+##.consents .consents__wrapper
+##.consents .consents__mask
 !
 ! CUSTOM RULES
 !
@@ -15757,7 +15764,6 @@ optical-center.fr###cookieOk
 usporedi.hr###privacyPolicyModal, .modal-backdrop
 skdd.hr##.newsBottom
 hrdlog.net###DivCookies
-vodafone.cz##.vf-gdpr-settings
 mercola.com##.gdpr-container
 netflixlovers.it###cs_container
 toutcomment.com##.consent, #consent
@@ -17354,7 +17360,6 @@ globelink.co.uk##.gl_cookies
 gebag.de###cookie
 b12.io##.gdpr
 make-it-in-germany.it###nagscreen
-vesti.bg###vesti-GDPR-frame
 solidwoodendoors.com###myModalCookies, .modal-backdrop
 ausschreibungen-oesterreich.at###am_pop-up
 lykke.com##main ~ div[class*="Banner"]
@@ -21143,8 +21148,6 @@ splu-engineers.com###frontpage-banner-cover
 footroll.pl##body > div:not([id]):not([class])
 easycredit.de##cookie-layer
 just-eat.fr##div[data-qa="privacy-settings"]
-yopmail.com###cons-pop
-aftenposten.no###data-controller-stripe
 skatteverket.se##skv-cookie-banner
 share-now.com##.banner-placeholder
 gittigidiyor.com###__next main > div:not([class]), .policy-alert-v2.show-policy
@@ -21355,7 +21358,6 @@ nytimes.com##.free-form-content > .banner__container, .CookieBanner > .banner__c
 sportshop.com###solar-app ~ div
 stoertebeker.com###overlay
 cv.fr###toast-container
-coinbase.com###root > div[class*="Layout"] ~ div[class^="sc"]:last-child, #page_content > div + div:last-child, div[class*="ContentHub__FooterWrapper"] ~ div:last-child, #root > div[class^="Flex"] > div > [data-element-handle="step-loaded-active"] > [class^="sc"]:last-child
 uvex-sports.com##.as__cookie-banner
 ohmydev.pl###__next > [style*="transform"]
 womodoc.de##main ~ div
@@ -21477,7 +21479,6 @@ amazon-affiliate.eu##.cookie-consent
 nordnet.dk##.cookie-consent
 certificat-covid.gov.ro##.bottom-banner
 aviva.fr##.ccb-sticky
-neoled.com.pl##.consents
 clipchamp.com##main + div ~ div
 lichtblick.de###uc_layer
 promobit.com.br###__next > div:last-child
@@ -21490,6 +21491,16 @@ e-volt.es##div[c_data="c_cookie_main"]
 tresorit.com##main ~ aside, sticky-notification
 bandaancha.eu##.euCk
 hertz.ca##div[class*="PrivacyPolicyBanner"]
+sagepub.com##header [role="alert"]
+theartnewspaper.com###__next > div > .fixed
+coinbase.com###root > div[class*="Layout"] ~ div[class^="sc"]:last-child, #page_content > div + div:last-child, div[class*="ContentHub__FooterWrapper"] ~ div:last-child, #root > div[class^="Flex"] > div > [data-testid="step-loaded-active"] > [class^="sc"]:last-child
+people.cn###shengmingTip
+bipandgo.com##.ucm_wrapper
+benq.eu###cookie-fullscreen
+plusmobile.fr##.gdpr
+svd.se###schibsted-data-controller-sticky
+aftenposten.no###data-controller-sticky
+bt.no###data-controller-sticky
 !
 ! SCRIPT BLOCKING
 !
@@ -22065,7 +22076,7 @@ gdpr-banner.awsmpsa.com
 ||prizelogic.com/gdpr/third-party-optin.min.js$script
 /gdpr-popup.js
 /wordpress-ptchrgdprplugin/*
-gdpr-wrapper.privacymanager.io$domain=~geenstijl.nl|~dailybuzz.nl|~rtvnoord.nl|~omroepbrabant.nl|~futurezone.at|~profil.at|~kurier.at|~weeronline.nl|~lablue.de
+gdpr-wrapper.privacymanager.io$domain=~geenstijl.nl|~dailybuzz.nl|~rtvnoord.nl|~omroepbrabant.nl|~futurezone.at|~profil.at|~kurier.at|~weeronline.nl|~lablue.de|~vesti.bg
 ||evidon.com/pub/gdprnotice.js$script
 /wp-content/plugins/ct-ultimate-gdpr
 ||gdpr.mandarin-medien.de/manager.js$script
@@ -22089,7 +22100,6 @@ gdpr-tcfv2.sp-prod.net$domain=~computerbild.de|~bold.dk|~welt.de|~sport1.de|~ost
 cmp.dmgmediaprivacy.co.uk$domain=~metro.co.uk
 jssdk.privacy.pre.schibsted.com
 ||secureprivacy.ai/secureprivacy-plugin/$script
-privacy.schibsted.com
 /vendor/weka/privacykit/*
 ||privacy.clym.io/js/clym-widget.js$script
 /js/privacypolicy.js
@@ -22551,7 +22561,7 @@ trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookie-banner$domain=hauptbahnhofcity.wien
 /cookiefly/*$domain=internet-rockstars.com
 /ccm/*$domain=silverfast.com
-/messagingNoTcfApi.js$domain=aftenposten.no|vg.no|svd.se|aftonbladet.se
+/messagingNoTcfApi.js$domain=aftenposten.no|vg.no|svd.se|aftonbladet.se|bt.no
 /consent-layer/*$domain=bahn.de
 /checkcookies.js$domain=iracing.com
 /s4s-privacy-module/*$domain=flysas.com
@@ -22570,6 +22580,7 @@ trcking.min.js^$domain=canalplus.com|canal-plus.com
 /ConsentInit.min.js$domain=smartphonehoesjes.nl
 /cookieser.js$domain=aco.com.pl
 /cookie-monster/*$domain=loveholidays.com
+/vfConsentCookiesCs.js$domain=vodafone.cz
 !
 ! FILTERLIST ONLY
 !
