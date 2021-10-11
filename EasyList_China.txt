@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: a4+XHu3u01RNzw+9uc5YLA
-! Version: 202110110406
+! Checksum: dpOQ4eu0vFCTQuo2D3NR3w
+! Version: 202110110756
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last Modified: 11 Oct 2021 04:06 UTC
+! Last Modified: 11 Oct 2021 07:56 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: http://abpchina.org/forum/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -1379,6 +1379,7 @@ _xiuno_com_ad/
 ##table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"]
 !----------------------------------Ads-Union----------------------------------!
 .8ox.cn
+||5b1d.com^
 ||htxcl.com.cn^
 -*-*-*-*.panda|$script,third-party
 .cc/s.php?id=$script,third-party
@@ -9081,8 +9082,13 @@ _yad_jsonp_
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||mydrivers.com/news/taobao_tab.jpg
+||toolfk.com/common/zfb.jpg
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+3dmgame.com##.tab[style^="background"]
+3dmgame.com#?#div[class]:-abp-has(> .bt:-abp-contains(高速))
+mydrivers.com##.taobao_tab
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -16705,6 +16711,9 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 !#Novels
 ||svwsvn.top^
 ||nloader.xyz^
+||wydong.top^
+||jinhaitun888.xyz^
+||yswuen.top^
 ###asdw3
 ###asdw3 + img + :not(div)
 ###chaptername + div > div[style="padding:10px;border-radius:10px;background-color:green;"]
