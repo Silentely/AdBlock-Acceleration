@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 334.202110141908
+! Version: 334.202110211239
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 14 Oct 2021 17:08 UTC
+! Last modified: 21 Oct 2021 10:39 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -342,7 +342,7 @@
 ~sunny.co.uk###cookie-acceptance
 ##.cookiePrompt_outerWrapper
 ###popupCookie
-###cookiesMessage
+~seb.lt,~seb.ee###cookiesMessage
 ###cookieWarningContainer
 ###ctl00_chdr_pnlCookieHeader
 ##.sd_cookiespolicy:not(body):not(html)
@@ -721,7 +721,7 @@
 ##.cookieWetgeving:not(body):not(html)
 ###CookieBar
 ##.headCookieBar:not(body):not(html)
-~seb.lt,~seb.ee,~toni-maccaroni.de,~pizza-pepe-volkach.de##.cookiemessage:not(body):not(html)
+~toni-maccaroni.de,~pizza-pepe-volkach.de##.cookiemessage:not(body):not(html)
 ###cookiepopup
 ###acceptCookies:not(.btn):not(button)
 ###acceptCookiesWrapper
@@ -801,7 +801,7 @@
 ##.cookie_ribon:not(body):not(html)
 ##.infoCookies:not(body):not(html)
 ###cookieInformacja
-~veygo.com,~puratos.pl,~bike-components.de,~bremerhaven.de,~onlinedepartment.nl,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~monese.com,~nuxeo.com,~opngo.com,~sachsenallee.de,~melcloud.com,~reidl.de,~intersport.de##.cookie-banner:not(body):not(html)
+~nintendo.com,~veygo.com,~puratos.pl,~bike-components.de,~bremerhaven.de,~onlinedepartment.nl,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~monese.com,~nuxeo.com,~opngo.com,~sachsenallee.de,~melcloud.com,~reidl.de,~intersport.de##.cookie-banner:not(body):not(html)
 ~rku-it.de###cookienotice
 ###overlay-cookielaw-form
 ##.cookie-info-wrapper:not(body):not(html)
@@ -862,7 +862,7 @@
 ###svtCookieInformationContainer
 ##.cookies-warning:not(body):not(html)
 ##.dom-content--eu-banner
-~researchaffiliates.com###cookieDialog
+~arbeitsagentur.de,~researchaffiliates.com###cookieDialog
 ##.cookie_optin_box:not(body):not(html)
 ###CookieContainer
 ###jumper_cookies
@@ -1115,7 +1115,7 @@
 ##.privacy-policy-cookies
 ##.cookies-alert:not(body):not(html)
 ###cookiePolicyZone
-~stromnetz.berlin,~dawonia.de,~rittal.com##.cookie-overlay:not(body):not(html)
+~nintendo.com,~stromnetz.berlin,~dawonia.de,~rittal.com##.cookie-overlay:not(body):not(html)
 ##.disclaimer-cookies:not(body):not(html)
 ###cnil-cookie-panel
 ##.cookie-alert-msk:not(body):not(html)
@@ -7849,7 +7849,7 @@
 ##.bdf-cookie-policy-popup
 ##.acceptCookieNotice:not(body):not(html)
 ##.anonymousToSConsent_mask
-##devsite-snackbar[type="cookie-notification"]
+##.cookies__warning-container
 ##.c-app-cookies
 ##.dft-cookies.open:not(body):not(html)
 ###allowCookieTypes
@@ -12251,7 +12251,7 @@
 ##.cookie-policy-banner-bar
 ###ms-cookie-consent-banner
 ##.cookie-disclaimer-component
-###CookiePlus.cookieplus
+###__next div[data-testid*="consent-banner"]
 ##tui-cookie-consent
 ##.popup-cookie-background
 ##.cookie-accept-popup
@@ -13236,6 +13236,11 @@
 ###header div[class*="CookieBar"]
 ##.sticky_cookie_warning
 ##.toastCookiePolicy
+##.show--consent:not(.force--consent) #cc_div
+##.pw-cookie-consent-v2-backdrop
+##.pw-cookie-consent-v2
+###root div[class*="CookieWarning"]
+##p-consent > .m-consent
 !
 ! CUSTOM RULES
 !
@@ -18327,7 +18332,6 @@ btv.at##body > .cc
 gzcss.co.uk##.cookie-flash
 rtm.com##.GDPR
 gruntwork.io###gruntyCookie
-seb.lt##.seb-cookie-consent
 diwaro.de###opt-in-modal, .modal-backdrop
 urmet.fr###privacyPolicy
 laborx.io##.header-index.with-cookie
@@ -18761,7 +18765,6 @@ catchandrelease.com###react-container > main > footer
 asustor.com###gdpr_wrap
 getabstract.com##.notifybar--note
 akatronik.at###cookieDiv
-nasdaqbaltic.com###gdpr-confirm
 motionvfx.com##.cookies-modal
 izotcomputers.com##body [id^="aiva"]
 akvarista.cz###topcookies
@@ -19648,7 +19651,6 @@ aramido.de##.banner
 uniroma1.it##.cookie-background
 podcloud.fr###rgpd-modal
 adtinnova.ch###popup
-prediger.de##.m-consent
 careercross.com##.alert-dismissible
 nextmarkets.com##nm-cookie-dialog
 findino.ch##.CookieView
@@ -19780,7 +19782,6 @@ ar-packaging.com###disclaimer
 gumtree.com##.notification-box
 gamefreak.gr##.notification-wrapper
 spbtvonline.ru###agreeC
-omg.de##.modal-backdrop
 nzxt.com##.cookie-consent
 ogrzewanie-domu.pl###cookie
 keramiko.pl###popAdvertising
@@ -21092,7 +21093,6 @@ thenextcloset.com##div[data-react-class*="CookieConsentBanner"]
 plushbezlimitu.pl##.modal-overlay
 play.google.com###gb iframe[src*="ogs.google."][src*="widget/callout"]
 support.google.com###gb iframe[src*="ogs.google."][src*="widget/callout"]
-minecraft.tools###cc_div
 mein-apothekenmanager.de###cn-wrapper
 ntb.no##.footer__notification
 videosmile.ru###accept_q
@@ -21163,7 +21163,6 @@ modrinth.com##.container > .banner
 jadlonomia.com##.cbar-container
 wuerth.de##.modal-backdrop
 strefakonsumencka.pl##.cookies
-kx1.co###cc_div
 groovy.bot###__layout > div > .fixed
 revolut.com##div[role="dialog"][aria-label="Cookie preferences"]
 focus-home.com###app > nav + div
@@ -21206,7 +21205,6 @@ merckgroup.com##.new-cookie__modal
 pspdfkit.com##.pspdfCookieDialog
 konsumenternas.se###tc-consent
 fusswerkmuenchen.de##main ~ div
-smiley.cool###cc_div
 pepeenergy.com##.modal-cookie
 boc24.de##.cookie-layer
 elasticemail.com###elastic-cookie-notice
@@ -21358,7 +21356,6 @@ uvex-sports.com##.as__cookie-banner
 ohmydev.pl###__next > [style*="transform"]
 womodoc.de##main ~ div
 dava.dk###CookieModal
-sonnenverlauf.de###cc_div
 tulli.fi###root [aria-label="Cookie banner"]
 olhardigital.com.br###lgpd_optall
 terra.com.br##.navbar-disclaimer[data-button-url*="cookies"]
@@ -21422,7 +21419,6 @@ ottobock.de###ottobock-usercentrics
 today.ua##.politic_confidel
 home24outlet.de##main ~ div
 tutorela.com##.snackbar
-gorzowianin.com###cc_div
 dfmg.de##div[id^="ro_cookie"]
 world4you.com###xtxNavigationOffCookiePolicy
 livelo.com.br##.notifi
@@ -21450,7 +21446,6 @@ lojadomecanico.com.br##.box-termo-lgpd
 wells.pt##.modal-backdrop, .veil
 silmaasema.fi##.modal-backdrop, .veil
 icelandair.com###root > [class*="assets_container"]
-mondverlauf.de###cc_div
 occrp.org##.occrp-cookie-overlay, .cookie
 cinemotion-kino.de###cookie-layer
 arabicpost.net##.cookie-modal
@@ -21522,6 +21517,35 @@ fupro.de##.modal-backdrop
 fujifilm.com##.m-cookie-confirm
 mezoko.com###cookie
 iebschool.com##.content-bottom-drawer
+mondverlauf.de###cc_div
+sonnenverlauf.de###cc_div
+etipolam.com.pl##.gdpr
+kickbooster.me##.kb__cookie-consent
+thisinterestsme.com###ww-blackout
+pensionikeskus.ee###gdpr-confirm
+nasdaqbaltic.com###gdpr-confirm
+nintendo.com##.o_p-membership-cookie-law-message
+fromsmash.com##.cgu-cookie-overlay-shadow
+schraubenkasten.de###CookiePlus, .modal-backdrop
+destillatio.eu###CookiePlus, .modal-backdrop
+omg.de###CookiePlus, .modal-backdrop
+pro-alarm.nl##.mgz-flex-position-bottom-center
+cpanel.net##.consent-container
+draeger.com##dw-global-notification
+hollisterco.com##.flash-message[data-flash-message-group-id*="cookie"]
+xn--bafa-frderung-nmb.de##.CookieEButton
+brack.ch###b2c-consent
+enpara.com##.enpara-web-cookie
+copenhagenstudios.com###cookie-layer
+hevert.com###cookie-options
+partech.nl##.cookies-gradient
+contabilizei.com.br##.modal-cookie
+xn--80aesfpebagmfblc0a.xn--p1ai##.cv-cookie-banner__inner
+mudes.org.br##.elementor-popup-modal
+baufi24.de###modal-cookies
+pornpics.com###cookie-contract
+ntcompatible.com##script[src*="consent"] + .alert
+eportugal.gov.pt###section-cookies
 !
 ! SCRIPT BLOCKING
 !
@@ -21779,7 +21803,7 @@ eu_cookie_banner.js^
 /javascript/cookieser.js
 /cookiesWidget/widget.js
 consent.cookiebot.com$domain=~login.nos.pt|~cineplex.de|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~cajamar.es|~digitaltrends.com|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~stern.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es
-/jquery.cookieBar$domain=~kvv.de|~vileda.de|~vileda.fr|~vileda.pt|~vileda.be|~vileda.nl|~vileda.fi|~vileda.se|~vileda.it|~vileda.co.uk|~aten.com|~germany.ru
+/jquery.cookieBar$domain=~kvv.de|~titanaxe.com|~vileda.de|~vileda.fr|~vileda.pt|~vileda.be|~vileda.nl|~vileda.fi|~vileda.se|~vileda.it|~vileda.co.uk|~aten.com|~germany.ru
 /ccp-sites/components/structure/cookie-notification/*
 /cookies-info.js
 cookies.algo.at
