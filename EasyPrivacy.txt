@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202110231936
+! Version: 202110240018
 ! Title: EasyPrivacy
-! Last modified: 23 Oct 2021 19:36 UTC
+! Last modified: 24 Oct 2021 00:18 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -5575,7 +5575,6 @@ _sdcTrackingCode.
 ! Adblock tracking
 ,adb=*&referer=
 -logabpstatus.
-/ab_test/*
 /ab_track.
 /adb.policy.js
 /adblock?action=
@@ -5596,6 +5595,7 @@ _mongo_stats/
 ! -----------------Third-party tracking domains-----------------!
 ! *** easylist:easyprivacy/easyprivacy_trackingservers.txt ***
 ! Non-flagged (Generic blocks)
+||a2z.com^
 ||adnext.co^
 ||adrtx.net^
 ||affvantage.com^
@@ -11231,6 +11231,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||lijit.com/blog_wijits?*=trakr&
 ||lijit.com/ip.php?
 ||lijit.com/res/images/wijitTrack.gif
+||limbik.com/static/tracking-script.js
 ||lingows.appspot.com/page_data/?
 ||link.cosmopolitan.com^$image
 ||link.indiegogo.com/img/
@@ -14298,7 +14299,6 @@ techxplore.com##.embed-responsive-trendmd
 ||eurogamer-pt.eurogamer.pt^
 ||fuse.forbes.com^
 ||h-bid.com^$third-party
-||isgprivacy.cbsi.com^
 ||mms.wwe.com^
 ||quantcast.mgr.consensu.org/cmp.js
 ||quantcast.mgr.consensu.org^*/cmp.js
@@ -24249,6 +24249,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||analytics.rambla.be^
 ||bol.com/tracking/
 ||businessinsider.nl^*/tr.php
+||coolblue.nl/monitoring/
 ||ds2.independer.nl^
 ||expert.nl/daix.js
 ||folderz.nl/clickstream/
@@ -24997,7 +24998,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||innovelsolutions.com^*/tracking/$~third-party
 @@||ipapi.co/json/$xmlhttprequest,domain=168.dailymaverick.co.za|audius.co
 @@||ipinfo.io/?token=$domain=assurancemortgage.com|webtv.ert.gr
-@@||isgprivacy.cbsi.com/dist/optanon$script
 @@||iwin.com/gtm.json$~third-party,xmlhttprequest
 @@||jbj.co.uk^*/analytics.js$script,~third-party
 @@||js-agent.newrelic.com/nr-spa-$script,domain=kapwing.com
