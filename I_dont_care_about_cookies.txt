@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 334.202110221011
+! Version: 334.202110251203
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 22 Oct 2021 08:11 UTC
+! Last modified: 25 Oct 2021 10:03 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -3273,7 +3273,7 @@
 ###AlertCookies
 ##.fhCookieLaw:not(body):not(html)
 ###cookieAlertCnt
-##.acceptcookies:not(body):not(html)
+##.acceptcookies:not(body):not(html):not(button)
 ##.cookieAlertContainer
 ###box_cookie_info
 ##.CLawBanner:not(body):not(html)
@@ -13243,6 +13243,11 @@
 ##p-consent > .m-consent
 ##.force--consent .cc__change_settings
 ###rndcookie_banner
+###app-root div[class*="CookiesBanner"]
+##.sticky[x-data*="CookieBanner"]
+###page-wrapper div[class*="OneTrustOverlay"]
+###ckieBnr_footer
+##.cookies-manage-popin
 !
 ! CUSTOM RULES
 !
@@ -17569,7 +17574,6 @@ frosmo.com###frosmoPopup
 aquaphor.ru###modal-kuki
 tribunesandtriumphs.org###outer-consent
 heavenhr.com###fullDarkVeil, #compliAcceptCookies
-hofner.com###ck-overlay
 kk.no###__next > main:first-child > div:last-of-type[class^="css"]
 focus-arztsuche.de##.tracking-box
 scrabble-triche.fr##.cookie-wr
@@ -19370,7 +19374,6 @@ iobroker.net##.App > div[class*="jss"] + div[class*="jss"]:last-child
 nichtohneuns.de###root > div > main ~ div
 abicrash.com###cookie
 cw.no##.cw-cookie-confirmation
-rockstargames.com###rockstar-site > footer ~ div
 html-css-js.com###hcjCookies
 neubaukompass.de##.modal-backdrop
 stockcharts.com###sccCookieBanner
@@ -20116,7 +20119,6 @@ beertasting.com##.bts-cookie-notice
 legomastersloteria.pl###cookies_modal
 urlaubsgruss.com##.dscheck
 balkdragers.com##.stn-cookies
-markt-lichtenau.de###ck-overlay
 asiawok-langwasser.de##main ~ div
 sekwens.com###module-aboveBox
 hot.dk###scw
@@ -21206,7 +21208,6 @@ pspdfkit.com##.pspdfCookieDialog
 konsumenternas.se###tc-consent
 fusswerkmuenchen.de##main ~ div
 pepeenergy.com##.modal-cookie
-boc24.de##.cookie-layer
 elasticemail.com###elastic-cookie-notice
 churchs.com###ccpa
 lojabuettner.com.br##.eula-bg
@@ -21260,7 +21261,6 @@ thecompleteuniversityguide.co.uk##.cookie_lbox
 zyro.com##.zyro-cookies
 vinos.de##.consent-cookie-box--lightbox
 flipsnack.com##.modal-backdrop
-bkkgs.de##.cookie-layer
 action.com##body > .section:first-of-type
 chargify.com##.gdpr
 airwallex.com##main > footer ~ div
@@ -21547,6 +21547,16 @@ pornpics.com###cookie-contract
 ntcompatible.com##script[src*="consent"] + .alert
 eportugal.gov.pt###section-cookies
 pure.app###__next main ~ div
+boc24.de##.cookie-layer
+bkkgs.de##.cookie-layer
+bicycles.de##.cookie-layer
+rockstargames.com##main ~ footer ~ div
+livemaster.ru##.cookieconsent-ru
+mp.br###termo-uso
+basic-tutorials.de##body > div[style*="fixed"]
+hotcoursesabroad.com###ckieOvrlayDiv
+markt-lichtenau.de###ck-overlay
+energijaplus.si###ck-overlay
 !
 ! SCRIPT BLOCKING
 !
