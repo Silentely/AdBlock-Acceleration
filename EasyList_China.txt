@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: Hziaw7lDUpeeaypXcmcGiA
-! Version: 202111030405
+! Checksum: KIUD1Khe46aUGUGlCjr1ug
+! Version: 202111030806
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last Modified: 03 Nov 2021 04:05 UTC
+! Last Modified: 03 Nov 2021 08:06 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: http://abpchina.org/forum/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -9087,6 +9087,10 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||hexun.com/hxpage_jrtj2020/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+3dmgame.com#?#span[class]:-abp-has(> div[class]:-abp-contains(高速下载))
+423down.com###text-2
+423down.com###text-3
+423down.com##.content > a
 hexun.com###bottom_extension
 szxx.com.cn###A1
 szxx.com.cn###A2
@@ -11457,7 +11461,6 @@ rijutv.co##.container > div[style="height: 128px;"]
 vpsdx.com##.container-fluid > .gsfha3 > .gsfha3
 78dm.net##.container-fluid > a[href*=".taobao.com"]
 91porny.com##.container-fluid.p-0[class*="mb-"]
-423down.com##.content > .entry + font[size]
 www.wangjing.cn##.content > div[style*="980px;"]
 serengeseba.com##.content > li > a[href^="http"]
 cnbeta.com##.content > p:last-child > a[href]
@@ -14743,7 +14746,7 @@ gohome.com.hk#@#div[id^="div-gpt-ad"]
 @@.jpg#$domain=huhupan.com
 @@.png#$domain=3dpchip.com|9zvip.net|club.tgfcer.com|coolinet.com|d1-dm.com|digit77.com|e9china.net|upxin.net
 @@/ad-close.png$domain=ch.com
-@@/ad/images/*$domain=37-express.com
+@@/ad/images/*$domain=37-express.com|vnnox.com
 @@/ad_banner/*$domain=donnaart.com.tw
 @@/ad_file/*$domain=7-11.com.tw|pxmart.com.tw
 @@/adaffiliate_$image,domain=ipfs-lab.com
@@ -16752,6 +16755,10 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 ||rocm0c.site^
 ||m5xy0v.cn^
 ||4wa24bq.cn^
+||xiituvt.top^
+||xiaoxiaoyd.cn^
+||hnpxsm.com.cn^
+||woniu1314520.vip^
 ###asdw3
 ###asdw3 + img + :not(div)
 ###chaptername + div > div[style="padding:10px;border-radius:10px;background-color:green;"]

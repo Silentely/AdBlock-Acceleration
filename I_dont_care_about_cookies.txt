@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 334.202110281249
+! Version: 334.202111030554
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 28 Oct 2021 10:49 UTC
+! Last modified: 03 Nov 2021 04:54 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -569,7 +569,7 @@
 ##.cookie-popup__content
 ##.cookie-popup__heading
 ##.cookie-pop:not(body):not(html)
-~kognitio.com,~argenta.be##.cookie-popup:not(body):not(html):not(#colorbox)
+~openreach.com,~kognitio.com,~argenta.be##.cookie-popup:not(body):not(html):not(#colorbox)
 ###FT_Cookies
 ###policyNotice
 ##.polityka-cookie:not(body):not(html)
@@ -2999,7 +2999,7 @@
 ###monitcookie
 ###cookie-gm-new
 ###politique_confidentialite
-~ab.gr,~maxi.rs,~delhaize.be,~mega-image.ro,~cinemaxx.de,~aucoffre.com,~milliman.com##.cookiesModal:not(body):not(html)
+~sberbank.si,~ab.gr,~maxi.rs,~delhaize.be,~mega-image.ro,~cinemaxx.de,~aucoffre.com,~milliman.com##.cookiesModal:not(body):not(html)
 ###HCECookieManagerContainer
 ###bitbay-cookies
 ##.cookie-tool-container
@@ -5403,7 +5403,7 @@
 ##.global-cookie-notice
 ###cookie_msg_2
 ###eu_cookie_banner
-##.cookie-popup-wrapper
+~openreach.com##.cookie-popup-wrapper
 ###cookie_con
 ###cookie_acception
 ###cookies_confirm_box
@@ -6900,7 +6900,7 @@
 ###imAlertBox.alertBox
 ##.cookieNotes:not(body):not(html)
 ###global-message-cookie
-##.cookie-pop-up:not(body):not(html)
+~openreach.com##.cookie-pop-up:not(body):not(html)
 ##.cookiesConsent:not(body):not(html)
 ##.woahbar.wbUKCookies:not(body):not(html)
 ##.notifications-area[data-role="cookies-bar"]
@@ -12419,7 +12419,7 @@
 ##.wbu_cookie-wrapper
 ##.beans-cookies-notification__container
 ###jwsdw-cookieHint-container
-##.cookie-popup-overlay
+~openreach.com##.cookie-popup-overlay
 ###PAcookies_consent_container
 ##.cookie-banner ~ .backdrop
 ##.announcement[data-id*="cookie_notice"]
@@ -13257,9 +13257,11 @@
 ##.cookie-control__banner
 ###litespot-pro-cookie-ify
 ###razer-pro-cookie-ify
+###cookieHintExt
 !
 ! CUSTOM RULES
 !
+fb.com##div[class*="cookieBanner"]
 linkedin.com###js-notification-wrapper[role="alert"], .global-alert.global-alert--yield, #global-alert-queue, #artdeco-global-alert-container, .alert, #alert
 twitter.com##.twtr-data-protection
 yahoo.com###gdpr[style*="padding"], #y-shade, #applet_p_50000174, .tdv2-applet-nagbar, .login-body + .login-footer
@@ -17230,8 +17232,6 @@ markertek.com###Privacy_Popup
 shore.com###root > div:first-child
 historysearch.com##.hs-state-left
 opensport.es###cookies
-daswetter.com###gpdr, #GPDR, #gdpr, #GDPR
-daswetter.at###gpdr, #GPDR, #gdpr, #GDPR
 sqlgate.com##.popup.download-page
 zwickautourist.de###bauch-binder
 insideevs.com##.m1-footer-messages
@@ -19539,7 +19539,6 @@ qiwi.com##div[class*="cookies-self"]
 zkteco.com###cmsg
 thegapdecaders.com##.elementor-popup-modal
 matratzen-concord.de##.cookie
-online.sberbank.ru###application > div > div > div[class]:last-child
 wwdmag.com##.intercom-snippet > [class*="gdpr"]
 xsplit.com##.Toastify
 widiba.it##.wd-cookies
@@ -21577,6 +21576,11 @@ fairtrade.at###cc
 hey.bayern###cc
 fairgarage.com###dsgvo
 actu-environnement.com###cookies_preferences
+perekrestok.ru##.cookie-content
+ariaspa.it###cookieAria
+eplaque.fr###rgpd
+online.sberbank.ru##footer > div > div + div
+radio1.ch###cookie
 !
 ! SCRIPT BLOCKING
 !
@@ -22027,6 +22031,7 @@ plugin-cookie-consent/build
 /cookieOverlay-view.js
 /js/Widgets/cookieWidget
 /js/minified/cookiecontrol.js
+/typo3conf/ext/ab1d_cookieconsent/*
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -22109,6 +22114,7 @@ consent-manager.confirmic.com
 ||consentbanner.de/public/app.js$script
 ||classistatic.de/consent-statics$script
 /consentcheck.de
+/gdpr-consent-management-platform/*
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -22245,6 +22251,7 @@ cmp.optad360.io
 ||snigelweb.com/sncmp$script
 ||seznam.cz/js/cmp$script
 /pubtech-cmp
+cmp.pafo.fairbung.com
 ||gofundme.com/js/3.0/visitorCookie.js$script
 /CookiesDirective
 CookieAccept/affirmation.js
@@ -22663,6 +22670,7 @@ trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookieser.js$domain=aco.com.pl
 /cookie-monster/*$domain=loveholidays.com
 /vfConsentCookiesCs.js$domain=vodafone.cz
+consent-*$domain=nwb-jobboerse.de
 !
 ! FILTERLIST ONLY
 !
