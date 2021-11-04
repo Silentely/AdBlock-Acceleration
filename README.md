@@ -3,10 +3,12 @@
 <img src="https://img.shields.io/github/stars/Silentely/AdBlock-Acceleration?color=yellow">
 <img src="https://img.shields.io/github/forks/Silentely/AdBlock-Acceleration?color=orange">
 <img src="https://img.shields.io/github/issues/Silentely/AdBlock-Acceleration?color=green">
- <br>
+<br>
 <img src="https://img.shields.io/github/license/Silentely/AdBlock-Acceleration?color=ff69b4">
 <img src="https://img.shields.io/github/languages/code-size/Silentely/AdBlock-Acceleration?color=blueviolet">
 <img src="https://img.shields.io/badge/dynamic/json?label=GitHub%20Followers&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3DSilentely&labelColor=282c34&color=181717&logo=github&longCache=true "关注数量">
+<br>
+<img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FSilentely%2FAdBlock-Acceleration.svg?type=small">
 </div>
 
 # Project instruction 
