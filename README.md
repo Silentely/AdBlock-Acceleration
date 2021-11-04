@@ -10,6 +10,8 @@
 </div>
 
 # Project instruction 
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSilentely%2FAdBlock-Acceleration.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FSilentely%2FAdBlock-Acceleration?ref=badge_shield)
+
 
 International/China accelerated ad filtering rules subscription（[中文说明](https://github.com/Silentely/AdBlock-Acceleration/blob/main/README_CN.md)）
 
@@ -105,3 +107,7 @@ Just copy the table below and use the accelerated address of the corresponding r
 
 
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSilentely%2FAdBlock-Acceleration.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FSilentely%2FAdBlock-Acceleration?ref=badge_large)
