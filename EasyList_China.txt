@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: gAnqr8+PFxb1ik84y18rrQ
-! Version: 202111050346
+! Checksum: In+SrPNRD8ungpNpcDcc/g
+! Version: 202111050756
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last Modified: 05 Nov 2021 03:46 UTC
+! Last Modified: 05 Nov 2021 07:56 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: http://abpchina.org/forum/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -1380,6 +1380,7 @@ _xiuno_com_ad/
 ##img[src*=".sinaimg."][style="width:150px;height:300px"]
 ##script + #coupletBox
 ##script + #rbbox
+##a[href="https://uu14.vip/"]
 ##script[src="/js/sy2.js"] + div[align="center"]
 ##script[src="/templates/frontend/frontend-jiucao/js/jquery.lazyload.min.js"] + .footer_app_box
 ##span[title="neteasefooter"]
@@ -7458,7 +7459,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||myqcloud.com/ad/
 ||myqqjd.com/wp-content/plugins/*.js
 ||myqqjd.com^$csp=script-src 'self' * 'unsafe-inline'
-||mysteelcdn.com/gg/
+||mysteelcdn.com/advert/
 ||myweb.hinet.net/menu.htm
 ||myyan.cc/js/qz.js
 ||myyan.cc/js/sj
@@ -9091,8 +9092,10 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||bdstatic.com^*/fullpage-pop/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+hao123.com##.title-wrap + .right-img
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -16764,6 +16767,10 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 ||wjylfla.cn^
 ||go07.cc^
 ||aifishing.cn^
+||u5274.cn^
+||poedlov.cn^
+||hnfxhx.xyz^
+||whwfcm.cn^
 ###asdw3
 ###asdw3 + img + :not(div)
 ###chaptername + div > div[style="padding:10px;border-radius:10px;background-color:green;"]
