@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 335.202111101020
+! Version: 335.202111121242
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 10 Nov 2021 09:20 UTC
+! Last modified: 12 Nov 2021 11:42 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -113,7 +113,7 @@
 ###cookie_shout
 ###cookie-alert
 ###EUCookie
-~win2day.at,~werkenbijpathe.nl,~singaporeair.com,~interspar.at,~spar.at,~spar.hu,~spar.hr,~spar.si##.cookie-notification:not(body):not(html)
+~schuurman-schoenen.nl,~win2day.at,~werkenbijpathe.nl,~singaporeair.com,~interspar.at,~spar.at,~spar.hu,~spar.hr,~spar.si##.cookie-notification:not(body):not(html)
 ###eprivacy
 ~dominospizza.pl,~penny.hu,~penny.cz###cookie-message
 ###cookieinfo-container
@@ -134,7 +134,7 @@
 ###cookie-notifcation-banner
 ###ctl00_privacyCookies_LIPCNB_PrivacyandCookiesNoticePanel
 ###icoCookiesBanner
-~singaporeair.com###cookie-notification
+~schuurman-schoenen.nl,~singaporeair.com###cookie-notification
 ~future-x.de###cookieBar
 ###cookie_policy-0
 ~hl.co.uk##.cookieBanner:not(body):not(html):not(#sprd-main)
@@ -908,7 +908,7 @@
 ~stromnetz.berlin##.cookiedisclaimer:not(body):not(html)
 ##.cookieDisclaimerContainerWrapper
 ##.cookiesDisabledBanner
-##.cookie-information:not(body):not(html)
+~schuurman-schoenen.nl##.cookie-information:not(body):not(html)
 ###cookies-politics
 ##.CookieWarning:not(body):not(html)
 ###cookieAccept:not(button):not(input)
@@ -4559,7 +4559,7 @@
 ###DisclaimPrivacyBottomButton
 ###cookie_box_bar
 ##.cookielegal:not(body):not(html)
-##.cookie_consent_banner
+~postfinance.ch##.cookie_consent_banner
 ##.polcookies:not(body):not(html)
 ###mtv-cookie-notification
 ##.widget--cookies:not(body):not(html)
@@ -5114,7 +5114,7 @@
 ##accept-cookie-box
 ##.alerte-cookie:not(body):not(html)
 ##.stn_cookieoptin:not(body):not(html)
-##.js-cookie-notification
+~schuurman-schoenen.nl##.js-cookie-notification
 ##.zone-cookies:not(body):not(html)
 ###cookieAssistant
 ##.c09--cookie:not(body):not(html)
@@ -9317,7 +9317,7 @@
 ##cookies-message-display
 ###cookiespop
 ##.anunt.cookies:not(body):not(html)
-##.js-cookie-modal:not(body):not(html)
+~schuurman-schoenen.nl##.js-cookie-modal:not(body):not(html)
 ###useCookieNotice
 ##body > .container-fluid.cookie
 ##.ui-dialog[aria-describedby*="cookie-confirm"]
@@ -9803,7 +9803,7 @@
 ###agreementfordataprotectionLayer
 ###ptm_cookie_law
 ##.reveal-modal[id*="cookie"] ~ .reveal-modal-bg
-##.cookie-notification-modal
+~schuurman-schoenen.nl##.cookie-notification-modal
 ~wacom.com,~sap.com,~tmz.com,~proximustv.be,~proximus.be,~tripit.com,~concursolutions.com,~forbes.com,~fortune.com,~formula1.com###consent_blackbar:not(.idcac)
 ##.p-notification-bar-cookieconsent
 ###noty-cnil.alert-dismissable
@@ -13268,6 +13268,12 @@
 ###cookiemgmt #ensModalWrapper
 ###cookiemgmt #ensModalWrapper-bg
 ###lgpd_banner
+###redim-cookiehint-bottom
+##.mm-slideout > .cookies
+##.site-cookie-alert
+##.wpautoterms-cookies-notice
+##.mod_cookie_banner
+###___gatsby .is-visible[class*="CookiePolicy"]
 !
 ! CUSTOM RULES
 !
@@ -15881,7 +15887,6 @@ onzemondial.com##body > div[id*="cookie"]
 mythemeshop.com###mts_gdpr_popup
 krombacher.de##.trackingNotice
 trendsmap.com###header_message
-sazka.cz##.consents-bar
 bueromarkt-ag.de###cC
 brodportal.hr##.privatnost
 034portal.hr###footer.tekst
@@ -16130,7 +16135,6 @@ bitzarium.com###textBox, #masque, #BoutClose
 greengenius.lt##.cookies-sticky
 frognews.bg##.hover-mask, .gdpr-blk
 dekk1.no##.ModuleGroup.name_infobar
-burgerking.fr###root > main > footer + div
 mesampoulesgratuites.fr###popup, .popup
 rockstarcoders.com###myAlert
 aeriagames.com##body > div[style*="fixed"]
@@ -18206,7 +18210,6 @@ gknpm.com##clients-cookie-policy
 alfabank.ru###alfa > .platform > noindex, #agreement-popup
 ncalculators.com##.consent, #consent
 valais.ch##.notification
-burgerking.dk##.modal-backdrop
 stayfriends.de##.cookie
 enjoynu.com###coookie
 vanderpoelmontage.nl##.cookie-settings
@@ -21611,6 +21614,21 @@ volkswagen.de##.vwaNonReactSimplePage ~ #ensModalWrapper
 lawinsider.com###header ~ .light-blue-bordered-card
 strawpoll.de###consent-overlay
 mitsubishi-motors.ca##.cookiemodal
+eika.no##.no-eika-cookieconsent
+elbphilharmonie.de###consent-modal
+searchforsites.co.uk###cookieConsent, #modal-overlay
+fvg.it###cookieModal
+tsuche.com###c-c
+lionsroar.com##.elementor-popup-modal
+sazka.cz##.consent-bar
+burgerking.fr##main > div:last-child
+burgerking.co.uk###main ~ div[class*="Container"]
+0800repair.com###wp-notification
+ecologi.com###modal-root ~ div
+steambuy.com###sb-privacy-policy
+dbk.de###cc
+schlauerlernen.de###cookiereminder
+mcc.live##.cookies
 !
 ! SCRIPT BLOCKING
 !
@@ -22148,6 +22166,7 @@ consent-manager.confirmic.com
 /gdpr-consent-management-platform/*
 /drdsgvo-consent-script.js
 /gdpr-consent.bundle.js
+/consent/civic-bundle.js
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -22232,7 +22251,7 @@ jssdk.privacy.pre.schibsted.com
 /privacyopt.js
 /privacypolicy/styles/all/template/remove_url.js
 ||psi.schibsted.com/api/v2/privacy/notification$script
-sdk.privacy-center.org$domain=~podcasts.leparisien.fr|~lequipe.fr|~metronieuws.nl|~marianne.net|~allocine.fr|~standaard.be|~dziennikzachodni.pl|~dziennikwschodni.pl|~gloswielkopolski.pl|~naszemiasto.pl|~telegraaf.nl|~gamepro.de|~gamestar.de|~dumpert.nl|~funradio.fr|~rtl.fr|~mundodeportivo.com|~franceinter.fr|~filmweb.pl|~franceculture.fr|~jeuxvideo.com|~melty.fr|~francetvinfo.fr|~seguro.elespanol.com|~gofeminin.de|~onmeda.de
+sdk.privacy-center.org$domain=~podcasts.leparisien.fr|~lequipe.fr|~metronieuws.nl|~marianne.net|~allocine.fr|~standaard.be|~dziennikzachodni.pl|~dziennikwschodni.pl|~gloswielkopolski.pl|~naszemiasto.pl|~telegraaf.nl|~gamepro.de|~gamestar.de|~dumpert.nl|~funradio.fr|~rtl.fr|~mundodeportivo.com|~jofogas.hu|~franceinter.fr|~filmweb.pl|~franceculture.fr|~jeuxvideo.com|~melty.fr|~francetvinfo.fr|~seguro.elespanol.com|~gofeminin.de|~onmeda.de
 /wp-content/plugins/privacy-policy-info/*
 /e-privacy.min.js
 /privacyConsentBar.js
@@ -22706,6 +22725,9 @@ trcking.min.js^$domain=canalplus.com|canal-plus.com
 consent-*$domain=nwb-jobboerse.de
 sibboventures.mgr.consensu.org$domain=lasexta.com
 /cookie_flyout.js$domain=festo.com
+/klaro.js$domain=beckhoff.com
+/Manolo_CookieConsent/*$domain=manoloblahnik.com
+/LdCookieConsent.js$domain=landkreis-eichstaett.de
 !
 ! FILTERLIST ONLY
 !
