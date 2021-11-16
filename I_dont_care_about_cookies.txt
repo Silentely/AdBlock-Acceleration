@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 335.202111121242
+! Version: 335.202111161227
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 12 Nov 2021 11:42 UTC
+! Last modified: 16 Nov 2021 11:27 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -1115,7 +1115,7 @@
 ##.privacy-policy-cookies
 ##.cookies-alert:not(body):not(html)
 ###cookiePolicyZone
-~nintendo.com,~stromnetz.berlin,~dawonia.de,~rittal.com##.cookie-overlay:not(body):not(html)
+~nsinternational.com,~nintendo.com,~stromnetz.berlin,~dawonia.de,~rittal.com##.cookie-overlay:not(body):not(html)
 ##.disclaimer-cookies:not(body):not(html)
 ###cnil-cookie-panel
 ##.cookie-alert-msk:not(body):not(html)
@@ -2728,7 +2728,7 @@
 ###CookieDisclaimer
 ##.cookiesOptin:not(body):not(html)
 ###pnlCookieMessage
-~nablawave.com,~tgcom24.mediaset.it###iubenda-cs-banner[style]
+~nablawave.com###iubenda-cs-banner[style]
 ##.iubenda-ibadge
 ###iubenda-cs-banner ~ #pushiub
 ###ut_cookie_warning_bar
@@ -8223,7 +8223,7 @@
 ###js-cookie-hint
 ###wn_cookiebar
 ###ccc > #ccc-overlay
-###ccc > #ccc-overlay ~ div[id^="ccc"]
+~videogameschronicle.com###ccc > #ccc-overlay ~ div[id^="ccc"]
 ###dvt_cookiechoiceinfo
 ##.privacyPolicyBanner:not(body):not(html)
 ##.par-privacy-policy-info
@@ -11912,7 +11912,7 @@
 ##.gdprCookieAlertPopup
 ###cookieCardBg
 ##.cookie-notification__bar
-~nablawave.com,~tgcom24.mediaset.it##.iubenda-cs-content
+~skuola.net,~tgcom24.mediaset.it,~nablawave.com##.iubenda-cs-content
 ##.universalcookiedisclaimer
 ###gdpr-banner-wrapper
 ###sp-cc[action*="cookiepref"]
@@ -13274,6 +13274,13 @@
 ##.wpautoterms-cookies-notice
 ##.mod_cookie_banner
 ###___gatsby .is-visible[class*="CookiePolicy"]
+###bmu-cookie-disclaimer
+###___gatsby div[class*="cookie-consent"]
+##.cookie-preferences-dialog
+###cookies.notification.active
+##.cookies-overly
+##.cookies-popup__wrapper
+###divCookiesPopup
 !
 ! CUSTOM RULES
 !
@@ -15851,7 +15858,6 @@ kongregate.com##.policy-bar
 growdiaries.com##.popup_secure
 drivereasy.com##.float-bar
 unigine.com##.bottom-notice
-elespanol.com##.modal-cookies
 emma-matras.nl##.ucn-block
 raider.io##div[class*="cookieFooter-module"]
 emclient.com###emcCookieNotification
@@ -16990,7 +16996,6 @@ hautesavoiexperience.fr###globalWarning
 mckp.uj.edu.pl###cookie_filter
 programyzadarmo.net.pl##.notice--primary
 qpony.pl##.rodo-wrapper
-bmu.de###bmu-cookie-disclaimer
 sklep.polberis.pl###cookie
 miliboo.ch##.m-milibooCookie
 westjet.com##.wj-header-usercookies
@@ -19243,7 +19248,6 @@ edu.ch##.mbdialog
 mam-bricolaj.ro##.footer_notif
 qsc.de##.cc-overlay
 vindeurgent.ro##.bottom_notice
-elderscrollsonline.com##.notice-warning
 papajohns.pl##footer ~ div[style*="bottom"]
 24opony.pl##.easyNotificationBck
 textlocal.com###dallas-optin
@@ -21139,7 +21143,6 @@ censor.net###usage_notice, #usage-notice-message
 rcibanque.de##.ng-scope[ui-view="cookie"]
 immoscout24.ch##section[class*="SeoLinks"] ~ div[class*="Box"]
 argent.xyz###gatsby-focus-wrapper > div:not([id]):last-of-type
-lego.com##div[class*="CookieDisclaimer"], #footer ~ [class*="emotion-cache"], #prompt-footer
 oceanmata.com##.banner
 jamiebalfour.scot###cookies
 bolighed.dk##.cookie__manager
@@ -21629,6 +21632,23 @@ steambuy.com###sb-privacy-policy
 dbk.de###cc
 schlauerlernen.de###cookiereminder
 mcc.live##.cookies
+supermiro.lu###lightbox-gdpr
+supermiro.com###lightbox-gdpr
+serasa.com.br##div[aria-labelledby="m-acc-title"]
+vtwonen.nl##.modal.tracking-consent-popup
+inet.se##.top-nav-bar-filler ~ .container ~ div
+italki.com##div[class*="cookie_root"]
+bitrefill.com###consentDialog
+dr-gumpert.de###cookie_modal_container
+lego.com##div[class*="CookieDisclaimer"], #footer ~ [class*="emotion-cache"], #prompt-footer
+ahaan.co.uk##.MuiSnackbar-root
+le-livre.fr###showcookie
+radioleipzig.de##.radioplayer-anno
+leoschilbach.de##main ~ div
+argeles-sur-mer.com##.cookies-global
+pharmasimple.com###pharmabiscuit-popin
+ibisahome.com###cookies
+westend61.de###cookie_Modal
 !
 ! SCRIPT BLOCKING
 !
@@ -22081,6 +22101,7 @@ plugin-cookie-consent/build
 /js/minified/cookiecontrol.js
 /typo3conf/ext/ab1d_cookieconsent/*
 /module/kabimba_cookie/*
+/woody-addon-cookies/*
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -22214,7 +22235,7 @@ gdpr-banner.awsmpsa.com
 ||prizelogic.com/gdpr/third-party-optin.min.js$script
 /gdpr-popup.js
 /wordpress-ptchrgdprplugin/*
-gdpr-wrapper.privacymanager.io$domain=~geenstijl.nl|~dailybuzz.nl|~rtvnoord.nl|~omroepbrabant.nl|~futurezone.at|~profil.at|~kurier.at|~weeronline.nl|~lablue.de|~vesti.bg
+gdpr-wrapper.privacymanager.io$domain=~kinuskikissa.fi|~geenstijl.nl|~dailybuzz.nl|~rtvnoord.nl|~omroepbrabant.nl|~futurezone.at|~profil.at|~kurier.at|~weeronline.nl|~lablue.de|~vesti.bg
 ||evidon.com/pub/gdprnotice.js$script
 /wp-content/plugins/ct-ultimate-gdpr
 ||gdpr.mandarin-medien.de/manager.js$script
@@ -22486,7 +22507,7 @@ wpjslib-chunk-notification.js^
 ||ccm19.de/app/public/app.js$script
 ||ccm.ceasy.de/public/app.js$script
 /js/orejime/js/orejime.js
-/iubenda_cs$domain=~radiomontecarlo.net|~video.repubblica.it|~video.lastampa.it|~nablawave.com|~buondi.it|~telerama.fr|~tgcom24.mediaset.it
+/iubenda_cs$domain=~radiomontecarlo.net|~video.repubblica.it|~video.lastampa.it|~nablawave.com|~buondi.it|~telerama.fr|~tgcom24.mediaset.it|~skuola.net
 /amp-user-notification-
 ||sn.sanoma.fi/js/sccm$script
 /api/rest/settings/public?fields=endUserAgreement
@@ -22728,6 +22749,10 @@ sibboventures.mgr.consensu.org$domain=lasexta.com
 /klaro.js$domain=beckhoff.com
 /Manolo_CookieConsent/*$domain=manoloblahnik.com
 /LdCookieConsent.js$domain=landkreis-eichstaett.de
+/legal-consent/*$domain=meineapotheke.de
+/gdpr$domain=inishpharmacy.com
+js_privacy_cmp*$domain=e24.no
+/consent-main$domain=godaddy.com
 !
 ! FILTERLIST ONLY
 !
