@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 335.202111161227
+! Version: 335.202111171341
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 16 Nov 2021 11:27 UTC
+! Last modified: 17 Nov 2021 12:41 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -10151,7 +10151,7 @@
 ###root-cookie-notice
 ###euconsent.card.shadow
 ###app > #cookiesStrip
-###app-container > #cookiesStrip
+###app-container #cookiesStrip
 ##.c-cookie-information
 ###cookie_hinweis_box
 ###cx_bottom_banner
@@ -13281,6 +13281,9 @@
 ##.cookies-overly
 ##.cookies-popup__wrapper
 ###divCookiesPopup
+###__next div[class*="cookieBanner"]
+##.c-megaModal[data-cookie-consent-overlay]
+##.c-cookieBanner--overlay
 !
 ! CUSTOM RULES
 !
@@ -18790,8 +18793,8 @@ akatronik.at###cookieDiv
 motionvfx.com##.cookies-modal
 izotcomputers.com##body [id^="aiva"]
 akvarista.cz###topcookies
-theguardian.com###app > div > main ~ footer ~ div, div[data-island="cookie-banner"], #cmpContainer, body > #cmp, #bottom-banner
-theguardian.com.###app > div > main ~ footer ~ div, div[data-island="cookie-banner"], #cmpContainer, body > #cmp
+theguardian.com###app > div > main ~ footer ~ div, div[data-island="cookie-banner"], #cmpContainer, body > #cmp, #bottom-banner, div[x-data*="showCookieBanner"]
+theguardian.com.###app > div > main ~ footer ~ div, div[data-island="cookie-banner"], #cmpContainer, body > #cmp, #bottom-banner, div[x-data*="showCookieBanner"]
 ristorantino.no##.privacy-policy-container
 deviantart.com###root > div ~ div:last-child:not([id])
 datacamp.com##.dc-cookie-banner-wrapper
@@ -21151,7 +21154,6 @@ chess.com##.bottom-banner-component
 splu-engineers.com###frontpage-banner-cover
 footroll.pl##body > div:not([id]):not([class])
 easycredit.de##cookie-layer
-just-eat.fr##div[data-qa="privacy-settings"]
 skatteverket.se##skv-cookie-banner
 share-now.com##.banner-placeholder
 gittigidiyor.com###__next main > div:not([class]), .policy-alert-v2.show-policy
@@ -21195,8 +21197,6 @@ treinaweb.com.br##div[c_data="c_cookie_main"]
 billiger-mietwagen.de##.cmp-container
 nettolohn.de##div[id*="hinweis-cookie"]
 talktomeinkorean.com###wpfront-notification-bar-spacer
-aliexpress.ru###__aer_root__ > div > [class*="styles_footer"] ~ div, p[class*="PrivacyPolicyBanner"]
-aliexpress.com##.ui-mask, .gdpr-dialog-class, #j-aliexpress-notice, #container-for-smart-banner ~ div:not([id]):not([class*=" "]):not([style]):nth-last-child(2), #voyager-gdpr, .site-notice-header
 gorillas.io###cookie-settings
 hampel-auctions.com###consentmanager
 compress-or-die.com##.module_consent__main
@@ -21227,7 +21227,6 @@ autoalkatreszonline24.hu##.block-cookies
 england.de###apc
 mallorca.com###apc
 hyundai-entdecken.de###COOKIE_POLICY
-lieferando.at##div[data-qa="privacy-settings"]
 takealot.com##div[class*="cookie-banner"]
 newdaycards.com###cookie-consents
 niagara-pu.ru##div[data-storage-item*="cookiename"]
@@ -21649,6 +21648,13 @@ argeles-sur-mer.com##.cookies-global
 pharmasimple.com###pharmabiscuit-popin
 ibisahome.com###cookies
 westend61.de###cookie_Modal
+aliexpress.ru###__aer_root__ > div > [class*="styles_footer"] ~ div, p[class*="PrivacyPolicyBanner"], #ae-ru-privacy-banner
+aliexpress.com##.ui-mask, .gdpr-dialog-class, #j-aliexpress-notice, #container-for-smart-banner ~ div:not([id]):not([class*=" "]):not([style]):nth-last-child(2), #voyager-gdpr, .site-notice-header
+aromes-et-liquides.fr###rgpdcookie
+just-eat.no##div[data-qa="privacy-settings"]
+just-eat.fr##div[data-qa="privacy-settings"]
+lieferando.at##div[data-qa="privacy-settings"]
+boomin.com##div[data-testid*="cookie-modal"]
 !
 ! SCRIPT BLOCKING
 !
@@ -22497,7 +22503,7 @@ wpjslib-chunk-notification.js^
 ||dialogue.sp-prod.net/messagingWithoutDetection.js$script,domain=~globalplayer.com
 /datenschutz.min.js
 /ccm19.js
-/wrapperMessagingWithoutDetection.js$domain=~standard.co.uk|~bild.de|~computerbild.de|~bold.dk|~welt.de|~sport1.de|~focus.de|~chip.de|~faz.net|~n-tv.de|~wunderweib.de|~tvmovie.de|~praxisvita.de|~cosmopolitan.de|~giga.de|~ostsee-zeitung.de|~lvz.de|~mein-schoener-garten.de|~boerse-online.de|~tvspielfilm.de|~autobild.de|~bike-bild.de|~bz-berlin.de|~travelbook.de|~cyberport.at|~cyberport.de|~golem.de|~express.de|~ksta.de|~bndestem.nl|~volkskrant.nl|~rundschau-online.de|~rtl2.de|~derstandard.de|~derstandard.at|~unsere-helden.com|~rtl.de|~stern.de|~myaccount.hln.be|~nu.nl|~dpgmedia.nl|~dpgmedia.be|~heise.de|~11freunde.de|~finanzen.at|~finanzen.net|~insider.com|~transfermarkt.at|~transfermarkt.ch|~transfermarkt.co.uk|~transfermarkt.com|~transfermarkt.com.tr|~transfermarkt.de|~transfermarkt.fr|~transfermarkt.it|~transfermarkt.nl|~transfermarkt.pl|~transfermarkt.pt|~transfermarkt.us|~vip.de|~businessinsider.de|~clever-tanken.de|~fitbook.de|~idealo.at|~idealo.co.uk|~idealo.de|~idealo.es|~idealo.fr|~idealo.it|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~noizz.de|~politico.eu|~rollingstone.de|~stylebook.de|~techbook.de|~testbild.de|~wieistmeineip.at|~wieistmeineip.de|~wieistmeineip.ch
+/wrapperMessagingWithoutDetection.js$domain=~standard.co.uk|~theguardian.com|~bild.de|~computerbild.de|~bold.dk|~welt.de|~sport1.de|~focus.de|~chip.de|~faz.net|~n-tv.de|~wunderweib.de|~tvmovie.de|~praxisvita.de|~cosmopolitan.de|~giga.de|~ostsee-zeitung.de|~lvz.de|~mein-schoener-garten.de|~boerse-online.de|~tvspielfilm.de|~autobild.de|~bike-bild.de|~bz-berlin.de|~travelbook.de|~cyberport.at|~cyberport.de|~golem.de|~express.de|~ksta.de|~bndestem.nl|~volkskrant.nl|~rundschau-online.de|~rtl2.de|~derstandard.de|~derstandard.at|~unsere-helden.com|~rtl.de|~stern.de|~myaccount.hln.be|~nu.nl|~dpgmedia.nl|~dpgmedia.be|~heise.de|~11freunde.de|~finanzen.at|~finanzen.net|~insider.com|~transfermarkt.at|~transfermarkt.ch|~transfermarkt.co.uk|~transfermarkt.com|~transfermarkt.com.tr|~transfermarkt.de|~transfermarkt.fr|~transfermarkt.it|~transfermarkt.nl|~transfermarkt.pl|~transfermarkt.pt|~transfermarkt.us|~vip.de|~businessinsider.de|~clever-tanken.de|~fitbook.de|~idealo.at|~idealo.co.uk|~idealo.de|~idealo.es|~idealo.fr|~idealo.it|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~noizz.de|~politico.eu|~rollingstone.de|~stylebook.de|~techbook.de|~testbild.de|~wieistmeineip.at|~wieistmeineip.de|~wieistmeineip.ch
 /app.dsgvo.min.js
 /trigoAboveBox.jquery.js
 /dsgvoinit.min.js
@@ -22678,7 +22684,7 @@ spellsalsa.com$domain=interestingengineering.com
 /cookie-consent/*$domain=lux-residence.com
 privacy-manager-v*$domain=df.eu
 /consent.$domain=strato.de|strato.nl|strato.fr|strato.es|strato-hosting.co.uk
-/consent/*$domain=renault.de
+/consent/*$domain=renault.de|ultraleicht-trekking.com
 /checkCookieConsent/*$domain=andrewssykes.fr
 /consent-manager/*$domain=interhyp.de|cornelsen.de
 /tcf2.js$domain=0calc.com|0rechner.de|0calc.fr
