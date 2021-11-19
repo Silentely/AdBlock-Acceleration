@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 335.202111171341
+! Version: 335.202111191546
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 17 Nov 2021 12:41 UTC
+! Last modified: 19 Nov 2021 14:46 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -33,7 +33,7 @@
 ###cookiesdirective
 ~vetzoo.se,~animail.se,~mustijamirri.fi,~musti.no,~alexanderhall.co.uk,~basenio.de,~foxtons.co.uk,~telekom.hu###cookie_consent
 ###cookieBannerD
-~amd-moebel.de,~lansberg.de,~texels.nl,~wahre-superstars.de,~klang-hamburg.de###cookieNotice
+~kupplung.de,~amd-moebel.de,~lansberg.de,~texels.nl,~wahre-superstars.de,~klang-hamburg.de###cookieNotice
 ~tweakers.net##.cookieNotice:not(body):not(html)
 ###cookiebox
 ###cookieTime
@@ -215,7 +215,7 @@
 ##.cookieAccepterPopup:not(body):not(html)
 ##.cookieAccepterGrayBody
 ###cookie_box
-###cookie-law
+##.c-cookieBanner--overlay
 ###cookieWarningBox
 ###cookiemessage:not(.reveal)
 ###cnContainer
@@ -510,7 +510,7 @@
 ###cookieAlertMessage
 ##.noticeCookiesUse:not(body):not(html)
 ###cookiebnr
-###cookieWarning
+###cookieWarning:not(.modal)
 ###cookieu_header
 ###CookieInformerView
 ###fdih-cb
@@ -1196,7 +1196,7 @@
 ###cookies-message
 ##.cookie-permission-prompt
 ###zgoda_cookie
-###cookie-consent-banner
+###cookie-consent-banner:not(.modal)
 ##.ui-cookies-banner:not(body):not(html)
 ###cookieElement
 ##.m_cookie:not(body):not(html)
@@ -1263,7 +1263,7 @@
 ##.bls-cookie-policy:not(body):not(html)
 ###cookie_law_notice_container
 ###cnilcookie
-###CookiesModal
+##.c-megaModal[data-cookie-consent-overlay]
 ##.consent.consent-prev
 ###SVDv3_cookie
 ##.js-cookie-information-popup
@@ -1813,7 +1813,7 @@
 ###cookiesInfo2
 ##.CookieWrapper:not(body):not(html)
 ###avcns-wrapper
-###privacy-notice
+~tldallas.com###privacy-notice
 ##.soe-cookie-policy:not(body):not(html)
 ###eucl_panel
 ###cookieInfoAcceptContainer
@@ -2128,7 +2128,7 @@
 ###cookiexndo
 ###BlkCookies
 ###coe-cookie-disclaimer
-###aceptarCookie
+###aceptarCookie:not(button)
 ##.disclaimer-cookies-message
 ###cookielaw-container
 ###cnil-cookie-avertissement
@@ -2366,7 +2366,7 @@
 ###overlayCookies
 ###warningCookies
 ###cookieAdvice
-###cookieBlock
+~pikolinos.com###cookieBlock
 ###widget_cookies
 ##.popup_block_Cookies:not(body):not(html)
 ###CookiesCtrl
@@ -2658,7 +2658,7 @@
 ###stormCookiePopup
 ###topbar-cookie-container
 ###privacyOptInHint
-###aceptarcookie
+###aceptarcookie:not(button)
 ##.site-header-cookies:not(body):not(html)
 ###politicaCookie
 ###tscookiebar
@@ -2973,7 +2973,7 @@
 ##.infos-cookie:not(body):not(html)
 ###cookies_avertissement
 ###bar-header-cookie
-###cookieblock
+~pikolinos.com###cookieblock
 ###CookieBannerMessageContainer
 ##.bandeauCookies:not(body):not(html)
 ##.cook-accept:not(body):not(html)
@@ -4145,7 +4145,7 @@
 ###cookies-note
 ###js-cookieBox
 ###mps-cookie-hint
-~mega.be,~shoppable.com###cookiesModal
+###cookieAdviseContainer
 ##.CookieDisclaimer:not(body):not(html)
 ##.js__cookie_popup:not(body):not(html)
 ###show_cookie
@@ -8387,7 +8387,7 @@
 ###cookieform ~ .modal-backdrop
 ###cookies-info-modal ~ .modal-backdrop
 ###cookieNotificationDialog ~ .modal-backdrop
-~shoppable.com###cookiesModal ~ .modal-backdrop
+###cookiesModal ~ .modal-backdrop
 ###cookiemessage ~ .modal-backdrop
 ###cookie-popup ~ .modal-backdrop
 ##.modal-cookie ~ .modal-backdrop
@@ -8694,7 +8694,7 @@
 ###hbCookieConsentDialog
 ##.cookiesTipIframe:not(body):not(html)
 ###suti.suti
-###gdpr_consent:not(input)
+###gdpr_consent:not(input):not([class*="contactForm"])
 ###gdprLegalNotification
 ##.gdprLegalNotification
 ###rodo-overlay
@@ -13282,8 +13282,8 @@
 ##.cookies-popup__wrapper
 ###divCookiesPopup
 ###__next div[class*="cookieBanner"]
-##.c-megaModal[data-cookie-consent-overlay]
-##.c-cookieBanner--overlay
+##.cookie-notifier-section
+###lgpd-banner
 !
 ! CUSTOM RULES
 !
@@ -13802,20 +13802,10 @@ seasaltcornwall.co.uk##.global-promotion
 w3logistics.com###w3l-cookiebox
 actionforme.org.uk##.afme_cookie
 jajco.pl##div[id*="cookies-notification"]
-filmempfehlung.com###fe > div[style*="fixed"]
-mondoconv.it###CokCon
-brieffreunde.org##body > div:not([id]):not([class])
-basiszins.de###wrapperdiv
-cebit.de##.notifier.is-top-fixed
-catalunyacaixa.com###politica
+messe.de##.user-notes-notification
 jdrp.fr###jdrp_cookie_notice
-firearms-united.com##body > div:not([id]):not([class])
-snp.nl##.snp-cookiebar
-f2p.com###CN
-wedotechnologies.com##.notification-general
-senoecoseno.it###dcb-black-screen
-gam.com###gamCookieNotice
-compteurdelettres.com##.rssincl-content
+gam.com##.gamNotice
+compteurdelettres.com##.top-header
 baseplus.de###agb_area
 slwstr.net##.sqs-announcement-bar
 adomik.com##.sqs-announcement-bar
@@ -14894,7 +14884,6 @@ kamilianie.eu##body > div:not([id]):not([class])[style*="fixed"], body > div:not
 weshop.co.uk##.notices
 destockplus.com##.page_warning
 gwp.pl###notice_bar
-messe.de##.user-notes-notification
 ragusanews.com###barra
 curverstyle.pl##body > div:not([id]):not([class])
 pro-bikegear.com###message, .message
@@ -19607,7 +19596,6 @@ wera.de##[id^="dsgvo-modal"]
 era.int###__COOKIE_CONFIRM__
 simplybook.me##.cookies
 alpenrose.net##.skd-cookie-banner
-sl.se##footer > [tabindex]
 vuejsdevelopers.com##.navbar.is-fixed-bottom
 digas.gr###tc-pnl
 lewissilkin.com##.cookie
@@ -21655,6 +21643,26 @@ just-eat.no##div[data-qa="privacy-settings"]
 just-eat.fr##div[data-qa="privacy-settings"]
 lieferando.at##div[data-qa="privacy-settings"]
 boomin.com##div[data-testid*="cookie-modal"]
+panasonicproclub.com###over
+kontist.com###__next > .fixed[class*="bg"], #__next > .fixed[class*="bottom"]
+medpets.fr##.tw-fixed[ref="cookie-modal"]
+limaeasy.com##.rstbox.eb-custom.eb-bottom-left[data-options*="EngageBox"]
+kolejeslaskie.com###cookie-law
+sncf.com###cookie-law
+extrabux.com##.ccpabar
+timma.fi###alert-root
+winamp.com##.cookies
+beatstars.com##mp-cookies-snackbar
+solicitor.info###msgbg
+sl.se##body > div[class*="header"] > div > div:first-child:not([class])
+headspace.com###gatsby-focus-wrapper > div:last-child
+airfleets.net###blur
+redis.com###gdpr-modal
+earlybird.delivery##.policy-notice
+conqblade.com##.gw-cookies
+dekamarkt.nl##.cookie
+psy.pl###infoPopup, .modal-backdrop
+tldallas.com###cookies
 !
 ! SCRIPT BLOCKING
 !
@@ -22530,7 +22538,7 @@ connect.danone.es
 notice.sp-prod.net
 ||htmedia.in/analytics-js$script
 ||wpcc.io/lib$script
-||app.usercentrics.eu/browser-ui$script,domain=~schweinske.de|~badische-zeitung.de|~bobsys.com|~esports.com|~immonet.de
+||app.usercentrics.eu/browser-ui$script,domain=~schweinske.de|~worldofsweets.de|~badische-zeitung.de|~bobsys.com|~esports.com|~immonet.de
 tag.goadopt.io
 /typo3conf/ext/supi/*
 ||omnigrafitalia.it/policy$script
@@ -22759,6 +22767,8 @@ sibboventures.mgr.consensu.org$domain=lasexta.com
 /gdpr$domain=inishpharmacy.com
 js_privacy_cmp*$domain=e24.no
 /consent-main$domain=godaddy.com
+/base-nf.js$domain=lecanardenchaine.fr
+toestemmingen.snp.nl$domain=snp.nl
 !
 ! FILTERLIST ONLY
 !
