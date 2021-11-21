@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202111210809
+! Version: 202111211100
 ! Title: EasyPrivacy
-! Last modified: 21 Nov 2021 08:09 UTC
+! Last modified: 21 Nov 2021 11:00 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -68,6 +68,7 @@
 -imppix/
 -inview-tracker.
 -krux-tag/
+-landing-tracking-
 -log?referUrl=
 -logging/log?
 -lp-tracking.
@@ -422,6 +423,7 @@
 /adstrack.
 /adtctr.
 /adtoniq-
+/adtrack-
 /adtrk/*
 /adv/tracking.
 /adv?pixel_
@@ -3431,6 +3433,7 @@
 /pubfooter/js/tracking-
 /pubimppixel/*
 /public/analytics.js
+/public/statsd
 /public/visitor.json?
 /public/visitor/create?
 /publisher:getClientId?key=
@@ -4057,6 +4060,7 @@
 /stats/metrics/*
 /stats/mixpanel-
 /stats/page_view_
+/stats/pageview
 /stats/pgview.
 /stats/ping?
 /stats/pv.
@@ -5143,6 +5147,7 @@
 ://analytics.*/pageview/
 ://analytics.*/tracker.
 ://beacon.*/track
+://blue.*/script.js
 ://collect.*/pageview
 ://collector.*/event
 ://d.*/track.js
@@ -5197,6 +5202,7 @@
 ?eventtype=request&pid=
 ?local_ga_js=
 ?log=stats-
+?log_performance_metrics
 ?logType=impression&
 ?logType=trackEvent&
 ?pageviews=$third-party
@@ -8143,7 +8149,6 @@ _mongo_stats/
 ||usuarios-online.com^$third-party
 ||uuxnwoevyb.com^$third-party
 ||v12group.com^$third-party
-||v1sts.me^$third-party
 ||v3cdn.net^$third-party
 ||va-endpoint.com^$third-party
 ||valuedopinions.co.uk^$third-party
@@ -8285,6 +8290,7 @@ _mongo_stats/
 ||woopra-ns.com^$third-party
 ||woopra.com^$third-party
 ||wootric.com^$third-party
+||workers.dev^$third-party
 ||worldflagcounter.com^$third-party
 ||worldlogger.com^$third-party
 ||wowanalytics.co.uk^$third-party
@@ -10411,6 +10417,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||netmonitor.fi^$third-party
 ||stat.www.fi^$third-party
 ||tracking*.euroads.fi^$third-party
+||userneeds.com^$third-party
 ||vihtori-analytics.fi^$third-party
 ! Greek
 ||linkwi.se^$third-party
@@ -12345,7 +12352,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||platform.twitter.com/impressions.js
 ||plausible.io/js/p.js
 ||plausible.io/js/plausible.
-||plausibleio.workers.dev^$third-party
 ||player.ooyala.com/errors/report?
 ||playtomic.com/Tracker/
 ||plista.com/activity
@@ -14151,7 +14157,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||bing.com/fd/ls/GLinkPing.aspx?
 ||binocule21c.merriam-webster.com^
 ||biomedcentral.com/track/
-||blue.abc27.com^
 ||booking.com/logo?
 ||boomerang.dell.com^
 ||brightside.me/metric-collector
@@ -14287,6 +14292,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||euclid.kuula.co^
 ||event-api.reverb.com^
 ||eventlog.jackpot.de^
+||events-service.coinbase.com^
 ||events.api.godaddy.com^
 ||events.practo.com^
 ||events.privy.com^
