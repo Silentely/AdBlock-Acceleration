@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 335.202111231043
+! Version: 335.202111240946
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 23 Nov 2021 09:43 UTC
+! Last modified: 24 Nov 2021 08:46 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -13275,7 +13275,7 @@
 ##.mod_cookie_banner
 ###___gatsby .is-visible[class*="CookiePolicy"]
 ###bmu-cookie-disclaimer
-###___gatsby div[class*="cookie-consent"]
+~nuri.com###___gatsby div[class*="cookie-consent"]
 ##.cookie-preferences-dialog
 ###cookies.notification.active
 ##.cookies-overly
@@ -13290,6 +13290,14 @@
 ##.cky-consent-bar ~ .cky-overlay
 ##.cc-window ~ #cookie-bg
 ##.cc-window ~ .cc-window-blocker
+###id-cookie-layer
+##.f-cookie-consent
+###shopify-section-gdpr-dialog
+##.toast-term-privacy
+###DivCookiesMessageNew
+###agreement-cookies.agreement-cookies
+###___gatsby ~ div [aria-label*="cookieconsent"]
+##.common_prompt-privacy
 !
 ! CUSTOM RULES
 !
@@ -17809,7 +17817,6 @@ ecoreporter.de###cookieTop
 skd.se##.consent, #consent
 ichip.ru##.disclamer
 i-fundusze.pl##.modal-backdrop
-tbs.com###toast-container
 columbia.edu##.sticky-notice-wrap
 webhint.io###disclaimer
 blonded.co##.FooterNotice
@@ -18509,7 +18516,6 @@ mediaarena.pl###cookie
 ziptransfers.com##.dvcookie
 workforce.com##.cookie__modal
 eurochrom.hu##.notification[data-options*="Cookiek"]
-kfcvisit.com###toast-container
 thw-handball.de##body > footer ~ div:not([class]) > div[style*="fixed"], body > .js-slide-in.is-active
 esn.com###n_pop_overlayer, #n_cookie-popup
 hierhoudenwevan.nl##.cookie
@@ -18629,8 +18635,6 @@ amw.com.pl##.cookies
 cherryservers.com##.cherry-cookies
 ggmgastro.com##ggm-cookie-hint
 rigb.org##.cookie
-donauland.at###dsgvo
-liste-finanzamt.de###dsgvo
 horesta.dk###cookie
 edge.pse.com.ph##.policy, #policy, .cpolicy
 hit-electronics.com##.consent, #consent
@@ -21559,7 +21563,6 @@ bjr.de###cc
 bundesanzeiger-verlag.de###cc
 fairtrade.at###cc
 hey.bayern###cc
-fairgarage.com###dsgvo
 actu-environnement.com###cookies_preferences
 perekrestok.ru##.cookie-content
 ariaspa.it###cookieAria
@@ -21678,6 +21681,19 @@ infobox.ru##.ibx-coockie-agree
 oi.com.br##.info-bar, #root [class*="BannertContainer"]
 audiototaal.com###cookie
 universidadeuropea.com###modal_footer[class*="cookies"]
+portaleds.com##body > .cke
+grab.com###gr-cookie-notice-banner
+nocowanie.pl###site-navigation ~ div
+teliacarrier.com###modal-cookies-general
+lokinn.com###toast-container
+kfcvisit.com###toast-container
+app.nuri.com###root > div:not([style]):last-child
+dr-braunger.de##.tx-dm-cookies
+nano.org##.cookie-consent
+liste-finanzamt.de###dsgvo
+fairgarage.com###dsgvo
+koegel-touristik.de###dsgvo, #dsgvo_bglayer
+topfarmacia.it##.gdprModal
 !
 ! SCRIPT BLOCKING
 !
@@ -22220,6 +22236,7 @@ consent-manager.confirmic.com
 /drdsgvo-consent-script.js
 /gdpr-consent.bundle.js
 /consent/civic-bundle.js
+||totalweb.gr/gdpr/consent$script
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -22322,6 +22339,7 @@ privacy.claytonhomes.com
 ||var.uicdn.net/shopsshort/privacy$script
 /wp-content/plugins/enua-privacy-policy/*
 ||demotywatory.pl/res/js/privacy_policy.js$script
+/eprivacy/js/eprivacy.js
 ||cmp.nextday.media/cmp$script,domain=~vi.nl|~omroepwest.nl
 cmp.dreamlab.pl
 /media/cmp/int_cmp_banner
@@ -22566,13 +22584,15 @@ tag.goadopt.io
 /koriolis_gtm/theshield
 ||fourmizz.fr/rgpd$script
 ||hu-manity.co/hu-banner$script
-||exm-medienserver.de/cman$script
 /ConsentManager,Sticky
 /js/rgpd/*
 /module-rgpd/*
 /rcs_cpmt/*$domain=~video.corriere.it
 /bloc/django/ckcsfrg
 ccm19.vucx.de
+/avia-bootstrap/js/klaro/*
+||exm-medien.de/cman$script
+||e2d-cms.de/cman$script
 /consumer/cookie/client$domain=bt.com
 /frontend/ajax/cookies$domain=romstal.ro
 /rodo-agreement-$domain=gremimedia.pl|zw.com.pl
@@ -22594,7 +22614,7 @@ consent.truste.com$domain=oracle.com
 /consent.css$domain=scholieren.com
 /cookiescript.js$domain=basiszinssatz.de
 /cookies/bundle$domain=lucozadeenergy.com
-/cmp/*$domain=guitarbackingtrack.com|bonniermag.se|gameswelt.de|carriereonline.com|sparkasse.at
+/cmp/*$domain=guitarbackingtrack.com|bonniermag.se|gameswelt.de|carriereonline.com|sparkasse.at|01net.com
 /ip-consent.min.js$domain=weersverwachting.nl
 cookiebot.com$domain=fluke.com
 /tui-cookie-bar.html$domain=tuicruises.com
@@ -22789,6 +22809,7 @@ js_privacy_cmp*$domain=e24.no
 /base-nf.js$domain=lecanardenchaine.fr
 toestemmingen.snp.nl$domain=snp.nl
 /cm/*$domain=howatherm.de
+/osb-cmp.min.mjs$domain=tvgids.nl
 !
 ! FILTERLIST ONLY
 !

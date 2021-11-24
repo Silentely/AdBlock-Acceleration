@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: H6zeiIvXetne5afaQ55C1w
-! Version: 202111240806
+! Checksum: tEFMA2M3SH1WvW+NpyiQRw
+! Version: 202111241205
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last Modified: 24 Nov 2021 08:06 UTC
+! Last Modified: 24 Nov 2021 12:05 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: http://abpchina.org/forum/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -9156,9 +9156,16 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||jsdelivr.net/npm/@bootcss/*/assets/img/aliyun
 ||py.cn/static/images/advert/
 ||py.cn/src/img/pyy/
+||pixabay.com/static/img/publisher/*_ad_
+||jitashe.org/template/jitashe/image/bc/3
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+jitashe.org##.bc_side_250
+jitashe.org##A[href*=".makeding.com/"]
+jitashe.org##A[href*=".taobao.com"]
+pixabay.com##div[class*="sponsoredWithResults"]
 py.cn##.index-advert
+pixabay.com##.carbon-ad
 py.cn##.right-pops
 avgle.com###avyc
 unikoshardware.com##.widget_jnews_popular ~ .uniko-widget
@@ -15655,6 +15662,7 @@ $webrtc,domain=avgle.com
 ||jads.co^$domain=avgle.com
 ||olmsoneenh.info^$domain=avgle.com
 !#BaiduPromotion
+ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com#?##content_right > div:-abp-has(.ec-tuiguang)
 ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com#?##content_left > div:-abp-has(.ec-tuiguang)
 ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com#?##content_left > [class]:-abp-has(span[data-tuiguang])
 ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com#?##content_left > [style*="important"]
@@ -16909,6 +16917,8 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 ||fitpbc.cn^
 ||baixkw.cn^
 ||cfbnink.cn^
+||xiaolipc.cn^
+||swjrzk.cn^
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
 ##a[href*=".233787.com/"]
