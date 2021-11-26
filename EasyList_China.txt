@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: yLirYeA4BSJ3hT8Qbicy9Q
-! Version: 202111261203
+! Checksum: lD83DuVjP40cQoQ1x9+K1w
+! Version: 202111261603
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last Modified: 26 Nov 2021 12:03 UTC
+! Last Modified: 26 Nov 2021 16:03 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: http://abpchina.org/forum/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -1567,6 +1567,7 @@ ubmcmm.baidustatic.com
 ||microsser.cn^
 ||laoyg.com^
 ||milecctv.cn^
+||selenaroberta.com^
 ||00-gov.cn^
 ||000123456789.site^
 ||0024aaaa.com^
@@ -9171,8 +9172,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzzyk.com/js/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
-itdog.cn##.thanks
-itdog.cn##.do_not_block_thanks
+itdog.cn##.div-top > DIV:last-child
 wealth.com.tw#?#div[class]:-abp-has(>div[class]>div[class*="-ad-manager-"])
 szxx.com.cn###A1
 szxx.com.cn###A2
@@ -14582,7 +14582,7 @@ mydrivers.com#?#.news_info > p:last-of-type + div:-abp-has(> br + a)
 mydrivers.com#?#.news_info > p:last-of-type + div:-abp-has(> div > a)
 mydrivers.com#?#.news_info > p:last-of-type:-abp-has(> br + a)
 mydrivers.com#?#.news_info > p:nth-last-of-type(2):-abp-has(> br + a)
-nicotv.biz,nicotv.club,nicotv.me##nav + .ff-bg
+nicotv.biz,nicotv.club,nicotv.me##nav + .ff-bg > .slide
 news.baidu.com#?#.index-list-item:-abp-has(.tip-time:-abp-contains(广告))
 news.sohu.com,www.sohu.com#?#.list16 > ul > li:-abp-contains(广告)
 nfmovies.com#?#div[id]:-abp-has(>img[onclick="openurl()"])
@@ -16934,6 +16934,7 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 ||pzdlfww.cn^
 ||tjhjtoyy.cn^
 ||zcsdbj.cn^
+||tvtnbu.cn^
 bxwx333.org###addiv3
 bxwx333.org###bdstatic
 55shuba.com###botDiv
