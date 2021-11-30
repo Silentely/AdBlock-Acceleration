@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 335.202111291113
+! Version: 335.202111301044
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 29 Nov 2021 10:13 UTC
+! Last modified: 30 Nov 2021 09:44 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -891,7 +891,7 @@
 ###cooki_accept
 ##.alertbody .no-cookies
 ###CookieAlert:not(.in)
-###CookieConsent
+###CookieConsent:not(.modal)
 ###theme_cookie
 ###hLibCookieInfo
 ###layerCookies
@@ -10141,7 +10141,7 @@
 ###accept_cookies_banner
 ###magecomp-cookie-template
 ###__nuxt #__layout .Consent.is-open
-###root div[class*="CookieConsent"]
+~dunelm.com###root div[class*="CookieConsent"]
 ##.cookie-policy-dialog
 ##.gdlr-core-privacy-box-wrap
 ###cookie-disclaimer-vue
@@ -10731,7 +10731,7 @@
 ###banner-cookie-banner
 ##.cookieBar__container
 ##.common-header-js .common-header-gdpr
-###ensModalWrapper[aria-labelledby*="Consent"]
+###__nuxt .legal-consent-wrap
 ##.l-container.c-cookie__container
 ~deichmann.com##.cookie-consent__wrapper
 ##.module-cookies.cookie-bar--is-visible
@@ -13265,8 +13265,8 @@
 ##.lhwp-cookie-banner
 ###page ~ .gdprModal.gdprModal--visible
 ###___gatsby div[data-testid*="cookieBanner"]
-###cookiemgmt #ensModalWrapper
-###cookiemgmt #ensModalWrapper-bg
+###ensModalWrapper
+###ensModalWrapper-bg
 ###lgpd_banner
 ###redim-cookiehint-bottom
 ##.mm-slideout > .cookies
@@ -13323,6 +13323,11 @@
 ##.cmp_app.cmp_overwriteLevel1
 ##.alert-banner[aria-label*="Cookie"]
 ###__next div[class*="cookieWarning"]
+###__nuxt [class*="cookieBox"]
+##.cookie-legal-banner
+###cookie-ify.is-visible
+##.content-bandeauCookies
+##.component-cookie-popup
 !
 ! CUSTOM RULES
 !
@@ -17838,7 +17843,6 @@ coselpalais-dresden.de###POPUP_ROOT
 rosbank.ru###personal-data-processing
 celle-uelzennetz.de###cookie
 edenred.cz##.Footer .InfoBar
-web.dev##web-snackbar-container
 conrad-katalog.at###nagme
 bankintercomite.es##.cajatxt
 coinmarketcap.com###cmc-cookie-policy-banner
@@ -18930,8 +18934,6 @@ icomjapan.com###cookie
 maklarf.se##.uk-notify
 visionsdureel.ch##.cookie
 getsitecontrol.com###getsitecontrol
-obi.de###__next > div[data-referenceid] > div:not([class]):not([id]) + div[class]:last-child
-obi.at###__next > div[data-referenceid] > div:not([class]):not([id]) + div[class]:last-child
 booksy.com###page > footer ~ div[class^="purify"]
 sherwin-williams.com###termsModal
 makelaarsland.nl##.is-cookie-notice::before
@@ -20895,7 +20897,6 @@ rankia.com###cookies
 lilly.gr##.consent-message
 portalnow.com##snack-bar-container
 deurbeslag-expert.nl###js-app > .fixed
-danskespil.dk###ensModalWrapper
 hacknplan.com##.application-footer[ng-class*="hasAcceptedCookies"]
 nanopay.net##.gdrp
 tedquality.bg##.notification-wrapper
@@ -21073,7 +21074,6 @@ mcfit.com###app ~ [opacity]
 scinapse.io###react-app > div:last-child
 educative.io###__next > .ed-grid ~ div
 cover-4-less.com##.elementor-popup-modal
-obi.si###cookie
 gnosis.io###consent
 tingstad.com##.cookie-manager
 7plus.com.au###app > [class*="cookieContainer"]
@@ -21598,7 +21598,6 @@ revolut.com##div[class*="Modal__OverlayBox"][aria-label*="cookie"], div[class*="
 myinvestor.es##.cookies
 labuenavidalg.es###CookiesLayer
 motorflash.com##.cookiesNew
-volkswagen.de##.vwaNonReactSimplePage ~ #ensModalWrapper
 lawinsider.com###header ~ .light-blue-bordered-card
 strawpoll.de###consent-overlay
 mitsubishi-motors.ca##.cookiemodal
@@ -21754,6 +21753,11 @@ hdg.de###cookiebg, #hdg-cookie-accept
 zeitzeugen-portal.de###cookiebg, #hdg-cookie-accept
 bitrefill.com###consentDialog
 assurland.com###consentManagementPlatform, .modal-backdrop
+web.dev##web-snackbar
+pagespeed.web.dev##c-wiz > div > div > div > div[jscontroller][jsaction$=");"]
+kraemer.de###consentLayer
+landkreis-ostallgaeu.de###cookie
+gordonua.com##.cookie-label
 !
 ! SCRIPT BLOCKING
 !
@@ -22212,6 +22216,7 @@ plugin-cookie-consent/build
 /cookies-popup.js
 /zedwcookie/*
 /cookiedisclosure/core.js
+||cookie.thynk.media/app.js$script
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -22300,6 +22305,7 @@ consent-manager.confirmic.com
 /consent/civic-bundle.js
 ||totalweb.gr/gdpr/consent$script
 /epaas.consentdrawer.bundle
+/consentbanner-fragment/*
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -22884,6 +22890,9 @@ consent.maerkischekiste.de$domain=maerkischekiste.de
 h1.versicherungsjournal.de$domain=versicherungsjournal.de
 /cc55.js$domain=westfield.com
 /cmp.min.js$domain=topannonces.fr
+/cookies.min.js$domain=ellisphere.fr
+/ensighten/*$domain=britishairways.com
+/mdv.cookie.js$domain=biehler-cycling.com
 !
 ! FILTERLIST ONLY
 !
