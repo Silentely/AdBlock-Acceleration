@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202112061517
+! Version: 202112061920
 ! Title: EasyPrivacy
-! Last modified: 06 Dec 2021 15:17 UTC
+! Last modified: 06 Dec 2021 19:20 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -5380,6 +5380,7 @@ cgi-bin/counter
 /cmail2.com/t/*
 /coherentpath.link/o/*$image
 /email-pixel?
+/email.t.*/o/*$image
 /email/open?
 /email_open_log_
 /emimp/*$image
@@ -5401,6 +5402,7 @@ cgi-bin/counter
 /mail.sparksport.co.nz/forms/read/*
 /mail.sparksport.co.nz/mail/read/*
 /media.sailthru.com/5ik/1k4/9/*.gif
+/notifications.googleapis.com/email/t/*
 /notifications/beacon/*
 /open.aspx?
 /page.bsigroup.com/*
@@ -14329,6 +14331,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||cnet.com/pageview_candidate.comscore.json
 ||cnt.iceporn.com^
 ||cnt.nuvid.com^
+||cnt.viptube.com^
 ||cnt.vivatube.com^
 ||codecademy.com/analytics/
 ||codecguide.com/stats.js
@@ -26243,9 +26246,11 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||adobedtm.com^*/mbox-contents-$script,domain=dhl.de
 @@||adobedtm.com^*/satelliteLib-$script,domain=dhl.de|sbb.ch
 @@||analytics.edgekey.net/html5/akamaihtml5-min.js$domain=br.de
+@@||api.cxense.com/public/widget/data?$script,domain=handelsblatt.com
 @@||apps.derstandard.at^*/TrackingCookieCheck?$subdocument
 @@||assets.adobedtm.com^*-source.min.js$domain=manager-magazin.de
 @@||businessclick.ch/index.js$domain=finanzen.ch
+@@||cdn.cxense.com/cx.js$script,domain=handelsblatt.com
 @@||darmstadt.ui-traffic.de/mobile/webapp/bower_components/heatmap.js$domain=darmstadt.ui-traffic.de
 @@||derwesten.de/resources/*/img/transparent_pixel.png$image,~third-party
 @@||deutschlandfunkkultur.de/themes/*/js.php?files=*,script/smarttag.js,$script,~third-party
@@ -26270,6 +26275,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||orginio.de/api/analytics/$~third-party,xmlhttprequest
 @@||rtl.de^*/videotracking.min.js$domain=rtl.de
 @@||rtoaster.jp^$script,domain=lexus.jp|melonbooks.co.jp
+@@||scdn.cxense.com/cx.cce.js$script,domain=handelsblatt.com
 @@||showheroes.com/playlist/vast3?$xmlhttprequest,domain=bz-berlin.de|kochbar.de|rtl.de|rtl2.de
 @@||showheroes.com/publishertag.js$domain=bz-berlin.de|kochbar.de|rtl.de|rtl2.de
 @@||showheroes.com/pubtag.js$domain=bz-berlin.de|kochbar.de|rtl.de|rtl2.de
