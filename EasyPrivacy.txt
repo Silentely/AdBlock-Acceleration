@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202112061920
+! Version: 202112070021
 ! Title: EasyPrivacy
-! Last modified: 06 Dec 2021 19:20 UTC
+! Last modified: 07 Dec 2021 00:21 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -2903,6 +2903,7 @@
 /modoweb-tracking/*
 /module/analytics/*
 /moduleTracker.
+/moksa.js
 /momentum-tracking/*
 /monetization/pixel-
 /mongoose.fp.js
@@ -4009,6 +4010,7 @@
 /statistics/logging/*
 /statistics/metrica.
 /statistics/ping.
+/statistics/pixel/*
 /statistics/seen
 /statistics/set?
 /statistics/statistics.php
@@ -25019,6 +25021,8 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||591.com.tw/stats/
 ||adstats.tencentmusic.com^
 ||al.autohome.com.cn^
+||alarm.youku.com/api/sendAlarm
+||alicdn.com/f/pcdn/i.php?
 ||analytics.126.net^
 ||analytics.163.com^
 ||analytics.oneplus.cn^
@@ -25048,6 +25052,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||douyucdn.cn/fish3/1.gif
 ||eastmoney.com/web/prd/jump_tracker.js
 ||eclick.baidu.com^
+||ems.youku.com/event?
 ||err.ifengcloud.ifeng.com^
 ||event.csdn.net^
 ||flog.pressplay.cc^
@@ -25116,6 +25121,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||pan.baidu.com/pcloud/counter/refreshcount?
 ||pan.baidu.com/recent/report?
 ||pb.i.sogou.com^
+||pcapp-data-collect.youku.com^
 ||people.cn/js/pa.js
 ||pingback.sogou.com^
 ||pingjs.qq.com^
@@ -26499,6 +26505,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||assets.adobedtm.com^*-librarycode_source.min.js$script,domain=mora.jp
 @@||atwiki.jp/common/_img/spacer.gif?$image,domain=atwiki.jp
 @@||b-cloud.templatebank.com/js/gtag.js$~third-party
+@@||bangumi.org/sdk/rakuraku.js?referer=$domain=bs11.jp
 @@||bdash-cloud.com/recommend-script/$script,domain=junonline.jp
 @@||bdash-cloud.com/tracking-script/*/tracking.js$domain=junonline.jp
 @@||browser.sentry-cdn.com^$domain=marshmallow-qa.com
@@ -26760,6 +26767,10 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||ninja.onap.io/ninja-cee.js$script,domain=olx.ua
 @@||uaprom.net/image/blank.gif?$image
 @@||ukrposhta.ua/js/tracking.js
+! 
+! ---------- Vietnamese ----------
+! 
+@@||googletagmanager.com/gtm.js$script,domain=vtvgo.vn
 ! 
 ! ---------- Anti-Adblock ----------
 ! 
