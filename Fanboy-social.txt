@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: 72KQfk6Ty5/8DR9ibelZuw
-! Version: 202112140405
+! Checksum: 2PQNeRStQ+Oo9D5QB+7GfQ
+! Version: 202112081213
 ! Title: Fanboy's Social Blocking List
-! Last modified: 14 Dec 2021 04:05 UTC
+! Last modified: 08 Dec 2021 12:13 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! License: http://creativecommons.org/licenses/by/3.0/
@@ -3318,6 +3318,7 @@ _youtube_social_
 ###facebookActivity
 ###facebookActivityWidget
 ###facebookBox
+###facebookBtn
 ###facebookButtonHome
 ###facebookButtonInside
 ###facebookFan
@@ -4253,7 +4254,6 @@ _youtube_social_
 ###section-footer-social
 ###section-header-follow
 ###selection-sharer-popover
-###selectionShare
 ###selectionShareable
 ###service-links-digg-1
 ###service-links-digg-2
@@ -7643,6 +7643,7 @@ _youtube_social_
 ##.facebook-button-link
 ##.facebook-circle
 ##.facebook-connect-dialog
+##.facebook-container
 ##.facebook-count
 ##.facebook-count-single
 ##.facebook-custom
@@ -7671,6 +7672,7 @@ _youtube_social_
 ##.facebook-like-static
 ##.facebook-likebox
 ##.facebook-likebox-promo
+##.facebook-link
 ##.facebook-menu
 ##.facebook-messenger-avatar
 ##.facebook-modal
@@ -7711,7 +7713,11 @@ _youtube_social_
 ##.facebook28Ico
 ##.facebookActivity
 ##.facebookBloc_png
+##.facebookBox
+##.facebookBtn
 ##.facebookButtonDiv
+##.facebookConnect
+##.facebookContainer
 ##.facebookCountDiv
 ##.facebookFanBox
 ##.facebookFans
@@ -7719,6 +7725,8 @@ _youtube_social_
 ##.facebookFrame
 ##.facebookGroup
 ##.facebookHomepageBottom
+##.facebookIco
+##.facebookIcon
 ##.facebookImage
 ##.facebookItem
 ##.facebookLike
@@ -7747,6 +7755,7 @@ _youtube_social_
 ##.facebookWidgetry
 ##.facebookWrapperModule
 ##.facebook_24
+##.facebook_account
 ##.facebook_activity
 ##.facebook_badge
 ##.facebook_block
@@ -7816,6 +7825,7 @@ _youtube_social_
 ##.fb-cat
 ##.fb-cont
 ##.fb-container
+##.fb-content
 ##.fb-controls__like
 ##.fb-count-flag
 ##.fb-custom-share
@@ -16051,7 +16061,6 @@ _youtube_social_
 ##div[class^="index_socialBtnGrp_"]
 ##div[class^="j-share-"]
 ##div[class^="numberShares_"]
-##div[class^="select_share"]
 ##div[class^="shareBar_"]
 ##div[class^="shareBottom_"]
 ##div[class^="shareButton_"]
@@ -18480,7 +18489,7 @@ ettoday.net##.line
 cw.com.tw##.linefriend
 chicv.com##.menu-socials
 thepaper.cn##.newsct_share_detail
-bilibili.com,cna.com.tw,landrover.com.cn,ltn.com.tw,new.qq.com,newhua.com,ulifestyle.com.hk##.share
+bilibili.com,cna.com.tw,landrover.com.cn,ltn.com.tw,newhua.com,ulifestyle.com.hk##.share
 mtime.com##.sina
 europages.cn,europages.hk,ntdtv.com##.social
 mingpao.com##.ssm
@@ -19167,7 +19176,7 @@ lenta.ru#@#.b-topic__socials
 engage.it#@#.block-social
 opposingviews.com#@#.block-socialmedia
 kcrw.com#@#.bottom-social
-automotoclub.info,downloadly.ir#@#.bp-horizontal-share
+downloadly.ir#@#.bp-horizontal-share
 azlyrics.com,theoldreader.com,userzoom.com#@#.btn-share
 appspot.com#@#.btn-social-icon
 passeidireto.com#@#.btn_google
@@ -19194,11 +19203,16 @@ wykophitydnia.pl#@#.diggBox
 digg.com#@#.digg_button
 softblog.tw#@#.dshare
 science-et-vie.com#@#.entry-share
+twitter.com#@#.facebook-container
+thehunt.com#@#.facebook-link
 songkick.com#@#.facebook-share
 facebook.com#@#.facebook-widget
+watchever.de#@#.facebookBtn
 facebook.com#@#.facebookLikeBox
+facebook.com#@#.facebook_account
 jappy.de#@#.facebookbutton
 foxbit.com.br,marketdino.pl,mediaexpert.leszczynscy.pl,pajarito.de#@#.fb-container
+flugzeugbilder.de,kizlarsoruyor.com#@#.fb-content
 google.com#@#.fb-dialog
 flugzeugbilder.de#@#.fb-footer
 allegro.pl,itweb.co.za#@#.fb-icon
@@ -19353,7 +19367,7 @@ dropbox.com,ge.tt,gfycat.com,kuaishou.com,recite.com,redgifs.com#@#.share-page
 flickr.com,imgur.com,safety.olx.ua,tobii.com,youtube.com#@#.share-panel
 mediafire.com#@#.share-popup
 inman.com,simpletax.ca#@#.share-section
-3d-load.net,gridtalk.nl#@#.share-simple
+3d-load.net#@#.share-simple
 bild.de#@#.share-text
 linkedin.com#@#.share-title
 mediafire.com#@#.share-twitter
@@ -20121,7 +20135,7 @@ digg.com#@#div[id^="digg-widget-"]
 @@||sharethis.com/getsegment.php$domain=cnn.com
 @@||sharethis.com^$domain=cbslocal.com|colbertnation.com|fandango.com|fox23.com|imgur.com|salon.com|thedailybeast.com|thedailyshow.com
 @@||sharetv.com/images/social_login/$image,~third-party
-@@||shopify.com^*/instafeed.min.js$script,domain=cheekyclean.co.nz|waisttrainer.co.nz
+@@||shopify.com^*/instafeed.min.js$script,domain=waisttrainer.co.nz
 @@||sk-static.com/assets/facebook-$image,domain=songkick.com
 @@||sk-static.com/assets/nw/components/taste-import/fb-icon-$domain=songkick.com
 @@||sk-static.com/assets/nw/elements/social-buttons/$domain=songkick.com
