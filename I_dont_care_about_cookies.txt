@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 336.202112131154
+! Version: 336.202112161217
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 13 Dec 2021 10:54 UTC
+! Last modified: 16 Dec 2021 11:17 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -40,7 +40,7 @@
 ###cookieSpace
 ###cookie_drop_container
 ###cookielaw2
-~senec.com,~taschenhirn.de,~pyroweb.de,~costomovil.es,~tesa.com,~d-power-modellbau.com,~modellbau-metz.com,~ns.nl,~stoffe.de,~myfabrics.co.uk,~tyg.se,~global.commerce-connector.com,~rotterdammersvoorelkaar.nl,~melcloud.com,~danishfamilysearch.com,~calvinklein.de,~calvinklein.co.uk,~calvinklein.com,~calvinklein.be,~calvinklein.fr,~calvinklein.es,~calvinklein.hr,~calvinklein.ch,~calvinklein.lu,~calvinklein.fi,~calvinklein.dk,~calvinklein.ru,~calvinklein.si,~calvinklein.at,~calvinklein.lv,~calvinklein.bg,~calvinklein.se,~calvinklein.ie,~calvinklein.cz,~calvinklein.pl,~calvinklein.lt,~calvinklein.sk,~calvinklein.nl,~calvinklein.it,~calvinklein.ee,~calvinklein.pt,~calvinklein.hu,~tommy.com##.cookie-notice:not(body):not(html):not(#wrapper):not(#footer)
+~senec.com,~taschenhirn.de,~pyroweb.de,~fussballgucken.info,~costomovil.es,~tesa.com,~d-power-modellbau.com,~modellbau-metz.com,~ns.nl,~stoffe.de,~myfabrics.co.uk,~tyg.se,~global.commerce-connector.com,~rotterdammersvoorelkaar.nl,~melcloud.com,~danishfamilysearch.com,~calvinklein.de,~calvinklein.co.uk,~calvinklein.com,~calvinklein.be,~calvinklein.fr,~calvinklein.es,~calvinklein.hr,~calvinklein.ch,~calvinklein.lu,~calvinklein.fi,~calvinklein.dk,~calvinklein.ru,~calvinklein.si,~calvinklein.at,~calvinklein.lv,~calvinklein.bg,~calvinklein.se,~calvinklein.ie,~calvinklein.cz,~calvinklein.pl,~calvinklein.lt,~calvinklein.sk,~calvinklein.nl,~calvinklein.it,~calvinklein.ee,~calvinklein.pt,~calvinklein.hu,~tommy.com##.cookie-notice:not(body):not(html):not(#wrapper):not(#footer)
 ###Cookies:not([class*="headline"])
 ~sparda.de,~sparda-n.de,~sparda-bw.de,~sparda-hessen.de,~sparda-west.de,~inwerk.de,~bioplanete.com,~miltenyibiotec.com,~brabus.com,~nobilia.de,~springlane.de###cookieLayer
 ##.cookiePrompt:not(body):not(html)
@@ -70,7 +70,7 @@
 ###cookiesHolder
 ##.c-fnd-cookie-acceptance
 ###cookiesInitialDialog
-~danbolig.dk###cookie-overlay
+~danbolig.dk###cookie-overlay:not(.modal)
 ##.cookieacceptance:not(body):not(html)
 ###CookieWrapper
 ##.cookiebar:not(body):not(html):not(button):not(#page):not(.content-section)
@@ -1306,7 +1306,7 @@
 ##.privacycookie:not(body):not(html)
 ~easyswimportal.com##.cookiepopup:not(body):not(html)
 ~qinetiq.com###cookiePolicyBanner
-###cookie-text
+###banner-cookie-law
 ###CNIL-notice
 ###cookies-ue
 ##.cookies-ue:not(body):not(html)
@@ -3376,7 +3376,7 @@
 ##.cookie_monster:not(body):not(html)
 ###msg-cookies
 ###eu-cookies
-~2ip.io,~senec.com,~taschenhirn.de,~pyroweb.de###klaro div[class*="cookie-modal"]
+~2ip.io,~senec.com,~taschenhirn.de,~pyroweb.de,~fussballgucken.info###klaro div[class*="cookie-modal"]
 ##.cookielaw-msg:not(body):not(html)
 ##.mod-cookiepolicy:not(body):not(html)
 ###coockiechoice
@@ -5629,7 +5629,7 @@
 ##.cookiesInfoBox:not(body):not(html)
 ##.cookieInfoWrapper:not(body):not(html)
 ##.flash--cookie-banner
-~taxfix.de,~danskebank.dk,~danskebank.se,~danskebank.no,~danskebank.fi,~danskebank.co.uk,~danskeci.com,~danicapension.dk,~danica.no,~vivawest.de,~blitzhangar.com,~solcom.de##.cookie-consent-banner:not(body)
+~taxfix.de,~danica.no,~danskeci.com,~danskebank.dk,~danskebank.se,~danskebank.no,~danskebank.fi,~danskebank.co.uk,~danskebank.com,~danicapension.dk,~vivawest.de,~blitzhangar.com,~solcom.de##.cookie-consent-banner:not(body)
 ##cookie-drawer-policy
 ##.o-cookie-message:not(body):not(html)
 ###gabarit_cnilcookie
@@ -7381,7 +7381,7 @@
 ##div[data-box-name="cookie policy"]
 ###cpolicy-bar
 ###gdpr_user_consent_banner
-~seguro.elespanol.com###didomi-notice.shape-banner
+##.simple-cookies-wrapper
 ###jsUseCookieTips
 ##.js-cookie-notify:not(body):not(html)
 ##.waGDPR_consentButton
@@ -9434,6 +9434,7 @@
 ##.common-cookie[data-cookie-container]
 ##.sticky_top[data-control="cookie_bar"]
 ###footer ~ #section-cookies
+###cc-cookie-btn ~ #cc-container
 ###rcnt #center_col #taw #cnso[style*="block"]
 ###cookie-popup2-sticky-wrapper
 ###alertpop-privacypolicy
@@ -9447,7 +9448,7 @@
 ###consent-modal-bottombar
 ##.cookies[data-cookies-bar]
 ###policy-warning-popup
-~seguro.elespanol.com###didomi-host #didomi-notice.didomi-notice-banner
+###compliance-bar[class*="cookiebar"]
 ###ras-cookie-container
 ###privacy_cover
 ##body > .cookie[style*="height"]
@@ -11002,7 +11003,7 @@
 ##.show-cookies-message
 ###cookietool-message
 ##app-cookies-menu
-~senec.com,~taschenhirn.de,~pyroweb.de###klaro div[class*="cookie-notice"]
+~senec.com,~taschenhirn.de,~pyroweb.de,~fussballgucken.info###klaro div[class*="cookie-notice"]
 ##.container > .row.cookieShell
 ###privacy-window.privacy-window
 ###vlnt-cookie-consent
@@ -13164,7 +13165,7 @@
 ###rgpd_bandeau
 ###CookieModalOverlay
 ##.cookies-cmp-trigger
-~senec.com,~taschenhirn.de,~pyroweb.de##.klaro div[class*="cookie-modal"]
+~senec.com,~taschenhirn.de,~pyroweb.de,~fussballgucken.info##.klaro div[class*="cookie-modal"]
 ###cc-cookie-overlay
 ###cc-cookie-message
 ###tc_privacy_wrapper
@@ -13314,9 +13315,6 @@
 ##.cookie-snack.show[x-data="CookieSnack"]
 ##.tvcmscookies-notice
 ~sudoku-aktuell.de##.cmpboxWelcomeGDPR
-##.simple-cookies-wrapper
-###compliance-bar[class*="cookiebar"]
-###cc-cookie-btn ~ #cc-container
 ###usercentrics-button
 !
 ! CUSTOM RULES
@@ -17811,7 +17809,6 @@ pantip.com##.pt-snackbar
 activate-here.com##.alert-dismissable
 qobuz.com##.alert.alert-info, .alert.alert-cnil
 boilerroom.tv###app > div[class^="Dialogs"] > div[class^="Dialog"]
-orange.fr###o-cookie, #o-cookie-mobile, #o-cookie-consent-wrapper, #w2cb
 amazingmarvin.com###live-chat-banner
 endemolshine.de###cookies
 automatyka.istore.pl###cookie
@@ -21567,7 +21564,6 @@ gymgrossisten.com##.overlay-banner
 e-rolety.eu###cookie
 babil.com##.bbl-cookie-consent
 bobshop.com##.ccm-root
-bayern.de###cookie, #matomoCookieNotification
 avg.com###bottomBar #gdpr
 mediaexpert.pl##.layout > .wrapper
 mozio.com###container > .desktop ~ div
@@ -21659,7 +21655,6 @@ nordicnest.kr###container > footer ~ div
 nordicnest.nl###container > footer ~ div
 nordicnest.no###container > footer ~ div
 nordicnest.se###container > footer ~ div
-magazineluiza.com.br##section[style="grid-area:footer"] > [width="100%"]
 studocu.com###main-wrapper ~ div:not([id]):not([class])
 disclose.ngo###cookie
 infobox.ru##.ibx-coockie-agree
@@ -21759,6 +21754,16 @@ lions.de###cookieInformationPopup
 lotty.de##.npco_overlay
 tv-sport.de##.rcb-banner
 yunexpress.com##.Cookie-wrapper
+wodka-gorbatschow.de##.legacy
+allianz-pro-grundgesetz.de###cookieEu
+bayern.de###cookie, #matomoCookieNotification, div[id^="cbanner"]
+fondmarknaden.se###FM-cookie-consent-modal
+asus.com###cookieTable
+delfi.ee##div[class^="C-modal"]
+szerencsejatek.hu##.cookie-consent-modal
+magazineluiza.com.br##section[style="grid-area:footer"] ~ [width="100%"]
+lavadoo.com##.cont-cookie
+glose.com###app > div[class*="layout-wrapper"] > div[class*="root"]
 !
 ! SCRIPT BLOCKING
 !
@@ -22130,7 +22135,7 @@ cookie-bar.salessquad.co.uk
 cookiemon.atcom.gr
 ||nbcsports.com/cookie-ack.js$script
 /js/gdpr/gdpr-cookie
-/jquery.ihavecookies.
+/jquery.ihavecookies.$domain=~wisla-plock.pl
 /b2b-market/src/addons/cookie-consent/*
 /vue/components/cookie-monster
 /wp-content/plugins/do-you-want-cookies/*
@@ -22308,6 +22313,7 @@ consent-manager.confirmic.com
 ||totalweb.gr/gdpr/consent$script
 /epaas.consentdrawer.bundle
 /consentbanner-fragment/*
+||altravia.com/connector/consent_mode.js$script
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -22892,6 +22898,8 @@ h1.versicherungsjournal.de$domain=versicherungsjournal.de
 /cookies.min.js$domain=ellisphere.fr
 /ensighten/*$domain=britishairways.com
 /mdv.cookie.js$domain=biehler-cycling.com
+/alert-info.js$domain=asus.com
+/alert-info_cn.js$domain=asus.com.cn
 !
 ! FILTERLIST ONLY
 !
