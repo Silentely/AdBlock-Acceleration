@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: sTJqW8bY4bJ4UxWEVOit0g
-! Version: 202112280026
+! Checksum: ca8Mrja+xnQ8UhMxs3+ATg
+! Version: 202112280406
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last Modified: 28 Dec 2021 00:26 UTC
+! Last Modified: 28 Dec 2021 04:06 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: http://abpchina.org/forum/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -1127,6 +1127,8 @@ ubmcmm.baidustatic.com
 ##.ggpost-below
 ##.ggtop
 ##.ggw
+###player_pause > .tip + A[target="_blank"]
+##.txp_ad[data-role="txpad-interact-pause"]
 ##.global_video_bottom_dbtc
 ##.google-ad2_fixed
 ##.google_adsense2
@@ -9163,6 +9165,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||2114.com/zb_users/script/advertise.js
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+bilibili.com#?#.bili-video-card:-abp-has(.bili-video-card__info--ad-img)
 hao.360.com#?#.cube-mod:-abp-has(> .cube-bd > .cube-card > .project-root > ._CUBE_A_D_CLK_)
 szxx.com.cn###A1
 szxx.com.cn###A2
@@ -16957,6 +16960,11 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 @@||pstatp.com/cdn/*/jquery/$script,domain=bxwx11.com
 @@||zmtt.net^$script,domain=luoqiuzw.com
 !#Novels
+||zixiaxianhua.shop^
+||yumu.pro^
+||bcjxwlkj.com^
+||jiucaishuo.cn^
+||justwkj.xyz^
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
 ##a[href*=".233787.com/"]
