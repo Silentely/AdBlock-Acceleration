@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 336.202112210929
+! Version: 336.202201061603
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 21 Dec 2021 08:29 UTC
+! Last modified: 06 Jan 2022 15:03 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -91,7 +91,7 @@
 ###cookies-fancybox
 ~newpharma.be,~fotopuzzle.de,~markets.com,~bmihealthcare.co.uk,~puzzleyou.be,~fotondo.cz##.cookie-policy:not(body):not(html)
 ###cookieMsg
-~kramp.com##.cookie-message:not(body):not(html):not(.modal-body)
+~dogedash.com,~kramp.com##.cookie-message:not(body):not(html):not(.modal-body)
 ~schulze-immobilien.de,~harry-gerlach.de,~veygo.com,~hotelsbarriere.com,~ufz.de,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~icould.com,~evaair.com,~formula1.com###cookie-banner
 ##.block-cookies-popup:not(body):not(html)
 ###cookieStatement
@@ -297,7 +297,7 @@
 ###cookies-message-container
 ###ui-cookie-policy
 ###tcccookies
-##.cookies-policy:not(body):not(html)
+###root div[data-qa-cookie-notification]
 ###cookiewrap
 ###cookie-prefs
 ###oupcookiepolicy_message
@@ -801,7 +801,7 @@
 ##.cookie_ribon:not(body):not(html)
 ##.infoCookies:not(body):not(html)
 ###cookieInformacja
-~teacheconomy.de,~sevdesk.de,~nintendo.com,~veygo.com,~puratos.pl,~bike-components.de,~bremerhaven.de,~onlinedepartment.nl,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~monese.com,~nuxeo.com,~opngo.com,~sachsenallee.de,~melcloud.com,~reidl.de,~intersport.de##.cookie-banner:not(body):not(html)
+~dogedash.com,~teacheconomy.de,~sevdesk.de,~nintendo.com,~veygo.com,~puratos.pl,~bike-components.de,~bremerhaven.de,~onlinedepartment.nl,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~monese.com,~nuxeo.com,~opngo.com,~sachsenallee.de,~melcloud.com,~reidl.de,~intersport.de##.cookie-banner:not(body):not(html)
 ~rku-it.de###cookienotice
 ###overlay-cookielaw-form
 ##.cookie-info-wrapper:not(body):not(html)
@@ -1489,7 +1489,7 @@
 ##.komunikat-panel-cookies
 ###e_cookieWarning
 ###CookiePolicyPanel:not(.contentpanel)
-##.cookies-wrapper:not(body):not(html)
+##.cc-policy-overlay
 ##.cookie-policy-inform
 ###bcpm-notification-outer-border
 ###bcpm-footer
@@ -2572,7 +2572,7 @@
 ##.go-mdl-cookies-drct-warning
 ###cookieNotificationBar
 ###barreCookie
-###cookies-agree
+###cookies-agree:not(a)
 ###content-cookie
 ###cookies_et_traceurs_CNIL
 ###complianceBanner
@@ -11395,7 +11395,7 @@
 ##.cookieLeiste
 ~aptoide.com###__next div[class*="cookie-notice"]
 ##.CookieConsentBanner
-##.react-cookie-banner
+~dogedash.com##.react-cookie-banner
 ##.cookie-banner-box
 ##div[data-react="cookies-banner"]
 ###common-cookielaw-container
@@ -12811,7 +12811,7 @@
 ###cookiewarningcontainer
 ##.fixed.z-cookies
 ##.AnalyticCookieConsent
-~sevdesk.de###___gatsby div[class*="cookie-banner"]
+~energieatlas.eon.de,~sevdesk.de###___gatsby div[class*="cookie-banner"]
 ###agan_gdpr
 ###rodo-bar
 ##.cc-dialog-backdrop
@@ -13317,6 +13317,7 @@
 ~sudoku-aktuell.de##.cmpboxWelcomeGDPR
 ###usercentrics-button
 ##.cc-revoke ~ .cc-grower
+##.cookies-dialog-box
 !
 ! CUSTOM RULES
 !
@@ -21772,6 +21773,11 @@ revolut.com##div[role="dialog"][aria-label*="cookie"], div[role="dialog"][aria-l
 buscojobs.com.uy##div[class*="Cookies"]
 zesty.tech##.cc-window
 muenchen.de##.cookie
+myfitnesspal.com##.MuiSnackbar-root
+elcorteingles.es##.cookies-wrapper
+cuevana3.io###mdl-ads
+dovizborsa.com###tools > div[style*="bottom"]
+dreame.com##.drawer-wrapper
 !
 ! SCRIPT BLOCKING
 !
@@ -22233,6 +22239,7 @@ plugin-cookie-consent/build
 /usercentrics/cookiebox
 /cookie-consent-tool/*
 /cookie-notification.min.js
+||onetrust.com/cookieconsentpub$script
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -22724,7 +22731,7 @@ cookies.teraz.sk$domain=teraz.sk
 var.uicdn.net/shopsshort/privacy$script,domain=ionos.de
 /zsmessagebar.js$domain=christian.education
 /pmc-pp-tou/privacy.min.js$domain=rollingstone.com
-/cookie-consent$domain=outage.report
+/cookie-consent$domain=outage.report|ah.nl
 /meWantCookies$domain=gamigo.de|gamigo.com
 /ccpa/*$domain=lakesideparkmodels.com
 /cookie.umdaac.min.js$domain=yoyogames.com
@@ -22886,7 +22893,7 @@ trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookie-monster/*$domain=loveholidays.com
 /vfConsentCookiesCs.js$domain=vodafone.cz
 consent-*$domain=nwb-jobboerse.de
-/almacmp$domain=ampparit.com|etuovi.com
+/almacmp$domain=ampparit.com|etuovi.com|vuokraovi.com|arvopaperi.fi
 /cookie_flyout.js$domain=festo.com
 /klaro.js$domain=beckhoff.com
 /Manolo_CookieConsent/*$domain=manoloblahnik.com
@@ -22909,6 +22916,8 @@ h1.versicherungsjournal.de$domain=versicherungsjournal.de
 /mdv.cookie.js$domain=biehler-cycling.com
 /alert-info.js$domain=asus.com
 /alert-info_cn.js$domain=asus.com.cn
+/cmp.genesis$domain=vodafone.de
+/newCookieChoice.js$domain=vape-phone.fr
 !
 ! FILTERLIST ONLY
 !
