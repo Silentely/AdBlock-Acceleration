@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202201111758
+! Version: 202201120020
 ! Title: EasyPrivacy
-! Last modified: 11 Jan 2022 17:58 UTC
+! Last modified: 12 Jan 2022 00:20 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -560,6 +560,7 @@
 /analytics-js.
 /analytics-js/*
 /analytics-min.js
+/analytics-minimal.
 /analytics-ping.
 /analytics-plugin/*
 /analytics-post-
@@ -11992,9 +11993,9 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||infosniper.net/locate-ip-on-map.php
 ||infusionsoft.com^*/getTrackingCode?
 ||ingest.make.rvapps.io^
-||inmoment.com.au/intercept/
-||inmoment.com/intercept/
-||inmoment.com/websurvey/
+||inmoment.com.au/intercept/$third-party
+||inmoment.com/intercept/$third-party
+||inmoment.com/websurvey/$third-party
 ||innogamescdn.com/media/js/metrics-
 ||inphonic.com/tracking/
 ||inq.com^*/onEvent?_
@@ -25665,6 +25666,8 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||ss.lv/counter/
 ||stats.tunt.lv^
 ||tanks.lv/top/stats.php
+! Lithuanian
+||lrytas.lt/counter/
 ! Norwegian
 ||click.vgnett.no^
 ||nrk.no^*/stats/
@@ -26033,6 +26036,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||d41.co/tags/ff-2.min.js$domain=ads.spotify.com
 @@||daan.dev/wp-content/*/caos-supports-google-analytics-$image,~third-party
 @@||dashboard.unity3d.com/services/analytics/$~third-party
+@@||etsy.com/api/v3/ajax/bespoke/*log_performance_metrics=$~third-party
 @@||geo.gorillanation.com/geo.php$script,domain=sherdog.com
 @@||gettingpersonal.co.uk^*/scripts/app/shared/googleanalytics.js$script,~third-party
 @@||glenat.com^*/static/analytics.js$script,~third-party
