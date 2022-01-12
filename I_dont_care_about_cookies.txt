@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 336.202201101502
+! Version: 336.202201121507
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 10 Jan 2022 14:02 UTC
+! Last modified: 12 Jan 2022 14:07 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -51,7 +51,7 @@
 ###cookie-barbody .fixed
 ###cookie-notice-wrapper
 ###mmmmm-cookies
-~kvk.nl,~case-score.de,~airam.fi,~telesec.de,~o2.fr,~qwic.de,~vu.nl,~indiearenabooth.com,~hscollective.org,~geefvoorzorgverleners.nl,~biotechusa.hu,~biotechusa.fr,~officiallondontheatre.com,~nieuwspoort.nl,~atro-provita.de###cookie-consent:not(.content):not([class*="fancybox"])
+~urbanarrow.com,~kvk.nl,~case-score.de,~airam.fi,~telesec.de,~o2.fr,~qwic.de,~vu.nl,~indiearenabooth.com,~hscollective.org,~geefvoorzorgverleners.nl,~biotechusa.hu,~biotechusa.fr,~officiallondontheatre.com,~nieuwspoort.nl,~atro-provita.de###cookie-consent:not(.content):not([class*="fancybox"])
 ###cookienote
 ###cc-notification
 ##.cc-cookies:not(body):not(html)
@@ -89,7 +89,7 @@
 ###cookielightbox
 ##.cookieMsg:not(body):not(html)
 ###cookies-fancybox
-~newpharma.be,~fotopuzzle.de,~markets.com,~bmihealthcare.co.uk,~puzzleyou.be,~fotondo.cz##.cookie-policy:not(body):not(html)
+~fotopuzzle.de,~monpuzzlephoto.fr,~newpharma.be,~markets.com,~bmihealthcare.co.uk,~puzzleyou.be,~fotondo.cz##.cookie-policy:not(body):not(html)
 ###cookieMsg
 ~dogedash.com,~kramp.com##.cookie-message:not(body):not(html):not(.modal-body)
 ~schulze-immobilien.de,~harry-gerlach.de,~veygo.com,~hotelsbarriere.com,~ufz.de,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~icould.com,~evaair.com,~formula1.com###cookie-banner
@@ -612,7 +612,7 @@
 ###cookies-accept:not(.btn)
 ###dialog-cookie
 ###prettyCookie_message
-~qioz.fr###cookies-popup
+~czc.cz,~qioz.fr###cookies-popup
 ###site-wide-cookie-message
 ###usrcookies
 ##.cookieBarContainer:not(body):not(html)
@@ -3236,7 +3236,7 @@
 ##.cookieconsent:not(body):not(html)
 ###stickynote4cookies
 ###cookie-use-notice-wrapper
-##.b-cookie-consent:not(body):not(html)
+~urbanarrow.com##.b-cookie-consent:not(body):not(html)
 ###cookietable
 ###cookie-widget-confirm
 ###cookieChooser
@@ -4116,7 +4116,7 @@
 ###panelcookies
 ###cookiesPolicySlide
 ##.cookiesBox:not(body):not(html)
-~fotopuzzle.de,~markets.com,~puzzleyou.be,~fotondo.cz##.cookie-policy-wrapper
+~fotopuzzle.de,~monpuzzlephoto.fr,~markets.com,~puzzleyou.be,~fotondo.cz##.cookie-policy-wrapper
 ###cookieAcceptContent
 ##.ctrlCookieBar:not(body):not(html)
 ##.emp-cookies-policy:not(body):not(html)
@@ -5717,7 +5717,7 @@
 ###HFS_CookieHint
 ###boite_dialog_cookie
 ##.dk-cookies-bar:not(body):not(html)
-~yello.de##.js-cookie-consent:not(body):not(html):not(.in):not(.btn)
+~urbanarrow.com,~yello.de##.js-cookie-consent:not(body):not(html):not(.in):not(.btn)
 ###dm_cookiela_bar
 ###cookie_notif
 ###cp-cookie-banner
@@ -10412,7 +10412,7 @@
 ###q-cookie-box
 ##.cookie-banner-wrapper
 ##.vi-cookie-consent:not(body):not(html)
-~fotopuzzle.de,~puzzleyou.be,~fotondo.cz##.cookie-policy-widget
+~fotopuzzle.de,~monpuzzlephoto.fr,~puzzleyou.be,~fotondo.cz##.cookie-policy-widget
 ###cookie-law-info-bar ~ .cli-modal-backdrop
 ##.cookie_information--overlay.cookie_information--active
 ##.hue-cookie-optin:not(body):not(html)
@@ -13316,6 +13316,10 @@
 ##.tvcmscookies-notice
 ~sudoku-aktuell.de##.cmpboxWelcomeGDPR
 ###usercentrics-button
+###cookies-consent-banner
+##.ConsentsBannerOverlay
+###xx-cookies-plugin
+###__next div[data-test-id*="cookie-banner"]
 !
 ! CUSTOM RULES
 !
@@ -16093,7 +16097,6 @@ pamiec.pl##.JSWrapper
 mazowieckie.pl##.JSWrapper
 csp.edu.pl##.JSWrapper
 mzkjastrzebie.com##.JSWrapper
-wios.warszawa.pl##.JSWrapper, #kuki
 vlan.be###modalCookie
 ww-ag.com##.WW-cookiemodul
 bicyclette-verte.fr##div[class*="cookies"]
@@ -21698,7 +21701,6 @@ pilot-frixion.fr###cookie
 global.bible###root > section + div:not(:last-child)
 sainsburysmagazine.co.uk###CookieTool
 kotipizza.fi##.notification-bottom
-eneba.com###app > div:first-child
 eutraining.eu###eutraining-cookibar
 olafneumann.org###rg_container_cookie
 brp.com###consent-dialog
@@ -21782,6 +21784,12 @@ euromoney.com##.CookiePromo
 robotiq.ai###cookie-cont
 acquire.io##.home-announcement
 joom.com###content > div[class*="container"]
+vod.warszawa.pl###footer ~ div
+vapiano.warszawa.pl###shark-cookie
+eneba.com###app > div:first-child:not(:only-child), main > div + div + div:last-child
+denley.pl###dialog_cover, .dialog_wrapper_cookie
+cazoo.com##div[data-test-id="banner-wrapper-with-blocker"]
+cazoo.co.uk##div[data-test-id="banner-wrapper-with-blocker"]
 !
 ! SCRIPT BLOCKING
 !
@@ -22335,6 +22343,7 @@ consent-manager.confirmic.com
 /epaas.consentdrawer.bundle
 /consentbanner-fragment/*
 ||altravia.com/connector/consent_mode.js$script
+||consentmanager.net/delivery/cmp$script
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -22491,7 +22500,7 @@ jquery.smartCookie.min.js^
 /bundle_CookieLegalNotice.prod.js
 /acceptCookies.js
 /i_CookieConsent.js
-/Amasty_GdprCookie$domain=~planet-cards.co.uk|~durstexpress.de|~littlelunch.com|~twinpack.nl|~eckeroline.fi|~brain-effect.com
+/Amasty_GdprCookie$domain=~planet-cards.co.uk|~moleonline.com|~durstexpress.de|~littlelunch.com|~twinpack.nl|~eckeroline.fi|~brain-effect.com
 /ts/components/CookieConsent.
 /SDG_CookieLayer.min.js
 /slr_js/allowCookies.js
@@ -22925,6 +22934,7 @@ h1.versicherungsjournal.de$domain=versicherungsjournal.de
 /newCookieChoice.js$domain=vape-phone.fr
 /cookie-settings-manager$domain=aok.de
 /Ronis_Cookie/*$domain=slaters.co.uk
+/Hmm24_Cookiebanner/*$domain=zaehlerschrank24.de
 !
 ! FILTERLIST ONLY
 !
