@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 336.202201121507
+! Version: 336.202201130942
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 12 Jan 2022 14:07 UTC
+! Last modified: 13 Jan 2022 08:42 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -13320,6 +13320,8 @@
 ##.ConsentsBannerOverlay
 ###xx-cookies-plugin
 ###__next div[data-test-id*="cookie-banner"]
+###hs_show_banner_button
+###snackbar-cookie-info
 !
 ! CUSTOM RULES
 !
@@ -19581,7 +19583,6 @@ intercom.com###intercom-cookie-consent-banner
 wera.de##[id^="dsgvo-modal"]
 era.int###__COOKIE_CONFIRM__
 simplybook.me##.cookies
-alpenrose.net##.skd-cookie-banner
 vuejsdevelopers.com##.navbar.is-fixed-bottom
 digas.gr###tc-pnl
 lewissilkin.com##.cookie
@@ -19874,7 +19875,6 @@ gehr.de##.module-dataprotection
 canbeuseful.com###cookies
 thenakedpharmacy.com##.cookie
 qbilon.net##.cookie
-tu-clausthal.de###accessibility-selector
 playstation.com##.psw-bottom-left[data-qa="gdpr-setting"]
 atozmath.com###consentframe
 medcalc.org###consentframe
@@ -20215,7 +20215,6 @@ schwarzlicht.de###cookies
 dji.com###cookie-tip, div[class*="style__cookie-policy"], .cc-bar, .cc-window
 allgeier-it.de###cookieconsentmodal, .modal-backdrop
 grainesdecurieux.com##main ~ div
-myfactory.com##body > div:first-child
 royaldanishacademy.com##.b14cc
 dailybest.it###bcc-black, #bcc-consent
 rockit.it###bcc-black, #bcc-consent
@@ -20649,7 +20648,6 @@ nonstop2k.com###consentFooter
 sh-mueller.de###notify
 cameranu.nl##.stick-to-bottom
 durstexpress.de##.amgdprcookie-modal-container
-mhra.gov.uk###__next > button, #__next > aside
 barclays.net###modal-pecr
 kromsnavelgedrag.nl##main ~ div
 simsdom.com###policies
@@ -20811,9 +20809,6 @@ kytta.at##button[class*="dc-cookie"]
 conjunctconsulting.org##.elementor-popup-modal
 rosepartner.de###rp-cookie-consent
 campusonline.com##.ui-pnotify
-kottenstedte.com###agever
-zehnthof-weickert.de###agever
-volbers.com###agever
 gamecaster.com##nav ~ [class*="growl"]
 orangebank.fr###ob-cookie-banner-modal
 surveyjs.io##.surveyjs-cookie-info
@@ -21330,7 +21325,6 @@ terra.bio###root [aria-label="cookie consent banner"]
 myunidays.com##.toast
 bibliotheques-specialisees.paris.fr##div[role="alertdialog"]
 paris.fr##.paris-cookies-banner
-naturgenussfestival.de##.disclaimer
 janto.es###Transparente, #widgetCookiesPpal
 auditoriodetenerife.com###Transparente, #widgetCookiesPpal
 dare2compete.com##.cookies-save
@@ -21790,6 +21784,10 @@ eneba.com###app > div:first-child:not(:only-child), main > div + div + div:last-
 denley.pl###dialog_cover, .dialog_wrapper_cookie
 cazoo.com##div[data-test-id="banner-wrapper-with-blocker"]
 cazoo.co.uk##div[data-test-id="banner-wrapper-with-blocker"]
+naturgenussfestival.de##.disclaimer
+zehnthof-weickert.de###agever
+volbers.com###agever
+mhra.gov.uk###__next > button, #__next > aside
 !
 ! SCRIPT BLOCKING
 !
@@ -21963,7 +21961,7 @@ cookies.innershed.co.uk
 /cookiebar_tls.js
 /wp-content/plugins/smart-cookie-kit/*
 /cookie-notice.js
-/wp-content/plugins/cookie-law-info/*$domain=~wmagazine.com|~czyodebrac.pl|~moneytoplist.com
+/wp-content/plugins/cookie-law-info/*$domain=~eav.at|~wmagazine.com|~czyodebrac.pl|~moneytoplist.com
 /CookiePolicy/resources/scripts/cookie.policy.min.js
 /modules/cookieconsent/js/*
 jquery.cookiepol.js^
@@ -22047,7 +22045,6 @@ eu_cookie_banner.js^
 /javascript/cookieser.js
 /cookiesWidget/widget.js
 consent.cookiebot.com$domain=~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~login.nos.pt|~asambeauty.com|~cineplex.de|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~cajamar.es|~digitaltrends.com|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~stern.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de
-/jquery.cookieBar$domain=~kvv.de|~titanaxe.com|~vileda.de|~vileda.fr|~vileda.pt|~vileda.be|~vileda.nl|~vileda.fi|~vileda.se|~vileda.it|~vileda.co.uk|~aten.com|~germany.ru
 /ccp-sites/components/structure/cookie-notification/*
 /cookies-info.js
 cookies.algo.at
@@ -22067,7 +22064,6 @@ cookielaw.emea.fcagroup.com
 consent.cookiefirst.com$domain=~swietawdomu.pl|~deutschesapothekenportal.de
 /cookies-policy.js
 /wp-content/plugins/liquorice-cookies
-/jquery.cookiebar.js$domain=~aten.com|~arkevia.com|~x-news.pl|~libreriauniverso.it|~katholisch-diessen.de|~spcgear.com|~iforbet.pl|~visorando.com|~motedis.at|~homematic-ip.com|~gov.hr
 ||cookie-switch.viminds.de/api$script
 ||skyscnr.com/sttc/oc-registry/components/cookie-banner$script
 /modules/cookiesplus/views/js/cookiesplus.js
@@ -22523,6 +22519,7 @@ jquery.smartCookie.min.js^
 /SiteElements/Scripts/CookieBanner.js
 /plugins/CookiePop/*
 /IntegerNet_CookieConsent/*
+/new_Cookiebanner.js
 quantcast.mgr.consensu.org$domain=~sourceforge.net|~tumblr.com|~indy100.com|~vi.nl|~independent.co.uk|~express.co.uk|~joe.ie|~joe.co.uk|~standard.co.uk|~avsforum.com|~nfl.com|~filmvandaag.nl|~gamesradar.com|~iol.pt
 gemius.mgr.consensu.org
 sddan.mgr.consensu.org
@@ -22935,6 +22932,7 @@ h1.versicherungsjournal.de$domain=versicherungsjournal.de
 /cookie-settings-manager$domain=aok.de
 /Ronis_Cookie/*$domain=slaters.co.uk
 /Hmm24_Cookiebanner/*$domain=zaehlerschrank24.de
+consensu.org$domain=shinden.pl
 !
 ! FILTERLIST ONLY
 !
