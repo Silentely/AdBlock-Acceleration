@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 336.202201181201
+! Version: 336.202201191339
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 18 Jan 2022 11:01 UTC
+! Last modified: 19 Jan 2022 12:39 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -23,7 +23,7 @@
 ###cookielaw:not(.modal)
 ~conso.ro,~daimler.com,~ihreapotheken.de,~filmboxlive.com###cookiePolicy:not(.reveal):not(.modal)
 ###cookiePolicyBackground
-~uelzener.de,~ima.it###cookieBanner
+~pdf24.org,~uelzener.de,~ima.it###cookieBanner
 ~we-worldwide.com###cookieNotification
 ###yourCookieSettings
 ~stoffe.de,~myfabrics.co.uk,~tyg.se###cookieOverlay
@@ -723,7 +723,7 @@
 ##.headCookieBar:not(body):not(html)
 ~toni-maccaroni.de,~pizza-pepe-volkach.de##.cookiemessage:not(body):not(html)
 ###cookiepopup
-###acceptCookies:not(.btn):not(button)
+###acceptCookies:not(.btn):not(button):not(a)
 ###acceptCookiesWrapper
 ###mycookie:not(iframe)
 ###cookieDisclaimerInfo
@@ -2191,7 +2191,7 @@
 ###alert-cookie-policy
 ###bloc_cookie_annonce
 ##.basic--draw-message-bar-cookie-notice
-~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com##.cc-banner:not(body):not(html)
+~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it##.cc-banner:not(body):not(html)
 ###ing-Cookie
 ###ing-Cookiebody .ing--active
 ##.banner__cookies:not(body):not(html)
@@ -5551,7 +5551,7 @@
 ##.framework_cookies:not(body):not(html)
 ##.js-cookie-overlay:not(body):not(html)
 ##.cookie-popin:not(body):not(html)
-~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com##.cc-window[aria-label*="consent"]
+~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it##.cc-window[aria-label*="consent"]
 ###cookie-nag
 ###mbientCookieNotice
 ###cookie-legal-info
@@ -7990,7 +7990,7 @@
 ###stOverlayB
 ##.misc-CookiesWarning:not(body):not(html)
 ###cookieSettingWrapper
-###cookieBannerContent
+~pdf24.org###cookieBannerContent
 ###mcDsgvo
 ###barraCookie
 ###cookie-usage-hint
@@ -8990,7 +8990,7 @@
 ##.sv-text-portlet.cookie
 ###privacy_barre
 ###cookietopbar
-###cookieBannerOverlay
+~pdf24.org###cookieBannerOverlay
 ##.popover-cookie:not(body):not(html)
 ##.ry-cookie-permission
 ##.js-gdpr-notice:not(body):not(html)
@@ -9181,7 +9181,7 @@
 ###fit-cookieWallId
 ##.cookies_confirmation
 ##div[data-ui="cookie-notice"]
-~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com##.cc-window[aria-describedby*="consent"]
+~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it##.cc-window[aria-describedby*="consent"]
 ###pb_cookie_message
 ##.zm-cookies-notification
 ###block-gdprcookiesblock
@@ -13330,6 +13330,7 @@
 ###cookieconsent_bar
 ##.consent-wall-overlay
 ###consent-layer-modal.message-pipe
+##.js-cookies-backdrop
 !
 ! CUSTOM RULES
 !
@@ -21240,10 +21241,6 @@ webcontinental.com.br##.wc-accept-cookies
 sentry.io###sentry-consent-widget
 mapcarta.com##.consent
 quantum-inspire.com##.cookie
-buecher.de###klaro
-nur-positive-nachrichten.de###klaro
-nunido.de###klaro
-infopedia.pt###klaro-pe-window, #klaro-pe-overlay
 paulcamper.de##.mainContainer > [class*="banner"]
 brandvital.eu##.config-messages
 motorismo.com.pl##.config-messages
@@ -21451,7 +21448,6 @@ aftenposten.no###data-controller-sticky
 bt.no###data-controller-sticky
 traderepublic.com##.consentCard
 europa.eu###edp-cookies-banner, .customCookie
-dlr.de##.ccm-root
 tfwm.org.uk##.wmnds-cookies-banner
 foodwatch.org##.cn-banner
 newsworthy.se##.Snack
@@ -21550,7 +21546,6 @@ teknikkdeler.no##.cookies
 gymgrossisten.com##.overlay-banner
 e-rolety.eu###cookie
 babil.com##.bbl-cookie-consent
-bobshop.com##.ccm-root
 avg.com###bottomBar #gdpr
 mediaexpert.pl##.layout > .wrapper
 mozio.com###container > .desktop ~ div
@@ -21804,6 +21799,18 @@ webcatalog.io###___gatsby footer ~ .fixed
 tango.me###root > div + div:last-child
 toscana.it###epic_cookie, #cookPol, #banner-overlay-top-page, #myCookie
 sw-greifswald.de##.swCookie
+broadbandspeedtest.org.uk##.cm-wrapper
+loveholidays.com##.c-o--
+reinigungsberater.de###cCoverlay, #cC
+turnoffthelights.com###cookie-law
+monster-soluce.com###cookies-pop
+dlr.de##.ccm-root
+bobshop.com##.ccm-root
+buecher.de###klaro
+nur-positive-nachrichten.de###klaro
+nunido.de###klaro
+infopedia.pt###klaro-pe-window, #klaro-pe-overlay
+buecher-sale.de###klaro
 !
 ! SCRIPT BLOCKING
 !
@@ -22267,6 +22274,7 @@ plugin-cookie-consent/build
 /typo3conf/ext/dp_cookieconsent
 /cookie_banner.js
 /om_cookie_main.js
+/jquery.rgpd-cookies.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -22688,6 +22696,7 @@ wpjslib-chunk-notification.js^
 ||ccm19.de/app/public/app.js$script
 ||ccm.ceasy.de/public/app.js$script
 /js/orejime/js/orejime.js
+/ccm/public/app.js?apiKey
 /iubenda_cs$domain=~radiomontecarlo.net|~video.repubblica.it|~video.lastampa.it|~nablawave.com|~buondi.it|~mediaset.it|~telerama.fr|~skuola.net
 /amp-user-notification-
 ||sn.sanoma.fi/js/sccm$script
@@ -22902,7 +22911,6 @@ brsimg.com/gdpr$script,domain=boursorama.com
 trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookie-banner$domain=hauptbahnhofcity.wien
 /cookiefly/*$domain=internet-rockstars.com
-/ccm/*$domain=silverfast.com
 /messagingNoTcfApi.js$domain=aftenposten.no|vg.no|svd.se|aftonbladet.se|bt.no|aftenbladet.no|e24.no
 /consent-layer/*$domain=bahn.de
 /checkcookies.js$domain=iracing.com
@@ -22923,7 +22931,6 @@ trcking.min.js^$domain=canalplus.com|canal-plus.com
 /it-cc.js$domain=geze.de|geze.pl
 /ConsentInit.min.js$domain=smartphonehoesjes.nl
 /cookieser.js$domain=aco.com.pl
-/cookie-monster/*$domain=loveholidays.com
 /vfConsentCookiesCs.js$domain=vodafone.cz
 consent-*$domain=nwb-jobboerse.de
 /almacmp$domain=ampparit.com|etuovi.com|vuokraovi.com|arvopaperi.fi
@@ -22956,6 +22963,7 @@ h1.versicherungsjournal.de$domain=versicherungsjournal.de
 consensu.org$domain=shinden.pl
 js_privacy_cmp*$domain=e24.no
 /CookieThough.js$domain=wochenblitz.com
+/CookieWall/*$domain=eon.pl
 !
 ! FILTERLIST ONLY
 !
