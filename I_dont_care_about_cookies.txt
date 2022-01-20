@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 336.202201191339
+! Version: 336.202201201128
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 19 Jan 2022 12:39 UTC
+! Last modified: 20 Jan 2022 10:28 UTC
 !
 ! If you can, use the extension instead of the filter list, it works even better!
 !
@@ -46,7 +46,7 @@
 ##.cookiePrompt:not(body):not(html)
 ###cccwr
 ###cccwr + #cccwrpad
-~cafe-royal.com,~urbanista.de,~finantia.es,~finantia.com,~klickmal.at###cookie-bar
+~pd.it,~cafe-royal.com,~urbanista.de,~finantia.es,~finantia.com,~klickmal.at###cookie-bar
 ###cookie-bar ~ .c-overlay
 ###cookie-barbody .fixed
 ###cookie-notice-wrapper
@@ -578,7 +578,7 @@
 ###c2g_cookie_dialog
 ###gn-cookie-accept
 ###cookiesWrapper
-~melcloud.com###divCookie
+~bankinter.com,~melcloud.com###divCookie
 ###cookieAcknowledgement
 ###cookieAcknowledgementSpacer
 ##.ccmcss_oic:not(body):not(html)
@@ -780,7 +780,7 @@
 ~invk.nl##.cookieConsent:not(body):not(html)
 ###cookieAcceptBar
 ###inpl_cp_cnt
-###cookieNote:not(.in)
+~becker-antriebe.shop###cookieNote:not(.in)
 ###cookieLawInformation
 ###CookieLegislation_CookieAcceptPanel
 ##.cookie-panel:not(body):not(html):not([id*="panel"]):not([id*="app"])
@@ -16702,7 +16702,6 @@ worldsbiggestchat.com###nomnom
 lycoschat.com###nomnom
 kleiderkreisel.de###stickyFooter, .sticky-footer
 checkdomain.de###notifications-container
-dik.se##.consent-dialog
 canadiansolar.com###cookies
 hessnatur.com##.actionbarWrapper
 toto.com##.cookieSection
@@ -20633,7 +20632,6 @@ innovaphone.com###disableBackground
 svitla.com##.agree-popup
 andyguitar.co.uk##.v-overlay, .v-dialog__content
 eubos.de###frameModalBottom, .modal-backdrop
-hoyer.de###app > [class*="backdrop"]
 usave.co.uk##.toast
 topographic-map.com##.popup
 fembio.org###my-modal, .bg-wg-modal
@@ -21811,6 +21809,12 @@ nur-positive-nachrichten.de###klaro
 nunido.de###klaro
 infopedia.pt###klaro-pe-window, #klaro-pe-overlay
 buecher-sale.de###klaro
+tablesgenerator.com##.consent-dialog
+hotellhudik.se###mb_modules_popups_Container
+bankinter.com###capabkpolicyInicial
+lignoshop.de###cookieNote, .modal-backdrop
+hoyer.de###___gatsby [class*="module--backdrop"]
+moonpay.com###root > .flex[style*="min-height"] > div[class*="sm:max"]:first-child:not(:only-child)
 !
 ! SCRIPT BLOCKING
 !
@@ -22649,6 +22653,7 @@ privacidade.api.milvus.com.br
 global.ketchcdn.com
 ||e-i.com/SITW$script
 /pleasantpump.com
+/fearlessfaucet.com
 ||pcz.pl/static/js/moo-cooker.js$script
 /eucd/eucd.min.js
 ||cinabre.sudoc.abes.fr/psi_gui/js/bandeau.js$script
