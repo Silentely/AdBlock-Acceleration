@@ -1,17 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 336.202201201128
+! Version: 336.202201211026
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 20 Jan 2022 10:28 UTC
-!
-! If you can, use the extension instead of the filter list, it works even better!
-!
-! Please support this project:
-! PayPal - https://www.paypal.me/kiboke
-! Flattr - https://flattr.com/@kiboke
-! BTC - 33hzDEmgpL7ezPQQF774HwYRt2qMsn8mzF
+! Last modified: 21 Jan 2022 09:26 UTC
 !
 !
 ! GLOBAL RULES
@@ -801,7 +794,7 @@
 ##.cookie_ribon:not(body):not(html)
 ##.infoCookies:not(body):not(html)
 ###cookieInformacja
-~dogedash.com,~teacheconomy.de,~sevdesk.de,~nintendo.com,~veygo.com,~puratos.pl,~bike-components.de,~bremerhaven.de,~onlinedepartment.nl,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~monese.com,~nuxeo.com,~opngo.com,~sachsenallee.de,~melcloud.com,~reidl.de,~intersport.de##.cookie-banner:not(body):not(html)
+~planeo.de,~dogedash.com,~teacheconomy.de,~sevdesk.de,~nintendo.com,~veygo.com,~puratos.pl,~bike-components.de,~bremerhaven.de,~onlinedepartment.nl,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~monese.com,~nuxeo.com,~opngo.com,~sachsenallee.de,~melcloud.com,~reidl.de,~intersport.de##.cookie-banner:not(body):not(html)
 ~rku-it.de###cookienotice
 ###overlay-cookielaw-form
 ##.cookie-info-wrapper:not(body):not(html)
@@ -12664,7 +12657,7 @@
 ##.cookieDisclaimerV2
 ###formalAgreementModal.custom-modal
 ###formalAgreementModal ~ #modalBackdrop
-##.axeptio_widget[data-service="cookies"]
+###root div[class*="lgpd-message-box"]
 ##.cookie_container_wrapper
 ##.gebaeck-notice
 ###gdprWindow
@@ -13331,6 +13324,10 @@
 ##.consent-wall-overlay
 ###consent-layer-modal.message-pipe
 ##.js-cookies-backdrop
+###comspace-usercentrics
+##.js-privacy-policy-message-box
+###site-cookies-banner
+###pubtech-cmp
 !
 ! CUSTOM RULES
 !
@@ -13854,8 +13851,6 @@ electronique-mag.com###alert_trk
 tge.com.pl##body > div:not([id]):not([class])
 apartmanija.hr###site_nt
 chordbook.com###cbeu_container
-trattorialatellina.it##.peek-a-bar
-carfacto.de###b-cc
 anisearch.com##.urgent-msg
 sportfondsen.nl###zwemmen-optin-header
 whiskyreview.nl##body > div[id]:not(#sitepicker):not([class]):not(#footer)
@@ -21505,7 +21500,6 @@ basic-tutorials.de##body > div[style*="fixed"]
 hotcoursesabroad.com###ckieOvrlayDiv
 markt-lichtenau.de###ck-overlay
 energijaplus.si###ck-overlay
-mobile.de###mde-consent-modal-container
 rhein-kreis-neuss.de##.rkn-row-footer-cookie-notice
 clickbus.com.br###footer-policy
 linkaband.com##app-cookie-modal
@@ -21792,7 +21786,6 @@ clevertronic.de###js-popup-cookie-block
 foerch.de##.anonymous-consent-banner
 conforama.ch##.anonymous-consent-banner
 revolut.com##div[role="dialog"][aria-label*="cookie"], div[role="dialog"][aria-label*="Cookie"]
-klaus-grillt.de##body > [data-bg]
 webcatalog.io###___gatsby footer ~ .fixed
 tango.me###root > div + div:last-child
 toscana.it###epic_cookie, #cookPol, #banner-overlay-top-page, #myCookie
@@ -21815,6 +21808,26 @@ bankinter.com###capabkpolicyInicial
 lignoshop.de###cookieNote, .modal-backdrop
 hoyer.de###___gatsby [class*="module--backdrop"]
 moonpay.com###root > .flex[style*="min-height"] > div[class*="sm:max"]:first-child:not(:only-child)
+koerbchen.app##body > flt-glass-pane > flt-scene-host > flt-scene > flt-transform > flt-clip
+jumpropeberlin.com##main ~ div
+riseofgunpla.com##.elementor-popup-modal
+speicherkarten.guru###GDPR
+memorycard.guru###GDPR
+steambackgrounds.com##main ~ div
+epoha.com.hr##.elementor-popup-modal
+posta.si###cookieModals, .modal-backdrop, tn-theme-posta-cookie
+klaus-grillt.de##body > [data-bg]
+promobricks.de##body > [data-bg]
+aktieninvestor.net##body > [data-bg]
+nilohealth.com##.page-container > [style*="fixed"]
+tvo.fi###tietosuojainfo
+dustin.dk##.c-overlay
+dustinhome.dk##.c-overlay
+rednet.ag###es_cookie_solution
+datanyze.com##dn-drc-cmn-cookie-pop-up
+vuecinemas.nl##.privacy-consent-info-cta
+boutique.aero##.gdprModal
+mobile.de###mde-consent-modal-container
 !
 ! SCRIPT BLOCKING
 !
@@ -22279,6 +22292,7 @@ plugin-cookie-consent/build
 /cookie_banner.js
 /om_cookie_main.js
 /jquery.rgpd-cookies.js
+/bandeau_cookie.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -22370,6 +22384,7 @@ consent-manager.confirmic.com
 /consentbanner-fragment/*
 ||altravia.com/connector/consent_mode.js$script
 ||consentmanager.net/delivery/cmp$script
+/taunton-user-consent.js
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -22654,6 +22669,7 @@ global.ketchcdn.com
 ||e-i.com/SITW$script
 /pleasantpump.com
 /fearlessfaucet.com
+||unpkg.com/orejime$script
 ||pcz.pl/static/js/moo-cooker.js$script
 /eucd/eucd.min.js
 ||cinabre.sudoc.abes.fr/psi_gui/js/bandeau.js$script
@@ -22679,7 +22695,6 @@ wpjslib-chunk-notification.js^
 /trustArcHelper.js
 ||widget.clym.io/clym.js$script
 ||htmedia.in/analytics-js/dap.js$script
-||static.axept.io/sdk.js$script
 /ufti/uftiLoader.min.js
 /includes/pltk/pltk.js
 /onstuimig-tag-manager/base/adf-tm-base-min.js
@@ -22715,6 +22730,7 @@ connect.danone.es
 ||jsdelivr.net/wp/wp-slimstat$script
 /js/dsvgo.
 /Flurrybox_EnhancedPrivacy/*
+||static.axept.io/sdk$script
 /tarteaucitron/css/tarteaucitron.css
 notice.sp-prod.net
 ||htmedia.in/analytics-js$script
@@ -22859,7 +22875,7 @@ spellsalsa.com$domain=interestingengineering.com
 /website-cookie-preferences$domain=nationaltrust.org.uk
 /cookie-bundle$domain=zoopla.co.uk
 /cookie-wall$domain=xebia.com
-/otBannerSdk.js$domain=dhl.com|gusto.at|mintos.com|thetrainline.com|elmundo.es|pons.com|coca-cola-deutschland.de|avast.com|avg.com|washingtonpost.com|mendeley.com|coca-cola.pl|coca-cola.co.uk|coca-cola.dk
+/otBannerSdk.js$domain=dhl.com|gusto.at|mintos.com|thetrainline.com|elmundo.es|pons.com|coca-cola-deutschland.de|avast.com|avg.com|washingtonpost.com|mendeley.com|coca-cola.pl|coca-cola.co.uk|coca-cola.dk|technics.com
 /cp01.js$domain=jzzo.com
 /klaro/*$domain=salesviewer.com
 /gdpr.bundle.js$domain=immobilienscout24.de|mediacourant.nl
