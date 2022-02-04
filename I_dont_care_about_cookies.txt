@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 337.202202030948
+! Version: 337.202202041056
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 03 Feb 2022 08:48 UTC
+! Last modified: 04 Feb 2022 09:56 UTC
 !
 !
 ! GLOBAL RULES
@@ -422,8 +422,8 @@
 ###cookiespolicymessage
 ###cookie_toolbar
 ###eulaw
-~statik.be,~login.nos.pt,~mit-dem-rad-zur-arbeit.de,~dwd.de,~nerdstar.tv,~bund.de,~bafin.de,~onlinezugangsgesetz.de,~duvel.com,~dagvandewetenschap.be,~materna.de,~thw.de,~bmbf.de,~bamf.de###cookiebanner:not(.modal)
-~statik.be,~dwd.de,~nerdstar.tv,~bund.de,~bafin.de,~onlinezugangsgesetz.de,~duvel.com,~dagvandewetenschap.be,~materna.de,~thw.de,~bmbf.de,~advodan.dk,~technikmuseum.berlin##.cookiebanner:not(body):not(html):not(#header)
+~statik.be,~login.nos.pt,~mit-dem-rad-zur-arbeit.de,~dwd.de,~nerdstar.tv,~bund.de,~bafin.de,~onlinezugangsgesetz.de,~duvel.com,~dagvandewetenschap.be,~materna.de,~thw.de,~bmbf.de,~bafa.de,~bamf.de###cookiebanner:not(.modal)
+~statik.be,~dwd.de,~nerdstar.tv,~bund.de,~bafin.de,~onlinezugangsgesetz.de,~duvel.com,~dagvandewetenschap.be,~materna.de,~thw.de,~bmbf.de,~bafa.de,~advodan.dk,~technikmuseum.berlin##.cookiebanner:not(body):not(html):not(#header)
 ##.cookieHolder:not(body):not(html)
 ###cookieAgree
 ##.cookie_alert:not(body):not(html)
@@ -557,7 +557,7 @@
 ###cookie_info
 ###cookie-information-wrapper
 ~lauritz.com,~qxl.de,~qxl.dk,~qxl.fi,~qxl.se,~qxl.no,~reidl.de###cookie-container
-~vias.be,~rodekruis.be,~umicore.com###cookies-banner
+~vias.be###cookies-banner
 ###ctl00_pnlCookie
 ##.cookie-popup__content
 ##.cookie-popup__heading
@@ -6023,7 +6023,7 @@
 ##.nts-notification-cookie
 ##.rdm-daac-notice-template
 ##.gp-modal__cookies:not(body):not(html)
-~vsv.be,~veiligverkeer.be###cookieconsent-banner
+~vsv.be,~umicore.com,~rodekruis.be,~veiligverkeer.be,~workshopsveiligverkeer.be###cookieconsent-banner
 ##.template-footer__cookies
 ###cookie-popup-bar
 ##.mj-box-cookie-alert:not(body):not(html)
@@ -13343,6 +13343,9 @@
 ###__next div[class*="cookies-notice"]
 ##.lcc-modal[data-cookie-key*="cookie_consent"]
 ###cookie_manage_container
+###cms_privacy_layer
+##.exponea-banner.exponea-cookie
+##.exponea-cookie-backdrop
 !
 ! CUSTOM RULES
 !
@@ -18263,7 +18266,6 @@ gestoriaverdugo.es##.cookie
 sharafdg.com##.cookies
 fijiairways.com##.dumbBoxWrap.terms-of-use
 aigle.com##.CookiesLayer
-reshade.me##.activebar-container
 paecklipunkt.ch##pp-cookie-dialog
 rankersta.com##.cookie
 nissannews.com###privacyModal
@@ -18529,7 +18531,6 @@ findmypast.com###appRoot > div > div > div
 whatson.is##.elementor-location-popup
 mitsubishimotors.com.br##.cookies-header
 qitec.de###QiCookieOptin
-bafa.de###privacy, .privacy
 player.hr##.popup_hr
 e-turysta.pl###et-cookies-info
 algarveholidayvillas.com##.cm-notice
@@ -19441,7 +19442,6 @@ yandex.ru##.gdpr, div[data-react-widget-id="Gdpr"], .lc-gdpr
 testo.com###colorbox, #cboxOverlay
 latendresseencuisine.com##.mdc-snackbar
 fashionunited.de##.mdc-snackbar
-nordcheckout.com###__next > .App > div
 cnam-bretagne.fr##.ojc_consent
 expressen.se##.site-wrapper > .pa-dialog
 vectorizer.io##.alert, #alert
@@ -21840,6 +21840,8 @@ eventwide.com##.privacy-blanket, .privacy-dialog
 zu-zweit.de###cookies-modal
 label2020.eu##.modal-backdrop
 kibercar.com##.kbc_cookie
+nordcheckout.com###__next > div > .text-grey-darker
+cirkwi.com##.mb_popin
 !
 ! SCRIPT BLOCKING
 !
@@ -22468,7 +22470,7 @@ pdcc.gdpr.es
 /gdpr-redirect.min.js
 /js/shared/gdpr.js
 /sdk-gdpr.min.js
-/media/plg_system_eprivacy
+/media/plg_system_eprivacy$domain=~reshade.me
 ||recepttar.hu/js/privacy.js$script
 cmp.dmgmediaprivacy.co.uk$domain=~metro.co.uk
 jssdk.privacy.pre.schibsted.com
