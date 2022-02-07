@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 337.202202041056
+! Version: 337.202202071257
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 04 Feb 2022 09:56 UTC
+! Last modified: 07 Feb 2022 11:57 UTC
 !
 !
 ! GLOBAL RULES
@@ -8133,6 +8133,7 @@
 ###cookiesInformation
 ##.cookie-policy-cont:not(body):not(html)
 ###cookieid.cookies
+###cms_privacy_layer
 ###cookienutzung
 ###cookie-law-infos
 ##.gpm-cookie-accepted:not(body):not(html)
@@ -13343,9 +13344,9 @@
 ###__next div[class*="cookies-notice"]
 ##.lcc-modal[data-cookie-key*="cookie_consent"]
 ###cookie_manage_container
-###cms_privacy_layer
 ##.exponea-banner.exponea-cookie
 ##.exponea-cookie-backdrop
+###cookiebot-banner-popup
 !
 ! CUSTOM RULES
 !
@@ -17858,7 +17859,6 @@ das.co.uk##.cookie, .secnav-links__item:last-child
 daslaw.co.uk##.cookie, .secnav-links__item:last-child
 dasinsurance.co.uk##.cookie, .secnav-links__item:last-child
 strefawalut.pl##.cookie
-pyur.com##.cookie
 10-4.dk##.cookie
 dia.es##.cookie
 daparto.de##.cookie
@@ -21138,7 +21138,6 @@ focus-home.com###app > nav + div
 wayofleaf.com###cpop
 crucial.com##.app-light > div[style*="fixed"]
 concursosnobrasil.com.br###lgpd
-uol.com.br##.ntv-lgpd-consent, .ms-footer-message
 japanmotors.pl##.cookie
 nordiskporselen.com###kjeks
 belgium.be##.cookies
@@ -21150,10 +21149,8 @@ voltus.de###c4sCookieOneClickModal
 123rf.com##.AgreementBanner__wrapper
 istockphoto.com##.banner.warning
 airtel.com##.cookie__wrap
-1881.no##.adn-window
 pingback.com##.cookies-modal
 treinaweb.com.br##div[c_data="c_cookie_main"]
-billiger-mietwagen.de##.cmp-container
 nettolohn.de##div[id*="hinweis-cookie"]
 talktomeinkorean.com###wpfront-notification-bar-spacer
 gorillas.io###cookie-settings
@@ -21842,6 +21839,14 @@ label2020.eu##.modal-backdrop
 kibercar.com##.kbc_cookie
 nordcheckout.com###__next > div > .text-grey-darker
 cirkwi.com##.mb_popin
+omsystembolaget.se##.consent-handler
+covidbevis.se##.v-system-bar
+1881.no##.adn-window, #ot-consent
+portu.cz###cookiescontent
+uol.com.br##.ntv-lgpd-consent, .ms-footer-message, app-opt-in, #lgpd-ps-banner
+techland.net###gdpr-consent-form
+rc-xpress.com##.notification[data-options*="Privacy"]
+pneuhage.de##.site-blocker
 !
 ! SCRIPT BLOCKING
 !
@@ -22307,6 +22312,7 @@ plugin-cookie-consent/build
 /bandeau_cookie.js
 /dist/js/cookie-consent
 /cookieconsent.min.js$domain=~sonnenverlauf.de
+/cookieConsentApp.js.gz
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -22685,6 +22691,7 @@ global.ketchcdn.com
 /pleasantpump.com
 /fearlessfaucet.com
 ||unpkg.com/orejime$script
+/superficialeyes.com
 ||pcz.pl/static/js/moo-cooker.js$script
 /eucd/eucd.min.js
 ||cinabre.sudoc.abes.fr/psi_gui/js/bandeau.js$script
@@ -22935,7 +22942,7 @@ cookie-policy*$domain=ubuntu.com
 consent.js^$domain=zitatezumnachdenken.com
 cc.cdn.civiccomputing.com$domain=metoffice.gov.uk|churchofengland.org|yodel.co.uk|totalwar.com
 /cnst.js$domain=tauschticket.de
-/cookies/*$domain=liberbank.es
+/cookies/*$domain=liberbank.es|stickypassword.com
 /iCookie/*$domain=h-supertools.com
 /consent$domain=hemnet.se
 /he-consent/*$domain=dennree.de
@@ -23002,6 +23009,7 @@ js_privacy_cmp*$domain=e24.no
 cookiebanner*$domain=unibo.it
 trustarc.com$domain=avantiwestcoast.co.uk
 /privacy/*$domain=ionos.de|ionos.fr
+/cookie_layer.js$domain=billiger-mietwagen.de
 !
 ! FILTERLIST ONLY
 !
