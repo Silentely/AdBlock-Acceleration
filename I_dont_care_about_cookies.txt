@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 337.202202071257
+! Version: 337.202202091454
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 07 Feb 2022 11:57 UTC
+! Last modified: 09 Feb 2022 13:54 UTC
 !
 !
 ! GLOBAL RULES
@@ -630,7 +630,7 @@
 ###cnil_alert
 ##.cookie-pop-up-container
 ~cykelgear.dk###cookieDisclaimer
-~refoweb.nl,~falter.at,~yello.de###cookieconsent:not(.btn)
+~refoweb.nl,~yello.de###cookieconsent:not(.btn)
 ###cookie_div
 ###CookieQBanner
 ###cookieWindowContainer
@@ -751,7 +751,7 @@
 ###ckieprompt
 ##.w-cookie-banner:not(body):not(html)
 ###gacookiemessage
-~swedbank.se,~mol.hu,~mifcom.de,~kupbilecik.pl,~kupbilecik.de,~kupbilecik.com,~metro.de,~metro.fr,~metro.at,~metro.hu,~metro.bg,~makro.nl,~wins.pl,~falter.at,~reidl.de,~puzzels.trouw.nl,~puzzels.parool.nl##.cookie-container:not(body):not(html)
+~swedbank.se,~mol.hu,~mifcom.de,~kupbilecik.pl,~kupbilecik.de,~kupbilecik.com,~metro.de,~metro.fr,~metro.at,~metro.hu,~metro.bg,~makro.nl,~wins.pl,~reidl.de,~puzzels.trouw.nl,~puzzels.parool.nl##.cookie-container:not(body):not(html)
 ###euCookie
 ##.euCookie:not(body):not(html)
 ##.pf-cookie-directive:not(body):not(html)
@@ -1071,7 +1071,7 @@
 ###conteneurCookies
 ##.component-cookie-policy-feature
 ~generali.at##.cookies-container:not(body):not(html)
-~falter.at###cookie-info-text
+###cookie-info-text
 ###CookiesAlert
 ###eu_cookie_container
 ###cookie_change
@@ -2529,7 +2529,7 @@
 ###gdpr-cookie-test
 ##.cookiePolicyA:not(body):not(html)
 ##.communikat_cookie:not(body):not(html)
-##.CookieWarningComponent
+~grueneerde.com##.CookieWarningComponent
 ##.cookie-consent-area:not(body):not(html)
 ###soopacookie
 ##.promoAlert-cookiepops
@@ -10728,7 +10728,7 @@
 ##.common-header-js .common-header-gdpr
 ###__nuxt .legal-consent-wrap
 ##.l-container.c-cookie__container
-~deichmann.com##.cookie-consent__wrapper
+~deichmann.com,~vanharen.nl##.cookie-consent__wrapper
 ##.module-cookies.cookie-bar--is-visible
 ###cookie-notice-popup
 ###page > #tenantAcceptText
@@ -11610,7 +11610,7 @@
 ###cookie\ warning
 ###boxCookiesAccept
 ##.eu_cookie_wrapper
-~direct.de,~redable.nl##.amgdprcookie-bar-template
+~direct.de,~redable.nl,~falter.at##.amgdprcookie-bar-template
 ##.site-footer ~ .gdpr
 ##.iCookie.iCookie-whitered
 ##.q-cookie-consent__container
@@ -13323,7 +13323,6 @@
 ##body > #bg_cookie
 ###cookieconsent_bar
 ##.consent-wall-overlay
-###consent-layer-modal.message-pipe
 ##.js-cookies-backdrop
 ###comspace-usercentrics
 ##.js-privacy-policy-message-box
@@ -13347,6 +13346,8 @@
 ##.exponea-banner.exponea-cookie
 ##.exponea-cookie-backdrop
 ###cookiebot-banner-popup
+##.fixed[data-cookiebar]
+##.cookiemanager_show_simple
 !
 ! CUSTOM RULES
 !
@@ -21007,7 +21008,6 @@ stanley.ru##.test-mode__wrap
 bopla.de###privacy-consent
 antenasgsm.com##.cookies
 dynavap.com###cookie
-trouva.com###__next > div > div:first-child
 cypress.com###complianceoverlay.complianceoverlay
 sportsoft.co.uk###toast-container
 beiersdorf.de##form > .popup
@@ -21847,6 +21847,8 @@ uol.com.br##.ntv-lgpd-consent, .ms-footer-message, app-opt-in, #lgpd-ps-banner
 techland.net###gdpr-consent-form
 rc-xpress.com##.notification[data-options*="Privacy"]
 pneuhage.de##.site-blocker
+yachtclubgames.com##.cookie
+mironet.cz###CookieEU
 !
 ! SCRIPT BLOCKING
 !
@@ -22036,7 +22038,7 @@ jquery.cookiepol.js^
 /fortune_cookie_popup.js
 /cookiecsnt2/js/cookie.min.js
 /cookies-note.js
-policy.app.cookieinformation.com$domain=~kartor.eniro.se|~kart.gulesider.no|~kort.degulesider.dk|~map.krak.dk|~altibox.no|~babysam.dk|~minaftale.dk|~dvdoo.dk
+policy.app.cookieinformation.com$domain=~kartor.eniro.se|~kart.gulesider.no|~kort.degulesider.dk|~map.krak.dk|~altibox.no|~babysam.dk|~minaftale.dk|~skousen.dk|~skousen.no|~whiteaway.com|~whiteaway.no|~whiteaway.se|~dvdoo.dk
 /cookienotice/Js/*
 /wp-content/plugins/fortune-cookie-consent-policy/*
 ||gdl-cookiebar.tnt-digital.com/js/$script
@@ -22311,8 +22313,10 @@ plugin-cookie-consent/build
 /jquery.rgpd-cookies.js
 /bandeau_cookie.js
 /dist/js/cookie-consent
-/cookieconsent.min.js$domain=~sonnenverlauf.de
+/cookieconsent.min.js$domain=~sonnenverlauf.de|~retrogames.cc
 /cookieConsentApp.js.gz
+/fileadmin/templates/cookie/fc_thin.js
+cdn.cookiecode.nl
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23010,6 +23014,7 @@ cookiebanner*$domain=unibo.it
 trustarc.com$domain=avantiwestcoast.co.uk
 /privacy/*$domain=ionos.de|ionos.fr
 /cookie_layer.js$domain=billiger-mietwagen.de
+/c22.js$domain=cd.cz
 !
 ! FILTERLIST ONLY
 !
