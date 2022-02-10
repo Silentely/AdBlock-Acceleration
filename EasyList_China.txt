@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: 6vLZkiNkBWgbuTkiwXUTtg
-! Version: 202202101206
+! Checksum: CccH1oa/5Qb18Jcr/W5vVA
+! Version: 202202101606
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last modified: 10 Feb 2022 12:06 UTC
+! Last modified: 10 Feb 2022 16:06 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/easylist/easylistchina/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -1603,7 +1603,6 @@ ubmcmm.baidustatic.com
 ##a[style*=".e-years.net/"]
 ##a[style*=".memexoxo.com/"]
 ##a[style*=".misigl.com/"]
-##a[target="_blank"][href*="/bet188/"]
 ##iframe[src*=".xxmh891.com/"]
 ##img[onclick*=".aiyou305.com/"]
 ##img[onclick*=".dxsdkw.cn"]
@@ -6374,7 +6373,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||fenxiangdashi.com/Res/js/detail_
 ||ff.meikanguo.com^
 ||fh21.com.cn/partners/
-||file.cloud.sogou.com/*/superzone/
 ||file.ws.126.net/house/nj/*.swf
 ||files.jb51.net/image/
 ||firefoxchina.cn/2014/*_foxphone.png
@@ -9324,6 +9322,10 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||haiyuer.com/uc
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+iplaysoft.com##.wwads-cn
+iplaysoft.com##[style*="width:3"][style*="height:2"]
+so.com###js-mh-news-sdk-sad
+so.com##.res-mediav
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -10282,12 +10284,13 @@ hao123.com###mingzhanresource
 hk.yahoo.com###mntl1
 fanqiangzhe.com###mobile-bottom-ads
 so.com###mohe-360pic_ext--normal
-so.com###mohe-biu_dianshang
 so.com###mohe-etao_shangye
+so.com##.map_business_con
 so.com###mohe-gouwu > .g-shadow
 so.com###mohe-m-smzdm_haojia
 so.com###mohe-medicine_sy > .cont
-so.com###mohe-product_gouwu > .g-card
+so.com###mohe-biu_gouwu > .g-card
+so.com##div[id^="mohe-biu_360"] > .g-card
 so.com###mohe-right_windows_ads
 mtrend.cn###morecontent > .morecontent_next[style]
 wenxuecity.com###morehealth-banner-1
@@ -12088,7 +12091,6 @@ smzdm.com##.g_g
 lenovo.com.cn##.game
 zhanqi.tv##.game-banner
 1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com##.game-head-game-info-wrapper
-sogou.com##.game-op
 le.com##.gamePromotion
 1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com##.game_banner
 1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com##.game_banner_common_wapper
@@ -14231,8 +14233,7 @@ aishoujizy.com,xd0.com##a[target="_blank"] > img[src^="/upload/1/"]
 18board.com,18board.net,18p2p.com,18p2p.tv##a[target="_blank"] > img[width="920"]
 18board.com,18board.net,18p2p.com,18p2p.tv##a[target="_blank"] > img[width^="72"]
 pinggu.org##a[target="_blank"][href*=".cda.cn"]
-939394.xyz##a[target="_blank"][href*="/images/"]
-939394.xyz##a[target="_blank"][rel]
+939394.xyz#?#a:-abp-has(>img[src*="/ddimg/"])
 muchong.com##a[target="_blank"][style="display: inherit!important;"]
 pixiv.net##a[target="premium_noads"]
 youz4.com##a[title*="广告"]
@@ -14408,7 +14409,6 @@ ifeng.com##div[class^="ppx_wrap-"]
 1024ph.com,99syy1.com##div[class^="ps_"]
 tophub.today##div[class^="qc"]
 ifeng.com##div[class^="rightContent-"] a[href^="//health.ifeng."]
-sogou.com##div[class^="rt-gameright"]
 qwerwrrt.one##div[class^="show-text"]
 finance.sina.com.cn##div[class^="side-btns-"]
 7654.com##div[class^="sidebarimg"]
@@ -14918,7 +14918,6 @@ toolfk.com#?#div[class]:-abp-has(> a[href*=".aliyun.com"])
 toutiao.com#?#.J_ad
 toutiao.com#?#.has_action:-abp-has(> .icon_ad)
 cartoonmad.com##tr:nth-child(n+5) > td > table[width="732"]
-sogou.com##ul[class^="atAd"]
 zdfans.com##ul[id^="gaosuxiazai"]
 firefoxchina.cn##ul[track-key="adv_links"]
 toolfk.com##wavy + div[style]
@@ -17163,6 +17162,7 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 ||yakel.top^
 ||awwlfb.cn^
 ||ulxypyg.cn^
+||99lewen.com^$third-party
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
 ##a[href*=".233787.com/"]
