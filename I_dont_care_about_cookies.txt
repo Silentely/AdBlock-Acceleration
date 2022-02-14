@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 337.202202131934
+! Version: 337.202202140945
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 13 Feb 2022 18:34 UTC
+! Last modified: 14 Feb 2022 08:45 UTC
 !
 !
 ! GLOBAL RULES
@@ -39,7 +39,7 @@
 ##.cookiePrompt:not(body):not(html)
 ###cccwr
 ###cccwr + #cccwrpad
-~pd.it,~cafe-royal.com,~urbanista.de,~finantia.es,~finantia.com,~klickmal.at###cookie-bar
+~halleysac.it,~pd.it,~cafe-royal.com,~urbanista.de,~finantia.es,~finantia.com,~klickmal.at###cookie-bar
 ###cookie-bar ~ .c-overlay
 ###cookie-barbody .fixed
 ###cookie-notice-wrapper
@@ -1019,7 +1019,7 @@
 ###CCompliance
 ###wrapperMensajeCookie
 ##.W034_Cookie_Directive
-##.panel-cookies:not(body):not(html)
+~nice.fr##.panel-cookies:not(body):not(html)
 ###cookieMelding
 ###eu-cookie-msg
 ###cookies_message
@@ -13353,6 +13353,8 @@
 ##.cookie--blur .wrap__cookie
 ##.dp--cookie-consent .mm-page::after
 ##.cookie-lgpd
+###abw_consentbanner
+###gdprpatronInfoleisteOverlay
 !
 ! CUSTOM RULES
 !
@@ -19722,7 +19724,6 @@ clasebcn.com###cookies
 pracownia.org.pl##.rodo
 lurker.pl##.uk-alert
 mrgugu.com##div[data-hook="optanon"]
-isc2.org##.notice--general
 einstel.pl###cookie
 jelonka.com##.prywatnosc
 aia.com.my##.alert-dismissable
@@ -20660,7 +20661,6 @@ antwerpen.be##aui-cookie-consent
 wehkamp.nl###header > aside
 stationhq.com###getsitecontrol
 novibet.gr##.setCookies
-samsung.com###root [data-testid="notice-footer"]
 elektro-met.pl###cookie
 estetic-dent-sklep.pl###cookie
 21shares.com##cookie-control
@@ -21091,7 +21091,6 @@ crosig.hr##co-message
 desarrolloweb.com##dile-cookies-consent
 ulysse.com##.shadow-cookie
 avl-ludwigsburg.de##.page-overlay
-ma-calculatrice.fr###manger-des-gateaux
 recordsale.de##.personalization-request
 servihabitat.com##.portlet-boundary[class*="condiciones"]
 calendly.com###gdpr-region ~ [data-component="sticker"]
@@ -21489,7 +21488,6 @@ bkkgs.de##.cookie-layer
 bicycles.de##.cookie-layer
 rockstargames.com##main ~ footer ~ div
 livemaster.ru##.cookieconsent-ru
-mp.br###termo-uso
 basic-tutorials.de##body > div[style*="fixed"]
 hotcoursesabroad.com###ckieOvrlayDiv
 markt-lichtenau.de###ck-overlay
@@ -21537,7 +21535,6 @@ mediaexpert.pl##.layout > .wrapper
 mozio.com###container > .desktop ~ div
 cargoboard.com##body > .fixed-bottom.bg-gray
 pvs-studio.com##.personal-data-confirm
-passeidireto.com##pd-cookie-banner
 verema.com###cookies
 cfainstitute.org###privacyWarning
 excellent-hemd.de##.fixed-bottom .btn[onclick*="cookieModal"]
@@ -21556,7 +21553,6 @@ fvg.it###cookieModal
 tsuche.com###c-c
 lionsroar.com##.elementor-popup-modal
 sazka.cz##.consent-bar
-burgerking.fr##main > div:last-child
 burgerking.co.uk###main ~ div[class*="Container"]
 0800repair.com###wp-notification
 ecologi.com###modal-root ~ div
@@ -21858,6 +21854,20 @@ lecoqsportif.com##div[class*="cookiesPopup"]
 ladies-forum.de###ladiescookienotice
 sodresantoro.com.br##.ss-modal-cookies
 top-car-hire.com###cookies
+skylinewebcams.com###pref
+nice.fr##.cookies-management-button
+cofan.es##.block-cookies
+passeidireto.com##pd-cookie-banner
+mp.br###termo-uso, #modalConsentimento, .modal-backdrop, .lumis-service-privacyterm
+samsung.com###root [data-testid="notice-footer"], #cookie_component
+isc2.org##.notice--warning
+ebox-auto.com##.rgpd
+burgerking.ru##.bk-cookie-message
+burgerking.fr##main > header ~ div:last-child
+tylko.com##.ty-settings
+ma-calculatrice.fr###manger-des-minis-gateaux
+arbiton.com##.cookies
+shopee.fr###main > div > div:not([id]):not([class]) + div
 !
 ! SCRIPT BLOCKING
 !
@@ -22420,6 +22430,7 @@ consent-manager.confirmic.com
 ||altravia.com/connector/consent_mode.js$script
 ||consentmanager.net/delivery/cmp$script
 /taunton-user-consent.js
+/fileadmin/templates/js/cconsent.js
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -22861,7 +22872,7 @@ cookies.js^$domain=winbrok.es
 /ig_cookie_frontend$domain=volksbund.de
 bounceexchange.com$domain=lumberliquidators.com
 /cookie.js$domain=keltendorf-mitterkirchen.at|mitterkirchen.at|vils.at|raggal.at|haugsdorf.at|umhausen.at|jugendregion.at|casanetwork.hu|tenable.com|digit-photo.com|kurnik.pl|oka.be|online-spellcheck.com|beethoven.de
-/tarteaucitron/*$domain=ratp.fr|arena-now.de
+/tarteaucitron/*$domain=ratp.fr|arena-now.de|flaine.com
 CheckCookiePolicy*$domain=remixshop.com
 /japfg/*$domain=myfridgefood.com
 /cookienote/*$domain=wittetools.com
