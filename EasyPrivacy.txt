@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202202200620
+! Version: 202202201212
 ! Title: EasyPrivacy
-! Last modified: 20 Feb 2022 06:20 UTC
+! Last modified: 20 Feb 2022 12:12 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -4349,6 +4349,7 @@
 /track.aspx?
 /track.cgi?
 /track.gif^
+/track.js?pixelId=
 /track.php?domain=
 /track.php?referrer=
 /track.png?
@@ -5736,6 +5737,7 @@ _mongo_stats/
 ! *** easylist:easyprivacy/easyprivacy_trackingservers.txt ***
 ! Non-flagged (Generic blocks)
 ||520886.xyz^
+||a1webstrategy.com^
 ||adnext.co^
 ||adrtx.net^
 ||affvantage.com^
@@ -6791,6 +6793,7 @@ _mongo_stats/
 ||freshmarketer.com^$third-party
 ||freshplum.com^$third-party
 ||friendbuy.com^$third-party
+||frodx.com^$third-party
 ||fruitflan.com^$third-party
 ||fsd2.digital^$third-party
 ||fstats.xyz^$third-party
@@ -7160,6 +7163,7 @@ _mongo_stats/
 ||lasagneandands.com^$third-party
 ||lead-123.com^$third-party
 ||lead-converter.com^$third-party
+||leadberry.com^$third-party
 ||leadbi.com^$third-party
 ||leadboxer.com^$third-party
 ||leadchampion.com^$third-party
@@ -7588,6 +7592,7 @@ _mongo_stats/
 ||pingagenow.com^$third-party
 ||pingdom.net^$third-party
 ||pingil.com^$third-party
+||pingmeter.com^$third-party
 ||pingomatic.com^$third-party
 ||pinpoll.com^$third-party
 ||pipfire.com^$third-party
@@ -9913,6 +9918,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||standingnest.com^
 ||standingsack.com^
 ||standtrouble.com^
+||stat.pet^$third-party
 ||statementsweater.com^
 ||statuesquebrush.com^
 ||steadfastseat.com^
@@ -10587,6 +10593,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||pocitadlo.cz^$third-party
 ||programmatic.cz^$third-party
 ||semnicneposilejte.cz^$third-party
+||smartselling.cz^$third-party
 ! Danish
 ||agillic.eu^$third-party
 ||andersenit.dk^$third-party
@@ -10950,6 +10957,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||intergid.ru^$third-party
 ||iryazan.ru^$third-party
 ||kmindex.ru^$third-party
+||leadhit.ru^$third-party
 ||leadslabpixels.net^$third-party
 ||lentainform.com^$third-party
 ||listtop.ru^$third-party
@@ -11683,6 +11691,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||dash.getsitecontrol.com^
 ||data.alexa.com^
 ||data.circulate.com^
+||data.digitalks.az^
 ||data.gosquared.com^$third-party
 ||data.imakenews.com^$third-party
 ||data.minute.ly^
@@ -12584,6 +12593,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||res.rbl.ms^
 ||response.pure360.com^
 ||rest.wildstar-online.com^
+||retargeting.newsmanapp.com^
 ||reverbnation.com/widgets/trk/
 ||rfksrv.com/rfk/$third-party
 ||rfksrv.com/rfkj/$image
@@ -12788,6 +12798,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||synergizeonline.net/trackpoint/
 ||systemmonitoring.badgeville.com^
 ||t-staging.powerreviews.com^
+||t.91syun.com^
 ||t.a3cloud.net^
 ||t.auditedmedia.org.au^
 ||t.beop.io^
@@ -12888,6 +12899,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tr1.mailperformance.com^
 ||tra.scds.pmdstatic.net/sourcepoint/
 ||traccoon.intellectsoft.net^
+||track.91app.io^
 ||track.99acres.com^
 ||track.addevent.com^
 ||track.atgstores.com^$third-party
@@ -12898,8 +12910,10 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||track.digitalriver.com^
 ||track.juno.com^
 ||track.mailerlite.com^
+||track.mituo.cn^
 ||track.mp4.center^
 ||track.mycliplister.com^
+||track.nopaperforms.com^
 ||track.pnicnik.live^
 ||track.pricespider.com^
 ||track.qcri.org^
@@ -13009,6 +13023,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||trackjs.com/releases/current/tracker.js
 ||trackjs.com/usage.gif?
 ||trackla.stackla.com^
+||tracksmart.se^$third-party
 ||tradablebits.com/pixels/
 ||trading24.io/erwrtyo8blqeyz4$xmlhttprequest,domain=op.gg
 ||traffic.acwebconnecting.com^
@@ -14983,6 +14998,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||rumble.com/l/
 ||rv.modanisa.com^$script
 ||s.infogram.com^
+||saa.insideedition.com^
 ||sciencechannel.com/events/
 ||scloud.online/stat/
 ||scoot.co.uk/ajax/log_
@@ -26032,7 +26048,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||docs.google.com/*/viewdata$~third-party
 @@||dominos.com^*/assets/build/js/modules/dpz.tealium.js$script
 @@||dove.com/etc/ui/dovemencare/clientlibs/core/core/config/analytics.js$script,~third-party
-@@||drivetrain.ai/drive/api/v1/metrics/$~third-party
+@@||drivetrain.ai/drive/*/metrics/$~third-party
 @@||dropboxstatic.com/static/js/modules/clean/ux_analytics/$script,domain=dropbox.com
 @@||dw.cbsi.com/anonc.js$domain=giantbomb.com
 @@||dw.com.com/js/dw.js$domain=cbsnews.com|tv.com
@@ -26346,6 +26362,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||mycleverpush.com/iframe?$domain=bsdex.de
 @@||n8s.jp^$script,domain=nikkei.com
 @@||takeda.com.dxcloud.episerver.net^$domain=takeda.com
+@@||team-rec.jp^$domain=search-voi.0101.co.jp|voi.0101.co.jp
 @@||tmx.bestbuy.com/z3nsvo31pnlmt3tw.js$domain=bestbuy.com
 ! Mining-related allowlists
 @@||api.nyda.pro^$websocket
@@ -26539,7 +26556,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||certona.net^*/resonance.js$domain=zooplus.fi
 @@||cloudfront.net/frosmo.easy.js$domain=hobbyhall.fi|lippu.fi
 @@||frosmo.com/messageApi$xmlhttprequest,domain=hobbyhall.fi
-@@||frosmo.com/recoApi/$xmlhttprequest,domain=hobbyhall.fi|lily.fi|meillakotona.fi|terve.fi
+@@||frosmo.com/recoApi/$xmlhttprequest,domain=apu.fi|hobbyhall.fi|lily.fi|meillakotona.fi|terve.fi
 @@||google-analytics.com/analytics.js$script,domain=hobbyhall.fi
 @@||google-analytics.com/gtm/js$script,domain=hobbyhall.fi
 @@||googletagmanager.com/gtm.js$script,domain=cdon.fi|como.fi|episodi.fi|fum.fi|hobbyhall.fi|inferno.fi|rumba.fi|soundi.fi|tilt.fi|veho.fi
@@ -26682,6 +26699,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||muumuu-domain.com/common/js/ga_social_tracking.js
 @@||nakanohito.jp^*/bi.js$domain=kenko-tokina.co.jp
 @@||nihongo.alc.co.jp/theme/Japanese/img/home/nf/us.gif$image,~third-party
+@@||nittsu.com/Tracking/Scripts/Tracking/track.js
 @@||o-uccino.jp/api/v2/collector?$xmlhttprequest,domain=o-uccino.com
 @@||ovp.piksel.com/ipLookup.php$xmlhttprequest,domain=nhk.or.jp
 @@||query.petametrics.com^$image,xmlhttprequest,domain=comics.mecha.cc
