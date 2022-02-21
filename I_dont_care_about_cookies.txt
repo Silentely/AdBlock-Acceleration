@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 337.202202171444
+! Version: 337.202202211215
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 17 Feb 2022 13:44 UTC
+! Last modified: 21 Feb 2022 11:15 UTC
 !
 !
 ! GLOBAL RULES
@@ -794,7 +794,7 @@
 ##.cookie_ribon:not(body):not(html)
 ##.infoCookies:not(body):not(html)
 ###cookieInformacja
-~swedbank.se,~planeo.de,~dogedash.com,~teacheconomy.de,~sevdesk.de,~nintendo.com,~veygo.com,~puratos.pl,~bike-components.de,~bremerhaven.de,~onlinedepartment.nl,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~monese.com,~nuxeo.com,~opngo.com,~sachsenallee.de,~melcloud.com,~reidl.de,~intersport.de##.cookie-banner:not(body):not(html)
+~deineapotheke.at,~swedbank.se,~planeo.de,~dogedash.com,~teacheconomy.de,~sevdesk.de,~nintendo.com,~veygo.com,~puratos.pl,~bike-components.de,~bremerhaven.de,~onlinedepartment.nl,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~monese.com,~nuxeo.com,~opngo.com,~sachsenallee.de,~melcloud.com,~reidl.de,~intersport.de##.cookie-banner:not(body):not(html)
 ~rku-it.de###cookienotice
 ###overlay-cookielaw-form
 ##.cookie-info-wrapper:not(body):not(html)
@@ -7540,7 +7540,7 @@
 ##.dsgvo-banner:not(body):not(html)
 ##.consent-wrapper.consent-wrapper-active
 ##.banner.dsgvo:not(body):not(html)
-##amp-consent
+~smartdroid.de##amp-consent
 ##.basic_features-cookiemessage
 ##.divCookiesWarning:not(body):not(html)
 ###cookiefrage
@@ -9777,7 +9777,7 @@
 ###yadaCookieBanner
 ##.accept-cookies-parent
 ##.pcnWrapper[id*="CookiesNoticePanel"]
-###wp-gdpr-cookie-notice-wrap
+~smartdroid.de###wp-gdpr-cookie-notice-wrap
 ##.page-wrapper > .dataprotection.page-outer
 ###cookie-banner-wrapper
 ##.eg-cc-window[aria-label="cookieconsent"]
@@ -13359,6 +13359,7 @@
 ##.eb-content-container .eb-cookie
 ###lb ~ c-wiz ~ div > c-wiz[data-p] > div[role="navigation"] + div[jsaction]
 ###lb ~ c-wiz ~ div > c-wiz[data-p] > div[role="navigation"] + div[jsaction] + div div[data-id^="Carousel"] > div[jsaction]
+###acceptCookieOverlay
 !
 ! CUSTOM RULES
 !
@@ -21871,6 +21872,8 @@ deutsche-bank.es##.modal-cookie
 northernpowergrid.com##header > .ch2-icon
 hoyoverse.com##.mihoyo-cookie-tips, .cookie-tip
 coupons.de###cmpwrapper
+norcamp.de###cookieCD
+banneke.com###cookie-block
 !
 ! SCRIPT BLOCKING
 !
@@ -22406,7 +22409,7 @@ analytics-consent-manager.azureedge.net
 /static/consent-dialog.
 /opbox-gdpr-consents/*
 /cmp/consent-manager.js
-||ampproject.org/v0/amp-consent$script
+||ampproject.org/v0/amp-consent$script,domain=~smartdroid.de
 ||consent.trustarc.com/v2/notice$script
 /resources/onetrust/js/consent.js
 /consent-manager/lazy-consent-manager
