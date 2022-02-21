@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202202210019
+! Version: 202202210408
 ! Title: EasyPrivacy
-! Last modified: 21 Feb 2022 00:19 UTC
+! Last modified: 21 Feb 2022 04:08 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -5847,6 +5847,7 @@ _mongo_stats/
 ||pdflive.org^
 ||permutive.app^
 ||pixrealm.com^
+||pjstat.com^
 ||progmxs.com^
 ||propeller-tracking.com^
 ||pubtm.com^
@@ -5889,6 +5890,7 @@ _mongo_stats/
 ||ugdturner.com^
 ||v1sts.me^
 ||videoplayerhub.com^
+||vkanalytics.net^
 ||wknd.ai^
 ||wmgroup.us^
 ||woodpeckerlog.com^
@@ -12211,6 +12213,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||log.seekda.com^
 ||logger.snackly.co^
 ||logging.carambo.la^
+||logging.je-apps.com^
 ||logging.prefixbox.com^
 ||loggingapi.spingo.com^
 ||loglady.skypicker.com^
@@ -25452,11 +25455,13 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||catalove.com/bimp/
 ||catalove.com/ntv/
 ||click.tv.repubblica.it^
+||clickserver.libero.it^
 ||compare.easyviaggio.com^
 ||data.segugio.it^
 ||deagostinipassion.it/collezioni/analytics.js
 ||emng.libero.it^
 ||execution-ci360.rai.it^
+||fanpage.it/svs.gif?
 ||fanpage.it/views/
 ||freeonline.org/sito_track?
 ||gazzetta.it^*/stats.php?
@@ -26339,6 +26344,11 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||zoominfo.com/c/amplitude-js$script,~third-party
 @@||zylom.com/images/site/zylom/scripts/google-analytics.js
 @@||zynga.com/current/iframe/track.php?$domain=apps.facebook.com
+! statcounter.com charts https://github.com/uBlockOrigin/uAssets/issues/11321
+@@||gs.statcounter.com/chart.php$script,third-party
+@@||statcounter.com/js//fusioncharts.charts.js
+@@||statcounter.com/js/fusioncharts.js
+@@||www.statcounter.com/images/$image,third-party
 ! ping exceptions
 @@||api.babbel.io/gamma/v1/$ping,domain=my.babbel.com
 ! https://github.com/easylist/easylist/issues/10565
