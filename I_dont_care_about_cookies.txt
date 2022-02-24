@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 337.202202231339
+! Version: 337.202202241157
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 23 Feb 2022 12:39 UTC
+! Last modified: 24 Feb 2022 10:57 UTC
 !
 !
 ! GLOBAL RULES
@@ -2184,7 +2184,7 @@
 ###alert-cookie-policy
 ###bloc_cookie_annonce
 ##.basic--draw-message-bar-cookie-notice
-~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it##.cc-banner:not(body):not(html)
+~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it,~dmsg.de##.cc-banner:not(body):not(html)
 ###ing-Cookie
 ###ing-Cookiebody .ing--active
 ##.banner__cookies:not(body):not(html)
@@ -5544,7 +5544,7 @@
 ##.framework_cookies:not(body):not(html)
 ##.js-cookie-overlay:not(body):not(html)
 ##.cookie-popin:not(body):not(html)
-~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it##.cc-window[aria-label*="consent"]
+~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it,~dmsg.de##.cc-window[aria-label*="consent"]
 ###cookie-nag
 ###mbientCookieNotice
 ###cookie-legal-info
@@ -9175,7 +9175,7 @@
 ###fit-cookieWallId
 ##.cookies_confirmation
 ##div[data-ui="cookie-notice"]
-~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it##.cc-window[aria-describedby*="consent"]
+~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it,~dmsg.de##.cc-window[aria-describedby*="consent"]
 ###pb_cookie_message
 ##.zm-cookies-notification
 ###block-gdprcookiesblock
@@ -13360,6 +13360,7 @@
 ###lb ~ c-wiz ~ div > c-wiz[data-p] > div[role="navigation"] + div[jsaction]
 ###lb ~ c-wiz ~ div > c-wiz[data-p] > div[role="navigation"] + div[jsaction] + div div[data-id^="Carousel"] > div[jsaction]
 ###acceptCookieOverlay
+##.cookie-consent-banner-opt-out
 !
 ! CUSTOM RULES
 !
@@ -19612,7 +19613,6 @@ happypancake.nl###__next > div > .bar
 gcorelabs.com##.confirmed_cookie
 alexmor.ru##.b-accept-cookie
 cetelem.es###modalCookies
-schnelle-online.info###container-banner
 rgu.ac.uk###cc-modal
 amareluna.com##.cookie-consent
 foxford.ru###cc_container
@@ -21876,6 +21876,10 @@ norcamp.de###cookieCD
 banneke.com###cookie-block
 kennisopenbaarbestuur.nl##.jqmConfirm, #cookieStatus
 bishopfox.com##body > div[x-data]
+carvago.com##div[data-test-id="CookieBar-content"]
+crew-united.com##.opt-action-bar
+energie-und-management.de###trackingConsent, #trackingConsentReminder
+schnelle-online.info##.cookiebanneraktiv .modal
 !
 ! SCRIPT BLOCKING
 !
@@ -22131,7 +22135,7 @@ eu_cookie_banner.js^
 /modules/idxcookies/*
 /javascript/cookieser.js
 /cookiesWidget/widget.js
-consent.cookiebot.com$domain=~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~login.nos.pt|~asambeauty.com|~cineplex.de|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~cajamar.es|~digitaltrends.com|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~stern.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de
+consent.cookiebot.com$domain=~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~login.nos.pt|~asambeauty.com|~cineplex.de|~berlingske.dk|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~cajamar.es|~digitaltrends.com|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~stern.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de
 /ccp-sites/components/structure/cookie-notification/*
 /cookies-info.js
 cookies.algo.at
@@ -22514,6 +22518,7 @@ pdcc.gdpr.es
 /gdpr-redirect.min.js
 /js/shared/gdpr.js
 /sdk-gdpr.min.js
+/js/gdpr-component
 /media/plg_system_eprivacy$domain=~reshade.me
 ||recepttar.hu/js/privacy.js$script
 cmp.dmgmediaprivacy.co.uk$domain=~metro.co.uk
@@ -22814,6 +22819,7 @@ ccm19.vucx.de
 ||e2d-cms.de/cman$script
 /usercentrics-sdk/*
 ||cc.dalten.cz/ccJs$script
+/ccm19os/*
 /consumer/cookie/client$domain=bt.com
 /frontend/ajax/cookies$domain=romstal.ro
 /rodo-agreement-$domain=gremimedia.pl|zw.com.pl
