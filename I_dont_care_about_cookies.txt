@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 337.202202241157
+! Version: 337.202202251050
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 24 Feb 2022 10:57 UTC
+! Last modified: 25 Feb 2022 09:50 UTC
 !
 !
 ! GLOBAL RULES
@@ -13361,10 +13361,14 @@
 ###lb ~ c-wiz ~ div > c-wiz[data-p] > div[role="navigation"] + div[jsaction] + div div[data-id^="Carousel"] > div[jsaction]
 ###acceptCookieOverlay
 ##.cookie-consent-banner-opt-out
+###site-cookiebar
+##.sticky-cookies-popup
+###js_cookie-consent__main
 !
 ! CUSTOM RULES
 !
 fb.com##div[class*="cookieBanner"]
+help.instagram.com##form[action^="/logout"] ~ div:not([id]):not([class]) + div:last-child
 linkedin.com###js-notification-wrapper[role="alert"], .global-alert.global-alert--yield, #global-alert-queue, #artdeco-global-alert-container, .alert, #alert
 twitter.com##.twtr-data-protection
 yahoo.com###gdpr[style*="padding"], #y-shade, #applet_p_50000174, .tdv2-applet-nagbar, .login-body + .login-footer
@@ -18660,7 +18664,6 @@ heycar.co.uk###app div[class*="ConsentManager"]
 larosiere.net###cookie
 megasvet.cz##.elementor-popup-modal
 pkobp.pl###pko-cookie-rodo, .js-ajax-overlay
-ichbindeinauto.de##.v-banner--sticky
 ass-team.net##.v-banner--sticky
 bardonecchiaski.com##.jconfirm
 nik.gov.pl##.informationBar
@@ -21880,6 +21883,13 @@ carvago.com##div[data-test-id="CookieBar-content"]
 crew-united.com##.opt-action-bar
 energie-und-management.de###trackingConsent, #trackingConsentReminder
 schnelle-online.info##.cookiebanneraktiv .modal
+beinsports.com.tr###__next > [class*="cookie"]
+vitalsource.com##.dismiss-cookie, div[aria-describedby*="CookieBanner"]
+petsathome.com##.onetrust
+e-podroznik.pl##.ep-cookies-info-wrapper
+duschmeister.de##.dm--cookie-consent-banner
+der-metronom.de##.cc-overlay
+ae.com##div[class*="snackbar-container"]
 !
 ! SCRIPT BLOCKING
 !
@@ -23019,7 +23029,7 @@ trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookieser.js$domain=aco.com.pl
 /vfConsentCookiesCs.js$domain=vodafone.cz
 consent-*$domain=nwb-jobboerse.de
-/almacmp$domain=ampparit.com|etuovi.com|vuokraovi.com|arvopaperi.fi
+/almacmp$domain=ampparit.com|etuovi.com|vuokraovi.com|arvopaperi.fi|nettikaravaani.com
 /cookie_flyout.js$domain=festo.com
 /klaro.js$domain=beckhoff.com
 /Manolo_CookieConsent/*$domain=manoloblahnik.com
