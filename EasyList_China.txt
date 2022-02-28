@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: uP+Bn8pXmChzx6E/SZTolA
-! Version: 202202280036
+! Checksum: Pol8EOsZERXUuiN2PaMG+Q
+! Version: 202202280406
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last modified: 28 Feb 2022 00:36 UTC
+! Last modified: 28 Feb 2022 04:06 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/easylist/easylistchina/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -9337,6 +9337,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||uoowu.com/a/m_couplet.
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
 szxx.com.cn###A1
@@ -15824,6 +15825,12 @@ gohome.com.hk#@#div[id^="div-gpt-ad"]
 ||wofjhs.com^
 !#7
 !#8
+!#91porny.com
+##.btn-outline-primary[href*=".com:"]
+###main:nth-child(4) > .jsv.jsv-g1.mb-0 > .container-fluid.mb-3.p-0
+###main:nth-child(4) > .jsv.jsv-g1.mb-0 + .container-fluid.mb-3.p-0
+###main:nth-child(4) > .container-fluid.mb-0.p-0
+###main:nth-child(4) > .container-fluid.mb-0.p-0 + .jsv-g1
 !#99re.com
 .gif|$domain=99a67.com|99re.com
 /99rejs/js/adv
