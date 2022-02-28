@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 337.202202251050
+! Version: 337.202202281223
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 25 Feb 2022 09:50 UTC
+! Last modified: 28 Feb 2022 11:23 UTC
 !
 !
 ! GLOBAL RULES
@@ -347,7 +347,7 @@
 ###ctn_cookies
 ##.ctn_cookies:not(body):not(html)
 ##.cookie-wrap:not(body):not(html)
-~case-score.de,~gov.lv,~riga.lv,~cexpr.es,~correosexpress.com,~correosexpress.pt,~travelchannel.co.uk,~puzzels.ad.nl,~puzzels.bndestem.nl,~puzzels.bd.nl,~puzzels.gelderlander.nl,~puzzels.destentor.nl,~puzzels.ed.nl,~puzzels.pzc.nl,~puzzels.tubantia.nl,~puzzels.trouw.nl,~puzzels.parool.nl##.cookie-wrapper:not(body):not(html)
+~case-score.de,~gov.lv,~riga.lv,~cexpr.es,~correosexpress.com,~correosexpress.pt,~travelchannel.co.uk##.cookie-wrapper:not(body):not(html)
 ###cookiewarningiframe
 ~leirovins.be###cookies-notice
 ###cookieNoteWrap
@@ -556,7 +556,7 @@
 ~birdpix.nl,~nederpix.nl###cookiesettings
 ###cookie_info
 ###cookie-information-wrapper
-~lauritz.com,~qxl.de,~qxl.dk,~qxl.fi,~qxl.se,~qxl.no,~reidl.de###cookie-container
+~lauritz.com,~qxl.de,~qxl.dk,~qxl.fi,~qxl.se,~qxl.no###cookie-container
 ~vias.be###cookies-banner
 ###ctl00_pnlCookie
 ##.cookie-popup__content
@@ -751,7 +751,7 @@
 ###ckieprompt
 ##.w-cookie-banner:not(body):not(html)
 ###gacookiemessage
-~swedbank.se,~mol.hu,~mifcom.de,~kupbilecik.pl,~kupbilecik.de,~kupbilecik.com,~metro.de,~metro.fr,~metro.at,~metro.hu,~metro.bg,~makro.nl,~wins.pl,~reidl.de,~puzzels.trouw.nl,~puzzels.parool.nl##.cookie-container:not(body):not(html)
+##.cookie-consent-parent
 ###euCookie
 ##.euCookie:not(body):not(html)
 ##.pf-cookie-directive:not(body):not(html)
@@ -794,7 +794,7 @@
 ##.cookie_ribon:not(body):not(html)
 ##.infoCookies:not(body):not(html)
 ###cookieInformacja
-~deineapotheke.at,~swedbank.se,~planeo.de,~dogedash.com,~teacheconomy.de,~sevdesk.de,~nintendo.com,~veygo.com,~puratos.pl,~bike-components.de,~bremerhaven.de,~onlinedepartment.nl,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~monese.com,~nuxeo.com,~opngo.com,~sachsenallee.de,~melcloud.com,~reidl.de,~intersport.de##.cookie-banner:not(body):not(html)
+~deineapotheke.at,~swedbank.se,~planeo.de,~dogedash.com,~teacheconomy.de,~sevdesk.de,~nintendo.com,~veygo.com,~puratos.pl,~bike-components.de,~bremerhaven.de,~onlinedepartment.nl,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~monese.com,~nuxeo.com,~opngo.com,~sachsenallee.de,~melcloud.com,~intersport.de##.cookie-banner:not(body):not(html)
 ~rku-it.de###cookienotice
 ###overlay-cookielaw-form
 ##.cookie-info-wrapper:not(body):not(html)
@@ -3479,7 +3479,7 @@
 ##.notificationBar[data-notification-cookiepolicy]
 ###bvin-cookie-box
 ###cookies-iprima
-##.sticky-cookie:not(body):not(html)
+~postimees.ee##.sticky-cookie:not(body):not(html)
 ##.info_cookies:not(body):not(html)
 ###cookiehinweisdiv
 ##.site-cookies:not(body):not(html)
@@ -4204,7 +4204,7 @@
 ##.eucookiebar:not(body):not(html)
 ###custom-cookie-accept
 ##.accept-cookies-wrapper
-##.cookie-notif:not(body):not(html)
+~postimees.ee##.cookie-notif:not(body):not(html)
 ###policy-cookie-notice
 ##.cookieHeaderWrapper:not(body):not(html)
 ##.weCookieBar:not(body):not(html)
@@ -10684,7 +10684,7 @@
 ##.cc_cookieAlert
 ###icn_cookie_notice
 ##.cookie-privacy-container
-~mifcom.de###js-cookienotice
+~mifcom.de,~mifcom.ch###js-cookienotice
 ###js-cookienotice-spacer
 ###sticky-cookie-warning
 ###cookii-message
@@ -13364,6 +13364,8 @@
 ###site-cookiebar
 ##.sticky-cookies-popup
 ###js_cookie-consent__main
+###desktopCookieMsg
+##.cookieboxStart
 !
 ! CUSTOM RULES
 !
@@ -19943,7 +19945,6 @@ kissnofrog.com##.nt-cc
 egumenita.ro##.cookies
 spandidos-publications.com##.footer > #navbar
 jobbsafari.se###__next > [class^="Ufti"]
-grdf.fr###cookie, .modal-backdrop
 plaster-miodu.pl###growls-br
 dialdirect.co.uk##.elementor-popup-modal
 affairenmarktplatz.com###overlay-content
@@ -21465,7 +21466,6 @@ thisinterestsme.com###ww-blackout
 pensionikeskus.ee###gdpr-confirm
 nasdaqbaltic.com###gdpr-confirm
 nintendo.com##.o_p-membership-cookie-law-message
-fromsmash.com##.cgu-cookie-overlay-shadow
 schraubenkasten.de###CookiePlus, .modal-backdrop
 destillatio.eu###CookiePlus, .modal-backdrop
 omg.de###CookiePlus, .modal-backdrop
@@ -21890,6 +21890,16 @@ e-podroznik.pl##.ep-cookies-info-wrapper
 duschmeister.de##.dm--cookie-consent-banner
 der-metronom.de##.cc-overlay
 ae.com##div[class*="snackbar-container"]
+wiking.de###nagme
+befunky.com##.toast--bottom-left
+nabytek-aldo.cz###cookiesModal
+kox-direct.de###wsModalAgreementPrivacy
+box.gr##box-cookies
+notion.so###__next > section:first-child
+flickr.com##.cookie-banner-reg
+weingut-meintzinger.de###agever
+fromsmash.com##.cgu-cookie-overlay-shadow, app-cookie
+grdf.fr###ckieBnr_banner
 !
 ! SCRIPT BLOCKING
 !
@@ -23066,6 +23076,7 @@ trustarc.com$domain=avantiwestcoast.co.uk
 /cookie_layer.js$domain=billiger-mietwagen.de
 /c22.js$domain=cd.cz
 /cmp.$domain=o2.cz
+/stylecc$domain=immozentral.com
 !
 ! FILTERLIST ONLY
 !
