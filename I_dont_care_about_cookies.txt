@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 338.202203071629
+! Version: 338.202203080934
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 07 Mar 2022 15:29 UTC
+! Last modified: 08 Mar 2022 08:34 UTC
 !
 !
 ! GLOBAL RULES
@@ -13385,6 +13385,10 @@
 ##.termsfeed-com---nb-interstitial-overlay
 ##.cookie-consent-darkener
 ##.ft-cookie-disclaimer
+##.commonPrivacy__bar
+##.cookie--consent--root
+##.redhat-cookie-banner
+##.js-eu-co0k1es
 !
 ! CUSTOM RULES
 !
@@ -18618,7 +18622,6 @@ raygun.com##.popup-overlay
 bity.com##.notification-bar
 11teamsports.com###TrackingTipp
 schneehoehen.de###cookie
-redhat.com##.redhat-cookie-banner
 herefordshire.gov.uk##.hc-cookies
 ecmguide.de##.consent, #consent
 foodgroot.com###POPUPS_ROOT
@@ -21939,6 +21942,10 @@ vg.no##.schibsted-data-controller
 youinvest.co.uk###cookie-modal
 focus-wtv.be###CCM_popup
 iol.co.za###root > footer ~ div
+armegoszto.hu##.v-snack--bottom
+rekonise.com##.consent-snackbar
+myoffice.ru###cookie
+opensource.google##snack-bar-container
 !
 ! SCRIPT BLOCKING
 !
@@ -22415,6 +22422,7 @@ cdn.cookiecode.nl
 ||cookies.praguebest.cz/dist$script
 /cookies-prompt/*
 /bootstrap-cookie-consent-settings.js
+/cookieModal/clientlib.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -22509,6 +22517,7 @@ consent-manager.confirmic.com
 /taunton-user-consent.js
 /fileadmin/templates/js/cconsent.js
 /wp-content/plugins/okf-euconsent
+||consent.daa.net/app.js$script
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -23048,7 +23057,7 @@ privacy-manager-v*$domain=df.eu
 /uc-version$domain=geberit.cz
 cookie-policy*$domain=ubuntu.com
 consent.js^$domain=zitatezumnachdenken.com
-cc.cdn.civiccomputing.com$domain=metoffice.gov.uk|churchofengland.org|yodel.co.uk|totalwar.com
+cc.cdn.civiccomputing.com$domain=metoffice.gov.uk|churchofengland.org|yodel.co.uk|totalwar.com|gfps.com
 /cnst.js$domain=tauschticket.de
 /cookies/*$domain=liberbank.es|stickypassword.com
 /iCookie/*$domain=h-supertools.com
@@ -23056,7 +23065,7 @@ cc.cdn.civiccomputing.com$domain=metoffice.gov.uk|churchofengland.org|yodel.co.u
 /he-consent/*$domain=dennree.de
 /uc_cookie$domain=gastro24.de|gastro-hero.de
 /Privacy$domain=bopla.de
-cmp.$domain=nouvelobs.com|huffingtonpost.fr|telerama.fr|courrierinternational.com|vodkaster.com|netzwelt.de|tek.no|finn.no
+cmp.$domain=nouvelobs.com|huffingtonpost.fr|telerama.fr|courrierinternational.com|vodkaster.com|tek.no|finn.no
 brsimg.com/gdpr$script,domain=boursorama.com
 trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookie-banner$domain=hauptbahnhofcity.wien
@@ -23121,6 +23130,7 @@ trustarc.com$domain=avantiwestcoast.co.uk
 /cmp.$domain=o2.cz
 /stylecc$domain=immozentral.com
 /cookieConsent$domain=loesdau.de
+consent*$domain=t-mobile.cz
 !
 ! FILTERLIST ONLY
 !
