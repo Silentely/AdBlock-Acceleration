@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 338.202203080934
+! Version: 338.202203090929
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 08 Mar 2022 08:34 UTC
+! Last modified: 09 Mar 2022 08:29 UTC
 !
 !
 ! GLOBAL RULES
@@ -13389,6 +13389,7 @@
 ##.cookie--consent--root
 ##.redhat-cookie-banner
 ##.js-eu-co0k1es
+##c-cookie-consent
 !
 ! CUSTOM RULES
 !
@@ -21330,7 +21331,6 @@ tulli.fi###root [aria-label="Cookie banner"]
 olhardigital.com.br###lgpd_optall
 terra.com.br##.navbar-disclaimer[data-button-url*="cookies"]
 terra.bio###root [aria-label="cookie consent banner"]
-myunidays.com##.toast
 bibliotheques-specialisees.paris.fr##div[role="alertdialog"]
 paris.fr##.paris-cookies-banner
 janto.es###Transparente, #widgetCookiesPpal
@@ -21946,6 +21946,13 @@ armegoszto.hu##.v-snack--bottom
 rekonise.com##.consent-snackbar
 myoffice.ru###cookie
 opensource.google##snack-bar-container
+okdo.com##.c-notification-bar__item[data-cookie-name*="gdpr"]
+flintshire.gov.uk##.fcc-cookie-consent
+myunidays.com##.toast
+vista.com##div[class*="footerNotificationWrapper"]
+alexia.fr###_cc_a, ._cc_op::before
+kingscross.co.uk##.argent_cookies
+careconord-pieces-occasion.fr###choc-banner-dialog
 !
 ! SCRIPT BLOCKING
 !
@@ -23131,6 +23138,7 @@ trustarc.com$domain=avantiwestcoast.co.uk
 /stylecc$domain=immozentral.com
 /cookieConsent$domain=loesdau.de
 consent*$domain=t-mobile.cz
+/jquery.cookiekit.js$domain=dgeg.gov.pt
 !
 ! FILTERLIST ONLY
 !
