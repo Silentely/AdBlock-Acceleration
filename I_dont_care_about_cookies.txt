@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 338.202203090929
+! Version: 338.202203101119
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 09 Mar 2022 08:29 UTC
+! Last modified: 10 Mar 2022 10:19 UTC
 !
 !
 ! GLOBAL RULES
@@ -251,7 +251,7 @@
 ###cookies_container
 ###cookiePromptWrapper
 ###szcookiewrp
-~cdu-fraktion.berlin.de,~johner-institut.de###cookie-disclaimer
+~cdu-fraktion.berlin.de###cookie-disclaimer:not(.modal)
 ##.cookieConfirmation:not(body):not(html)
 ###cookiepop
 ###Cookie-Append
@@ -13390,6 +13390,10 @@
 ##.redhat-cookie-banner
 ##.js-eu-co0k1es
 ##c-cookie-consent
+###cookiescript_wrapper
+##.wd-cookies-popup
+##.rhweb-overlay-cookie-change
+###cookie-layer[data-view="cookie-layer"]
 !
 ! CUSTOM RULES
 !
@@ -16161,7 +16165,6 @@ musica.com###priv
 monedo.pl##.NotificationBar
 dotacedestovka.cz##fnx-cc
 uncomo.com##.consent, .app_gdpr--2
-wallhere.com##.policy-info
 loot.io###app > main > div:first-child
 mvhs.de##.cookie-usgae
 nextbike.de##.nb-cookie
@@ -20103,7 +20106,6 @@ totallymoney.com##.tm-cookie-banner__spacer
 tickets.motorsport-total.com###app > div:last-child:not(:only-child)
 insomnia.gr###elInsomniaCookieBar
 consolewars.de##.cookies_dim
-blanco.com###cookie-layer
 fitnessraum.de##.cc-gdpr-modal, .modal-backdrop
 algolia.com##footer ~ .pos-fixed
 poessl4you.de###cookie
@@ -21603,7 +21605,6 @@ kontist.com###__next > .fixed[class*="bg"], #__next > .fixed[class*="bottom"]
 medpets.fr##.tw-fixed[ref="cookie-modal"]
 limaeasy.com##.rstbox.eb-custom.eb-bottom-left[data-options*="EngageBox"]
 kolejeslaskie.com###cookie-law
-sncf.com###cookie-law
 extrabux.com##.ccpabar
 timma.fi###alert-root
 winamp.com##.cookies
@@ -21756,7 +21757,6 @@ havahart.com###gdpr-announcement
 buscojobs.com.uy##div[class*="Cookies"]
 zesty.tech##.cc-window
 muenchen.de##.cookie
-myfitnesspal.com##.MuiSnackbar-root
 elcorteingles.es##.cookies-wrapper
 cuevana3.io###mdl-ads
 dovizborsa.com###tools > div[style*="bottom"]
@@ -21910,7 +21910,6 @@ box.gr##box-cookies
 notion.so###__next > section:first-child
 flickr.com##.cookie-banner-reg
 weingut-meintzinger.de###agever
-fromsmash.com##.cgu-cookie-overlay-shadow, app-cookie
 grdf.fr###ckieBnr_banner
 st1.com##.cookie-consent-modal, .backdrop
 st1.se##.cookie-consent-modal, .backdrop
@@ -21953,6 +21952,18 @@ vista.com##div[class*="footerNotificationWrapper"]
 alexia.fr###_cc_a, ._cc_op::before
 kingscross.co.uk##.argent_cookies
 careconord-pieces-occasion.fr###choc-banner-dialog
+payberry.ru##.noun-cookie-container
+hgk.hr##.cookie-options-container
+jeftinastruja.hr##.cookie
+wallhere.com##.policy-info
+bunq.com##.fs-cc-components
+myfitnesspal.com###__next > .MuiSnackbar-root, #app footer ~ div
+myfitnesspal.cn###__next > .MuiSnackbar-root, #app footer ~ div
+trade.bisonapp.com###root > div:first-child
+ter.sncf.com###__next > div:last-child
+fromsmash.com##.cgu-cookie-overlay-shadow, app-cookie
+eleventickets.com##.cookies-aceite-home-container
+eventail.be###__next > div > div[style*="transform"]
 !
 ! SCRIPT BLOCKING
 !
@@ -22083,7 +22094,7 @@ eurocookie.galilcloud.wixapps.net
 /js/components/cookiescomponent
 /cookiesinfo/cookieinfo.min.js
 /cookie-consent/cookie-consent.umd.js
-/cookiebanner.$domain=~huk24.de|~huk.de|~adtipp.de|~nectar.com|~neckermann.de|~exali.de|~check24.de
+/cookiebanner.$domain=~huk24.de|~huk.de|~adtipp.de|~nectar.com|~neckermann.de|~exali.de|~raiplaysound.it|~check24.de
 /common/cpol/cookiepolicy.php
 /cookie-widget/latest/cookiewidget.js
 ||static.talparadio.nl/js/cookiecheck.js$script
@@ -22247,7 +22258,7 @@ consent.cookiefirst.com$domain=~swietawdomu.pl|~deutschesapothekenportal.de
 /jquery.cookie-policy.js
 /cookie-alert.js
 up-cookiemon.wavecdn.net
-/cookieBanner.$domain=~adtipp.de|~nectar.com|~neckermann.de|~exali.de|~check24.de
+/cookieBanner.$domain=~adtipp.de|~nectar.com|~neckermann.de|~exali.de|~raiplaysound.it|~check24.de
 /politica-cookies/leyCookies.js
 /trwcookieconsent/*
 /dc_components/site/cookie-control/*
@@ -22430,6 +22441,8 @@ cdn.cookiecode.nl
 /cookies-prompt/*
 /bootstrap-cookie-consent-settings.js
 /cookieModal/clientlib.js
+/wp-content/plugins/gdpr-cookie-consent
+/rails_cookie_consent
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -22632,8 +22645,8 @@ privacy.claytonhomes.com
 ||demotywatory.pl/res/js/privacy_policy.js$script
 /eprivacy/js/eprivacy.js
 /sf-tagomo-privacy.js
-/shopsshort/privacy/*
 /s4s-privacy-module/*
+/shopsshort/privacy/*
 ||cmp.nextday.media/cmp$script,domain=~vi.nl|~omroepwest.nl
 cmp.dreamlab.pl
 /media/cmp/int_cmp_banner
@@ -23077,7 +23090,7 @@ brsimg.com/gdpr$script,domain=boursorama.com
 trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookie-banner$domain=hauptbahnhofcity.wien
 /cookiefly/*$domain=internet-rockstars.com
-/messagingNoTcfApi.js$domain=aftenposten.no|vg.no|svd.se|aftonbladet.se|bt.no|aftenbladet.no|e24.no
+/messagingNoTcfApi.js$domain=aftenposten.no|vg.no|svd.se|aftonbladet.se|bt.no|aftenbladet.no|e24.no|minmote.no
 /consent-layer/*$domain=bahn.de
 /checkcookies.js$domain=iracing.com
 /ice.js$domain=lifesycle.co.uk
@@ -23131,7 +23144,6 @@ js_privacy_cmp*$domain=e24.no
 /CookieWall/*$domain=eon.pl
 cookiebanner*$domain=unibo.it
 trustarc.com$domain=avantiwestcoast.co.uk
-/privacy/*$domain=ionos.de|ionos.fr
 /cookie_layer.js$domain=billiger-mietwagen.de
 /c22.js$domain=cd.cz
 /cmp.$domain=o2.cz
