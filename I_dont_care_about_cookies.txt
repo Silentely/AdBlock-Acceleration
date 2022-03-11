@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 338.202203101119
+! Version: 338.202203111015
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 10 Mar 2022 10:19 UTC
+! Last modified: 11 Mar 2022 09:15 UTC
 !
 !
 ! GLOBAL RULES
@@ -1043,7 +1043,7 @@
 ###cookies_aviso
 ###cookieConsentForm
 ###widget-vrtcookiebalk
-~wwz.ch##.cookie__container:not(body):not(html)
+~podimo.com,~wwz.ch##.cookie__container:not(body):not(html)
 ##.cookie_notification:not(body):not(html)
 ##.pnotify-cookies:not(body):not(html)
 ###cookies-disclaimer
@@ -5208,7 +5208,7 @@
 ###capa_acepta_cookies
 ###cookiedirectiveButtonContainer
 ##.cookies_noties:not(body):not(html)
-~svenskakyrkan.se##.c-cookies:not(body):not(html)
+~elcorteingles.es,~svenskakyrkan.se##.c-cookies:not(body):not(html)
 ##.cookie_warn:not(body):not(html)
 ###footmesscookie
 ##.bar-cookie:not(body):not(html)
@@ -7406,7 +7406,7 @@
 ##.gdprMessage:not(body):not(html)
 ##.cookies.is-visible:not(body):not(html)
 ##onl-cookie
-##div[class*="CookieBanner"]:not([class*="page"]):not(.app)
+~hansapark.de##div[class*="CookieBanner"]:not([class*="page"]):not(.app)
 ##.card-cookie-notice
 ###smart-cmp-host
 ###gdprsticky
@@ -10924,7 +10924,7 @@
 ##.cookie-statement-popup
 ###cookieDivCover
 ###privacy-alert
-##.main-footer ~ .cookie
+##.position-fixed[x-data*="CookiePopup"]
 ##.cc_overlay_lock
 ##.cookie-consent .alert-dismissible
 ##.js-alert-cookie
@@ -12607,7 +12607,7 @@
 ##.cookie-banner-window
 ###cookiePopup ~ #blackOverlay
 ###gdpr_cnt
-##.cmp-experiencefragment--cookies
+~elcorteingles.es##.cmp-experiencefragment--cookies
 ###gdpr-consent-box
 ###cookiesHint
 ###privacy-msg-container
@@ -20489,7 +20489,6 @@ paylax.de###app > div > div:first-child
 halsoresurs.se##.cookie-mess
 guard.io###gatsby-focus-wrapper > footer ~ div
 rtlmost.hu##.app__content ~ div > .not-empty
-pc-canada.com##.acceptance
 dnzb.nl##main ~ div
 tosdr.org##.toast.fixed-bottom
 powercord.dev###react-root > footer ~ div
@@ -21435,7 +21434,6 @@ certificat-covid.gov.ro##.bottom-banner
 aviva.fr##.ccb-sticky
 clipchamp.com##main + div ~ div
 lichtblick.de###uc_layer
-promobit.com.br###__next > div:last-child
 volimzmenu.cz##.cookies
 petlove.com.br##.card-bottom
 rockmods.net###cookies-iki
@@ -21964,6 +21962,19 @@ ter.sncf.com###__next > div:last-child
 fromsmash.com##.cgu-cookie-overlay-shadow, app-cookie
 eleventickets.com##.cookies-aceite-home-container
 eventail.be###__next > div > div[style*="transform"]
+uhpa.hr##.cookie-container
+promobit.com.br###__next > div:last-child
+sslmarket.de###cookiesModal
+open.pl##.cookie
+elcorteingles.pt##.cookies-wrapper
+elcorteingles.es##.cookies-wrapper
+femina.in##.blocked
+hackensackmeridianhealth.org##.privacy-warning
+eledo.online###CookiesConsentDialog
+odrabiamy.pl##.Toastify ~ [class*="Rodo"]
+wakfu.com##.ak-modal-wrapper, .ui-widget-overlay
+girlfriend.com##main ~ .grid
+domni.pl##aside[data-cookie-remind]
 !
 ! SCRIPT BLOCKING
 !
@@ -22827,6 +22838,8 @@ global.ketchcdn.com
 /fearlessfaucet.com
 ||unpkg.com/orejime$script
 /superficialeyes.com
+||cassiecloud.com/loader.js$script
+/childlikeform.com
 ||pcz.pl/static/js/moo-cooker.js$script
 /eucd/eucd.min.js
 ||cinabre.sudoc.abes.fr/psi_gui/js/bandeau.js$script
@@ -23151,6 +23164,8 @@ trustarc.com$domain=avantiwestcoast.co.uk
 /cookieConsent$domain=loesdau.de
 consent*$domain=t-mobile.cz
 /jquery.cookiekit.js$domain=dgeg.gov.pt
+/tc_privacy/*$domain=matmut.fr
+/cookie_modal/*$domain=shirtee.com
 !
 ! FILTERLIST ONLY
 !
