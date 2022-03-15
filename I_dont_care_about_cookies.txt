@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 338.202203141115
+! Version: 338.202203151119
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 14 Mar 2022 10:15 UTC
+! Last modified: 15 Mar 2022 10:19 UTC
 !
 !
 ! GLOBAL RULES
@@ -85,7 +85,7 @@
 ~fotopuzzle.de,~monpuzzlephoto.fr,~newpharma.be,~markets.com,~bmihealthcare.co.uk,~puzzleyou.be,~fotondo.cz##.cookie-policy:not(body):not(html)
 ###cookieMsg
 ~dogedash.com,~kramp.com##.cookie-message:not(body):not(html):not(.modal-body)
-~schulze-immobilien.de,~harry-gerlach.de,~veygo.com,~hotelsbarriere.com,~ufz.de,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~icould.com,~evaair.com,~formula1.com###cookie-banner
+~schulze-immobilien.de,~harry-gerlach.de,~veygo.com,~hotelsbarriere.com,~ufz.de,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~icould.com,~evaair.com,~formula1.com###cookie-banner:not(a)
 ##.block-cookies-popup:not(body):not(html)
 ###cookieStatement
 ###cookieStatementWrapper
@@ -13399,6 +13399,7 @@
 ##.show-cookie[data-notice-only-cookie-banner]
 ###privacy-data-notice
 ###app div[class*="GDPRConsent-root"]
+##.site_block_wrap_cookie
 !
 ! CUSTOM RULES
 !
@@ -21218,7 +21219,6 @@ lotuscars.com###consent-modal
 edclub.com##.__CC_popup
 vastervik.se##.cookies
 webflow.com###consent-container
-amplerbikes.com##.ab-cookies-banner
 motorola.com.br###motorola-cookies
 mav.hu##app-cookie
 yokanavi.com##.agreement
@@ -21311,7 +21311,6 @@ elblandkliniken.de###Datenschutz
 ryobitools.eu##div[class*="OneTrustOverlay"]
 bagaggio.com.br##.lgpd
 lineheart.lu###policy_banner, .policy-banner-overlay
-creality3dofficial.com##.pub-tip
 zig-star.com##.md-consent
 aoc.com##.cookies
 isawitfirst.com##.main-cpu[data-pu*="cookies"]
@@ -21982,6 +21981,11 @@ mnb.hu##.cb01-cookie-bar
 advancedinstaller.com###cookies
 mysteriumvpn.com##.alert-popup
 vsgamers.es###vs-cookies-policy
+lequipe.fr##.Alerts__item--nonBlockingAlert
+creality3dofficial.com##.pub-tip
+creality3dofficial.eu##.pub-tip
+xn--90aivcdt6dxbc.xn--p1ai##.l-modal-cookie
+pribram.cz##.cookies
 !
 ! SCRIPT BLOCKING
 !
@@ -22462,6 +22466,7 @@ cdn.cookiecode.nl
 /wp-content/plugins/gdpr-cookie-consent
 /rails_cookie_consent
 /rgpd/js/cookies.js
+/cookieBannerLoader.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -22557,6 +22562,7 @@ consent-manager.confirmic.com
 /fileadmin/templates/js/cconsent.js
 /wp-content/plugins/okf-euconsent
 ||consent.daa.net/app.js$script
+/gdpr-consent-banner/*
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
