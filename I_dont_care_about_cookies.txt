@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 338.202203151119
+! Version: 338.202203161420
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 15 Mar 2022 10:19 UTC
+! Last modified: 16 Mar 2022 13:20 UTC
 !
 !
 ! GLOBAL RULES
@@ -958,7 +958,7 @@
 ###cookies-use
 ###cookies-use-page-padding
 ###theCookie
-###cookiesPolicy
+~bintercanarias.com###cookiesPolicy
 ###PanelCookieOverlay
 ##.e-cookie-message:not(body):not(html)
 ##.container_cookies:not(body):not(html)
@@ -1359,7 +1359,7 @@
 ##.approve-cookies-header
 ###cookiesinfo
 ###cookie-info-container
-##.ui-widget[aria-labelledby*="cookie"]
+~bintercanarias.com##.ui-widget[aria-labelledby*="cookie"]
 ##.ui-widget[aria-labelledby*="cookie"] + .ui-widget-overlay
 ###ngo_box_cookie_alerte_message
 ###cookiecompliance
@@ -1549,7 +1549,7 @@
 ###CookieLaw
 ##.sanoma-optin-bar:not(body):not(html)
 ###cookiePrivacy_header
-##.cookie-statement:not(body):not(html)
+##.cookie-warning-snippet
 ###privacy-police
 ###ccm-banner-wrap
 ###o99_cookie-information
@@ -13400,6 +13400,10 @@
 ###privacy-data-notice
 ###app div[class*="GDPRConsent-root"]
 ##.site_block_wrap_cookie
+###didomi-notice
+###didomi-custom-host
+##body:not(.didomi-popup-open) #didomi-host
+###cookies + #avisoConfig
 !
 ! CUSTOM RULES
 !
@@ -15838,7 +15842,6 @@ rynekzdrowia.pl##.rodo
 telering.at##.uc-fab.uc-fab-open
 dijaspora.online##.cookie-uslovi
 ecosia.org##.js-notifications-banner
-jobat.be##.contract-sticky
 jetbrains.com##.jba-agreement-panel
 kaspersky.pt##.notification-bar.bottom
 verkkokauppa.com##.vk-cookie-notification
@@ -20585,7 +20588,6 @@ digitalland.de###ccm
 getir.com###__next > [class*="Drawer"]
 teambank.de##cookie-layer, .cdk-overlay-container
 kupzidle.cz##body > .shadow
-independent.ie##body > a[onclick*="Didomi"]
 scaleway.com###gatsby-focus-wrapper > footer ~ div
 campbellsoup.co.uk##.cookies
 biathlonresults.com##popup-container
@@ -21986,6 +21988,13 @@ creality3dofficial.com##.pub-tip
 creality3dofficial.eu##.pub-tip
 xn--90aivcdt6dxbc.xn--p1ai##.l-modal-cookie
 pribram.cz##.cookies
+money.com.tr##.kvkk
+24sata.hr###didomi-host
+njuskalo.hr###didomi-host
+lesechos.fr###didomi-host
+lesoir.be###didomi-host
+huffingtonpost.es###acceptationCMPWall
+independent.ie###didomi-host, a[onclick*="Didomi.preferences"]
 !
 ! SCRIPT BLOCKING
 !
@@ -22652,7 +22661,6 @@ jssdk.privacy.pre.schibsted.com
 /privacyopt.js
 /privacypolicy/styles/all/template/remove_url.js
 ||psi.schibsted.com/api/v2/privacy/notification$script
-sdk.privacy-center.org$domain=~podcasts.leparisien.fr|~cnews.fr|~bfmtv.com|~lequipe.fr|~metronieuws.nl|~marianne.net|~allocine.fr|~standaard.be|~dziennikzachodni.pl|~dziennikwschodni.pl|~gloswielkopolski.pl|~naszemiasto.pl|~telegraaf.nl|~gamepro.de|~gamestar.de|~dumpert.nl|~funradio.fr|~rtl.fr|~mundodeportivo.com|~jofogas.hu|~rtl.be|~franceinter.fr|~fip.fr|~filmweb.pl|~franceculture.fr|~jeuxvideo.com|~melty.fr|~francetvinfo.fr|~seguro.elespanol.com|~gofeminin.de|~onmeda.de
 /wp-content/plugins/privacy-policy-info/*
 /e-privacy.min.js
 /privacyConsentBar.js
@@ -22758,7 +22766,6 @@ sharethis.mgr.consensu.org
 webads.mgr.consensu.org
 etarget.mgr.consensu.org
 optad360.mgr.consensu.org$domain=~infogliwice.pl|~zlubaczowa.pl
-marfeel.mgr.consensu.org
 shinystat.mgr.consensu.org
 dan.mgr.consensu.org
 ogury.mgr.consensu.org
@@ -23061,7 +23068,7 @@ spellsalsa.com$domain=interestingengineering.com
 /website-cookie-preferences$domain=nationaltrust.org.uk
 /cookie-bundle$domain=zoopla.co.uk
 /cookie-wall$domain=xebia.com
-/otBannerSdk.js$domain=dhl.com|gusto.at|mintos.com|thetrainline.com|elmundo.es|pons.com|coca-cola-deutschland.de|avast.com|avg.com|washingtonpost.com|mendeley.com|coca-cola.pl|coca-cola.co.uk|coca-cola.dk|technics.com
+/otBannerSdk.js$domain=dhl.com|gusto.at|mintos.com|thetrainline.com|pons.com|coca-cola-deutschland.de|avast.com|avg.com|washingtonpost.com|mendeley.com|coca-cola.pl|coca-cola.co.uk|coca-cola.dk|technics.com
 /cp01.js$domain=jzzo.com
 /klaro/*$domain=salesviewer.com
 /gdpr.bundle.js$domain=immobilienscout24.de|mediacourant.nl
@@ -23176,6 +23183,7 @@ trustarc.com$domain=avantiwestcoast.co.uk
 /c22.js$domain=cd.cz
 /cmp.$domain=o2.cz
 /stylecc$domain=immozentral.com
+sdk.privacy-center.org$domain=as.com
 /cookieConsent$domain=loesdau.de
 consent*$domain=t-mobile.cz
 /jquery.cookiekit.js$domain=dgeg.gov.pt
