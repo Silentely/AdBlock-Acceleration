@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 338.202203181021
+! Version: 338.202203211241
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 18 Mar 2022 09:21 UTC
+! Last modified: 21 Mar 2022 11:41 UTC
 !
 !
 ! GLOBAL RULES
@@ -12275,7 +12275,7 @@
 ##.cookies-dialog-box
 ##.gdpr-sticky_message
 ##.gdpr-cookie_message
-###cookie-consent-dialogBox
+~shop4tesla.com###cookie-consent-dialogBox
 ##.cookie_notice_blue
 ###GDPR_MainContainer
 ##.cookie-consent.invers
@@ -13408,6 +13408,13 @@
 ##.c-cookie-consent--default
 ##.cookie-consent-overlay ~ .modal__overlay
 ##.dynamic-cookies-banner__container
+##.ncoi---behind
+##.cookie-notify__wrapper
+##.cookie-consent-prompt
+##.c-consent__bar
+###js-cookie-settings-manager
+###ctw-implied-consent
+###explicit_cookie_consent
 !
 ! CUSTOM RULES
 !
@@ -15976,7 +15983,6 @@ vinchain.io##.bottom.stick
 iscte-iul.pt###cookies, #cookiesXs
 streetinsider.com###zeroIDModal
 marathi.tv##body > div:not([id]):not([class])
-marktguru.at##.bottom-alert
 orgosolo.nu.it###CookieDiv
 steadyhealth.com##body > div:not([id]):not([class])
 leclercdrive.fr##div[class*="BandeauCookies"]
@@ -16828,7 +16834,6 @@ arcolresistors.com###close-me
 extreme-d0wn.net###a-cn-wrapper
 worditout.com##body > #g
 thread.com##thread-cookie-notice
-marktguru.de##.bottom-alert
 mapsofworld.com###dialog
 saurclient.fr###cookies
 nowness.com##.ns-info-bar
@@ -19023,7 +19028,6 @@ apqs.com##.cookieable
 omnifurgone.it##.m1-footer-messages
 ercomer.pl###cookie
 mobilpakke.dk##.menuCookie
-rpcs3.net##.menu-con-cookies
 betvictor.com##.bvs-overlay
 extraessay.com##.cc_info
 stormkit.io##.modal-overlay.fixed
@@ -19493,7 +19497,6 @@ jus.com.br##.gdpr
 andreaminini.com##.privacy
 ambientedirect.com##.ConsentOverlay, .ModalBackground
 esanum.de##esn-cookie-disclaimer
-ti.com###tiGDPRecModal
 travelbags.nl##.snackbar-container
 vtb.ru###cookiemsgoffpls
 frontaliers-grandest.eu###cookies
@@ -19866,7 +19869,6 @@ systemkamera.one###privacyopt
 asv-grosskrotzenburg.de###mb_boxcookie_banner, .bbody
 truefire.com##.alert
 agirc-arrco.fr##.cdk-overlay-container
-uber.com##body > [data-baseweb="toaster"]
 xscode.com##xsc-cookies-consent
 oliverfischer.de##.fullContainer.bgNoRepeat.noBorder
 amix.pl###policy
@@ -20368,7 +20370,6 @@ dictionnaire-synonyme.com##.cookies
 alfredflechtheim.com##.SetNewMessageForUser
 postcodeloterij.nl###container ~ [class]
 dyclassroom.com###dy-cookieInfo-container
-jeffwhitemotors.co.uk###ctw-implied-consent
 tipser.co###tnw_cookieconsent
 severin.de##.veil
 mariecurie.org.uk##.cookie__menu__overlay
@@ -20410,9 +20411,6 @@ easylife.co.uk##.cookieControl
 photoshop-kopona.com##.message-alert
 hitachivantara.com##.hv_privacy_prompt, .cPLAcceptCookies
 rbc.ua###privasypolicy-info, .privacy
-garantie-direkt.de##.ncoi---behind
-wieland.com##.ncoi---behind
-k65-system.com##.ncoi---behind
 hotels-insolites.com###cookie
 spyflix.com###consentPopup
 altin.in###kvkk
@@ -20746,7 +20744,6 @@ allegro.eu##.idm-cookie-overlay, .idm-cookie-policy
 patisserie-cabosse.fr##.cabosseadsbottom
 grifols.com###cookie-intro-modal, .aui-overlay
 verve5.de###lux-cookie-dialog, #lux-cookie-show-modal-dialog, .backdrop, ._dialog_overlay
-al.to###app > div:first-child > div
 ybs.co.uk###fullpage-filter
 zentia.com##.enigmaint_cookie-notice
 textil-mode.de##.vtm-cookiebanner
@@ -20795,7 +20792,6 @@ beesafe.pl###root > div > div > div > .MuiGrid-root
 liquidweb.com##.lw-cookie-banner
 bitfineon.com###root ~ div > [class*="StyledLayer"]
 mein-saunashop.de##.v-overlay, .v-dialog__content
-tu-onlinedays.tu-darmstadt.de###root > div:first-child
 koupelny-sen.cz###cookie
 dish.co##.mod-cookie-consent
 poool.tech###app > .fade-in-enter-done
@@ -21498,9 +21494,6 @@ pornpics.com###cookie-contract
 ntcompatible.com##script[src*="consent"] + .alert
 eportugal.gov.pt###section-cookies
 pure.app###__next main ~ div
-boc24.de##.cookie-layer
-bkkgs.de##.cookie-layer
-bicycles.de##.cookie-layer
 rockstargames.com##main ~ footer ~ div
 livemaster.ru##.cookieconsent-ru
 basic-tutorials.de##body > div[style*="fixed"]
@@ -22012,6 +22005,27 @@ sfera.com###dis_cookie.cab_cookies
 shopee.fr##.shopee-progress-bar ~ div + div[class]:not([id])
 shopee.pl##.shopee-progress-bar ~ div + div[class]:not([id])
 shopee.es##.shopee-progress-bar ~ div + div[class]:not([id])
+smakmagasinet.no###coco
+penny-arcade.com###cookies
+socradar.io###modal-cookies, .modal-backdrop
+bkkgs.de##.cookie-layer
+mresell.at###popup_wrapper
+mresell.de###popup_wrapper
+mresell.es###popup_wrapper
+mresell.fi###popup_wrapper
+mresell.it###popup_wrapper
+mresell.nl###popup_wrapper
+mresell.se###popup_wrapper
+mresell.co.uk###popup_wrapper
+mresell.com.au###popup_wrapper
+tu-onlinedays.tu-darmstadt.de###root > div:first-child
+flane.de##.nagmsg
+caraudioshop.nl##.gmt_consent_popup
+ti.com###tiGDPRecModal
+uber.com##body > [data-baseweb="toaster"]
+cliveemson.co.uk###cookie-consent-form
+ranzijn.nl###app > .fixed
+pch.com###__tealiumDNS_banner
 !
 ! SCRIPT BLOCKING
 !
@@ -22493,6 +22507,9 @@ cdn.cookiecode.nl
 /rails_cookie_consent
 /rgpd/js/cookies.js
 /cookieBannerLoader.js
+||cookieform.pl/assets/js/plugin$script
+/assets/components/cookiemanager/*
+/ewcookienoteext.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -22589,6 +22606,7 @@ consent-manager.confirmic.com
 /wp-content/plugins/okf-euconsent
 ||consent.daa.net/app.js$script
 /gdpr-consent-banner/*
+/consent-management-app/*
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -22734,6 +22752,7 @@ cmp.pafo.fairbung.com
 ||sibbo.net/v2/sibbo-cmp$script
 ||24net.cz/resources/js/cmp.js$script
 /quorn-cmp.min.js
+||cmps.o2.cz/delivery$script
 ||gofundme.com/js/3.0/visitorCookie.js$script
 /CookiesDirective
 CookieAccept/affirmation.js
@@ -23210,6 +23229,7 @@ consent*$domain=t-mobile.cz
 /cf-analytics/*$domain=chatfuel.com
 cc.labu24.de$domain=labu24.de
 cookies.ptj.de$domain=ptj.de
+consent.autopflege24.net$domain=autopflege24.net
 !
 ! FILTERLIST ONLY
 !
