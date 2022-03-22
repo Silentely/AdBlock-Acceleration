@@ -15,7 +15,7 @@
 
 International/China accelerated ad filtering rules subscription（[中文说明](https://github.com/Silentely/AdBlock-Acceleration/blob/main/README_CN.md)）
 
-# 公告 
+# Announcement
                                                                                                                 
 **On March 22, 2022, the accelerated address ③ has been replaced with a new domain name, please update the address in time**    
 <br/>
