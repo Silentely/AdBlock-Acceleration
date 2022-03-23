@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 338.202203211241
+! Version: 339.202203231409
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 21 Mar 2022 11:41 UTC
+! Last modified: 23 Mar 2022 13:09 UTC
 !
 !
 ! GLOBAL RULES
@@ -93,7 +93,7 @@
 ##.cookieWarningBox:not(body):not(html)
 ##.cookies_consent-show:not(#wrapper)
 ###termsContainer
-###acceptcookies:not(button)
+###acceptcookies:not(button):not(a)
 ###acceptcookie
 ~onwebchange.com,~timeout.com,~timeout.fr,~timeout.cat##.cookie_banner:not(body):not(html)
 ###cookiePolicyNotification
@@ -133,7 +133,7 @@
 ~hl.co.uk##.cookieBanner:not(body):not(html):not(#sprd-main)
 ~wgv.de###cookie_bg
 ###cookie_header
-~regioneo.pl,~czyodebrac.pl###cookie-law-info-bar
+~regioneo.pl,~czyodebrac.pl,~moodle.com###cookie-law-info-bar
 ###cookie-div
 ##.cookieLight:not(body):not(html)
 ###cookiePopUp
@@ -12027,7 +12027,7 @@
 ##.mf-cookie-banner
 ###cookie-dim
 ##.usercookiemanagement
-~regioneo.pl,~czyodebrac.pl###cliSettingsPopup
+~regioneo.pl,~czyodebrac.pl,~moodle.com###cliSettingsPopup
 ###flash-container ~ div div[data-testid="main-cookies-banner-container"]
 ###prompt-cookies
 ###gdpr_message
@@ -13400,9 +13400,9 @@
 ###privacy-data-notice
 ###app div[class*="GDPRConsent-root"]
 ##.site_block_wrap_cookie
-###didomi-notice
+~abc.es,~eldiariomontanes.es###didomi-notice
 ###didomi-custom-host
-##body:not(.didomi-popup-open) #didomi-host
+~abc.es,~eldiariomontanes.es##body:not(.didomi-popup-open) #didomi-host
 ###cookies + #avisoConfig
 ##.siteCookies--bottom
 ##.c-cookie-consent--default
@@ -13415,6 +13415,10 @@
 ###js-cookie-settings-manager
 ###ctw-implied-consent
 ###explicit_cookie_consent
+##avis-cookies
+##.js-cookies-popup
+##.barra-aviso-privacidad
+###main-app div[data-component*="CookieBanner"]
 !
 ! CUSTOM RULES
 !
@@ -15867,7 +15871,6 @@ esug.dk###COOKIE
 strava.com###stravaCookieBanner
 userstyles.org##.NotificationLine
 grammarly.com##div[class*="gdpr_notification"]
-eltiempo.es###privacy_bar, .curtain_lightbox
 xvideos.com###x-messages, #x-messages-btn, #x-x-messages-btn
 techniconnexion.com###fb-root ~ div
 memrise.com###legal-modals, .modal-backdrop
@@ -19486,7 +19489,6 @@ testo.com###colorbox, #cboxOverlay
 latendresseencuisine.com##.mdc-snackbar
 fashionunited.de##.mdc-snackbar
 cnam-bretagne.fr##.ojc_consent
-expressen.se##.site-wrapper > .pa-dialog
 vectorizer.io##.alert, #alert
 biker-boarder.de##.settings-parent
 aromatico.de##.js--overlay
@@ -20807,7 +20809,6 @@ tcf.org##.modal
 ravenind.com##.hello-bar
 litebringer.com###cookie-app
 museum.nl##.overlay
-aloys.news###jbcookies
 hostgreen.com###obal
 elkar.eus###cookie_oharra
 sigma-photo.fr##.choc-banner
@@ -22026,6 +22027,8 @@ uber.com##body > [data-baseweb="toaster"]
 cliveemson.co.uk###cookie-consent-form
 ranzijn.nl###app > .fixed
 pch.com###__tealiumDNS_banner
+picarto.tv##div[class*="CookieCompliance"]
+aloys.news##.jb-cookie
 !
 ! SCRIPT BLOCKING
 !
@@ -22984,6 +22987,7 @@ ccm19.vucx.de
 ||cc.dalten.cz/ccJs$script
 /ccm19os/*
 ||transcend.io/cm/$script
+/avisopcdidomi
 /consumer/cookie/client$domain=bt.com
 /frontend/ajax/cookies$domain=romstal.ro
 /rodo-agreement-$domain=gremimedia.pl|zw.com.pl
@@ -23219,7 +23223,7 @@ trustarc.com$domain=avantiwestcoast.co.uk
 /c22.js$domain=cd.cz
 /cmp.$domain=o2.cz
 /stylecc$domain=immozentral.com
-sdk.privacy-center.org$domain=as.com
+privacy-center.org$domain=as.com|elconfidencial.com|lavozdegalicia.es|publico.es
 /cookieConsent$domain=loesdau.de
 consent*$domain=t-mobile.cz
 /jquery.cookiekit.js$domain=dgeg.gov.pt
