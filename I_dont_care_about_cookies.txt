@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 339.202203231409
+! Version: 339.202203241017
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 23 Mar 2022 13:09 UTC
+! Last modified: 24 Mar 2022 09:17 UTC
 !
 !
 ! GLOBAL RULES
@@ -13419,6 +13419,7 @@
 ##.js-cookies-popup
 ##.barra-aviso-privacidad
 ###main-app div[data-component*="CookieBanner"]
+##.commonPrivacy[data-binargon="commonPrivacy"]
 !
 ! CUSTOM RULES
 !
@@ -13577,7 +13578,6 @@ kingston.com###policy_message
 zeroturnaround.com##.hud
 pewnykantor.pl###cu_bar
 hth.dk##.nb-message
-alltricks.fr##.alltricks-CnilRibbon
 hi-tec.com.pl###cookies
 unisys.com###AlertWrapper
 thelawpages.com###terms
@@ -14692,7 +14692,6 @@ italradio.org##.privacyStatement
 misterfox.co##body > div:not([id]):not([class])
 fijlkam.it###privacy-wrapper
 dieantenne.it###camp
-alltricks.es##.alltricks-CnilRibbon
 sigmastudio.it###system-message, #system-messages, #system-message-container
 candycastle.nl##.cookiesC
 tokiomarine.com##.navigation-secondary-top
@@ -16177,7 +16176,6 @@ city-sightseeing.com##.footer-legal-textB
 domenovecentrum.cz###fixedBar
 rapidonline.com###cookieErrorMessageDiv + .column
 damianharriscycles.co.uk###info-message
-heureka.cz##.l-header-container__section
 investmap.pl##.cookie, .popup-back, .popup-rodo
 musica.com###priv
 monedo.pl##.NotificationBar
@@ -17559,7 +17557,6 @@ spanishunicorn.com##.pum[data-popmake*="cookies"]
 anydesk.com###any-cookieBar
 radiovlna.sk##.b-cookies
 filati.cc###cookie
-sudouest.fr###gsoi-cmp
 sakharov-center.ru###kuk
 dna.fi###dna-gdpr-info
 wedos.cz##.dialog-message
@@ -21497,7 +21494,6 @@ eportugal.gov.pt###section-cookies
 pure.app###__next main ~ div
 rockstargames.com##main ~ footer ~ div
 livemaster.ru##.cookieconsent-ru
-basic-tutorials.de##body > div[style*="fixed"]
 hotcoursesabroad.com###ckieOvrlayDiv
 markt-lichtenau.de###ck-overlay
 energijaplus.si###ck-overlay
@@ -22029,6 +22025,8 @@ ranzijn.nl###app > .fixed
 pch.com###__tealiumDNS_banner
 picarto.tv##div[class*="CookieCompliance"]
 aloys.news##.jb-cookie
+basic-tutorials.de##body > div:not([id]):not([class])
+goodie.pl###main-container > div > footer ~ div[class]
 !
 ! SCRIPT BLOCKING
 !
@@ -23156,7 +23154,7 @@ cc.cdn.civiccomputing.com$domain=metoffice.gov.uk|churchofengland.org|yodel.co.u
 /cnst.js$domain=tauschticket.de
 /cookies/*$domain=liberbank.es|stickypassword.com
 /iCookie/*$domain=h-supertools.com
-/consent$domain=hemnet.se
+/consent$domain=hemnet.se|natune.net
 /he-consent/*$domain=dennree.de
 /uc_cookie$domain=gastro24.de|gastro-hero.de
 /Privacy$domain=bopla.de
@@ -23223,7 +23221,7 @@ trustarc.com$domain=avantiwestcoast.co.uk
 /c22.js$domain=cd.cz
 /cmp.$domain=o2.cz
 /stylecc$domain=immozentral.com
-privacy-center.org$domain=as.com|elconfidencial.com|lavozdegalicia.es|publico.es
+privacy-center.org$domain=as.com|elconfidencial.com|lavozdegalicia.es|publico.es|diariodesevilla.es
 /cookieConsent$domain=loesdau.de
 consent*$domain=t-mobile.cz
 /jquery.cookiekit.js$domain=dgeg.gov.pt
