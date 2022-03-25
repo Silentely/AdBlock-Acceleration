@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: vER6snldDA0WynAbeeoloQ
-! Version: 202203241800
+! Checksum: /ltYz8XcU0lN0LiRoDUxSA
+! Version: 202203250000
 ! Title: Fanboy's Annoyance List
-! Last modified: 2022-03-24 18:00 UTC
+! Last modified: 2022-03-25 00:00 UTC
 ! Expires: 9 days (update frequency)
 ! Homepage: https://easylist.to/
 ! License: http://creativecommons.org/licenses/by/3.0/
@@ -20411,11 +20411,6 @@ _subscribers_newsletters/
 ###_DIV_COOK
 ###_EAPM.TC
 ###__CookieContainer
-###___gatsby div[class*="CookieBox"]
-###___gatsby div[class*="cookieBox"]
-###___gatsby div[class*="cookies-alert"]
-###___gatsby div[class*="cookies-module--cookieprompt"]
-###___gatsby ~ div[class*="consent-banner"]
 ###__agreementBar
 ###__cookie-consent-wrapper
 ###__cookieMessage
@@ -20431,16 +20426,6 @@ _subscribers_newsletters/
 ###__next div[aria-labelledby*="cookie-dialog"]
 ###__next div[class*="CookieConsent"]
 ###__next div[class*="CookieMesage"]
-###__next div[class*="CookieNotice"]
-###__next div[class*="CookiePolicy"]
-###__next div[class*="CookieWidget"]
-###__next div[class*="GdprBanner"]
-###__next div[class*="GdprParentWrapper"]
-###__next div[class*="PrivacyNotification"]
-###__next div[class*="PrivacyPolicy"]
-###__next div[class*="StyledCookieLayer"]
-###__next div[class*="cookie-message"]
-###__next div[class*="cookies-notice"]
 ###__next div[class*="privacy-notification"]
 ###__next div[data-selector="container@cookiebar"]
 ###__ntk_banner_cookie
@@ -34259,8 +34244,14 @@ _subscribers_newsletters/
 ##ytd-consent-bump-renderer
 ##ytd-mealbar-promo-renderer
 ##ytg-notification-footer
-! cookie-law-info-bar
+! cookie-law-info-bar (not made generic to avoid overlays/disabled scrollbars)
+! https://publicwww.com/websites/%22.cli-modal-backdrop%22/
 ###cookie-law-info-bar ~ .cli-modal-backdrop
+###cookie-law-info-bar[style*="border-box; display:"]
+###cookie-law-info-bar[style*="border-box; padding:"]
+###cookie-law-info-bar[style*="bottom:"]
+###cookie-law-info-bar[style*="top: 0px"]
+###cookie-law-info-bar[style*="top:0px"]
 ###footer > #cookie-law-info-bar
 ###footercontent > #cookie-law-info-bar
 ##.container > #cookie-law-info-bar
@@ -44706,7 +44697,7 @@ foolproof.com.sg##.notification-banner
 steadfast.com.sg##.notification-bar
 banjaran.com.sg##.overlay-mobile-styles-enabled
 ! cookie-law-info-bar
-afterbuy.de,divx.com,egotastic.com,endnote.com,ezfacility.com,financedigest.com,fon.com,fondometasalute.it,freeupscmaterials.org,geopostcodes.com,hasitleaked.com,iqformat.me,mathletics.com,maurizioblondet.it,medhub.com,mobalytics.gg,ngpvan.com,opensubtitles.website,osdownloader.org,peopleadmin.com,pivigames.blog,portal.ciee.org.br,revcontent.com,sansan.com,swoca.net,vendini.com,winaero.com,wpthemedetector.com###cookie-law-info-bar
+whatsup.es###cookie-law-info-bar
 ! elementor-popup-modal
 caldigit.com##.elementor-element-31e18001
 whatson.is##.elementor-location-popup
@@ -49207,7 +49198,7 @@ abruzzo24ore.tv,capoluogo.com,economia24ore.it,energiarinnovabile.org,fosse-biol
 arbitrobancariofinanziario.it##.abf-no-cookie::after
 meteoeradar.it##.active
 culturagiapponese.it##.activebar-container
-dirigentindustria.it,faperme.it,laislabonita.fm,saperesalute.it,tufauto.it,uabstyle.it##.alert
+comune.novara.it,dirigentindustria.it,faperme.it,laislabonita.fm,saperesalute.it,tufauto.it,uabstyle.it##.alert
 intimerie.com##.alert-info
 bakecaincontrii.com##.alert-secondary
 calcolostipendio.it##.bold_text
