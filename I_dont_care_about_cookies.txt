@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 339.202203241017
+! Version: 339.202203251102
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 24 Mar 2022 09:17 UTC
+! Last modified: 25 Mar 2022 10:02 UTC
 !
 !
 ! GLOBAL RULES
@@ -770,7 +770,7 @@
 ###cookieWrap
 ~saa.nl##.popup-cookie:not(body):not(html)
 ##.popup-cookies:not(body):not(html)
-~invk.nl##.cookieConsent:not(body):not(html)
+~autodily-pema.cz,~invk.nl##.cookieConsent:not(body):not(html)
 ###cookieAcceptBar
 ###inpl_cp_cnt
 ~becker-antriebe.shop###cookieNote:not(.in)
@@ -4460,7 +4460,7 @@
 ###optin-optin-header
 ###cookie_frame
 ##.site-needs-cookies:not(body):not(html)
-##.cookie-warning-bar:not(body):not(html)
+##.cookie-warning-bar
 ##.cookieAd:not(body):not(html)
 ##.cookieNote:not(body):not(html)
 ###cookieEuRuleBar
@@ -7921,7 +7921,7 @@
 ###d-cookiesWarningAdsLayout
 ##.component-cookiealert
 ##.cookie-notice-banner
-###root #page > div[data-qa="privacy-settings"]
+###root #page div[data-qa="privacy-settings"]
 ###consent-footer.consentFooter
 ##.m-cookiepopup:not(body):not(html)
 ###cookies_footer_info
@@ -11258,7 +11258,7 @@
 ##.evr-cookies[data-cookie]
 ###cookies.notice
 ###gcms_cookie_manager_popup_back
-##.cookie-settings__overlay ~ .overlay__background
+###main-app div[data-component*="CookieBanner"]
 ###Towa-Gdpr-Plugin
 ###cookie-manager-app
 ##.cookie-acc-panel
@@ -11598,7 +11598,7 @@
 ##.react-cookie-law-dialog
 ###cookie_souhlas
 ##.c-bar-cookie-content
-##.cookie-layer ~ .overlay__background
+##.barra-aviso-privacidad
 ##.js-cookie-modal ~ .modal-backdrop
 ###footer ~ #landing_page_popup
 ###cookie-wrapper-container
@@ -13400,9 +13400,9 @@
 ###privacy-data-notice
 ###app div[class*="GDPRConsent-root"]
 ##.site_block_wrap_cookie
-~abc.es,~eldiariomontanes.es###didomi-notice
+~abc.es,~diariosur.es,~eldiariomontanes.es###didomi-notice
 ###didomi-custom-host
-~abc.es,~eldiariomontanes.es##body:not(.didomi-popup-open) #didomi-host
+~abc.es,~diariosur.es,~eldiariomontanes.es##body:not(.didomi-popup-open) #didomi-host
 ###cookies + #avisoConfig
 ##.siteCookies--bottom
 ##.c-cookie-consent--default
@@ -13417,8 +13417,6 @@
 ###explicit_cookie_consent
 ##avis-cookies
 ##.js-cookies-popup
-##.barra-aviso-privacidad
-###main-app div[data-component*="CookieBanner"]
 ##.commonPrivacy[data-binargon="commonPrivacy"]
 !
 ! CUSTOM RULES
@@ -14479,7 +14477,6 @@ mycircle.tv###notif_ck
 filedesc.com###cwarn
 vrn.de###vrn-cookie
 mywebook.com##.cui-coks
-decathlon.hu###container-screen
 rendi.hu##body > div:not([id]):not([class])
 overcoming.co.uk###msg_top_bar
 somethingartistic.net###hellobar-slider
@@ -14924,7 +14921,6 @@ gonnesa.ca.it###fake-div
 motorsport.com##.ms-footer-fixbox, .ms-header-messages, #privacy_accept
 lifeisstrange.com##.comp-flash-notice
 zumba.com##.privacy-policy
-beaute-test.com###bt__cookie
 bgdnes.bg###cookie-b
 acquabella-construplas.com###ico_wrapper
 gorillaz.com###footer
@@ -15662,7 +15658,6 @@ mijnleninginzicht.nl##body > div:not([id]):not([class])
 befsztyk.pl###notice_bar
 herz-lungen-praxis-ebersberg.de##section[data-module="cookies"]
 pommiers.com##body > center > div
-decathlon.cz###container-screen
 danstonchat.com##.cls-cookie
 mrmen.com###mrmen-cookies
 meridionews.it##.leaderboard
@@ -17585,8 +17580,6 @@ motoscout24.ch##main ~ .global-banner
 alkam-security.pl###spop
 carbonite.com###notice
 cote.co.uk###root > div > .fixed
-decathlon.com.br##.cookie-policies
-decathlon.fr###app > .privacy, .rgpd_message, .rgpd_message + .rgpd_box
 opusteno.rs###conditions-l
 erleben-im-alltag.de##.alertbanner
 tus-almena.de##.alertbanner
@@ -20272,7 +20265,6 @@ finansavisen.no###finansavisen-gdpr-disclaimer
 kapital.no###finansavisen-gdpr-disclaimer
 vzajemna.si###cookie
 akubiz.biz###cookie
-gov.br###lgpd-cookie-banner-janela, #politicaPrivacidade
 csub.edu###consent-box
 heinrich-heine-schule.net###consent
 mocopinus.com##.disclaimer
@@ -22027,6 +22019,13 @@ picarto.tv##div[class*="CookieCompliance"]
 aloys.news##.jb-cookie
 basic-tutorials.de##body > div:not([id]):not([class])
 goodie.pl###main-container > div > footer ~ div[class]
+pravda.ru##.cookie-container
+pravda.com.ua###checkUPcookies
+decathlon.com.br##.cookie-policies
+sudoku-knacker.de##.v-bottom-sheet
+medicalseeds.cz##.cookieForward
+gov.br###lgpd-cookie-banner-janela, #politicaPrivacidade, .br-cookiebar
+easystempel.de###cookie-modern-overlay, #cookie-modern-info
 !
 ! SCRIPT BLOCKING
 !
@@ -22511,6 +22510,7 @@ cdn.cookiecode.nl
 ||cookieform.pl/assets/js/plugin$script
 /assets/components/cookiemanager/*
 /ewcookienoteext.js
+/clientlibs/components/content/cookie/cookielayer
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23232,6 +23232,7 @@ consent*$domain=t-mobile.cz
 cc.labu24.de$domain=labu24.de
 cookies.ptj.de$domain=ptj.de
 consent.autopflege24.net$domain=autopflege24.net
+cookie-banner*$domain=studio3t.com
 !
 ! FILTERLIST ONLY
 !
