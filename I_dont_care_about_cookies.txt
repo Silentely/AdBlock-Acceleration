@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 339.202203311009
+! Version: 339.202204031747
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 31 Mar 2022 08:09 UTC
+! Last modified: 03 Apr 2022 15:47 UTC
 !
 !
 ! GLOBAL RULES
@@ -13400,9 +13400,9 @@
 ###privacy-data-notice
 ###app div[class*="GDPRConsent-root"]
 ##.site_block_wrap_cookie
-~abc.es,~hoy.es,~diariosur.es,~eldiariomontanes.es###didomi-notice
+~abc.es,~hoy.es,~diariosur.es,~surinenglish.com,~eldiariomontanes.es###didomi-notice
 ###didomi-custom-host
-~abc.es,~hoy.es,~diariosur.es,~eldiariomontanes.es##body:not(.didomi-popup-open) #didomi-host
+~abc.es,~hoy.es,~diariosur.es,~surinenglish.com,~eldiariomontanes.es##body:not(.didomi-popup-open) #didomi-host
 ###cookies + #avisoConfig
 ##.siteCookies--bottom
 ##.c-cookie-consent--default
@@ -21284,7 +21284,6 @@ fancentro.com##.MuiContainer-root > div > header ~ div
 yoys.no###section-cookies
 cirklo.io##snack-bar-container
 shopfacil.com.br##.modal-lgpd__wrapper
-tiktok.com##.tiktok-sdk-cookie-banner
 bt.com###cookiePreference
 tweakers.net###koekjeBar
 airbnb.org##div[data-application="true"] div[data-theme] > div > div > div > section
@@ -21941,9 +21940,6 @@ elcorteingles.pt##.cookies-wrapper
 hipercor.es##.cookies-wrapper
 latiendaencasa.es##.cookies-wrapper
 sfera.com###dis_cookie.cab_cookies
-shopee.fr##.shopee-progress-bar ~ div + div[class]:not([id])
-shopee.pl##.shopee-progress-bar ~ div + div[class]:not([id])
-shopee.es##.shopee-progress-bar ~ div + div[class]:not([id])
 smakmagasinet.no###coco
 socradar.io###modal-cookies, .modal-backdrop
 bkkgs.de##.cookie-layer
@@ -22011,6 +22007,12 @@ ria.com###gdpr_settings ~ .c-notifier-container
 begadi.com##.cookie-footer
 gigalekaren.sk###dl_cookie
 fedex.com##fedex-cookie-consent, fdx-caas-cookie-consent, .fxg-alert__fdx_cookie_notice
+tiktok.com##tiktok-cookie-banner
+shopee.fr##.shopee-progress-bar ~ div:not([class]):not([id]) + div[class]:not([id])
+shopee.pl##.shopee-progress-bar ~ div:not([class]):not([id]) + div[class]:not([id])
+shopee.es##.shopee-progress-bar ~ div:not([class]):not([id]) + div[class]:not([id])
+nrk.no##.nrk-masthead__info-banner--cookie
+valasztas.hu##footer ~ .position-fixed
 !
 ! SCRIPT BLOCKING
 !
@@ -22496,6 +22498,7 @@ cdn.cookiecode.nl
 /assets/components/cookiemanager/*
 /ewcookienoteext.js
 /clientlibs/components/content/cookie/cookielayer
+/rm-cookieconsent.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
