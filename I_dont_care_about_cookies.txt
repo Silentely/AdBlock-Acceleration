@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 339.202204031747
+! Version: 339.202204040908
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 03 Apr 2022 15:47 UTC
+! Last modified: 04 Apr 2022 07:08 UTC
 !
 !
 ! GLOBAL RULES
@@ -322,7 +322,7 @@
 ###cPolicy
 ###huk_cookie_prefernce_panel
 ###privacypopup
-###cookiePolicyPopup
+~nationalgallery.co.uk###cookiePolicyPopup
 ~tiger.nl###cookieMessage
 ##.js-cookieComply:not(body):not(html)
 ###wsjconsent
@@ -15931,7 +15931,6 @@ letgo.cz###container > div
 luftlinie.org##.consent, #consent
 bandcamp.com##.tos-update
 revouninstaller.com###consentAccepted
-godt.no###psi
 frankfurt-airport.com##.fra_cookie_policy
 transilien.com##cnil
 onzemondial.com##body > div[id*="cookie"]
@@ -21917,7 +21916,6 @@ lesechos.fr###didomi-host
 lesoir.be###didomi-host
 huffingtonpost.es###acceptationCMPWall
 independent.ie###didomi-host, a[onclick*="Didomi.preferences"]
-chip.com.tr##efilli-layout-legacy
 i-de.es##.backdropCookies, .backdropCookies + div
 relago.hr##body > .container
 notion.so###__next > section[class*="partial"]
@@ -22013,6 +22011,11 @@ shopee.pl##.shopee-progress-bar ~ div:not([class]):not([id]) + div[class]:not([i
 shopee.es##.shopee-progress-bar ~ div:not([class]):not([id]) + div[class]:not([id])
 nrk.no##.nrk-masthead__info-banner--cookie
 valasztas.hu##footer ~ .position-fixed
+godt.no##.sch-datacontroller
+nelipyora.fi##.gw-cookie-consent
+bankenverband.de##.cookies-floating
+chip.com.tr##efilli-layout-legacy
+shiftdelete.net##efilli-layout-legacy
 !
 ! SCRIPT BLOCKING
 !
@@ -23222,6 +23225,7 @@ consent.autopflege24.net$domain=autopflege24.net
 cookie-banner*$domain=studio3t.com
 /cookies_2020$domain=pensionlisboa.com
 /ensighten/*$domain=britishairways.com|ba.com
+cmp.godt.no$domain=godt.no
 !
 ! FILTERLIST ONLY
 !
