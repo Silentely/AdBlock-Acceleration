@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 339.202204040908
+! Version: 339.202204060939
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 04 Apr 2022 07:08 UTC
+! Last modified: 06 Apr 2022 07:39 UTC
 !
 !
 ! GLOBAL RULES
@@ -13430,6 +13430,9 @@
 ##.tc-banner.tc-banner--active
 ##.modal_mask.cookies
 ###cookieseal-banner
+###___gatsby div[class*="cookie-message"]
+##.gdpr-sticky-footer
+##body > #cookieAdjust
 !
 ! CUSTOM RULES
 !
@@ -20162,7 +20165,6 @@ ruegenwalder.de##body > [id*="csdialog"]
 developpement-informatique.com##.gdpr-settings
 powercolor.com##.Privacy
 celticfc.com##.popup
-timeshop4you.co.uk###cookie
 schloss-arkaden.de###mdl-overlay
 codeblick.de##.cookie
 smelettronica.com##.notification-wrapper
@@ -21302,7 +21304,6 @@ aok-erleben.de##.csm[data-module="cookie-manager-dialog"]
 hyser.ua##.privacy-policy
 rsts.cz##.CookieBubble
 aqara.com###modal-agreement
-printer-care.de##.wwwschutz_cmp_showing
 pelando.com.br##main ~ div
 pirolam.pl##body > div[style*="100%"]
 devexpress.com###wsMsgWnd[msgid*="cookie-info"]
@@ -22016,6 +22017,20 @@ nelipyora.fi##.gw-cookie-consent
 bankenverband.de##.cookies-floating
 chip.com.tr##efilli-layout-legacy
 shiftdelete.net##efilli-layout-legacy
+websupport.se##.b-toaster
+websupport.sk##.b-toaster
+timeshop4you.co.uk###cookie
+uhren4you.de###cookie
+horlogerie4you.fr###cookie
+klockor4you.nu###cookie
+orologi4you.it###cookie
+relojes4you.es###cookie
+squash4you.pl###cookie
+printer-care.de##.wwwschutz_cmp_showing
+hifi4you.de###consent
+send.cz##.cookie-ok
+deutsches-sportabzeichen.de###cookieman-modal
+redhotpawn.com###cookieConsentElId
 !
 ! SCRIPT BLOCKING
 !
@@ -22708,6 +22723,7 @@ privacy.claytonhomes.com
 /sf-tagomo-privacy.js
 /s4s-privacy-module/*
 /shopsshort/privacy/*
+||heg-cp.com/upm/privacy-manager$script
 ||cmp.nextday.media/cmp$script,domain=~vi.nl|~omroepwest.nl
 cmp.dreamlab.pl
 /media/cmp/int_cmp_banner
@@ -22938,6 +22954,7 @@ wpjslib-chunk-notification.js^
 /js/orejime/js/orejime.js
 /ccm/public/app.js?apiKey
 ||ccm19.de/app.js$script
+/wwwschutz.min.js
 /iubenda_cs$domain=~radiomontecarlo.net|~video.repubblica.it|~video.lastampa.it|~nablawave.com|~buondi.it|~mediaset.it|~telerama.fr|~skuola.net
 /amp-user-notification-
 ||sn.sanoma.fi/js/sccm$script
@@ -22978,6 +22995,8 @@ ccm19.vucx.de
 ||transcend.io/cm/$script
 /avisopcdidomi
 /ccm19/public/app
+webcache.datareporter.eu
+webcache-eu.datareporter.eu
 /consumer/cookie/client$domain=bt.com
 /frontend/ajax/cookies$domain=romstal.ro
 /rodo-agreement-$domain=gremimedia.pl|zw.com.pl
@@ -23226,6 +23245,8 @@ cookie-banner*$domain=studio3t.com
 /cookies_2020$domain=pensionlisboa.com
 /ensighten/*$domain=britishairways.com|ba.com
 cmp.godt.no$domain=godt.no
+/klaro$domain=tarif4you.de
+ccm.carpassion.com$domain=carpassion.com
 !
 ! FILTERLIST ONLY
 !
