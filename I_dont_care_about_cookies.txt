@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 339.202204110956
+! Version: 339.202204130947
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 11 Apr 2022 07:56 UTC
+! Last modified: 13 Apr 2022 07:47 UTC
 !
 !
 ! GLOBAL RULES
@@ -7405,7 +7405,7 @@
 ###mtbn-privacy-banner
 ##.gdprMessage:not(body):not(html)
 ##.cookies.is-visible:not(body):not(html)
-##onl-cookie
+###ccc > #ccc-notify
 ~canalplus.com,~hansapark.de##div[class*="CookieBanner"]:not([class*="page"]):not(.app)
 ##.card-cookie-notice
 ###smart-cmp-host
@@ -8073,7 +8073,7 @@
 ##.GRU_BiscuitsAlert-layer
 ###gpdr-oberlay.overlay
 ##.pp-cookie-banner
-##.cookies.ng-star-inserted
+~zadovoljna.si##.cookies.ng-star-inserted
 ##.gdService-cookieNotice
 ##.cookie-notif-panel:not(body):not(html)
 ##goldengate-use-of-cookies
@@ -10888,7 +10888,7 @@
 ###CookieEU.bottomFixed
 ##.embeddedCookieConsentPopup
 ##.cki-wrap.cki-unaccepted
-##.cc-banner[aria-label="cookieconsent"] ~ .cc-overlay
+##.cc-banner[aria-label*="cookie"] ~ .cc-overlay
 ##.banner-gdpr
 ##.wrapper ~ div[id*="cookie_declaration"]
 ##.o-cookies-message
@@ -11010,7 +11010,7 @@
 ##.modal--cookie-agreement[data-modal-id="cookie-agreement"]
 ##.rgpd-block.alert
 ###gdpr_cookie_notice
-###ccc > .ccc-banner.ccc-banner--bottom
+###ccc > .ccc-banner
 ##body > #cookies_terms
 ##.MuiSnackbarContent-root[aria-describedby="cookie-notice"]
 ##.pm_cookie_consent
@@ -11846,7 +11846,7 @@
 ##.gdrp-wrap.gdrp-show
 ##.cookie-permission--backdrop
 ##.c-cnil-wrapper
-###__next div[class*="CookieConsent"]
+~get-in-it.de###__next div[class*="CookieConsent"]
 ###popup-cookie-policy-small
 ##.eightworks-cookie-consent-plus
 ##.eightworks-cookie-consent-plus-toggler
@@ -13443,6 +13443,7 @@
 !
 ! CUSTOM RULES
 !
+m.facebook.com##div[data-testid="cookie-policy-manage-dialog"], body > div[id] ~ script ~ div
 fb.com##div[class*="cookieBanner"]
 help.instagram.com##form[action^="/logout"] ~ div:not([id]):not([class]) + div:last-child
 linkedin.com###js-notification-wrapper[role="alert"], .global-alert.global-alert--yield, #global-alert-queue, #artdeco-global-alert-container, .alert, #alert
@@ -17242,7 +17243,6 @@ staatsbibliothek-berlin.de###tracking-info
 kotimikro.fi##.afubar-top
 treated.com###gdprTreated
 blog.bankinter.com###cookies
-beinsports.com##.app-container > div:not(.app-content)
 gizmodo.com###privacypolicy .privacy-box
 falriver.co.uk###gpdr, #GPDR, #gdpr, #GDPR
 immo24.direct##.uk-first-column > .uk-text-center ~ .uk-panel
@@ -19411,7 +19411,6 @@ barclaycard.co.uk##.app-wrapper > [data-wrap]
 dissept.com##.elementor-popup-modal
 katsbotanicals.com##.conv_type_bar
 voo.be##.pastry
-get-in-it.de###GetIn_CookieConsentBox
 uni-ulm.de##.in2-modal__blackbox
 zapisanisobie.pl###kremowka
 rdlfitness.com##.elementor-popup-modal
@@ -20246,7 +20245,6 @@ manus-zeitforum.de###cookie-shit
 everydaymarksman.co##.elementor-popup-modal
 editalo.pro##.elementor-popup-modal
 skagerak.dk##.popup-msg
-tattoodo.com###js-root > div > div > div > div[style*="min-height"] > div:first-child:not([id])
 gw2mists.com##.gm-cookie-consent
 grzejemy.pl###cookie
 dahag.de###dah-consent-manager-overlay
@@ -21792,7 +21790,6 @@ uk.barclays##.barclays-consent
 truecaller.com###app > .fixed[class*="bottom"]
 arbetsformedlingen.se##.af-cookie
 lecoqsportif.com##div[class*="cookiesPopup"]
-ladies-forum.de###ladiescookienotice
 sodresantoro.com.br##.ss-modal-cookies
 top-car-hire.com###cookies
 skylinewebcams.com###pref
@@ -22046,6 +22043,11 @@ zer.gr###emgcookie
 iservoetbalvanavond.nl###__next > div:first-child:not(:only-child)
 liberalerna.se###ccnt-app
 impress.co.jp###ipc_cookie_confirmation
+tattoodo.com###js-root > div > div:first-child:not([id])
+sedep.com.br###cookiesAceitar
+connect.beinsports.com##.app-container > div:not(.app-content)
+connect.bein.com##.app-container > div:not(.app-content)
+bobex.be###bbx_modal_cookie
 !
 ! SCRIPT BLOCKING
 !
@@ -22739,6 +22741,7 @@ privacy.claytonhomes.com
 /s4s-privacy-module/*
 /shopsshort/privacy/*
 ||heg-cp.com/upm/privacy-manager$script
+tag=ui/privacy/CookiesConsent
 ||cmp.nextday.media/cmp$script,domain=~vi.nl|~omroepwest.nl
 cmp.dreamlab.pl
 /media/cmp/int_cmp_banner
@@ -22970,6 +22973,7 @@ wpjslib-chunk-notification.js^
 /ccm/public/app.js?apiKey
 ||ccm19.de/app.js$script
 /wwwschutz.min.js
+/ccm19/app.js
 /iubenda_cs$domain=~radiomontecarlo.net|~video.repubblica.it|~video.lastampa.it|~nablawave.com|~buondi.it|~mediaset.it|~telerama.fr|~skuola.net
 /amp-user-notification-
 ||sn.sanoma.fi/js/sccm$script
@@ -23263,6 +23267,7 @@ cookie-banner*$domain=studio3t.com
 ccm.carpassion.com$domain=carpassion.com
 cmp.godt.no$domain=godt.no
 cmp.pent.no$domain=pent.no
+/cookie-policy/*$domain=hotmart.com
 !
 ! FILTERLIST ONLY
 !
