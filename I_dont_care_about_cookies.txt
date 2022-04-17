@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 339.202204130947
+! Version: 339.202204171234
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 13 Apr 2022 07:47 UTC
+! Last modified: 17 Apr 2022 10:34 UTC
 !
 !
 ! GLOBAL RULES
@@ -13440,6 +13440,7 @@
 ###cookie-background-disabled
 ##.CookiesPopup-middle
 ###cookie-consent-local
+###__next div[data-testid*="privacy-popup"]
 !
 ! CUSTOM RULES
 !
@@ -17625,7 +17626,6 @@ frosmo.com###frosmoPopup
 aquaphor.ru###modal-kuki
 tribunesandtriumphs.org###outer-consent
 heavenhr.com###fullDarkVeil, #compliAcceptCookies
-kk.no###__next > main:first-child > div:last-of-type[class^="css"]
 focus-arztsuche.de##.tracking-box
 scrabble-triche.fr##.cookie-wr
 packtpub.com###packt_gdpr_container
@@ -17732,13 +17732,6 @@ german-pavilion.com###privacy-flyout
 marsh.com###modalWindow.alt-opt-secure, .reveal-modal-bg-white
 astridlindgrensvarld.se##.bottom__footer__text-container ~ div
 luxmeble.eu###cookie
-dagbladet.no###__next > main:first-child > div:last-of-type[class^="css"], body[class*="Body"] #__next > div
-dinside.no###__next > main:first-child > div:last-of-type[class^="css"], body[class*="Body"] #__next > div
-elbil24.no###__next > main:first-child > div:last-of-type[class^="css"], body[class*="Body"] #__next > div
-seher.no###__next > main:first-child > div:last-of-type[class^="css"], body[class*="Body"] #__next > div
-sol.no###__next > main:first-child > div:last-of-type[class^="css"], body[class*="Body"] #__next > div
-start.no###__next > main:first-child > div:last-of-type[class^="css"], body[class*="Body"] #__next > div
-vi.no###__next > main:first-child > div:last-of-type[class^="css"], body[class*="Body"] #__next > div
 pietsmiet.de###main ~ .fixed
 pof.com###gatsby-focus-wrapper > div:not([id]) > div
 newstral.com##.cookie-consent
@@ -23192,7 +23185,7 @@ brsimg.com/gdpr$script,domain=boursorama.com
 trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookie-banner$domain=hauptbahnhofcity.wien
 /cookiefly/*$domain=internet-rockstars.com
-/messagingNoTcfApi.js$domain=aftenposten.no|vg.no|svd.se|aftonbladet.se|bt.no|aftenbladet.no|e24.no|minmote.no
+/messagingNoTcfApi.js$domain=aftenposten.no|vg.no|svd.se|bt.no|aftenbladet.no|e24.no|minmote.no
 /consent-layer/*$domain=bahn.de
 /checkcookies.js$domain=iracing.com
 /ice.js$domain=lifesycle.co.uk
