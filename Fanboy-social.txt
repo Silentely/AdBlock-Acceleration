@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: o7mpmCP+ERchzZF/K5Ra+g
-! Version: 202204181806
+! Checksum: m/GXfQvc0/fpskorWXipMQ
+! Version: 202204190046
 ! Title: Fanboy's Social Blocking List
-! Last modified: 18 Apr 2022 18:06 UTC
+! Last modified: 19 Apr 2022 00:46 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! License: http://creativecommons.org/licenses/by/3.0/
@@ -300,6 +300,7 @@
 /assets/tumblr_
 /assets/twitter-$image
 /assets/twitter_
+/async/share/*
 /ayoshare.js
 /badge_twitter.
 /banner-social.
@@ -6090,6 +6091,8 @@ _youtube_social_
 ##.app-share-trigger
 ##.app_btn_share
 ##.app_share_icons
+##.app_share_mod
+##.app_share_nl
 ##.append_social_share
 ##.apps-social
 ##.aps-social-icon-wrapper
@@ -7090,6 +7093,7 @@ _youtube_social_
 ##.color-stumbleupon
 ##.colorShareBtn
 ##.column-social
+##.com-footer-m-social-list
 ##.comedy_share
 ##.comedy_share_title
 ##.comment-share__buttons
@@ -8470,6 +8474,7 @@ _youtube_social_
 ##.footer__soc_fb
 ##.footer__soc_li
 ##.footer__social
+##.footer__social-block
 ##.footer__social-channels
 ##.footer__social-icon
 ##.footer__social-items
@@ -9669,6 +9674,7 @@ _youtube_social_
 ##.ione-widget-youtube_playlist
 ##.ioshare
 ##.ip-follow-us-popup
+##.ipsShareButton
 ##.ipsfocus_sFacebook
 ##.ipsfocus_sGoogle
 ##.ipsfocus_sTwitter
@@ -12189,6 +12195,7 @@ _youtube_social_
 ##.share_to_box
 ##.share_toggle
 ##.share_toi
+##.share_tool
 ##.share_tool_24
 ##.share_tool_container
 ##.share_toolbox
@@ -14822,6 +14829,7 @@ _youtube_social_
 ##.trb_sharelines
 ##.trb_socialize
 ##.trd-nav-social-container
+##.trending-bar__social-link
 ##.trending_head_share
 ##.trigger-share-list
 ##.triggerShare
@@ -16070,6 +16078,7 @@ _youtube_social_
 ##a[uk-toggle="target: #share-social"]
 ##amp-social-share
 ##button[aria-label="Toggle social share buttons"]
+##button[data-share-url]
 ##button[data-title="Share on Facebook"]
 ##button[data-title="Share"]
 ##button[onclick^="Javascript:void(window.open('http://twitter.com/share?text="]
@@ -16684,6 +16693,7 @@ hothardware.com###Follow
 artistdirect.com###FollowBut
 zylab.com###Footercolumn3
 nytimes.com###Growl_optly
+c-sharpcorner.com###IconContainer
 digitalfirstmedia.com###LiIcon
 schuh.co.uk###Like
 pcb.cc###LnkBr2
@@ -17403,6 +17413,7 @@ kbs.co.kr##.func_menu
 fundable.com##.fundable-social-box
 upi.com##.g
 dailyzone.com,newseveryday.com##.g-b
+gametyrant.com##.gametyrantSocial
 gamersbook.com##.gb-follow-tools
 thethaiger.com##.getMore
 ghacks.net##.ghacks_share_widget
@@ -18454,6 +18465,7 @@ rtl.fr##.ld
 tameteo.com##.liCompartir
 lachainemeteo.com##.lien_soc
 viedemerde.fr##.likebox
+clubic.com##.list-footer-rs
 terresinovia.fr##.lksociaux
 lesnumeriques.com##.ln__m-shr
 marmiton.org##.m_content_recette_share
@@ -18473,7 +18485,7 @@ quebeccoupongratuit.com##.share-site
 rtl.fr##.shared-logo
 fracademic.com##.smm
 lepoint.fr##.snlinks
-20minutes.fr,africa1.com,buyindz.com,courrierinternational.com,europages.fr,europe1.fr,formulatv.com,gamergen.com,gmx.fr,grostracteurspassion.com,jeu.video,journaldugeek.com,korben.info,ladepeche.fr,leboncoin.fr,ledevoir.com,lemondeinformatique.fr,leseclaireuses.com,lorientlejour.com,medisite.fr,methodelafayfemme.fr,misk.tn,monacomatin.mc,petitfute.com,radioorient.com,renaultsport.com,rustica.fr,sudouest.fr##.social
+20minutes.fr,africa1.com,boursier.com,buyindz.com,courrierinternational.com,europages.fr,europe1.fr,formulatv.com,gamergen.com,gmx.fr,grostracteurspassion.com,jeu.video,journaldugeek.com,korben.info,ladepeche.fr,leboncoin.fr,ledevoir.com,lemondeinformatique.fr,leseclaireuses.com,lorientlejour.com,medisite.fr,methodelafayfemme.fr,misk.tn,monacomatin.mc,petitfute.com,radioorient.com,renaultsport.com,rustica.fr,sudouest.fr##.social
 ouest-france.fr##.socials
 fr.msn.com##.stbp-tbl
 telerama.fr##.t12-user-resoc
@@ -18499,6 +18511,7 @@ tunisie-radio.com###block-block-20
 tunisiatv.tn,watania1.tn###block-block-5
 qnbalahli.com###follow
 alforatnews.com###socialnetwork
+elmogaz.com##.SocialNetworks
 mc-doualiya.com##.actions
 androydi.com##.author-tw
 dzair-tube.online##.dzicon-bar
@@ -18515,11 +18528,12 @@ wesalhaq.tv##.ins
 zarfilm.space##.instabtn
 alfalstiniah.tv##.itemAsideInfo
 khutabaa.com##.kh_social_info
+elconsolto.com##.newsFeed
 hannibaltv.com.tn##.rs_bas
 maannews.net##.sc
 aljazeera.net,autoline-arabic.com,maannews.net##.share
 waraa-elahdath.com##.smedia
-akhbaralsabah.com,al-ain.com,al-akhbar.com,algerietelecom.dz,alkessa.com,almirbad.com,aqsatv.ps,ceroms.com,dzair-tube.com,egyrep.com,europages.ma,fakartany.com,felesteen.ps,fxnewstoday.ae,hamas.ps,hannibaltv.com.tn,midad.com,nessma.tv,raseef22.com,rotana.net,sbc.sa,tunisna.tv##.social
+akhbaralsabah.com,al-ain.com,al-akhbar.com,algerietelecom.dz,alkessa.com,almirbad.com,aqsatv.ps,ceroms.com,dzair-tube.com,egyrep.com,elconsolto.com,europages.ma,fakartany.com,felesteen.ps,fxnewstoday.ae,hamas.ps,hannibaltv.com.tn,midad.com,nessma.tv,raseef22.com,rotana.net,sbc.sa,tunisna.tv##.social
 midad.com##.social-app
 alahlionline.com##.social-network
 rt.com##.socials
