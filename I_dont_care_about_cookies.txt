@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 339.202204171234
+! Version: 339.202204181154
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 17 Apr 2022 10:34 UTC
+! Last modified: 18 Apr 2022 09:54 UTC
 !
 !
 ! GLOBAL RULES
@@ -1019,7 +1019,7 @@
 ###CCompliance
 ###wrapperMensajeCookie
 ##.W034_Cookie_Directive
-~nice.fr##.panel-cookies:not(body):not(html)
+~nice.fr,~calvados.fr##.panel-cookies:not(body):not(html)
 ###cookieMelding
 ###eu-cookie-msg
 ###cookies_message
@@ -1617,7 +1617,7 @@
 ###mcCookiesLawMessage
 ###oH_cookie
 ###smcc_header_cookieaccept
-###cookie-policy-msg
+###cookie-policy-msg:not(.modal)
 ###cookie-confirm
 ##.cookie-confirm:not(body):not(html):not(button)
 ###CookieManagerDialogWrapper
@@ -13441,6 +13441,7 @@
 ##.CookiesPopup-middle
 ###cookie-consent-local
 ###__next div[data-testid*="privacy-popup"]
+##.cookies-management > .cookies-management-button
 !
 ! CUSTOM RULES
 !
@@ -21786,7 +21787,6 @@ lecoqsportif.com##div[class*="cookiesPopup"]
 sodresantoro.com.br##.ss-modal-cookies
 top-car-hire.com###cookies
 skylinewebcams.com###pref
-nice.fr##.cookies-management-button
 cofan.es##.block-cookies
 passeidireto.com##pd-cookie-banner
 mp.br###termo-uso, #modalConsentimento, .modal-backdrop, .lumis-service-privacyterm
