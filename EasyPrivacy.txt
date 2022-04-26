@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202204260047
+! Version: 202204260530
 ! Title: EasyPrivacy
-! Last modified: 26 Apr 2022 00:47 UTC
+! Last modified: 26 Apr 2022 05:30 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -775,7 +775,9 @@
 /api/log?
 /api/lt/ref?
 /api/metrics$other
+/api/pageactivity
 /api/pageview?
+/api/pagevisits
 /api/ping?$~xmlhttprequest
 /api/pixel?
 /api/stat?
@@ -12725,6 +12727,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||reporting.singlefeed.com^
 ||reports-api.sqreen.io^
 ||reports.pagesuite-professional.co.uk^
+||reports.sdiapi.com^
 ||res.rbl.ms^
 ||response.pure360.com^
 ||rest.wildstar-online.com^
@@ -14876,7 +14879,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||github.com/_private/browser/stats
 ||glassmoni.researchgate.net^
 ||global.canon/00cmn/js/*/analytics-
-||global.ssl.fastly.net^$script,domain=10play.com.au|allmodern.com|argos.co.uk|birchlane.com|courier-journal.com|courierpress.com|desertsun.com|detroitnews.com|eddiebauer.com|freep.com|glassesusa.com|greenbaypressgazette.com|indystar.com|jsonline.com|kurtgeiger.com|legacy.com|lenovo.com|lohud.com|lowes.com|naplesnews.com|news-journalonline.com|northjersey.com|perigold.com|quickship.com|quikshiptoner.com|radiotimes.com|sainsburys.co.uk|sanuk.com|sheboyganpress.com|tallahassee.com|theadvertiser.com|thisweek.com|ugg.com|usatoday.com|wayfair.co.uk|wayfair.com|wwe.com
+||global.ssl.fastly.net^$script,domain=10play.com.au|allmodern.com|argos.co.uk|basspro.com|birchlane.com|courier-journal.com|courierpress.com|desertsun.com|detroitnews.com|eddiebauer.com|freep.com|glassesusa.com|greenbaypressgazette.com|indystar.com|jsonline.com|kurtgeiger.com|legacy.com|lenovo.com|lohud.com|lowes.com|naplesnews.com|news-journalonline.com|northjersey.com|perigold.com|quickship.com|quikshiptoner.com|radiotimes.com|sainsburys.co.uk|sanuk.com|sheboyganpress.com|tallahassee.com|theadvertiser.com|thisweek.com|ugg.com|usatoday.com|wayfair.co.uk|wayfair.com|wwe.com
 ||globes.co.il/shared/s.ashx?
 ||gmonitor.aliimg.com^
 ||gnar.grammarly.com^
@@ -25886,6 +25889,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||collect.state.centrum24.pl^
 ||dot.wp.pl^$script
 ||entryhit.wp.pl^
+||eventstream.dodopizza.com^
 ||interia.pl^*/hit.
 ||iplsc.com/inpl.log/
 ||iwa.iplsc.com^
@@ -26506,6 +26510,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||screen9.com/players/*/amber-google-analytics.esm.js$script,domain=api.screen9.com
 @@||sealserver.trustwave.com/seal.js$domain=zoom.us
 @@||secure.logmein.com/scripts/Tracking/$script,domain=logme.in|logmein.com
+@@||securegames.iwin.com/data/gtm.json$~third-party,xmlhttprequest
 @@||sephora.com/js/ufe/isomorphic/thirdparty/fp.min.js$script,~third-party
 @@||serve-ts.amagi.tv^*/beacon?$xmlhttprequest,domain=watch.truecrimenetworktv.com
 @@||shoonya.finvasia.com/fingerprint2.min.js$script,~third-party
