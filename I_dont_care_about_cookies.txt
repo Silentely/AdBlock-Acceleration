@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 339.202204251224
+! Version: 339.202204261001
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 25 Apr 2022 10:24 UTC
+! Last modified: 26 Apr 2022 08:01 UTC
 !
 !
 ! GLOBAL RULES
@@ -13211,7 +13211,7 @@
 ##.cookie-bottom-main
 ###cookies-banner-overlay
 ##.data-policy-dialog
-##.Cookies_CookiesPopin_main
+##.Cookies_CookiesPopin
 ##.cookieConsentWrapper
 ~lcp.fr###cookiesjsr
 ###consent-banner-container
@@ -13442,6 +13442,9 @@
 ###cookie-consent-local
 ###__next div[data-testid*="privacy-popup"]
 ##.cookies-management > .cookies-management-button
+##.app-bannerCookies
+###cookiePopupWrapper
+##.cc-banner ~ .blurry-background
 !
 ! CUSTOM RULES
 !
@@ -13503,7 +13506,6 @@ rk.dk###lbmodal-overlay, #lbmodal
 krsystem.pl###cook, .cook
 shelldriversclub.co.uk###modal_container
 boards.ie###notify-container
-plus.google.com###gba.gb_Ec
 katowice-airport.com##body > div:not([id]):not([class])
 oferia.pl##body > div:not([id]):not([class])
 grafoteka.pl###info-container
@@ -14884,7 +14886,6 @@ shopforshop.it##body > span
 upendo.tv##.alert, #alert
 virginmoneygiving.com###blank-container
 mjam.net###__Mjam__CookieBanner
-maree.info###CGUCookie
 vercapas.com##.footerck
 168chasa.bg###cookie-b
 wienerborse.at###page-alert
@@ -18379,7 +18380,6 @@ paperlessmovement.com##.elementor-popup-modal
 profilculture.com##.cookie
 transferwise.com###twcc__mechanism
 persoonlijkegezondheidscheck.nl###cookie
-santatracker.google.com##santa-notice
 uktaxcalculators.co.uk##body > div:not([id]):not([class])
 pixiv.net###root > div:first-child > div:only-child
 corvusbelli.com##app-cookies-message, mdb-modal-backdrop
@@ -21026,8 +21026,6 @@ bullionvault.com##.navigation__cookies
 bullionvault.it##.navigation__cookies
 thenextcloset.com##div[data-react-class*="CookieConsentBanner"]
 plushbezlimitu.pl##.modal-overlay
-play.google.com###gb iframe[src*="ogs.google."][src*="widget/callout"]
-support.google.com###gb iframe[src*="ogs.google."][src*="widget/callout"]
 mein-apothekenmanager.de###cn-wrapper
 ntb.no##.footer__notification
 videosmile.ru###accept_q
@@ -21249,7 +21247,6 @@ glashuette-original.com###js_dataNnoticeBtns
 svt.se##.svt-cookie-message
 le-jackpot-des-medailles-safti.fr##div[c_data="c_cookie_main"]
 elblandkliniken.de###Datenschutz
-ryobitools.eu##div[class*="OneTrustOverlay"]
 bagaggio.com.br##.lgpd
 lineheart.lu###policy_banner, .policy-banner-overlay
 zig-star.com##.md-consent
@@ -22041,6 +22038,14 @@ connect.beinsports.com##.app-container > div:not(.app-content)
 connect.bein.com##.app-container > div:not(.app-content)
 bobex.be###bbx_modal_cookie
 gns3.com###oio-container > div + div + div ~ div:last-child
+haerke.de###seite > div[style*="absolute"]
+riserapp.com##.Cookie
+webmdhealthservices.com##.cookiePolicyModal
+dailymotion.com###consent-group
+workspace.google.com##main > div:last-child:not(only-child)
+business.google.com###CookieDialog
+santatracker.google.com##santa-notice
+play.google.com###gb iframe[src*="ogs.google."][src*="widget/callout"]
 !
 ! SCRIPT BLOCKING
 !
@@ -22527,6 +22532,7 @@ cdn.cookiecode.nl
 /ewcookienoteext.js
 /clientlibs/components/content/cookie/cookielayer
 /rm-cookieconsent.js
+/cookie-banner-vue
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -22624,6 +22630,7 @@ consent-manager.confirmic.com
 ||consent.daa.net/app.js$script
 /gdpr-consent-banner/*
 /consent-management-app/*
+||consent.hr/delivery/js/cmp$script
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -23242,7 +23249,7 @@ trustarc.com$domain=avantiwestcoast.co.uk
 /c22.js$domain=cd.cz
 /cmp.$domain=o2.cz
 /stylecc$domain=immozentral.com
-privacy-center.org$domain=as.com|elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|segre.com|mappy.com|radioplayer.fr|lavoixdunord.fr
+privacy-center.org$domain=as.com|elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|segre.com|mappy.com|radioplayer.fr|lavoixdunord.fr
 /cookieConsent$domain=loesdau.de
 consent*$domain=t-mobile.cz
 /jquery.cookiekit.js$domain=dgeg.gov.pt
@@ -23261,6 +23268,8 @@ ccm.carpassion.com$domain=carpassion.com
 cmp.godt.no$domain=godt.no
 cmp.pent.no$domain=pent.no
 /cookie-policy/*$domain=hotmart.com
+/consent-$domain=widforss.no
+/acmp.js$domain=ameblo.jp
 !
 ! FILTERLIST ONLY
 !
