@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 339.202204261001
+! Version: 339.202204271124
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 26 Apr 2022 08:01 UTC
+! Last modified: 27 Apr 2022 09:24 UTC
 !
 !
 ! GLOBAL RULES
@@ -859,7 +859,7 @@
 ##.cookie_optin_box:not(body):not(html)
 ###CookieContainer
 ###jumper_cookies
-~finom.co,~lmt.lv,~dish.co,~pagetiger.com,~bakken.nl##.cookie-info:not(body):not(html)
+~finom.co,~lmt.lv,~dish.co,~pagetiger.com,~bynco.com,~bakken.nl##.cookie-info:not(body):not(html)
 ###cookieCopy
 ###eu_cookie
 ###cookies_warning
@@ -2184,7 +2184,7 @@
 ###alert-cookie-policy
 ###bloc_cookie_annonce
 ##.basic--draw-message-bar-cookie-notice
-~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it,~dmsg.de,~tricount.com,~bgk.pl,~exagon.de,~sozialversicherung-kompetent.de##.cc-banner:not(body):not(html)
+~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it,~dmsg.de,~tricount.com,~bgk.pl,~exagon.de,~sozialversicherung-kompetent.de,~varcevanje-energije.si##.cc-banner:not(body):not(html)
 ###ing-Cookie
 ###ing-Cookiebody .ing--active
 ##.banner__cookies:not(body):not(html)
@@ -5544,7 +5544,7 @@
 ##.framework_cookies:not(body):not(html)
 ##.js-cookie-overlay:not(body):not(html)
 ##.cookie-popin:not(body):not(html)
-~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it,~dmsg.de,~tricount.com,~bgk.pl,~exagon.de,~sozialversicherung-kompetent.de##.cc-window[aria-label*="consent"]
+~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it,~dmsg.de,~tricount.com,~bgk.pl,~exagon.de,~sozialversicherung-kompetent.de,~varcevanje-energije.si##.cc-window[aria-label*="consent"]
 ###cookie-nag
 ###mbientCookieNotice
 ###cookie-legal-info
@@ -9175,7 +9175,7 @@
 ###fit-cookieWallId
 ##.cookies_confirmation
 ##div[data-ui="cookie-notice"]
-~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it,~dmsg.de,~tricount.com,~bgk.pl,~exagon.de,~sozialversicherung-kompetent.de##.cc-window[aria-describedby*="consent"]
+~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it,~dmsg.de,~tricount.com,~bgk.pl,~exagon.de,~sozialversicherung-kompetent.de,~varcevanje-energije.si##.cc-window[aria-describedby*="consent"]
 ###pb_cookie_message
 ##.zm-cookies-notification
 ###block-gdprcookiesblock
@@ -11451,7 +11451,7 @@
 ##.cookie-ce-banner
 ###shopify-section-cookie-banner
 ##.cookie__floating--bottom-right
-~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it,~dmsg.de,~tricount.com,~bgk.pl,~exagon.de,~sozialversicherung-kompetent.de###cconsent-modal.ccm--visible
+~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it,~dmsg.de,~tricount.com,~bgk.pl,~exagon.de,~sozialversicherung-kompetent.de,~varcevanje-energije.si###cconsent-modal.ccm--visible
 ##app-accept-cookies
 ##.cookie-consent.small
 ##.cookies[data-accepturl]
@@ -13443,8 +13443,11 @@
 ###__next div[data-testid*="privacy-popup"]
 ##.cookies-management > .cookies-management-button
 ##.app-bannerCookies
-###cookiePopupWrapper
 ##.cc-banner ~ .blurry-background
+##.vue-cookies-bar
+##.cookie-disclaimer__overlay
+###root [data-testid*="gdpr-callout-notification"]
+##.fixed[x-data*="AcceptCookies"]
 !
 ! CUSTOM RULES
 !
@@ -14300,7 +14303,6 @@ bigbank.lt##.sticky
 classcroute.com##.alert-info, .alert-warning, .alert-box
 vh1.com##.preventAcceptance
 magazzinirossi.eu###informativaBreve
-lavozdeasturias.es##.alert-info, .alert-warning, .alert-box
 rawranime.tv##.site-news[data-id="acceptcookies"]
 sentinellelagazuoi.it###contact
 lyrics.cat###cxcx
@@ -19815,7 +19817,6 @@ homebook.pl##.hb-layout ~ div
 etsy.com##.ui-toolkit[class*="policy-update"], .wt-alert--fixed-bottom
 seriea.pl##[id^="viewCookies"]
 undo.net###fullpersonal, #fullboxpersonal
-packlink.com##.snack-bar
 deandavid.at##.v-overlay, .v-dialog__content
 boley.de##.ckmsg
 totallywicked-eliquid.co.uk##.cookie
@@ -20964,7 +20965,6 @@ powerspreadsheets.com##.thrv-ribbon, .thrv-leads-slide-in
 eurosportplayer.com###app div[class^="cookie-policy"]
 hessen.de##.alert-dismissible
 zonky.cz##.cookie-consent-shown .application > .flex
-farfetch.com##div[data-testid*="gdpr-banner"]
 kraken.com##.kraken-cookie-warning, .kraken-cookie-warning.show
 lovehoney.com##.dis_message
 lovehoney.eu##.dis_message
@@ -21166,7 +21166,6 @@ fotor.com##div[class*="UseCookie"]
 wacomstore.com.br###privacy-popup
 sbermarket.ru##.alerts + div
 redenacionalderadio.com.br###viewlet-disclaimer
-reddit.com###SHORTCUT_FOCUSABLE_DIV > div> div > section > [style*="Toaster"]
 sj.no###root header nav + .MuiBox-root, .experiencefragment > .MuiContainer-root:first-child
 vitrado.de##app-google-consent
 cinch.co.uk###___gatsby > [data-testid="overlay"], #___gatsby > div > [data-testid="cookie-banner"]
@@ -21867,8 +21866,6 @@ hgk.hr##.cookie-options-container
 jeftinastruja.hr##.cookie
 wallhere.com##.policy-info
 bunq.com##.fs-cc-components
-myfitnesspal.com###__next > .MuiSnackbar-root, #app footer ~ div
-myfitnesspal.cn###__next > .MuiSnackbar-root, #app footer ~ div
 trade.bisonapp.com###root > div:first-child
 ter.sncf.com###__next > div:last-child
 fromsmash.com##.cgu-cookie-overlay-shadow, app-cookie
@@ -21890,7 +21887,6 @@ vimpay.eu###modalBackground, #modalCookieAcceptance
 bbc.com###main-wrapper > header[role="banner"] > div:first-child
 bbcrussian.com###main-wrapper > header[role="banner"] > div:first-child
 wilanow-palac.pl###cookie
-pttavm.com##.cookie-box
 bat.com###overlay
 mnb.hu##.cb01-cookie-bar
 advancedinstaller.com###cookies
@@ -22046,6 +22042,16 @@ workspace.google.com##main > div:last-child:not(only-child)
 business.google.com###CookieDialog
 santatracker.google.com##santa-notice
 play.google.com###gb iframe[src*="ogs.google."][src*="widget/callout"]
+truevirtualworld.com##.card-cookie
+punpro.com##div[class*="CookieSession"]
+siamsport.co.th###popup-ss
+reddit.com###SHORTCUT_FOCUSABLE_DIV > div> div > section > [style*="Toaster"], shreddit-cookie-banner
+reddit.watch##.v-content__wrap > .container > .align-end
+pttavm.com##.cookie-box
+transa.ch##.cookie-box
+myfitnesspal.com##.MuiSnackbar-anchorOriginBottomCenter, #app footer ~ div
+myfitnesspal.cn##.MuiSnackbar-anchorOriginBottomCenter, #app footer ~ div
+neonet.pl##div[class*="cookiesBlock"]
 !
 ! SCRIPT BLOCKING
 !
@@ -22057,7 +22063,7 @@ cookiewarning4.js^
 /wp-content/mu-plugins/cookie_notifier
 ||freegamehosting.eu/js/cookies.js$script
 ||jp2w.pl/a/cookie.js$script
-cookieConsent.js^$domain=~blackboard.com|~kayak.pl|~gamersgate.com
+cookieConsent.js^$domain=~talktalk.co.uk|~blackboard.com|~kayak.pl|~gamersgate.com
 /inc/cookiechoices.js
 ||metpartner.pl/cookie/info_cookie.js$script
 ||catalogo.pusc.it/pusc_jquery.cookie.min.js$script
@@ -22326,7 +22332,7 @@ consent.cookiefirst.com$domain=~swietawdomu.pl|~deutschesapothekenportal.de
 /modules/cookiesplus/views/js/cookiesplus.js
 /mws-cookie-solution.min.js
 /ajax/libs/cookieconsent2$domain=~membersuite.com|~rijbewijskeuringennederland.nl|~download.pixelexperience.org|~ceramtec-group.com
-/cookie-consent.js$domain=~lacoste.com|~huuray.se|~indiearenabooth.com
+/cookie-consent.js$domain=~talktalk.co.uk|~lacoste.com|~huuray.se|~indiearenabooth.com
 /cookienotice-bootstrap.js
 /wp-content/plugins/cookieEuGH
 /cookiebar.js
@@ -22510,7 +22516,7 @@ plugin-cookie-consent/build
 /jquery.rgpd-cookies.js
 /bandeau_cookie.js
 /dist/js/cookie-consent
-/cookieconsent.min.js$domain=~sonnenverlauf.de|~retrogames.cc|~exagon.de|~sozialversicherung-kompetent.de|~khl.ru|~bauen-und-heimwerken.de|~tricount.com
+/cookieconsent.min.js$domain=~sonnenverlauf.de|~retrogames.cc|~exagon.de|~sozialversicherung-kompetent.de|~varcevanje-energije.si|~khl.ru|~bauen-und-heimwerken.de|~tricount.com
 /cookieConsentApp.js.gz
 /fileadmin/templates/cookie/fc_thin.js
 cdn.cookiecode.nl
@@ -23028,7 +23034,7 @@ consent.truste.com$domain=oracle.com
 /cui-cookie-policy$domain=congstar.de
 /gdpr.js$domain=bitly.com|qcnet.com
 /privacy/popup.js$domain=cdaction.pl
-/cookies.js$domain=knaufdoehetzelf.nl|cashconverters.es|dragnsurvey.com|guldsmykket.dk|zukunftsheizen.de|truphone.com|bluelightcard.co.uk
+/cookies.js$domain=knaufdoehetzelf.nl|cashconverters.es|dragnsurvey.com|guldsmykket.dk|zukunftsheizen.de|truphone.com|bluelightcard.co.uk|regentcentre.co.uk
 /utag.js$domain=louisvuitton.com|interhyp.de|total.com|total.nl|esprit.de|ing.es|stepstone.de|stepstone.at|santander.pl|swisscom.ch|prada.com|here.com|guloggratis.dk
 /spmsg_addetection.js$domain=tvspielfilm.de
 /firebox-gdpr.js$domain=thelittleboxoffice.com
@@ -23249,7 +23255,7 @@ trustarc.com$domain=avantiwestcoast.co.uk
 /c22.js$domain=cd.cz
 /cmp.$domain=o2.cz
 /stylecc$domain=immozentral.com
-privacy-center.org$domain=as.com|elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|segre.com|mappy.com|radioplayer.fr|lavoixdunord.fr
+privacy-center.org$domain=as.com|elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|lavoixdunord.fr
 /cookieConsent$domain=loesdau.de
 consent*$domain=t-mobile.cz
 /jquery.cookiekit.js$domain=dgeg.gov.pt
