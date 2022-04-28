@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 339.202204271124
+! Version: 339.202204281019
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 27 Apr 2022 09:24 UTC
+! Last modified: 28 Apr 2022 08:19 UTC
 !
 !
 ! GLOBAL RULES
@@ -884,7 +884,7 @@
 ###cooki_accept
 ##.alertbody .no-cookies
 ###CookieAlert:not(.in)
-###CookieConsent:not(.modal)
+###CookieConsent:not(.modal):not([aria-modal])
 ###theme_cookie
 ###hLibCookieInfo
 ###layerCookies
@@ -2254,7 +2254,7 @@
 ###js-cnil--alert
 ###pfizer_cookies_policy
 ###cookie-alert-box
-##.acceptCookie:not(body):not(html)
+##.acceptCookie:not(body):not(html):not(button)
 ##.alertCookiesCnil:not(body):not(html)
 ###cookieUIContainer
 ###cookiesadv
@@ -7170,7 +7170,7 @@
 ##.GeneralInfos_CookieLegalInfo
 ##.gdprPopup:not(body):not(html)
 ##.notification-bar--cookie-message
-###moove_gdpr_cookie_info_bar
+~inyova.de###moove_gdpr_cookie_info_bar
 ##.UPM__PrivacyRibbon:not(body):not(html)
 ##.main-cookie-bar-container
 ##.cookies-aviso:not(body):not(html)
@@ -13400,9 +13400,9 @@
 ###privacy-data-notice
 ###app div[class*="GDPRConsent-root"]
 ##.site_block_wrap_cookie
-~abc.es,~hoy.es,~diariosur.es,~elcorreo.com,~surinenglish.com,~eldiariomontanes.es,~jardinage.lemonde.fr###didomi-notice
+~abc.es,~hoy.es,~diariosur.es,~elcorreo.com,~surinenglish.com,~eldiariomontanes.es,~jardinage.lemonde.fr,~investir.lesechos.fr###didomi-notice
 ###didomi-custom-host
-~abc.es,~hoy.es,~diariosur.es,~elcorreo.com,~surinenglish.com,~eldiariomontanes.es,~jardinage.lemonde.fr##body:not(.didomi-popup-open) #didomi-host
+~abc.es,~hoy.es,~diariosur.es,~elcorreo.com,~surinenglish.com,~eldiariomontanes.es,~jardinage.lemonde.fr,~investir.lesechos.fr##body:not(.didomi-popup-open) #didomi-host
 ###cookies + #avisoConfig
 ##.siteCookies--bottom
 ##.c-cookie-consent--default
@@ -13448,6 +13448,9 @@
 ##.cookie-disclaimer__overlay
 ###root [data-testid*="gdpr-callout-notification"]
 ##.fixed[x-data*="AcceptCookies"]
+###cookieconsent-com---nb
+###__next div[data-testid*="consent-manager"]
+###__next div[aria-labelledby*="cookie_banner"]
 !
 ! CUSTOM RULES
 !
@@ -14669,7 +14672,6 @@ campisiconserve.it##body > span
 szexpartnerindex.hu###cookiewindow
 gocards.nl###cbar
 uneo-avantages.fr##.bCnil
-fireteam.net##.cc-container
 algerieinfo.com##body > center > font
 geoblog.pl###cContainer
 mojbrzuch.pl###__cookies_
@@ -15880,7 +15882,6 @@ netflixlovers.it###cs_container
 toutcomment.com##.consent, #consent
 hs-emden-leer.de###zwcc, #zwcc-spc
 iiyama.com##.infobar-message
-denizen.io##.cc-container
 avaaz.org##.gdpr-block-cookies, .gdpr-block-privacy
 chilloutzone.net###cozConsentNugget
 supercell.com##.bs-site-alert
@@ -18766,7 +18767,6 @@ wealdtech.com###weald-gdpr-container
 portal.lanis-system.de##.alert-dismissible
 astro.com##.botbanner, #priv.dsmessage
 thefork.it###root > div > p
-onrc.ro##.cc-container
 alldomains.hosting###adh-cookie-dnt, #adh-cookie-accept
 openuserjs.org##.alert-dismissible
 hobbyfarms.com##.cookieTkd
@@ -18833,7 +18833,6 @@ skoledo.com##.avg
 spor.dk###cookies
 uwafot.de##.uk-position-fixed
 akasha.world###gatsby-focus-wrapper > div
-mate-tee.de##.cc-container
 rp-giessen.de##footer .note
 kaggle.com###site-content ~ div
 healthifyme.com###popup-wrapper
@@ -19019,7 +19018,6 @@ gardeningknowhow.com##.consent, #consent
 sato.fi###app-container > div > .hide-on-print > div
 aide.fi##.navbar-fixed-bottom
 bonprix.pl###JOISH987_bar
-wakacje.pl###__next > div > div:first-child
 grenscorridorn69.nl##.cdk-overlay-container
 play.pl##.cookies-mine
 hearingaidknow.com##.gdpr
@@ -21121,7 +21119,6 @@ plus.pl##.modal-overlay, .topup-cookie
 a2mobile.pl##.topup-cookie
 green.hr##.elementor-popup-modal
 adfc.de##body > .ember-view > .ember-view:first-child
-10015.io##.Toastify ~ div
 merckgroup.com##.new-cookie__modal
 pspdfkit.com##.pspdfCookieDialog
 konsumenternas.se###tc-consent
@@ -21506,7 +21503,6 @@ mcc.live##.cookies
 supermiro.lu###lightbox-gdpr
 supermiro.com###lightbox-gdpr
 serasa.com.br##div[aria-labelledby="m-acc-title"]
-inet.se##.top-nav-bar-filler ~ .container ~ div
 italki.com##div[class*="cookie_root"]
 dr-gumpert.de###cookie_modal_container
 lego.com##div[class*="CookieDisclaimer"], #footer ~ [class*="emotion-cache"], #prompt-footer
@@ -21773,7 +21769,6 @@ pneuhage.de##.site-blocker
 yachtclubgames.com##.cookie
 bacelic.hr##.cookies
 casinocosmopol.se###casino-picker-modal
-joberty.hr##.cc-container
 delicasaitalia-uk.com##.ec-notices
 uk.barclays##.barclays-consent
 truecaller.com###app > .fixed[class*="bottom"]
@@ -21867,7 +21862,6 @@ jeftinastruja.hr##.cookie
 wallhere.com##.policy-info
 bunq.com##.fs-cc-components
 trade.bisonapp.com###root > div:first-child
-ter.sncf.com###__next > div:last-child
 fromsmash.com##.cgu-cookie-overlay-shadow, app-cookie
 eleventickets.com##.cookies-aceite-home-container
 eventail.be###__next > div > div[style*="transform"]
@@ -21900,7 +21894,6 @@ pribram.cz##.cookies
 money.com.tr##.kvkk
 24sata.hr###didomi-host
 njuskalo.hr###didomi-host
-lesechos.fr###didomi-host
 lesoir.be###didomi-host
 huffingtonpost.es###acceptationCMPWall
 independent.ie###didomi-host, a[onclick*="Didomi.preferences"]
@@ -22052,6 +22045,15 @@ transa.ch##.cookie-box
 myfitnesspal.com##.MuiSnackbar-anchorOriginBottomCenter, #app footer ~ div
 myfitnesspal.cn##.MuiSnackbar-anchorOriginBottomCenter, #app footer ~ div
 neonet.pl##div[class*="cookiesBlock"]
+inet.se###react-root > .container + div + div ~ div:last-of-type
+fireteam.net##.cc-container
+onrc.ro##.cc-container
+joberty.hr##.cc-container
+evertiq.se##.cc-box
+10015.io##.Toastify ~ div
+graphy.com##.Toastify ~ div
+gamemaker.io###yoyoCookie
+freevpnplanet.com##.cookies
 !
 ! SCRIPT BLOCKING
 !
