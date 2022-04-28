@@ -16,7 +16,8 @@
 国际/中国加速过滤广告规则订阅（[English instructions](https://github.com/Silentely/AdBlock-Acceleration/blob/main/README.md)）
 
 # 公告 
-                                                                                                                
+
+**2022年4月28日，由于不可描述的原因加速地址②（jsDelivr）已被中国大陆DNS污染，中国大陆用户请及时更换加速地址②。**    
 **2022年3月22日，因加速地址③停止解析和加速地址④在某些地区与加速地址②重合，现均已替换新地址，请及时更新地址。**    
 <br/>
 

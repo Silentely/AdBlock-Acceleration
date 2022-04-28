@@ -16,7 +16,8 @@
 International/China accelerated ad filtering rules subscription（[中文说明](https://github.com/Silentely/AdBlock-Acceleration/blob/main/README_CN.md)）
 
 # Announcement
-                                                                                                                
+
+**On April 28, 2022, the acceleration address ② (jsDelivr) has been polluted by mainland China DNS due to indescribable reasons, users in mainland China please change the acceleration address ② in time.**    
 **On March 22, 2022, the accelerated address ③ stopped resolving and the accelerated address ④ overlapped with the accelerated address ② in some areas, now both have been replaced with new addresses, please update the addresses in time.**    
 <br/>
 
