@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 339.202204281019
+! Version: 339.202204291003
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 28 Apr 2022 08:19 UTC
+! Last modified: 29 Apr 2022 08:03 UTC
 !
 !
 ! GLOBAL RULES
@@ -24,7 +24,7 @@
 ###cookiesToolbar
 ###privacy_notice
 ###cookiesdirective
-~musti.no,~vetzoo.se,~animail.se,~arkenzoo.se,~mustijamirri.fi,~petenkoiratarvike.com,~alexanderhall.co.uk,~basenio.de,~foxtons.co.uk,~telekom.hu###cookie_consent
+~musti.no,~vetzoo.se,~animail.se,~arkenzoo.se,~mustijamirri.fi,~petenkoiratarvike.com,~alexanderhall.co.uk,~basenio.de,~foxtons.co.uk###cookie_consent
 ###cookieBannerD
 ~kupplung.de,~amd-moebel.de,~zoo-leipzig.de,~lansberg.de,~texels.nl,~wahre-superstars.de,~klang-hamburg.de###cookieNotice
 ~tweakers.net##.cookieNotice:not(body):not(html)
@@ -795,7 +795,7 @@
 ##.infoCookies:not(body):not(html)
 ###cookieInformacja
 ~bookmygarage.com,~finom.co,~deineapotheke.at,~swedbank.se,~planeo.de,~dogedash.com,~teacheconomy.de,~sevdesk.de,~nintendo.com,~veygo.com,~puratos.pl,~bike-components.de,~bremerhaven.de,~onlinedepartment.nl,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~monese.com,~nuxeo.com,~opngo.com,~sachsenallee.de,~melcloud.com,~intersport.de##.cookie-banner:not(body):not(html)
-~rku-it.de###cookienotice
+###cookienotice
 ###overlay-cookielaw-form
 ##.cookie-info-wrapper:not(body):not(html)
 ##.eu-cookie-popup:not(body):not(html)
@@ -8269,7 +8269,7 @@
 ##body > .cookies[style*="display"]
 ##body > .cookies[style*="position"]
 ##body > .cookies[style*="bottom"]
-~vandalism-sounds.com,~rku-it.de,~danbolig.dk##body > .cookie[style*="block"]
+~vandalism-sounds.com,~danbolig.dk##body > .cookie[style*="block"]
 ##.cc-revoke:not(body):not(html)
 ###alerteCookie
 ##wc-cookies
@@ -8398,7 +8398,7 @@
 ##.fixed-note[class*="ce_rsce_"]
 ###soi-global-privacy-info
 ##.gatewayContainer .gatewayBar[style*="block"]
-###rgpdModal
+###__next div[aria-labelledby*="cookie_banner"]
 ##.b-cookieConsent:not(body):not(html)
 ##.cookie-set-pop-up:not(body):not(html)
 ##.preview[data-widget-host="gdpr-consent"]
@@ -13450,7 +13450,8 @@
 ##.fixed[x-data*="AcceptCookies"]
 ###cookieconsent-com---nb
 ###__next div[data-testid*="consent-manager"]
-###__next div[aria-labelledby*="cookie_banner"]
+##a.optanon-show-settings
+##.modal[data-target-name="usercentrics-consent-layer-modal"]
 !
 ! CUSTOM RULES
 !
@@ -13980,19 +13981,8 @@ aicanet.it##.popup-view
 firstdraftnews.com##.welcome-message
 solarenvi.cz###cs_bx
 enerpoint.it###container > div[style]
-goodsstall.co.uk###hideme
-cafassoefigli.it##.alert-dismissible, .alert-dismissable, .alert--dismissable, .pmd-alert-dismissible
-helsingborg.se##.alert-info, .alert-warning, .alert-box
-supernordicskipass.it##.infPr
-natura-nuova.com##.bottomBarMessage
 qbasic.at###ckkasten-container
-nestlehealthscience.fr###nhsCookiePopUpBar
-axa.sk##.axa-cookies
-managerzone.com##body > div:not([id]):not([class])[style*="fixed"], body > div:not([id]):not([class])[style*="absolute"]
-auto.at##table[width="98%"][bgcolor="#666666"]
-garbo.ro###ictsuc_block
 sapsalis.gr##.termsnote
-paf.com##.mo-notification-bar-fixed
 sconfini.eu###sbox-window, #sbox-overlay
 jimbeam.com##.ng-scope[data-jb-message-cookie]
 docteurclic.com###disc
@@ -22054,6 +22044,8 @@ evertiq.se##.cc-box
 graphy.com##.Toastify ~ div
 gamemaker.io###yoyoCookie
 freevpnplanet.com##.cookies
+grouperf.com###rgpdModal
+whiskynet.hu###__nuxt footer ~ div:not([style])
 !
 ! SCRIPT BLOCKING
 !
@@ -22309,7 +22301,7 @@ eu_cookie_banner.js^
 /modules/idxcookies/*
 /javascript/cookieser.js
 /cookiesWidget/widget.js
-consent.cookiebot.com$domain=~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~login.nos.pt|~asambeauty.com|~cineplex.de|~berlingske.dk|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~cajamar.es|~digitaltrends.com|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~stern.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de|~ekstrabladet.dk
+consent.cookiebot.com$domain=~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~login.nos.pt|~asambeauty.com|~cineplex.de|~berlingske.dk|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~cajamar.es|~digitaltrends.com|~mein-grundeinkommen.de|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~stern.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de|~ekstrabladet.dk
 /ccp-sites/components/structure/cookie-notification/*
 /cookies-info.js
 cookies.algo.at
@@ -23278,6 +23270,7 @@ cmp.pent.no$domain=pent.no
 /cookie-policy/*$domain=hotmart.com
 /consent-$domain=widforss.no
 /acmp.js$domain=ameblo.jp
+/dkmb_gdpr.js$domain=fightful.com
 !
 ! FILTERLIST ONLY
 !
