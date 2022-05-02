@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 339.202204291003
+! Version: 339.202205021519
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 29 Apr 2022 08:03 UTC
+! Last modified: 02 May 2022 13:19 UTC
 !
 !
 ! GLOBAL RULES
@@ -133,7 +133,7 @@
 ~hl.co.uk##.cookieBanner:not(body):not(html):not(#sprd-main)
 ~wgv.de###cookie_bg
 ###cookie_header
-~regioneo.pl,~czyodebrac.pl,~moodle.com###cookie-law-info-bar
+~regioneo.pl,~czyodebrac.pl,~altheaprovence.com,~moodle.com###cookie-law-info-bar
 ###cookie-div
 ##.cookieLight:not(body):not(html)
 ###cookiePopUp
@@ -4502,7 +4502,7 @@
 ##.infos-gestion-cookies
 ###user-cookie-msg-box
 ###CookieLegalContainer
-###aceptar_cookies
+###aceptar_cookies:not(button)
 ###us_cookies_msg
 ##.EuCookieSheet:not(body):not(html)
 ##.cookieclose:not(body):not(html)
@@ -6936,7 +6936,7 @@
 ###js-cookie-notification
 ##.cookie-consent-comp:not(body):not(html)
 ##.ck-message-wrap:not(body):not(html)
-###modal_cookies
+##.cookie-consent[id*="CookieConsentPortlet"]
 ###cookies-confirmation
 ###box-accettazione-cookie
 ###cnil_requirements
@@ -12027,7 +12027,7 @@
 ##.mf-cookie-banner
 ###cookie-dim
 ##.usercookiemanagement
-~regioneo.pl,~czyodebrac.pl,~moodle.com###cliSettingsPopup
+~regioneo.pl,~czyodebrac.pl,~altheaprovence.com,~moodle.com###cliSettingsPopup
 ###flash-container ~ div div[data-testid="main-cookies-banner-container"]
 ###prompt-cookies
 ###gdpr_message
@@ -13455,6 +13455,7 @@
 !
 ! CUSTOM RULES
 !
+youtube.com##ytd-consent-bump-v2-lightbox, tp-yt-iron-overlay-backdrop
 m.facebook.com##div[data-testid="cookie-policy-manage-dialog"], body > div[id] ~ script ~ div
 fb.com##div[class*="cookieBanner"]
 help.instagram.com##form[action^="/logout"] ~ div:not([id]):not([class]) + div:last-child
@@ -16413,7 +16414,6 @@ imobie.com##.fixedbot
 techvorace.com###tfade, #tlight
 ftg-frankfurt.de###dataInfoBox
 winkel.parool.nl##.modal__bg
-epidemicsound.com##div[class*="cookieBar"]
 arukhaza.com##body > div:not([id]):not([class])
 lpexpress.lt###cookies-block
 blockchainsecurity.services##.infobar
@@ -21678,7 +21678,6 @@ acquire.io##.home-announcement
 joom.com###content > div[class*="container"]
 vod.warszawa.pl###footer ~ div
 vapiano.warszawa.pl###shark-cookie
-eneba.com###app > div:first-child:not(:only-child), main > div + div + div:last-child
 denley.pl###dialog_cover, .dialog_wrapper_cookie
 cazoo.com##div[data-test-id="banner-wrapper-with-blocker"]
 cazoo.co.uk##div[data-test-id="banner-wrapper-with-blocker"]
@@ -21769,7 +21768,6 @@ top-car-hire.com###cookies
 skylinewebcams.com###pref
 cofan.es##.block-cookies
 passeidireto.com##pd-cookie-banner
-mp.br###termo-uso, #modalConsentimento, .modal-backdrop, .lumis-service-privacyterm
 samsung.com###root [data-testid="notice-footer"], #cookie_component
 isc2.org##.notice--warning
 ebox-auto.com##.rgpd
@@ -21909,7 +21907,6 @@ elcorteingles.pt##.cookies-wrapper
 hipercor.es##.cookies-wrapper
 latiendaencasa.es##.cookies-wrapper
 sfera.com###dis_cookie.cab_cookies
-smakmagasinet.no###coco
 socradar.io###modal-cookies, .modal-backdrop
 bkkgs.de##.cookie-layer
 mresell.at###popup_wrapper
@@ -22046,6 +22043,18 @@ gamemaker.io###yoyoCookie
 freevpnplanet.com##.cookies
 grouperf.com###rgpdModal
 whiskynet.hu###__nuxt footer ~ div:not([style])
+norgesgruppen.no###coco
+smakmagasinet.no###coco
+naturvardsverket.se###App > div
+thoracic.org###cookie-law
+koh-i-noor.cz###EuConsentV2, .modal-backdrop
+eneba.com###app > div:first-child:not(:only-child), main > div + div + div:last-child
+iplt20.com##.cookie
+mp.br###termo-uso, #modalConsentimento, .modal-backdrop, .lumis-service-privacyterm, .cookie-container.active
+odsluchane.eu##.alert-flash
+biomarkt.de###CybotCookiebotDialog
+chromium.org##snack-bar-container
+javarush.ru##.cookie-consent
 !
 ! SCRIPT BLOCKING
 !
@@ -22301,7 +22310,7 @@ eu_cookie_banner.js^
 /modules/idxcookies/*
 /javascript/cookieser.js
 /cookiesWidget/widget.js
-consent.cookiebot.com$domain=~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~login.nos.pt|~asambeauty.com|~cineplex.de|~berlingske.dk|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~cajamar.es|~digitaltrends.com|~mein-grundeinkommen.de|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~stern.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de|~ekstrabladet.dk
+consent.cookiebot.com$domain=~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~login.nos.pt|~asambeauty.com|~cineplex.de|~berlingske.dk|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~cajamar.es|~digitaltrends.com|~mein-grundeinkommen.de|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~biomarkt.de|~stern.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de|~ekstrabladet.dk
 /ccp-sites/components/structure/cookie-notification/*
 /cookies-info.js
 cookies.algo.at
@@ -22631,6 +22640,7 @@ consent-manager.confirmic.com
 /gdpr-consent-banner/*
 /consent-management-app/*
 ||consent.hr/delivery/js/cmp$script
+/bundles/consent-init?v=
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -22746,7 +22756,7 @@ tag=ui/privacy/CookiesConsent
 cmp.dreamlab.pl
 /media/cmp/int_cmp_banner
 ||consensu.org/delivery/cmp.min.js$script
-||sipaof.mgr.consensu.org/sipacmp/$script
+||sipaof.mgr.consensu.org/sipacmp$script
 /cmp/sourcepoint/sp-msg.js
 cmp.cdntrf.com
 cmp.mediavine.com
@@ -22925,6 +22935,7 @@ global.ketchcdn.com
 /superficialeyes.com
 ||cassiecloud.com/loader.js$script
 /childlikeform.com
+||baycloud.com/tgcl.min.js$script
 ||pcz.pl/static/js/moo-cooker.js$script
 /eucd/eucd.min.js
 ||cinabre.sudoc.abes.fr/psi_gui/js/bandeau.js$script
@@ -23249,7 +23260,7 @@ trustarc.com$domain=avantiwestcoast.co.uk
 /c22.js$domain=cd.cz
 /cmp.$domain=o2.cz
 /stylecc$domain=immozentral.com
-privacy-center.org$domain=as.com|elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|lavoixdunord.fr
+privacy-center.org$domain=as.com|elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr
 /cookieConsent$domain=loesdau.de
 consent*$domain=t-mobile.cz
 /jquery.cookiekit.js$domain=dgeg.gov.pt
