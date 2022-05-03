@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 339.202205021519
+! Version: 339.202205031226
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 02 May 2022 13:19 UTC
+! Last modified: 03 May 2022 10:26 UTC
 !
 !
 ! GLOBAL RULES
@@ -85,7 +85,7 @@
 ~fotopuzzle.de,~monpuzzlephoto.fr,~newpharma.be,~markets.com,~bmihealthcare.co.uk,~puzzleyou.be,~fotondo.cz##.cookie-policy:not(body):not(html)
 ###cookieMsg
 ~dogedash.com,~kramp.com##.cookie-message:not(body):not(html):not(.modal-body)
-~wolters-rundreisen.de,~schulze-immobilien.de,~harry-gerlach.de,~veygo.com,~hotelsbarriere.com,~ufz.de,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~icould.com,~evaair.com,~formula1.com###cookie-banner:not(a)
+~ikb.at,~wolters-rundreisen.de,~schulze-immobilien.de,~harry-gerlach.de,~veygo.com,~hotelsbarriere.com,~ufz.de,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~icould.com,~evaair.com,~formula1.com###cookie-banner:not(a)
 ##.block-cookies-popup:not(body):not(html)
 ###cookieStatement
 ###cookieStatementWrapper
@@ -529,7 +529,7 @@
 ###cookienotification_background
 ###cookienotification
 ###s2m_cookies_optin_dialog
-~contentkingapp.com,~volkswagen-newsroom.com,~g-star.com,~mega.io,~mega.nz,~kh.hu,~mietz.app,~tele2.nl,~t-mobile.nl,~danbolig.dk##.cookie-dialog:not(body):not(html)
+~ikb.at,~contentkingapp.com,~volkswagen-newsroom.com,~g-star.com,~mega.io,~mega.nz,~kh.hu,~mietz.app,~tele2.nl,~t-mobile.nl,~danbolig.dk##.cookie-dialog:not(body):not(html)
 ###divCookieAlert
 ##.contenedorcookies
 ###Banner_cookie_1
@@ -13452,6 +13452,11 @@
 ###__next div[data-testid*="consent-manager"]
 ##a.optanon-show-settings
 ##.modal[data-target-name="usercentrics-consent-layer-modal"]
+###gdpr_alert
+##.consent-managermain
+##.cookie-monster__container
+###gdcc-wrapper .toggle-manager
+###root div[data-qa*="CookieBar"]
 !
 ! CUSTOM RULES
 !
@@ -17812,7 +17817,6 @@ costillasalhorno.com###cookies
 nfumutual.co.uk##section[aria-describedby="cookiedesc"]
 r-wipe.com###pp-info
 epdf.pub###EPDFPUB_cookie_box
-sfanytime.com###rp > div:not(.page-wrapper)
 go.com##body[data-ad_system] > div[style*="fixed"], .terms-alert-fixed
 espn.com##.Tooltip--fixed.Tooltip--fixed-bottom, .alert.alert--fixed
 baywa-re.it##.gg_cookie
@@ -20574,7 +20578,6 @@ sportium.es##.overlay
 nasz-gabinet.pl##.message-window.show
 fabasoft.com##.tracking-alert
 blog2social.com##.cookie-cover
-tele2.nl###targetedPopupFrame
 aefinfo.fr##.bandeau_cgv
 hetcontact.nl##.cookies
 pott.de##.legacy
@@ -22055,6 +22058,15 @@ odsluchane.eu##.alert-flash
 biomarkt.de###CybotCookiebotDialog
 chromium.org##snack-bar-container
 javarush.ru##.cookie-consent
+octopusev.com##footer ~ div
+tobii.com##.cookie-container, .cookie-modal
+greenpeace.fr###discreto.banner .consent
+greenpeace.org###cookiePromptCenter,.modal-backdrop
+rows.com###main ~ section
+br-automation.com###siwa-cookiebar, .modal-backdrop
+carlin.es##.ovcookie
+curio.io###__next > .fixed
+tele2.nl###targetedPopupFrame
 !
 ! SCRIPT BLOCKING
 !
@@ -22310,7 +22322,7 @@ eu_cookie_banner.js^
 /modules/idxcookies/*
 /javascript/cookieser.js
 /cookiesWidget/widget.js
-consent.cookiebot.com$domain=~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~login.nos.pt|~asambeauty.com|~cineplex.de|~berlingske.dk|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~cajamar.es|~digitaltrends.com|~mein-grundeinkommen.de|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~biomarkt.de|~stern.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de|~ekstrabladet.dk
+consent.cookiebot.com$domain=~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~login.nos.pt|~asambeauty.com|~cineplex.de|~berlingske.dk|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~cajamar.es|~digitaltrends.com|~mein-grundeinkommen.de|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~biomarkt.de|~harzwasserwerke.de|~stern.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de|~ekstrabladet.dk
 /ccp-sites/components/structure/cookie-notification/*
 /cookies-info.js
 cookies.algo.at
@@ -22641,6 +22653,7 @@ consent-manager.confirmic.com
 /consent-management-app/*
 ||consent.hr/delivery/js/cmp$script
 /bundles/consent-init?v=
+/acc.consent.js
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -23282,6 +23295,7 @@ cmp.pent.no$domain=pent.no
 /consent-$domain=widforss.no
 /acmp.js$domain=ameblo.jp
 /dkmb_gdpr.js$domain=fightful.com
+/pandectes-core.js$domain=arktis.de
 !
 ! FILTERLIST ONLY
 !
