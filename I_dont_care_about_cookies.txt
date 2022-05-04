@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 339.202205031226
+! Version: 339.202205041642
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 03 May 2022 10:26 UTC
+! Last modified: 04 May 2022 14:42 UTC
 !
 !
 ! GLOBAL RULES
@@ -10387,7 +10387,7 @@
 ##body > .cm-message.cm-show
 ##.privacy-policy-pop:not(body):not(html)
 ##.cookie-notify-block:not(body):not(html)
-##.mpp-container-position-bottom-bar > .mpp-popup.mpp-position-bottom-bar.mpp-is-open
+###root div[data-qa*="CookieBar"]
 ###content div[class^="CookieConsentBanner"]
 ##.cookie-complience-banner
 ##div[data-corgi-component="cookie-banner"]
@@ -13400,9 +13400,9 @@
 ###privacy-data-notice
 ###app div[class*="GDPRConsent-root"]
 ##.site_block_wrap_cookie
-~abc.es,~hoy.es,~diariosur.es,~elcorreo.com,~surinenglish.com,~eldiariomontanes.es,~jardinage.lemonde.fr,~investir.lesechos.fr###didomi-notice
+~abc.es,~hoy.es,~diariosur.es,~elcorreo.com,~surinenglish.com,~eldiariomontanes.es,~jardinage.lemonde.fr,~investir.lesechos.fr,~canarias7.es,~elcomercio.es###didomi-notice
 ###didomi-custom-host
-~abc.es,~hoy.es,~diariosur.es,~elcorreo.com,~surinenglish.com,~eldiariomontanes.es,~jardinage.lemonde.fr,~investir.lesechos.fr##body:not(.didomi-popup-open) #didomi-host
+~abc.es,~hoy.es,~diariosur.es,~elcorreo.com,~surinenglish.com,~eldiariomontanes.es,~jardinage.lemonde.fr,~investir.lesechos.fr,~canarias7.es,~elcomercio.es##body:not(.didomi-popup-open) #didomi-host
 ###cookies + #avisoConfig
 ##.siteCookies--bottom
 ##.c-cookie-consent--default
@@ -13456,7 +13456,6 @@
 ##.consent-managermain
 ##.cookie-monster__container
 ###gdcc-wrapper .toggle-manager
-###root div[data-qa*="CookieBar"]
 !
 ! CUSTOM RULES
 !
@@ -14879,7 +14878,6 @@ allianz-assistance.es##.region-disclaimer
 trony.it##.smcc_overlay_cokkieaccept, .smcc_modal_cokkieaccept
 hmerologio.gr###sid-container
 prawobrzeze.info##body > div:not([id]):not([class])
-tennistv.com###notifications--static
 sanprobi-superformula.pl##body > div:not([id]):not([class])
 boxannunci.com##.terms
 shopforshop.it##body > span
@@ -16819,7 +16817,6 @@ o2family.cz###o2fCookieConsentDialog
 super.ee##.header__notice
 capitalone.ca###alert-privacy-update
 eutelsat.com###header_higher
-kurzgesagt.org##.cb-wrapper
 cylance.com##.cylance-mod-cookiebanner
 webd.pl###cffc
 hs-kl.de##.alert-info
@@ -20858,8 +20855,6 @@ malergeschaeft-eisenloeffel.de###bottom_popup
 santanderconsumer.at##.sliding-popup-bottom
 a3quattro.de###popup
 gps-viewer.com##.popup
-or.at###cookie_shown, body > #coo
-or.th###alert-policy
 fit4projects.at###setcookie
 die-linke-grundeinkommen.de##.disclaimer
 epravda.com.ua###checkUPcookies
@@ -21293,7 +21288,6 @@ devexpress.com###wsMsgWnd[msgid*="cookie-info"]
 fortisclothing.co.uk##.elementor-popup-modal
 inwork.cz##.fixed-cookie
 aukey.com##.fixed-cookie
-trendmicro.com##.cookie_verif
 vauen.de###cookieman-modal
 immunspender.com###cookieman-modal
 easybell.de###cookieman-modal
@@ -22067,6 +22061,19 @@ br-automation.com###siwa-cookiebar, .modal-backdrop
 carlin.es##.ovcookie
 curio.io###__next > .fixed
 tele2.nl###targetedPopupFrame
+becteroradio.com##.policy
+teroradio.com##.policy
+komchadluek.net###accept-cookie-footer
+nipa.co.th###cookie-con-head
+or.th###alert-policy, .cookies-pdpa, #pdpa-policy
+or.at###cookie_shown, body > #coo, .cookie-consent.container
+or.jp##.l-fixedCookie-item
+settrade.com###pdpa-policy
+thaiza.com##.ck-acpt-container
+trendmicro.com##.cookie_verif, c-dcx-cookie
+rennrad-news.de###_cp_wall
+tunetank.com##div[class*="cookie_info"]
+petromax.de##.mpp-container-position-bottom-bar
 !
 ! SCRIPT BLOCKING
 !
@@ -22384,8 +22391,8 @@ up-cookiemon.wavecdn.net
 /cookie_agreement_dialogue.js
 ||googleapis.com/55_cookie-consent$script
 /nsd-cookie-banner.js
-/wp-content/plugins/responsive-eu-cookie-notice/*
-/wp-content/plugins/master-popups-cookieplus/*
+/wp-content/plugins/responsive-eu-cookie-notice
+/wp-content/plugins/master-popups-cookieplus
 /cookie-banner-one.js
 /cookiemanagement.js
 /modules/mod_eu_cookies/*
@@ -22554,6 +22561,9 @@ cdn.cookiecode.nl
 /clientlibs/components/content/cookie/cookielayer
 /rm-cookieconsent.js
 /cookie-banner-vue
+||cookiecdn.com/cwc.js$script
+/om-gdpr-cookie-consent.js
+||cdn-cookieyes.com/client_data$script
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -22803,6 +22813,7 @@ cmp.pafo.fairbung.com
 ||24net.cz/resources/js/cmp.js$script
 /quorn-cmp.min.js
 ||cmps.o2.cz/delivery$script
+/tcf-cmp.min.js
 ||gofundme.com/js/3.0/visitorCookie.js$script
 /CookiesDirective
 CookieAccept/affirmation.js
@@ -23040,6 +23051,7 @@ ccm19.vucx.de
 /ccm19/public/app
 webcache.datareporter.eu
 webcache-eu.datareporter.eu
+cdn.realpeoplemedia.co.uk
 /consumer/cookie/client$domain=bt.com
 /frontend/ajax/cookies$domain=romstal.ro
 /rodo-agreement-$domain=gremimedia.pl|zw.com.pl
