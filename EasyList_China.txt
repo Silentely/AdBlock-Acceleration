@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: HXrAnm5c6BrQAmXTYkJObw
-! Version: 202205050046
+! Checksum: FpRs/d5U7ZuIc2XdZ8WF1w
+! Version: 202205050606
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last modified: 05 May 2022 00:46 UTC
+! Last modified: 05 May 2022 06:06 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/easylist/easylistchina/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -1701,6 +1701,7 @@ ubmcmm.baidustatic.com
 ||000123456789.site^
 ||0024aaaa.com^
 ||008844.cc^
+||23907915.com^
 ||00xvppy.cn^
 ||012.tw^$third-party
 ||01fen.com^
@@ -17100,91 +17101,6 @@ verystream.com#@#.adsbox
 $domain=googleads.g.doubleclick.net
 @@||download.mokeedev.com^$genericblock,generichide
 googleads.g.doubleclick.net###mys-wrapper
-! General rules for Novels
-###asdw3
-###asdw3 + img + :not(div)
-###chaptername + div > div[style="padding:10px;border-radius:10px;background-color:green;"]
-###downdiv > .downcode
-###gudingweiDiv
-###my_dp_a
-###my_gd_a
-$image,third-party,domain=258zw.com
-&xhtml?$script,third-party
-##.appguide-wrap[onclick*="bcebos.com"]
-##.box_con[style="border-radius:10px;background-color:#ff0000;padding:15px;"]
-.com/code.php?a=index&z=$script,third-party,xmlhttprequest
-.com/js/wap_billing.js
-##.downcode[style^="position:fixed;z-index:1000;top:200px;"]
-.html?android=hx*&_$csp=script-src
-.js?ssid=_$script,third-party
-##.layui-row[style="border-radius:10px;background-color:#ff0000;padding:15px;margin:15px;"]
-##.layui-row[style="border-radius:10px;background-color:#ff0000;padding:15px;margin:15px;margin-right:0px;margin-left:0px;"]
-##.layui-row[style="height:160px;border-radius:10px;background-color:#ff0000;padding:15px;margin:15px;"]
-.lu/js/wap_billing.js
-##.readerListADbox
-/1.js?ssfrid=$script,third-party
-/168*.xtml?$script,third-party
-/1MObaudu.$script,xmlhttprequest
-/1skwwd.
-/1xhtml?$script,third-party
-/22yq.js
-/2me3/true.js
-/555hsdsj/*
-/555hsdsjTT/*
-/CodeFiles/*.aspx?placeid=$third-party
-/aa_*_a1.js$script,third-party
-/assets/frameworks/types-*?plm=$script,third-party
-/bbhd_*_kkis.js
-/c.js#pid=$script,third-party
-/ce_l.aspx?showid=$third-party
-/hmzn_*_*_*.js?$script,third-party
-/i.asp?yk&df=1|$script,third-party
-/js/easyAD.js
-/js/easyAD2.js
-/js/mangoIndexBanner.js
-/js/pfad.js
-/jun0120211102193659.
-/jun0120211112090740.
-/mhw0/duniao/*
-/ojborn.so?$script,third-party
-/proxy_top_banner_js.php
-/socket?platform=*&href=$third-party,websocket
-/svr/*.aspx?placeid=$third-party
-/vbvb_*_pmpm.js
-/windowwap_*_*_*.js?$script,third-party
-/xxgg/app.js
-/xxgg/book.js
-/xxgg/dj*.js
-/xxgg/gzh.js
-/xxgg/pf*.js
-/xxgg/pv.js
-/xxgg/xsggs.js
-:4433/hm/cdn/static/jq_
-MoBi*.baidu.js$script,third-party
-##[class][onclick="window.location.href='/api/goapp/'"]
-##[class][onclick="window.location.href='https://www.suyuexs.com'"]
-##[class][onclick="window.location.href='https://www.tsqcy.cn'"]
-##[class][onclick^="window.location.href"][onclick*="%AF%B4.apk"]
-##[class][onclick^="window.location.href"][onclick*=".bcebos."]
-##[class][onclick^="window.location.href"][onclick*=".pypyj.com"]
-##[class][onclick^="window.location.href"][onclick*=".sydtqg.com"]
-_1MObaudu.js
-_1baidu.js$script,third-party
-_NYTEF.js
-_jyjy.js$script,third-party
-_muytrf.js$script,third-party
-##a[href*=".com/tg.html?id="]
-##a[href*=".xxmh"][href*="?u="]
-##a[href*="://mgzs.cdn.bcebos.com/"]
-##a[href="/ad2.html"]
-##a[href^="http"][onclick^="setCookie"][style^="width:100%;height:100"]
-##dd[style="padding:16px 16px 20px;margin: 15px;border-radius:50%;background-color:green;"]
-##div[onclick^="window.location.href"][onclick*=".bcebos."]
-##div[onclick^="window.location.href"][onclick*=".haoyundm.com"]
-##div[style="border-radius:8px;background-color:#005737;padding:6px;"]
-##div[style="box-sizing:border-box;padding:20px 16px;border-radius:8px;width:90%;margin:0 auto;"]
-##iframe[src*=".xxmh"][src*="?u="]
-xhtml?%22+$script,third-party
 ! Specific rules for Novels
 $script,subdocument,third-party,websocket,xmlhttprequest,domain=bhshu.net|louzhong8.com|miwens.com
 .m.biduoxs.com^
@@ -17297,6 +17213,93 @@ smjb.net##div[style*="height: 50%"]
 ||zanghaihua.org/js/
 ||zhenben.cc/2000/
 ||zhuishubox.com/js/after-rain.js
+! General rules for Novels
+###asdw3
+###asdw3 + img + :not(div)
+###chaptername + div > div[style="padding:10px;border-radius:10px;background-color:green;"]
+###downdiv > .downcode
+###gudingweiDiv
+###my_dp_a
+###my_gd_a
+$image,third-party,domain=258zw.com
+&xhtml?$script,third-party
+##.appguide-wrap[onclick*="bcebos.com"]
+##.box_con[style="border-radius:10px;background-color:#ff0000;padding:15px;"]
+.com/code.php?a=index&z=$script,third-party,xmlhttprequest
+.com/js/wap_billing.js
+##.downcode[style^="position:fixed;z-index:1000;top:200px;"]
+.html?android=hx*&_$csp=script-src
+.js?ssid=_$script,third-party
+##.layui-row[style="border-radius:10px;background-color:#ff0000;padding:15px;margin:15px;"]
+##.layui-row[style="border-radius:10px;background-color:#ff0000;padding:15px;margin:15px;margin-right:0px;margin-left:0px;"]
+##.layui-row[style="height:160px;border-radius:10px;background-color:#ff0000;padding:15px;margin:15px;"]
+.lu/js/wap_billing.js
+##.readerListADbox
+/ksks_*_*_*.js?$script,third-party
+/1.js?ssfrid=$script,third-party
+/168*.xtml?$script,third-party
+/1MObaudu.$script,xmlhttprequest
+/1skwwd.
+/1xhtml?$script,third-party
+/22yq.js
+/2me3/true.js
+/555hsdsj/*
+/555hsdsjTT/*
+/CodeFiles/*.aspx?placeid=$third-party
+/aa_*_a1.js$script,third-party
+/assets/frameworks/types-*?plm=$script,third-party
+/bbhd_*_kkis.js
+/121sdw/*$script,third-party
+/c.js#pid=$script,third-party
+/ce_l.aspx?showid=$third-party
+/hmzn_*_*_*.js?$script,third-party
+/i.asp?yk&df=1|$script,third-party
+/js/easyAD.js
+/js/easyAD2.js
+/js/mangoIndexBanner.js
+/js/pfad.js
+/jun0120211102193659.
+/jun0120211112090740.
+/mhw0/duniao/*
+/ojborn.so?$script,third-party
+/proxy_top_banner_js.php
+/socket?platform=*&href=$third-party,websocket
+/svr/*.aspx?placeid=$third-party
+/vbvb_*_pmpm.js
+/windowwap_*_*_*.js?$script,third-party
+/xxgg/app.js
+/xxgg/book.js
+/xxgg/dj*.js
+/xxgg/gzh.js
+/xxgg/pf*.js
+/xxgg/pv.js
+/xxgg/xsggs.js
+:4433/hm/cdn/static/jq_
+MoBi*.baidu.js$script,third-party
+##[class][onclick="window.location.href='/api/goapp/'"]
+##[class][onclick="window.location.href='https://www.suyuexs.com'"]
+##[class][onclick="window.location.href='https://www.tsqcy.cn'"]
+##[class][onclick^="window.location.href"][onclick*="%AF%B4.apk"]
+##[class][onclick^="window.location.href"][onclick*=".bcebos."]
+##[class][onclick^="window.location.href"][onclick*=".pypyj.com"]
+##[class][onclick^="window.location.href"][onclick*=".sydtqg.com"]
+_1MObaudu.js
+_1baidu.js$script,third-party
+_NYTEF.js
+_jyjy.js$script,third-party
+_muytrf.js$script,third-party
+##a[href*=".com/tg.html?id="]
+##a[href*=".xxmh"][href*="?u="]
+##a[href*="://mgzs.cdn.bcebos.com/"]
+##a[href="/ad2.html"]
+##a[href^="http"][onclick^="setCookie"][style^="width:100%;height:100"]
+##dd[style="padding:16px 16px 20px;margin: 15px;border-radius:50%;background-color:green;"]
+##div[onclick^="window.location.href"][onclick*=".bcebos."]
+##div[onclick^="window.location.href"][onclick*=".haoyundm.com"]
+##div[style="border-radius:8px;background-color:#005737;padding:6px;"]
+##div[style="box-sizing:border-box;padding:20px 16px;border-radius:8px;width:90%;margin:0 auto;"]
+##iframe[src*=".xxmh"][src*="?u="]
+xhtml?%22+$script,third-party
 !
 $script,subdocument,~third-party,websocket,xmlhttprequest,domain=m.666wx.cc|m.ajnnan.com|m.biqugee.com|m.biqusa.com|m.bqg99.cc|m.bswtan.com|m.jmshuwu.net|m.wx-book.com|m.xbiquwx.la|wodexiaoshuoh.com
 !
@@ -17322,6 +17325,11 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 @@||zmtt.net^$script,domain=luoqiuzw.com
 !#Novels ads union
 ||fenfa.biz^
+||h45pmx1.cn^
+||runningman.site^
+||5201314.fashion^
+||ckiller.tech^
+||dataose.top^
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
 ##a[href*=".233787.com/"]
