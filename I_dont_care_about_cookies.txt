@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 339.202205051343
+! Version: 340.202205090946
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 05 May 2022 11:43 UTC
+! Last modified: 09 May 2022 07:46 UTC
 !
 !
 ! GLOBAL RULES
@@ -422,8 +422,8 @@
 ###cookiespolicymessage
 ###cookie_toolbar
 ###eulaw
-~statik.be,~login.nos.pt,~mit-dem-rad-zur-arbeit.de,~dwd.de,~nerdstar.tv,~bund.de,~bafin.de,~onlinezugangsgesetz.de,~duvel.com,~dagvandewetenschap.be,~materna.de,~thw.de,~bmbf.de,~bafa.de,~bamf.de###cookiebanner:not(.modal)
-~statik.be,~dwd.de,~nerdstar.tv,~bund.de,~bafin.de,~onlinezugangsgesetz.de,~duvel.com,~dagvandewetenschap.be,~materna.de,~thw.de,~bmbf.de,~bafa.de,~advodan.dk,~technikmuseum.berlin##.cookiebanner:not(body):not(html):not(#header)
+~e-domizil.de,~statik.be,~login.nos.pt,~mit-dem-rad-zur-arbeit.de,~dwd.de,~nerdstar.tv,~bund.de,~bafin.de,~onlinezugangsgesetz.de,~duvel.com,~dagvandewetenschap.be,~materna.de,~thw.de,~bmbf.de,~bafa.de,~bamf.de###cookiebanner:not(.modal)
+~e-domizil.de,~statik.be,~dwd.de,~nerdstar.tv,~bund.de,~bafin.de,~onlinezugangsgesetz.de,~duvel.com,~dagvandewetenschap.be,~materna.de,~thw.de,~bmbf.de,~bafa.de,~advodan.dk,~technikmuseum.berlin##.cookiebanner:not(body):not(html):not(#header)
 ##.cookieHolder:not(body):not(html)
 ###cookieAgree
 ##.cookie_alert:not(body):not(html)
@@ -13470,7 +13470,6 @@
 !
 m.facebook.com##div[data-testid="cookie-policy-manage-dialog"], body > div[id] ~ script ~ div
 fb.com##div[class*="cookieBanner"]
-help.instagram.com##form[action^="/logout"] ~ div:not([id]):not([class]) + div:last-child
 linkedin.com###js-notification-wrapper[role="alert"], .global-alert.global-alert--yield, #global-alert-queue, #artdeco-global-alert-container, .alert, #alert
 twitter.com##.twtr-data-protection
 yahoo.com###gdpr[style*="padding"], #y-shade, #applet_p_50000174, .tdv2-applet-nagbar, .login-body + .login-footer
@@ -16082,7 +16081,6 @@ delock.com###cookie_private
 digitalocean.com###DO_CC_PANEL
 weatherbug.com##notification-footer
 rewolucjawoc.pl##.footer + .copy
-santacruzbicycles.com##.alert-header
 postermywall.com###user-consent-form
 pogodynka.pl###accept
 firstdraftnews.org##.welcome-message
@@ -19754,10 +19752,6 @@ lebegesund.de##lgv-cookie-manager
 shsu.blackboard.com##.lb-overlay, .lb-wrapper-absolute
 unitedwardrobe.com###__next > section
 herkules-transporte.de##main ~ div
-kontaktlinsenforum.de##.m-cookie
-skyfoxlabs.com##.m-cookie
-profi-reifen.at##.m-cookie
-sehen.de##.m-cookie
 hotel-neue-post.de##.evconsent-dialog-container
 claudiakookt.nl###sticky
 elexgame.com###cookie
@@ -21685,7 +21679,7 @@ zehnthof-weickert.de###agever
 volbers.com###agever
 mhra.gov.uk###__next > button, #__next > aside
 tourist-online.de##.cookieHintExtended
-nytimes.com##.free-form-content > .banner__container, .CookieBanner > .banner__container, #alertBannerMount
+nytimes.com##.free-form-content > .banner__container, .CookieBanner > .banner__container, #alertBannerMount, .gdpr.expanded-dock + div
 cornertrader.ch###disclaimer-alert
 engie.be##.modal.cookie-consent
 engie.com##.nj__cookies-politic
@@ -22094,6 +22088,19 @@ kaffeeverband.de###cookie
 coffee-business-platform.de###cookieModal
 toshiba-tv.com###cookieModuleModal, .modal-backdrop
 etsy.com##.wt-alert--fixed-bottom
+interactivebrokers.com###cookie-modal
+interactivebrokers.co.uk###cookie-modal
+photopea.com###uniccmp
+squarehabitat.fr##.TelerikModalOverlay, div[id*="Rgpd"]
+coindix.com###xbanner
+nyulcipobolt.hu##.cookie-container, .cookie-button
+afkgaming.com###snackbar ~ div
+smartsound.com##.cookie-consent
+santacruzbicycles.com###__next > div:first-child
+e-domizil.de##.disclaimer, .overlay
+kontaktlinsenforum.de##.m-cookie
+skyfoxlabs.com##.m-cookie
+sehen.de##.m-cookie
 !
 ! SCRIPT BLOCKING
 !
@@ -22584,6 +22591,7 @@ cdn.cookiecode.nl
 ||cookiecdn.com/cwc.js$script
 /om-gdpr-cookie-consent.js
 ||cdn-cookieyes.com/client_data$script
+||digitalsternemarketing.de/dscookie$script
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -22621,7 +22629,7 @@ browser-consent-front.coco.s-cloud.fi
 ||consent.truste.com/get?name=notice.js$script
 ||consent.trustarc.com/notice$script,domain=~tripit.com|~concursolutions.com|~fortune.com|~formula1.com|~forbes.com
 consent-manager.metomic.io
-cmp.uniconsent.com
+cmp.uniconsent.com$domain=~photopea.com
 /consent-banner-bootstrap
 ||tmgrup.com.tr/tmd-consent$script
 /js/consent-modal.js
@@ -23307,7 +23315,7 @@ trustarc.com$domain=avantiwestcoast.co.uk
 /c22.js$domain=cd.cz
 /cmp.$domain=o2.cz
 /stylecc$domain=immozentral.com
-privacy-center.org$domain=as.com|elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr
+privacy-center.org$domain=as.com|elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr|muyinteresante.es
 /cookieConsent$domain=loesdau.de
 consent*$domain=t-mobile.cz
 /jquery.cookiekit.js$domain=dgeg.gov.pt
