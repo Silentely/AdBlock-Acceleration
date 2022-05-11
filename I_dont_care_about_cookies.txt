@@ -1,17 +1,17 @@
 [Adblock Plus 2.0]
-! Version: 340.202205101356
+! Version: 340.202205111517
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 10 May 2022 11:56 UTC
+! Last modified: 11 May 2022 13:17 UTC
 !
 !
 ! GLOBAL RULES
 !
 ###stickyCookieBar
 ##.cookiebar-bar:not(body):not(html)
-~otpbank.ro,~anadibank.com,~e-shelter.de###sliding-popup
+~bportugal.pt,~otpbank.ro,~anadibank.com,~e-shelter.de###sliding-popup
 ###cookie_bar_top
 ###cookielaw:not(.modal)
 ~conso.ro,~daimler.com,~ihreapotheken.de,~filmboxlive.com###cookiePolicy:not(.reveal):not(.modal)
@@ -2992,7 +2992,7 @@
 ###monitcookie
 ###cookie-gm-new
 ###politique_confidentialite
-~sberbank.si,~ab.gr,~maxi.rs,~delhaize.be,~mega-image.ro,~cinemaxx.de,~aucoffre.com,~milliman.com##.cookiesModal:not(body):not(html)
+~netbox.cz,~sberbank.si,~ab.gr,~maxi.rs,~delhaize.be,~mega-image.ro,~cinemaxx.de,~aucoffre.com,~milliman.com##.cookiesModal:not(body):not(html)
 ###HCECookieManagerContainer
 ###bitbay-cookies
 ##.cookie-tool-container
@@ -22103,6 +22103,8 @@ sehen.de##.m-cookie
 buero-bedarf-thueringen.de###bbtCookieBG
 psd-rhein-ruhr.de##.lightbox--cookie-consent, .darken-layer
 michael-telecom.de###consentModal, .modal-backdrop
+econt.com##.gdpr-modal
+sickipedia.net##.policy-panel
 !
 ! SCRIPT BLOCKING
 !
@@ -22594,6 +22596,7 @@ cdn.cookiecode.nl
 /om-gdpr-cookie-consent.js
 ||cdn-cookieyes.com/client_data$script
 ||digitalsternemarketing.de/dscookie$script
+/modal-acceptare-cookie
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23340,6 +23343,7 @@ cmp.pent.no$domain=pent.no
 /acmp.js$domain=ameblo.jp
 /dkmb_gdpr.js$domain=fightful.com
 /pandectes-core.js$domain=arktis.de|apfelband.de
+/uc-cmp/*$domain=santander.de
 !
 ! FILTERLIST ONLY
 !
