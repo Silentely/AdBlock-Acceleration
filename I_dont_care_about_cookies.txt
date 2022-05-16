@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 340.202205131136
+! Version: 341.202205161301
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 13 May 2022 09:36 UTC
+! Last modified: 16 May 2022 11:01 UTC
 !
 !
 ! GLOBAL RULES
@@ -111,7 +111,7 @@
 ~dominospizza.pl,~penny.hu,~penny.cz###cookie-message
 ###cookieinfo-container
 ##.js-cookie-message:not(body):not(html)
-###cookieContainer
+~qatarairways.com###cookieContainer
 ##.footer-cookies-policy
 ##.eucookie_disclaimer:not(body):not(html)
 ~adtipp.de,~handelsregister.de,~bk.com###cookie-popup
@@ -127,7 +127,7 @@
 ###cookie-notifcation-banner
 ###ctl00_privacyCookies_LIPCNB_PrivacyandCookiesNoticePanel
 ###icoCookiesBanner
-~schuurman-schoenen.nl,~singaporeair.com###cookie-notification
+~qatarairways.com,~schuurman-schoenen.nl,~singaporeair.com###cookie-notification
 ~future-x.de###cookieBar
 ###cookie_policy-0
 ~hl.co.uk##.cookieBanner:not(body):not(html):not(#sprd-main)
@@ -10097,7 +10097,7 @@
 ##.fw-dialog[aria-labelledby="cookie-policy-content"]
 ###privacyPolicyOverlay
 ###privacyPolicyOverlay ~ #privacyPolicyPopup
-~lci.fr,~tf1.fr###popin_tc_privacy
+~tf1.fr,~tf1info.fr###popin_tc_privacy
 ###popin_tc_privacy ~ #privacy-overlay
 ##.cookie-body-overlay.show
 ##.r-cookie-bar:not(body):not(html)
@@ -11897,7 +11897,7 @@
 ##.cc-individual-cookie-settings-overlay
 ##.c-cookie-law
 ###div_cookies_warning
-~lci.fr,~tf1.fr###tc-privacy-wrapper
+~tf1.fr,~tf1info.fr###tc-privacy-wrapper
 ##.pum[data-popmake*="cookie-consent"]
 ###gdpr[data-cookies-policy-url]
 ###cookie-choice-container
@@ -21139,9 +21139,6 @@ findhs.codes###PrivacyAlert
 animeschedule.net###consent-popup-wrapper
 sberbankdirect.de##.cm
 toner-dumping.de##.js--overlay
-ticketswap.com##reach-portal + ticketswap-portal
-ticketswap.nl##reach-portal + ticketswap-portal
-ticketswap.fr##reach-portal + ticketswap-portal
 bazarchic.com###react-footer > div > div:not([class])
 lotuscars.com###consent-modal
 edclub.com##.__CC_popup
@@ -22128,6 +22125,17 @@ essayshark.com##.policies
 samsonite.ro##.mainBlack
 annuaire-inverse-france.com##.cookies
 sorteonline.com.br##.cp-cookies
+ticketswap.com##ticketswap-portal > ul
+ticketswap.nl##ticketswap-portal > ul
+ticketswap.fr##ticketswap-portal > ul
+ticketswap.be##ticketswap-portal > ul
+ticketswap.de##ticketswap-portal > ul
+ticketswap.es##ticketswap-portal > ul
+ticketswap.hu##ticketswap-portal > ul
+ticketswap.it##ticketswap-portal > ul
+ticketswap.se##ticketswap-portal > ul
+ticketswap.com.br##ticketswap-portal > ul
+rewardlink.io##.snackbar
 !
 ! SCRIPT BLOCKING
 !
@@ -22620,6 +22628,7 @@ cdn.cookiecode.nl
 ||cdn-cookieyes.com/client_data$script
 ||digitalsternemarketing.de/dscookie$script
 /modal-acceptare-cookie
+/cookies-bar/*
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -22818,7 +22827,7 @@ jssdk.privacy.pre.schibsted.com
 /contao-privacy-center.js
 privacy-mgmt.com$domain=~standard.co.uk|~theguardian.com|~theguardian.com.|~bild.de|~computerbild.de|~bold.dk|~welt.de|~t-online.de|~focus.de|~chip.de|~faz.net|~n-tv.de|~spiegel.de|~privacy-mgmt.com|~wunderweib.de|~helpster.de|~tvmovie.de|~praxisvita.de|~cosmopolitan.de|~giga.de|~ostsee-zeitung.de|~lvz.de|~mein-schoener-garten.de|~boerse-online.de|~tvspielfilm.de|~autobild.de|~bike-bild.de|~bz-berlin.de|~cyberport.at|~cyberport.de|~golem.de|~express.de|~volkskrant.nl|~rtl2.de|~si.com|~derstandard.de|~derstandard.at|~unsere-helden.com|~rtl.de|~stern.de|~freenet-funk.de|~maennersache.de|~heise.de|~t3n.de|~11freunde.de|~finanzen.at|~finanzen.net|~insider.com|~transfermarkt.at|~transfermarkt.ch|~transfermarkt.co.uk|~transfermarkt.com|~transfermarkt.com.tr|~transfermarkt.de|~transfermarkt.fr|~transfermarkt.it|~transfermarkt.nl|~transfermarkt.pl|~transfermarkt.pt|~transfermarkt.us|~vip.de|~businessinsider.de|~clever-tanken.de|~fitbook.de|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~noizz.de|~politico.eu|~rollingstone.de|~stylebook.de|~techbook.de|~testbild.de|~wieistmeineip.at|~wieistmeineip.de|~wieistmeineip.ch
 privacy-policy.u-lab.nl
-||trustcommander.net/privacy$script,domain=~lci.fr|~tf1.fr
+||trustcommander.net/privacy$script,domain=~tf1info.fr|~tf1.fr
 app.eprivacy-keeper.eu
 /wp-content/plugins/en-privacy-notification/*
 privacy.claytonhomes.com
@@ -22870,6 +22879,7 @@ cmp.pafo.fairbung.com
 /quorn-cmp.min.js
 ||cmps.o2.cz/delivery$script
 /tcf-cmp.min.js
+||fastcmp.com/fast-cmp.js$script
 ||gofundme.com/js/3.0/visitorCookie.js$script
 /CookiesDirective
 CookieAccept/affirmation.js
