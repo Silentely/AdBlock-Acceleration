@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 341.202205161301
+! Version: 341.202205171106
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 16 May 2022 11:01 UTC
+! Last modified: 17 May 2022 09:06 UTC
 !
 !
 ! GLOBAL RULES
@@ -10007,7 +10007,7 @@
 ###kecookiehint
 ##.cookie-disclaimer--default.is-visible
 ##.s-cookie-popup:not(body):not(html)
-##body[data-file-load-icon*="geberit"] .page-hint-box
+###snippet--cookieSettings
 ##.fa-cookie.active[data-fa-cookie-inited]
 ##div[aria-describedby="cookies-policy-message"]
 ##.cookie-permission-banner
@@ -13476,7 +13476,6 @@
 ##.cookie-container-wrapper
 ##.cc-bespoke-button
 ##.consent-wrap-outer[style*="5000"]
-###snippet--cookieSettings
 !
 ! CUSTOM RULES
 !
@@ -16504,7 +16503,6 @@ zaliastotele.lt###wrapperCookie
 serpstat.com##.gdpr-tab
 derkonzert.de##footer ~ div:last-child
 bekendeburen.nl###AVG-message
-minijob-zentrale.de###tracker-optin
 mspy.com##.cookie-l
 brainpop.com###announcment_alert
 close-up.it##.stickyFooter
@@ -18686,7 +18684,6 @@ sofifa.com##.wrapper .bp3-callout.bp3-intent-danger
 direktno.rs###saglasnost-container
 secunews.be##.pix-wrapper.pix-accept
 otto-office.com###top-notification_accept-machmichweg-guidelines, .ooB-black-overlay-machmichweg
-culture.ru##.js-notify-bar
 spoonflower.com##.b-text-box.x-global-dialog
 htc.com##.cookie-consent
 atramentowka.com###cookie
@@ -21776,7 +21773,6 @@ elopage.com##.Toastify ~ .elo-btn
 deutsche-bank.es##.modal-cookie
 northernpowergrid.com##header > .ch2-icon
 hoyoverse.com##.mihoyo-cookie-tips, .cookie-tip
-coupons.de###cmpwrapper
 norcamp.de###cookieCD
 banneke.com###cookie-block
 kennisopenbaarbestuur.nl##.jqmConfirm, #cookieStatus
@@ -21833,7 +21829,6 @@ armegoszto.hu##.v-snack--bottom
 rekonise.com##.consent-snackbar
 myoffice.ru###cookie
 opensource.google##snack-bar-container
-okdo.com##.c-notification-bar__item[data-cookie-name*="gdpr"]
 flintshire.gov.uk##.fcc-cookie-consent
 myunidays.com##.toast
 vista.com##div[class*="footerNotificationWrapper"]
@@ -22136,6 +22131,11 @@ ticketswap.it##ticketswap-portal > ul
 ticketswap.se##ticketswap-portal > ul
 ticketswap.com.br##ticketswap-portal > ul
 rewardlink.io##.snackbar
+culture.ru###__next main + div ~ div:last-child, .notify-bar
+coupons.de###cmpwrapper
+okdo.com##div[class*="c-notification-bar"]
+stark-suomi.fi###cookie-modal
+wimhofmethod.com###appHeader > div:first-child:not(:only-child)
 !
 ! SCRIPT BLOCKING
 !
@@ -22706,7 +22706,7 @@ analytics-consent-manager.azureedge.net
 /tm-gdpr-consent/*
 ||snigelweb.com/adconsent$script
 ||sncmp.com/adconsent$script
-||consentmanager.net/delivery/js/cmp$script
+||consentmanager.net/delivery/js/cmp$script,domain=~winfuture.de
 consent-manager.confirmic.com
 ||consentbanner.de/public/app.js$script
 ||classistatic.de/consent-statics$script
@@ -22719,7 +22719,7 @@ consent-manager.confirmic.com
 /epaas.consentdrawer.bundle
 /consentbanner-fragment/*
 ||altravia.com/connector/consent_mode.js$script
-||consentmanager.net/delivery/cmp$script
+||consentmanager.net/delivery/cmp$script,domain=~winfuture.de
 /taunton-user-consent.js
 /fileadmin/templates/js/cconsent.js
 /wp-content/plugins/okf-euconsent
@@ -23120,6 +23120,7 @@ ccm19.vucx.de
 webcache.datareporter.eu
 webcache-eu.datareporter.eu
 cdn.realpeoplemedia.co.uk
+/assets-usercentrics/uc-version
 /consumer/cookie/client$domain=bt.com
 /frontend/ajax/cookies$domain=romstal.ro
 /rodo-agreement-$domain=gremimedia.pl|zw.com.pl
@@ -23280,7 +23281,6 @@ privacy-manager-v*$domain=df.eu
 /Consent.js$domain=gaming-style.com
 /cc.js$domain=transparenzregister.de
 /uc/*$domain=mcmakler.de
-/uc-version$domain=geberit.cz
 cookie-policy*$domain=ubuntu.com
 consent.js^$domain=zitatezumnachdenken.com
 cc.cdn.civiccomputing.com$domain=metoffice.gov.uk|churchofengland.org|yodel.co.uk|totalwar.com|gfps.com
