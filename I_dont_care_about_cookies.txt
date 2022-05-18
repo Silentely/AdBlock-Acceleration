@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 341.202205171106
+! Version: 341.202205181004
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 17 May 2022 09:06 UTC
+! Last modified: 18 May 2022 08:04 UTC
 !
 !
 ! GLOBAL RULES
@@ -16,7 +16,7 @@
 ###cookielaw:not(.modal)
 ~conso.ro,~daimler.com,~ihreapotheken.de,~filmboxlive.com###cookiePolicy:not(.reveal):not(.modal)
 ###cookiePolicyBackground
-~pdf24.org,~uelzener.de,~ima.it###cookieBanner
+~babyartikel.de,~pdf24.org,~ima.it###cookieBanner
 ~we-worldwide.com###cookieNotification
 ###yourCookieSettings
 ~stoffe.de,~myfabrics.co.uk,~tyg.se###cookieOverlay
@@ -3011,7 +3011,7 @@
 ###cookies_viewer
 ##.cookie_layer:not(body):not(html)
 ###js-cookieInfo
-##.accept_cookies:not(body):not(html)
+##.accept_cookies:not(body):not(html):not(button)
 ##.cookiebg:not(body):not(html)
 ###containerCookieWet
 ##.ulCookiePol:not(body):not(html)
@@ -21353,7 +21353,6 @@ bandaancha.eu##.euCk
 hertz.ca##div[class*="PrivacyPolicyBanner"]
 sagepub.com##header [role="alert"]
 theartnewspaper.com###__next > div > .fixed
-coinbase.com###root > div[class*="Layout"] ~ div[class^="sc"]:last-child, #page_content > div + div:last-child, div[class*="ContentHub__FooterWrapper"] ~ div:last-child, #root > div[class^="Flex"] > div > [data-testid="step-loaded-active"] > [class^="sc"]:last-child
 people.cn###shengmingTip
 bipandgo.com##.ucm_wrapper
 benq.eu###cookie-fullscreen
@@ -21608,7 +21607,6 @@ zeitzeugen-portal.de###cookiebg, #hdg-cookie-accept
 bitrefill.com###consentDialog
 assurland.com###consentManagementPlatform, .modal-backdrop
 web.dev##web-snackbar
-pagespeed.web.dev##c-wiz > div > div > div > div[jscontroller][jsaction$=");"]
 kraemer.de###consentLayer
 landkreis-ostallgaeu.de###cookie
 gordonua.com##.cookie-label
@@ -22136,6 +22134,14 @@ coupons.de###cmpwrapper
 okdo.com##div[class*="c-notification-bar"]
 stark-suomi.fi###cookie-modal
 wimhofmethod.com###appHeader > div:first-child:not(:only-child)
+interion.cz##.mcc-modal
+compuprint.com###pryck
+pagespeed.web.dev##c-wiz > div > div > div > div[jscontroller][jsaction$=");"]
+scoresaber.com##.sticky-footer
+coinbase.com###root > div[class*="Layout"] ~ div[class^="sc"]:last-child, div[class*="ContentHub__FooterWrapper"] ~ div:last-child, #root > div[class^="Flex"] > div > [data-testid="step-loaded-active"] > [class^="sc"]:last-child
+pro.coinbase.com###page_content > div + div:last-child
+help.coinbase.com###__next > section[class*="footer"] ~ div
+login.coinbase.com##div[data-testid="banner-container"]
 !
 ! SCRIPT BLOCKING
 !
