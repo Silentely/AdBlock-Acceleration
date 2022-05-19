@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 341.202205181004
+! Version: 341.202205191002
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 18 May 2022 08:04 UTC
+! Last modified: 19 May 2022 08:02 UTC
 !
 !
 ! GLOBAL RULES
@@ -13400,9 +13400,9 @@
 ###privacy-data-notice
 ###app div[class*="GDPRConsent-root"]
 ##.site_block_wrap_cookie
-~abc.es,~hoy.es,~diariosur.es,~elcorreo.com,~surinenglish.com,~eldiariomontanes.es,~jardinage.lemonde.fr,~investir.lesechos.fr,~canarias7.es,~elcomercio.es###didomi-notice
+~abc.es,~hoy.es,~diariosur.es,~elcorreo.com,~surinenglish.com,~eldiariomontanes.es,~jardinage.lemonde.fr,~investir.lesechos.fr,~canarias7.es,~elcomercio.es,~laverdad.es,~ideal.es###didomi-notice
 ###didomi-custom-host
-~abc.es,~hoy.es,~diariosur.es,~elcorreo.com,~surinenglish.com,~eldiariomontanes.es,~jardinage.lemonde.fr,~investir.lesechos.fr,~canarias7.es,~elcomercio.es##body:not(.didomi-popup-open) #didomi-host
+~abc.es,~hoy.es,~diariosur.es,~elcorreo.com,~surinenglish.com,~eldiariomontanes.es,~jardinage.lemonde.fr,~investir.lesechos.fr,~canarias7.es,~elcomercio.es,~laverdad.es,~ideal.es##body:not(.didomi-popup-open) #didomi-host
 ###cookies + #avisoConfig
 ##.siteCookies--bottom
 ##.c-cookie-consent--default
@@ -13476,6 +13476,9 @@
 ##.cookie-container-wrapper
 ##.cc-bespoke-button
 ##.consent-wrap-outer[style*="5000"]
+###simpleCookieBar
+###shopify-privacy-banner-div
+###root-footer div[class*="CookiesBar"]
 !
 ! CUSTOM RULES
 !
@@ -16884,7 +16887,6 @@ lojasrenner.com.br##.notification
 getcomposting.com###top-notice
 skoleporten.dk###jGrowl
 gr8.com##div[data-editable="boxCookieNotification"]
-livescore.com###ls_cpa
 freetorrent.tk###alert_system_notice
 gebuhrenfrei.com##.cc_wrapper
 kickresume.com##div[class*="CookieConsentBanner"]
@@ -21071,7 +21073,6 @@ correios.com.br###cookiesId
 citilink.ru##.PersonalDataConfirm
 werkstars.de##.wsr--data-protection
 jacobin.de###__next > [class*="Cookie"]
-kobo.com##body > div[id^="cki"]
 lambdatest.com##.cookiesdiv
 dofus.com##.ak-modal-wrapper, .ui-widget-overlay
 modrinth.com##.container > .banner
@@ -21307,7 +21308,6 @@ hotroxuk.com##.dot_cookies
 packrafting-store.de###basharModal
 laenderbahn.com##.cc-overlay
 dobrzemieszkaj.pl##.rodo
-hotcleaner.com##footer + div + noscript ~ div[class], footer + noscript ~ div[class]
 alko-garden.de###divDisabledBackground
 alko-garden.hu###divDisabledBackground
 alko-garden.pl###divDisabledBackground
@@ -21659,7 +21659,6 @@ dreame.com##.drawer-wrapper
 groovy.bot###__layout > div > .bottom-0
 hydra.bot###__layout > div > .bottom-0
 dagsavisen.no###consent-container
-marginalen.se##.modal[data-modal-name="cookie-modal"]
 macupdate.com##.mu_cookie
 beamtic.com###notifications
 llbean.com##.user-consent
@@ -22142,6 +22141,9 @@ coinbase.com###root > div[class*="Layout"] ~ div[class^="sc"]:last-child, div[cl
 pro.coinbase.com###page_content > div + div:last-child
 help.coinbase.com###__next > section[class*="footer"] ~ div
 login.coinbase.com##div[data-testid="banner-container"]
+hotcleaner.com##footer > div > div:first-child
+kobo.com##body > div[id^="cki"]
+underarmour.it##.l-consent_banner
 !
 ! SCRIPT BLOCKING
 !
@@ -22635,6 +22637,7 @@ cdn.cookiecode.nl
 ||digitalsternemarketing.de/dscookie$script
 /modal-acceptare-cookie
 /cookies-bar/*
+cookieconsent.blob.core.windows.net
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23302,7 +23305,7 @@ brsimg.com/gdpr$script,domain=boursorama.com
 trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookie-banner$domain=hauptbahnhofcity.wien
 /cookiefly/*$domain=internet-rockstars.com
-/messagingNoTcfApi.js$domain=aftenposten.no|vg.no|svd.se|bt.no|aftenbladet.no|e24.no|minmote.no
+/messagingNoTcfApi.js$domain=aftenposten.no|vg.no|svd.se|bt.no|aftenbladet.no|e24.no|minmote.no|klart.se
 /consent-layer/*$domain=bahn.de
 /checkcookies.js$domain=iracing.com
 /ice.js$domain=lifesycle.co.uk
