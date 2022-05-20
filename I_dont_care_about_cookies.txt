@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 341.202205191002
+! Version: 341.202205200900
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 19 May 2022 08:02 UTC
+! Last modified: 20 May 2022 07:00 UTC
 !
 !
 ! GLOBAL RULES
@@ -243,7 +243,7 @@
 ###cookieMgn
 ###__ndcc_cookieImpliedConsent
 ###cookie-drop
-~cafe-royal.com,~rituals.com##.cookie-bar:not(body):not(html)
+~clasohlson.com,~cafe-royal.com,~rituals.com##.cookie-bar:not(body):not(html)
 ~mea.com,~mitsubishielectric.com##.cookie_policy:not(body):not(html):not(#Content):not(#page)
 ###rb-cookie-container
 ~analog.com###cookie-consent-container
@@ -6933,7 +6933,7 @@
 ###atrium_network_cookies_cover_wrapper
 ##.js-cookie-warning:not(body):not(html)
 ##.md-cookiesoptinout:not(body):not(html)
-###js-cookie-notification
+~clasohlson.com###js-cookie-notification
 ##.cookie-consent-comp:not(body):not(html)
 ##.ck-message-wrap:not(body):not(html)
 ##.cookie-consent[id*="CookieConsentPortlet"]
@@ -7073,7 +7073,7 @@
 ##.top-info-bar-cookie:not(body):not(html)
 ##.cookie.cookie--active
 ###CookiePrivacy
-##.cookie-bar__container
+~clasohlson.com##.cookie-bar__container
 ###cl_banner
 ##.analyticsCookiePolicyAgreement
 ###cookie_alert_container
@@ -14281,7 +14281,6 @@ adventureinsel.de##.infobox
 goteo.org###message.info
 valvolgyikisvasut.hu###SITE_ROOT + div
 germinalbio.it##body > div:not([id]):not([class])[style*="fixed"], body > div:not([id]):not([class])[style*="absolute"]
-papergeek.fr###notification-bar-top
 transcend.de###legal_notice
 aidonslesnotres.fr###cnil-wrapper
 unicreditbank.cz###pop-down
@@ -17079,7 +17078,6 @@ sfr.re##body > .cc
 cryptohopper.com##.notifyjs-consent-base
 decalgirl.com##.cookieBubble
 preferred411.com##.toasterCookie
-desmo-racing.com##body > div[class*="cookies"]
 idw-online.de###idwcookie
 aktionen.payback.de##.notification
 vizrt.com##div[data-module="CookieBanner"]
@@ -19397,7 +19395,6 @@ swstrings.com##.notification-container
 truefittandhill.co.uk##.consent, #consent
 joker.com##.v-snack, .v-dialog--persistent
 metrobankonline.co.uk##.metro-cookiebar__block
-m-strana.ru##.agreement-cookie
 regmag.pl###cookie
 donald.pl###__next > footer ~ div
 scottevest.com##.cookie
@@ -21475,7 +21472,6 @@ fvg.it###cookieModal
 tsuche.com###c-c
 lionsroar.com##.elementor-popup-modal
 sazka.cz##.consent-bar
-burgerking.co.uk###main ~ div[class*="Container"]
 0800repair.com###wp-notification
 ecologi.com###modal-root ~ div
 steambuy.com###sb-privacy-policy
@@ -21761,8 +21757,6 @@ passeidireto.com##pd-cookie-banner
 samsung.com###root [data-testid="notice-footer"], #cookie_component
 isc2.org##.notice--warning
 ebox-auto.com##.rgpd
-burgerking.ru##.bk-cookie-message
-burgerking.fr##main > header ~ div:last-child
 tylko.com##.ty-settings
 ma-calculatrice.fr###manger-des-minis-gateaux
 arbiton.com##.cookies
@@ -22144,6 +22138,16 @@ login.coinbase.com##div[data-testid="banner-container"]
 hotcleaner.com##footer > div > div:first-child
 kobo.com##body > div[id^="cki"]
 underarmour.it##.l-consent_banner
+udir.no###cookie-modal
+desmo-racing.com###cookie
+direct-cuves.fr###coockies-modal
+strana.one###openModal
+strana.today###openModal
+m-strana.ru##.agreement-cookie
+burgerkingrus.ru##.bk-cookie-message
+burgerking.co.uk##div[class*="toast-container"] ~ div:not([data-testid])
+burgerking.fr##main > header ~ div:last-child
+makeship.com##.consent-wrapper
 !
 ! SCRIPT BLOCKING
 !
@@ -22638,6 +22642,7 @@ cdn.cookiecode.nl
 /modal-acceptare-cookie
 /cookies-bar/*
 cookieconsent.blob.core.windows.net
+/all-cookieconsent-js.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
