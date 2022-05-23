@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202205221513
+! Version: 202205230001
 ! Title: EasyPrivacy
-! Last modified: 22 May 2022 15:13 UTC
+! Last modified: 23 May 2022 00:01 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -5515,7 +5515,7 @@ cgi-bin/counter
 /beaconimages.netflix.net/*$image
 /click.*/q/*$image
 /click.email.$image
-/clicks.degiro.com/q/*
+/clicks.*/q/*$image
 /clicks.email.$image
 /cmail2.com/t/*
 /coherentpath.link/o/*$image
@@ -15926,8 +15926,10 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ! ||clickmail.stubhub.com^
 ! ||go.fvtc.edu^
 ! ||links.strava.com^
+! ||wl.spotify.com^
 ||clickmail.stubhub.com^$image,script
 ||email.mg.everyonesocial.com^$image,script
+||wl.spotify.com^$image,script
 ! *.omtrdc.net (needs to be removed)
 ! *.demdex.net (needs to be removed)
 ! *.bred4tula.com (needs to be removed)
@@ -25249,7 +25251,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||url8196.mindrise.app^
 ||url9576.oneshift.com^
 ||url9609.account.experience-muse.com^
-||wl.spotify.com^
 ! -----------------International individual tracking systems-----------------!
 ! *** easylist:easyprivacy/easyprivacy_specific_international.txt ***
 ! German
@@ -25296,6 +25297,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||jobs.ch/api/v1/public/product/track/
 ||log.wilmaa.com^
 ||logging.wilmaa.com^
+||ma.tarnkappe.info^
 ||metrics.n-tv.de^
 ||moviepilot.de/assets/autotrack-
 ||netzwelt.de/log?
@@ -26329,7 +26331,8 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||9cdn.net^*/js/tracking/$script,domain=nine.com.au
 @@||accounts.nintendo.com/account/js/pages/$script,~third-party
 @@||admin.memberspace.com/sites/*/analytics/views$~third-party
-@@||adobedtm.com/*-source.min.js$script,domain=aarp.org|atresplayer.com|backcountry.com|bose.com|bt.com|cadenaser.com|churchofjesuschrist.org|dollargeneral.com|kroger.com|personal.natwest.com|ssrn.com|telus.com|verizon.com
+@@||adobedtm.com/*-libraryCode_source.min.js$script,domain=ally.com
+@@||adobedtm.com/*-source.min.js$script,domain=aarp.org|ally.com|atresplayer.com|backcountry.com|bose.com|bt.com|cadenaser.com|churchofjesuschrist.org|dollargeneral.com|kroger.com|personal.natwest.com|ssrn.com|telus.com|verizon.com
 @@||adobedtm.com/*_source.min.js$script,domain=backcountry.com|hl.co.uk|kroger.com|telus.com
 @@||adobedtm.com/extensions/$script,domain=apple.com|bravotv.com|cadenaser.com|foodnetwork.com|telus.com|verizon.com
 @@||adobedtm.com/launch-$script,xmlhttprequest
