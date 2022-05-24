@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 341.202205230945
+! Version: 341.202205241001
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 23 May 2022 07:45 UTC
+! Last modified: 24 May 2022 08:01 UTC
 !
 !
 ! GLOBAL RULES
@@ -367,7 +367,7 @@
 ###blogger_cookie_notice
 ###cookieFooter
 ###cookie_banner_container
-~techbone.de###cookie_banner
+###cookie_banner:not(.modal)
 ###jlcookie_controlMsgDeny
 ###jlcookie_controlMsgFirst
 ###jlcookie_controlMsg
@@ -13400,9 +13400,9 @@
 ###privacy-data-notice
 ###app div[class*="GDPRConsent-root"]
 ##.site_block_wrap_cookie
-~abc.es,~hoy.es,~diariosur.es,~elcorreo.com,~surinenglish.com,~eldiariomontanes.es,~jardinage.lemonde.fr,~investir.lesechos.fr,~canarias7.es,~elcomercio.es,~laverdad.es,~ideal.es###didomi-notice
+~abc.es,~hoy.es,~diariosur.es,~elcorreo.com,~surinenglish.com,~eldiariomontanes.es,~jardinage.lemonde.fr,~investir.lesechos.fr,~canarias7.es,~elcomercio.es,~laverdad.es,~ideal.es,~lasprovincias.es###didomi-notice
 ###didomi-custom-host
-~abc.es,~hoy.es,~diariosur.es,~elcorreo.com,~surinenglish.com,~eldiariomontanes.es,~jardinage.lemonde.fr,~investir.lesechos.fr,~canarias7.es,~elcomercio.es,~laverdad.es,~ideal.es##body:not(.didomi-popup-open) #didomi-host
+~abc.es,~hoy.es,~diariosur.es,~elcorreo.com,~surinenglish.com,~eldiariomontanes.es,~jardinage.lemonde.fr,~investir.lesechos.fr,~canarias7.es,~elcomercio.es,~laverdad.es,~ideal.es,~lasprovincias.es##body:not(.didomi-popup-open) #didomi-host
 ###cookies + #avisoConfig
 ##.siteCookies--bottom
 ##.c-cookie-consent--default
@@ -13482,6 +13482,8 @@
 ##.cookie-warning-modal--ribbon
 ##.alert[id*="privacypolicy"]
 ##.efilli-layout-legacy
+###cookie-warning-box
+###bbcdBanner
 !
 ! CUSTOM RULES
 !
@@ -17020,7 +17022,6 @@ bytom.com.pl##byt-cookie-law-info
 qsrinternational.com##.gdpr
 cypruspolicenews.com##.modal
 infotrafic.com##app-snack-bar
-lifemiles.com##div[class*="CookiesBrowserAlert"]
 wallpaperdirect.com##footer ~ .fixed-bottom
 anzdoc.com###ANZDOCCOM_cookie_box
 wikieventi.it###corpo > div:not([id])
@@ -18249,7 +18250,6 @@ schwab.de##.cj-privacy-settings
 mall.tv##.privacy-wrapper.flex-wrap
 shop.hfo.pl###cookie
 mclaren.com##.messages.show
-getrad.co##.cookie-policy-modal
 scad.edu##.consent-footer
 sbonline.net###footer.tekst
 mytheresa.com###privacy-overlay, #privacy-container
@@ -18648,7 +18648,6 @@ specialdeal.at##.cookie
 wbkidsgo.com###onetrust-outer
 anaciroma.it##.w2t-banner
 speicherguide.de##.consent, #consent
-buffalo-grill.fr##main ~ footer ~ div
 codesignal.com##.elementor-popup-modal
 cyfronika.com.pl###cookie
 tiermaker.com###agreementMessage
@@ -20450,7 +20449,6 @@ minitab.com###cpToaster
 severeweather.wmo.int##.gdpr
 dzieje.pl###cookies
 vastelastenbond.nl##.vlb-cookies
-standardlife.co.uk##.cookie-policy-modal
 webmotors.com.br###root > div
 e-mobile.ch##.site_notification
 herbiolys.fr##.st_notification_wrap
@@ -20692,7 +20690,6 @@ comfortclick.com##.footer ~ div
 hof-lenze.de##main ~ div
 bb-service.info##main ~ div
 haarem.de###consent
-susanneeisenmann.de###bbcdBanner
 simplydhl.com###ixp-gate-frame
 parrotcoffee.com###growls
 huzaro.pl###cookie
@@ -21092,7 +21089,6 @@ pingback.com##.cookies-modal
 treinaweb.com.br##div[c_data="c_cookie_main"]
 nettolohn.de##div[id*="hinweis-cookie"]
 talktomeinkorean.com###wpfront-notification-bar-spacer
-gorillas.io###cookie-settings
 hampel-auctions.com###consentmanager
 compress-or-die.com##.module_consent__main
 theater-essen.de##.dataprotection
@@ -21338,7 +21334,6 @@ clipchamp.com##main + div ~ div
 lichtblick.de###uc_layer
 volimzmenu.cz##.cookies
 petlove.com.br##.card-bottom
-rockmods.net###cookies-iki
 farmaciasdirect.com##.fd-cookies
 posti.fi###consent-popup
 e-volt.es##div[c_data="c_cookie_main"]
@@ -21403,7 +21398,6 @@ pornpics.com###cookie-contract
 ntcompatible.com##script[src*="consent"] + .alert
 eportugal.gov.pt###section-cookies
 pure.app###__next main ~ div
-rockstargames.com##main ~ footer ~ div
 livemaster.ru##.cookieconsent-ru
 hotcoursesabroad.com###ckieOvrlayDiv
 markt-lichtenau.de###ck-overlay
@@ -21447,7 +21441,6 @@ gymgrossisten.com##.overlay-banner
 e-rolety.eu###cookie
 babil.com##.bbl-cookie-consent
 avg.com###bottomBar #gdpr
-mediaexpert.pl##.layout > .wrapper
 mozio.com###container > .desktop ~ div
 cargoboard.com##body > .fixed-bottom.bg-gray
 pvs-studio.com##.personal-data-confirm
@@ -22146,6 +22139,22 @@ makeship.com##.consent-wrapper
 gv.at###am-cookie, #l42-cc__body
 parlament.gv.at##.popupOverlay
 bakecaincontrii.com##.alert.fixed-bottom
+superology.com##.omnom-nom
+thephuketnews.com##.fixed-bottom
+mediaexpert.pl###fastcookie
+abrdn.com##.cookie-policy-modal
+getrad.co##.cookie-policy-modal
+contino.io##main ~ footer ~ div
+rockstargames.com##main ~ footer ~ div
+talkingtomandfriends.com###cookie-settings
+gorillas.io###cookie-settings
+rockmods.net##.cookies-show
+freesciencelessons.co.uk##.divibars-container
+namesilo.com###app > header ~ section
+hansanders.nl##.module--cookie
+airgradient.com##.cookie-container
+emsc.eu###splashscreen
+sidusheroes.com##div[class*="cookie__show"]
 !
 ! SCRIPT BLOCKING
 !
@@ -22641,6 +22650,7 @@ cdn.cookiecode.nl
 /cookies-bar/*
 cookieconsent.blob.core.windows.net
 /all-cookieconsent-js.js
+/cookies-browser-alert-ui.fragment.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -22742,6 +22752,7 @@ consent-manager.confirmic.com
 /bundles/consent-init?v=
 /acc.consent.js
 consent.scm-verlagsgruppe.de
+/wp-content/plugins/consent-magic-pro
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -22793,7 +22804,7 @@ gdpr-wrapper.privacymanager.io$domain=~kinuskikissa.fi|~geenstijl.nl|~dailybuzz.
 ||evidon.com/pub/gdprnotice.js$script
 /wp-content/plugins/ct-ultimate-gdpr
 ||gdpr.mandarin-medien.de/manager.js$script
-gdpr-tcfv2.sp-prod.net$domain=~computerbild.de|~programme-tv.net|~bold.dk|~welt.de|~sport1.de|~ostsee-zeitung.de|~lvz.de|~mein-schoener-garten.de|~autobild.de|~bike-bild.de|~bz-berlin.de|~travelbook.de|~si.com|~t3n.de|~businessinsider.de|~clever-tanken.de|~fitbook.de|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~noizz.de|~politico.eu|~rollingstone.de|~stylebook.de|~techbook.de|~testbild.de|~wieistmeineip.at|~wieistmeineip.de|~wieistmeineip.ch
+gdpr-tcfv2.sp-prod.net$domain=~computerbild.de|~programme-tv.net|~bold.dk|~welt.de|~sport1.de|~ostsee-zeitung.de|~lvz.de|~mein-schoener-garten.de|~autobild.de|~bike-bild.de|~bz-berlin.de|~travelbook.de|~si.com|~capital.fr|~t3n.de|~businessinsider.de|~clever-tanken.de|~fitbook.de|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~noizz.de|~politico.eu|~rollingstone.de|~stylebook.de|~techbook.de|~testbild.de|~wieistmeineip.at|~wieistmeineip.de|~wieistmeineip.ch
 ||yastatic.net/s3/gdpr$script
 ||mediavine.com/tags/gdprModal$script
 /zgdpr.min.js
@@ -23076,7 +23087,7 @@ wpjslib-chunk-notification.js^
 ||dialogue.sp-prod.net/messagingWithoutDetection.js$script,domain=~globalplayer.com
 /datenschutz.min.js
 /ccm19.js
-/wrapperMessagingWithoutDetection.js$domain=~standard.co.uk|~ladbible.com|~theguardian.com|~theguardian.com.|~bild.de|~autoweek.nl|~computerbild.de|~bold.dk|~welt.de|~t-online.de|~sport1.de|~focus.de|~chip.de|~faz.net|~n-tv.de|~wunderweib.de|~helpster.de|~tvmovie.de|~praxisvita.de|~cosmopolitan.de|~giga.de|~ostsee-zeitung.de|~lvz.de|~mein-schoener-garten.de|~boerse-online.de|~tvspielfilm.de|~autobild.de|~bike-bild.de|~bz-berlin.de|~travelbook.de|~cyberport.at|~cyberport.de|~golem.de|~express.de|~ksta.de|~utopia.de|~bndestem.nl|~volkskrant.nl|~rundschau-online.de|~rtl2.de|~derstandard.de|~derstandard.at|~unsere-helden.com|~rtl.de|~stern.de|~myaccount.hln.be|~nu.nl|~maennersache.de|~dpgmedia.nl|~ad.nl|~dpgmedia.be|~heise.de|~t3n.de|~11freunde.de|~finanzen.at|~finanzen.net|~insider.com|~transfermarkt.at|~transfermarkt.ch|~transfermarkt.co.uk|~transfermarkt.com|~transfermarkt.com.tr|~transfermarkt.de|~transfermarkt.fr|~transfermarkt.it|~transfermarkt.nl|~transfermarkt.pl|~transfermarkt.pt|~transfermarkt.us|~vip.de|~businessinsider.de|~clever-tanken.de|~fitbook.de|~idealo.at|~idealo.co.uk|~idealo.de|~idealo.es|~idealo.fr|~idealo.it|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~noizz.de|~politico.eu|~rollingstone.de|~stylebook.de|~techbook.de|~testbild.de|~wieistmeineip.at|~wieistmeineip.de|~wieistmeineip.ch
+/wrapperMessagingWithoutDetection.js$domain=~standard.co.uk|~ladbible.com|~theguardian.com|~theguardian.com.|~bild.de|~autoweek.nl|~computerbild.de|~bold.dk|~welt.de|~t-online.de|~sport1.de|~focus.de|~chip.de|~faz.net|~n-tv.de|~wunderweib.de|~helpster.de|~tvmovie.de|~praxisvita.de|~cosmopolitan.de|~giga.de|~ostsee-zeitung.de|~lvz.de|~mein-schoener-garten.de|~boerse-online.de|~tvspielfilm.de|~autobild.de|~bike-bild.de|~bz-berlin.de|~travelbook.de|~cyberport.at|~cyberport.de|~golem.de|~express.de|~ksta.de|~utopia.de|~bndestem.nl|~volkskrant.nl|~rundschau-online.de|~rtl2.de|~capital.fr|~derstandard.de|~derstandard.at|~unsere-helden.com|~rtl.de|~stern.de|~myaccount.hln.be|~nu.nl|~maennersache.de|~dpgmedia.nl|~ad.nl|~dpgmedia.be|~heise.de|~t3n.de|~11freunde.de|~finanzen.at|~finanzen.net|~insider.com|~transfermarkt.at|~transfermarkt.ch|~transfermarkt.co.uk|~transfermarkt.com|~transfermarkt.com.tr|~transfermarkt.de|~transfermarkt.fr|~transfermarkt.it|~transfermarkt.nl|~transfermarkt.pl|~transfermarkt.pt|~transfermarkt.us|~vip.de|~businessinsider.de|~clever-tanken.de|~fitbook.de|~idealo.at|~idealo.co.uk|~idealo.de|~idealo.es|~idealo.fr|~idealo.it|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~noizz.de|~politico.eu|~rollingstone.de|~stylebook.de|~techbook.de|~testbild.de|~wieistmeineip.at|~wieistmeineip.de|~wieistmeineip.ch
 /app.dsgvo.min.js
 /trigoAboveBox.jquery.js
 /dsgvoinit.min.js
