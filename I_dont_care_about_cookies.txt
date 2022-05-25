@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 341.202205241001
+! Version: 341.202205250838
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 24 May 2022 08:01 UTC
+! Last modified: 25 May 2022 06:38 UTC
 !
 !
 ! GLOBAL RULES
@@ -13484,6 +13484,8 @@
 ##.efilli-layout-legacy
 ###cookie-warning-box
 ###bbcdBanner
+##.container[data-testid*="cookiePopup"]
+###svelte div[data-analytics*="cookie-consent"]
 !
 ! CUSTOM RULES
 !
@@ -13689,7 +13691,6 @@ brouwland.com##.notification-top
 podatnik.info##.p14-footer > div:not([class])
 survey-remover.com##body > div:not([id]):not([class])[style*="fixed"], body > div:not([id]):not([class])[style*="absolute"]
 clubhyundai.es##body > div[id][class]
-wwf.gr###popupBg
 biznes2biznes.com###stickynote2
 mundosexanuncio.com###alegal
 avogel.dk##.slideOutContainer
@@ -15039,7 +15040,6 @@ sane.org.uk###jxcc-bar
 gotobrno.cz##.b-cookie
 krug.com###_evh-ric-age-gate
 ekino-tv.pl###cookies
-dws.de##.flash-message__wrapper
 stilenaturale.com###adw-bottombanner
 dyson.co.uk##.js-notifications
 torinostar.it###footerprivacy
@@ -20059,7 +20059,6 @@ tickets.motorsport-total.com###app > div:last-child:not(:only-child)
 insomnia.gr###elInsomniaCookieBar
 consolewars.de##.cookies_dim
 fitnessraum.de##.cc-gdpr-modal, .modal-backdrop
-algolia.com##footer ~ .pos-fixed
 poessl4you.de###cookie
 praxis.nl##.mxd-new-cookie-bar
 coinmarket.network###policymodal
@@ -20492,7 +20491,6 @@ notebookitalia.it##.uk-position-fixed
 glassnode.com###root > div:last-child
 glorian.org##.uk-position-fixed
 mts.ru##.is-cookie-alert
-dnb.no###divconsent-modal
 telemarket24.ru##.disklay-box
 lysa.se##.snackbar-wrapper
 filmstreaming-de.life##.notifier
@@ -21571,7 +21569,6 @@ permisecole.com###rgpd
 elisa.fi##.react-navi-ea-cookie-disclaimer, .ea-cookie-disclaimer
 medienportal-sachsen-anhalt.de##.hinweis
 gartentraeume-sachsen-anhalt.de##.vcModalOverlay[for="overlayPrivacySwitch"], .vcModalOverlay[for="overlayPrivacySwitch"] ~ .vcModal
-gitpod.io###svelte > .bottom
 pilot-frixion.uk###cookie
 pilot-frixion.fr###cookie
 global.bible###root > section + div:not(:last-child)
@@ -22155,6 +22152,16 @@ hansanders.nl##.module--cookie
 airgradient.com##.cookie-container
 emsc.eu###splashscreen
 sidusheroes.com##div[class*="cookie__show"]
+wwf.ru##.is-header-message-dock
+uni-rostock.de##.data-consent
+algolia.com###__next > div[class*="fixed"]
+plati.market##.gdpr
+plati.ru##.gdpr
+viva.com.ph##.pop-cookies
+mtbiker.sk###biscuitModal
+sverigesingenjorer.se##.cookie-layer
+nowfoods.com##.block-sd-cookie-consent-block
+comparably.com##.section.cppa
 !
 ! SCRIPT BLOCKING
 !
@@ -22410,7 +22417,7 @@ eu_cookie_banner.js^
 /modules/idxcookies/*
 /javascript/cookieser.js
 /cookiesWidget/widget.js
-consent.cookiebot.com$domain=~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~login.nos.pt|~asambeauty.com|~cineplex.de|~berlingske.dk|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~cajamar.es|~digitaltrends.com|~mein-grundeinkommen.de|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~biomarkt.de|~harzwasserwerke.de|~stern.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de|~ekstrabladet.dk
+consent.cookiebot.com$domain=~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~wwf.fi|~login.nos.pt|~asambeauty.com|~cineplex.de|~berlingske.dk|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~cajamar.es|~digitaltrends.com|~mein-grundeinkommen.de|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~biomarkt.de|~harzwasserwerke.de|~stern.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de|~ekstrabladet.dk
 /ccp-sites/components/structure/cookie-notification/*
 /cookies-info.js
 cookies.algo.at
@@ -22489,7 +22496,6 @@ up-cookiemon.wavecdn.net
 /bb_cookieconsent/*
 /?tx_z7cookiemanager
 /typo3conf/ext/kmacookies
-||edipresse.pl/tcf/cookie.js$script
 /in2cookiemodal/*
 /_hw_cookie_dialog.js
 /cookie-consent-settings-ui/*
@@ -22651,6 +22657,7 @@ cdn.cookiecode.nl
 cookieconsent.blob.core.windows.net
 /all-cookieconsent-js.js
 /cookies-browser-alert-ui.fragment.js
+/tcf/cookie.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -22826,6 +22833,7 @@ pdcc.gdpr.es
 /sdk-gdpr.min.js
 /js/gdpr-component
 /gdprDialog.js
+/bluelabs-gdpr/*
 /media/plg_system_eprivacy$domain=~reshade.me
 ||recepttar.hu/js/privacy.js$script
 cmp.dmgmediaprivacy.co.uk$domain=~metro.co.uk
