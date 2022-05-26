@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 341.202205250838
+! Version: 341.202205261040
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 25 May 2022 06:38 UTC
+! Last modified: 26 May 2022 08:40 UTC
 !
 !
 ! GLOBAL RULES
@@ -258,7 +258,7 @@
 ###ckWarning
 ###attain-cookies
 ###notescookies
-~tele2.nl,~t-mobile.nl,~wuestenrot.at###cookiePopup
+~wuestenrot.at###cookiePopup
 ~fiftysix.nl,~wuestenrot.at##.cookiePopup:not(body):not(html):not(.reveal)
 ###cookiePolicy-layer
 ###cookie-top-bar
@@ -529,7 +529,7 @@
 ###cookienotification_background
 ###cookienotification
 ###s2m_cookies_optin_dialog
-~ikb.at,~contentkingapp.com,~volkswagen-newsroom.com,~g-star.com,~mega.io,~mega.nz,~kh.hu,~mietz.app,~tele2.nl,~t-mobile.nl,~danbolig.dk##.cookie-dialog:not(body):not(html)
+~ikb.at,~contentkingapp.com,~volkswagen-newsroom.com,~g-star.com,~mega.io,~mega.nz,~kh.hu,~mietz.app,~danbolig.dk##.cookie-dialog:not(body):not(html)
 ###divCookieAlert
 ##.contenedorcookies
 ###Banner_cookie_1
@@ -5981,7 +5981,7 @@
 ###uhfCookieAlert
 ##.js-bottom-notif-msg-cookie
 ##.notification-cookie-policy
-~tele2.nl,~t-mobile.nl##.cookie-footer-container
+##.cookie-footer-container
 ##.LooprCookieConsent:not(body):not(html)
 ##.Cookie__banner:not(body):not(html)
 ##.SitecookiemessageContainer
@@ -6695,7 +6695,7 @@
 ##.cookie-policymsg:not(body):not(html)
 ##.CookieConsentWrap:not(body):not(html)
 ###cookies-notify
-~pocketbook.de,~tele2.nl,~t-mobile.nl##.cookie.show:not(body):not(html)
+~pocketbook.de##.cookie.show:not(body):not(html)
 ###cnil-privacy-policy
 ###__InternalGUIcookieChoiceInfo
 ###cookie_policy + #cookie_contant
@@ -9630,7 +9630,7 @@
 ###cookieConsentHolder
 ##.bottom-cookie-consent
 ###bannerCookieLaw
-~coolblue.nl,~coolblue.be,~coolblue.de,~tele2.nl,~t-mobile.nl##.footer ~ .cookie
+~coolblue.nl,~coolblue.be,~coolblue.de##.footer ~ .cookie
 ###cookieConfirmDiv
 ###site-banner-gdpr
 ###keks_notice
@@ -11610,7 +11610,7 @@
 ###cookie\ warning
 ###boxCookiesAccept
 ##.eu_cookie_wrapper
-~direct.de,~redable.nl,~falter.at##.amgdprcookie-bar-template
+~redable.nl,~falter.at##.amgdprcookie-bar-template
 ##.site-footer ~ .gdpr
 ##.iCookie.iCookie-whitered
 ##.q-cookie-consent__container
@@ -13486,6 +13486,7 @@
 ###bbcdBanner
 ##.container[data-testid*="cookiePopup"]
 ###svelte div[data-analytics*="cookie-consent"]
+###root div[class*="cookieMessage-root"]
 !
 ! CUSTOM RULES
 !
@@ -19375,7 +19376,6 @@ jeunesseglobal.com###toast-container
 ivnosys.com##.mpp-container-position-top-bar
 usecrypt.com##.cookies-ct
 toshiba-memory.com##.cookiesWrap
-iobroker.net##.App > div[class*="jss"] + div[class*="jss"]:last-child
 nichtohneuns.de###root > div > main ~ div
 abicrash.com###cookie
 cw.no##.cw-cookie-confirmation
@@ -22013,7 +22013,6 @@ smakmagasinet.no###coco
 naturvardsverket.se###App > div
 thoracic.org###cookie-law
 koh-i-noor.cz###EuConsentV2, .modal-backdrop
-eneba.com###app > div:first-child:not(:only-child), main > div + div + div:last-child
 iplt20.com##.cookie
 mp.br###termo-uso, #modalConsentimento, .modal-backdrop, .lumis-service-privacyterm, .cookie-container.active
 odsluchane.eu##.alert-flash
@@ -22028,7 +22027,6 @@ rows.com###main ~ section
 br-automation.com###siwa-cookiebar, .modal-backdrop
 carlin.es##.ovcookie
 curio.io###__next > .fixed
-tele2.nl###targetedPopupFrame
 becteroradio.com##.policy
 teroradio.com##.policy
 komchadluek.net###accept-cookie-footer
@@ -22162,6 +22160,13 @@ mtbiker.sk###biscuitModal
 sverigesingenjorer.se##.cookie-layer
 nowfoods.com##.block-sd-cookie-consent-block
 comparably.com##.section.cppa
+vh-polska.pl###cookies__new
+eneba.com###app > div:first-child:not(:only-child), main > div + div + div:last-child
+tele2.nl###targetedPopupFrame
+peatus.ee###messageBar
+livsmedelsverket.se###CookieConsent
+cnig.es###layerCookie
+bubamara.eu##.gdpr-modal-wrapper
 !
 ! SCRIPT BLOCKING
 !
@@ -22928,7 +22933,7 @@ jquery.smartCookie.min.js^
 /bundle_CookieLegalNotice.prod.js
 /acceptCookies.js
 /i_CookieConsent.js
-/Amasty_GdprCookie$domain=~planet-cards.co.uk|~moleonline.com|~durstexpress.de|~littlelunch.com|~twinpack.nl|~eckeroline.fi|~eilles.de
+/Amasty_GdprCookie$domain=~planet-cards.co.uk|~nova-motors.de|~moleonline.com|~durstexpress.de|~littlelunch.com|~twinpack.nl|~eckeroline.fi|~eilles.de
 /ts/components/CookieConsent.
 /SDG_CookieLayer.min.js
 /slr_js/allowCookies.js
@@ -23319,7 +23324,6 @@ cc.cdn.civiccomputing.com$domain=metoffice.gov.uk|churchofengland.org|yodel.co.u
 /cnst.js$domain=tauschticket.de
 /cookies/*$domain=liberbank.es|stickypassword.com
 /iCookie/*$domain=h-supertools.com
-/consent$domain=hemnet.se|natune.net
 /he-consent/*$domain=dennree.de
 /uc_cookie$domain=gastro24.de|gastro-hero.de
 /Privacy$domain=bopla.de
@@ -23396,6 +23400,7 @@ consent*$domain=t-mobile.cz
 cc.labu24.de$domain=labu24.de
 cookies.ptj.de$domain=ptj.de
 consent.autopflege24.net$domain=autopflege24.net
+/consent$domain=natune.net|hemnet.se
 cookie-banner*$domain=studio3t.com
 /cookies_2020$domain=pensionlisboa.com
 /ensighten/*$domain=britishairways.com|ba.com
@@ -23411,6 +23416,7 @@ cmp.pent.no$domain=pent.no
 /uc-cmp/*$domain=santander.de
 /cookpop.min.js$domain=electromenager-compare.com
 cmp.tv.nu$domain=tv.nu
+/aw-cookie.min.js$domain=soprema.fr
 !
 ! FILTERLIST ONLY
 !
