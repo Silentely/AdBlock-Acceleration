@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 341.202205261040
+! Version: 341.202205271357
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 26 May 2022 08:40 UTC
+! Last modified: 27 May 2022 11:57 UTC
 !
 !
 ! GLOBAL RULES
@@ -13487,6 +13487,11 @@
 ##.container[data-testid*="cookiePopup"]
 ###svelte div[data-analytics*="cookie-consent"]
 ###root div[class*="cookieMessage-root"]
+###x-cookiepopup
+##.ms-cookie-compliance
+###cookies-legal-advice
+###cookies.fixed-bottom
+##.cookies-consent-dialog
 !
 ! CUSTOM RULES
 !
@@ -18135,7 +18140,6 @@ tulodz.pl###modalCookies
 autozine.nl###cookie
 web-factory.at##.cookie-outter
 ostsee-charter-yacht.de###cookie
-dobbies.com##.alert-dismissable
 henderson.ru##.politica
 bubble.ru##.notifications
 ztm.waw.pl##.page-consent
@@ -21002,7 +21006,6 @@ zeroco2.eco###loadingShadow
 zeg-holz.de###ucShadowRoot
 bullionvault.com##.navigation__cookies
 bullionvault.it##.navigation__cookies
-thenextcloset.com##div[data-react-class*="CookieConsentBanner"]
 plushbezlimitu.pl##.modal-overlay
 mein-apothekenmanager.de###cn-wrapper
 ntb.no##.footer__notification
@@ -22167,6 +22170,9 @@ peatus.ee###messageBar
 livsmedelsverket.se###CookieConsent
 cnig.es###layerCookie
 bubamara.eu##.gdpr-modal-wrapper
+softhints.com##.cookie
+thenextcloset.com##div[data-react-class*="CookieConsentBanner"]
+tudogostoso.com.br###disclaimer
 !
 ! SCRIPT BLOCKING
 !
@@ -22877,6 +22883,7 @@ privacy.claytonhomes.com
 /shopsshort/privacy/*
 ||heg-cp.com/upm/privacy-manager$script
 tag=ui/privacy/CookiesConsent
+/dock-privacy-settings.esm.js
 ||cmp.nextday.media/cmp$script,domain=~vi.nl|~omroepwest.nl
 cmp.dreamlab.pl
 /media/cmp/int_cmp_banner
