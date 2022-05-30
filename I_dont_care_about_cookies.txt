@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 341.202205271357
+! Version: 341.202205300847
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 27 May 2022 11:57 UTC
+! Last modified: 30 May 2022 06:47 UTC
 !
 !
 ! GLOBAL RULES
@@ -106,7 +106,7 @@
 ###cookie_shout
 ###cookie-alert
 ###EUCookie
-~schuurman-schoenen.nl,~win2day.at,~werkenbijpathe.nl,~singaporeair.com,~interspar.at,~spar.at,~spar.hu,~spar.hr,~spar.si##.cookie-notification:not(body):not(html)
+~schuurman-schoenen.nl,~win2day.at,~werkenbijpathe.nl,~interspar.at,~spar.at,~spar.hu,~spar.hr,~spar.si##.cookie-notification:not(body):not(html)
 ###eprivacy
 ~dominospizza.pl,~penny.hu,~penny.cz###cookie-message
 ###cookieinfo-container
@@ -127,7 +127,7 @@
 ###cookie-notifcation-banner
 ###ctl00_privacyCookies_LIPCNB_PrivacyandCookiesNoticePanel
 ###icoCookiesBanner
-~qatarairways.com,~schuurman-schoenen.nl,~singaporeair.com###cookie-notification
+~qatarairways.com,~schuurman-schoenen.nl###cookie-notification
 ~future-x.de###cookieBar
 ###cookie_policy-0
 ~hl.co.uk##.cookieBanner:not(body):not(html):not(#sprd-main)
@@ -5565,7 +5565,7 @@
 ###headerCookieArea
 ##.cookies-disclosure-overlay
 ###ez-cookies-wrap
-~bosch-home.com,~bosch-home.fr,~bosch-home.se,~bosch-home.nl,~bosch-home.fi,~bosch-home.at,~bosch-home.ro,~bosch-home.lu,~bosch-home.es,~bosch-home.be,~bosch-home.dk,~bosch-home.no,~bosch-home.lt,~bosch-home.bg,~bosch-home.pt,~bosch-home.ee,~balay.es,~constructa.com,~home-connect.com,~neff-home.com##.o-cookielaw:not(body):not(html):not([data-show-cookie-law])
+~bosch-home.com,~bosch-home.fr,~bosch-home.se,~bosch-home.nl,~bosch-home.fi,~bosch-home.at,~bosch-home.ro,~bosch-home.lu,~bosch-home.es,~bosch-home.be,~bosch-home.dk,~bosch-home.no,~bosch-home.lt,~bosch-home.pl,~bosch-home.gr,~bosch-home.com.tr,~bosch-home.bg,~bosch-home.pt,~bosch-home.ee,~balay.es,~constructa.com,~home-connect.com,~neff-home.com##.o-cookielaw:not(body):not(html):not([data-show-cookie-law])
 ##.cc_banner-wrapper_FB
 ##.SP-CookieUsageNotification
 ##.cookies-tip:not(body):not(html)
@@ -10611,7 +10611,7 @@
 ##.cookietopbanner
 ~dominospizza.pl##.m-Cookies[aria-describedby="cookie-message"]
 ###root div[class*="cookies-disclaimer"]
-~bsh-group.com,~bosch-home.com,~bosch-home.fr,~bosch-home.se,~bosch-home.nl,~bosch-home.fi,~bosch-home.at,~bosch-home.ro,~bosch-home.lu,~bosch-home.es,~bosch-home.be,~bosch-home.dk,~bosch-home.no,~bosch-home.lt,~bosch-home.bg,~bosch-home.pt,~bosch-home.ee,~balay.es,~constructa.com,~home-connect.com,~neff-home.com##.cookielaw-setcookiepolicy-form
+~bsh-group.com,~bosch-home.com,~bosch-home.fr,~bosch-home.se,~bosch-home.nl,~bosch-home.fi,~bosch-home.at,~bosch-home.ro,~bosch-home.lu,~bosch-home.es,~bosch-home.be,~bosch-home.dk,~bosch-home.no,~bosch-home.lt,~bosch-home.pl,~bosch-home.gr,~bosch-home.com.tr,~bosch-home.bg,~bosch-home.pt,~bosch-home.ee,~balay.es,~constructa.com,~home-connect.com,~neff-home.com##.cookielaw-setcookiepolicy-form
 ###carrot-frame-bumperCookies
 ##.cookie-notif-banner
 ##.ww_cookie_container
@@ -14929,7 +14929,6 @@ dewereldmorgen.be###cookie-consent-overlay ~ div[style]
 wanttoknow.nl###colorbox, #cboxOverlay
 donnons.org##.head-line
 tastedive.com##.tk-Footer-cc
-aukro.cz##.cookiesWrap
 polygon.com###chorus_notifiations
 toffeeweb.com###fixedFooter
 bgfermer.bg###cookie-b
@@ -20940,7 +20939,6 @@ bell-labs.com###n-cookie-notice
 fxhome.com##.elementor-location-footer[data-elementor-type="section"]
 tesco.pl###privacyOuterContainer
 tesco.com###sticky-bar-wrapper
-knowunity.de##main ~ [data-nosnippet]
 albaparty.org###disclaimer
 lilies-diary.com##.lld-cookieconsentbanner
 powerspreadsheets.com##.thrv-ribbon, .thrv-leads-slide-in
@@ -22173,6 +22171,13 @@ bubamara.eu##.gdpr-modal-wrapper
 softhints.com##.cookie
 thenextcloset.com##div[data-react-class*="CookieConsentBanner"]
 tudogostoso.com.br###disclaimer
+sellpy.se##div[name="footerExpander"] + div ~ div:not([style])
+sellpy.de##div[name="footerExpander"] + div ~ div:not([style])
+sellpy.com##div[name="footerExpander"] + div ~ div:not([style])
+one2car.com###cookies-content
+knowunity.de##.Toastify ~ div
+runcloud.io##.rc-cookie-banner
+singaporeair.com##.fixed.tracking-normal
 !
 ! SCRIPT BLOCKING
 !
@@ -23424,6 +23429,7 @@ cmp.pent.no$domain=pent.no
 /cookpop.min.js$domain=electromenager-compare.com
 cmp.tv.nu$domain=tv.nu
 /aw-cookie.min.js$domain=soprema.fr
+/fc_cookie.js$domain=bosch-stiftung.de
 !
 ! FILTERLIST ONLY
 !
