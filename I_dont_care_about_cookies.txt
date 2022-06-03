@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 341.202206020949
+! Version: 341.202206031123
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 02 Jun 2022 07:49 UTC
+! Last modified: 03 Jun 2022 09:23 UTC
 !
 !
 ! GLOBAL RULES
@@ -9218,7 +9218,7 @@
 ##.js-cookieinfolayer:not(body):not(html)
 ~lepona.de,~foxxshirts.de,~textil-grosshandel.eu##footer ~ #gdpr
 ##.cookie-settings__container
-~stihl.de##.cookie-settings__overlay
+~aknw.de##.cookie-settings__overlay
 ##.ci-privacy-hint:not(body):not(html)
 ###rcCookiePopUp
 ##.js-panel-cookie:not(body):not(html)
@@ -13099,7 +13099,7 @@
 ##.ccpa-banner-container
 ##.eu-cookie-tips
 ##.cookie-tips
-~pepper.it,~hotukdeals.com##.aGrid--fixed[data-t-c*="cookiesMessage"]
+##.aGrid--fixed[data-t-c*="cookiesMessage"]
 ###cookieBarRGPDOverlay
 ###cookieBarRGPDPop
 ###cookieAlertWrapper
@@ -21930,7 +21930,6 @@ lannebo.se##.lannebo-cookiebot
 jambit.com##.js-global-privacy
 1001mobiles.fr###cookiediv
 mirrormedia.mg##.the-gdpr
-sofort.com###Cookietext
 panodyssey.com###rgpdbox, .modal-backdrop
 top-highlights.gr###notificationsBox
 matador-diervoeders.be##footer ~ .container
@@ -22194,6 +22193,8 @@ petalmaps.com###app > [class*="privacy"]
 photospecialist.co.uk###cookie-modal
 photospecialist.at###cookie-modal
 photospecialist.de###cookie-modal
+livecounts.io###__next > div > div > .w-full.fixed
+sofort.com###Cookietext
 !
 ! SCRIPT BLOCKING
 !
@@ -23093,6 +23094,7 @@ global.ketchcdn.com
 ||cassiecloud.com/loader.js$script
 /childlikeform.com
 ||baycloud.com/tgcl.min.js$script
+/chickensstation.com
 ||pcz.pl/static/js/moo-cooker.js$script
 /eucd/eucd.min.js
 ||cinabre.sudoc.abes.fr/psi_gui/js/bandeau.js$script
@@ -23447,6 +23449,7 @@ cmp.pent.no$domain=pent.no
 cmp.tv.nu$domain=tv.nu
 /aw-cookie.min.js$domain=soprema.fr
 /fc_cookie.js$domain=bosch-stiftung.de
+cmp.lavie.fr$domain=lavie.fr
 !
 ! FILTERLIST ONLY
 !
