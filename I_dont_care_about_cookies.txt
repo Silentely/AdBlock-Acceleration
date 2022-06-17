@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 341.202206160745
+! Version: 341.202206170949
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 16 Jun 2022 05:45 UTC
+! Last modified: 17 Jun 2022 07:49 UTC
 !
 !
 ! GLOBAL RULES
@@ -44,7 +44,7 @@
 ###cookie-barbody .fixed
 ###cookie-notice-wrapper
 ###mmmmm-cookies
-~uhrzeit123.de,~riverisland.com,~bnn.de,~idoc.eu,~foxracingshox.de,~adler-farbenmeister.com,~urbanarrow.com,~kvk.nl,~case-score.de,~airam.fi,~telesec.de,~o2.fr,~qwic.de,~vu.nl,~indiearenabooth.com,~hscollective.org,~geefvoorzorgverleners.nl,~biotechusa.hu,~biotechusa.fr,~officiallondontheatre.com,~nieuwspoort.nl,~atro-provita.de###cookie-consent:not(.content):not([class*="fancybox"])
+~kl-varaosat.fi,~uhrzeit123.de,~riverisland.com,~bnn.de,~idoc.eu,~foxracingshox.de,~adler-farbenmeister.com,~urbanarrow.com,~kvk.nl,~case-score.de,~airam.fi,~telesec.de,~o2.fr,~qwic.de,~vu.nl,~indiearenabooth.com,~hscollective.org,~geefvoorzorgverleners.nl,~biotechusa.hu,~biotechusa.fr,~officiallondontheatre.com,~nieuwspoort.nl,~atro-provita.de###cookie-consent:not(.content):not([class*="fancybox"])
 ###cookienote
 ###cc-notification
 ##.cc-cookies:not(body):not(html)
@@ -13523,6 +13523,7 @@
 ##.bladzy-popup-agreement-modal
 ##.bladzy-popup-agreement-modal ~ .modals-overlay
 ###termsfeed-com---nb
+###somethingBroken ~ #cookieWarning
 !
 ! CUSTOM RULES
 !
@@ -19232,7 +19233,6 @@ musikguru.de###CookieBox
 edecaformacion.com###contenidoCookies
 foodtribe.com###root > div[class]:last-child:not(:only-child)
 heimkinoraum.de##div[id^="mod_cookie"]
-zakonyprolidi.cz##.modal-banner
 ryneklazienek.pl###axnBodyContainer
 shimano.com##.message.fixed
 brusletto.no###cookie
@@ -19805,7 +19805,6 @@ eplan-sk.sk###fancybox-overlay, #fancybox-wrap
 eplan.hu###fancybox-overlay, #fancybox-wrap
 eplan.com.tr###fancybox-overlay, #fancybox-wrap
 pschyrembel.de###cbAlert
-vivo.com##.common-prompt-privacy-bg, .common-prompt-cookie-bg
 hygiene-onlineshop.de##div[id^="ecomas-scch"]
 ableton.com###biscuits-overlay
 ebuyer.com##.cookies-not-accepted
@@ -19967,7 +19966,6 @@ kitchentime.com##.cookie
 kiloo.com##.cmp-main
 zebrapen.ca##.spu-box
 linfusion.fr##.modal-cookie
-swapcard.com##div[class*="StyledCookie"]
 bigmeatlove.de###consent
 idera.com##.idCookiePolicyBanner
 nikkei.com##.k-privacy, #ccpa-block
@@ -21830,7 +21828,6 @@ trade.bisonapp.com###root > div:first-child
 eleventickets.com##.cookies-aceite-home-container
 eventail.be###__next > div > div[style*="transform"]
 uhpa.hr##.cookie-container
-promobit.com.br###__next > div:last-child
 sslmarket.de###cookiesModal
 open.pl##.cookie
 femina.in##.blocked
@@ -22270,6 +22267,12 @@ wows-gamer-blog.com###supermag-cookie-ify
 vloot.io###app > .fixed[class*="rounded"]
 myanimelist.net##.modal-content-overlay
 myanimelist.vip###disclaimer
+kulturhusetstadsteatern.se###block-cookieapproval
+promobit.com.br###__next > footer ~ div
+lampak.hu##.cookie-setting
+zakonyprolidi.cz##.CookiePerm
+vivo.com###vcm-v-consent-sdk
+bashmaistora.bg##.cookies-cont
 !
 ! SCRIPT BLOCKING
 !
