@@ -65,11 +65,17 @@ jobs:
           file-url: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
           file-name: CJX's_Annoyance_List.txt  
           
-      - name: ABP-rule #乘风国内网站广告过滤规则
+      - name: Xinggsf_rule #乘风通用广告过滤规则
         uses: carlosperate/download-file-action@v1.1.1
         with: 
           file-url: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
           file-name: Xinggsf_rule.txt
+
+      - name: Xinggsf_mv #乘风视频广告过滤规则
+        uses: carlosperate/download-file-action@v1.1.1
+        with: 
+          file-url: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt
+          file-name: Xinggsf_mv.txt
 
       - name: Fanboy's Social Blocking List #禁止社交媒体图标列表
         uses: carlosperate/download-file-action@v1.1.1
