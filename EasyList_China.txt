@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: GnK2I756Mhrr029gqiWaLQ
-! Version: 202206190546
+! Checksum: uqjEs8QiZk7jg3GWywieUg
+! Version: 202206191156
 ! Title: EasyList China
 ! Chinese supplement for the EasyList filters
-! Last modified: 19 Jun 2022 05:46 UTC
+! Last modified: 19 Jun 2022 11:56 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/easylist/easylistchina/
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -9474,6 +9474,8 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzzyk.com/js/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+tmioe.com##a[target="_blank"] > img[src*=".sinaimg.cn"]
+tmioe.com##.ad_single_0
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -15245,6 +15247,7 @@ brandsales.58.com#@#div[id^="ad_"]
 gohome.com.hk#@#div[id^="div-gpt-ad"]
 !---------------------------------URL Whitelist-------------------------------!
 @@&adurl=http://$domain=360bifen.cc|360bifen.com
+@@||haokoubei.top/check_img_block.js
 @@.adserver.$domain=litv.tv
 @@.com/adv/$domain=my.ctrip.com
 @@.com/js/a_d/$domain=cocomanga.com|cocomanhua.com
@@ -17436,6 +17439,7 @@ $script,subdocument,third-party,websocket,xmlhttprequest,domain=00ksw.com|01zww.
 ||zhuomengwangluo.com^
 ||zwgege.cn^
 !2304
+||caicnax.cn^
 ||wangjianxd.site^
 ||172872.com^
 ||aa9q.cn^
