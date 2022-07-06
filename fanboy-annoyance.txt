@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: 8GgIpYk2vswrFCskU3yJBg
-! Version: 202207051800
+! Checksum: CeWAvSzAZg0sCmaZ7QaDwg
+! Version: 202207060000
 ! Title: Fanboy's Annoyance List
-! Last modified: 2022-07-05 18:00 UTC
+! Last modified: 2022-07-06 00:00 UTC
 ! Expires: 9 days (update frequency)
 ! Homepage: https://easylist.to/
 ! License: http://creativecommons.org/licenses/by/3.0/
@@ -6200,6 +6200,8 @@ _subscribers_newsletters/
 ##.z-bit-smartbanner
 ##a[href^="http://www.mobi24.net/"]
 ##a[href^="https://www.mobi24.net/"]
+! spot.im Notifications
+##[class*="NotificationsBell__notificationsWrapper-"]
 ! International
 ###uutiskirje-nosto
 ###AKDSocialBottom
@@ -38157,6 +38159,7 @@ _subscribers_newsletters/
 ||coinhive.com^$third-party
 ||communicatoremail.com^$subdocument,third-party
 ||complexmedianetwork.com^$third-party
+||confirmit.com^$third-party
 ||connect.ekomi.de^$third-party
 ||connect.nosto.com^$third-party
 ||content-recommendation.net^$third-party
@@ -38490,6 +38493,8 @@ _subscribers_newsletters/
 ||app.chaport.com/sounds/
 ||app.onlim.com/app/assets/audios/
 ||appspot.com/sounds/chatmsg.mp3
+||bac-assets.com/chat/spa-assets/$media,domain=bankofamerica.com
+||bac-assets.com/spa/widgets/www-chat/$media,domain=bankofamerica.com
 ||carrotquest.app/sounds/
 ||cdn-widget.callpage.io/build/sounds/
 ||channel.io/plugin/$media
@@ -39460,6 +39465,8 @@ _subscribers_newsletters/
 ||vinted.*/api/*/banners
 ||windguru.cz/forms/consent.php
 ||yimg.com^*/guce.js
+! cmp.quantcast.com specifics
+||cmp.quantcast.com^$script,domain=auto1.fi|blogit.fi|foreca.fi|ilmainensanakirja.fi|suomi24.fi|telsu.fi|testeri.fi
 ! cookielaw specifics
 ||cookielaw.org/opt-out/otCCPAiab.js$domain=rollingstone.com
 ||cookielaw.org/scripttemplates/otsdkstub.js$domain=rollingstone.com
@@ -53187,7 +53194,7 @@ wacom.com#@##consent_blackbar
 voas.fi#@##coockie-modal
 feierabend.de#@##cookie-banner
 dm-drogeriemarkt.it#@##cookie-bar
-bremer-gewuerzhandel.de,gents.com,luhta.com,officiallondontheatre.com#@##cookie-consent
+bremer-gewuerzhandel.de,gents.com,officiallondontheatre.com#@##cookie-consent
 zorgzaam010.nl#@##cookie-consent-container
 oreo.com#@##cookie-container
 dominospizza.pl#@##cookie-message
@@ -53285,7 +53292,7 @@ ieatfoodtours.co.uk,onceinrome.com,weliketuscany.it#@#.cookie-consent-popup
 artyferia.pl#@#.cookie-consent-show
 berliner-volksbank.de,stickerapp.com,stickerapp.de#@#.cookie-consent-v2
 boehringer.net#@#.cookie-consent-wrapper
-berliner-volksbank.de,boehringer.net,codra.net,luhta.com,medicinenet.com,meinebank.de,mvb.de#@#.cookie-consent:not(body):not(html)
+berliner-volksbank.de,boehringer.net,codra.net,medicinenet.com,meinebank.de,mvb.de#@#.cookie-consent:not(body):not(html)
 metro.de,oreo.com,swedbank.se#@#.cookie-container
 calameo.com,danbolig.dk,feierabend.de,hongkong.fi,rusta.com,schwaebisch-hall.de#@#.cookie-content
 danbolig.dk,mega.io#@#.cookie-dialog
