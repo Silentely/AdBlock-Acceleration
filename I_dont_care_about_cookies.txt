@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 341.202206211019
+! Version: 342.202207071225
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 21 Jun 2022 08:19 UTC
+! Last modified: 07 Jul 2022 10:25 UTC
 !
 !
 ! GLOBAL RULES
@@ -11049,7 +11049,7 @@
 ##.fixed-message-container div[class*="eu-cookie"]
 ##.b-cookie[data-cmp="cookiesHint"]
 ##.gdpr-cookieconsent-overlay
-##.gdpr-cookieconsent-settings
+~ionity.eu##.gdpr-cookieconsent-settings
 ###promos > div[style*="url(#default#userData)"]
 ###cookie_preferences_banner
 ##.consent-notice[ng-if="showConsentNotice"]
@@ -13535,6 +13535,9 @@
 ###cookiebar-root
 ###gdprCookieBarOverlay
 ##.ont-cookies-wrapper
+###cookies.footer-banner
+###shopify-section-cookies
+###__next div[class*="gdprbanner"]
 !
 ! CUSTOM RULES
 !
@@ -19280,7 +19283,6 @@ storia.ro###root > footer ~ div
 designisthis.com##.gppr-panel
 makc.ru###bottom-notification
 rezanie-betonu.sk##.cc_disclaimer
-sparebank1.no###opt-in
 drugstore.bg##.consent, #consent
 joker.es##.cookies
 zuckerjagdwurst.com###gatsby-focus-wrapper > div[class^="index"], #gatsby-focus-wrapper > div[class^="index"] + div
@@ -19655,7 +19657,6 @@ connexion-francaise.com###privacy-info
 aqua-medic.de###privacy-info
 hs-coburg.de##.in2-modal__blackbox
 aaal.org##.c-alert-one-time
-2gis.ru###confirm, #confirm ~ footer
 emisora.org.es##.cookie-consent
 lotto-brandenburg.de##footer > div, footer > form
 brf.be###cookieDashboard
@@ -20026,7 +20027,6 @@ popsockets.co.uk##.veil, .modal-backdrop
 largenet.de###largenet_consent
 tw.de##.uk-notification
 techpackmobileandgadgetcover.co.uk##body > .alert:nth-of-type(1)
-boords.com##body > div > .fixed
 zs1mm.home.pl##body > div:not([id]):not([class])
 astleyclarke.com###ac-cookie-notice
 polskieskarby.pl##.cookies
@@ -20631,7 +20631,6 @@ msg.com###app > div > div:not([id]):not([class])
 nonstop2k.com###consentFooter
 sh-mueller.de###notify
 cameranu.nl##.stick-to-bottom
-durstexpress.de##.amgdprcookie-modal-container
 barclays.net###modal-pecr
 kromsnavelgedrag.nl##main ~ div
 simsdom.com###policies
@@ -21662,7 +21661,6 @@ zehnthof-weickert.de###agever
 volbers.com###agever
 mhra.gov.uk###__next > button, #__next > aside
 tourist-online.de##.cookieHintExtended
-nytimes.com##.free-form-content > .banner__container, .CookieBanner > .banner__container, #alertBannerMount, .gdpr.expanded-dock + div
 cornertrader.ch###disclaimer-alert
 engie.be##.modal.cookie-consent
 engie.com##.nj__cookies-politic
@@ -22272,7 +22270,6 @@ generali.co.uk##.cookies-container-uk
 generali.si##.cd-overlay, .cd-module-modal
 mobylines.com##.cookies
 refashion.fr##.block-cookies-rgpd
-scaleway.com###gatsby-focus-wrapper > header + div
 palixi.net##.cookies-wrapper
 treinaweb.com.br##div[c_data="c_cookie_main"]
 opensocietyfoundations.org###cc_div
@@ -22311,6 +22308,16 @@ adulttime.com##.CookieConsent-Wrapper-BackgroundBox
 calendardate.com##footer ~ [style*="fixed"]
 lynkco.com.cn##.privacyPolicy
 visiontimes.com##.cookieNotice--isVisible
+scaleway.com###gatsby-focus-wrapper > header[aria-label] + div
+boords.com###__next > .fixed[class*="bottom"]
+sparebank1.no###opt-in
+atlantic.money###opt-in
+autoteile-favorit.com##.ets_cookie_banber_block
+2gis.com.cy###confirm ~ div
+2gis.ru###confirm ~ footer
+xt500parts.com##.amgdprcookie-modal-container
+notco.com##.CookiesContainer
+nytimes.com##.free-form-content > .banner__container, .CookieBanner > .banner__container, #alertBannerMount, .gdpr.expanded-dock + div, .CookieBanner ~ .banner__container
 !
 ! SCRIPT BLOCKING
 !
@@ -23084,7 +23091,7 @@ jquery.smartCookie.min.js^
 /bundle_CookieLegalNotice.prod.js
 /acceptCookies.js
 /i_CookieConsent.js
-/Amasty_GdprCookie$domain=~planet-cards.co.uk|~nova-motors.de|~moleonline.com|~durstexpress.de|~littlelunch.com|~twinpack.nl|~eckeroline.fi|~eilles.de
+/Amasty_GdprCookie$domain=~planet-cards.co.uk|~nova-motors.de|~moleonline.com|~durstexpress.de|~littlelunch.com|~twinpack.nl|~eckeroline.fi|~eilles.de|~xt500parts.com
 /ts/components/CookieConsent.
 /SDG_CookieLayer.min.js
 /slr_js/allowCookies.js
