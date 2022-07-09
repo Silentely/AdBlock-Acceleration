@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 342.202207071225
+! Version: 342.202207090855
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 07 Jul 2022 10:25 UTC
+! Last modified: 09 Jul 2022 06:55 UTC
 !
 !
 ! GLOBAL RULES
@@ -460,7 +460,7 @@
 ###polityka-cookie
 ###snippet-cookieControl-cookieInfo
 ###WP-cookie-info
-~rapidonline.com,~humboldtforum.org,~gov.lv,~riga.lv,~search.itaa.be,~dehn.at,~hetwkz.nl,~umcutrecht.nl,~ticsante.com,~techopital.com,~sandro-paris.com,~feuvert.fr,~ad.win.nl,~conclude.com,~thinkproject.com,~dehn.de###cookieConsent:not(.modal)
+~kulturprojekte.berlin,~rapidonline.com,~humboldtforum.org,~gov.lv,~riga.lv,~search.itaa.be,~dehn.at,~hetwkz.nl,~umcutrecht.nl,~ticsante.com,~techopital.com,~sandro-paris.com,~feuvert.fr,~ad.win.nl,~conclude.com,~thinkproject.com,~dehn.de###cookieConsent:not(.modal)
 ###cookie-info-box
 ##.avs-cookie-message:not(body):not(html)
 ###header-cookie
@@ -10676,7 +10676,7 @@
 ##._jsCookiePopup
 ##.cookieconsent-com---nb-interstitial-overlay
 ###travelta-cookie-bar
-##.cookie-topbannercontainer
+###__next div[class*="gdprbanner"]
 ##cookie-banner
 ###___gatsby div[class*="TrackingComponent-module--optin"]
 ###cookiealert-ibe
@@ -11567,7 +11567,7 @@
 ###policy-cookies-info-panel
 ##.widget.cookies
 ###root div[class*="PrivacyPolicyNotice"]
-~abconcerts.be##.cookie-consent[role="dialog"]
+~abconcerts.be##.cookie-consent[role="dialog"]:not(.lightbox)
 ###ask-gdpr-cookie
 ###cookie-consent-veil
 ###cookie_regulation_info
@@ -13537,7 +13537,6 @@
 ##.ont-cookies-wrapper
 ###cookies.footer-banner
 ###shopify-section-cookies
-###__next div[class*="gdprbanner"]
 !
 ! CUSTOM RULES
 !
@@ -13545,7 +13544,7 @@ m.facebook.com##div[data-testid="cookie-policy-manage-dialog"], body > div[id] ~
 fb.com##div[class*="cookieBanner"]
 linkedin.com###js-notification-wrapper[role="alert"], .global-alert.global-alert--yield, #global-alert-queue, #artdeco-global-alert-container, .alert, #alert
 twitter.com##.twtr-data-protection
-yahoo.com###gdpr[style*="padding"], #y-shade, #applet_p_50000174, .tdv2-applet-nagbar, .login-body + .login-footer
+yahoo.com###guce-inline-consent-iframe, #gdpr[style*="padding"], #y-shade, #applet_p_50000174, .tdv2-applet-nagbar, .login-body + .login-footer
 duckduckgo.com##.badge-link.ddg-extension-hide
 bing.com###bnp_cookie_banner[aria-modal="false"], #bnp_ttc_div, #thp_notf_div, .b_hide.bnp_ttc, #t_termsInfo
 ask.com###ccbar, #cp-banner
@@ -17239,7 +17238,6 @@ powietrze.katowice.wios.gov.pl##.a-footer
 depo-diy.lt##.depo-cookies
 nettbuss.se##.header__banner
 florsheim.eu##.cookiesMask
-doctolib.fr##.dl-drawer-bottom
 which.co.uk##body > div[data-which-id="eprivacy-banner"]
 fssprus.ru##.user-data-fixed
 marathonfitness.de##.wpfront-fixed
@@ -22318,6 +22316,7 @@ autoteile-favorit.com##.ets_cookie_banber_block
 xt500parts.com##.amgdprcookie-modal-container
 notco.com##.CookiesContainer
 nytimes.com##.free-form-content > .banner__container, .CookieBanner > .banner__container, #alertBannerMount, .gdpr.expanded-dock + div, .CookieBanner ~ .banner__container
+dw.com##.cookie__wrap
 !
 ! SCRIPT BLOCKING
 !
