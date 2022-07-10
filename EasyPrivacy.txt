@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202207101127
+! Version: 202207101632
 ! Title: EasyPrivacy
-! Last modified: 10 Jul 2022 11:27 UTC
+! Last modified: 10 Jul 2022 16:32 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3881,7 +3881,6 @@
 /seo.tagCommander-
 /seo.tagCommander.
 /seo/tr_aff_
-/seomonitor/*
 /seosite-tracker/*
 /seostats/*
 /seoTracker.
@@ -11936,6 +11935,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||connect.bolt.com/v1/log
 ||connect.facebook.net/signals/$third-party
 ||connect.facebook.net^*/fbds.js$third-party
+||connect.idocdn.com^
 ||connext-cdn.azureedge.net^
 ||consensu.org/?log=
 ||consensu.org/geoip
@@ -27163,6 +27163,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||bilder-a.akamaihd.net/ip/js/ipdvdc/ipdvdc.min.js$domain=n-tv.de|toggo.de|vip.de
 @@||businessclick.ch/index.js$domain=finanzen.ch
 @@||cdn.cxense.com/cx.js$script,domain=handelsblatt.com
+@@||classic.comunio.de/clubImg.phtml/$image,~third-party
 @@||darmstadt.ui-traffic.de/mobile/webapp/bower_components/heatmap.js$domain=darmstadt.ui-traffic.de
 @@||derwesten.de/resources/*/img/transparent_pixel.png$image,~third-party
 @@||deutschlandfunkkultur.de/themes/*/js.php?files=*,script/smarttag.js,$script,~third-party
@@ -27189,6 +27190,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||online.mps-gba.de/praeludium/caravAFW.js?$domain=caravaning.de
 @@||optimizely.com^$script,domain=kabeleins.de|prosieben.de|prosiebenmaxx.de|ran.de|sat1.de|sixx.de
 @@||orginio.de/api/analytics/$~third-party,xmlhttprequest
+@@||responder.wt-safetag.com/resp/api/get/$script,domain=myhermes.de
 @@||rtl.de^*/videotracking.min.js$domain=rtl.de
 @@||scdn.cxense.com/cx.cce.js$script,domain=handelsblatt.com
 @@||shoutcast.hubu.fm/stats?sid=$script,~third-party
