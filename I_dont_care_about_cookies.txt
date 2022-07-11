@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 342.202207090855
+! Version: 342.202207110810
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 09 Jul 2022 06:55 UTC
+! Last modified: 11 Jul 2022 06:10 UTC
 !
 !
 ! GLOBAL RULES
@@ -2045,7 +2045,7 @@
 ###CNIL_message
 ###banniere-cookie
 ###bandeau_cnil
-~vsninfo.de,~stadtwerke-weilburg.de###cookiehinweis
+~vsninfo.de,~stadtwerke-weilburg.de,~freilandmuseum-fladungen.de###cookiehinweis
 ###ydp_cookie_message
 ##.cookies-popin:not(body):not(html)
 ###popup_cnil
@@ -13537,6 +13537,8 @@
 ##.ont-cookies-wrapper
 ###cookies.footer-banner
 ###shopify-section-cookies
+##body ~ .cc-overlay
+##.cc-overlay.blur.bottom
 !
 ! CUSTOM RULES
 !
@@ -18869,7 +18871,6 @@ spor.dk###cookies
 uwafot.de##.uk-position-fixed
 akasha.world###gatsby-focus-wrapper > div
 rp-giessen.de##footer .note
-kaggle.com###site-content ~ div
 healthifyme.com###popup-wrapper
 dlford.io###gatsby-focus-wrapper > div > footer
 buerger.de###consent-modal, .reveal-modal-bg
@@ -19270,7 +19271,6 @@ siberianhealth.com##.top-informer-container
 glossika.com##.gdpr
 edu.ch##.mbdialog
 mam-bricolaj.ro##.footer_notif
-qsc.de##.cc-overlay
 vindeurgent.ro##.bottom_notice
 papajohns.pl##footer ~ div[style*="bottom"]
 24opony.pl##.easyNotificationBck
@@ -19384,7 +19384,6 @@ nyx-arch.ch###ab-pop-up
 mfs.com###cookies-policies
 nestorparis.com###gatsby-focus-wrapper > div > div[data-baseweb] ~ div[data-baseweb]:last-child
 emearecruitment.eu##.ns-type-notice
-dallmayr.com##.cc-overlay
 vl.ru###app-wrapper ~ section
 champagne.fr###cookies
 quermania.de###cookiefeld
@@ -19660,7 +19659,6 @@ lotto-brandenburg.de##footer > div, footer > form
 brf.be###cookieDashboard
 dungeondice.it###yn-gdpr
 eden.de##.cc-blur, .cc-overlay
-organzabeutel24.de##.cc-overlay
 gardenplaza.de###cc_window
 larian.com##.cookies
 theorg.com###app > span
@@ -20817,7 +20815,6 @@ pro-housing.nl##.accept-alert
 octoparse.com###snackbar
 viata-medicala.ro###app_notice
 riprovelox.it##main ~ div
-farnell.com###mktg_Cookie_Wrap, #STOP_EVERYTHING
 macmagazine.com.br##.adp-popup
 stockx.com###root > [style*="visible"]
 youmail.com##.policy-notification
@@ -21299,7 +21296,6 @@ italotreno.it###cookie-row
 ledlenser.ru##.alerting
 hotroxuk.com##.dot_cookies
 packrafting-store.de###basharModal
-laenderbahn.com##.cc-overlay
 dobrzemieszkaj.pl##.rodo
 alko-garden.de###divDisabledBackground
 alko-garden.hu###divDisabledBackground
@@ -21602,8 +21598,6 @@ smullers.nl##.alert
 boulderhaus.net##main ~ div
 marbles.com###cookie-consents
 caseys.ie###caseys-cookie-modal, .modal-backdrop
-leuchtturm1917.de##.cc-overlay
-leuchtturm1917.com##.cc-overlay
 hartz.info###my_privacy_policy
 lions.de###cookieInformationPopup
 lotty.de##.npco_overlay
@@ -21760,7 +21754,6 @@ vitalsource.com##.dismiss-cookie, div[aria-describedby*="CookieBanner"]
 petsathome.com##.onetrust
 e-podroznik.pl##.ep-cookies-info-wrapper
 duschmeister.de##.dm--cookie-consent-banner
-der-metronom.de##.cc-overlay
 ae.com##div[class*="snackbar-container"]
 wiking.de###nagme
 befunky.com##.toast--bottom-left
@@ -22190,7 +22183,6 @@ kamera-express.lu###cookie-modal
 kamera-express.de###cookie-modal
 livecounts.io###__next > div > div > .w-full.fixed
 sofort.com###Cookietext
-tweakers.net###koekieBar
 wkv.com###priv-notice-container
 anker.com##footer ~ [class*="FeatureBar"]
 mps.it##.sg-cookie_panel, #cookieModalPopup
@@ -22317,6 +22309,7 @@ xt500parts.com##.amgdprcookie-modal-container
 notco.com##.CookiesContainer
 nytimes.com##.free-form-content > .banner__container, .CookieBanner > .banner__container, #alertBannerMount, .gdpr.expanded-dock + div, .CookieBanner ~ .banner__container
 dw.com##.cookie__wrap
+tweakers.net###koekieBar:not(.tall)
 !
 ! SCRIPT BLOCKING
 !
