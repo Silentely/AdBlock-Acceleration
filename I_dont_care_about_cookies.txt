@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 342.202207110810
+! Version: 342.202207141331
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 11 Jul 2022 06:10 UTC
+! Last modified: 14 Jul 2022 11:31 UTC
 !
 !
 ! GLOBAL RULES
@@ -44,7 +44,7 @@
 ###cookie-barbody .fixed
 ###cookie-notice-wrapper
 ###mmmmm-cookies
-~kl-varaosat.fi,~uhrzeit123.de,~riverisland.com,~bnn.de,~idoc.eu,~foxracingshox.de,~adler-farbenmeister.com,~urbanarrow.com,~kvk.nl,~case-score.de,~airam.fi,~telesec.de,~o2.fr,~qwic.de,~vu.nl,~indiearenabooth.com,~hscollective.org,~geefvoorzorgverleners.nl,~biotechusa.hu,~biotechusa.fr,~officiallondontheatre.com,~nieuwspoort.nl,~atro-provita.de###cookie-consent:not(.content):not([class*="fancybox"])
+##.cc-overlay.blur.bottom
 ###cookienote
 ###cc-notification
 ##.cc-cookies:not(body):not(html)
@@ -630,7 +630,7 @@
 ###cnil_alert
 ##.cookie-pop-up-container
 ~cykelgear.dk###cookieDisclaimer
-~studentenwerk-dresden.de,~refoweb.nl,~yello.de###cookieconsent:not(.btn)
+~studentenwerk-dresden.de,~refoweb.nl,~yello.de###cookieconsent:not(.btn):not(.el-Modal)
 ###cookie_div
 ###CookieQBanner
 ###cookieWindowContainer
@@ -13538,7 +13538,8 @@
 ###cookies.footer-banner
 ###shopify-section-cookies
 ##body ~ .cc-overlay
-##.cc-overlay.blur.bottom
+##.ui-dialog[aria-describedby*="cookiesPolicy"] ~ .ui-widget-overlay
+###__next div[class*="cookiebar"]
 !
 ! CUSTOM RULES
 !
@@ -21326,7 +21327,6 @@ primevideo.com##.DVWebNode[class*="wrapper"][class*="cookie"]
 otcmarkets.com###userAgreementBanner
 zutobi.com##div[class*="ModalCookies"]
 amazon-affiliate.eu##.cookie-consent
-nordnet.dk##.cookie-consent
 certificat-covid.gov.ro##.bottom-banner
 aviva.fr##.ccb-sticky
 clipchamp.com##main + div ~ div
@@ -22187,7 +22187,6 @@ wkv.com###priv-notice-container
 anker.com##footer ~ [class*="FeatureBar"]
 mps.it##.sg-cookie_panel, #cookieModalPopup
 ably.com##.ui-cookie-message
-foncia.com##app-foncia-cookie-banner
 ilmanifesto.it##.info-banner
 karrierekaserne.de##.autoprivacy
 abfallwirtschaft-freiburg.de###pro_cookiebox
@@ -22310,6 +22309,13 @@ notco.com##.CookiesContainer
 nytimes.com##.free-form-content > .banner__container, .CookieBanner > .banner__container, #alertBannerMount, .gdpr.expanded-dock + div, .CookieBanner ~ .banner__container
 dw.com##.cookie__wrap
 tweakers.net###koekieBar:not(.tall)
+devicespecifications.com###cookie-consent
+foncia.com##app-foncia-cookie-banner
+nordnet.no##.cookie-consent
+nordnet.fi##.cookie-consent
+nordnet.dk##.cookie-consent
+forestgum.de##.cookies
+thomann.de##.spicy-consent-wrapper
 !
 ! SCRIPT BLOCKING
 !
@@ -22741,7 +22747,6 @@ cookies.ae-webdesign.com
 plugin-cookie-consent/build
 /cookie/onetrust/*
 /cookie-consent-settings-modal/*
-/k_cookies/views/js/tarteaucitron.js
 /components/consent-cookie/*
 /cookie-consent-service.js
 /cookieconsent.bundle.js
@@ -23282,7 +23287,7 @@ connect.danone.es
 /js/dsvgo.
 /Flurrybox_EnhancedPrivacy/*
 ||static.axept.io/sdk$script
-/tarteaucitron/css/tarteaucitron.css
+/tarteaucitron.css
 notice.sp-prod.net
 ||htmedia.in/analytics-js$script
 ||wpcc.io/lib$script
@@ -23580,6 +23585,8 @@ cmp.lavie.fr$domain=lavie.fr
 /gtcookies/*$domain=fixtout.fr
 /RR_KE_ccm19/*$domain=kefalonia-griechenland.com
 /udg-uc-sdk.min.js$domain=porsche.com
+/consent-page.js$domain=wz.de
+/tarteaucitron.js$domain=intex.fr
 !
 ! FILTERLIST ONLY
 !
