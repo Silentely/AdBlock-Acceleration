@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 342.202207141331
+! Version: 342.202207150954
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 14 Jul 2022 11:31 UTC
+! Last modified: 15 Jul 2022 07:54 UTC
 !
 !
 ! GLOBAL RULES
@@ -665,7 +665,7 @@
 ##.eucookies:not(body):not(html)
 ##.euPrivacy_cookiesMsg
 ###cookies-agreement-box
-##.cookie-check:not(body):not(html)
+###__next div[class*="cookiebar"]
 ###eksCookiePrompt
 ##.agegate-cookie:not(body):not(html)
 ###euCookiesQuestion
@@ -6100,7 +6100,7 @@
 ###cookies-permission
 ##.MessageBlockCookie:not(body):not(html)
 ##.cookieBox__wrapper:not(body):not(html)
-##.cookie-banner-container
+~afiklmem.com##.cookie-banner-container
 ##.ABTastyPluginCookieConsentBanner
 ##.legal-cookie-wrapper
 ###EUCookieContainer
@@ -13539,7 +13539,7 @@
 ###shopify-section-cookies
 ##body ~ .cc-overlay
 ##.ui-dialog[aria-describedby*="cookiesPolicy"] ~ .ui-widget-overlay
-###__next div[class*="cookiebar"]
+##.coockie-notification-block
 !
 ! CUSTOM RULES
 !
@@ -19188,7 +19188,6 @@ onlinesim.ru###termsbox
 arconvert.it###reveal-cookies, .reveal-modal-bg
 storaenso.com##.overlay-wrapper
 bittrex.com##.notification
-vy.no###App .page > section, #center > section
 mecindo.se###c-bar
 comtradeshop.com##body > div:not([id]):not([class])
 interamt.de##.ia-m-cookie-flyout
@@ -22316,6 +22315,10 @@ nordnet.fi##.cookie-consent
 nordnet.dk##.cookie-consent
 forestgum.de##.cookies
 thomann.de##.spicy-consent-wrapper
+vy.no##.page > section
+bt.se###root > [class*="fluffy"]
+linkio.com##.linkio_cookieconsent
+marketinghack.net##.bot-alert-box
 !
 ! SCRIPT BLOCKING
 !
@@ -22778,7 +22781,7 @@ plugin-cookie-consent/build
 /jquery.rgpd-cookies.js
 /bandeau_cookie.js
 /dist/js/cookie-consent
-/cookieconsent.min.js$domain=~sonnenverlauf.de|~mondverlauf.de|~retrogames.cc|~exagon.de|~sozialversicherung-kompetent.de|~varcevanje-energije.si|~khl.ru|~bauen-und-heimwerken.de|~tricount.com
+/cookieconsent.min.js$domain=~sonnenverlauf.de|~mondverlauf.de|~leanlibrary.com|~retrogames.cc|~exagon.de|~sozialversicherung-kompetent.de|~varcevanje-energije.si|~khl.ru|~bauen-und-heimwerken.de|~tricount.com
 /cookieConsentApp.js.gz
 /fileadmin/templates/cookie/fc_thin.js
 cdn.cookiecode.nl
@@ -23601,6 +23604,6 @@ guideitech.com##.pea_cook_wrapper
 fifa.com##.mdl-overlay
 lubliniec.eu###cadre_alert_cookies
 cnet.com###-e_xobwhg_utggxk
-epson.com,americanbar.org,3mpolska.pl,bosch-professional.com,cisco.com,command.pl,e.huawei.com,logitech.com,logitechg.com,post-it.pl,vacansoleil.pl###__tealiumGDPRecModal
+epson.com,americanbar.org,lulu.com,3mpolska.pl,bosch-professional.com,cisco.com,command.pl,e.huawei.com,logitech.com,logitechg.com,post-it.pl,vacansoleil.pl###__tealiumGDPRecModal
 @@||nf.pl/js/libs/cookiesDirective.js$script
 overdrive.com###bkgOverlay
