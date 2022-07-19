@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: GytBQjq6JExueruFegjdEA
-! Version: 202207190600
+! Checksum: x+ipZhhU/shSNptwEsL28w
+! Version: 202207191200
 ! Title: Fanboy's Annoyance List
-! Last modified: 2022-07-19 06:00 UTC
+! Last modified: 2022-07-19 12:00 UTC
 ! Expires: 9 days (update frequency)
 ! Homepage: https://easylist.to/
 ! License: http://creativecommons.org/licenses/by/3.0/
@@ -19916,6 +19916,7 @@ _subscribers_newsletters/
 ###CCM_popup
 ###CCPA-notification
 ###CCPABanner
+###CCPANotice
 ###CCPA_opt_out
 ###CCompliance
 ###CCookie
@@ -20420,11 +20421,9 @@ _subscribers_newsletters/
 ###__cookies__
 ###__fr_cookie_notifier
 ###__ic-notice
-###__layout div[class*="cookie-popup"]
 ###__loadCookie
 ###__ndcc_cookieImpliedConsent
 ###__ndcc_cookieImpliedConsentBackdrop
-###__next div[aria-labelledby*="cookie-dialog"]
 ###__ntk_banner_cookie
 ###__pb-cookie
 ###__shopwired_consent_cookie_container
@@ -21238,6 +21237,7 @@ _subscribers_newsletters/
 ###ccpa.container
 ###ccpa.show
 ###ccpa.without-overlay
+###ccpaAlert
 ###ccpaBanner
 ###ccpaContainer
 ###ccpaCookieBanner
@@ -25280,7 +25280,6 @@ _subscribers_newsletters/
 ###head_cookie
 ###headband-cookie
 ###headband_cookies
-###header ~ div[aria-label*="cookieconsent"]
 ###header-coockie
 ###header-cookie
 ###header-cookie-bar
@@ -25560,6 +25559,7 @@ _subscribers_newsletters/
 ###js-c-cookie-consent-banner
 ###js-cConsent
 ###js-ccpa
+###js-ccpa-banner
 ###js-cnil--alert
 ###js-cookie-02-popup
 ###js-cookie-03-popup
@@ -25695,6 +25695,7 @@ _subscribers_newsletters/
 ###kgc-consent
 ###khcookie
 ###kjfCookieInfoBox
+###kkcookie
 ###klaro .cook-modal
 ###km-cookie-accept
 ###kn-gdpr-dialog
@@ -26507,6 +26508,7 @@ _subscribers_newsletters/
 ###popup--cookies
 ###popup-accept-cookies
 ###popup-announcements
+###popup-ccpa
 ###popup-container-aviso
 ###popup-coockie
 ###popup-cookie
@@ -26595,6 +26597,7 @@ _subscribers_newsletters/
 ###privacy-note
 ###privacy-notice
 ###privacy-notice-box
+###privacy-notification-banner
 ###privacy-police
 ###privacy-policies-banner
 ###privacy-policy-banner
@@ -27637,6 +27640,7 @@ _subscribers_newsletters/
 ##.BlogHeader__cookies-banner
 ##.BorlabsCookie
 ##.C21-cookie-banner
+##.CCPABanner
 ##.CCcookiewarning
 ##.CInfo[data-cookie-info]
 ##.CLawBanner
@@ -27683,6 +27687,7 @@ _subscribers_newsletters/
 ##.CookieBar
 ##.CookieBarWrapper
 ##.CookieBar__Wrapper
+##.CookieBaxGr
 ##.CookieBox
 ##.CookieBtn
 ##.CookieChecker
@@ -27820,6 +27825,7 @@ _subscribers_newsletters/
 ##.EuropeanCookieBar
 ##.F6-cookies_w_js-entrypoint
 ##.FE_COOKIELAW
+##.FooterCookieGL
 ##.G005-global-cookie-notification
 ##.GAcookies
 ##.GDPR-Msg
@@ -27893,7 +27899,6 @@ _subscribers_newsletters/
 ##.Rgpd-notice
 ##.RgpdBanner-component
 ##.RodoNotyfication
-##.RootContainerClassName div[class*="CookieNotificationPopup"]
 ##.Root_cookieConsentBanner
 ##.S01M97-CookieAlert
 ##.S01M97-CookieAlert--overlay
@@ -28106,7 +28111,6 @@ _subscribers_newsletters/
 ##.alert-cookies-banner
 ##.alert-cookies-bar
 ##.alert-cookiewarning
-##.alert-dismissible[id*="cookiechoice"]
 ##.alert-message.cookie
 ##.alert-privacy-disclaimer
 ##.alert-rgpd
@@ -28124,10 +28128,8 @@ _subscribers_newsletters/
 ##.alert[data-cookie="banner-cookie"]
 ##.alert[data-name="eu_biscuits"]
 ##.alert[data-ng-if="showCookieDisclaimer"]
-##.alert[ng-hide*="ShowCookieInfo"]
 ##.alert[ng-if="cookieAlert"]
 ##.alert[ng-if="showCookieDisclaimer"]
-##.alert[ng-show*="cookiePopup"]
 ##.alert__RGPD
 ##.alert__cookie
 ##.alert_container.cookie
@@ -28188,8 +28190,6 @@ _subscribers_newsletters/
 ##.animate-cookies
 ##.animated.gdpr-container
 ##.announcement-eu-cookie
-##.announcement[class*="cookies"]
-##.announcement[data-id*="cookie_notice"]
 ##.anonymous-consent-banner
 ##.anonymousToSConsent_mask
 ##.anunt-cookie
@@ -28211,7 +28211,6 @@ _subscribers_newsletters/
 ##.app-cookie-row
 ##.app-cookies-agreement-banner
 ##.app-disclaimer-rgpd
-##.app-message[class*="cookie-consent"]
 ##.app-root > .cookies
 ##.app-wrapper-cookies
 ##.app__misc-cookie__consent
@@ -28906,7 +28905,6 @@ _subscribers_newsletters/
 ##.ccpa-slideup
 ##.ccpa-slideup--row
 ##.ccpaBanner
-##.ccpa[ng-controller*="CcpaBanner"]
 ##.ccpa_container_class
 ##.ccpa_opt_out_banner
 ##.ccpa_opt_out_reset
@@ -34556,6 +34554,7 @@ _subscribers_newsletters/
 ##.st_notification_wrap
 ##.stampenCookieContainer
 ##.stapfoto-cookie-melding
+##.state-is-ccpa
 ##.statisticsOptBox
 ##.status-cookies
 ##.sticker-gdpr
@@ -45747,7 +45746,7 @@ solas.ie##.cc_dialog
 blocktechnology.eu##.cc_div
 mysoapbox.com##.cc_modal
 drakecircus.com##.ccc-widget
-hannity.com##.ccpa
+hannity.com,thespotlyte.com##.ccpa
 orcadian.co.uk##.cd-container
 source.chromium.org##.cdk-overlay-pane > .mat-snack-bar-container
 fsr.eui.eu##.ce-banner
@@ -46615,6 +46614,8 @@ accor.com,adobe.com,apnews.com,arkadium.com,askubuntu.com,bankofhope.com,breitba
 !! .modal / .modal-backdrop (no broken scroll)
 bospol.cz,faifiltri.it,first-certificate.com,galleria.com.pl,hliva-ustricna.cz,instalxpert.com,kiennast.at,masjerez.com,ncts.ie,picardiegazette.fr,pleines.de,regueira.com,sinfonicadegalicia.com,tabletteslorraines.fr,uaianuncios.com.br,unidavi.edu.br##.modal
 bospol.cz,faifiltri.it,first-certificate.com,galleria.com.pl,hliva-ustricna.cz,instalxpert.com,kiennast.at,masjerez.com,ncts.ie,picardiegazette.fr,pleines.de,regueira.com,sinfonicadegalicia.com,tabletteslorraines.fr,uaianuncios.com.br,unidavi.edu.br##.modal-backdrop
+!! pp_b.pp-p (dhealingforum.com,flowerhornrusforum.com,sinfuldestinyericole.com,celebritystorylibrary.com)
+###pp_b.pp-p
 !! .cookie-banner
 cumlaudeimmobilia.com,deezer.com,developer.chrome.com,medipolis.de,skandia.se,tiktok.com##.cookie-banner
 !! #_iCD
@@ -50459,6 +50460,7 @@ splu-engineers.com###frontpage-banner-cover
 uwebergverlag.de###gdpr
 kalenderwoche.at,kalenderwoche.de###gdpr-consent
 pokewiki.de###gl-topbar-bg
+antonius.de###google-splash-screen
 rapool.de,softwarenetz.de###grayout
 auktionssuche.de,baumpflege.ac,garten.ac,heim-und-haustiere.de,schwedisch-translator.de###hinweise
 aqualip.de###idHrSysGipsDivBlackTransparentOverlay
@@ -51806,8 +51808,9 @@ pkspolonus.pl###popek
 poznan.pl###popup-peka
 erhem.pl###popupContact
 lca.pl,legnica.pl###popupDiv
-mieszko.pl###privacy
+cieplodlakrakowa.pl,kancelariamzm.pl,kpr.pl,mieszko.pl###privacy
 ile-kalorii.pl###privacyMessage
+solankowaaleja.com###privacybox
 gazeo.pl###reg_all
 tanibus.com###rodo
 mojekatowice.pl###rodo-bar
@@ -51889,6 +51892,7 @@ szybkopraca.pl##.toast
 miastograf.pl##.ui-dialog
 miastograf.pl##.ui-widget-overlay
 optyczne.pl##.w3-modal
+shopee.pl##.zsav9a
 pirolam.pl##body > div[style*="100%"]
 ingbank.pl##cookie-policy
 elektrozysk.pl##div[style*="background:url(images/cookies_tlo.png)"]
