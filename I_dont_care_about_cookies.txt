@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 342.202207161134
+! Version: 342.202207191531
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 16 Jul 2022 09:34 UTC
+! Last modified: 19 Jul 2022 13:31 UTC
 !
 !
 ! GLOBAL RULES
@@ -9218,7 +9218,7 @@
 ##.js-cookieinfolayer:not(body):not(html)
 ~lepona.de,~foxxshirts.de,~textil-grosshandel.eu##footer ~ #gdpr
 ##.cookie-settings__container
-~aknw.de##.cookie-settings__overlay
+~aknw.de,~stadtwerke-bonn.de##.cookie-settings__overlay
 ##.ci-privacy-hint:not(body):not(html)
 ###rcCookiePopUp
 ##.js-panel-cookie:not(body):not(html)
@@ -13540,6 +13540,9 @@
 ##body ~ .cc-overlay
 ##.ui-dialog[aria-describedby*="cookiesPolicy"] ~ .ui-widget-overlay
 ##.coockie-notification-block
+##.cc-revoke ~ .cc-screen
+###react-app-CookieConsentBanner
+###cookieConsentBannerContainer
 !
 ! CUSTOM RULES
 !
@@ -19344,7 +19347,6 @@ adoc.tips###ADOCTIPS_cookie_box
 bladehq.com##.message-accept-container
 varfurdo.hu##body > div:not([id]):not([class])
 ticketco.events###tcCookiesMessage
-tvtv.us##.MuiSnackbar-root
 sixthcontinent.com##.MuiSnackbar-root
 furnitex.pl##.bottomWarning
 linergy.de###linergy-cookie-accept
@@ -21451,7 +21453,6 @@ lawinsider.com###header ~ .light-blue-bordered-card
 strawpoll.de###consent-overlay
 mitsubishi-motors.ca##.cookiemodal
 eika.no##.no-eika-cookieconsent
-elbphilharmonie.de###consent-modal
 searchforsites.co.uk###cookieConsent, #modal-overlay
 fvg.it###cookieModal
 tsuche.com###c-c
@@ -21901,9 +21902,6 @@ interred.de###cookieconsentmodal
 allgeier-it.de###cookieconsentmodal, .modal-backdrop
 warthunder.com##.wt-cb
 lekarna-bella.cz##.cookie-settings
-adm.gov.it###cookiebar-adm
-lotteriadegliscontrini.gov.it###coockie
-csirt.gov.it##footer ~ .fixed
 electroholic.gr##.footer ~ .ng-star-inserted
 ford.de##.gdpr-visibility-on
 tempton.de##div[class*="ConsentBanner"]
@@ -22320,6 +22318,23 @@ linkio.com##.linkio_cookieconsent
 marketinghack.net##.bot-alert-box
 chromeactions.com##footer > div:not([class])
 tass.ru##div[class*="Cookies_container"]
+adm.gov.it###cookiebar-adm
+lotteriadegliscontrini.gov.it###coockie
+csirt.gov.it##header ~ .fixed
+crazyslip.com###ccon
+tvtv.us##.MuiSnackbar-root
+peerberry.com##.tpl-layout ~ div:not([id]):not([class])
+immerag.ch###cc
+bbc.global.ssl.fastly.net###main-wrapper > header > div[class*="bbc"]:first-child
+palixi.com##.cookies-wrapper
+elbphilharmonie.de###consent-modal
+kyivindependent.com##div[class*="Footer_cookies"]
+bulldogjob.pl###__next > footer ~ .fixed
+muni.cz##.muniweb-cookies
+1avisum.de##.announcement
+moneyfarm.com###gatsby-focus-wrapper > div[class*="header"] > div:first-child
+majkl3d.cz##.position-fixed.CA
+majkl3d.sk##.position-fixed.CA
 !
 ! SCRIPT BLOCKING
 !
@@ -23106,7 +23121,6 @@ jquery.smartCookie.min.js^
 /js/CookieConsentNew
 /CookieManagerUi.js
 /widgets/global/vendors~LegalCookies
-/components/CookieManager/js/app.js
 /getCookieConsent
 /kssCookieManager/*
 /ModalCookiesPrivacy.php
@@ -23118,6 +23132,7 @@ jquery.smartCookie.min.js^
 /new_Cookiebanner.js
 /feoCookies.min.js
 /Plumrocket_CookieConsent/*
+/static/CookieManager/js/app
 quantcast.mgr.consensu.org$domain=~sourceforge.net|~tumblr.com|~player.livespotting.com|~indy100.com|~vi.nl|~independent.co.uk|~express.co.uk|~joe.ie|~joe.co.uk|~standard.co.uk|~avsforum.com|~pcgamer.com|~nfl.com|~filmvandaag.nl|~gamesradar.com|~iol.pt
 gemius.mgr.consensu.org
 sddan.mgr.consensu.org
@@ -23418,7 +23433,6 @@ koekje.js^$domain=baustellenabsicherung24.de
 /cookies-anekis.js$domain=premiosopenbank.com
 cookie-consent*$domain=latoisondor.com
 /cbgCConsent.js$domain=carlsberggroup.com
-/CookieManager/*$domain=elbphilharmonie.de
 /cmp-v2/*$domain=youmath.it
 /permission/*$domain=1und1.de
 js.driftt.com$domain=zenroom.org|ikonltd.co.uk
@@ -23440,7 +23454,7 @@ spellsalsa.com$domain=interestingengineering.com
 /website-cookie-preferences$domain=nationaltrust.org.uk
 /cookie-bundle$domain=zoopla.co.uk
 /cookie-wall$domain=xebia.com
-/otBannerSdk.js$domain=dhl.com|gusto.at|mintos.com|thetrainline.com|pons.com|coca-cola-deutschland.de|avast.com|avg.com|washingtonpost.com|mendeley.com|coca-cola.pl|coca-cola.co.uk|coca-cola.dk|technics.com|elle.se|fyens.dk|mtb-news.de|rennrad-news.de
+/otBannerSdk.js$domain=dhl.com|gusto.at|mintos.com|thetrainline.com|pons.com|coca-cola-deutschland.de|avast.com|avg.com|washingtonpost.com|mendeley.com|coca-cola.pl|coca-cola.co.uk|coca-cola.dk|technics.com|elle.se|fyens.dk|mtb-news.de|rennrad-news.de|emtb-news.de
 /cp01.js$domain=jzzo.com
 /klaro/*$domain=salesviewer.com
 /gdpr.bundle.js$domain=mediacourant.nl
