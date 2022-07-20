@@ -1,6 +1,7 @@
 <div align="center">
-<h1 align="center">AdBlock-Acceleration</h1>
-<img src="https://img.shields.io/github/stars/Silentely/AdBlock-Acceleration?color=yellow">
+<h1 align="center">AdBlock-Acceleration<br><img align='middle' src='https://anay.cosr.eu.org/?text=Silentely/AdBlock-Acceleration'></img></h1>
+<img align='middle' src='https://anay.cosr.eu.org/?repo=Silentely/AdBlock-Acceleration'></img>
+<br>
 <img src="https://img.shields.io/github/forks/Silentely/AdBlock-Acceleration?color=orange">
 <img src="https://img.shields.io/github/issues/Silentely/AdBlock-Acceleration?color=green">
 <br>
