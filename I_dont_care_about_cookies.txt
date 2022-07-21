@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 342.202207201503
+! Version: 342.202207210955
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 20 Jul 2022 13:03 UTC
+! Last modified: 21 Jul 2022 07:55 UTC
 !
 !
 ! GLOBAL RULES
@@ -6343,7 +6343,7 @@
 ###CookieMonsterNAIH
 ##.cookie-policy-durex:not(body):not(html)
 ##.popup-message.cookie
-~idoc.eu,~foxracingshox.de,~adler-farbenmeister.com,~springlane.de##.page-wrap--cookie-permission
+~idoc.eu,~foxracingshox.de,~adler-farbenmeister.com,~lexibo.com,~springlane.de##.page-wrap--cookie-permission
 ###cookies-div
 ###cookiesesante
 ###datenschutz-banner
@@ -11048,8 +11048,8 @@
 ~coolmath.com##.gdpr-overlay-container
 ##.fixed-message-container div[class*="eu-cookie"]
 ##.b-cookie[data-cmp="cookiesHint"]
-##.gdpr-cookieconsent-overlay
-~ionity.eu##.gdpr-cookieconsent-settings
+###react-app-CookieConsentBanner
+###cookieConsentBannerContainer
 ###promos > div[style*="url(#default#userData)"]
 ###cookie_preferences_banner
 ##.consent-notice[ng-if="showConsentNotice"]
@@ -13541,8 +13541,11 @@
 ##.ui-dialog[aria-describedby*="cookiesPolicy"] ~ .ui-widget-overlay
 ##.coockie-notification-block
 ##.cc-revoke ~ .cc-screen
-###react-app-CookieConsentBanner
-###cookieConsentBannerContainer
+##.ccpa-banner-root
+##.gdpr-cookieconsent-overlay
+~ionity.eu##.gdpr-cookieconsent-settings
+~ionity.eu##.gdpr-cookieconsent-container
+##.spicy-consent-wrapper
 !
 ! CUSTOM RULES
 !
@@ -18865,7 +18868,6 @@ latestdeals.co.uk###root > div > main + div
 audirvana.com##.elementor-popup-modal
 dvb-t2-portal.de###coPolicyMain
 countwordsfree.com##.disclaimer
-kqed.org###getsitecontrol
 s2studio.cz##.cookies
 genesis-mining.com###cookie
 rttshirts.de##.ec-notices
@@ -18971,7 +18973,6 @@ ergonbike.com###tracking-modal
 icomjapan.com###cookie
 maklarf.se##.uk-notify
 visionsdureel.ch##.cookie
-getsitecontrol.com###getsitecontrol
 booksy.com###page > footer ~ div[class^="purify"]
 sherwin-williams.com###termsModal
 makelaarsland.nl##.is-cookie-notice::before
@@ -20639,7 +20640,6 @@ adac.de##.cookie--layer
 sheldrickwildlifetrust.org##.cookie
 antwerpen.be##aui-cookie-consent
 wehkamp.nl###header > aside
-stationhq.com###getsitecontrol
 novibet.gr##.setCookies
 elektro-met.pl###cookie
 estetic-dent-sklep.pl###cookie
@@ -21444,7 +21444,6 @@ pvs-studio.com##.personal-data-confirm
 verema.com###cookies
 cfainstitute.org###privacyWarning
 excellent-hemd.de##.fixed-bottom .btn[onclick*="cookieModal"]
-estrategiaconcursos.com.br###getsitecontrol
 action.com##body > .section:first-of-type
 myinvestor.es##.cookies
 labuenavidalg.es###CookiesLayer
@@ -21976,8 +21975,6 @@ reddit.com###SHORTCUT_FOCUSABLE_DIV > div> div > section > [style*="Toaster"], s
 reddit.watch##.v-content__wrap > .container > .align-end
 pttavm.com##.cookie-box
 transa.ch##.cookie-box
-myfitnesspal.com##.MuiSnackbar-anchorOriginBottomCenter, #app footer ~ div
-myfitnesspal.cn##.MuiSnackbar-anchorOriginBottomCenter, #app footer ~ div
 neonet.pl##div[class*="cookiesBlock"]
 inet.se###react-root > .container + div + div ~ div:last-of-type
 fireteam.net##.cc-container
@@ -22311,7 +22308,6 @@ nordnet.no##.cookie-consent
 nordnet.fi##.cookie-consent
 nordnet.dk##.cookie-consent
 forestgum.de##.cookies
-thomann.de##.spicy-consent-wrapper
 vy.no##.page > section
 bt.se###root > [class*="fluffy"]
 linkio.com##.linkio_cookieconsent
@@ -22336,6 +22332,16 @@ moneyfarm.com###gatsby-focus-wrapper > div[class*="header"] > div:first-child
 majkl3d.cz##.CA
 majkl3d.sk##.CA
 turk.net##.rey-cookieNotice
+nottinghamforest.co.uk##.popup-wrapper
+torcedores.com###navve-cookie-block
+pebmed.com.br##.modal-cookie
+sorare.com###root > .webp > div:first-child
+ico.de###keksGenehmigungsModal, .modal-backdrop
+myfitnesspal.com##.MuiSnackbar-anchorOriginBottomCenter
+myfitnesspal.cn##.MuiSnackbar-anchorOriginBottomCenter
+beamdog.com###gdpr-consent-form
+mensxp.com##.consent-container
+sentaifilmworks.com###sfw-msg
 !
 ! SCRIPT BLOCKING
 !
@@ -23212,7 +23218,6 @@ a.svtrd.com$domain=~ns.nl
 ||assets.ubembed.com/universal$script
 ||pi.pardot.com/analytics$script
 ||api.useinsider.com/ins.js$script
-st.getsitecontrol.com
 ||a.optmnstr.com/app/js$script
 ||borderfree.com/v1/dist/cbt.js$script
 ||cdn.justuno.com/mwgt$script
@@ -23243,6 +23248,7 @@ global.ketchcdn.com
 ||baycloud.com/tgcl.min.js$script
 /chickensstation.com
 /handsomelyhealth.com
+||s2.getsitecontrol.com/widgets$script
 ||pcz.pl/static/js/moo-cooker.js$script
 /eucd/eucd.min.js
 ||cinabre.sudoc.abes.fr/psi_gui/js/bandeau.js$script
@@ -23406,7 +23412,7 @@ cookies.js^$domain=winbrok.es
 /eurogdpr$domain=jcbeurope.eu
 /ig_cookie_frontend$domain=volksbund.de
 bounceexchange.com$domain=lumberliquidators.com
-/cookie.js$domain=keltendorf-mitterkirchen.at|mitterkirchen.at|vils.at|raggal.at|haugsdorf.at|umhausen.at|jugendregion.at|casanetwork.hu|tenable.com|digit-photo.com|kurnik.pl|oka.be|online-spellcheck.com|beethoven.de|rtr.at|koestritzer.de|le-jackpot-des-medailles-safti.fr
+/cookie.js$domain=keltendorf-mitterkirchen.at|mitterkirchen.at|vils.at|raggal.at|haugsdorf.at|umhausen.at|jugendregion.at|casanetwork.hu|tenable.com|digit-photo.com|kurnik.pl|oka.be|online-spellcheck.com|beethoven.de|rtr.at|koestritzer.de|le-jackpot-des-medailles-safti.fr|playok.com
 /tarteaucitron/*$domain=ratp.fr|arena-now.de|flaine.com
 CheckCookiePolicy*$domain=remixshop.com
 /japfg/*$domain=myfridgefood.com
