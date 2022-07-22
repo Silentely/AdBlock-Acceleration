@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 342.202207210955
+! Version: 342.202207221101
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 21 Jul 2022 07:55 UTC
+! Last modified: 22 Jul 2022 09:01 UTC
 !
 !
 ! GLOBAL RULES
@@ -2815,7 +2815,7 @@
 ###cookielaw_node
 ###disclaim_bar
 ##.cookiepanel:not(body):not(html)
-##.banner-cookie:not(body):not(html)
+~ing.it##.banner-cookie:not(body):not(html)
 ~flex-tools.com##.js-cookie-bar:not(body):not(html)
 ###cookieAgreementBar
 ###MessageInfo_panelCookie
@@ -9116,7 +9116,7 @@
 ###cookie-accpet.cookie
 ###popup-cookie-contenedor
 ##.maskRodo:not(body):not(html)
-##.ui-dialog[aria-describedby*="consent"]
+~ing.jobs##.ui-dialog[aria-describedby*="consent"]
 ##.ui-dialog[aria-describedby*="consent"] ~ .ui-widget-overlay
 ###privacy-toast
 ###cookie-accept-alert
@@ -9201,7 +9201,7 @@
 ##.info-message--cookie-agreement
 ###gdprWarning
 ###mainPrivacyDiv.mainPrivacyDiv
-##.ui-dialog[aria-describedby*="gdpr"]
+~ing.jobs##.ui-dialog[aria-describedby*="gdpr"]
 ##.ui-dialog[aria-describedby*="gdpr"] ~ .ui-widget-overlay
 ##.message-instance[id*="cookie-warning"]
 ###footer #legcooki
@@ -9735,7 +9735,7 @@
 ##.b-stripe_content_cookie
 ###cookeHint.cookeHint
 ###privacyNote.sticky
-###gdprconsent
+~ing.jobs###gdprconsent
 ###cookies_policy_bg
 ###cookie-acknowledgement
 ###cookie.cookie.cookie--unset
@@ -13546,6 +13546,7 @@
 ~ionity.eu##.gdpr-cookieconsent-settings
 ~ionity.eu##.gdpr-cookieconsent-container
 ##.spicy-consent-wrapper
+##.component-cookie-overlay-wrapper
 !
 ! CUSTOM RULES
 !
@@ -19855,7 +19856,6 @@ die-akademie.de###__next > div:last-child
 magoshare.com###user_popup
 fiction-addiction.com##.cookie-consent
 discoverbooks.com###privacy_div
-ing.it###sticky-page-top-cnt, .topalertbanner2
 ing.ru##.glass, .dialog
 allnet-flat-vergleich-24.de###ax_consent_inform
 beckett.com##.cookieTkd
@@ -22342,6 +22342,8 @@ myfitnesspal.cn##.MuiSnackbar-anchorOriginBottomCenter
 beamdog.com###gdpr-consent-form
 mensxp.com##.consent-container
 sentaifilmworks.com###sfw-msg
+ing.it###sticky-page-top-cnt
+ing.com.tr##.kvk-footer-warning
 !
 ! SCRIPT BLOCKING
 !
@@ -23614,6 +23616,7 @@ cmp.lavie.fr$domain=lavie.fr
 /udg-uc-sdk.min.js$domain=porsche.com
 /consent-page.js$domain=wz.de
 /tarteaucitron.js$domain=intex.fr
+api.usercentrics.eu$domain=ing.de
 !
 ! FILTERLIST ONLY
 !
