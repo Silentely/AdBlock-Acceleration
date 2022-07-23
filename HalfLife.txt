@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: psnnBoEhSDvrDoslo/H4mg
+! Checksum: sJkHq2YNdiEzQ/05dBtZAg
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202207230830
-! Last Modified: 2022年07月23日 08:30
+! Version: 202207231406
+! Last Modified: 2022年07月23日 14:06
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -2906,6 +2906,11 @@ ubmcmm.baidustatic.com
 ||476bu131.cn^
 ||ncoeqz.today^
 ||mnbvbrow.xyz^
+||666733.xyz^
+||885741.com^
+||yuanan.love^
+||qnmvqdl.cn^
+||ouno.site^
 .8ox.cn
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
@@ -10136,6 +10141,7 @@ _vmind.qqvideo.tc.qq.com^
 hxsame.hexun.com$domain=~quote.hexun.com
 |http://*/ad_bj.js?
 |http://t.cn/$domain=ady8.info|cdsoso.me
+||manwa.life/static/upload/ads/$image,rewrite=abp-resource:1x1-transparent-gif,~third-party
 ||*.$image,rewrite=abp-resource:1x1-transparent-gif,third-party,domain=rmdown.com
 ||*/ad/$rewrite=abp-resource:blank-mp3,domain=huaren.tv
 ||*xav.*/guang/*.gif
@@ -14920,6 +14926,9 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzzyk.com/js/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+manwa.life##a[href*=".hyenadata.com/"]
+manwa.life##.index-banner
+ghxi.com###respond + div
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -22755,6 +22764,7 @@ $image,third-party,domain=258zw.com
 /svr/*.aspx?placeid=$third-party
 /vbvb_*_pmpm.js
 /windowwap_*_*_*.js?$script,third-party
+/xxgg/0dd*.js
 /xxgg/app.js
 /xxgg/book.js
 /xxgg/dj*.js
@@ -24242,6 +24252,7 @@ _box_ad_
 ||huanqiucdn.cn/huanqiu/js/www/common/detected_block.
 ||yaozh.com/Public/js/widget/dbAdDownload.
 !------------------------Specific element hiding rules------------------------!
+ghxi.com##div[style="padding:10px;position: fixed;bottom: 0;left: 0;right:0;z-index: 99999;background-color: #cc4444;color: #fff"]
 manmanbuy.com##.app-activity-download
 bilibili.com##.desktop-download-tip
 edrawsoft.cn##.activity-banner
