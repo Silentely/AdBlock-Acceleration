@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 342.202207221101
+! Version: 342.202207251152
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 22 Jul 2022 09:01 UTC
+! Last modified: 25 Jul 2022 09:52 UTC
 !
 !
 ! GLOBAL RULES
@@ -13547,6 +13547,10 @@
 ~ionity.eu##.gdpr-cookieconsent-container
 ##.spicy-consent-wrapper
 ##.component-cookie-overlay-wrapper
+##.sch-datacontroller
+##.footer ~ .cookie-tip
+##.cookie_banner_section
+##.cookie-bar__view
 !
 ! CUSTOM RULES
 !
@@ -13570,7 +13574,6 @@ civilsociety.co.uk##.announcement-banner
 cofunds.co.uk###idrMasthead .idrPageRow .smContainer
 channelregister.co.uk###RegCCO
 ordnancesurvey.co.uk###messages
-hattrick.org##.alert, #alert
 ecdl.hr###admin_sys_notif
 sajmovi.eu###mBox1, #mBox1+div
 poba.hr###meerkat-wrap
@@ -19473,7 +19476,6 @@ mindmeister.com###cb-wrapper
 yandex.ru##.gdpr, div[data-react-widget-id="Gdpr"], .lc-gdpr
 testo.com###colorbox, #cboxOverlay
 latendresseencuisine.com##.mdc-snackbar
-fashionunited.de##.mdc-snackbar
 cnam-bretagne.fr##.ojc_consent
 vectorizer.io##.alert, #alert
 biker-boarder.de##.settings-parent
@@ -19927,7 +19929,6 @@ faktograf.hr##.elementor-popup-modal
 antarestech.com###consent
 deceuninck.cz##.popup.block.next-top
 hoklartherm.de##.grey_ovarlay
-fashionunited.com##.mdc-snackbar
 nxtbookmedia.com###gdpr-pop
 nxm.ro##.footer_notif
 rondel.pl###rondelpl_cookies
@@ -20821,8 +20822,6 @@ macmagazine.com.br##.adp-popup
 stockx.com###root > [style*="visible"]
 youmail.com##.policy-notification
 netapp.com##n-cookie-notification
-stickerapp.de###cookie-consent-modal, .modal-backdrop
-stickerapp.com###cookie-consent-modal, .modal-backdrop
 inkoma.com###eatcoockies
 shopsmartfoods.com##.privacy
 gradesfixer.com###warning_popup
@@ -21466,6 +21465,7 @@ mcc.live##.cookies
 supermiro.lu###lightbox-gdpr
 supermiro.com###lightbox-gdpr
 serasa.com.br##div[aria-labelledby="m-acc-title"]
+faq.whatsapp.com##div[id^="mount_"] > div > div > div:last-child:not(:only-of-type)
 italki.com##div[class*="cookie_root"]
 dr-gumpert.de###cookie_modal_container
 lego.com##div[class*="CookieDisclaimer"], #footer ~ [class*="emotion-cache"], #prompt-footer
@@ -21927,7 +21927,6 @@ shopee.pl##.shopee-progress-bar ~ div:not([class]):not([id]) + div[class]:not([i
 shopee.es##.shopee-progress-bar ~ div:not([class]):not([id]) + div[class]:not([id])
 nrk.no##.nrk-masthead__info-banner--cookie
 valasztas.hu##footer ~ .position-fixed
-godt.no##.sch-datacontroller
 nelipyora.fi##.gw-cookie-consent
 bankenverband.de##.cookies-floating
 websupport.se##.b-toaster
@@ -22093,10 +22092,6 @@ interion.cz##.mcc-modal
 compuprint.com###pryck
 pagespeed.web.dev##c-wiz > div > div > div > div[jscontroller][jsaction$=");"]
 scoresaber.com##.sticky-footer
-coinbase.com###root > div[class*="Layout"] ~ div[class^="sc"]:last-child, div[class*="ContentHub__FooterWrapper"] ~ div:last-child, #root > div[class^="Flex"] > div > [data-testid="step-loaded-active"] > [class^="sc"]:last-child
-pro.coinbase.com###page_content > div + div:last-child
-help.coinbase.com###__next > section[class*="footer"] ~ div
-login.coinbase.com##div[data-testid="banner-container"]
 hotcleaner.com##footer > div > div:first-child
 kobo.com##body > div[id^="cki"]
 underarmour.it##.l-consent_banner
@@ -22141,7 +22136,6 @@ nowfoods.com##.block-sd-cookie-consent-block
 comparably.com##.section.cppa
 vh-polska.pl###cookies__new
 eneba.com###app > div:first-child:not(:only-child), main > div + div + div:last-child
-tele2.nl###targetedPopupFrame
 peatus.ee###messageBar
 livsmedelsverket.se###CookieConsent
 cnig.es###layerCookie
@@ -22344,6 +22338,23 @@ mensxp.com##.consent-container
 sentaifilmworks.com###sfw-msg
 ing.it###sticky-page-top-cnt
 ing.com.tr##.kvk-footer-warning
+hattrick.org##.alert
+coinbase.com###root > div[class*="Layout"] ~ div[class^="sc"]:last-child, div[class*="ContentHub__FooterWrapper"] ~ div:last-child, #popup-root ~ div[class*="Layout"] ~ div:not([data-element])
+pro.coinbase.com###page_content > div + div:last-child
+help.coinbase.com###__next > section[class*="footer"] ~ div
+login.coinbase.com##div[data-testid="banner-container"]
+tele2.nl###targetedPopupFrame
+privatbank.ua##.cookies
+gamesforplay.com##.notification
+fashionunited.info##.MuiSnackbar-root
+fashionunited.com##.MuiSnackbar-root
+fashionunited.fr##.MuiSnackbar-root
+fashionunited.uk##.MuiSnackbar-root
+fashionunited.de##.MuiSnackbar-root
+fashionunited.nl##.MuiSnackbar-root
+fashionunited.be##.MuiSnackbar-root
+fi.google.com##span[jsslot] > div > div > div > span[jsslot] > div[data-visible="true"]
+hoppscotch.io##.toasted-container
 !
 ! SCRIPT BLOCKING
 !
@@ -23577,7 +23588,7 @@ trustarc.com$domain=avantiwestcoast.co.uk
 /c22cs.js$domain=cd.cz
 /cmp.$domain=o2.cz
 /stylecc$domain=immozentral.com
-privacy-center.org$domain=as.com|elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr|muyinteresante.es|t-mobile.pl|autocasion.com
+privacy-center.org$domain=as.com|elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr|muyinteresante.es|t-mobile.pl|autocasion.com|europasur.es
 /cookieConsent$domain=loesdau.de
 consent*$domain=t-mobile.cz
 /jquery.cookiekit.js$domain=dgeg.gov.pt
