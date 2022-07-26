@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 342.202207251152
+! Version: 342.202207261233
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 25 Jul 2022 09:52 UTC
+! Last modified: 26 Jul 2022 10:33 UTC
 !
 !
 ! GLOBAL RULES
@@ -85,7 +85,7 @@
 ~rapidonline.com,~fotopuzzle.de,~monpuzzlephoto.fr,~newpharma.be,~markets.com,~bmihealthcare.co.uk,~puzzleyou.be,~fotondo.cz##.cookie-policy:not(body):not(html)
 ###cookieMsg
 ~dogedash.com,~kramp.com##.cookie-message:not(body):not(html):not(.modal-body)
-~ikb.at,~wolters-rundreisen.de,~schulze-immobilien.de,~harry-gerlach.de,~veygo.com,~hotelsbarriere.com,~ufz.de,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~icould.com,~evaair.com,~formula1.com###cookie-banner:not(a)
+~cloud.im,~ikb.at,~wolters-rundreisen.de,~schulze-immobilien.de,~harry-gerlach.de,~veygo.com,~hotelsbarriere.com,~ufz.de,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~icould.com,~evaair.com,~formula1.com###cookie-banner:not(a)
 ##.block-cookies-popup:not(body):not(html)
 ###cookieStatement
 ###cookieStatementWrapper
@@ -1376,7 +1376,7 @@
 ##.nmCookieNotifier:not(body):not(html)
 ###nav-cookie
 ###cm-cookie-popin
-##.cookie_container:not(body):not(html)
+~seatris.ai##.cookie_container:not(body):not(html)
 ###cookiesWarningBackground
 ##.consentement_cookies
 ###msgcookies
@@ -10863,7 +10863,7 @@
 ###tos-banner
 ###infobanner-cookies
 ###tc-privacy-wrapper ~ #privacy-overlay
-~skfbearingselect.com##.privacy-notice:not(.form-text)
+~skfbearingselect.com##.privacy-notice:not(.form-text):not(html)
 ##.eu-cookies-show
 ###consent_blackbar ~ a[id^="icon-"]
 ##.slideInUp[class*="policy-cookie"]
@@ -13551,6 +13551,9 @@
 ##.footer ~ .cookie-tip
 ##.cookie_banner_section
 ##.cookie-bar__view
+##.cookies-backdrop
+##.rgpd-info_bar
+##.bottom-cookie-wrapper
 !
 ! CUSTOM RULES
 !
@@ -21293,7 +21296,6 @@ dfmg.de##div[id^="ro_cookie"]
 world4you.com###xtxNavigationOffCookiePolicy
 livelo.com.br##.notifi
 home.barclays##.cookies
-italotreno.it###cookie-row
 ledlenser.ru##.alerting
 hotroxuk.com##.dot_cookies
 packrafting-store.de###basharModal
@@ -22338,7 +22340,6 @@ mensxp.com##.consent-container
 sentaifilmworks.com###sfw-msg
 ing.it###sticky-page-top-cnt
 ing.com.tr##.kvk-footer-warning
-hattrick.org##.alert
 coinbase.com###root > div[class*="Layout"] ~ div[class^="sc"]:last-child, div[class*="ContentHub__FooterWrapper"] ~ div:last-child, #popup-root ~ div[class*="Layout"] ~ div:not([data-element])
 pro.coinbase.com###page_content > div + div:last-child
 help.coinbase.com###__next > section[class*="footer"] ~ div
@@ -22355,6 +22356,12 @@ fashionunited.nl##.MuiSnackbar-root
 fashionunited.be##.MuiSnackbar-root
 fi.google.com##span[jsslot] > div > div > div > span[jsslot] > div[data-visible="true"]
 hoppscotch.io##.toasted-container
+balluff.com##div[x-data*="ConsentDialog"]
+conduktor.io##.cookie-though
+autodoc.de##.gdpr-pane
+italotreno.it##.pre-header-bar.cookies, #cookie-row
+bagsandcoversdirect.co.uk##.cookbx
+moovitapp.com##mv-cookie-banner
 !
 ! SCRIPT BLOCKING
 !
