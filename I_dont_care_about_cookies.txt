@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 342.202207270912
+! Version: 342.202207291120
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 27 Jul 2022 07:12 UTC
+! Last modified: 29 Jul 2022 09:20 UTC
 !
 !
 ! GLOBAL RULES
@@ -4785,7 +4785,7 @@
 ###cookie_policy_layer
 ##.cookiePopUpWrap:not(body):not(html)
 ###cookie_popup_alert
-##.privacy_policy_message_box
+~cashconverters.es##.privacy_policy_message_box
 ###CookiesPrivacy
 ###dcookie
 ##.js-cookies-notice:not(body):not(html)
@@ -13551,12 +13551,14 @@
 ##.footer ~ .cookie-tip
 ##.cookie_banner_section
 ##.cookie-bar__view
-##.cookies-backdrop
+~muziker.com,~muziker.at,~muziker.be,~muziker.bg,~muziker.hr,~muziker.cz,~muziker.nu,~muziker.ee,~muziker.fi,~muziker.fr,~muziker.de,~muziker.gr,~muziker.hu,~muziker.ie,~muziker.it,~muziker.lv,~muziker.lt,~muziker.lu,~muziker.nl,~muziker.pl,~muziker.pt,~muziker.ro,~muziker.sk,~muziker.si,~muziker.es,~muziker.se,~muziker.co.uk##.cookies-backdrop
 ##.rgpd-info_bar
 ##.bottom-cookie-wrapper
 ##.Cookie-bar
 ##.cookieBannerOverlay
 ###root div[class*="cookieBox"]
+##.cc[x-data*="cookieconsent"]
+##.siteCookies--left
 !
 ! CUSTOM RULES
 !
@@ -19465,7 +19467,6 @@ ctshop.rs##body > div:not([id]):not([class])
 thunderfulgames.com##.uk-notification
 babanet.hu###cookie
 generaltire.com##.gt-privacy-popup
-nebenan.de###main > .c-layout > article
 linksfraktion-nordsachsen.de##.disclaimer
 fastcompany.com##.privacyPolicyPopup
 timhortons.co.uk##.user-permission
@@ -19643,7 +19644,6 @@ rgu.ac.uk###cc-modal
 amareluna.com##.cookie-consent
 foxford.ru###cc_container
 vacuubrand.com###cc_container
-tariffuxx.de###cc_container, .modal-backdrop
 myswisslife.fr##mysl-cookies
 lapaweb.com##.privacy
 brk.de###zcookie
@@ -22379,6 +22379,11 @@ innn.it###cookieConsentModal ~ div
 factoryberlin.com##.flyntComponent[is*="cookie-optin"]
 fydeos.com##.cookie-modal
 sanarmed.com###__next > nav + div > div[class*="Wrapper"]
+nebenan.de##.c-layout-wrap ~ article
+4game.com##.fcw-wrap
+onlyandsons.com##.overlay-backdrop
+incomputer.cz##.cookies-fixed-left
+mujnuz.cz##div[id*="cookie-modal"]
 !
 ! SCRIPT BLOCKING
 !
@@ -23381,6 +23386,7 @@ webcache.datareporter.eu
 webcache-eu.datareporter.eu
 cdn.realpeoplemedia.co.uk
 /assets-usercentrics/uc-version
+/Sticky2,ConsentManager
 /consumer/cookie/client$domain=bt.com
 /frontend/ajax/cookies$domain=romstal.ro
 /rodo-agreement-$domain=gremimedia.pl|zw.com.pl
