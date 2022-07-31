@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: Ihj9mRZd4hBiT7c0abtA/w
-! Version: 202207311200
+! Checksum: M11qCEAD2hoGKLT2c3e1JQ
+! Version: 202207311800
 ! Title: Fanboy's Annoyance List
-! Last modified: 2022-07-31 12:00 UTC
+! Last modified: 2022-07-31 18:00 UTC
 ! Expires: 9 days (update frequency)
 ! Homepage: https://easylist.to/
 ! License: http://creativecommons.org/licenses/by/3.0/
@@ -43949,6 +43949,8 @@ stereogum.com##.zergnet-holder
 newyorker.com##div[class^="NewsletterSubscribe_"]
 ! Include ubO specific
 !#include fanboy_annoyance_specific_uBO.txt
+! Include uBO specific
+!#include fanboy_notifications_specific_uBO.txt
 tbsnews.net###___tbspushdiv
 deepl.com###dl_app_banner_popup
 kizi.com###kizi-popover-dialog
@@ -44127,6 +44129,7 @@ digg.com###digg-alerts-container
 newser.com###div_iframe_overlay
 dailymail.co.uk,thisismoney.co.uk###dms-txt
 chinasf.org###element226
+rakennusmaailma.fi###elevator
 radioguide.fm###email
 decanter.com###embed_code-5
 decanter.com###embed_code-6
@@ -47412,6 +47415,8 @@ globalblue.cn,globalblue.com,globalblue.ru##.gbnew-cookie-bar
 ! Include ubO specific
 !#include easylist_cookie_specific_uBO.txt
 ! fanboy_newsletter_specific_hide.txt
+! Include uBO specific
+!#include fanboy_newsletter_specific_uBO.txt
 e-day.ro,mtlblog.com###CoverPop-cover
 news.yahoo.com###Daily-Ticket-newsletter-promo-8U
 nextshark.com###FbridgeSGWidget
@@ -47757,6 +47762,7 @@ ozy.com##.PopUpsMainSite
 gamurs.com##.ReactModal__Overlay
 mensxp.com##.SignUpBlock
 narrative.ly##.Signup
+suomenmaa.fi##.smm-newsletter
 themeditelegraph.com##.SubScr
 thehindubusinessline.com##.Subscribe
 riverbender.com##.SubscribeBox
@@ -48843,6 +48849,9 @@ va.se##.popup-wrapper
 cnnturk.com##.newsletter-form
 ! Ukranian
 minfin.com.ua##.mail-subscribe-user
+! Finnish
+netrauta.fi##.modals-wrapper
+
 !------------------------Specific ABP/uBO rules ------------------------!
 ! ABP-specific fixes
 minhaconexao.com.br#?#section[id][class]:-abp-has(:scope > div[class] > button[class][onclick^="onClickCookiesBannerWeb"])
@@ -50476,7 +50485,9 @@ gooieneemlander.nl,haarlemsdagblad.nl,leidschdagblad.nl,noordhollandsdagblad.nl#
 !---------- Finnish Specific Social Media Elements ----------
 !
 kirjastot.fi###sharing
+mobiili.fi###text-15
 is.fi##.ab-test-article-sharing
+mobiili.fi##.mobsome_icons
 forssanlehti.fi#?#.herald-single-sticky:-abp-has(.herald-share)
 ||rd.fi/sites/default/files/vp-fbssa-banner$image
 !
