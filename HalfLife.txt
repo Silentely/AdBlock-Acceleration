@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: PZZLArHZ7uAjPvSTSPJ0sw
+! Checksum: n9qKWT8GH/TIw+h4y9sEyQ
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202208070836
-! Last Modified: 2022年08月07日 08:36
+! Version: 202208071406
+! Last Modified: 2022年08月07日 14:06
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -2007,6 +2007,8 @@ ubmcmm.baidustatic.com
 ~umeng.com##a[href*=".umeng.com"]:not([href="http://www.umeng.com/"]) > img
 ##a[href*="/?INTR="]
 ##a[href*="/?Intr="]
+##a[id][href*="/?aff="]
+##a[id][href*="/?register="]
 ##a[href*="/?aff="][target="_blank"]
 ##a[href*="/?intr="]
 ##a[href*="/Register?a="]
@@ -3237,6 +3239,14 @@ ubmcmm.baidustatic.com
 ||mdsop.com^
 ||hljcq.xyz^
 ||vuliglsf.space^
+||kingleo.hk^
+||666748.xyz^
+||u0075.com^
+||ajxukah.cn^
+||maaijun.top^
+||qcyunnan.cn^
+||zdhfff.xyz^
+||xsjh002.xyz^
 .8ox.cn
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
@@ -19657,7 +19667,7 @@ gaoqingw.com##b > div[style="text-align:center"]
 cn.bing.com#?##b_results > li:-abp-has(.b_adProvider)
 baidu.com#?#.c-gap-bottom-small:-abp-has(>a>div>div[class^="jr-stock-open-account-"])
 baidu.com#?#.ec_wise_ad
-baidu.com,bdimg.com#?#.j_thread_list:-abp-has(>.fengchao-wrap-feed)
+baidu.com,bdimg.com#?#.thread_item_box:-abp-has(>.fengchao-wrap-feed)
 baidu.com,bdimg.com#?#.l_post:-abp-has(>.fengchao-wrap-feed)
 bdimg.com,tieba.baidu.com,tieba.com#?#.tl_shadow:-abp-has(> .ti_item > .ti_infos > .label_text_tag:-abp-contains(广告))
 benyixiwang.com#?#p:-abp-has(a[href="http://www.sm9166.com"])
@@ -23589,6 +23599,7 @@ _box_ad_
 ###doyoo_mon_mask
 ###doyoo_monitor
 ###recommend-float + .footer + .popup
+##body.page > .popup
 ###rm-float + .popup
 ##.popup + .shortcuts-mobile-overlay
 ##.siteAnn1
