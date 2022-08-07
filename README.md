@@ -56,10 +56,10 @@ Filtering tools：
 The project uses GitHub Actions to download the latest rules every 6 hours every day at UTC time, and then pushes them to GitHub Repo.  
 The rules are distributed in conjunction with a globally accelerated CDN provided by five sites  
 ①[GHUCS](https://raw.githubusercontents.com) (With cache)  
-②[JsDelivr](https://www.jsdelivr.com) (With cache)   
-③[Render](https://render.com) (No cache)   
-④[Fastgit](https://raw.fastgit.org) （No cache）   
-⑤[iQDNS](https://raw.iqiq.io) （No cache）   
+②[JsDelivr](https://www.jsdelivr.com) (With cache)  
+③[Render](https://render.com) (No cache)  
+④[Fastgit](https://raw.fastgit.org) (No cache)  
+⑤[iQDNS](https://raw.iqiq.io) (No cache)  
 
 The result is a second-by-second update of all de-advertising rules.
 
