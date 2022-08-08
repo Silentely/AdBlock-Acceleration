@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: hcqyRkCOFpjIj3TDDhO/oQ
+! Checksum: WxdsTDtVDOXvffN+fmIGsQ
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202208080828
-! Last Modified: 2022年08月08日 08:28
+! Version: 202208081407
+! Last Modified: 2022年08月08日 14:07
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -459,7 +459,7 @@ tieba.baidu.com##.j_click_stats, .j_click_stats+*
 tieba.baidu.com##.more_btn_package
 tieba.baidu.com##.tuijian-wrap
 ! 乘风 视频广告过滤规则
-qq.com,yy.com,le.com##+js(nowebrtc)
+yy.com,le.com##+js(nowebrtc)
 ||tracker.$xhr,websocket,script,ping
 ||p2p.$xhr,websocket,ping,domain=~huya.com
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
@@ -487,8 +487,6 @@ static.g.iqiyi.com
 ||ssports.iqiyi.com/app/$media,object-subrequest
 show.ssports.com
 qq.com##.mod_ad, .txp_ad, div.l_qq_com, .txp-watermark, .txp_ad_link, .txp_zt_video, .adWrap
-qq.com##+js(no-xhr-if, trace.)
-qq.com##+js(no-fetch-if, trace.)
 qq.com##+js(json-prune,adList.item)
 !qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
 qq.com##+js(aopr, Beacon.prototype.fail)
@@ -3260,6 +3258,15 @@ ubmcmm.baidustatic.com
 ||beolit.cn^
 ||fanjin.name^
 ||o06.xyz^
+||wuliglsg.space^
+||3fddkj.com^
+||xcjwq.world^
+||gujiadayuan.top^
+||mengte.top^
+||eofemms.cn^
+||hsswcei.cn^
+||sfzztox.cn^
+||jiatang.club^
 .8ox.cn
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
