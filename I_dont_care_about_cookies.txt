@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 342.202208070944
+! Version: 342.202208090934
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 07 Aug 2022 07:44 UTC
+! Last modified: 09 Aug 2022 07:34 UTC
 !
 !
 ! GLOBAL RULES
@@ -19,7 +19,7 @@
 ~babyartikel.de,~pdf24.org,~ima.it###cookieBanner
 ~we-worldwide.com###cookieNotification
 ###yourCookieSettings
-~stoffe.de,~myfabrics.co.uk,~tyg.se###cookieOverlay
+~tyg.se,~stoffe.de,~myfabrics.co.uk###cookieOverlay
 ~fega-schmitt.de##.cookieOverlay:not(body):not(html)
 ###cookiesToolbar
 ###privacy_notice
@@ -33,9 +33,9 @@
 ###cookieSpace
 ###cookie_drop_container
 ###cookielaw2
-~dbfakt.de,~modellbau-metz.com,~d-power-modellbau.com,~der-druckerprofi.de,~senec.com,~taschenhirn.de,~pyroweb.de,~fussballgucken.info,~costomovil.es,~tesa.com,~ns.nl,~stoffe.de,~myfabrics.co.uk,~tyg.se,~global.commerce-connector.com,~rotterdammersvoorelkaar.nl,~melcloud.com,~danishfamilysearch.com,~calvinklein.de,~calvinklein.co.uk,~calvinklein.com,~calvinklein.be,~calvinklein.fr,~calvinklein.es,~calvinklein.hr,~calvinklein.ch,~calvinklein.lu,~calvinklein.fi,~calvinklein.dk,~calvinklein.ru,~calvinklein.si,~calvinklein.at,~calvinklein.lv,~calvinklein.bg,~calvinklein.se,~calvinklein.ie,~calvinklein.cz,~calvinklein.pl,~calvinklein.lt,~calvinklein.sk,~calvinklein.nl,~calvinklein.it,~calvinklein.ee,~calvinklein.pt,~calvinklein.hu,~tommy.com##.cookie-notice:not(body):not(html):not(#wrapper):not(#footer)
+~dbfakt.de,~modellbau-metz.com,~d-power-modellbau.com,~der-druckerprofi.de,~senec.com,~taschenhirn.de,~pyroweb.de,~fussballgucken.info,~costomovil.es,~tesa.com,~ns.nl,~tyg.se,~stoffe.de,~myfabrics.co.uk,~global.commerce-connector.com,~rotterdammersvoorelkaar.nl,~melcloud.com,~danishfamilysearch.com,~calvinklein.de,~calvinklein.co.uk,~calvinklein.com,~calvinklein.be,~calvinklein.fr,~calvinklein.es,~calvinklein.hr,~calvinklein.ch,~calvinklein.lu,~calvinklein.fi,~calvinklein.dk,~calvinklein.ru,~calvinklein.si,~calvinklein.at,~calvinklein.lv,~calvinklein.bg,~calvinklein.se,~calvinklein.ie,~calvinklein.cz,~calvinklein.pl,~calvinklein.lt,~calvinklein.sk,~calvinklein.nl,~calvinklein.it,~calvinklein.ee,~calvinklein.pt,~calvinklein.hu,~tommy.com##.cookie-notice:not(body):not(html):not(#wrapper):not(#footer)
 ###Cookies:not([class*="headline"])
-~sparda.de,~sparda-n.de,~sparda-bw.de,~sparda-hessen.de,~sparda-west.de,~inwerk.de,~bioplanete.com,~miltenyibiotec.com,~brabus.com,~nobilia.de,~springlane.de###cookieLayer
+~ejot.de,~ejot.co.uk,~sparda.de,~sparda-n.de,~sparda-bw.de,~sparda-hessen.de,~sparda-west.de,~inwerk.de,~bioplanete.com,~miltenyibiotec.com,~brabus.com,~nobilia.de,~springlane.de###cookieLayer
 ##.cookiePrompt:not(body):not(html)
 ###cccwr
 ###cccwr + #cccwrpad
@@ -562,7 +562,7 @@
 ##.cookie-popup__content
 ##.cookie-popup__heading
 ##.cookie-pop:not(body):not(html)
-~goteborg.com,~openreach.com,~kognitio.com,~argenta.be##.cookie-popup:not(body):not(html):not(#colorbox)
+~ejot.de,~ejot.co.uk,~goteborg.com,~openreach.com,~kognitio.com,~argenta.be##.cookie-popup:not(body):not(html):not(#colorbox)
 ###FT_Cookies
 ###policyNotice
 ##.polityka-cookie:not(body):not(html)
@@ -1108,7 +1108,7 @@
 ##.privacy-policy-cookies
 ##.cookies-alert:not(body):not(html)
 ###cookiePolicyZone
-~stromnetz.berlin,~vattenfall.com,~nsinternational.com,~nintendo.com,~dawonia.de,~rittal.com##.cookie-overlay:not(body):not(html)
+~stromnetz.berlin,~vattenfall.com,~nsinternational.com,~nintendo.com,~dawonia.de,~tyg.se,~stoffe.de,~myfabrics.co.uk,~rittal.com##.cookie-overlay:not(body):not(html)
 ##.disclaimer-cookies:not(body):not(html)
 ###cnil-cookie-panel
 ##.cookie-alert-msk:not(body):not(html)
@@ -13563,6 +13563,7 @@
 ##.siteCookies--right
 ###cookie-notice-consent
 ##.main-row > #footer ~ #divDisabledBackground
+###bottom-cookie-banner
 !
 ! CUSTOM RULES
 !
@@ -22404,6 +22405,10 @@ komplettbank.se##.kb-cc
 komplettbank.fi##.kb-cc
 komplettbank.no##.kb-cc
 hertz.co.uk###new_cookie_container
+neo24.pl##div[class*="cookiesBlock"]
+mylife.com##.ccpa-container, .eula-terms
+picrew.me##.st-Terms_Wrapper
+levykauppax.fi###cookieconsent-sticky
 !
 ! SCRIPT BLOCKING
 !
@@ -22906,6 +22911,7 @@ cookieconsent.blob.core.windows.net
 /gdpr-cookie-consent/*
 /Pictorium/scripts/cookie-consent
 /jsLib/gdpr/cookie.js
+/cookieBar.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
