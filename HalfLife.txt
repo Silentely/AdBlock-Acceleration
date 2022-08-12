@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: ZwUgzF3joWduerRwsc894A
+! Checksum: JYtGOxw+fbI+44Mv9fOp5g
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202208120206
-! Last Modified: 2022年08月12日 02:06
+! Version: 202208120830
+! Last Modified: 2022年08月12日 08:30
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -638,6 +638,7 @@ quandangdang.net
 -*-*-*-*.panda^$script,third-party
 -1688-wp-media/ads/
 -880-80-4.jpg
+/jquery.24_ef3e.
 -90mh-gg.
 .bid/ads/
 .blog/ads/
@@ -1412,6 +1413,11 @@ ubmcmm.baidustatic.com
 ||ssh.*.com^*!$script,third-party
 !------------------------General element hiding rules-------------------------!
 ###Ad_windows
+##a[target="_blank"][onclick*="广告点击"]
+###toptd.toptd
+###lefttd.lefttd
+###rightd.rightd
+###undertd.undertd
 ###ChapterView > .slide-baidu
 ###Layeraa1
 ###Layeraa2
@@ -3326,6 +3332,14 @@ ubmcmm.baidustatic.com
 ||zygxy.online^
 ||zyl520zh.online^
 ||zzycj.com^
+||rvbztg.cn^
+||worlsbld.cyou^
+||kefu3254.cn^
+||wy520.love^
+||kefuxt2022.cn^
+||krurkex.com^
+||iorlsblj.cyou^
+||cclw.xyz^
 .8ox.cn
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
@@ -14841,6 +14855,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||atmcdn.com/www/*.js
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
 szxx.com.cn###A1
