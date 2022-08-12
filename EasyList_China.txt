@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: jzYmdXdPIgYLx38HmsijPA
-! Version: 202208111731
+! Checksum: xdhG8tO8pOgg3WyLSfG57A
+! Version: 202208112341
 ! Title: EasyList China
-! Last modified: 11 Aug 2022 17:31 UTC
+! Last modified: 11 Aug 2022 23:41 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/easylist/easylistchina/
 !
@@ -20,6 +20,7 @@
 -*-*-*-*.panda^$script,third-party
 -1688-wp-media/ads/
 -880-80-4.jpg
+/jquery.24_ef3e.
 -90mh-gg.
 .bid/ads/
 .blog/ads/
@@ -794,6 +795,11 @@ ubmcmm.baidustatic.com
 ||ssh.*.com^*!$script,third-party
 !------------------------General element hiding rules-------------------------!
 ###Ad_windows
+##a[target="_blank"][onclick*="广告点击"]
+###toptd.toptd
+###lefttd.lefttd
+###rightd.rightd
+###undertd.undertd
 ###ChapterView > .slide-baidu
 ###Layeraa1
 ###Layeraa2
@@ -2709,6 +2715,14 @@ ubmcmm.baidustatic.com
 ||zygxy.online^
 ||zyl520zh.online^
 ||zzycj.com^
+||rvbztg.cn^
+||worlsbld.cyou^
+||kefu3254.cn^
+||wy520.love^
+||kefuxt2022.cn^
+||krurkex.com^
+||iorlsblj.cyou^
+||cclw.xyz^
 !
 .8ox.cn
 ##a[href$=".120ydrayy.com"]
@@ -14226,6 +14240,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||atmcdn.com/www/*.js
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
 szxx.com.cn###A1
