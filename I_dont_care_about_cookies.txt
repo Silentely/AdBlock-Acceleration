@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 342.202208121019
+! Version: 343.202208140722
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 12 Aug 2022 08:19 UTC
+! Last modified: 14 Aug 2022 05:22 UTC
 !
 !
 ! GLOBAL RULES
@@ -7540,7 +7540,7 @@
 ##.dsgvo-banner:not(body):not(html)
 ##.consent-wrapper.consent-wrapper-active
 ##.banner.dsgvo:not(body):not(html)
-~smartdroid.de##amp-consent
+~lelum.pl,~smartdroid.de##amp-consent
 ##.basic_features-cookiemessage
 ##.divCookiesWarning:not(body):not(html)
 ###cookiefrage
@@ -9777,7 +9777,7 @@
 ###yadaCookieBanner
 ##.accept-cookies-parent
 ##.pcnWrapper[id*="CookiesNoticePanel"]
-~smartdroid.de###wp-gdpr-cookie-notice-wrap
+~lelum.pl,~smartdroid.de###wp-gdpr-cookie-notice-wrap
 ##.page-wrapper > .dataprotection.page-outer
 ###cookie-banner-wrapper
 ##.eg-cc-window[aria-label="cookieconsent"]
@@ -22365,6 +22365,7 @@ pelando.com.br##main ~ div
 curiositystream.com##main ~ div
 steambackgrounds.com##main ~ div
 deutsche-pop.com###ccm
+stagent.com##div[x-show="consent"]
 !
 ! SCRIPT BLOCKING
 !
@@ -22933,7 +22934,7 @@ analytics-consent-manager.azureedge.net
 /static/consent-dialog.
 /opbox-gdpr-consents/*
 /cmp/consent-manager.js
-||ampproject.org/v0/amp-consent$script,domain=~smartdroid.de
+||ampproject.org/v0/amp-consent$script,domain=~smartdroid.de|~lelum.pl
 ||consent.trustarc.com/v2/notice$script
 /resources/onetrust/js/consent.js
 /consent-manager/lazy-consent-manager
