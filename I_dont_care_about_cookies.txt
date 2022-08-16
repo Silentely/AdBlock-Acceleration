@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 343.202208160918
+! Version: 343.202208161854
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 16 Aug 2022 07:18 UTC
+! Last modified: 16 Aug 2022 16:54 UTC
 !
 !
 ! GLOBAL RULES
@@ -547,7 +547,7 @@
 ###cookietext
 ###cookie-notice-uk
 ###panel_cookie_dol
-~awwwards.com,~paradoxplaza.com###cookies-info
+~ebilet.pl,~awwwards.com,~paradoxplaza.com###cookies-info
 ###cookiesPanel
 ###cookie-cnil-box
 ###dr-cookie-info-box
@@ -794,7 +794,7 @@
 ##.cookie_ribon:not(body):not(html)
 ##.infoCookies:not(body):not(html)
 ###cookieInformacja
-~stadtwerke-flensburg.de,~hepster.com,~zentrale-pruefstelle-praevention.de,~bookmygarage.com,~finom.co,~deineapotheke.at,~swedbank.se,~planeo.de,~dogedash.com,~teacheconomy.de,~sevdesk.de,~nintendo.com,~veygo.com,~puratos.pl,~bike-components.de,~bremerhaven.de,~onlinedepartment.nl,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~monese.com,~nuxeo.com,~opngo.com,~sachsenallee.de,~melcloud.com,~intersport.de##.cookie-banner:not(body):not(html)
+~stadtwerke-flensburg.de,~hepster.com,~zentrale-pruefstelle-praevention.de,~bookmygarage.com,~finom.co,~deineapotheke.at,~swedbank.se,~planeo.de,~dogedash.com,~teacheconomy.de,~sevdesk.de,~sevdesk.at,~nintendo.com,~veygo.com,~puratos.pl,~bike-components.de,~bremerhaven.de,~onlinedepartment.nl,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~monese.com,~nuxeo.com,~opngo.com,~sachsenallee.de,~melcloud.com,~intersport.de##.cookie-banner:not(body):not(html)
 ###cookienotice
 ###overlay-cookielaw-form
 ##.cookie-info-wrapper:not(body):not(html)
@@ -7580,7 +7580,7 @@
 ##.gdpr-terms-banner:not(body):not(html)
 ###GdprCookieBanner
 ##.popup-cookie-2018:not(body):not(html)
-~sevdesk.de,~metro.de,~metro.fr,~metro.at,~metro.hu,~metro.bg,~makro.nl##.cookie-banner-overlay
+~sevdesk.de,~sevdesk.at,~metro.de,~metro.fr,~metro.at,~metro.hu,~metro.bg,~makro.nl##.cookie-banner-overlay
 ###cookie_terms_div
 ##.cookies[data-cookie="banner"]
 ##.wordpress-gdpr-popup
@@ -11595,7 +11595,7 @@
 ##.cookie-welcome
 ##.cookie-welcome ~ .lean-overlay
 ##.site-cookie-information
-##.react-cookie-law-dialog
+~yourstorebox.com##.react-cookie-law-dialog
 ###cookie_souhlas
 ##.c-bar-cookie-content
 ##.barra-aviso-privacidad
@@ -12805,7 +12805,7 @@
 ###cookiewarningcontainer
 ##.fixed.z-cookies
 ##.AnalyticCookieConsent
-~energieatlas.eon.de,~sevdesk.de###___gatsby div[class*="cookie-banner"]
+~energieatlas.eon.de,~sevdesk.de,~sevdesk.at###___gatsby div[class*="cookie-banner"]
 ###agan_gdpr
 ###rodo-bar
 ##.cc-dialog-backdrop
@@ -13430,7 +13430,7 @@
 ##.tc-banner.tc-banner--active
 ##.modal_mask.cookies
 ###cookieseal-banner
-###___gatsby div[class*="cookie-message"]
+~50five.com###___gatsby div[class*="cookie-message"]
 ##.gdpr-sticky-footer
 ##body > #cookieAdjust
 ###global-consent-tool-wrapper
@@ -13572,6 +13572,8 @@
 ##.done-gdpr-alert-box-modal
 ###__next div[aria-labelledby*="cookie-notice"]
 ###cookie-consent-cancel-checkbox ~ #cookie-consent
+###consent_modal_backdrop
+###blake_cookies_notice
 !
 ! CUSTOM RULES
 !
@@ -21034,7 +21036,6 @@ lambdatest.com##.cookiesdiv
 dofus.com##.ak-modal-wrapper, .ui-widget-overlay
 modrinth.com##.container > .banner
 jadlonomia.com##.cbar-container
-wuerth.de##.modal-backdrop
 strefakonsumencka.pl##.cookies
 focus-home.com###app > nav + div
 wayofleaf.com###cpop
@@ -22374,6 +22375,20 @@ maxaro.nl##.snackbar
 lnk.bio###pb_cookie_consent
 mbna.co.uk###lbganalyticsCookies
 thekrazycouponlady.com##.cookie-consent-modal
+hella.com##.black-overlay
+prowaretech.com###warn-cookies
+avocode.com###notification-bar + div
+apteka911.ua##.cookie
+deutsches-meeresmuseum.de##.data-consent
+zsroznavska.cz##.uu5-bricks-cookie-bar
+filman.cc###cookies
+naf.no###cookie-consent
+bnb.bg##.dvCookies
+bnb.by##.warning
+denikreferendum.cz##.PopupBackground, .GDPRPopup
+aerospace.org##.gdpr
+spotic.net##.App > footer ~ div
+theknowledgeacademy.com##.cookies
 !
 ! SCRIPT BLOCKING
 !
@@ -23175,6 +23190,7 @@ jquery.smartCookie.min.js^
 /feoCookies.min.js
 /Plumrocket_CookieConsent/*
 /static/CookieManager/js/app
+/optInCookies.min.js
 quantcast.mgr.consensu.org$domain=~sourceforge.net|~tumblr.com|~wpolityce.pl|~player.livespotting.com|~indy100.com|~vi.nl|~independent.co.uk|~express.co.uk|~joe.ie|~joe.co.uk|~standard.co.uk|~avsforum.com|~pcgamer.com|~nfl.com|~filmvandaag.nl|~gamesradar.com|~iol.pt
 gemius.mgr.consensu.org
 sddan.mgr.consensu.org
@@ -23547,7 +23563,7 @@ cc.cdn.civiccomputing.com$domain=metoffice.gov.uk|churchofengland.org|yodel.co.u
 /he-consent/*$domain=dennree.de
 /uc_cookie$domain=gastro24.de|gastro-hero.de
 /Privacy$domain=bopla.de
-cmp.$domain=telerama.fr|courrierinternational.com|vodkaster.com|tek.no|finn.no
+cmp.$domain=telerama.fr|courrierinternational.com|vodkaster.com|tek.no|finn.no|histoire-et-civilisations.com
 brsimg.com/gdpr$script,domain=boursorama.com
 trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookie-banner$domain=hauptbahnhofcity.wien
@@ -23610,7 +23626,7 @@ trustarc.com$domain=avantiwestcoast.co.uk
 /c22cs.js$domain=cd.cz
 /cmp.$domain=o2.cz
 /stylecc$domain=immozentral.com
-privacy-center.org$domain=as.com|elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr|muyinteresante.es|t-mobile.pl|autocasion.com|europasur.es
+privacy-center.org$domain=as.com|elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr|muyinteresante.es|t-mobile.pl|autocasion.com|europasur.es|pisos.com
 /cookieConsent$domain=loesdau.de
 consent*$domain=t-mobile.cz
 /jquery.cookiekit.js$domain=dgeg.gov.pt
@@ -23655,6 +23671,7 @@ api.usercentrics.eu$domain=ing.de
 /user-consent-management/*$domain=americanexpress.com
 /smedia_cookie/*$domain=renzgroup.de
 cookies.tanke-guenstig.de$domain=tanke-guenstig.de
+/mfe-cookies/*$domain=santander.com.br
 !
 ! FILTERLIST ONLY
 !
