@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 343.202208161854
+! Version: 343.202208171001
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 16 Aug 2022 16:54 UTC
+! Last modified: 17 Aug 2022 08:01 UTC
 !
 !
 ! GLOBAL RULES
@@ -794,7 +794,7 @@
 ##.cookie_ribon:not(body):not(html)
 ##.infoCookies:not(body):not(html)
 ###cookieInformacja
-~stadtwerke-flensburg.de,~hepster.com,~zentrale-pruefstelle-praevention.de,~bookmygarage.com,~finom.co,~deineapotheke.at,~swedbank.se,~planeo.de,~dogedash.com,~teacheconomy.de,~sevdesk.de,~sevdesk.at,~nintendo.com,~veygo.com,~puratos.pl,~bike-components.de,~bremerhaven.de,~onlinedepartment.nl,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~monese.com,~nuxeo.com,~opngo.com,~sachsenallee.de,~melcloud.com,~intersport.de##.cookie-banner:not(body):not(html)
+~stadtwerke-flensburg.de,~hepster.com,~zentrale-pruefstelle-praevention.de,~bookmygarage.com,~finom.co,~deineapotheke.at,~swedbank.se,~swedbank.com,~planeo.de,~dogedash.com,~teacheconomy.de,~sevdesk.de,~sevdesk.at,~nintendo.com,~veygo.com,~puratos.pl,~bike-components.de,~bremerhaven.de,~onlinedepartment.nl,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~monese.com,~nuxeo.com,~opngo.com,~sachsenallee.de,~melcloud.com,~intersport.de##.cookie-banner:not(body):not(html)
 ###cookienotice
 ###overlay-cookielaw-form
 ##.cookie-info-wrapper:not(body):not(html)
@@ -7580,7 +7580,7 @@
 ##.gdpr-terms-banner:not(body):not(html)
 ###GdprCookieBanner
 ##.popup-cookie-2018:not(body):not(html)
-~sevdesk.de,~sevdesk.at,~metro.de,~metro.fr,~metro.at,~metro.hu,~metro.bg,~makro.nl##.cookie-banner-overlay
+~swedbank.com,~sevdesk.de,~sevdesk.at,~metro.de,~metro.fr,~metro.at,~metro.hu,~metro.bg,~makro.nl##.cookie-banner-overlay
 ###cookie_terms_div
 ##.cookies[data-cookie="banner"]
 ##.wordpress-gdpr-popup
@@ -13548,7 +13548,7 @@
 ##.spicy-consent-wrapper
 ##.component-cookie-overlay-wrapper
 ##.sch-datacontroller
-##.footer ~ .cookie-tip
+##footer ~ .cookie-tip
 ##.cookie_banner_section
 ##.cookie-bar__view
 ~muziker.com,~muziker.at,~muziker.be,~muziker.bg,~muziker.hr,~muziker.cz,~muziker.nu,~muziker.ee,~muziker.fi,~muziker.fr,~muziker.de,~muziker.gr,~muziker.hu,~muziker.ie,~muziker.it,~muziker.lv,~muziker.lt,~muziker.lu,~muziker.nl,~muziker.pl,~muziker.pt,~muziker.ro,~muziker.sk,~muziker.si,~muziker.es,~muziker.se,~muziker.co.uk##.cookies-backdrop
@@ -13574,6 +13574,7 @@
 ###cookie-consent-cancel-checkbox ~ #cookie-consent
 ###consent_modal_backdrop
 ###blake_cookies_notice
+###pixcookie-box
 !
 ! CUSTOM RULES
 !
@@ -22389,6 +22390,14 @@ denikreferendum.cz##.PopupBackground, .GDPRPopup
 aerospace.org##.gdpr
 spotic.net##.App > footer ~ div
 theknowledgeacademy.com##.cookies
+clubrural.com###cookieveil, #cookielegal
+gen.tr##.fixed-bottom
+gewinnabfrage.at###CL
+associationeconomienumerique.fr###cmp-settings-button
+deco-et-ambiances.fr###cmp-settings-button
+les-aides.fr###mask, #consents
+ctc-electronic.com###mfn-gdpr
+theinformation.com###gdpr-modal-container
 !
 ! SCRIPT BLOCKING
 !
@@ -22851,7 +22860,7 @@ plugin-cookie-consent/build
 /jquery.rgpd-cookies.js
 /bandeau_cookie.js
 /dist/js/cookie-consent
-/cookieconsent.min.js$domain=~sonnenverlauf.de|~mondverlauf.de|~leanlibrary.com|~retrogames.cc|~exagon.de|~sozialversicherung-kompetent.de|~varcevanje-energije.si|~khl.ru|~bauen-und-heimwerken.de|~tricount.com
+/cookieconsent.min.js$domain=~sonnenverlauf.de|~mondverlauf.de|~leanlibrary.com|~retrogames.cc|~exagon.de|~sozialversicherung-kompetent.de|~varcevanje-energije.si|~khl.ru|~bauen-und-heimwerken.de|~carport-diagnose.de|~tricount.com
 /cookieConsentApp.js.gz
 /fileadmin/templates/cookie/fc_thin.js
 cdn.cookiecode.nl
@@ -22893,6 +22902,7 @@ cookieconsent.blob.core.windows.net
 /jsLib/gdpr/cookie.js
 /cookieBar.js
 cc.controlcookies.com
+/cookieNotice.build.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
