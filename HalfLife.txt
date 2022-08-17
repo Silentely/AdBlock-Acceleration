@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: WtX1+1rIQA34zNPo01YpAw
+! Checksum: 0vIYtwewQPOeeH846+Rnjg
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202208171407
-! Last Modified: 2022年08月17日 14:07
+! Version: 202208172010
+! Last Modified: 2022年08月17日 20:10
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -1739,7 +1739,6 @@ ubmcmm.baidustatic.com
 ##.broadcastMe[style="width: 1200px;"]
 ##.btn.btn-success.text-white[href*=".com:"]
 ##.bus_adsbox
-##.buyaoa-below
 ##.cari-ads
 ##.cfa_popup
 ##.chat-ad
@@ -1822,7 +1821,6 @@ ubmcmm.baidustatic.com
 ##.google_adsense2
 ##.gpost-below
 ##.gpt_ads_box
-##.guangjiaodebupachuanxiede
 ##.guruin-ads
 ##.hao123-unionad-pic
 ##.hbp > .wp_banner
@@ -3442,6 +3440,8 @@ ubmcmm.baidustatic.com
 ||chiyan.group^
 ||qqxfybt.cn^
 ||zzeblsg.cn^
+||citstmc.cn^
+||hsywzx.cn^
 .8ox.cn
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
@@ -14448,8 +14448,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||whnews.cn/news/data/*gg
 ||whnews.cn/wh_public/dl/
 ||whnews.cn/wh_public/xuxu/
-||wholehk.com/atttuop.js
-||wholehk.com/ptpptt.js
 ||whsir.com/wp-content/themes/wh-blog/js/modal.js
 ||williamlong.info/script/sidebar.js
 ||win007.com/js/flashad
@@ -14466,7 +14464,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||winvvv.com^$subdocument
 ||winwin7.com/statics/js/pos_js/
 ||wishdown.com/img/
-||wkcdn.com/style_
 ||wlrjy.com/assets/images/*.gif
 ||wlrjy.com/assets/images/tuidc.png
 ||wmcdn.net^$domain=liyuans.com
@@ -14962,6 +14959,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
 ||eefcdn.com/promotion/module/module.
+||postimg.cc^*-960x60.
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
 szxx.com.cn###A1
@@ -16836,7 +16834,7 @@ chinamedevice.cn##.ads_img1
 xianliao.me##.ads_popup_small_ads_container
 netflav.com##.ads_video_overlay_mobile
 cotton.pink##.adsbyfalcon
-199it.com,softwarebrother.com,wholehk.com##.adsbygoogle
+199it.com,softwarebrother.com##.adsbygoogle
 m.kuaidi100.com##.adsbygoogle + a
 chtoen.com##.adsbygoogle:not([data-ad-slot="9717665976"])
 aibing.cc,htcui.com##.adsense
@@ -19555,7 +19553,6 @@ aaaweb.cn##a[href$=".yhzu.cn"]
 5217kdy1.xyz##a[href$="/smsf.php"]
 fastadmin.net##a[href$="=="]
 bilibili.com##a[href$="_suning.html"]
-acg12.com##a[href*="%2F"]
 17173.com##a[href*="&ad_code="]
 neatstudio.com##a[href*="&cps_key="]
 ruanyifeng.com##a[href*=".100offer.com"]
@@ -21372,7 +21369,6 @@ gohome.com.hk#@#div[id^="div-gpt-ad"]
 @@||wenxuecity.com/include/editor/*/media/ad/
 @@||wenxuecity.com^$generichide
 @@||wgun.net^$elemhide
-@@||wholehk.com^$generichide
 @@||wowsai.com/data/files/ad/
 @@||wuyong.fun^$generichide
 @@||wuyou.com.cn/Js/ad.js
@@ -21417,7 +21413,7 @@ gohome.com.hk#@#div[id^="div-gpt-ad"]
 ||17ce.com^*_$image
 !#18comic.org
 18comic.org,18comic.vip,18comic1.art,18comic2.art###guide-modal
-##.col-lg-3 > .well[style]
+##.col-lg-3[style="z-index: 0;"] > .well
 18comic.org,18comic.vip,18comic1.art,18comic2.art##.modal-backdrop
 ://18comic*/templates/frontend/airav/js/jquery.avs-0.4.js
 18comic.org,18comic.vip,18comic1.art,18comic2.art##a[href*=".taobao.com"]
