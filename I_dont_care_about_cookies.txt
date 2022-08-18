@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 343.202208171001
+! Version: 343.202208181007
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 17 Aug 2022 08:01 UTC
+! Last modified: 18 Aug 2022 08:07 UTC
 !
 !
 ! GLOBAL RULES
@@ -39,7 +39,7 @@
 ##.cookiePrompt:not(body):not(html)
 ###cccwr
 ###cccwr + #cccwrpad
-~halleysac.it,~pd.it,~cafe-royal.com,~urbanista.de,~finantia.es,~finantia.com,~klickmal.at###cookie-bar
+~halleysac.it,~pd.it,~cafe-royal.com,~urbanista.de,~finantia.es,~finantia.com###cookie-bar
 ###cookie-bar ~ .c-overlay
 ###cookie-barbody .fixed
 ###cookie-notice-wrapper
@@ -243,7 +243,7 @@
 ###cookieMgn
 ###__ndcc_cookieImpliedConsent
 ###cookie-drop
-~clasohlson.com,~cafe-royal.com,~rituals.com##.cookie-bar:not(body):not(html)
+~epochtimes.fr,~clasohlson.com,~cafe-royal.com,~rituals.com##.cookie-bar:not(body):not(html)
 ~mea.com,~mitsubishielectric.com##.cookie_policy:not(body):not(html):not(#Content):not(#page)
 ###rb-cookie-container
 ~analog.com###cookie-consent-container
@@ -2138,7 +2138,7 @@
 ###confidentialite_cookie
 ###cookie-restriction
 ##.cookieshade:not(body):not(html)
-~0calc.com,~0rechner.de,~klickmal.at,~norgips.pl###cookiemodal
+###pixcookie-box
 ###nld_cookies
 ##.EU-cookie:not(body):not(html)
 ##.js-EU-cookie:not(body):not(html)
@@ -7273,7 +7273,7 @@
 ###annoyingeucookiemsg
 ##.cf-annoying-eu-cookie-message
 ##.js-cookie-policy-banner
-###etd_cookie_alert
+###blake_cookies_notice
 ###cookieCta
 ##.sncmp-app_gdpr:not(body):not(html)
 ##div[data-role="cookie-policy-banner"]
@@ -13573,8 +13573,8 @@
 ###__next div[aria-labelledby*="cookie-notice"]
 ###cookie-consent-cancel-checkbox ~ #cookie-consent
 ###consent_modal_backdrop
-###blake_cookies_notice
-###pixcookie-box
+###cookie_warning_overlay
+###cookie_warning_underlay
 !
 ! CUSTOM RULES
 !
@@ -15666,7 +15666,6 @@ romet.pl##.top-msg
 recepty.cz##body > div:not([id]):not([class])
 shop.ticketpro.cz##body > div:not([id]):not([class])
 seat.dk##.notify-bar
-seat.mpr.gob.es###epd
 devex.com###alerts-container
 legalandgeneral.com###st_box
 szegedvaros.hu###footer
@@ -18670,7 +18669,6 @@ ecmguide.de##.consent, #consent
 foodgroot.com###POPUPS_ROOT
 notebookinfo.de##.consent, #consent
 oberlo.es###oberloGdpr
-trumpf.com###popup-privacy
 nalogia.ru##.b-person-data
 thawte.de###toolbar
 thawte.com###toolbar
@@ -21683,7 +21681,6 @@ arbiton.com##.cookies
 elopage.com##.Toastify ~ .elo-btn
 deutsche-bank.es##.modal-cookie
 northernpowergrid.com##header > .ch2-icon
-hoyoverse.com##.mihoyo-cookie-tips, .cookie-tip
 norcamp.de###cookieCD
 banneke.com###cookie-block
 kennisopenbaarbestuur.nl##.jqmConfirm, #cookieStatus
@@ -22398,6 +22395,17 @@ deco-et-ambiances.fr###cmp-settings-button
 les-aides.fr###mask, #consents
 ctc-electronic.com###mfn-gdpr
 theinformation.com###gdpr-modal-container
+hoyoverse.com##.mihoyo-cookie-tips, .cookie-tip
+hoyolab.com##.mihoyo-cookie-tips
+traefik.io##.site-footer ~ div
+reishunger.de###cookie-consent
+openbase.com###__next [class*="GdprCookieFooter"]
+lavueltaholanda.com##.cookie-prefs-wrapper
+qmee.com##div[class*="CookieDialog"]
+gob.es###epd, .alert__msg-Wrapper, .tuss-cookies, #fondotransparencia-gris, #avisoUsoCookies, #phAvisoCookie
+unihobby.cz##.cookies-confirm
+lawline.se##div[class*="CookiesModal"]
+n8n.io##.consent_modal
 !
 ! SCRIPT BLOCKING
 !
@@ -22653,7 +22661,7 @@ eu_cookie_banner.js^
 /modules/idxcookies/*
 /javascript/cookieser.js
 /cookiesWidget/widget.js
-consent.cookiebot.com$domain=~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~wwf.fi|~login.nos.pt|~asambeauty.com|~cineplex.de|~berlingske.dk|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~linak.es|~linak.de|~cajamar.es|~digitaltrends.com|~mein-grundeinkommen.de|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~biomarkt.de|~harzwasserwerke.de|~stern.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de|~ekstrabladet.dk
+consent.cookiebot.com$domain=~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~wwf.fi|~login.nos.pt|~asambeauty.com|~cineplex.de|~berlingske.dk|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~linak.es|~linak.de|~cajamar.es|~digitaltrends.com|~mein-grundeinkommen.de|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~biomarkt.de|~harzwasserwerke.de|~stern.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de|~ekstrabladet.dk|~epochtimes.de
 /ccp-sites/components/structure/cookie-notification/*
 /cookies-info.js
 cookies.algo.at
@@ -22684,7 +22692,6 @@ consent.cookiefirst.com$domain=~swietawdomu.pl|~deutschesapothekenportal.de
 /cookiebar.js
 /gdpr/cookie-notice
 /cookiechoices.min.js
-/cookie-consent-layer.htm?ajax=1
 /cookie-consent-min.js
 ||cookieconsent.popupsmart.com/src/js/popper.js$script
 ||flixbus.com/cookie-consent$script
@@ -22903,6 +22910,7 @@ cookieconsent.blob.core.windows.net
 /cookieBar.js
 cc.controlcookies.com
 /cookieNotice.build.js
+/ux.ui-cookie-consent/*
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23360,6 +23368,7 @@ wpjslib-chunk-notification.js^
 /ccm19/app.js
 /dsvgobanner.js
 /wecoma-lite.js
+||resourcesurw.azureedge.net/js/cc55.js$script
 /iubenda_cs$domain=~radiomontecarlo.net|~video.repubblica.it|~video.lastampa.it|~nablawave.com|~buondi.it|~mediaset.it|~telerama.fr|~skuola.net
 /amp-user-notification-
 ||sn.sanoma.fi/js/sccm$script
@@ -23614,7 +23623,6 @@ toestemmingen.snp.nl$domain=snp.nl
 consent.maerkischekiste.de$domain=maerkischekiste.de
 /it_nsc.min.js$domain=nonsolocap.it
 h1.versicherungsjournal.de$domain=versicherungsjournal.de
-/cc55.js$domain=westfield.com
 /cmp.min.js$domain=topannonces.fr
 /cookies.min.js$domain=ellisphere.fr|konsultacjejst.pl
 /mdv.cookie.js$domain=biehler-cycling.com
