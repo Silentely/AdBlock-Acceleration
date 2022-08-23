@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 343.202208220836
+! Version: 343.202208231422
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 22 Aug 2022 06:36 UTC
+! Last modified: 23 Aug 2022 12:22 UTC
 !
 !
 ! GLOBAL RULES
@@ -2708,7 +2708,7 @@
 ###cookie-info-block
 ###pl_cookie
 ###coockies
-###cookiedialog
+###cookiedialog:not([open])
 ###poland_cookie_cont
 ###afCookieControl-notice
 ###cookieConfigForm
@@ -5489,7 +5489,7 @@
 ##.cookie-policy-note:not(body):not(html)
 ###cookieUsageMessage
 ###cookies-erlauben
-##.cookiedialog:not(body):not(html)
+##.cookiedialog:not(body):not(html):not([open])
 ##.eula-cookie-banner:not(body):not(html)
 ##.cookiePolicyNotice:not(body):not(html)
 ###fdih_cookiebadge_wrapper
@@ -6347,7 +6347,7 @@
 ###cookies-div
 ###cookiesesante
 ###datenschutz-banner
-###euLaw-alert
+###euLaw-alert:not([class*="modal"])
 ###kaio-cookie-ban
 ###cookies_check
 ##.components-cookie-law-basic
@@ -13583,6 +13583,7 @@
 ###cookienotice_container
 ###lgpd-message
 ###cookie-bar-dialog
+##.cookieinfo__container
 !
 ! CUSTOM RULES
 !
@@ -21613,7 +21614,6 @@ loveholidays.com##.c-o--
 reinigungsberater.de###cCoverlay, #cC
 turnoffthelights.com###cookie-law
 monster-soluce.com###cookies-pop
-dlr.de##.ccm-root
 bobshop.com##.ccm-root
 buecher.de###klaro
 nur-positive-nachrichten.de###klaro
@@ -22194,7 +22194,6 @@ mondverlauf.de###cc_div
 sonnenverlauf.de###cc_div
 revolut.com##div[role="dialog"][aria-label*="Cookie"]
 allani.pl##.off-canvas-wrap ~ div
-transglobalexpress.co.uk###GDPRFooter
 g2a.com##.modal--agreements__curtain, .agreements-container
 g2a.co##.modal--agreements__curtain, .agreements-container
 nederlandseloterij.nl###nlportal-cookie-consent, .overlay
@@ -22425,6 +22424,20 @@ leaseplan.com##.veil
 bankiros.ru##.xxx-cookies-tooltip
 sarajevo-airport.ba##.cp-area
 markantmoebel.de###cookie-approval, #cookie-approval-revoke
+privateproperty.co.za###consentManager
+esotravel.cz###warning-modal
+accu.co.uk##div[x-data="cookies"]
+unesc.br##.lgpd
+bankera.com##div[class*="cookie-module"]
+book-n-drive.de##.modal_cookies_and_ga_compliance
+youcom.com.br###modal_aceiteycpol
+carscz.eu###cookiesI
+transglobalexpress.co.uk###GDPRFooter
+transglobalexpress.de###GDPRFooter
+bancobmg.com.br##.acceptance-terms
+prima-obchod.cz##.wcookies
+lastminute.co.il##.messages-container
+twitchcon.com##div[x-data="gdpr"]
 !
 ! SCRIPT BLOCKING
 !
@@ -22758,7 +22771,6 @@ up-cookiemon.wavecdn.net
 /bb_cookieconsent/*
 /?tx_z7cookiemanager
 /typo3conf/ext/kmacookies
-/in2cookiemodal/*
 /_hw_cookie_dialog.js
 /cookie-consent-settings-ui/*
 ||cookietrust.eu/script$script
@@ -22807,7 +22819,6 @@ cookiemon.atcom.gr
 /system/modules/cookiecontrol/assets/js/cc.js
 /cookieConsentNotif.js
 /typo3conf/ext/ne_cookies/*
-/in2cookiemodal.js
 /cookie-bar.min.js
 /ilovecookies.min.js
 /luxcookieconsent/*
@@ -22931,6 +22942,7 @@ cc.controlcookies.com
 /cookieNotice.build.js
 /ux.ui-cookie-consent/*
 /cookiesPopUp/*
+/in2cookiemodal
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23710,6 +23722,7 @@ api.usercentrics.eu$domain=ing.de
 /smedia_cookie/*$domain=renzgroup.de
 cookies.tanke-guenstig.de$domain=tanke-guenstig.de
 /mfe-cookies/*$domain=santander.com.br
+ccm1.$domain=dlr.de
 !
 ! FILTERLIST ONLY
 !
