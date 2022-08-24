@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 343.202208231422
+! Version: 343.202208240845
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 23 Aug 2022 12:22 UTC
+! Last modified: 24 Aug 2022 06:45 UTC
 !
 !
 ! GLOBAL RULES
@@ -16,7 +16,7 @@
 ###cookielaw:not(.modal)
 ~conso.ro,~daimler.com,~ihreapotheken.de,~filmboxlive.com###cookiePolicy:not(.reveal):not(.modal)
 ###cookiePolicyBackground
-~babyartikel.de,~pdf24.org,~ima.it###cookieBanner
+~babyartikel.de,~ima.it###cookieBanner
 ~we-worldwide.com###cookieNotification
 ###yourCookieSettings
 ~tyg.se,~stoffe.de,~myfabrics.co.uk###cookieOverlay
@@ -1509,7 +1509,7 @@
 ###cookieConsentPrompt
 ###cookemessagehandler
 ##.cookieConsentBar:not(body):not(html):not(.ecinl)
-###barraaceptacion
+~bizkaia.eus###barraaceptacion
 ###wrapper-cookie
 ##.wrapper-cookie:not(body):not(html)
 ###div_cookie_msg
@@ -7983,7 +7983,7 @@
 ###stOverlayB
 ##.misc-CookiesWarning:not(body):not(html)
 ###cookieSettingWrapper
-~pdf24.org###cookieBannerContent
+###cookieBannerContent
 ###mcDsgvo
 ###barraCookie
 ###cookie-usage-hint
@@ -8984,7 +8984,7 @@
 ##.sv-text-portlet.cookie
 ###privacy_barre
 ###cookietopbar
-~pdf24.org###cookieBannerOverlay
+###cookieBannerOverlay
 ##.popover-cookie:not(body):not(html)
 ##.ry-cookie-permission
 ##.js-gdpr-notice:not(body):not(html)
@@ -9665,7 +9665,7 @@
 ##.cx_cookieNotice:not(body):not(html)
 ##.cookieModuleContainer
 ##.gdpr.showGDPR:not(body):not(html)
-###gdpr_popup[style*="block"]
+~tmarket.bg###gdpr_popup[style*="block"]
 ###cookiePopupTarget
 ##.cookies-overlay__container
 ###wa_cmpOverlay
@@ -13400,9 +13400,9 @@
 ###privacy-data-notice
 ###app div[class*="GDPRConsent-root"]
 ##.site_block_wrap_cookie
-~abc.es,~hoy.es,~diariosur.es,~elcorreo.com,~surinenglish.com,~eldiariomontanes.es,~jardinage.lemonde.fr,~investir.lesechos.fr,~canarias7.es,~elcomercio.es,~laverdad.es,~ideal.es,~lasprovincias.es,~diariovasco.com,~sosoir.lesoir.be###didomi-notice
+~abc.es,~hoy.es,~diariosur.es,~elcorreo.com,~surinenglish.com,~eldiariomontanes.es,~jardinage.lemonde.fr,~investir.lesechos.fr,~canarias7.es,~elcomercio.es,~laverdad.es,~ideal.es,~lasprovincias.es,~diariovasco.com,~elnortedecastilla.es,~sosoir.lesoir.be###didomi-notice
 ###didomi-custom-host
-~abc.es,~hoy.es,~diariosur.es,~elcorreo.com,~surinenglish.com,~eldiariomontanes.es,~jardinage.lemonde.fr,~investir.lesechos.fr,~canarias7.es,~elcomercio.es,~laverdad.es,~ideal.es,~lasprovincias.es,~diariovasco.com,~sosoir.lesoir.be##body:not(.didomi-popup-open) #didomi-host
+~abc.es,~hoy.es,~diariosur.es,~elcorreo.com,~surinenglish.com,~eldiariomontanes.es,~jardinage.lemonde.fr,~investir.lesechos.fr,~canarias7.es,~elcomercio.es,~laverdad.es,~ideal.es,~lasprovincias.es,~diariovasco.com,~elnortedecastilla.es,~sosoir.lesoir.be##body:not(.didomi-popup-open) #didomi-host
 ###cookies + #avisoConfig
 ##.siteCookies--bottom
 ##.c-cookie-consent--default
@@ -13584,6 +13584,9 @@
 ###lgpd-message
 ###cookie-bar-dialog
 ##.cookieinfo__container
+###root footer[class*="CookieBanner"]
+###cookies-msg-wrapper
+##.backdrop-cookies
 !
 ! CUSTOM RULES
 !
@@ -17006,7 +17009,6 @@ jomy.com###jomy-header-dialog-cookie-consent
 crossfit.com###app ~ #modal, body.games > div[style*="fixed"]
 mz.gov.pl##.popup-bg
 n11.com##.warningAlert
-fc2.com##body > div[style=""]
 wso2.com##.cGDPR
 mallorca312.com###cookies
 boticas23.com###cookies
@@ -18428,7 +18430,6 @@ myparcel.me##.card.fixed-bottom
 hackintoshpro.com##footer ~ .pop
 kastinger.com##.cache-notice
 viasana.nl##.Cookie__container
-bitpanda.com##bpc-cookie-banner
 admiral.at##asw-cookie-acceptance-overlay
 edicionesobelisco.com###sticky_header-sticky-wrapper
 peoplesproblems.org###myModal
@@ -22438,6 +22439,19 @@ bancobmg.com.br##.acceptance-terms
 prima-obchod.cz##.wcookies
 lastminute.co.il##.messages-container
 twitchcon.com##div[x-data="gdpr"]
+displayspecifications.com###cookie-consent
+miui.com###_navbar ~ .fixed[class*="rounded"]
+smiteproleague.com##.root > .is-visible
+topformula.se##.ca-cookie-consent
+getsquire.com###__next > div:first-child
+additioapp.com###btn-cookies
+se-ecatalog.ru##.coockie_box
+multivia-suite.de##.standard-dialog
+bitpanda.com##bpc-cookie-banner
+12min.com###twlvidck
+dtvp.de###cc
+payback-ltd.com##div[class*="cookiesPopUp"]
+gelsia.it##.cao
 !
 ! SCRIPT BLOCKING
 !
@@ -22943,6 +22957,7 @@ cc.controlcookies.com
 /ux.ui-cookie-consent/*
 /cookiesPopUp/*
 /in2cookiemodal
+/cookie-banner/cookie-banner
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23580,7 +23595,7 @@ privacy-manager-v*$domain=df.eu
 /consent.$domain=strato.de|strato.nl|strato.fr|strato.es|strato-hosting.co.uk
 /consent/*$domain=renault.de|ultraleicht-trekking.com
 /checkCookieConsent/*$domain=andrewssykes.fr
-/consent-manager/*$domain=cornelsen.de
+/consent-manager/*$domain=cornelsen.de|pdf24.org
 /tcf2.js$domain=0calc.com|0rechner.de|0calc.fr
 /dsgvo-opt-in.css$domain=kosta.at
 /dywc.js$domain=radioschwaben.de
