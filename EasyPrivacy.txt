@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202208251155
+! Version: 202208251750
 ! Title: EasyPrivacy
-! Last modified: 25 Aug 2022 11:55 UTC
+! Last modified: 25 Aug 2022 17:50 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -6597,6 +6597,7 @@ _mongo_stats/
 ||cityadstrack.com^$third-party
 ||clarity.ms^$third-party
 ||claritytag.com^$third-party
+||clarium.io^$third-party
 ||clarivoy.com^$third-party
 ||cleananalytics.com^$third-party
 ||clearbitjs.com^$third-party
@@ -8814,6 +8815,9 @@ _mongo_stats/
 $ping,third-party
 ! https://www.opensubtitles.org/
 $third-party,xmlhttprequest,domain=opensubtitles.org
+! Oracle
+||addthis.com^$third-party
+||addthiscdn.com^$domain=~addthis.com
 ! revprotect
 ||pphwrevr.com^$third-party
 ||protectcrev.com^$third-party
@@ -15004,6 +15008,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||dailymail.co.uk/geo/
 ||dailymail.co.uk/rta2/
 ||dailymotion.com/logger/
+||darkreader.org/elements/stats.js
 ||data.guide.photobucket.com^
 ||data.webullfintech.com/event/
 ||data.younow.com^
@@ -15409,6 +15414,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||optimize-stats.voxmedia.com^
 ||optimizely.com/js/geo.js
 ||oracle.com/visitorinfo/
+||oracleimg.com^*/metrics/
 ||outbound.io/v2/identify
 ||outbound.io/v2/track
 ||overstock.com/analytics/
@@ -25758,7 +25764,8 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||mosoah.com/analytics.js
 ||tags.aljazeera.net^
 ||tracking.alarabiya.net^
-! Bulgarian
+! Bosnian
+||insight.olx.ba^
 ! Chinese
 ||104.com.tw/log/
 ||17173.com/ping.js
@@ -27451,6 +27458,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||api.cxense.com/public/widget/data?$script,domain=mainichi.jp|wpb.shueisha.co.jp
 @@||api.cxense.com/public/widget/data?$xmlhttprequest,domain=cyclestyle.net
 @@||api.cxense.com/public/widget/data|$xmlhttprequest,domain=friday.gold|friday.kodansha.co.jp
+@@||api.ipify.org^$xmlhttprequest,domain=offering-flower.com
 @@||assets.adobedtm.com^*-librarycode_source.min.js$script,domain=mora.jp
 @@||atwiki.jp/common/_img/spacer.gif?$image,domain=atwiki.jp
 @@||b-cloud.templatebank.com/js/gtag.js$~third-party
