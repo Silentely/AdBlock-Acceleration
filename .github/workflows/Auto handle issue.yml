@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: 自动关闭有done标签且7天内无回复的issue
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
-        uses: actions-cool/issues-helper@v3.1.0
+        uses: actions-cool/issues-helper@v3.2.0
         with:
           actions: 'close-issues'
           labels: 'done'
@@ -26,7 +26,7 @@ jobs:
       
       - name: 自动回复新建的issue
         if: github.event_name == 'issues' && github.event.action == 'opened' && github.event.issue.author_association != 'OWNER'
-        uses: actions-cool/issues-helper@v3.1.0
+        uses: actions-cool/issues-helper@v3.2.0
         with:
           actions: 'create-comment'
           issue-number: ${{ github.event.issue.number }}
