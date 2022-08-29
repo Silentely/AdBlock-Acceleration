@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 343.202208280708
+! Version: 343.202208290957
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 28 Aug 2022 05:08 UTC
+! Last modified: 29 Aug 2022 07:57 UTC
 !
 !
 ! GLOBAL RULES
@@ -13587,6 +13587,8 @@
 ###root footer[class*="CookieBanner"]
 ###cookies-msg-wrapper
 ##.backdrop-cookies
+###mfn-gdpr
+###sc-cookie-banner
 !
 ! CUSTOM RULES
 !
@@ -14220,7 +14222,6 @@ tma-winding.com###system-message, #system-messages, #system-message-container
 eaux-de-normandie.fr###notifybar
 mcclic.com###dialog
 musicworks.it###infromativap
-sachsen.de###xcm-bar, .ld_container
 lonelyplanet.com##.alert, #alert
 sabrain.com##.message-panel[data-notice-id="brainscookienotice"]
 matoga.com.pl##body > div:not([id]):not([class])
@@ -15533,7 +15534,6 @@ portamx.com###ecl_outer
 ifp-school.com###cnilWrapper
 codicesconto.org##.bloque_lopd
 nuovatecnodelta.it##body > div[style]
-everywhere.game##.cookie-madness
 naturenergieplus.de##.announcement
 detnyeskotterup.dk##.clWindow
 eujuicers.cz###snippet-browserBootstrap-flashMessages-
@@ -18130,7 +18130,6 @@ udruga-gradova.hr##.cookies
 zoom.earth##.cookies
 userinyerface.com##.cookies
 cosmosmagazine.com##.cookie-consent
-lightinthebox.com##.pop_has_cookies
 reifen-dinser.de##.cookies
 tang-freres.fr##.welcome
 spotify.com###main > .Root > section, .mh-message-bar
@@ -18404,7 +18403,6 @@ flexport.com###gatsby-focus-wrapper ~ div
 lemoncode.net##.sqs-announcement-bar
 disk-o.cloud###root div[class^="src-ui-Cookie"]
 slideshare.net##.lms-notice-wrapper
-myfitnessplace.pl###wizjo-cookies
 kiwipress.hu##.cookie
 2020.anderzorg.nl###ckb-container
 tenniswarehouse-europe.com###data_protection
@@ -18585,8 +18583,6 @@ knaf.nl###cp-wrap
 my.games##.ph-cookies, #app header .gdpr
 ikea.es##.toast-container
 lobos.pl##.cookies
-cyberpowerpc.com###pp_cookie
-cyberpowersystem.co.uk###pp_cookie
 spiele-offensive.de##.facebookfrage
 blackmoreops.com##.snp-subscribeform
 2x45.info###cookies
@@ -21324,9 +21320,6 @@ thisinterestsme.com###ww-blackout
 pensionikeskus.ee###gdpr-confirm
 nasdaqbaltic.com###gdpr-confirm
 nintendo.com##.o_p-membership-cookie-law-message
-schraubenkasten.de###CookiePlus, .modal-backdrop
-destillatio.eu###CookiePlus, .modal-backdrop
-omg.de###CookiePlus, .modal-backdrop
 pro-alarm.nl##.mgz-flex-position-bottom-center
 cpanel.net##.consent-container
 draeger.com##dw-global-notification
@@ -21580,7 +21573,6 @@ muenchen.de##.cookie
 cuevana3.io###mdl-ads
 dovizborsa.com###tools > div[style*="bottom"]
 dreame.com##.drawer-wrapper
-lefigaro.fr##.fig-consent-banner
 groovy.bot###__layout > div > .bottom-0
 hydra.bot###__layout > div > .bottom-0
 dagsavisen.no###consent-container
@@ -22395,7 +22387,6 @@ gewinnabfrage.at###CL
 associationeconomienumerique.fr###cmp-settings-button
 deco-et-ambiances.fr###cmp-settings-button
 les-aides.fr###mask, #consents
-ctc-electronic.com###mfn-gdpr
 theinformation.com###gdpr-modal-container
 hoyoverse.com##.mihoyo-cookie-tips, .cookie-tip
 hoyolab.com##.mihoyo-cookie-tips
@@ -22453,6 +22444,23 @@ dtvp.de###cc
 payback-ltd.com##div[class*="cookiesPopUp"]
 gelsia.it##.cao
 thephoblographer.com###nebothemeCookieBar
+omg.de###CookiePlus, .modal-backdrop
+sole-runner.com###CookiePlus, .modal-backdrop
+loterija.si###cookie-consent
+lefigaro.fr##.fig-consent-banner
+everywhere.game##main > div > div + div ~ div:last-child
+worksheetcrafter.com###cookiesFormContainer
+beleuchtung.de##.cookie-setting
+rode.com###gdpr
+sachsen.de##.privacy-modal, .ld_container
+lansstyrelsen.se###widgets_splash
+cyberpowerpc.com###pp_cookie
+cyberpowersystem.co.uk###pp_cookie_consent
+lightinthebox.com##.cookie-allow-confirm
+myfitnessplace.pl###cookies, #backdrop
+nabrigadu.info##.c--anim
+femundo.de###femundo-cookie-bar
+fundacionvital.eus##veiss-cookies
 !
 ! SCRIPT BLOCKING
 !
@@ -22959,6 +22967,8 @@ cc.controlcookies.com
 /cookiesPopUp/*
 /in2cookiemodal
 /cookie-banner/cookie-banner
+/polityka-prywatnosci/js/cookie-overlay
+/cookie-consent-portlet/*
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23693,7 +23703,7 @@ trustarc.com$domain=avantiwestcoast.co.uk
 /c22cs.js$domain=cd.cz
 /cmp.$domain=o2.cz
 /stylecc$domain=immozentral.com
-privacy-center.org$domain=as.com|elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr|muyinteresante.es|t-mobile.pl|autocasion.com|europasur.es|pisos.com
+privacy-center.org$domain=as.com|elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr|muyinteresante.es|t-mobile.pl|autocasion.com|europasur.es|pisos.com|lagacetadesalamanca.es|meilleure-innovation.com
 /cookieConsent$domain=loesdau.de
 consent*$domain=t-mobile.cz
 /jquery.cookiekit.js$domain=dgeg.gov.pt
