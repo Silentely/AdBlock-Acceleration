@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202209042312
+! Version: 202209050605
 ! Title: EasyPrivacy
-! Last modified: 04 Sep 2022 23:12 UTC
+! Last modified: 05 Sep 2022 06:05 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -2784,6 +2784,7 @@
 /log?type=
 /log?uuid=
 /log_agent.
+/log_amp_item_set?
 /log_beacon.
 /log_e.php?id=
 /log_event?
@@ -3893,6 +3894,7 @@
 /search-cookie.aspx?$image
 /searchIgnite.
 /searchMetric.
+/second-scroll~trackers.
 /secure-stats.
 /securetracker.
 /seed.gif?
@@ -12478,6 +12480,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||jobvite.com/analytics.js
 ||jotform.io/getReferrer/$third-party
 ||js-agent.newrelic.com^
+||jscache.com/static/page_moniker/
 ||jsdelivr.net/gh/sensitiveio/sbtracker@master/
 ||jsdelivr.net^*/fp.min.js
 ||jsrdn.com/s/1.js
@@ -15562,6 +15565,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||sexu.com/api/ttrack
 ||sexybabepics.net/re/?ping
 ||sf-syn.com/conversion_outbound_tracker$subdocument,domain=sourceforge.net
+||sharesies.com/v1/identify
+||sharesies.com/v1/track
 ||shazam.com/services/metrics/
 ||shopeemobile.com/*/tr/
 ||shopmetric.rediff.com^
@@ -15828,6 +15833,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tradingview.com/ping
 ||treatment.grammarly.com^
 ||tredir.go.com^
+||tripadvisor.*/MetricsAjax
 ||tripadvisor.*/wm/record
 ||trivago.com/tracking/
 ||trx3.famousfix.com^
@@ -15889,6 +15895,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||wa.ui-portal.de^
 ||wal.co/cdn-perf.min.js
 ||wal.wolfram.com^
+||walmart.ca/api/bsp/logger
+||walmart.ca^*/beacon-logger
 ||walmart.com/client/api/logs
 ||walmart.com/client/api/metrics
 ||walmartimages.com^*/cdn-perf.min.js$domain=walmart.com
@@ -27260,6 +27268,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||google-analytics.com/plugins/ua/ec.js$domain=saturn.at
 @@||googletagmanager.com/gtag/js$script,domain=modehasen.de
 @@||googletagmanager.com/gtm.js$domain=betten.de|bunte.de|computerbild.de|finanzen.at|finanzen.net|freenet-funk.de|idealo.at|idealo.de|karriere.at|radiorur.de|saturn.at|sport1.de|vox.de
+@@||gymnasedeburier.ch/themes/segment/js/$~third-party
 @@||home.mobile.de^*/trackingService.js$script,~third-party
 @@||img.adnz.co^$image,domain=finanzen.ch
 @@||imrworldwide.com/novms/*/ggcm*.js$domain=tvnow.de
