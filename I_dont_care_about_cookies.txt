@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 343.202209071342
+! Version: 343.202209081509
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 07 Sep 2022 11:42 UTC
+! Last modified: 08 Sep 2022 13:09 UTC
 !
 !
 ! GLOBAL RULES
@@ -13404,7 +13404,7 @@
 ###didomi-custom-host
 ~abc.es,~hoy.es,~diariosur.es,~elcorreo.com,~surinenglish.com,~eldiariomontanes.es,~jardinage.lemonde.fr,~investir.lesechos.fr,~canarias7.es,~elcomercio.es,~laverdad.es,~ideal.es,~lasprovincias.es,~diariovasco.com,~elnortedecastilla.es,~sosoir.lesoir.be##body:not(.didomi-popup-open) #didomi-host
 ###cookies + #avisoConfig
-##.siteCookies--bottom
+##.siteCookies.js-siteCookies
 ##.c-cookie-consent--default
 ##.cookie-consent-overlay ~ .modal__overlay
 ##.dynamic-cookies-banner__container
@@ -13558,9 +13558,7 @@
 ##.cookieBannerOverlay
 ###root div[class*="cookieBox"]
 ##.cc[x-data*="cookieconsent"]
-##.siteCookies--left
 ###CookieGdprConsentBanner
-##.siteCookies--right
 ###cookie-notice-consent
 ##.main-row > #footer ~ #divDisabledBackground
 ###bottom-cookie-banner
@@ -13591,6 +13589,8 @@
 ###sc-cookie-banner
 ###keksGenehmigungsModal
 ###keksGenehmigungsModal ~ .modal-backdrop
+##.szn-cmp-dialog-container
+###cookie-consent.off-canvas
 !
 ! CUSTOM RULES
 !
@@ -19232,7 +19232,6 @@ amcongmbh.de##.consent, #consent
 voi-noi.gr##.bottombar
 gestionaleopen.org###gdpr
 pcformat.pl###iframePopupContainer
-lenovo.com##.banner_alert, .cookies
 dhvseminare.de##.cel-info-box .cel-cookies
 idealo.de##.App > div:first-child:not([class*="header"])
 curiousconcept.com##.notification.is-consent
@@ -22472,6 +22471,8 @@ abb.com##.footer ~ div[style*="fixed"]
 trincheiramilitar.com##.gdpr-settings
 global-wines.cz##.cookie-modal
 newdaycards.com###cookie-consents, div[data-testid="page-content"] + div
+lenovo.com##.banner_alert, .cookies, .cookie-remind-warpper
+jsps.go.jp##.notepanel
 !
 ! SCRIPT BLOCKING
 !
@@ -23227,7 +23228,6 @@ cmp.cls.pm
 /truendo_cmp.pid.js
 cmp.optad360.io
 ||snigelweb.com/sncmp$script
-||seznam.cz/js/cmp$script
 /pubtech-cmp
 cmp.pafo.fairbung.com
 ||sibbo.net/v2/sibbo-cmp$script
