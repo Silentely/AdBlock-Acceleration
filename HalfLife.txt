@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: 15VxXA0eWiCUrwbXque8VQ
+! Checksum: /VGMgqDF08XCv5ZfvBgR0A
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202209101413
-! Last Modified: 2022年09月10日 14:13
+! Version: 202209102009
+! Last Modified: 2022年09月10日 20:09
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -3885,10 +3885,17 @@ ubmcmm.baidustatic.com
 ||yishuojiaoyu.cn^
 ||jmgwh.cn^
 ||ahp10.site^
-||gqyy8.com^
 ||kyxw9itv.club^
 ||kd1c.top^
 ||666823.xyz^
+||11111.host^
+||dzytvcx.cn^
+||utijs.xyz^
+||0f4l.xyz^
+||o0dn.icu^
+||xyhx.org^
+||bephb.in^
+##a[href*=".tv699.cc"]
 .8ox.cn
 ##a[href$=".120ydrayy.com"]
 ##a[href*=".1956hl.com/"]
@@ -15304,6 +15311,8 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzzyk.com/js/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+boylove.cc##a[style="display: block;"]
+boylove.cc##div[style="display: block"]
 baomidou.com##.sidebar-slot-top
 szxx.com.cn###A1
 szxx.com.cn###A2
@@ -21734,6 +21743,9 @@ gohome.com.hk#@#div[id^="div-gpt-ad"]
 17ce.com##tr[id^="tr"] > td > a[href^="http"]
 ||17ce.com^*_$image
 !#18comic.org
+jmcomic1.city##a[href^="http"]:not([href*="jmcomic1."]) > img
+://jmcomic1.*/media/albums/*?
+jmcomic1.city#?#:-abp-has(>.adsbyexoclick)
 18comic.org,18comic.vip,18comic1.art,18comic2.art###guide-modal
 ##.col-lg-3.col-xs-6 > .well
 18comic.org,18comic.vip,18comic1.art,18comic2.art##.modal-backdrop
