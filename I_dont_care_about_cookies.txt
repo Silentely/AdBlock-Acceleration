@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 343.202209090946
+! Version: 343.202209131227
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 09 Sep 2022 07:46 UTC
+! Last modified: 13 Sep 2022 10:27 UTC
 !
 !
 ! GLOBAL RULES
@@ -460,7 +460,7 @@
 ###polityka-cookie
 ###snippet-cookieControl-cookieInfo
 ###WP-cookie-info
-~kulturprojekte.berlin,~rapidonline.com,~humboldtforum.org,~gov.lv,~riga.lv,~search.itaa.be,~dehn.at,~hetwkz.nl,~umcutrecht.nl,~ticsante.com,~techopital.com,~sandro-paris.com,~feuvert.fr,~ad.win.nl,~conclude.com,~thinkproject.com,~dehn.de###cookieConsent:not(.modal)
+~kulturprojekte.berlin,~rapidonline.com,~humboldtforum.org,~berlinartweek.de,~gov.lv,~riga.lv,~search.itaa.be,~dehn.at,~hetwkz.nl,~umcutrecht.nl,~ticsante.com,~techopital.com,~sandro-paris.com,~feuvert.fr,~ad.win.nl,~conclude.com,~thinkproject.com,~dehn.de###cookieConsent:not(.modal)
 ###cookie-info-box
 ##.avs-cookie-message:not(body):not(html)
 ###header-cookie
@@ -11192,7 +11192,7 @@
 ##body > .cb_bar.cb_active
 ###area-PrivacyNotice
 ###eagerly-tools-cookie-btn
-###eagerly-tools-cookie-btn ~ div[id*="cookie"]
+~paard.nl###eagerly-tools-cookie-btn ~ div[id*="cookie"]
 ###datenschutzfenster
 ##.h-modal-cookie
 ###alpenite-cookienotice-overlay
@@ -13591,6 +13591,8 @@
 ###keksGenehmigungsModal ~ .modal-backdrop
 ##.szn-cmp-dialog-container
 ###wpca-popup-modal
+##.cookie-info-more-options-background
+###cookie-info-more-options-layer
 !
 ! CUSTOM RULES
 !
@@ -18386,7 +18388,6 @@ legalstart.fr###pop
 halfmooninn.com###hebs-consent
 hammarinsahko.fi###cookie-conset-bar
 iplogger.org###message, .message
-wannonce.com##.jconfirm
 speisebaron.de##.navbar.fixed-bottom
 boyden.ca###site-terms
 bgee.org###bgee_privacy_banner
@@ -20510,7 +20511,6 @@ xalingo.com.br###wrng-agrmnt
 burg-lindenfels.de###cookie
 numuki.com###consent
 metradar.ch###closeonaction
-eib.org###eib-popup-policy
 purexbox.com##.dgp-consent
 taste-of-koroni.de###consent
 etowine.com###cookie
@@ -22482,6 +22482,7 @@ rambox.app##footer ~ .fixed
 regielive.ro###cc-mesaj-box-wrapper
 thegoodocs.com##.cookie__form
 lordicon.com###cookies
+eib.org###eib-popup-policy, .cookies-home_overlay
 !
 ! SCRIPT BLOCKING
 !
@@ -23190,7 +23191,7 @@ jssdk.privacy.pre.schibsted.com
 ||tagcommander.com/privacy$script,domain=~labanquepostale.fr
 ||isgprivacy.cbsi.com/dist/optanon$script,domain=~cbsnews.com|~startrek.com|~insideedition.com|~cbslocal.com|~etonline.com
 /contao-privacy-center.js
-privacy-mgmt.com$domain=~standard.co.uk|~theguardian.com|~theguardian.com.|~bild.de|~computerbild.de|~bold.dk|~welt.de|~t-online.de|~focus.de|~chip.de|~faz.net|~n-tv.de|~spiegel.de|~privacy-mgmt.com|~wunderweib.de|~helpster.de|~tvmovie.de|~praxisvita.de|~cosmopolitan.de|~giga.de|~ostsee-zeitung.de|~sky.com|~lvz.de|~mein-schoener-garten.de|~boerse-online.de|~tvspielfilm.de|~autobild.de|~bike-bild.de|~bz-berlin.de|~cyberport.at|~cyberport.de|~golem.de|~express.de|~tv8.it|~volkskrant.nl|~rtl2.de|~si.com|~derstandard.de|~derstandard.at|~unsere-helden.com|~rtl.de|~stern.de|~freenet-funk.de|~maennersache.de|~heise.de|~t3n.de|~11freunde.de|~finanzen.at|~finanzen.net|~insider.com|~transfermarkt.at|~transfermarkt.ch|~transfermarkt.co.uk|~transfermarkt.com|~transfermarkt.com.tr|~transfermarkt.de|~transfermarkt.fr|~transfermarkt.it|~transfermarkt.nl|~transfermarkt.pl|~transfermarkt.pt|~transfermarkt.us|~vip.de|~businessinsider.de|~clever-tanken.de|~fitbook.de|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~noizz.de|~politico.eu|~rollingstone.de|~stylebook.de|~techbook.de|~testbild.de|~wieistmeineip.at|~wieistmeineip.de|~wieistmeineip.ch
+privacy-mgmt.com$domain=~standard.co.uk|~theguardian.com|~theguardian.com.|~bild.de|~computerbild.de|~bold.dk|~welt.de|~t-online.de|~focus.de|~chip.de|~faz.net|~n-tv.de|~spiegel.de|~privacy-mgmt.com|~wunderweib.de|~helpster.de|~tvmovie.de|~praxisvita.de|~cosmopolitan.de|~giga.de|~ostsee-zeitung.de|~sky.com|~lvz.de|~mein-schoener-garten.de|~boerse-online.de|~tvspielfilm.de|~autobild.de|~bike-bild.de|~bz-berlin.de|~cyberport.at|~cyberport.de|~golem.de|~express.de|~tv8.it|~epaper.volksstimme.de|~volkskrant.nl|~rtl2.de|~si.com|~derstandard.de|~derstandard.at|~unsere-helden.com|~rtl.de|~stern.de|~freenet-funk.de|~maennersache.de|~heise.de|~t3n.de|~11freunde.de|~finanzen.at|~finanzen.net|~insider.com|~transfermarkt.at|~transfermarkt.ch|~transfermarkt.co.uk|~transfermarkt.com|~transfermarkt.com.tr|~transfermarkt.de|~transfermarkt.fr|~transfermarkt.it|~transfermarkt.nl|~transfermarkt.pl|~transfermarkt.pt|~transfermarkt.us|~vip.de|~businessinsider.de|~clever-tanken.de|~fitbook.de|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~noizz.de|~politico.eu|~rollingstone.de|~stylebook.de|~techbook.de|~testbild.de|~wieistmeineip.at|~wieistmeineip.de|~wieistmeineip.ch
 privacy-policy.u-lab.nl
 ||trustcommander.net/privacy$script,domain=~tf1info.fr|~tf1.fr
 app.eprivacy-keeper.eu
