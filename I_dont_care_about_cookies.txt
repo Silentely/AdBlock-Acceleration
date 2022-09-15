@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 343.202209131227
+! Version: 343.202209151330
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 13 Sep 2022 10:27 UTC
+! Last modified: 15 Sep 2022 11:30 UTC
 !
 !
 ! GLOBAL RULES
@@ -924,7 +924,7 @@
 ##.epson_cookienotice:not(body):not(html)
 ##.cookies-info-banner:not(body):not(html)
 ###notifyCookie
-~muziker.com,~muziker.at,~muziker.be,~muziker.bg,~muziker.hr,~muziker.cz,~muziker.nu,~muziker.ee,~muziker.fi,~muziker.fr,~muziker.de,~muziker.gr,~muziker.hu,~muziker.ie,~muziker.it,~muziker.lv,~muziker.lt,~muziker.lu,~muziker.nl,~muziker.pl,~muziker.pt,~muziker.ro,~muziker.sk,~muziker.si,~muziker.es,~muziker.se,~muziker.co.uk,~lektury.gov.pl##.cookies-box:not(body):not(html)
+~pro-doma.cz,~muziker.com,~muziker.at,~muziker.be,~muziker.bg,~muziker.hr,~muziker.cz,~muziker.nu,~muziker.ee,~muziker.fi,~muziker.fr,~muziker.de,~muziker.gr,~muziker.hu,~muziker.ie,~muziker.it,~muziker.lv,~muziker.lt,~muziker.lu,~muziker.nl,~muziker.pl,~muziker.pt,~muziker.ro,~muziker.sk,~muziker.si,~muziker.es,~muziker.se,~muziker.co.uk,~lektury.gov.pl##.cookies-box:not(body):not(html)
 ###AvisoCookieslaw
 ###Generictopmenu1_ServiceMenu1_PnlCookie
 ###headerCookies
@@ -2816,7 +2816,7 @@
 ###disclaim_bar
 ##.cookiepanel:not(body):not(html)
 ~ing.it##.banner-cookie:not(body):not(html)
-~flex-tools.com##.js-cookie-bar:not(body):not(html)
+~vanmoer.com,~flex-tools.com##.js-cookie-bar:not(body):not(html)
 ###cookieAgreementBar
 ###MessageInfo_panelCookie
 ###vd-cookie-banner
@@ -9311,7 +9311,7 @@
 ##cookies-message-display
 ###cookiespop
 ##.anunt.cookies:not(body):not(html)
-~wentronic.pl,~wentronic.com,~schuurman-schoenen.nl##.js-cookie-modal:not(body):not(html)
+~vanmoer.com,~wentronic.pl,~wentronic.com,~schuurman-schoenen.nl##.js-cookie-modal:not(body):not(html)
 ###useCookieNotice
 ##body > .container-fluid.cookie
 ##.ui-dialog[aria-describedby*="cookie-confirm"]
@@ -10005,7 +10005,7 @@
 ###global-nav-header div[aria-labelledby*="cookie-banner"]
 ##.cookie_consent_overlay
 ###kecookiehint
-##.cookie-disclaimer--default.is-visible
+##.cookie-disclaimer--default
 ##.s-cookie-popup:not(body):not(html)
 ###snippet--cookieSettings
 ##.fa-cookie.active[data-fa-cookie-inited]
@@ -11041,7 +11041,7 @@
 ###gdpr--cookie-policy-root
 ###cookii-overlay
 ###cookieswrapper > #cookiesinner
-###root div[class*="CookiePopup"]
+~dailymotion.com###root div[class*="CookiePopup"]:not([role="dialog"])
 ##.gdpr.js-gdpr[style*="block"]
 ##.cookie-msg-footer
 ###footer ~ div[class*="gpdr-banner"]
@@ -13593,6 +13593,8 @@
 ###wpca-popup-modal
 ##.cookie-info-more-options-background
 ###cookie-info-more-options-layer
+###ppms_cm_bar_overlay[class*="cm"]
+##website-cookie-consent-banner
 !
 ! CUSTOM RULES
 !
@@ -15996,7 +15998,6 @@ themaven.net##.consent-ui
 coop.se##.js-personalInformationNotice
 broadcom.com##.ribbon-wrapper
 technischeunie.nl###footer-slideup-highlight-banner
-brain.fm##div[class*="modules-core-css-CookiePopup"]
 cryptokitties.co##.BottomBanner
 telia.ee##iframe.login_top, .header__notice
 giphy.com##div[class*="flash-message__MessageWrapper"]
@@ -17635,7 +17636,6 @@ depo.lv##.depo-cookies
 2ask.de###cadvise_bar
 story.tl##div[class*="CookieConsent"]
 rohan.co.uk###ccpop
-assura.ch###__next > div > div[width]
 gog.com##body > div[data-editable="boxCookieNotification"]
 lisa.ru##.disclamer
 a2s.pl##.cookieForm
@@ -21886,7 +21886,6 @@ gns3.com###oio-container > div + div + div ~ div:last-child
 haerke.de###seite > div[style*="absolute"]
 riserapp.com##.Cookie
 webmdhealthservices.com##.cookiePolicyModal
-dailymotion.com###consent-group
 workspace.google.com##main > div:last-child:not(only-child)
 business.google.com###CookieDialog
 santatracker.google.com##santa-notice
@@ -22483,6 +22482,14 @@ regielive.ro###cc-mesaj-box-wrapper
 thegoodocs.com##.cookie__form
 lordicon.com###cookies
 eib.org###eib-popup-policy, .cookies-home_overlay
+assura.ch###__next > div[class] > div[display]
+filen.io###cookie-consent
+capcut.com##.lv_cookie_banner-wrapper
+hyundai.com##.mainTopBanner
+hyundai.com.br##.footertextbox
+dailymotion.com###consent-group
+bilibili.tv##.bstar-cookie-info
+truthsocial.com###soapbox > [data-testid="banner"]
 !
 ! SCRIPT BLOCKING
 !
@@ -22990,6 +22997,7 @@ cc.controlcookies.com
 /polityka-prywatnosci/js/cookie-overlay
 /cookie-consent-portlet/*
 /wp-content/plugins/simple-gdpr-cookie-compliance/*
+/cookies-consents.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23450,6 +23458,7 @@ wpjslib-chunk-notification.js^
 /wecoma-lite.js
 ||resourcesurw.azureedge.net/js/cc55.js$script
 /ccnst/ccbundle.min.js
+||cc.mpa-web.de/public/app.js$script
 /iubenda_cs$domain=~radiomontecarlo.net|~video.repubblica.it|~video.lastampa.it|~nablawave.com|~buondi.it|~mediaset.it|~telerama.fr|~skuola.net
 /amp-user-notification-
 ||sn.sanoma.fi/js/sccm$script
@@ -23725,7 +23734,7 @@ trustarc.com$domain=avantiwestcoast.co.uk
 /c22cs.js$domain=cd.cz
 /cmp.$domain=o2.cz
 /stylecc$domain=immozentral.com
-privacy-center.org$domain=as.com|elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr|muyinteresante.es|t-mobile.pl|autocasion.com|europasur.es|pisos.com|lagacetadesalamanca.es|meilleure-innovation.com
+privacy-center.org$domain=as.com|elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr|muyinteresante.es|t-mobile.pl|autocasion.com|europasur.es|pisos.com|lagacetadesalamanca.es|meilleure-innovation.com|huelvainformacion.es
 /cookieConsent$domain=loesdau.de
 consent*$domain=t-mobile.cz
 /jquery.cookiekit.js$domain=dgeg.gov.pt
