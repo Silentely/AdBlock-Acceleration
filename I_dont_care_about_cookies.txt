@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 343.202209151330
+! Version: 344.202209210901
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 15 Sep 2022 11:30 UTC
+! Last modified: 21 Sep 2022 07:01 UTC
 !
 !
 ! GLOBAL RULES
@@ -7406,7 +7406,7 @@
 ##.gdprMessage:not(body):not(html)
 ##.cookies.is-visible:not(body):not(html)
 ###ccc > #ccc-notify
-~canalplus.com,~hansapark.de##div[class*="CookieBanner"]:not([class*="page"]):not(.app)
+~go-e.com,~canalplus.com,~hansapark.de##div[class*="CookieBanner"]:not([class*="page"]):not(.app)
 ##.card-cookie-notice
 ###smart-cmp-host
 ###gdprsticky
@@ -10726,7 +10726,7 @@
 ###banner-cookie-banner
 ##.cookieBar__container
 ##.common-header-js .common-header-gdpr
-###__nuxt .legal-consent-wrap
+###above-header .legal-consent
 ##.l-container.c-cookie__container
 ~deichmann.com,~vanharen.nl,~dosenbach.ch##.cookie-consent__wrapper
 ##.module-cookies.cookie-bar--is-visible
@@ -11428,7 +11428,7 @@
 ###dap-cookie-bar
 ###cookieGDPR
 ##.dv-cookie-banner
-###__next [data-testid*="cookie-banner"]
+~go-e.com###__next [data-testid*="cookie-banner"]
 ###cookieconsent-settings-popup
 ###privacy-policy-prompt
 ##.blockCookieNotice
@@ -12169,7 +12169,7 @@
 ##.cookie-policy-opt-out
 ##.bn-cookie-panel
 ###mod-eprivacyoptin
-###jentis_consent
+##website-cookie-consent-banner
 ###cookiesck_overlay
 ##.cookie_notification_container
 ###cookiesOverlay
@@ -13589,12 +13589,11 @@
 ###sc-cookie-banner
 ###keksGenehmigungsModal
 ###keksGenehmigungsModal ~ .modal-backdrop
-##.szn-cmp-dialog-container
 ###wpca-popup-modal
 ##.cookie-info-more-options-background
 ###cookie-info-more-options-layer
 ###ppms_cm_bar_overlay[class*="cm"]
-##website-cookie-consent-banner
+##.xxxlutzkarrierecenter-boxCookieActive
 !
 ! CUSTOM RULES
 !
@@ -18315,7 +18314,6 @@ getdigital.de##.privacy-wrapper
 pdfescape.com###pdfe_cmp
 cgtn.com##.cg-tools-dialog
 schwab.de##.cj-privacy-settings
-mall.tv##.privacy-wrapper.flex-wrap
 shop.hfo.pl###cookie
 mclaren.com##.messages.show
 scad.edu##.consent-footer
@@ -22457,7 +22455,6 @@ digimobil.es###infocookies2, .modal-backdrop, .modal-cookies-warning, .modal-ove
 journalisten.no##.adn-window, .adn-editButton
 ddos-guard.net##.cookie
 mince.nl###sbeu-cookie
-mimovrste.com##.legal-consent
 filescan.io##.cookie
 only.com##.overlay-backdrop
 vitalsource.com##.dismiss-cookie, div[aria-describedby*="CookieBanner"], .App > footer + div[role="dialog"]
@@ -22490,6 +22487,16 @@ hyundai.com.br##.footertextbox
 dailymotion.com###consent-group
 bilibili.tv##.bstar-cookie-info
 truthsocial.com###soapbox > [data-testid="banner"]
+arlettie.com###___smooth > div > .sui-grid
+fandor.com##.alert-warning
+nordvpn.com##.CookieConsentV2
+xxxlutz.at###root > footer ~ div
+xxxlutz.de###root > footer ~ div
+xxxlutz.ch###root > footer ~ div
+moemax.at###root > footer ~ div
+moemax.hu###root > footer ~ div
+moemax.de###root > footer ~ div
+moebelix.cz###root > footer ~ div
 !
 ! SCRIPT BLOCKING
 !
@@ -23246,6 +23253,7 @@ cmp.cls.pm
 /truendo_cmp.pid.js
 cmp.optad360.io
 ||snigelweb.com/sncmp$script
+||seznam.cz/js/cmp$script
 /pubtech-cmp
 cmp.pafo.fairbung.com
 ||sibbo.net/v2/sibbo-cmp$script
