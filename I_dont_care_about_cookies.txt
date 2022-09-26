@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 344.202209210901
+! Version: 344.202209261107
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 21 Sep 2022 07:01 UTC
+! Last modified: 26 Sep 2022 09:07 UTC
 !
 !
 ! GLOBAL RULES
@@ -9279,7 +9279,7 @@
 ##.js-cookies-alert:not(body):not(html)
 ##iframe[src*="herowelcomebar.appspot.com"]
 ##.tracking-box-wrap[style*="block"]
-~telenor.no,~online.no###__tealiumGDPRcpPrefs
+##.xxxlutzkarrierecenter-boxCookieActive
 ##.cookiepopin:not(body):not(html)
 ###fbar > .fbar > div[jsl] #cnsh
 ###fbar > .fbar > #cnsi ~ div > #cnsh
@@ -11410,7 +11410,7 @@
 ##.accept-box--rodo
 ##.sg_cookieaccept
 ##.gdpr_disclaimer
-###sdgdpr_modal_wrapper
+###ppms_cm_bar_overlay[class*="cm"]
 ##notification-block[data-notice*="cookie-disclosure"]
 ~statik.be###cookiebanner-overlay
 ##.cookiesUseAgree
@@ -12750,7 +12750,7 @@
 ##.cookiepanel_overlay
 ##.top_nav ~ .cookie_tag
 ###notify.cookie
-~mein-lehrbetrieb.at###cookie-settings-wrapper
+~waidhofen.at,~mein-lehrbetrieb.at###cookie-settings-wrapper
 ##.cookies-banner__overlay
 ###mp-misc-cookie-bar
 ###consent-mgmt-banner
@@ -13592,8 +13592,6 @@
 ###wpca-popup-modal
 ##.cookie-info-more-options-background
 ###cookie-info-more-options-layer
-###ppms_cm_bar_overlay[class*="cm"]
-##.xxxlutzkarrierecenter-boxCookieActive
 !
 ! CUSTOM RULES
 !
@@ -22497,6 +22495,12 @@ moemax.at###root > footer ~ div
 moemax.hu###root > footer ~ div
 moemax.de###root > footer ~ div
 moebelix.cz###root > footer ~ div
+moreysa.com###sdgdpr_modal_wrapper
+youngcourtesans.com##.cookie-request
+dirtyflix.com##.cookie-request
+riscocloud.com##rc-cookies-alert
+kontorsmaterial.se##body > div[id^="cbck"]
+braze.com##.opt-in--background
 !
 ! SCRIPT BLOCKING
 !
@@ -23082,7 +23086,7 @@ analytics-consent-manager.azureedge.net
 /tm-gdpr-consent/*
 ||snigelweb.com/adconsent$script
 ||sncmp.com/adconsent$script
-||consentmanager.net/delivery/js/cmp$script,domain=~winfuture.de
+||consentmanager.net/delivery/js/cmp$script,domain=~winfuture.de|~infranken.de
 consent-manager.confirmic.com
 ||consentbanner.de/public/app.js$script
 ||classistatic.de/consent-statics$script
@@ -23095,7 +23099,7 @@ consent-manager.confirmic.com
 /epaas.consentdrawer.bundle
 /consentbanner-fragment/*
 ||altravia.com/connector/consent_mode.js$script
-||consentmanager.net/delivery/cmp$script,domain=~winfuture.de
+||consentmanager.net/delivery/cmp$script,domain=~winfuture.de|~infranken.de
 /taunton-user-consent.js
 /fileadmin/templates/js/cconsent.js
 /wp-content/plugins/okf-euconsent
