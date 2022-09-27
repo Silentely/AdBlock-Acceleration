@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: MRM29FXu52S2LJH3cVeXNA
+! Checksum: RqskemytZdnozdadYWu65g
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202209270208
-! Last Modified: 2022年09月27日 02:08
+! Version: 202209271157
+! Last Modified: 2022年09月27日 11:57
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -29,6 +29,7 @@ news.sina.com.cn##.news_weixin_ercode
 yahoo.com###my-adsFPL
 yahoo.com##.js-stream-featured-ad
 vdisk.weibo.com###ads_layer
+weibo.com##div.wbpro-side-panel:first-child
 weibo.cn##.tips.m-container-max
 www.1069gay.net###shortcut
 www.15yan.com##.tooltip
@@ -178,7 +179,6 @@ xhamster.com##.sponsorBottom
 ||syndication.jsadapi.com^$third-party
 ||tianqi.com/img/wx2211.js
 ||tkres.tuku.cc/k32/
-||trace.qq.com^
 ||traffichaus.com^
 ||trafficjunky.net^
 ||trafficfactory.biz^
@@ -329,8 +329,8 @@ pornhub.com##.hd.clear
 ||phncdn.com/www-static/js/widgets-live-popup.js
 ||phncdn.com/www-static/js/ph-tracking.js
 ||phncdn.com/www-static/js/promo-banner.js
-! QQVideo
-!||ca.gtimg.com/adplugin/swf/MediaPlugin.swf
+! QQ video
+@@||video.qq.com^*&refer=http$script
 ! Youtube
 youtube.com###contents>ytd-search-pyv-renderer
 youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
@@ -4145,6 +4145,11 @@ ubmcmm.baidustatic.com
 ||zzpwwbf.cn^
 ||zzycj.com^
 ||zzyl.mobi^
+||esnoownmw.fun^
+||d768p7cn.cn^
+||dvaxyqp.cn^
+||sd1f.top^
+||iiroz.xyz^
 /://666(7|8)[0-9]{2}.xyz\//$image,third-party
 /\.(cc|com|top|xyz)\/i\/v$/$third-party,xmlhttprequest
 /\.(com|cn|top)\/(j|K)\/[0-9]{6}$/$script,third-party
