@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202210011202
+! Version: 202210011616
 ! Title: EasyPrivacy
-! Last modified: 01 Oct 2022 12:02 UTC
+! Last modified: 01 Oct 2022 16:16 UTC
 ! Expires: 6 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1041,6 +1041,7 @@
 /BKVTrack.js
 /blank.gif?*%
 /blank.gif?*&
+/blazor-analytics.js
 /block/pixel?
 /blockstat?
 /blog/traffic/?
@@ -2350,6 +2351,7 @@
 /hitlog.mpl?
 /hitlog.php?
 /hits.count?
+/Hits/collect/*
 /hits/logger?
 /hitslink.
 /hittrack.cgi?
@@ -2494,6 +2496,7 @@
 /informb_stat.
 /informerStat?
 /init_cookie.php?
+/initAdobeAnalytics.
 /inline-pixel.js
 /inpl.measure.
 /insales_counter.
@@ -3794,6 +3797,7 @@
 /roverimp/*
 /roversync/?
 /rpc.gif?ac=
+/rpc/log/*
 /rpc/log?
 /rpc/preccount?
 /rpFingerprint?
@@ -4729,6 +4733,7 @@
 /tracking/t.php?
 /tracking/t.srv?
 /tracking/tag_commander.php?
+/tracking/thirdpartytag.js
 /tracking/track.js
 /tracking/track.php?
 /tracking/track_
@@ -6160,6 +6165,7 @@ _mongo_stats/
 ||takingbackjuly.com^
 ||tatpek.com^
 ||test.vast^
+||testingmetriksbre.ru^
 ||the-ozone-project.com^
 ||thefontzone.com^
 ||tncid.app^
@@ -7871,6 +7877,7 @@ _mongo_stats/
 ||pdbu.net^$third-party
 ||pdst.fm^$script,third-party
 ||peerius.com^$third-party
+||pendo.io^$third-party
 ||percentmobile.com^$third-party
 ||perf-serving.com^$third-party
 ||perfalytics.com^$third-party
@@ -11244,6 +11251,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||denakop.com^$third-party
 ||engageya.com^$third-party
 ||enviou.com.br^$third-party
+||hariken.co^$third-party
 ||marktest.pt^$third-party
 ||orquideassp.com^$third-party
 ||percycle.com^$third-party
@@ -11481,6 +11489,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||gostats.vn^$third-party
 ! -----------------Third-party tracking services-----------------!
 ! *** easylist:easyprivacy/easyprivacy_thirdparty.txt ***
+-client-tracking.goodgamestudios.com/
 ||100widgets.com^$third-party
 ||105app.com/report/?
 ||216.18.176.4/logger/
@@ -11894,6 +11903,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||citysearch.com/tracker/
 ||cityzen.io/Pixel/
 ||ck.connatix.com^
+||cleantalk.org/pixel/
 ||clearspring.com/at/
 ||clearspring.com/t/
 ||clerk.io/static/clerk.js
@@ -12327,6 +12337,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ga.kvideo.io^
 ||ga.webdigi.co.uk^
 ||gaijin.net/tag?
+||gamedock.io/gamemonkey-web-tracker/
 ||gamegecko.com/gametrack?
 ||gannettdigital.com/capture_logger/
 ||ganon.yahoo.com^
@@ -12630,6 +12641,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||log.seekda.com^
 ||logger.snackly.co^
 ||logging.carambo.la^
+||logging.cmp-resources.link^
 ||logging.je-apps.com^
 ||logging.prefixbox.com^
 ||loggingapi.spingo.com^
@@ -12708,6 +12720,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||metrics.brightcove.com^
 ||metrics.ctvdigital.net^
 ||metrics.kmsmep.com^
+||metrics.mdstrm.com^
 ||metrics.pico.tools^
 ||metrics.readme.io^
 ||metrics.scribblelive.com^
@@ -12857,8 +12870,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||pcrl.co/js/jstracker.min.js
 ||pega.com/logserver
 ||pegasus.unifygroup.com^
-||pendo.io/data/guide.gif/
-||pendo.io/data/ptm.gif
 ||penton.com/analytics/
 ||perf-events.cloud.unity3d.com^
 ||perf.hsforms.com^
@@ -14031,6 +14042,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||liveviewer.ez.no^
 ||log.worldsoft-cms.info^
 ||lr-port.de/tracker/
+||m.mobile.de/svc/track/
 ||mapandroute.de/log.xhr?
 ||marktjagd.de/proxy/trackings/
 ||mastertag.kpcustomer.de^
@@ -14660,9 +14672,12 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||jsuol.com/rm/clicklogger_
 ||lomadee.com/loc/$third-party
 ||lurker.olx.com.br^
+||melhorplano.net/scripts/tracker/
 ||nctrk.abmail.com.br^
 ||neurotrack.neurolake.io^
+||segmentor.snowfox-ai.com^
 ||statig.com.br/pub/setCookie.js?
+||tags.cmp.tail.digital^
 ||terra.com.br/metrics/
 ||track.e7r.com.br^
 ||track.noddus.com^
@@ -14816,6 +14831,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||interseek.si^*/visit.js
 ! Spanish
 ||1to1.bbva.com^
+||advgo.net/hits/
+||advgo.net/mushroom/
 ||analitica.webrpp.com^
 ||contadores.miarroba.com^
 ||contadores.miarroba.es^
@@ -14826,6 +14843,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||g-stats.openhost.es^
 ||hits.eluniversal.com.mx^
 ||mtm.qdqmedia.com^
+||pub.servidoresge.com^
 ||reachandrich.antevenio.com^
 ||s3wfg.com/js/vortexloader.js
 ||sp.vtex.com^
@@ -15120,6 +15138,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||desa.fkapi.net^
 ||desb.fkapi.net^
 ||desr.fkapi.net^
+||dev.to/fallback_activity_recorder
 ||dhl.com/g8Dj6P8TAg/
 ||dhresource.com/dhs/fob/js/common/track/$domain=dhgate.com
 ||digg.com/library/tracker.js
@@ -15260,6 +15279,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||gettyimages.*/pulse$ping
 ||ghacks.net/statics/px.gif
 ||github.com/_private/browser/stats
+||glassdoor.com/geb/events/
 ||glassmoni.researchgate.net^
 ||global.canon/00cmn/js/*/analytics-
 ||global.ssl.fastly.net^$domain=allmodern.com|argos.co.uk|basspro.com|birchlane.com|courier-journal.com|courierpress.com|desertsun.com|detroitnews.com|eddiebauer.com|freep.com|glassesusa.com|greenbaypressgazette.com|harborfreight.com|indystar.com|jsonline.com|kurtgeiger.com|legacy.com|lenovo.com|lohud.com|lowes.com|naplesnews.com|news-journalonline.com|northjersey.com|perigold.com|quickship.com|quikshiptoner.com|radiotimes.com|sainsburys.co.uk|sanuk.com|sheboyganpress.com|tallahassee.com|theadvertiser.com|thisweek.com|ugg.com|usatoday.com|wayfair.co.uk|wayfair.com|wwe.com
@@ -15643,6 +15663,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||showstreet.com/log/
 ||siberiantimes.com/counter/
 ||sid.nordstrom.com^
+||silvergames.com/div/g.php?
 ||skyrock.net/stats/
 ||skyscanner.*/slipstream/view
 ||slack.com/beacon/
@@ -28938,9 +28959,11 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||cmp2.channelpartner.de^
 ||comparis.ch/comparis/Tracking/
 ||computerbase.de/api2/$ping,xmlhttprequest
+||computerbase.de/nlytcz
 ||cp.finanzfrage.net/stats
 ||cpx.golem.de^
 ||cpxl.golem.de^
+||d.rp-online.de^
 ||dejure.org/cgi-bin/sitzung.fcgi?
 ||derwesten.de/stats/
 ||dforum.net/counter/
@@ -29771,6 +29794,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||audiencia.r7.com^
 ||click.uol.com.br^
 ||dejavu.mercadolivre.com.br^
+||dn.pt/tag/
 ||dna.uol.com.br^
 ||g.bit.pt^
 ||g.bitmag.com.br^
@@ -29866,6 +29890,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 ||seedr.ru^*/stats/
 ||sibnet.ru/counter.php?
 ||ssp.rambler.ru^
+||start.ru/logger/
 ||stat.5-tv.ru^
 ||stat.api.2gis.ru^
 ||stat.bankiros.ru^
@@ -30327,6 +30352,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||listrakbi.com^$image,script,stylesheet,domain=sks-bottle.com
 @@||live.bbc.co.uk^*/comscore.js$~third-party
 @@||live.house.gov/js/analytics.$~third-party
+@@||locoloader.com/assets/js/ga.min.js$script,~third-party
 @@||logging.apache.org^$~third-party
 @@||logmein.com/js/tracking.js$domain=logme.in|logmein.com
 @@||logo.clearbit.com^$image,third-party
