@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: zPt+Hl96hRq69jnWqeef3g
+! Checksum: IfaIlaeeV6ezrfqlyMAtoA
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202210010212
-! Last Modified: 2022年10月01日 02:12
+! Version: 202210010854
+! Last Modified: 2022年10月01日 08:54
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -614,9 +614,12 @@ mediaadjustment.com
 stgowan.com
 trustedgatetocontent.com
 netflix.mom,netflixya.com,yanetflix.com##.tips-box,#note.popup
+netflix.mom,netflixya.com,yanetflix.com##.rm-list.player-rm
 netflix.mom,netflixya.com,yanetflix.com##+js(aopw,document.onkeydown)
 @@||pstatp.com/obj/ad-tetris-site/file/$image,domain=player.kongbuya.com
 4kya.com###player_pause
+||wp.com/netflixya.com/upload/$image
+||yanetflix.com/upload/vod/$image
 yatu.tv##.dplayer-web-fullscreen-fix #tburl,#loadtop,[id^=myas],#myds1,#daohang
 yatu.tv,yhdm15.com##+js(set,document.oncontextmenu,trueFunc)
 ch-hr12333.com
@@ -637,6 +640,7 @@ quandangdang.net
 ! EasyList China
 !-----------------------General advert blocking filters-----------------------!
 -*-*-*-*.panda^$script,third-party
+://api.*.com/sh/*.js$script,third-party
 -1688-wp-media/ads/
 -880-80-4.jpg
 -90mh-gg.
@@ -4225,6 +4229,16 @@ ubmcmm.baidustatic.com
 ||zzpwwbf.cn^
 ||zzycj.com^
 ||zzyl.mobi^
+||usnoownmt.fun^
+||euvsgap.cn^
+||esiws.com^
+||cz5f.top^
+||wioe3quod.cyou^
+||jcdbae.cn^
+||qcmm09.com^
+||anyany.cc^
+||haoduofangs.com^$third-party
+||71sas.com^
 /://666(7|8)[0-9]{2}.xyz\//$image,third-party
 /\.(cc|com|top|xyz)\/i\/v$/$third-party,xmlhttprequest
 /\.(com|cn|top)\/(j|K)\/[0-9]{6}$/$script,third-party
@@ -15526,6 +15540,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||lensdump.com/i/*.gif
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
 szxx.com.cn###A1
