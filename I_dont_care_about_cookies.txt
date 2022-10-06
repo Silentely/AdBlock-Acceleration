@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 344.202209261107
+! Version: 344.202210061547
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 26 Sep 2022 09:07 UTC
+! Last modified: 06 Oct 2022 13:47 UTC
 !
 !
 ! GLOBAL RULES
@@ -258,7 +258,7 @@
 ###ckWarning
 ###attain-cookies
 ###notescookies
-~faircore4eosc.eu,~wuestenrot.at###cookiePopup
+~onleihe.de,~onleihe.com,~faircore4eosc.eu,~wuestenrot.at###cookiePopup
 ~fiftysix.nl,~wuestenrot.at##.cookiePopup:not(body):not(html):not(.reveal)
 ###cookiePolicy-layer
 ###cookie-top-bar
@@ -1032,7 +1032,7 @@
 ###jmCookieMessage
 ###divCookieInform
 ###contenedorCookies
-###cookie-btn
+###cookie-info-more-options-layer
 ###CookieWarning
 ###display_cookie_message
 ##.message-cookies:not(body):not(html)
@@ -4840,7 +4840,7 @@
 ##.cookie-prompt-wrapper
 ###cookiesPromptWrapper
 ##.cookie-wrn-wrapper:not(body):not(html)
-~hardware.info##.cookiecontainer:not(body):not(html)
+##.cookiecontainer:not(body):not(html)
 ##.bc-cookie-disclaimer
 ###km-cookie-accept
 ###cookie-optin
@@ -9751,7 +9751,7 @@
 ##.o-floating-card.js-privacy
 ###pagehead > #cookies.open
 ###bandeau_popin_cookie
-###cookie-consent-dialog
+~swedbank.se###cookie-consent-dialog
 ##.accept-cookies-toast
 ##.cn-window[aria-label="cookieconsent"]
 ##.Common-Layout-StandardBody.withFooter > div[class*="Common-Layout-StyleJamSiteWideMessage"]
@@ -13591,7 +13591,8 @@
 ###keksGenehmigungsModal ~ .modal-backdrop
 ###wpca-popup-modal
 ##.cookie-info-more-options-background
-###cookie-info-more-options-layer
+###cookie-notice-panel
+##.gdprcookie-stickybar
 !
 ! CUSTOM RULES
 !
@@ -13655,7 +13656,6 @@ oferia.pl##body > div:not([id]):not([class])
 grafoteka.pl###info-container
 shopusa.com##body > .box
 ohra.nl###wrapper-overlay
-jw.org##.legal-notices-client--notice
 dynos.es###cuerpo > div:not([id]):not([class])
 pobieralnia.org###close
 amadeus.com##.wayfinder-component, .country-lightbox.cookies
@@ -20957,7 +20957,6 @@ tingstad.com##.cookie-manager
 tuigroup.com###tui-cc
 apotal.de###footer::after
 focustaiwan.tw###jsGDPR
-onleihe.de##.cookie
 verfassungsblog.de##.tve-leads-ribbon
 cbtnuggets.com###__next [class*="BannerContainer"]
 picnic.app##.cookies, #modal
@@ -22501,6 +22500,16 @@ dirtyflix.com##.cookie-request
 riscocloud.com##rc-cookies-alert
 kontorsmaterial.se##body > div[id^="cbck"]
 braze.com##.opt-in--background
+2gis.cz###confirm + div
+joinhoney.com##div[class*="cookieConsentBanner"]
+hejfish.com##div[class*="CookieConsent"]
+gamefound.com##div[data-qa*="cookie-policy-box"]
+soignez-moi.ch##.gdpr-container
+mercusys.com###mercusys-cookie
+membean.com###cookies
+hardware.info###oreo
+onleihe.de##.cookie
+jw.org##.lnc-firstRunPopup
 !
 ! SCRIPT BLOCKING
 !
@@ -23516,6 +23525,7 @@ webcache-eu.datareporter.eu
 cdn.realpeoplemedia.co.uk
 /assets-usercentrics/uc-version
 /Sticky2,ConsentManager
+/ccm19_
 /consumer/cookie/client$domain=bt.com
 /frontend/ajax/cookies$domain=romstal.ro
 /rodo-agreement-$domain=gremimedia.pl|zw.com.pl
@@ -23677,7 +23687,7 @@ privacy-manager-v*$domain=df.eu
 /uc/*$domain=mcmakler.de
 cookie-policy*$domain=ubuntu.com
 consent.js^$domain=zitatezumnachdenken.com
-cdn.civiccomputing.com$domain=metoffice.gov.uk|churchofengland.org|yodel.co.uk|totalwar.com|gfps.com|mann.tv|lawgazette.co.uk
+cdn.civiccomputing.com$domain=metoffice.gov.uk|churchofengland.org|yodel.co.uk|totalwar.com|gfps.com|mann.tv|lawgazette.co.uk|gfms.com
 /cnst.js$domain=tauschticket.de
 /cookies/*$domain=liberbank.es|stickypassword.com
 /iCookie/*$domain=h-supertools.com
@@ -23794,6 +23804,7 @@ cookies.tanke-guenstig.de$domain=tanke-guenstig.de
 /mfe-cookies/*$domain=santander.com.br
 ccm1.$domain=dlr.de
 ccm.$domain=abload.de
+/ppp/js/permission-client$domain=meinaccount.gmx.net|hilfe.gmx.net|mein.web.de
 !
 ! FILTERLIST ONLY
 !
