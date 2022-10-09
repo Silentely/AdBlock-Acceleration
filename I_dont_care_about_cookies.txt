@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 344.202210061547
+! Version: 344.202210090736
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 06 Oct 2022 13:47 UTC
+! Last modified: 09 Oct 2022 05:36 UTC
 !
 !
 ! GLOBAL RULES
@@ -4321,7 +4321,7 @@
 ###cookies-box-inner
 ###nCookie
 ###AcceptCookies:not(button)
-##.cookies-info-box:not(body):not(html)
+~zurueckzumursprung.at##.cookies-info-box:not(body):not(html)
 ##.sliding-privacy-popup
 ##.barWrap[data-id="cookieBar"]
 ##.cookies-scrollbar:not(body):not(html)
@@ -15818,7 +15818,6 @@ frei-wild.net###privacyAnnouncement
 madhumanshow.com###SITE_ROOT ~ .siteAspectsContainer
 pensioenschoonmaak.nl###cwet
 e-mediatheque.sqy.fr###info_message
-mamabartka.blogspot.com###pierwszy
 haier.com##.swiper-slide-img-txt
 musikki.com##.status-cookies
 wolkyshop.co.uk###wolkyshopCookieBar
@@ -22510,6 +22509,13 @@ membean.com###cookies
 hardware.info###oreo
 onleihe.de##.cookie
 jw.org##.lnc-firstRunPopup
+fufunovel.com###gnews-pro-cookie-ify
+akari46.blogspot.com###xix0op-cookies
+mamabartka.blogspot.com###pierwszy
+posta.sk##iframe[src*="cookies-consents/dialog/sk"]
+trickyoldteacher.com##.cookie
+fuckpassvr.com##.blog-cookie
+hobby.porn##.sgdpr-box
 !
 ! SCRIPT BLOCKING
 !
@@ -22788,7 +22794,7 @@ consent.cookiefirst.com$domain=~swietawdomu.pl|~deutschesapothekenportal.de
 /modules/cookiesplus/views/js/cookiesplus.js
 /mws-cookie-solution.min.js
 /ajax/libs/cookieconsent2$domain=~membersuite.com|~la-becanerie.com|~rijbewijskeuringennederland.nl|~download.pixelexperience.org|~ceramtec-group.com
-/cookie-consent.js$domain=~talktalk.co.uk|~lacoste.com|~huuray.se|~indiearenabooth.com
+/cookie-consent.js$domain=~talktalk.co.uk|~codexis.cz|~lacoste.com|~huuray.se|~indiearenabooth.com
 /cookienotice-bootstrap.js
 /wp-content/plugins/cookieEuGH
 /cookiebar.js
@@ -23017,7 +23023,8 @@ cc.controlcookies.com
 /polityka-prywatnosci/js/cookie-overlay
 /cookie-consent-portlet/*
 /wp-content/plugins/simple-gdpr-cookie-compliance/*
-/cookies-consents.js
+/cookies-consents.js$domain=~posta.sk
+cookies.ptj.de
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23383,7 +23390,7 @@ nanoGDPR.min.js^
 ||tdn.r42tag.com/lib/ut$script
 ||c.betrad.com/pub/third.js$script
 fundingchoices.google.com
-fundingchoicesmessages.google.com$domain=~rtl.hr|~fernsehserien.de|~bbc.com|~iol.pt|~stooq.pl|~stooq.com
+fundingchoicesmessages.google.com$domain=~rtl.hr|~kledgeb.blogspot.com|~fernsehserien.de|~bbc.com|~iol.pt|~stooq.pl|~stooq.com
 ||spiffymachine.com/v2/$script
 cdn.userdatatrust.com
 ||cdn.pubguru.com/pg.js$script
