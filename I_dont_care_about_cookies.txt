@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 344.202210090736
+! Version: 344.202210101008
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 09 Oct 2022 05:36 UTC
+! Last modified: 10 Oct 2022 08:08 UTC
 !
 !
 ! GLOBAL RULES
@@ -11436,7 +11436,7 @@
 ###ecm_cookieConsentBanner
 ~sunny.co.uk##.cookie-acceptance-modal
 ##.showCookiebanner
-##.cookie-permission-container
+~esm-computer.de##.cookie-permission-container
 ##.rstbox[data-title*="RODO"]
 ##.rstbox[data-title*="RODO"] ~ .rstbox_overlay
 ##.cookie_banner_background
@@ -11907,7 +11907,7 @@
 ##.gdprCookieAlertPopup
 ###cookieCardBg
 ##.cookie-notification__bar
-~skuola.net,~tgcom24.mediaset.it,~nablawave.com##.iubenda-cs-content
+~skuola.net,~tgcom24.mediaset.it,~mediasetplay.mediaset.it,~nablawave.com##.iubenda-cs-content
 ##.universalcookiedisclaimer
 ###gdpr-banner-wrapper
 ###sp-cc[action*="cookiepref"]
@@ -13593,6 +13593,8 @@
 ##.cookie-info-more-options-background
 ###cookie-notice-panel
 ##.gdprcookie-stickybar
+###gdpr-consent-alert
+###__next div[class*="cookiesNotification"]
 !
 ! CUSTOM RULES
 !
@@ -14857,7 +14859,6 @@ tuodi.it###popup, .popup
 beko.gr##.sayfaDisDiv > .sayfaIcDiv > .row300
 nordpasdecalais.fr###bandeauCnil
 bubblebed.bg##.gs-cookies-review
-moebelix.at##.xxxlutzkarrierecenter-themeBoxCookieInfo
 hijob.me##.flash-cookie
 iabfrance.com###boxAlert
 thejukeboxman.com##.promo-banner
@@ -22493,6 +22494,9 @@ moemax.at###root > footer ~ div
 moemax.hu###root > footer ~ div
 moemax.de###root > footer ~ div
 moebelix.cz###root > footer ~ div
+moebelix.at###root > footer ~ div
+moebelix.sk###root > footer ~ div
+poco.de###root > footer ~ div
 moreysa.com###sdgdpr_modal_wrapper
 youngcourtesans.com##.cookie-request
 dirtyflix.com##.cookie-request
@@ -22516,6 +22520,10 @@ posta.sk##iframe[src*="cookies-consents/dialog/sk"]
 trickyoldteacher.com##.cookie
 fuckpassvr.com##.blog-cookie
 hobby.porn##.sgdpr-box
+nepszamlalas2022.hu##.offcanvas-bottom
+commentcoder.com##div[class*="gdpr__Modal"]
+carsized.com##body > center ~ center
+mycards.hdfcbank.com##.hdfc-page > div[style*="center"]
 !
 ! SCRIPT BLOCKING
 !
@@ -22985,7 +22993,6 @@ cdn.cookiecode.nl
 ||cookies.praguebest.cz/dist$script
 /cookies-prompt/*$domain=~gestiontv.vodafone.es
 /bootstrap-cookie-consent-settings.js
-/cookieModal/clientlib.js
 /rails_cookie_consent
 /rgpd/js/cookies.js
 /cookieBannerLoader.js
@@ -23025,6 +23032,7 @@ cc.controlcookies.com
 /wp-content/plugins/simple-gdpr-cookie-compliance/*
 /cookies-consents.js$domain=~posta.sk
 cookies.ptj.de
+/cookieModal/clientlib
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23487,7 +23495,7 @@ wpjslib-chunk-notification.js^
 ||resourcesurw.azureedge.net/js/cc55.js$script
 /ccnst/ccbundle.min.js
 ||cc.mpa-web.de/public/app.js$script
-/iubenda_cs$domain=~radiomontecarlo.net|~video.repubblica.it|~video.lastampa.it|~nablawave.com|~buondi.it|~mediaset.it|~telerama.fr|~skuola.net
+/iubenda_cs$domain=~radiomontecarlo.net|~video.repubblica.it|~video.lastampa.it|~nablawave.com|~buondi.it|~tgcom24.mediaset.it|~mediasetinfinity.mediaset.it|~telerama.fr|~skuola.net
 /amp-user-notification-
 ||sn.sanoma.fi/js/sccm$script
 /api/rest/settings/public?fields=endUserAgreement
