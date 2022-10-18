@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202210171809
+! Version: 202210172343
 ! Title: EasyPrivacy
-! Last modified: 17 Oct 2022 18:09 UTC
+! Last modified: 17 Oct 2022 23:43 UTC
 ! Expires: 6 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -2511,6 +2511,7 @@
 /insights-collector.
 /insights-emitter.
 /insights-emitter/*
+/insights/events/*
 /InsightTrk/*
 /insightXe.js
 /insitemetrics/*
@@ -5662,6 +5663,7 @@ cgi-bin/counter
 /links1.strava.com/*$image
 /lzdmailer.letter.open?
 /m-email/t.png?
+/mail-stat.airdroid.com/*$image
 /mail-tracking/*$image
 /mail.sparksport.co.nz/forms/read/*
 /mail.sparksport.co.nz/mail/read/*
@@ -12747,10 +12749,12 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||metrics.ctvdigital.net^
 ||metrics.kmsmep.com^
 ||metrics.mdstrm.com^
+||metrics.onshape.com^
 ||metrics.pico.tools^
 ||metrics.readme.io^
 ||metrics.redgifs.com^
 ||metrics.scribblelive.com^
+||metrics.userguiding.com^
 ||metrix.emagister.com^
 ||metrixlablw.customers.luna.net^
 ||minutemediacdn.com/campaign-manager-client/
@@ -13577,6 +13581,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||uptime.com/static/rum/$third-party
 ||uriports.com/reports/$third-party
 ||urldefense.com^$image,third-party
+||user.userguiding.com^
 ||usercentrics.eu/session/$image
 ||userexperience.thehut.net^
 ||usersegment.wpdigital.net^
@@ -14763,6 +14768,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||counter.nn.ru^
 ||counter.photopulse.ru^
 ||counter.pr-cy.ru^
+||counter.reddigital.ru^
 ||counter.star.lg.ua^
 ||crm-analytics.imweb.ru^
 ||d.wi-fi.ru^
@@ -15036,6 +15042,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||app.box.com/gen204
 ||appanalysis.banggood.com^
 ||arstechnica.com/keys/arstechnica.com/p.js
+||assets.instacart.com^
 ||atrack.allposters.com^
 ||ats.alot.com^
 ||audacy.com/data-events/
@@ -15105,6 +15112,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||cheezburger.com/api/visitor
 ||cisco.com/c/dam/cdc/j/at.js
 ||cl.canva.com^
+||clarice.streema.com^
 ||classdojo.com/logs/
 ||classistatic.com^*/js/lib/prebid-7.5.0.min.js$script,domain=kijiji.ca
 ||click.aliexpress.com^$image
@@ -15439,6 +15447,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||jumbo.zomato.com^
 ||juno.com/start/javascript.do?message=
 ||justanswer.com/browsercheck/
+||kaggle.com/api/i/diagnostics.MetricsService
 ||kansascity.com/nyb-zsooli/
 ||kayak.com/k/redirect/tracking?
 ||kbb.com/pixall/
@@ -15860,6 +15869,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||stape.fun/stat/
 ||stapewithadblock.xyz/stat/
 ||starfiles.co/analytics.php
+||startpage.com/sp/$ping
 ||startpage.com/sp/elp
 ||startpage.com/sp/jst
 ||stat.livesportbar.net^
@@ -15930,7 +15940,9 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||target.nationwide.com^
 ||target.nejm.org^
 ||targeting.washpost.nile.works^
+||td.airdroid.com^
 ||ted.dailymail.co.uk^
+||telem.sre.gopuff.com^
 ||telemetry.adobe.io^
 ||telemetry.api.playstation.com^
 ||telemetry.firez.one^
@@ -30425,6 +30437,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||listrakbi.com^$image,script,stylesheet,domain=sks-bottle.com
 @@||live.bbc.co.uk^*/comscore.js$~third-party
 @@||live.house.gov/js/analytics.$~third-party
+@@||live.rezync.com^$script,domain=batteriesplus.com
 @@||locoloader.com/assets/js/ga.min.js$script,~third-party
 @@||logging.apache.org^$~third-party
 @@||logmein.com/js/tracking.js$domain=logme.in|logmein.com
