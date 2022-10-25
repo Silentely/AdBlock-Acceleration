@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 344.202210211130
+! Version: 344.202210251000
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 21 Oct 2022 09:30 UTC
+! Last modified: 25 Oct 2022 08:00 UTC
 !
 !
 ! GLOBAL RULES
@@ -106,7 +106,7 @@
 ###cookie_shout
 ###cookie-alert
 ###EUCookie
-~schuurman-schoenen.nl,~win2day.at,~werkenbijpathe.nl,~interspar.at,~spar.at,~spar.hu,~spar.hr,~spar.si##.cookie-notification:not(body):not(html)
+~jackjones.com,~schuurman-schoenen.nl,~win2day.at,~werkenbijpathe.nl,~interspar.at,~spar.at,~spar.hu,~spar.hr,~spar.si##.cookie-notification:not(body):not(html)
 ###eprivacy
 ~dominospizza.pl,~penny.hu,~penny.cz###cookie-message
 ###cookieinfo-container
@@ -13599,6 +13599,10 @@
 ###pnlCookieConsent
 ##body > allow-cookies
 ###cookieInfoMessageBox
+###tealium_ensModalBG
+###__next div[data-testid*="banner-cookie"]
+##._gdpr-banner
+###acceptCookiesBar
 !
 ! CUSTOM RULES
 !
@@ -14055,7 +14059,6 @@ netonnet.se##.topInfo
 netonnet.no##.topInfo
 lawyersonline.co.uk##.alert, #alert
 allianz.hu###idAllianzCookiePolicy
-kicktipp.de##.messagebox
 scanbot.io##.sb-banners--cookie
 antalis.co.uk###overlay
 urban-rivals.com##.alert, #alert
@@ -14469,7 +14472,6 @@ oszkar.com###footerbar
 ekko.com.pl###messagePopup
 ministerstworeklamy.pl###messagePopup
 jak-ksiegowac.pl###message_wrap
-kicktipp.at##.messagebox
 cowsep.com##.cg-notify-message
 eg.dk##.top-alert
 albrevin.org##.alert-dismissible, .alert-dismissable, .alert--dismissable, .pmd-alert-dismissible
@@ -14588,7 +14590,6 @@ americancentury.com###instruction_message
 mimprendo.it##body > div:not([id]):not([class])
 katorishintoryu.it###SITE_ROOT ~ div[data-reactid*="siteAspectsContainer"]
 podcrto.si###cc-note
-kicktipp.com##.messagebox
 mycircle.tv###notif_ck
 filedesc.com###cwarn
 vrn.de###vrn-cookie
@@ -16874,7 +16875,6 @@ red-carparts.de###disclaimer
 carlovalentini.it###footer-widget-area
 streamcraft.com##.privacy-wraper
 helemaalshea.nl##.fancybox-overlay
-razer.com##.component-sticky-dialog
 cv-sanitairkorting.nl##.ui-widget, .ui-widget-overlay
 redaccionmedica.com##.iframe_cookies
 helmet.fi##.notification, .notifier_warning
@@ -20236,7 +20236,6 @@ hamburgische-buergerschaft.de###hbCookieLayer
 meteovista.co.uk###info-bar
 meteovista.de###info-bar
 meteovista.com###info-bar
-foreignaffairs.com##.alert--hedwig-banner
 legs.com.pl##.cookie
 findmypast.co.uk###skip-to-content-link + div > [style*="transform"], #skip-to-content-link ~ [style*="transform"]
 national-lottery.co.uk###cu_k_modal_main_box
@@ -22547,6 +22546,12 @@ dreamersforum.nl###cookiewarning_header
 piensasolutions.com##.drop[name="cookies"]
 open-broker.ru##div[class*="CookieDisclaimer"]
 crossfit.com###app ~ #modal, #globalMenu ~ div[style*="fixed"]
+gen-i.si##.cookie, .cookies_new
+hrw.org###hrw-cookie-dialog
+agar.io##.mc-cookiebar
+startmail.com###__main ~ .banner
+tropter.com##.tropter-cookiesbar
+razer.com###tos-razer, .component-sticky-dialog
 !
 ! SCRIPT BLOCKING
 !
