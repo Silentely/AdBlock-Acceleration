@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 344.202210261255
+! Version: 344.202210270919
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 26 Oct 2022 10:55 UTC
+! Last modified: 27 Oct 2022 07:19 UTC
 !
 !
 ! GLOBAL RULES
@@ -2184,7 +2184,7 @@
 ###alert-cookie-policy
 ###bloc_cookie_annonce
 ##.basic--draw-message-bar-cookie-notice
-~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it,~dmsg.de,~bgk.pl,~exagon.de,~sozialversicherung-kompetent.de,~varcevanje-energije.si,~donauregion.at,~salzkammergut.at,~studentenwerkfrankfurt.de##.cc-banner:not(body):not(html)
+~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it,~dmsg.de,~bgk.pl,~exagon.de,~sozialversicherung-kompetent.de,~varcevanje-energije.si,~donauregion.at,~salzkammergut.at,~studentenwerkfrankfurt.de,~manduka.com##.cc-banner:not(body):not(html)
 ###ing-Cookie
 ###ing-Cookiebody .ing--active
 ##.banner__cookies:not(body):not(html)
@@ -5544,7 +5544,7 @@
 ##.framework_cookies:not(body):not(html)
 ##.js-cookie-overlay:not(body):not(html)
 ##.cookie-popin:not(body):not(html)
-~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it,~dmsg.de,~bgk.pl,~exagon.de,~sozialversicherung-kompetent.de,~varcevanje-energije.si,~donauregion.at,~salzkammergut.at,~studentenwerkfrankfurt.de##.cc-window[aria-label*="consent"]
+~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it,~dmsg.de,~bgk.pl,~exagon.de,~sozialversicherung-kompetent.de,~varcevanje-energije.si,~donauregion.at,~salzkammergut.at,~studentenwerkfrankfurt.de,~manduka.com##.cc-window[aria-label*="consent"]
 ###cookie-nag
 ###mbientCookieNotice
 ###cookie-legal-info
@@ -9175,7 +9175,7 @@
 ###fit-cookieWallId
 ##.cookies_confirmation
 ##div[data-ui="cookie-notice"]
-~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it,~dmsg.de,~bgk.pl,~exagon.de,~sozialversicherung-kompetent.de,~varcevanje-energije.si,~donauregion.at,~salzkammergut.at,~studentenwerkfrankfurt.de##.cc-window[aria-describedby*="consent"]
+~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it,~dmsg.de,~bgk.pl,~exagon.de,~sozialversicherung-kompetent.de,~varcevanje-energije.si,~donauregion.at,~salzkammergut.at,~studentenwerkfrankfurt.de,~manduka.com##.cc-window[aria-describedby*="consent"]
 ###pb_cookie_message
 ##.zm-cookies-notification
 ###block-gdprcookiesblock
@@ -9998,7 +9998,7 @@
 ##.cookie-disclosure
 ###footer ~ #gdpr_agree
 ###root div[data-cookie-law-banner-selector]
-###dxCookieConsentContainer
+###Cookie-pop-up
 ##.pageFooter-acceptCookies
 ###app > main > .page-content .module-container-bala.shown
 ###cookie_set_accept.cookie-fade
@@ -11451,7 +11451,7 @@
 ##.cookie-ce-banner
 ###shopify-section-cookie-banner
 ##.cookie__floating--bottom-right
-~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it,~dmsg.de,~bgk.pl,~exagon.de,~sozialversicherung-kompetent.de,~varcevanje-energije.si,~donauregion.at,~salzkammergut.at,~studentenwerkfrankfurt.de###cconsent-modal.ccm--visible
+~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it,~dmsg.de,~bgk.pl,~exagon.de,~sozialversicherung-kompetent.de,~varcevanje-energije.si,~donauregion.at,~salzkammergut.at,~studentenwerkfrankfurt.de,~manduka.com###cconsent-modal.ccm--visible
 ##app-accept-cookies
 ##.cookie-consent.small
 ##.cookies[data-accepturl]
@@ -13603,6 +13603,8 @@
 ###__next div[data-testid*="banner-cookie"]
 ##._gdpr-banner
 ###acceptCookiesBar
+###klaro div[class*="cooker-modal"]
+###cookiesAlertWidget
 !
 ! CUSTOM RULES
 !
@@ -17107,7 +17109,6 @@ gosu.ai##gosu-notification
 coinsquare.com###body ~ div
 starmoney.de##.footer-banner-wrap
 prudential.co.za##.investor-type-box .cookie-policy-text
-lhotellerie-restauration.fr###lhr-cookie
 bravotv.com##.gdpr
 marseille.fr###app > div > div[style*="fixed"] > div > div[role="alertdialog"]
 mallorca-wandern-trekking.com###iwcookies
@@ -17849,7 +17850,6 @@ tierpark-ueckermuende.de##.cookie-einwilligung
 varma.fi##.ng-scope[ng-controller="CookieCtrl"]
 rote-liste.de##jhi-main > div > .banner
 caricos.com###cookiediv
-pimido.com##.privacy_policy_sec
 gamercortex.com##.gc-cookies
 alfred.camera##.noty_layout
 atomizer.gr##.navbar-fixed-bottom
@@ -22554,6 +22554,15 @@ toothbrushbattery.com##.woocommerce-store-notice
 retevis.eu##.woocommerce-store-notice
 retevis.info##.woocommerce-store-notice
 kapodistrias-tyres.com.cy###vlcookies_box
+stadtmobil.de##.CybotEdge
+gov.nl##div[data-ui-test="cookieAlert"]
+c24.de##app-cookie
+routedurhum.com##div[aria-describedby="cookie-box-message"]
+bonn.de##.SP-ConsentBanner__spacer
+meliuz.com.br##.cookies-c
+lhotellerie-restauration.fr###cookieConsent
+rawpixel.com##div[data-test-id="check-cookie-consent"]
+vigo.de##.wx_consentbanner
 !
 ! SCRIPT BLOCKING
 !
@@ -22806,7 +22815,7 @@ eu_cookie_banner.js^
 /modules/idxcookies/*
 /javascript/cookieser.js
 /cookiesWidget/widget.js
-consent.cookiebot.com$domain=~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~wwf.fi|~login.nos.pt|~asambeauty.com|~cineplex.de|~berlingske.dk|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~linak.es|~linak.de|~cajamar.es|~digitaltrends.com|~mein-grundeinkommen.de|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~biomarkt.de|~harzwasserwerke.de|~stern.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de|~spiele-kostenlos-online.de|~ekstrabladet.dk|~epochtimes.de
+consent.cookiebot.com$domain=~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~stadtmobil.de|~wwf.fi|~login.nos.pt|~asambeauty.com|~cineplex.de|~berlingske.dk|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~linak.es|~linak.de|~cajamar.es|~digitaltrends.com|~mein-grundeinkommen.de|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~biomarkt.de|~harzwasserwerke.de|~stern.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de|~spiele-kostenlos-online.de|~ekstrabladet.dk|~epochtimes.de
 /ccp-sites/components/structure/cookie-notification/*
 /cookies-info.js
 cookies.algo.at
@@ -23062,6 +23071,9 @@ cc.controlcookies.com
 /cookies-consents.js$domain=~posta.sk
 cookies.ptj.de
 /cookieModal/clientlib
+/cookie-consent-banner/*
+/dxcookieconsent/*
+/wp-content/plugins/real-cookie-banner
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23573,6 +23585,7 @@ cdn.realpeoplemedia.co.uk
 /assets-usercentrics/uc-version
 /Sticky2,ConsentManager
 /ccm19_$domain=~ccm19.de
+static.clickskeks.at
 /consumer/cookie/client$domain=bt.com
 /frontend/ajax/cookies$domain=romstal.ro
 /rodo-agreement-$domain=gremimedia.pl|zw.com.pl
