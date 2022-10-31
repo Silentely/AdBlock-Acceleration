@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 344.202210281025
+! Version: 345.202210311015
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 28 Oct 2022 08:25 UTC
+! Last modified: 31 Oct 2022 09:15 UTC
 !
 !
 ! GLOBAL RULES
@@ -21393,7 +21393,6 @@ argeles-sur-mer.com##.cookies-global
 pharmasimple.com###pharmabiscuit-popin
 ibisahome.com###cookies
 westend61.de###cookie_Modal
-aliexpress.ru###__aer_root__ > div > [class*="styles_footer"] ~ div, p[class*="PrivacyPolicyBanner"], #ae-ru-privacy-banner
 aliexpress.com##.ui-mask, .gdpr-dialog-class, #j-aliexpress-notice, #container-for-smart-banner ~ div:not([id]):not([class*=" "]):not([style]):nth-last-child(2), #voyager-gdpr, .site-notice-header
 aromes-et-liquides.fr###rgpdcookie
 boomin.com##div[data-testid*="cookie-modal"]
@@ -22408,7 +22407,6 @@ thephoblographer.com###nebothemeCookieBar
 omg.de###CookiePlus, .modal-backdrop
 sole-runner.com###CookiePlus, .modal-backdrop
 loterija.si###cookie-consent
-lefigaro.fr##.fig-consent-banner
 everywhere.game##main > div > div + div ~ div:last-child
 worksheetcrafter.com###cookiesFormContainer
 beleuchtung.de##.cookie-setting
@@ -22464,7 +22462,6 @@ dailymotion.com###consent-group
 truthsocial.com###soapbox > [data-testid="banner"]
 arlettie.com###___smooth > div > .sui-grid
 fandor.com##.alert-warning
-nordvpn.com##.CookieConsentV2
 xxxlutz.at###root > footer ~ div
 xxxlutz.de###root > footer ~ div
 xxxlutz.ch###root > footer ~ div
@@ -22563,6 +22560,9 @@ vigo.de##.wx_consentbanner
 samsung.com##.helptips__container, #cookie_component
 saurclient.fr###cookies, .sds-m-cookiebanner
 europa.eu###edp-cookies-banner, .customCookie
+lefigaro.fr##.fig-consent-banner
+aliexpress.ru##div[class*="PrivacyPolicyBanner"]
+nordvpn.com##.CookieConsentExperiment
 !
 ! SCRIPT BLOCKING
 !
@@ -23586,6 +23586,7 @@ cdn.realpeoplemedia.co.uk
 /Sticky2,ConsentManager
 /ccm19_$domain=~ccm19.de
 static.clickskeks.at
+||aida.de/assets/coobann/$script
 /consumer/cookie/client$domain=bt.com
 /frontend/ajax/cookies$domain=romstal.ro
 /rodo-agreement-$domain=gremimedia.pl|zw.com.pl
@@ -23632,7 +23633,6 @@ cookies.teraz.sk$domain=teraz.sk
 /CookiePolicy/*$domain=test-aankoop.be
 aliveachiever.com$domain=dailydot.com
 cookie-bar.salessquad.co.uk$domain=blochworld.com
-/coobann$domain=aida.de
 /dsgvoCC.js$domain=strabag-pfs.de
 /cookie.euck.js$domain=avon-insurance.co.uk
 /js/cookie-popup$domain=simyo.nl
