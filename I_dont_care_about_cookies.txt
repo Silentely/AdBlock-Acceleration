@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 345.202210311015
+! Version: 345.202211030906
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 31 Oct 2022 09:15 UTC
+! Last modified: 03 Nov 2022 08:06 UTC
 !
 !
 ! GLOBAL RULES
@@ -7231,7 +7231,7 @@
 ###prism-modal[data-template="banner"]
 ###js-cookie-overlay
 ##.gdpr-cookie:not(body):not(html)
-##.nyh_cookie-message
+###klaro div[class*="cooker-modal"]
 ###gdpr_info
 ###cookie_info2
 ##.trackingCookiesContainer
@@ -7334,7 +7334,7 @@
 ##.cc-cookie-consent-banner-modal
 ###gdprbar
 ###gdprbar + #gdprbarfiller
-###nyh_cookie-message
+###acceptCookiesBar
 ###mod-privacy-policy-banner-1
 ##.cooki-container:not(body):not(html)
 ##.tos-Banner-dismissable
@@ -10045,7 +10045,7 @@
 ###noteOnCookies
 ##.site-cookie-popup:not(body):not(html)
 ###_s-cookie-notification-container
-###root > div[class*="CookieConsent"]
+###cookiesAlertWidget
 ##.ember-view.cookie-popover
 ###anzeigen-einwilligung
 ###ww_cookie_consent
@@ -10136,7 +10136,7 @@
 ###accept_cookies_banner
 ###magecomp-cookie-template
 ###__nuxt #__layout .Consent.is-open
-~app.revolut.com,~readly.com,~dunelm.com###root div[class*="CookieConsent"]
+~svt.se,~app.revolut.com,~readly.com,~dunelm.com###root div[class*="CookieConsent"]:not([class*="modal"]):not([class*="root"])
 ##.cookie-policy-dialog
 ##.gdlr-core-privacy-box-wrap
 ###cookie-disclaimer-vue
@@ -13481,7 +13481,7 @@
 ###root-footer div[class*="CookiesBar"]
 ##.cookie-warning-modal--ribbon
 ##.alert[id*="privacypolicy"]
-##.efilli-layout-legacy
+##._gdpr-banner
 ###cookie-warning-box
 ###bbcdBanner
 ##.container[data-testid*="cookiePopup"]
@@ -13601,10 +13601,6 @@
 ###cookieInfoMessageBox
 ###tealium_ensModalBG
 ###__next div[data-testid*="banner-cookie"]
-##._gdpr-banner
-###acceptCookiesBar
-###klaro div[class*="cooker-modal"]
-###cookiesAlertWidget
 !
 ! CUSTOM RULES
 !
@@ -21155,7 +21151,6 @@ screenbud.com##.ccWrapper
 flightspots.co##body > .FloatingGroup
 wiresoft.com##.Cookie
 glashuette-original.com###js_dataNnoticeBtns
-svt.se##.svt-cookie-message
 elblandkliniken.de###Datenschutz
 bagaggio.com.br##.lgpd
 lineheart.lu###policy_banner, .policy-banner-overlay
@@ -22033,7 +22028,6 @@ sverigesingenjorer.se##.cookie-layer
 nowfoods.com##.block-sd-cookie-consent-block
 comparably.com##.section.cppa
 vh-polska.pl###cookies__new
-eneba.com###app > div:first-child:not(:only-child), main > div + div + div:last-child
 peatus.ee###messageBar
 livsmedelsverket.se###CookieConsent
 cnig.es###layerCookie
@@ -22563,6 +22557,10 @@ europa.eu###edp-cookies-banner, .customCookie
 lefigaro.fr##.fig-consent-banner
 aliexpress.ru##div[class*="PrivacyPolicyBanner"]
 nordvpn.com##.CookieConsentExperiment
+svt.se##.svt-cookie-message
+lufthansa.com###__tealiumGDPRcpPrefs
+tomtom.com###themeFooter, div[data-component-name="Footer"] ~ .fixed
+eneba.com###app > footer ~ div, main > div + div + div:last-child
 !
 ! SCRIPT BLOCKING
 !
@@ -23074,6 +23072,7 @@ cookies.ptj.de
 /cookie-consent-banner/*
 /dxcookieconsent/*
 /wp-content/plugins/real-cookie-banner
+/etagen_cookie/*
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23484,6 +23483,7 @@ global.ketchcdn.com
 /chickensstation.com
 /handsomelyhealth.com
 ||s2.getsitecontrol.com/widgets$script
+||cdn.efilli.com/efl.js$script
 ||pcz.pl/static/js/moo-cooker.js$script
 /eucd/eucd.min.js
 ||cinabre.sudoc.abes.fr/psi_gui/js/bandeau.js$script
