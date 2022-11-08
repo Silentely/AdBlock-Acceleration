@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 345.202211030906
+! Version: 345.202211080957
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 03 Nov 2022 08:06 UTC
+! Last modified: 08 Nov 2022 08:57 UTC
 !
 !
 ! GLOBAL RULES
@@ -404,7 +404,7 @@
 ###cookiescript_badge
 ###agree_cookies
 ##.cookiedisclaimerblock
-##.cookies-eu:not(body):not(html)
+##.cookies-eu:not(body):not(html):not(.modal)
 ###ap_cookie_toolbar
 ~futterhaus.de##.cookiebox:not(body):not(html):not(.modal)
 ###CookieNotification
@@ -1453,7 +1453,7 @@
 ###ban-cookie
 ###cookieStartMessage
 ~ubiwayretail.be,~vaillant.com,~vaillant.info,~vaillant.co.uk,~vaillant.com.ro,~vaillant.no,~vaillant.pl,~vaillant.nl,~vaillant.de,~vaillant.it,~vaillant.fr,~vaillant.es,~vaillant.be,~vaillant.hr,~vaillant.sk,~vaillant.se,~vaillant.ua,~vaillant.at,~vaillant.cz,~vaillant.fi,~vaillant.si,~vaillant.dk,~vaillant.hu,~vaillant.rs##.cookiewarning:not(body):not(html):not(.main)
-##.cookies_header:not(body):not(html)
+##body > allow-cookies
 ###cookies-wiadomosc-box
 ~patient.info##.alert--cookie:not(body):not(html)
 ###CookiesLawMessage
@@ -2440,7 +2440,7 @@
 ###cookie-warning-is-stupid
 ##.wrap_cookies:not(body):not(html)
 ###pg-cookiesInfo
-##.cookies_wrapper:not(body):not(html)
+###tealium_ensModalBG
 ###plikiCookiesPop
 ##.cookies-policy-popup
 ###cookieDisc
@@ -2624,7 +2624,7 @@
 ###acceptCookieBanner
 ###cookie_policy_notice
 ###cookieLawPnl
-##.cookies_container:not(body):not(html)
+###__next div[data-testid*="banner-cookie"]
 ##.cookiePolicyNotify-wrapper
 ###fs_cookie_container
 ###nl_id_cookie--container
@@ -10802,7 +10802,7 @@
 ##.ng-scope[ng-if="cookieWarning"]
 ###reactContent > .gdpr-support
 ###checkmkCookieNotice
-##.cookies_panel
+###cookieInfoMessageBox
 ##.gdpr-cookie-layer
 ###Gdpr.message-box
 ###cookie.alert-warning
@@ -12620,7 +12620,7 @@
 ##.gdprcp-cookies-bar
 ##.cookies__modal.card
 ###dsgvoBox
-##.js-cookies-eu
+##.js-cookies-eu:not(.modal)
 ##.c-cookiesDisclaimer
 ###cookieconsentpopup
 ###lp_eu_container
@@ -13597,10 +13597,7 @@
 ###__next div[class*="cookiesNotification"]
 ##.cajacookies
 ###pnlCookieConsent
-##body > allow-cookies
-###cookieInfoMessageBox
-###tealium_ensModalBG
-###__next div[data-testid*="banner-cookie"]
+###cookieinfo--container
 !
 ! CUSTOM RULES
 !
@@ -22561,6 +22558,15 @@ svt.se##.svt-cookie-message
 lufthansa.com###__tealiumGDPRcpPrefs
 tomtom.com###themeFooter, div[data-component-name="Footer"] ~ .fixed
 eneba.com###app > footer ~ div, main > div + div + div:last-child
+hypeclothinga.com###__next > .chakra-fade
+watch-strap.eu##.cookies_panel_2022
+remienky.sk##.cookies_panel_2022
+incrypted.com##.incrypted-cookie-bar
+hello.one###cookie
+postoffice.co.uk###app > .absolute.w-full
+opovo.com.br##.notificacao-estatica
+websummit.com##div[class*="civic_cookie"]
+lezec-shop.cz###ccmng
 !
 ! SCRIPT BLOCKING
 !
@@ -23275,7 +23281,7 @@ jssdk.privacy.pre.schibsted.com
 ||tagcommander.com/privacy$script,domain=~labanquepostale.fr
 ||isgprivacy.cbsi.com/dist/optanon$script,domain=~cbsnews.com|~startrek.com|~insideedition.com|~cbslocal.com|~etonline.com
 /contao-privacy-center.js
-privacy-mgmt.com$domain=~standard.co.uk|~theguardian.com|~theguardian.com.|~bild.de|~computerbild.de|~bold.dk|~welt.de|~t-online.de|~focus.de|~chip.de|~faz.net|~n-tv.de|~spiegel.de|~privacy-mgmt.com|~wunderweib.de|~helpster.de|~tvmovie.de|~praxisvita.de|~cosmopolitan.de|~giga.de|~ostsee-zeitung.de|~sky.com|~lvz.de|~mein-schoener-garten.de|~boerse-online.de|~tvspielfilm.de|~autobild.de|~bike-bild.de|~bz-berlin.de|~cyberport.at|~cyberport.de|~golem.de|~express.de|~tv8.it|~epaper.volksstimme.de|~volkskrant.nl|~rtl2.de|~si.com|~derstandard.de|~derstandard.at|~unsere-helden.com|~rtl.de|~stern.de|~freenet-funk.de|~maennersache.de|~heise.de|~t3n.de|~11freunde.de|~finanzen.at|~finanzen.net|~insider.com|~transfermarkt.at|~transfermarkt.ch|~transfermarkt.co.uk|~transfermarkt.com|~transfermarkt.com.tr|~transfermarkt.de|~transfermarkt.fr|~transfermarkt.it|~transfermarkt.nl|~transfermarkt.pl|~transfermarkt.pt|~transfermarkt.us|~vip.de|~businessinsider.de|~clever-tanken.de|~fitbook.de|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~noizz.de|~politico.eu|~rollingstone.de|~stylebook.de|~techbook.de|~testbild.de|~wieistmeineip.at|~wieistmeineip.de|~wieistmeineip.ch
+privacy-mgmt.com$domain=~standard.co.uk|~theguardian.com|~theguardian.com.|~bild.de|~computerbild.de|~bold.dk|~welt.de|~t-online.de|~focus.de|~chip.de|~faz.net|~n-tv.de|~spiegel.de|~privacy-mgmt.com|~wunderweib.de|~helpster.de|~tvmovie.de|~praxisvita.de|~cosmopolitan.de|~giga.de|~ostsee-zeitung.de|~sky.com|~lvz.de|~mein-schoener-garten.de|~boerse-online.de|~tvspielfilm.de|~autobild.de|~bike-bild.de|~bz-berlin.de|~cyberport.at|~cyberport.de|~golem.de|~express.de|~tv8.it|~cielotv.it|~epaper.volksstimme.de|~volkskrant.nl|~rtl2.de|~si.com|~derstandard.de|~derstandard.at|~unsere-helden.com|~rtl.de|~stern.de|~freenet-funk.de|~maennersache.de|~heise.de|~t3n.de|~11freunde.de|~finanzen.at|~finanzen.net|~insider.com|~transfermarkt.at|~transfermarkt.ch|~transfermarkt.co.uk|~transfermarkt.com|~transfermarkt.com.tr|~transfermarkt.de|~transfermarkt.fr|~transfermarkt.it|~transfermarkt.nl|~transfermarkt.pl|~transfermarkt.pt|~transfermarkt.us|~vip.de|~businessinsider.de|~clever-tanken.de|~fitbook.de|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~noizz.de|~politico.eu|~rollingstone.de|~stylebook.de|~techbook.de|~testbild.de|~wieistmeineip.at|~wieistmeineip.de|~wieistmeineip.ch
 privacy-policy.u-lab.nl
 ||trustcommander.net/privacy$script,domain=~tf1info.fr|~tf1.fr
 app.eprivacy-keeper.eu
@@ -23520,7 +23526,7 @@ wpjslib-chunk-notification.js^
 ||dialogue.sp-prod.net/messagingWithoutDetection.js$script,domain=~globalplayer.com
 /datenschutz.min.js
 /ccm19.js
-/wrapperMessagingWithoutDetection.js$domain=~standard.co.uk|~ladbible.com|~theguardian.com|~theguardian.com.|~bild.de|~autoweek.nl|~computerbild.de|~bold.dk|~welt.de|~t-online.de|~sport1.de|~focus.de|~chip.de|~faz.net|~n-tv.de|~wunderweib.de|~helpster.de|~tvmovie.de|~praxisvita.de|~cosmopolitan.de|~giga.de|~ostsee-zeitung.de|~sky.com|~lvz.de|~mein-schoener-garten.de|~boerse-online.de|~tvspielfilm.de|~autobild.de|~aftonbladet.se|~bike-bild.de|~bz-berlin.de|~travelbook.de|~cyberport.at|~cyberport.de|~golem.de|~express.de|~ksta.de|~utopia.de|~video.sky.it|~bndestem.nl|~volkskrant.nl|~rundschau-online.de|~rtl2.de|~capital.fr|~derstandard.de|~derstandard.at|~unsere-helden.com|~rtl.de|~stern.de|~myaccount.hln.be|~nu.nl|~maennersache.de|~dpgmedia.nl|~destentor.nl|~zeit.de|~ad.nl|~dpgmedia.be|~heise.de|~t3n.de|~11freunde.de|~finanzen.at|~finanzen.net|~insider.com|~transfermarkt.at|~transfermarkt.ch|~transfermarkt.co.uk|~transfermarkt.com|~transfermarkt.com.tr|~transfermarkt.de|~transfermarkt.fr|~transfermarkt.it|~transfermarkt.nl|~transfermarkt.pl|~transfermarkt.pt|~transfermarkt.us|~vip.de|~businessinsider.de|~clever-tanken.de|~fitbook.de|~idealo.at|~idealo.co.uk|~idealo.de|~idealo.es|~idealo.fr|~idealo.it|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~noizz.de|~politico.eu|~rollingstone.de|~stylebook.de|~techbook.de|~testbild.de|~wieistmeineip.at|~wieistmeineip.de|~wieistmeineip.ch
+/wrapperMessagingWithoutDetection.js$domain=~standard.co.uk|~ladbible.com|~theguardian.com|~theguardian.com.|~bild.de|~autoweek.nl|~computerbild.de|~bold.dk|~welt.de|~t-online.de|~sport1.de|~focus.de|~chip.de|~faz.net|~n-tv.de|~wunderweib.de|~helpster.de|~tvmovie.de|~praxisvita.de|~cosmopolitan.de|~giga.de|~ostsee-zeitung.de|~sky.com|~lvz.de|~mein-schoener-garten.de|~boerse-online.de|~tvspielfilm.de|~autobild.de|~aftonbladet.se|~bike-bild.de|~bz-berlin.de|~travelbook.de|~cyberport.at|~cyberport.de|~golem.de|~express.de|~ksta.de|~utopia.de|~video.sky.it|~tv8.it|~cielotv.it|~bndestem.nl|~volkskrant.nl|~rundschau-online.de|~rtl2.de|~capital.fr|~derstandard.de|~derstandard.at|~unsere-helden.com|~rtl.de|~stern.de|~myaccount.hln.be|~nu.nl|~maennersache.de|~dpgmedia.nl|~destentor.nl|~zeit.de|~ad.nl|~dpgmedia.be|~heise.de|~t3n.de|~11freunde.de|~finanzen.at|~finanzen.net|~insider.com|~transfermarkt.at|~transfermarkt.ch|~transfermarkt.co.uk|~transfermarkt.com|~transfermarkt.com.tr|~transfermarkt.de|~transfermarkt.fr|~transfermarkt.it|~transfermarkt.nl|~transfermarkt.pl|~transfermarkt.pt|~transfermarkt.us|~vip.de|~businessinsider.de|~clever-tanken.de|~fitbook.de|~idealo.at|~idealo.co.uk|~idealo.de|~idealo.es|~idealo.fr|~idealo.it|~meinestadt.de|~metal-hammer.de|~musikexpress.de|~myhomebook.de|~noizz.de|~politico.eu|~rollingstone.de|~stylebook.de|~techbook.de|~testbild.de|~wieistmeineip.at|~wieistmeineip.de|~wieistmeineip.ch
 /app.dsgvo.min.js
 /trigoAboveBox.jquery.js
 /dsgvoinit.min.js
