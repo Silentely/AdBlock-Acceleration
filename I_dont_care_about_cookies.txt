@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 345.202211080957
+! Version: 345.202211091412
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 08 Nov 2022 08:57 UTC
+! Last modified: 09 Nov 2022 13:12 UTC
 !
 !
 ! GLOBAL RULES
@@ -562,7 +562,7 @@
 ##.cookie-popup__content
 ##.cookie-popup__heading
 ##.cookie-pop:not(body):not(html)
-~ejot.de,~ejot.at,~ejot.cn,~ejot.co.uk,~goteborg.com,~openreach.com,~kognitio.com,~argenta.be##.cookie-popup:not(body):not(html):not(#colorbox)
+~ejot.de,~ejot.at,~ejot.cn,~ejot.co.uk,~goteborg.com,~openreach.com,~argenta.be##.cookie-popup:not(body):not(html):not(#colorbox):not(.ant-modal-wrap)
 ###FT_Cookies
 ###policyNotice
 ##.polityka-cookie:not(body):not(html)
@@ -21134,7 +21134,6 @@ texasclub.pl##.configMessages
 toysrus.ca##.cookie-modal
 tinder.com##.App > [data-nosnippet], #___gatsby > [data-nosnippet]
 cnnbrasil.com.br###pop__gdpr
-tp-link.com###tp-cookie
 pikapolonica.si##.gdpr-modal-wrapper, .modals-overlay
 afar.com##.preloaded_lightbox[style*="overflow"]
 ulefone.com##.footermsg
@@ -22169,7 +22168,6 @@ adulttime.com##.CookieConsent-Wrapper-BackgroundBox
 calendardate.com##footer ~ [style*="fixed"]
 lynkco.com.cn##.privacyPolicy
 visiontimes.com##.cookieNotice--isVisible
-scaleway.com###gatsby-focus-wrapper > header[aria-label] + div
 boords.com###__next > .fixed[class*="bottom"]
 sparebank1.no###opt-in
 atlantic.money###opt-in
@@ -22453,18 +22451,6 @@ dailymotion.com###consent-group
 truthsocial.com###soapbox > [data-testid="banner"]
 arlettie.com###___smooth > div > .sui-grid
 fandor.com##.alert-warning
-xxxlutz.at###root > footer ~ div
-xxxlutz.de###root > footer ~ div
-xxxlutz.ch###root > footer ~ div
-xxxlutz.hu###root > footer ~ div
-xxxlutz.cz###root > footer ~ div
-moemax.at###root > footer ~ div
-moemax.hu###root > footer ~ div
-moemax.de###root > footer ~ div
-moebelix.cz###root > footer ~ div
-moebelix.at###root > footer ~ div
-moebelix.sk###root > footer ~ div
-poco.de###root > footer ~ div
 moreysa.com###sdgdpr_modal_wrapper
 youngcourtesans.com##.cookie-request
 dirtyflix.com##.cookie-request
@@ -22567,6 +22553,26 @@ postoffice.co.uk###app > .absolute.w-full
 opovo.com.br##.notificacao-estatica
 websummit.com##div[class*="civic_cookie"]
 lezec-shop.cz###ccmng
+byggmesteren.as##.adn-window, .adn-editButton
+sim.de###__tealiumGDPRcpPrefs
+winsim.de###__tealiumGDPRcpPrefs
+1und1.de###__tealiumGDPRcpPrefs
+idowa.de##body > div:not([id]):not([class])
+foraum.de##body > div:not([id]):not([class])
+tp-link.com##div[id*="tp-cookie"]
+christabehr-jerusalem.de##.mini_cookie_stack
+xxxlutz.at###root > footer ~ div, #root ~ div
+xxxlutz.de###root > footer ~ div, #root ~ div
+xxxlutz.ch###root > footer ~ div, #root ~ div
+xxxlutz.hu###root > footer ~ div, #root ~ div
+xxxlutz.cz###root > footer ~ div, #root ~ div
+moemax.at###root > footer ~ div, #root ~ div
+moemax.hu###root > footer ~ div, #root ~ div
+moemax.de###root > footer ~ div, #root ~ div
+moebelix.cz###root > footer ~ div, #root ~ div
+moebelix.at###root > footer ~ div, #root ~ div
+moebelix.sk###root > footer ~ div, #root ~ div
+poco.de###root > footer ~ div, #root ~ div
 !
 ! SCRIPT BLOCKING
 !
@@ -23085,7 +23091,6 @@ cookies.ptj.de
 wpjslib-chunk-consent-form.js^
 /js/consentbar.js
 /gdprpro/views/js/gdpr-consent.js
-||idg.se/idg-consent.min.js$script
 /js/consent-banner.js
 ||s.clickiocdn.com/t/consent_$script
 /jppol-consent/js/bootstrap.js
