@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 345.202211091412
+! Version: 345.202211141111
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 09 Nov 2022 13:12 UTC
+! Last modified: 14 Nov 2022 10:11 UTC
 !
 !
 ! GLOBAL RULES
@@ -9402,7 +9402,7 @@
 ##body > #CLayer[style*="fixed"]
 ###cookie_bar_edit_button
 ##body > .cookieagreement
-##devsite-snackbar[type*="cookie-notification"]
+##devsite-snackbar[data-cookie-notice]
 ##.cookienote__base:not(body):not(html)
 ###wpcui_cookie_bar_main_display
 ##.notice-of-cookies-block
@@ -10251,7 +10251,7 @@
 ###gh-cookie-hint
 ~ffm.to,~orcd.co,~ditto.fm,~backl.ink##.privacy-notice-gdpr
 ###wf_cookie_notice_wrapper
-###BorlabsCookieBox
+~sovendus.com###BorlabsCookieBox
 ###gdprToolbar
 ###__accept_cookie[data-position="bottom"]
 ###gfbsmd_cookiepolicy
@@ -13598,6 +13598,8 @@
 ##.cajacookies
 ###pnlCookieConsent
 ###cookieinfo--container
+##.c-announcement--cookie
+##.ccm-root #ccm-widget
 !
 ! CUSTOM RULES
 !
@@ -19809,7 +19811,6 @@ dalbyherald.com.au###pp-notice
 spaceapegames.com###root > nav ~ div + div
 mcg-digital.de##.elementor-popup-modal
 boulderholisticvet.com##.elementor-popup-modal
-gutscheine.welt.de##.wlt-privacy-policy-widget
 catpublications.com###gtmAlert
 solid-thueringen.de##.disclaimer
 wiltmann.de###cde
@@ -21571,7 +21572,6 @@ loveholidays.com##.c-o--
 reinigungsberater.de###cCoverlay, #cC
 turnoffthelights.com###cookie-law
 monster-soluce.com###cookies-pop
-bobshop.com##.ccm-root
 buecher.de###klaro
 nur-positive-nachrichten.de###klaro
 nunido.de###klaro
@@ -22573,6 +22573,19 @@ moebelix.cz###root > footer ~ div, #root ~ div
 moebelix.at###root > footer ~ div, #root ~ div
 moebelix.sk###root > footer ~ div, #root ~ div
 poco.de###root > footer ~ div, #root ~ div
+elcykelkompaniet.se##.cookie-box
+thiriet.ch###pv
+fizza.se##div[data-storage-item*="cookiename"]
+strato.de##.responsive-video > [class*="consent"]
+singaporeair.com##sia-cookie
+ecos.am##.cookies-modal
+myorbit.id###nav-bar > div:first-child:not(:only-child)
+justice.cz##.cookies
+madrid.es##div[id*="iam-cookie"]
+madrid.org###emCookieWrapper
+luminpdf.com###app > div[style=""]:nth-child(2)
+vsemayki.ru###__next > div > section[style*="bottom"]
+rejlers.fi##.shadow-form[data-controller*="cookies--alert"]
 !
 ! SCRIPT BLOCKING
 !
@@ -22683,7 +22696,7 @@ jquery-easy-eu-cookie-law.js^
 /js/cookie-info.js
 /cookie_law/plugin.js
 /jslibrary/cookiewarning?
-/wp-content/plugins/cookie-notice$domain=~kapitalkontor.com|~barzahlen.de
+/wp-content/plugins/cookie-notice$domain=~kapitalkontor.com|~sovendus.com|~barzahlen.de
 ||airnewzealand.co.nz/vbook/actions/cookieconsent$script
 /cg_cookie.js
 ||grsuk.com/scripts/cookie-info.js$script
@@ -23085,6 +23098,7 @@ cookies.ptj.de
 /dxcookieconsent/*
 /wp-content/plugins/real-cookie-banner
 /etagen_cookie/*
+/cookie_overlay.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23263,6 +23277,7 @@ pdcc.gdpr.es
 /gdprScriptComponent.js
 ||mediavine.com/tags/gdpr$script
 ||pubnation.com/tags/gdpr$script
+||ecos.am/gdpr.js$script
 /media/plg_system_eprivacy$domain=~reshade.me
 ||recepttar.hu/js/privacy.js$script
 cmp.dmgmediaprivacy.co.uk$domain=~metro.co.uk
@@ -23495,6 +23510,7 @@ global.ketchcdn.com
 /handsomelyhealth.com
 ||s2.getsitecontrol.com/widgets$script
 ||cdn.efilli.com/efl.js$script
+api.brookiebot.com
 ||pcz.pl/static/js/moo-cooker.js$script
 /eucd/eucd.min.js
 ||cinabre.sudoc.abes.fr/psi_gui/js/bandeau.js$script
@@ -23611,7 +23627,7 @@ consent.truste.com$domain=oracle.com
 /gdpr.js$domain=bitly.com|qcnet.com
 /privacy/popup.js$domain=cdaction.pl
 /cookies.js$domain=knaufdoehetzelf.nl|cashconverters.es|dragnsurvey.com|guldsmykket.dk|zukunftsheizen.de|truphone.com|bluelightcard.co.uk|regentcentre.co.uk|zurich.it
-/utag.js$domain=louisvuitton.com|total.com|total.nl|esprit.de|ing.es|stepstone.de|stepstone.at|santander.pl|swisscom.ch|prada.com|here.com|guloggratis.dk|tui.se|tui.fi|privatebanking.hsbc.com|hsbc.pl
+/utag.js$domain=louisvuitton.com|total.com|total.nl|esprit.de|ing.es|stepstone.de|stepstone.at|santander.pl|swisscom.ch|prada.com|here.com|guloggratis.dk|tui.se|tui.fi|privatebanking.hsbc.com|hsbc.pl|comparethemarket.com
 /spmsg_addetection.js$domain=tvspielfilm.de
 /firebox-gdpr.js$domain=thelittleboxoffice.com
 /consent.css$domain=scholieren.com
@@ -23728,7 +23744,6 @@ spellsalsa.com$domain=interestingengineering.com
 /cookieWidget.min.js$domain=peter-bringts.de
 /cookie-consent/*$domain=lux-residence.com|cyberghostvpn.com
 privacy-manager-v*$domain=df.eu
-/consent.$domain=strato.de|strato.nl|strato.fr|strato.es|strato-hosting.co.uk
 /consent/*$domain=renault.de|ultraleicht-trekking.com
 /checkCookieConsent/*$domain=andrewssykes.fr
 /consent-manager/*$domain=cornelsen.de|pdf24.org
@@ -23754,7 +23769,7 @@ privacy-manager-v*$domain=df.eu
 /cookieCutter$domain=thebureauinvestigates.com
 /cookie.bundle.js$domain=fastbill.com
 /Consent.js$domain=gaming-style.com
-/cc.js$domain=transparenzregister.de
+/cc.js$domain=transparenzregister.de|imusic.de|imusic.dk|imusic.no|imusic.se|imusic.co
 /uc/*$domain=mcmakler.de
 cookie-policy*$domain=ubuntu.com
 consent.js^$domain=zitatezumnachdenken.com
@@ -23879,6 +23894,7 @@ ccm.$domain=abload.de
 /ppp/js/permission-client$domain=meinaccount.gmx.net|hilfe.gmx.net|mein.web.de
 /cookies_utils.js$domain=uca.es
 /boldCookie_custom.js$domain=investice.cz
+/consent.$domain=strato.de|strato.nl|strato.fr|strato.es|strato-hosting.co.uk
 !
 ! FILTERLIST ONLY
 !
