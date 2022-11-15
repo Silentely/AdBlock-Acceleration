@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202211141724
+! Version: 202211142336
 ! Title: EasyPrivacy
-! Last modified: 14 Nov 2022 17:24 UTC
+! Last modified: 14 Nov 2022 23:36 UTC
 ! Expires: 6 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -28,7 +28,6 @@
 &stats_tkn=
 &t=pageview&
 &tag=IMPRESSION&
-&trackingserver=
 &visitorUuid=
 -action/fingerprint?
 -action/ping?
@@ -396,7 +395,7 @@
 /admantx.
 /admantx/*
 /admonitoring.
-/adobe-analytics-
+/adobe-analytics-$domain=~business.adobe.com
 /adobe-analytics.
 /adobe-analytics/*
 /adobe-analytics2.
@@ -1475,6 +1474,7 @@
 /CookiePingback?
 /CookieSetterAS3.
 /cookietag?
+/coopcommerce-pixel.
 /coradiant.js
 /core-tracking.js
 /coretracking.php?
@@ -1725,6 +1725,7 @@
 /dtmtag.js
 /dtrack.js
 /dtstats.
+/duel-analytics.
 /dw-tracking-
 /dw/hit?
 /dwanalytics-
@@ -6061,6 +6062,7 @@ _mongo_stats/
 ||fptls.com^
 ||fpxau.net^
 ||fzlnk.com^
+||g10300385420.co^
 ||g11686975765.co^
 ||g1188506010.co^
 ||g11885060100.co^
@@ -6088,7 +6090,6 @@ _mongo_stats/
 ||go-mpulse.net^
 ||googleoptimize.com^
 ||googletagmanager.com^
-||gsght.com^
 ||hdmtools.com^
 ||hs-analytics.net^
 ||hsadspixel.net^
@@ -6173,6 +6174,7 @@ _mongo_stats/
 ||raac33.net^
 ||rapidpanda.io^
 ||rapidzebra.io^
+||realtimely.io^
 ||rezync.com^
 ||rfpx1.com^
 ||rftslb.com^
@@ -7072,6 +7074,7 @@ _mongo_stats/
 ||feedjit.com^$third-party
 ||feedperfect.com^$third-party
 ||fetchback.com^$third-party
+||figpii.com^$third-party
 ||fiksu.com^$third-party
 ||filitrac.com^$third-party
 ||finalid.com^$third-party
@@ -7246,6 +7249,7 @@ _mongo_stats/
 ||growthrx.in^$third-party
 ||grumrt.com^$third-party
 ||gsecondscreen.com^$third-party
+||gsght.com^$third-party
 ||gsimedia.net^$third-party
 ||gsspat.jp^$third-party
 ||gssprt.jp^$third-party
@@ -7382,6 +7386,7 @@ _mongo_stats/
 ||instore.biz^$third-party
 ||intelimet.com^$third-party
 ||intelli-direct.com^$third-party
+||intelligems.io^$third-party
 ||intelligencefocus.com^$third-party
 ||intellimize.co^$third-party
 ||interact-analytics.com^$third-party
@@ -11269,6 +11274,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||shoptarget.com.br^$third-party
 ||tailtarget.com^$third-party
 ||trugaze.io^$third-party
+||voxus.com.br^$third-party
 ! Romanian
 ||2222.ro^$third-party
 ||2parale.ro^$third-party
@@ -12208,6 +12214,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||errors.snackly.co^
 ||etahub.com^*/track?site_id
 ||etoro.com/tradesmonitor/
+||ev.stellarlabs.ai^
 ||event-api.contactatonce.co.uk^
 ||event-api.contactatonce.com^
 ||event-api.rdstation.com.br^
@@ -13752,6 +13759,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||d10gj7yjsfriaj.cloudfront.net^
 ||d10lpsik1i8c69.cloudfront.net^
 ||d11a2fzhgzqe7i.cloudfront.net^
+||d12m6l63zd9etp.cloudfront.net^
 ||d15kdaxu5c0hfw.cloudfront.net^
 ||d169bbxks24g2u.cloudfront.net^
 ||d16fk4ms6rqz1v.cloudfront.net^
@@ -15134,6 +15142,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||cloudfront.net/vis_opt_no_jquery.js
 ||clp-mms.cloudpro.co.uk^
 ||cm-mms.coachmag.co.uk^
+||cm.nordvpn.com^
 ||cnet.com/pageview_candidate.comscore.json
 ||cnt.hd21.com^
 ||cnt.iceporn.com^
@@ -15941,6 +15950,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||streamtapeadblock.art/stat/
 ||streamtapeadblockuser.homes/stat/
 ||streamtapeadblockuser.monster/stat/
+||streamtapeadblockuser.xyz/stat/
 ||stripe.com/tracking/
 ||strtapeadblock.club/stat/
 ||strtapeadblocker.xyz/stat/
@@ -16150,6 +16160,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||xstats.evoload.io^
 ||yahoo.com/_td_api/beacon/
 ||yahoo.com/beacon/
+||yahoo.com/beacon?
 ||yahoo.net/pixel.gif
 ||yandex.*/clck/$~ping
 ||yandex.*/count/
@@ -30677,6 +30688,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||thomas.co/sites/default/files/google_tag/primary/google_tag.script.js$script,~third-party
 @@||time.com/wp-content/*/time-tracking.js$script,~third-party
 @@||tinypass.com^*/logAutoMicroConversion?$domain=chicago.suntimes.com
+@@||tokbox.com/prod/logging/ClientEvent$domain=examroom.ai
 @@||tools.usps.com/go/scripts/tracking.js$~third-party
 @@||toyota.com/recall/static/js/custom/facebookPixel.js$~third-party
 @@||track.shipstation.com/collections/trackingEvents.js$~third-party
