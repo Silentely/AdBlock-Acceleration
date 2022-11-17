@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 345.202211141111
+! Version: 345.202211170916
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 14 Nov 2022 10:11 UTC
+! Last modified: 17 Nov 2022 08:16 UTC
 !
 !
 ! GLOBAL RULES
@@ -855,7 +855,7 @@
 ###svtCookieInformationContainer
 ~fredolsen.es##.cookies-warning:not(body):not(html)
 ##.dom-content--eu-banner
-~arbeitsagentur.de,~researchaffiliates.com###cookieDialog
+~routershop.nl,~arbeitsagentur.de,~researchaffiliates.com###cookieDialog
 ##.cookie_optin_box:not(body):not(html)
 ###CookieContainer
 ###jumper_cookies
@@ -5008,7 +5008,7 @@
 ###cookie-backdrop
 ##.sb-ncookies-alert:not(body):not(html)
 ###wpUsingCookies
-~pagetiger.com##.cookie-section:not(body):not(html)
+~routershop.nl,~pagetiger.com##.cookie-section:not(body):not(html)
 ##.tws-accept-cookies--wrapper
 ##.tplis-cl-cookies:not(body):not(html)
 ###id_avviso_cookies
@@ -9411,6 +9411,7 @@
 ###stickyWarningCookiePolicy
 ###cookieWarning ~ .consent-notice
 ###ccons-overlay.ccons
+###__tealiumGDPRecModal ~ #global-overlay-background
 ###footer ~ #RGPD[style*="block"]
 ###footer ~ #CookieDiv1[style*="fixed"]
 ###footer ~ #CookieDiv[style*="fixed"]
@@ -13600,6 +13601,9 @@
 ###cookieinfo--container
 ##.c-announcement--cookie
 ##.ccm-root #ccm-widget
+###CCM_popup
+###___gatsby div[class*="CookieNotification"]
+###__tealiumGDPRcpPrefs .preferences_prompt_control_analytics
 !
 ! CUSTOM RULES
 !
@@ -20069,7 +20073,6 @@ formula1game.com###root > div:not([class]) > div
 heizung-solar24.de##.becc-ol
 scandinavianphoto.no###content-container ~ [style*="height:0"] ~ div
 devmedia.com.br##.termos-politica
-ujam.com##.ujam-cookie-consent
 ricochet.com###ricochet-cookie-bar
 emarketer.com##.emgdpr-cookies
 kochen-und-design.de##body > div:not([id]):not([class])
@@ -21515,7 +21518,6 @@ fondmarknaden.se###FM-cookie-consent-modal
 asus.com###cookieTable
 delfi.ee##div[class^="C-modal"]
 szerencsejatek.hu##.cookie-consent-modal
-magazineluiza.com.br##section[style="grid-area:footer"] ~ [width="100%"]
 lavadoo.com##.cont-cookie
 glose.com###app > div[class*="layout-wrapper"] > div[class*="root"]
 verisart.com##.marketing nav ~ div
@@ -21796,7 +21798,6 @@ lekarna-bella.cz##.cookie-settings
 electroholic.gr##.footer ~ .ng-star-inserted
 ford.de##.gdpr-visibility-on
 tempton.de##div[class*="ConsentBanner"]
-vtelevizi.cz###CCM_popup
 midwestgunworks.com###privBanner
 writerduet.com###root > div > div[style*="fixed"]
 dolarhoje.com###privacy-warning
@@ -21861,7 +21862,6 @@ play.google.com###gb iframe[src*="ogs.google."][src*="widget/callout"]
 truevirtualworld.com##.card-cookie
 punpro.com##div[class*="CookieSession"]
 siamsport.co.th###popup-ss
-reddit.com###SHORTCUT_FOCUSABLE_DIV > div> div > section > [style*="Toaster"], shreddit-cookie-banner
 reddit.watch##.v-content__wrap > .container > .align-end
 pttavm.com##.cookie-box
 transa.ch##.cookie-box
@@ -22140,8 +22140,6 @@ mondverlauf.de###cc_div
 sonnenverlauf.de###cc_div
 revolut.com##div[role="dialog"][aria-label*="Cookie"]
 allani.pl##.off-canvas-wrap ~ div
-g2a.com##.modal--agreements__curtain, .agreements-container
-g2a.co##.modal--agreements__curtain, .agreements-container
 abc-mallorca.com##.abc-cookies-wrapper
 porsche.pl###cookies-modal
 porsche.com##.pocs-legal-disclaimer
@@ -22541,7 +22539,6 @@ lefigaro.fr##.fig-consent-banner
 aliexpress.ru##div[class*="PrivacyPolicyBanner"]
 nordvpn.com##.CookieConsentExperiment
 svt.se##.svt-cookie-message
-lufthansa.com###__tealiumGDPRcpPrefs
 tomtom.com###themeFooter, div[data-component-name="Footer"] ~ .fixed
 eneba.com###app > footer ~ div, main > div + div + div:last-child
 hypeclothinga.com###__next > .chakra-fade
@@ -22554,9 +22551,6 @@ opovo.com.br##.notificacao-estatica
 websummit.com##div[class*="civic_cookie"]
 lezec-shop.cz###ccmng
 byggmesteren.as##.adn-window, .adn-editButton
-sim.de###__tealiumGDPRcpPrefs
-winsim.de###__tealiumGDPRcpPrefs
-1und1.de###__tealiumGDPRcpPrefs
 idowa.de##body > div:not([id]):not([class])
 foraum.de##body > div:not([id]):not([class])
 tp-link.com##div[id*="tp-cookie"]
@@ -22586,6 +22580,15 @@ madrid.org###emCookieWrapper
 luminpdf.com###app > div[style=""]:nth-child(2)
 vsemayki.ru###__next > div > section[style*="bottom"]
 rejlers.fi##.shadow-form[data-controller*="cookies--alert"]
+scania.com##.m-cookie
+bestofdate.com###ww-blackout
+reddit.com###SHORTCUT_FOCUSABLE_DIV > div> div > section > [style*="Toaster"], shreddit-async-loader[bundlename*="cookie_banner"]
+umm.nordpoolgroup.com###modal-overlay
+g2a.com##.agreements-container
+insightsforprofessionals.com##.cookie-container
+icex.es###cookies, #cookies-message-new
+slidelizard.com###cookie-info-dialog
+magazineluiza.com.br##main > section ~ div:last-child
 !
 ! SCRIPT BLOCKING
 !
@@ -23015,7 +23018,6 @@ plugin-cookie-consent/build
 /cookie-consent-service.js
 /cookieconsent.bundle.js
 /lgpd-cookie/*
-/wp-content/plugins/cookies-and-content-security-policy/*
 /cookiebox_uc_build.js
 /gen/cookie-notification
 /cookiesjsr.min.js$domain=~lcp.fr
@@ -23099,6 +23101,7 @@ cookies.ptj.de
 /wp-content/plugins/real-cookie-banner
 /etagen_cookie/*
 /cookie_overlay.js
+/plugins/cookies-and-content-security-policy/*
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23278,6 +23281,7 @@ pdcc.gdpr.es
 ||mediavine.com/tags/gdpr$script
 ||pubnation.com/tags/gdpr$script
 ||ecos.am/gdpr.js$script
+/modal-gdpr.umd.js
 /media/plg_system_eprivacy$domain=~reshade.me
 ||recepttar.hu/js/privacy.js$script
 cmp.dmgmediaprivacy.co.uk$domain=~metro.co.uk
@@ -23511,6 +23515,7 @@ global.ketchcdn.com
 ||s2.getsitecontrol.com/widgets$script
 ||cdn.efilli.com/efl.js$script
 api.brookiebot.com
+||tiqcdn.com/utag/tui/$script
 ||pcz.pl/static/js/moo-cooker.js$script
 /eucd/eucd.min.js
 ||cinabre.sudoc.abes.fr/psi_gui/js/bandeau.js$script
@@ -23627,7 +23632,6 @@ consent.truste.com$domain=oracle.com
 /gdpr.js$domain=bitly.com|qcnet.com
 /privacy/popup.js$domain=cdaction.pl
 /cookies.js$domain=knaufdoehetzelf.nl|cashconverters.es|dragnsurvey.com|guldsmykket.dk|zukunftsheizen.de|truphone.com|bluelightcard.co.uk|regentcentre.co.uk|zurich.it
-/utag.js$domain=louisvuitton.com|total.com|total.nl|esprit.de|ing.es|stepstone.de|stepstone.at|santander.pl|swisscom.ch|prada.com|here.com|guloggratis.dk|tui.se|tui.fi|privatebanking.hsbc.com|hsbc.pl|comparethemarket.com
 /spmsg_addetection.js$domain=tvspielfilm.de
 /firebox-gdpr.js$domain=thelittleboxoffice.com
 /consent.css$domain=scholieren.com
@@ -23698,7 +23702,6 @@ CheckCookiePolicy*$domain=remixshop.com
 cmp.parkers.co.uk$domain=parkers.co.uk
 lovelydrum.com$domain=insidermonkey.com
 /intuCookieConsent.js$domain=intu.co.uk
-tags.tiqcdn.com/utag$script,domain=123-reg.co.uk
 stormyachiever.com$domain=thewindowsclub.com
 thirstylettuce.com$domain=thewindowsclub.com
 /gcb/*$domain=gallup.com
@@ -23895,6 +23898,8 @@ ccm.$domain=abload.de
 /cookies_utils.js$domain=uca.es
 /boldCookie_custom.js$domain=investice.cz
 /consent.$domain=strato.de|strato.nl|strato.fr|strato.es|strato-hosting.co.uk
+/ujam_tracking/*$domain=ujam.com
+/utag.js$domain=louisvuitton.com|esprit.de|ing.es|stepstone.de|stepstone.at|santander.pl|swisscom.ch|prada.com|here.com|guloggratis.dk|privatebanking.hsbc.com|hsbc.pl|comparethemarket.com
 !
 ! FILTERLIST ONLY
 !
@@ -23909,6 +23914,7 @@ guideitech.com##.pea_cook_wrapper
 fifa.com##.mdl-overlay
 lubliniec.eu###cadre_alert_cookies
 cnet.com###-e_xobwhg_utggxk
-epson.com,americanbar.org,lulu.com,3mpolska.pl,bosch-professional.com,cisco.com,command.pl,e.huawei.com,logitech.com,logitechg.com,post-it.pl,vacansoleil.pl###__tealiumGDPRecModal
+gsk.com,lufthansa.com,sim.de,premiumsim.de,winsim.de,1und1.de###__tealiumGDPRcpPrefs
+heathrow.com,heathrowexpress.com,hsbc.co.uk,ti.com,nettbutikk.telenor.no,epson.com,lulu.com,3mpolska.pl,bosch-professional.com,centrum24.pl,cisco.com,command.pl,e.huawei.com,lavazzacoffee.pl,logitech.com,logitechg.com,post-it.pl,ups.com,vacansoleil.pl###__tealiumGDPRecModal
 @@||nf.pl/js/libs/cookiesDirective.js$script
 overdrive.com###bkgOverlay
