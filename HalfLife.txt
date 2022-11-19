@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: hFpwcjrnu0qQFwXqwTpV4A
+! Checksum: km9qLZVRTK4BDe1ozMZZcw
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202211182009
-! Last Modified: 2022年11月18日 20:09
+! Version: 202211190206
+! Last Modified: 2022年11月19日 02:06
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -2214,6 +2214,9 @@ ubmcmm.baidustatic.com
 ||qzos9ou.xyz^
 ||5ilss.top^
 ||027dir.com^
+||qvyzdox.cn^
+||nijnqwem.xyz^
+||uyjhbawd.xyz^
 .8ox.cn
 ##.btn[href*="/viphktv.com/"]
 ##[class][onclick*=".ununxsxs.top"]
@@ -14888,6 +14891,8 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzzyk.com/js/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+bilibili.com##A[href*="cm.bilibili.com"][data-target-url*="gaoneng.bilibili.com"]
+bilibili.com##A[href*="cm.bilibili.com"][data-target-url*="gaoneng.bilibili.com"] + .bili-video-card__info
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -19512,7 +19517,7 @@ acgcku.com##a[href]:not([href*="acgcku."]) > img[src*="acgcku.com/wp-content/"]
 939394.xyz##a[href^="/"]:not([href*="."]) > img[src*=".gif"]
 939394.xyz##a[href^="/"][href$=".html"] > img[src*=".gif"]:not([data-original])
 159i.com##a[href^="//159i.com/tz/"]
-jandan.net##a[href^="//api.jandan.net/money.php?"]
+jandan.net##A[href*="/money.php?"]
 bigear.cn##a[href^="/?module=dantian&"]
 77222.cn##a[href^="/aa/"]
 x6d.com,xiaodao0.com##a[href^="/ad."]
