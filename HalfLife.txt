@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: bM/HgnVOL95M/vTTZ+pIDg
+! Checksum: rxMg9l9S4xM/AGI33u0nzg
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202211190833
-! Last Modified: 2022年11月19日 08:33
+! Version: 202211191406
+! Last Modified: 2022年11月19日 14:06
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -474,8 +474,12 @@ static.g.iqiyi.com
 show.ssports.com
 v.qq.com###player  .txp_zt_content
 qq.com##.mod_ad, .txp_ad, div.l_qq_com, .txp-watermark, .txp_ad_link, .txp_zt_video, .adWrap, .iwan-wrapper
-qq.com##+js(set,RTCPeerConnection,null)
 qq.com#@#+js(nowebrtc)
+video.qq.com#@#+js(set,RTCPeerConnection,null)
+video.qq.com#@#+js(no-xhr-if,/trace\.|\/collect/)
+video.qq.com#@#+js(no-fetch-if,/trace\.|beacon\./)
+video.qq.com#@#+js(json-prune,ads adList.item)
+qq.com##+js(set,RTCPeerConnection,null)
 qq.com##+js(no-xhr-if,/trace\.|\/collect/)
 qq.com##+js(no-fetch-if,/trace\.|beacon\./)
 qq.com##+js(json-prune,ads adList.item)
@@ -503,7 +507,6 @@ bilibili.com##.gg-floor-module,#slide_ad,a[href^="//cm.bilibili.com"]
 ||api.bilibili.com/x/web-show/res/loc?pf=$~script
 ||hdslb.com/bfs/sycp/creative_img/$image
 cm.bilibili.com
-web-player-tracker.biliapi.net
 acfun.cn##.pause-display-container,#ad-comment,#ad-player-view
 ||aixifan.com/static/*/appGuide/
 cctv.com###bgAd_div
@@ -2040,6 +2043,9 @@ ubmcmm.baidustatic.com
 ##img[src*=".sinaimg."][style="width:1025px;height:80px"]
 ##img[src*=".sinaimg."][style="width:150px;height:300px"]
 ##script + #coupletBox
+##a.ad_links
+##.module-adslists
+###bfad1
 ##script + #rbbox
 ##script + a[href^="https://l.hyenadata.com/"]
 ##script + a[target="_bank"] > img[src*=".c-ctrip.com"][style="width:100%;height:auto;"]
@@ -2222,6 +2228,9 @@ ubmcmm.baidustatic.com
 ||zjttaqx.cn^
 ||bjzb.xyz^
 ||kjcvw.xyz^
+##a[href="https://xq97.com"]
+||035caop.com^
+||053tyfg.com^
 .8ox.cn
 ##.btn[href*="/viphktv.com/"]
 ##[class][onclick*=".ununxsxs.top"]
