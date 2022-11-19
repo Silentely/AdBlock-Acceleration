@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: rxMg9l9S4xM/AGI33u0nzg
+! Checksum: mSOw80bvUso0Xt/uilP26A
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202211191406
-! Last Modified: 2022年11月19日 14:06
+! Version: 202211192008
+! Last Modified: 2022年11月19日 20:08
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -1969,7 +1969,7 @@ ubmcmm.baidustatic.com
 ##a[href="javascript:GoGd();"]
 ##a[href="javascript:GoTp();"]
 ##a[href="javascript:window.GoTp();"]
-##a[href] > .img[src*="lbsugc.cdn.bcebos.com"]
+##script + a[href] > img[src*="lbsugc.cdn.bcebos.com"]
 ##a[href^="/ad/"] > img[id][src*="hdslb.com"]
 ##a[href^="/hy-"][ontouchstart]
 ##a[href^="http"] > img[src*="pic.rmb.bdstatic.com/"][src$=".gif"]
@@ -2231,6 +2231,10 @@ ubmcmm.baidustatic.com
 ##a[href="https://xq97.com"]
 ||035caop.com^
 ||053tyfg.com^
+||qiangqi.shop^
+||oivgqnt.cn^
+||vqdjcy.com^
+||trqhf.xyz^
 .8ox.cn
 ##.btn[href*="/viphktv.com/"]
 ##[class][onclick*=".ununxsxs.top"]
@@ -24027,13 +24031,15 @@ _box_ad_
 ||biancheng.net/templets/new/images/index_pc/fudaoban_
 ||3dmgame.com/page/js/indexalert_ad.
 !------------------------Specific element hiding rules------------------------!
+findlaw.cn###wlcommonbot
+huanqiu.com##.right-box > article-other-template
 3dmgame.com##.dj_warp_e
 a9vg.com###guide-download
 bilibili.com##A[href*="cm.bilibili.com"][data-target-url*=".biligame."]
 bilibili.com##A[href*="cm.bilibili.com"][data-target-url*=".biligame."] + .bili-video-card__info
 bilibili.com##.adblock-tips
 map.baidu.com###message-panel
-ghxi.com##div[style="padding:10px;position: fixed;bottom: 0;left: 0;right:0;z-index: 99999;background-color: #cc4444;color: #fff"]
+ghxi.com##div[style^="padding:10px;position: fixed;bottom: 0;left: 0;right:0;z-index"]
 manmanbuy.com##.app-activity-download
 bilibili.com##.desktop-download-tip
 edrawsoft.cn##.activity-banner
