@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 345.202211211247
+! Version: 345.202211231248
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 21 Nov 2022 11:47 UTC
+! Last modified: 23 Nov 2022 11:48 UTC
 !
 !
 ! GLOBAL RULES
@@ -13605,6 +13605,9 @@
 ###___gatsby div[class*="CookieNotification"]
 ###__tealiumGDPRcpPrefs .preferences_prompt_control_analytics
 ##.gdpr-visibility-on
+##.h-cookie-consent
+##.gravitolightCMP-background-overlay
+##.z-cookie-alert
 !
 ! CUSTOM RULES
 !
@@ -20414,7 +20417,6 @@ struttandparker.com##.important-message-banner
 affittapresto.it###cookie-dett
 paylax.de###app > div > div:first-child
 halsoresurs.se##.cookie-mess
-rtlmost.hu##.app__content ~ div > .not-empty
 tosdr.org##.toast.fixed-bottom
 powercord.dev###react-root > footer ~ div
 grugliasco.to.it###cookie
@@ -21751,7 +21753,7 @@ clark.center##clark-cookies
 royaldesign.de###root > div:last-child:not(:only-child)
 hama.sk##.cookiesmanager
 bistum-essen.de###cc
-elcorteingles.es##.cookies-wrapper
+elcorteingles.es##.cookies-wrapper, .cookies-modal
 elcorteingles.com##.cookies-wrapper
 elcorteingles.pt##.cookies-wrapper
 hipercor.es##.cookies-wrapper
@@ -22042,7 +22044,6 @@ eperusteet.opintopolku.fi###cookie-modal-backdrop
 z4u.zurich.com.pt##.CookiesBox
 dreamdoors.co.uk##.cookie-acception
 unilae.com###cookies-modal
-you-ladies.de###rto-cookie-notice
 jdsupra.com###cookiesModal
 vakantieveilingen.nl###__next > div > div:first-child
 vakantieveilingen.be###__next > div > div:first-child
@@ -22592,6 +22593,12 @@ becherovka.com##.visible_cookie_panel
 d2iq.com##.banner-alert
 morfose.flexxis.nl##footer
 ford.hr##.cookie-modal
+askimsrostfria.se##.cm-claw
+tcs-mymed.ch###__next > div > div[class]:nth-last-child(2)
+fotka.com###app-core div[class*="cookies-info"]
+casetify.com##.cookie-option
+johanneswerk.de###cc
+rtlmost.hu##.app > div > div > .not-empty
 !
 ! SCRIPT BLOCKING
 !
@@ -23917,7 +23924,7 @@ guideitech.com##.pea_cook_wrapper
 fifa.com##.mdl-overlay
 lubliniec.eu###cadre_alert_cookies
 cnet.com###-e_xobwhg_utggxk
-gsk.com,lufthansa.com,sim.de,premiumsim.de,winsim.de,1und1.de,mainova.de###__tealiumGDPRcpPrefs
+gsk.com,lufthansa.com,simplytel.de,discotel.de,bildconnect.de,handyvertrag.de,sim.de,premiumsim.de,winsim.de,1und1.de,mainova.de###__tealiumGDPRcpPrefs
 heathrow.com,heathrowexpress.com,hsbc.co.uk,ti.com,nettbutikk.telenor.no,epson.com,lulu.com,3mpolska.pl,bosch-professional.com,centrum24.pl,cisco.com,command.pl,e.huawei.com,lavazzacoffee.pl,logitech.com,logitechg.com,post-it.pl,ups.com,vacansoleil.pl###__tealiumGDPRecModal
 @@||nf.pl/js/libs/cookiesDirective.js$script
 overdrive.com###bkgOverlay
