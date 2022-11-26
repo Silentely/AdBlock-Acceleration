@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 345.202211231248
+! Version: 345.202211261047
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 23 Nov 2022 11:48 UTC
+! Last modified: 26 Nov 2022 09:47 UTC
 !
 !
 ! GLOBAL RULES
@@ -8731,7 +8731,7 @@
 ##.kth-toast.kth-toast--bottom
 ###cookies[role="alert"]
 ##.tcu-cookies-dpgr-banner
-~pocketbook.de,~merrell.pl,~thesocialmedwork.com##.cookie[role*="alert"]
+~leserservice.ch,~pocketbook.de,~thesocialmedwork.com##.cookie[role*="alert"]
 ###kekschecker
 ##sd-cookies-widget
 ##.datenschutz.shadow-normal
@@ -12119,7 +12119,7 @@
 ###cm-cookie-window
 ##.fingerprint-wrapper[onclick*="cookieman"]
 ##.phunk-cookie-wrapper
-~merrell.pl###gdpr-cookie-block
+~leserservice.ch###gdpr-cookie-block
 ###gdpr-agreement
 ##.consent-ui--banner
 ###cookiemanager_cookiebar
@@ -13608,6 +13608,7 @@
 ##.h-cookie-consent
 ##.gravitolightCMP-background-overlay
 ##.z-cookie-alert
+##.js-cookie-consent-box
 !
 ! CUSTOM RULES
 !
@@ -19475,7 +19476,6 @@ testo.com###colorbox, #cboxOverlay
 latendresseencuisine.com##.mdc-snackbar
 cnam-bretagne.fr##.ojc_consent
 vectorizer.io##.alert, #alert
-biker-boarder.de##.settings-parent
 aromatico.de##.js--overlay
 yatego.com###ycwBg, #ycwMo
 lausitznews.de###modal_cookie-consent
@@ -22599,6 +22599,11 @@ fotka.com###app-core div[class*="cookies-info"]
 casetify.com##.cookie-option
 johanneswerk.de###cc
 rtlmost.hu##.app > div > div > .not-empty
+estatenyheter.no##.adn-window
+escrapalia.com##.visible.transition.cookies-policy
+kaartje2go.nl##.consentmodal
+kaartje2go.be##.consentmodal
+sendasmile.de##.consentmodal
 !
 ! SCRIPT BLOCKING
 !
@@ -23112,6 +23117,7 @@ cookies.ptj.de
 /etagen_cookie/*
 /cookie_overlay.js
 /plugins/cookies-and-content-security-policy/*
+/cookieBar.min.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23387,7 +23393,7 @@ jquery.smartCookie.min.js^
 /bundle_CookieLegalNotice.prod.js
 /acceptCookies.js
 /i_CookieConsent.js
-/Amasty_GdprCookie$domain=~planet-cards.co.uk|~sunkost.no|~wondrium.com|~nova-motors.de|~moleonline.com|~durstexpress.de|~littlelunch.com|~twinpack.nl|~eckeroline.fi|~eilles.de|~xt500parts.com
+/Amasty_GdprCookie$domain=~planet-cards.co.uk|~sunkost.no|~wondrium.com|~nova-motors.de|~moleonline.com|~durstexpress.de|~littlelunch.com|~twinpack.nl|~eckeroline.fi|~eilles.de|~xt500parts.com|~leserservice.ch
 /ts/components/CookieConsent.
 /SDG_CookieLayer.min.js
 /slr_js/allowCookies.js
