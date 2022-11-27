@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 345.202211261047
+! Version: 345.202211270842
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 26 Nov 2022 09:47 UTC
+! Last modified: 27 Nov 2022 07:42 UTC
 !
 !
 ! GLOBAL RULES
@@ -5834,7 +5834,7 @@
 ##.cookie-giodo:not(body):not(html)
 ###cookieMessageDisplayDIV
 ##cookie-popup
-~engelvoelkers.com###cookieConsentDialog
+###cookieConsentDialog
 ##.hfs_pageCookieHint:not(body):not(html)
 ###cookie-banner2
 ###gant-cookie-law-modal
@@ -9863,7 +9863,7 @@
 ##.alert-cookie-message
 ###simplecook.gl_keep > .message
 ##.CookieLawWrapper:not(body):not(html)
-##.js-privacy-policy-alert.notification--is-visible
+##.js-privacy-policy-alert
 ##.component-consent-banner-consent-banner
 ##body > #cookies-usage[style*="block"]
 ###block-rgpd-bandeau
@@ -13609,6 +13609,8 @@
 ##.gravitolightCMP-background-overlay
 ##.z-cookie-alert
 ##.js-cookie-consent-box
+##.cookies-notice__container
+###consentsPolicyDialog
 !
 ! CUSTOM RULES
 !
@@ -22604,6 +22606,11 @@ escrapalia.com##.visible.transition.cookies-policy
 kaartje2go.nl##.consentmodal
 kaartje2go.be##.consentmodal
 sendasmile.de##.consentmodal
+starbucks.com.sg##.cookie-modal
+starbucks.co.th##.mpp-container-position-bottom-bar
+educont.ru##.cookies-dialog-container
+av-atlas.org###gdpr.navbar
+liberties.eu##.gdpr-window
 !
 ! SCRIPT BLOCKING
 !
@@ -23220,6 +23227,7 @@ consent-manager.confirmic.com
 consent.scm-verlagsgruppe.de
 /wp-content/plugins/consent-magic-pro
 ||7gra.us/consentbar$script
+||consent-bist.de/public/app.js$script
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -23930,7 +23938,7 @@ guideitech.com##.pea_cook_wrapper
 fifa.com##.mdl-overlay
 lubliniec.eu###cadre_alert_cookies
 cnet.com###-e_xobwhg_utggxk
-gsk.com,lufthansa.com,simplytel.de,discotel.de,bildconnect.de,handyvertrag.de,sim.de,premiumsim.de,winsim.de,1und1.de,mainova.de###__tealiumGDPRcpPrefs
+gsk.com,lufthansa.com,smartmobil.de,simplytel.de,discotel.de,bildconnect.de,handyvertrag.de,sim.de,premiumsim.de,winsim.de,1und1.de,mainova.de###__tealiumGDPRcpPrefs
 heathrow.com,heathrowexpress.com,hsbc.co.uk,ti.com,nettbutikk.telenor.no,epson.com,lulu.com,3mpolska.pl,bosch-professional.com,centrum24.pl,cisco.com,command.pl,e.huawei.com,lavazzacoffee.pl,logitech.com,logitechg.com,post-it.pl,ups.com,vacansoleil.pl###__tealiumGDPRecModal
 @@||nf.pl/js/libs/cookiesDirective.js$script
 overdrive.com###bkgOverlay
