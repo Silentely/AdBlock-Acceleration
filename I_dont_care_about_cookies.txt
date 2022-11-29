@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 345.202211281128
+! Version: 345.202211291224
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 28 Nov 2022 10:28 UTC
+! Last modified: 29 Nov 2022 11:24 UTC
 !
 !
 ! GLOBAL RULES
@@ -422,8 +422,8 @@
 ###cookiespolicymessage
 ###cookie_toolbar
 ###eulaw
-~e-domizil.de,~statik.be,~login.nos.pt,~mit-dem-rad-zur-arbeit.de,~dwd.de,~nerdstar.tv,~bund.de,~bafin.de,~onlinezugangsgesetz.de,~duvel.com,~dagvandewetenschap.be,~materna.de,~thw.de,~bmbf.de,~bafa.de,~bamf.de###cookiebanner:not(.modal)
-~e-domizil.de,~statik.be,~dwd.de,~nerdstar.tv,~bund.de,~bafin.de,~onlinezugangsgesetz.de,~duvel.com,~dagvandewetenschap.be,~materna.de,~thw.de,~bmbf.de,~bafa.de,~advodan.dk,~technikmuseum.berlin##.cookiebanner:not(body):not(html):not(#header)
+~e-domizil.de,~statik.be,~login.nos.pt,~mit-dem-rad-zur-arbeit.de,~dwd.de,~nerdstar.tv,~bund.de,~bafin.de,~onlinezugangsgesetz.de,~duvel.com,~dagvandewetenschap.be,~materna.de,~thw.de,~bka.de,~bmbf.de,~bafa.de,~bamf.de###cookiebanner:not(.modal)
+~e-domizil.de,~statik.be,~dwd.de,~nerdstar.tv,~bund.de,~bafin.de,~onlinezugangsgesetz.de,~duvel.com,~dagvandewetenschap.be,~materna.de,~thw.de,~bka.de,~bmbf.de,~bafa.de,~advodan.dk,~technikmuseum.berlin##.cookiebanner:not(body):not(html):not(#header)
 ##.cookieHolder:not(body):not(html)
 ###cookieAgree
 ##.cookie_alert:not(body):not(html)
@@ -794,7 +794,7 @@
 ##.cookie_ribon:not(body):not(html)
 ##.infoCookies:not(body):not(html)
 ###cookieInformacja
-~stadtwerke-flensburg.de,~hepster.com,~zentrale-pruefstelle-praevention.de,~bookmygarage.com,~finom.co,~deineapotheke.at,~swedbank.se,~swedbank.com,~planeo.de,~dogedash.com,~teacheconomy.de,~sevdesk.de,~sevdesk.at,~nintendo.com,~veygo.com,~puratos.pl,~bike-components.de,~bremerhaven.de,~onlinedepartment.nl,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~monese.com,~nuxeo.com,~opngo.com,~sachsenallee.de,~melcloud.com,~intersport.de##.cookie-banner:not(body):not(html)
+~towerhousewares.co.uk,~stadtwerke-flensburg.de,~hepster.com,~zentrale-pruefstelle-praevention.de,~bookmygarage.com,~finom.co,~deineapotheke.at,~swedbank.se,~swedbank.com,~planeo.de,~dogedash.com,~teacheconomy.de,~sevdesk.de,~sevdesk.at,~nintendo.com,~veygo.com,~puratos.pl,~bike-components.de,~bremerhaven.de,~onlinedepartment.nl,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~monese.com,~nuxeo.com,~opngo.com,~sachsenallee.de,~melcloud.com,~intersport.de##.cookie-banner:not(body):not(html)
 ###cookienotice
 ###overlay-cookielaw-form
 ##.cookie-info-wrapper:not(body):not(html)
@@ -12276,7 +12276,7 @@
 ##.cookies-dialog-box
 ##.gdpr-sticky_message
 ##.gdpr-cookie_message
-~shop4tesla.com###cookie-consent-dialogBox
+~shop4tesla.com,~warpedsense.com###cookie-consent-dialogBox
 ##.cookie_notice_blue
 ###GDPR_MainContainer
 ##.cookie-consent.invers
@@ -13611,6 +13611,10 @@
 ##.js-cookie-consent-box
 ##.cookies-notice__container
 ###consentsPolicyDialog
+##.cookie-popup-eu
+###__ndcc_cookieImpliedConsentBackdrop
+##.overlay_cookiebanner
+###__next div[class*="cookiesBanner"]
 !
 ! CUSTOM RULES
 !
@@ -14529,7 +14533,6 @@ manualslib.com##.policy, #policy, .cpolicy
 alablaboratoria.pl###cover
 kkuriren.se###p_ciCont
 alko-memy.pl###cookieMain
-remax.at###datenschutz
 kierunekspozywczy.pl###cook, .cook
 blackspur.com###MainTable div[style*="background:#333"]
 visahq.co.uk###main_visa_warning
@@ -17049,7 +17052,6 @@ mieszko.pl###privacy, .privacy
 spectrumled.pl###privacy, .privacy
 portal.dsv.com###privacy, .privacy
 boxtal.com###privacy, .privacy
-bka.de###privacy, .privacy
 karmy.com.pl###privacy, .privacy
 prevac.eu###privacy, .privacy
 bmjv.de###privacy, .privacy
@@ -17376,7 +17378,6 @@ sqlgate.com##.popup.download-page
 zwickautourist.de###bauch-binder
 insideevs.com##.m1-footer-messages
 foramax.hu##body > .ct, body > .cc
-coin360.com##.Popup
 greentechmedia.com##body > div[style*="transp"]
 the-beam.com##.privacy-policy
 hop-on-hop-off-bus.com##.ckPol
@@ -17814,7 +17815,6 @@ german-pavilion.com###privacy-flyout
 marsh.com###modalWindow.alt-opt-secure, .reveal-modal-bg-white
 astridlindgrensvarld.se##.bottom__footer__text-container ~ div
 luxmeble.eu###cookie
-pietsmiet.de###main ~ .fixed
 pof.com###gatsby-focus-wrapper > div:not([id]) > div
 newstral.com##.cookie-consent
 labor28.de##.cookie-consent
@@ -20672,7 +20672,6 @@ uniprot.org###privacy-panel
 growney.de##.block-07-cookie-banner
 rodopchani.bg###abck
 daab.de###damn_background_overlay, #damn_cookieconsent_banner
-shadow.tech###___gatsby div[class*="CookiesComponent"], #root > main ~ div:last-child
 enidine.com##.cookie-consent
 akcelo.de###consent
 bioprocessintl.com##.ig_bottom
@@ -22614,6 +22613,14 @@ turnoffthelights.com###cookie-law
 thoracic.org###cookie-law
 112press.hu###cookie-law
 studeersnel.nl###main-wrapper ~ div
+img.ly##.cke-overlay
+shadow.tech###___gatsby div[class*="CookiesComponent"], #root > main ~ div:last-child
+teleauskunft.de##.cookie-container
+i-surance.eu###cookiesAcceptance
+moises.ai##.floating-banner
+ungeziefer-ratgeber.info###cc--main
+antagning.se###cookie-law
+flockler.com##.fl-cookie-banner[data-state="open"]
 !
 ! SCRIPT BLOCKING
 !
@@ -23350,6 +23357,7 @@ privacy.claytonhomes.com
 ||heg-cp.com/upm/privacy-manager$script
 tag=ui/privacy/CookiesConsent
 /dock-privacy-settings.esm.js
+||privacy.wum.rocks/public/app.js$script
 ||cmp.nextday.media/cmp$script,domain=~vi.nl|~omroepwest.nl
 cmp.dreamlab.pl
 /media/cmp/int_cmp_banner
