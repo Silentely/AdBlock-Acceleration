@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: X7Drwae0wtlYfsc4kumSgQ
+! Checksum: t/MaCzmToWI4ROdibdf6mA
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202211300830
-! Last Modified: 2022年11月30日 08:30
+! Version: 202211301407
+! Last Modified: 2022年11月30日 14:07
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -1960,6 +1960,7 @@ ubmcmm.baidustatic.com
 ##a[href*=".com/Register/?a="]
 ##a[href*=".com?aff="]
 ##a[href*=".com?intr="]
+##a[href*="://4"] > img[src*="lbsugc.cdn.bcebos.com"]
 ~umeng.com##a[href*=".umeng.com"]:not([href="http://www.umeng.com/"]) > img
 ##a[href*="/?INTR="]
 ##a[href*="/?Intr="]
@@ -2015,6 +2016,7 @@ ubmcmm.baidustatic.com
 ~mgtv.com##a[target="_blank"] > img[src*="hitv.com"]
 ##a[target="_blank"][onclick*="广告点击"]
 ##body .has-ad
+##.page-wwads
 ##body[onload*="u()"] > #x
 ##center > a[target="_blank"] > img[style="padding- bottom:5px;width:960px;height:120px;"]
 ##center > a[target="_blank"] > img[style="padding- bottom:5px;width:960px;height:60px;"]
@@ -2404,6 +2406,7 @@ ubmcmm.baidustatic.com
 ||dfkd.xyz^
 ||epfmfqh.cn^
 ||qowg.top^
+||iblimq.xyz^
 .8ox.cn
 ##.btn[href*="/viphktv.com/"]
 ##[class][onclick*=".ununxsxs.top"]
@@ -15074,6 +15077,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzzyk.com/js/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+yomahub.com##.sidebar-slot
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
