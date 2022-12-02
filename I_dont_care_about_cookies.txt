@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 345.202211291224
+! Version: 345.202212021121
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 29 Nov 2022 11:24 UTC
+! Last modified: 02 Dec 2022 10:21 UTC
 !
 !
 ! GLOBAL RULES
@@ -106,7 +106,7 @@
 ###cookie_shout
 ###cookie-alert
 ###EUCookie
-~jackjones.com,~schuurman-schoenen.nl,~win2day.at,~werkenbijpathe.nl,~interspar.at,~spar.at,~spar.hu,~spar.hr,~spar.si##.cookie-notification:not(body):not(html)
+~jackjones.com,~schuurman-schoenen.nl,~werkenbijpathe.nl,~interspar.at,~spar.at,~spar.hu,~spar.hr,~spar.si##.cookie-notification:not(body):not(html)
 ###eprivacy
 ~dominospizza.pl,~penny.hu,~penny.cz###cookie-message
 ###cookieinfo-container
@@ -13615,6 +13615,15 @@
 ###__ndcc_cookieImpliedConsentBackdrop
 ##.overlay_cookiebanner
 ###__next div[class*="cookiesBanner"]
+###wdw-cookie-consent
+##.lb-show-cookie-consent #cc_div
+##.cookie-consent-overlay ~ #cookie-consent
+##.eboxCookieBar
+##.footer_cookie_alert.active
+##.e-cookiebar
+###acceptCookiesPop
+###gc-cookie-consent
+##.p-cookie-consent
 !
 ! CUSTOM RULES
 !
@@ -17603,8 +17612,6 @@ ncsc.gov.uk##.pcf-cookie
 sapo.ao##.bsu-v2-ntfs
 webwinkel.tubantia.nl##.modal__bg
 proteum.co.uk###cookies
-e-scooter.co###gdpr-w, #gdpr-o
-xn--ko-roller-z7a.de###gdpr-w, #gdpr-o
 misterfly.com###i-cook
 ibeesoft.com###cookies
 typeform.com##div[class*="CookieWrapper"]
@@ -19006,7 +19013,6 @@ classification.gov.au##.views-row > div[style*="F6C257"]
 abc.com##body > div[style*="fixed"]
 tw-calc.net##.cookie
 solutions-numeriques.com###cookies
-xn--strungsauskunft-9sb.de###welcome
 alcatelmobile.com##.elementor-location-footer ~ div[class*="astra"], .acepta-cookies
 telekom.de###cookies.bounceInDown, .pi-notification
 top-dent.cz##body > .CA
@@ -22125,10 +22131,6 @@ generali.si##.cd-overlay, .cd-module-modal
 mobylines.com##.cookies
 refashion.fr##.block-cookies-rgpd
 palixi.net##.cookies-wrapper
-treinaweb.com.br##div[c_data="c_cookie_main"]
-opensocietyfoundations.org###cc_div
-mondverlauf.de###cc_div
-sonnenverlauf.de###cc_div
 revolut.com##div[role="dialog"][aria-label*="Cookie"]
 allani.pl##.off-canvas-wrap ~ div
 abc-mallorca.com##.abc-cookies-wrapper
@@ -22389,12 +22391,10 @@ worksheetcrafter.com###cookiesFormContainer
 beleuchtung.de##.cookie-setting
 rode.com###gdpr
 sachsen.de##.privacy-modal, .ld_container
-lansstyrelsen.se###widgets_splash
 cyberpowerpc.com###pp_cookie
 cyberpowersystem.co.uk###pp_cookie_consent
 lightinthebox.com##.cookie-allow-confirm
 myfitnessplace.pl###cookies, #backdrop
-nabrigadu.info##.c--anim
 femundo.de###femundo-cookie-bar
 fundacionvital.eus##veiss-cookies
 podchaser.com###app > div > div:last-child:not(:only-of-type)
@@ -22621,6 +22621,24 @@ moises.ai##.floating-banner
 ungeziefer-ratgeber.info###cc--main
 antagning.se###cookie-law
 flockler.com##.fl-cookie-banner[data-state="open"]
+einkaufsbahnhof.de##.btn--cookies, .cookies
+lansstyrelsen.se###widgets_splash
+opensocietyfoundations.org###cc_div
+mondverlauf.de###cc_div
+sonnenverlauf.de###cc_div
+nabrigadu.info##.c--anim
+treinaweb.com.br##.c_anim
+xn--gnstiger-reisen-zvb.de###overlay
+xn--strungsauskunft-9sb.de##app-cookies-popup
+xn--80aalaegy7apkaw4n.xn--p1ai###privacypolicy
+xn--80ahmohdapg.xn--80asehdb##.cookie, #app .page-notification
+xn--xxlmbel-d1a.de##.cookie-container
+xn--ko-roller-z7a.at###gdpr-w, #gdpr-o
+xn--ko-roller-z7a.de###gdpr-w, #gdpr-o
+xn--ko-roller-z7a.ch###gdpr-w, #gdpr-o
+e-scooter.co###gdpr-w, #gdpr-o
+scooter-elettrici.it###gdpr-w, #gdpr-o
+electricscooters.eu###gdpr-w, #gdpr-o
 !
 ! SCRIPT BLOCKING
 !
@@ -23358,6 +23376,7 @@ privacy.claytonhomes.com
 tag=ui/privacy/CookiesConsent
 /dock-privacy-settings.esm.js
 ||privacy.wum.rocks/public/app.js$script
+/tagcommander/privacy_
 ||cmp.nextday.media/cmp$script,domain=~vi.nl|~omroepwest.nl
 cmp.dreamlab.pl
 /media/cmp/int_cmp_banner
@@ -23441,6 +23460,7 @@ jquery.smartCookie.min.js^
 /Plumrocket_CookieConsent/*
 /static/CookieManager/js/app
 /optInCookies.min.js
+/ja/controlCookies.js
 quantcast.mgr.consensu.org$domain=~sourceforge.net|~tumblr.com|~wpolityce.pl|~player.livespotting.com|~indy100.com|~vi.nl|~independent.co.uk|~express.co.uk|~joe.ie|~joe.co.uk|~standard.co.uk|~avsforum.com|~pcgamer.com|~nfl.com|~filmvandaag.nl|~gamesradar.com|~iol.pt
 gemius.mgr.consensu.org
 sddan.mgr.consensu.org
@@ -23657,6 +23677,7 @@ cdn.realpeoplemedia.co.uk
 /ccm19_$domain=~ccm19.de
 static.clickskeks.at
 ||aida.de/assets/coobann/$script
+/js/tarteaucitron
 /consumer/cookie/client$domain=bt.com
 /frontend/ajax/cookies$domain=romstal.ro
 /rodo-agreement-$domain=gremimedia.pl|zw.com.pl
