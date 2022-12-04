@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 345.202212021121
+! Version: 345.202212041008
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 02 Dec 2022 10:21 UTC
+! Last modified: 04 Dec 2022 09:08 UTC
 !
 !
 ! GLOBAL RULES
@@ -789,7 +789,7 @@
 ###showCookieInfo
 ###ccconsent
 ##.cookie-compliance-container
-~okto.tv,~bhw.de,~metro.de,~metro.fr,~metro.at,~metro.hu,~metro.bg,~makro.nl,~axa-im.fr,~pronovabkk.de##.cookie-disclaimer:not(body):not(html)
+~okto.tv,~bhw.de,~dslbank.de,~metro.de,~metro.fr,~metro.at,~metro.hu,~metro.bg,~makro.nl,~axa-im.fr,~pronovabkk.de##.cookie-disclaimer:not(body):not(html)
 ###cookie_popup
 ##.cookie_ribon:not(body):not(html)
 ##.infoCookies:not(body):not(html)
@@ -13624,6 +13624,11 @@
 ###acceptCookiesPop
 ###gc-cookie-consent
 ##.p-cookie-consent
+###privalert-container
+##.cookie-cover[data-cookie-permission]
+###cookie_stripe
+##.privacy-preference-container
+##.data-consent-edge
 !
 ! CUSTOM RULES
 !
@@ -21255,7 +21260,6 @@ amazon-affiliate.eu##.cookie-consent
 certificat-covid.gov.ro##.bottom-banner
 aviva.fr##.ccb-sticky
 clipchamp.com##main + div ~ div
-lichtblick.de###uc_layer
 volimzmenu.cz##.cookies
 petlove.com.br##.card-bottom
 farmaciasdirect.com##.fd-cookies
@@ -21405,7 +21409,6 @@ extrabux.com##.ccpabar
 timma.fi###alert-root
 winamp.com##.cookies
 beatstars.com##mp-cookies-snackbar
-solicitor.info###msgbg
 sl.se##body > div[class*="header"] > div > div:first-child:not([class])
 airfleets.net###blur
 redis.com###gdpr-modal
@@ -21676,7 +21679,6 @@ general-overnight.com##.cookie-layer
 bnn.in.th##.the-pdpa-consent-bar
 tommy.com##.cookie
 prostata-hilfe-deutschland.de###ccModal, .modal-backdrop
-energiauutiset.fi##.ltcn
 internxt.com##div[class*="cookiesBgFallback"]
 sportland-erlangen.de##.cookieflag, .cookieset
 curve.com###gatsby-focus-wrapper > div:first-child
@@ -22497,8 +22499,6 @@ tusclasesparticulares.com###pp
 edywerder.ch##.kadence-conversion-banner
 corriere.it##.tp-modal.manine-modal
 fxhome.com##.elementor-location-footer[data-elementor-type="section"], section[class*="cookiesContainer"]
-optoma.co.uk###msgbg
-optoma.com###optomaCookieWrap, .cookieBackgaround
 dreamersforum.nl###cookiewarning_header
 piensasolutions.com##.drop[name="cookies"]
 open-broker.ru##div[class*="CookieDisclaimer"]
@@ -22601,7 +22601,6 @@ av-atlas.org###gdpr.navbar
 liberties.eu##.gdpr-window
 nativebase.io###__next > .font-poppins
 technologynetworks.com##.base_privacy_policy_notification
-fremantleports.com.au##.data-consent-edge
 charactercountonline.com###consentBox
 citusdata.com###consentBox
 gouv.fr##app-cookie, .eu-popup, ods-manage-cookies-preferences-modal
@@ -22639,6 +22638,29 @@ xn--ko-roller-z7a.ch###gdpr-w, #gdpr-o
 e-scooter.co###gdpr-w, #gdpr-o
 scooter-elettrici.it###gdpr-w, #gdpr-o
 electricscooters.eu###gdpr-w, #gdpr-o
+lekker.de###cookieboxBackgroundModal
+epo.org###matomoBanner
+loteriamkcafe.pl###pop_up
+bloomreach.com##.exp-cookies-obal
+frigelar.com.br###modalPrivacyPolicy
+energiauutiset.fi##.ltcn
+vitriini.fi##.ltcn
+hospitalesparque.es###gdpr-modal
+solicitor.info###msgbg
+optoma.com##.cookie--wrap, .cookieBackgaround
+optoma.co.uk###msgbg
+optoma.de###msgbg
+optoma.it###msgbg
+optoma.fr###msgbg
+optoma.nl###msgbg
+optoma.es###msgbg
+optoma.ru###msgbg
+optoma.pl###msgbg
+optoma.be###msgbg
+optomaeurope.com###msgbg
+stagobel.be##div[x-data*="alpineGdpr"]
+monuta.nl##monuta-cookie-compliance-banner
+nplus1.ru##footer .fixed
 !
 ! SCRIPT BLOCKING
 !
@@ -23959,6 +23981,7 @@ ccm.$domain=abload.de
 /consent.$domain=strato.de|strato.nl|strato.fr|strato.es|strato-hosting.co.uk
 /ujam_tracking/*$domain=ujam.com
 /utag.js$domain=louisvuitton.com|esprit.de|ing.es|stepstone.de|stepstone.at|santander.pl|swisscom.ch|prada.com|here.com|guloggratis.dk|privatebanking.hsbc.com|hsbc.pl|comparethemarket.com
+/brabo-cookie/*$domain=brandpreventiewinkel.nl
 !
 ! FILTERLIST ONLY
 !
