@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 345.202212041008
+! Version: 345.202212051226
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 04 Dec 2022 09:08 UTC
+! Last modified: 05 Dec 2022 11:26 UTC
 !
 !
 ! GLOBAL RULES
@@ -2838,7 +2838,7 @@
 ##.cookieterms:not(body):not(html)
 ###ct_cookie_prompt
 ###scc-cookie-bar
-~peaks.com###cookie-content
+##.unibody > .content > .cookie-setting
 ##.aviso-cookies:not(body):not(html)
 ##.cookie-undiz:not(body):not(html)
 ##.eucookielaw-banner:not(body):not(html)
@@ -10742,7 +10742,7 @@
 ###cookie_settings_modal ~ .cookie.card
 ###gdpr-block.position-fixed
 ##cmpviews-cookies-accept
-##.cookie-consent.show:not(.modal)
+##.cookie-consent.show:not([class*="modal"])
 ##body > #cookies-jar
 ##.b-cookie-overlay.is-open
 ###DisclaimerCookies
@@ -13629,6 +13629,8 @@
 ###cookie_stripe
 ##.privacy-preference-container
 ##.data-consent-edge
+##.cookie-disclaimer-module
+###__next aside[class*="CookiesBar"]
 !
 ! CUSTOM RULES
 !
@@ -17923,7 +17925,6 @@ amazingmarvin.com###live-chat-banner
 endemolshine.de###cookies
 automatyka.istore.pl###cookie
 radpdf.com###pdfe_cmp
-wifimap.io###__next > div:first-child
 cosmote.gr###modalCookie, #cookies-one
 emmamerch.de##.CookieHeader
 keepass.info###consent_c
@@ -20629,7 +20630,6 @@ webo.hosting###kt_cookies
 torneum.com##tor-gdpr-banner-dialog, .cdk-overlay-backdrop
 euprava.gov.rs###bottom-popup
 itv4.de##.cookieModal
-onlineradiobox.com##.modal--cookies
 jesse.trade###app > section > div > .fixed, #app > section > .fixed
 asmonaco.com##.asm-rgpd-bar
 aventics.com##.avts-global-cookie
@@ -20749,7 +20749,6 @@ inwestinfo.pl###up ~ [style*="fixed"]
 joolz.com##.jlz-cookie-consent--background-blur::before
 quixa.it##snack-bar-container
 supermicro.com###alert-container, #privacy-popup-agree
-puzzlegarage.com##.modal--cookies
 rzeszow.pl###__next > .fixed
 heatable.co.uk##.cookies
 cobasi.com.br##.lgpd
@@ -22123,7 +22122,6 @@ myanimelist.net##.modal-content-overlay
 myanimelist.vip###disclaimer
 kulturhusetstadsteatern.se###block-cookieapproval
 promobit.com.br###__next > footer ~ div
-lampak.hu##.cookie-setting
 zakonyprolidi.cz##.CookiePerm
 vivo.com###vcm-v-consent-sdk
 bashmaistora.bg##.cookies-cont
@@ -22390,7 +22388,6 @@ sole-runner.com###CookiePlus, .modal-backdrop
 loterija.si###cookie-consent
 everywhere.game##main > div > div + div ~ div:last-child
 worksheetcrafter.com###cookiesFormContainer
-beleuchtung.de##.cookie-setting
 rode.com###gdpr
 sachsen.de##.privacy-modal, .ld_container
 cyberpowerpc.com###pp_cookie
@@ -22661,6 +22658,19 @@ optomaeurope.com###msgbg
 stagobel.be##div[x-data*="alpineGdpr"]
 monuta.nl##monuta-cookie-compliance-banner
 nplus1.ru##footer .fixed
+castorama.pl##.background-overlay
+joomshaper.com###cookie-consent
+onlineradiobox.com##.modal--cookies
+puzzlegarage.com##.modal--cookies
+dayspedia.com##.modal--cookies
+didriksons.com##div[class*="tracking-consent"]
+fondsclever.de###cWgtCooHin
+pascoe.de##.tx-pascoe-consent-manager
+wifimap.io###__next > div[class^="_"]
+2captcha.com##.app-level-notifications__item_cookies-policy
+spendee.com###app > div > div:last-child > div:first-child
+forklog.com##.terms_popup
+hollandbikeshop.com##.cookies-sec
 !
 ! SCRIPT BLOCKING
 !
@@ -23704,7 +23714,6 @@ static.clickskeks.at
 /frontend/ajax/cookies$domain=romstal.ro
 /rodo-agreement-$domain=gremimedia.pl|zw.com.pl
 /gtm.js?id=GTM-TCT2RJ$domain=fullrate.dk
-/js/cmp$domain=paruvendu.fr
 datenschutz.js^$domain=wumpus-gollum-forum.de
 bho_infobar.js^$domain=ruecken-zentrum.de
 /consent/message.js$domain=ksta.de
@@ -23905,7 +23914,7 @@ toestemmingen.snp.nl$domain=snp.nl
 consent.maerkischekiste.de$domain=maerkischekiste.de
 /it_nsc.min.js$domain=nonsolocap.it
 h1.versicherungsjournal.de$domain=versicherungsjournal.de
-/cmp.min.js$domain=topannonces.fr
+/cmp.min.js$domain=topannonces.fr|paruvendu.fr
 /cookies.min.js$domain=ellisphere.fr|konsultacjejst.pl
 /mdv.cookie.js$domain=biehler-cycling.com
 /alert-info.js$domain=asus.com
