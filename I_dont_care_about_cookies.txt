@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 345.202212071248
+! Version: 345.202212091242
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 07 Dec 2022 11:48 UTC
+! Last modified: 09 Dec 2022 11:42 UTC
 !
 !
 ! GLOBAL RULES
@@ -203,7 +203,7 @@
 ~msn.com##.optanon-alert-box-wrapper
 ###cookie_assistant_container
 ###__CookieContainer
-##.cookieAccept:not(body):not(html):not(.container-fluid):not(.c-button)
+##.cookieAccept:not(body):not(html):not(.container-fluid):not(.c-button):not(a)
 ##.cookieAccepterSlider
 ##.cookieAccepterPopup:not(body):not(html)
 ##.cookieAccepterGrayBody
@@ -4187,7 +4187,7 @@
 ###cbcookies-top
 ###cookiesChecker
 ~freixenet-onlineshop.de###cookiecheck:not(.lightbox)
-###acceptCookiesId
+~tobaccopreventioncessation.com###acceptCookiesId
 ###cookieconsent_container
 ###overlay_cookie
 ###COOKIE-CONSENT-EU
@@ -13633,6 +13633,8 @@
 ##.portlet-boundary[id*="cookiespolicy"]
 ##.cc-dialog[aria-label="Cookieeinstellungen"]
 ###__next div[class*="CookieMessage"]
+###__nuxt div[class*="cookie-banner"]
+##body.dp--cookie-consent .page-overlay
 !
 ! CUSTOM RULES
 !
@@ -15346,7 +15348,6 @@ spiceworks.com##.sui-site-message-container
 heavengroup.it###cookup
 molgroupitaly.it###mgit_notification
 portalkucharski.pl##body > div:not([id]):not([class])
-esdemarca.com###cookie_informativa_esd
 bati-orient-import.com###overlayCookie2015
 discoverychannel.it##body > div:not([id]):not([class])
 maccosmetics.de###bt_notification
@@ -19672,7 +19673,6 @@ dungeondice.it###yn-gdpr
 eden.de##.cc-blur, .cc-overlay
 gardenplaza.de###cc_window
 larian.com##.cookies
-theorg.com###app > span
 brujulea.net###bckie
 aramido.de##.banner
 uniroma1.it##.cookie-background
@@ -20107,8 +20107,6 @@ urlaubsgruss.com##.dscheck
 balkdragers.com##.stn-cookies
 sekwens.com###module-aboveBox
 hot.dk###scw
-rba.hr###cd-module-main
-rbainvest.hr###cd-module-main
 nicequest.com###footer ~ div
 orange.pl###__next > div > section[role="region"], .opl-cookie-control
 stadt-galerie-hameln.de###mdl-overlay
@@ -21387,7 +21385,6 @@ serasa.com.br##div[aria-labelledby="m-acc-title"]
 faq.whatsapp.com##div[id^="mount_"] > div > div > div:last-child:not(:only-of-type)
 italki.com##div[class*="cookie_root"]
 dr-gumpert.de###cookie_modal_container
-lego.com##div[class*="CookieDisclaimer"], #footer ~ [class*="emotion-cache"], #prompt-footer
 ahaan.co.uk##.MuiSnackbar-root
 le-livre.fr###showcookie
 argeles-sur-mer.com##.cookies-global
@@ -22106,7 +22103,6 @@ form.bar##.formbarConsent
 bittitan.com##.cookies
 koryotel.com###footer_overlay
 satisfactorygame.com##.cookie
-mi.com##.micloud-app > div > div[class*="policy"]
 mottavisconti.mi.it##.wp-exclude-emoji
 cut.org.br##.cookie-modal
 chapel-hydraulique.com###tc_rgpd_popup
@@ -22679,6 +22675,15 @@ wentworthpuzzles.com##privacy-settings
 dreamworks.com##.notice-modal
 framer.com##.cy-cookieBanner
 back4app.com##footer ~ .w-full.fixed
+rbainvest.hr###cd-module-main
+rba.hr###cd-module-main, #root ~ reach-portal
+mi.com##.micloud-app > div > div[class*="policy"], .cookie-privace
+smahospital.jp##.p-gdpr
+vr.it###cookie
+kick.com###app > span
+hardstuck.gg###hs-accept-cc
+lego.com##div[class*="CookieDisclaimer"], #footer ~ [class*="emotion-cache"], #prompt-footer, div[data-test="cookie-sign-posting"]
+esdemarca.com##.e3_cookies
 !
 ! SCRIPT BLOCKING
 !
@@ -23272,7 +23277,7 @@ analytics-consent-manager.azureedge.net
 /tm-gdpr-consent/*
 ||snigelweb.com/adconsent$script
 ||sncmp.com/adconsent$script
-||consentmanager.net/delivery/js/cmp$script,domain=~winfuture.de|~infranken.de
+||consentmanager.net/delivery/js/cmp$script,domain=~winfuture.de|~infranken.de|~echo-online.de
 consent-manager.confirmic.com
 ||consentbanner.de/public/app.js$script
 ||classistatic.de/consent-statics$script
@@ -23285,7 +23290,7 @@ consent-manager.confirmic.com
 /epaas.consentdrawer.bundle
 /consentbanner-fragment/*
 ||altravia.com/connector/consent_mode.js$script
-||consentmanager.net/delivery/cmp$script,domain=~winfuture.de|~infranken.de
+||consentmanager.net/delivery/cmp$script,domain=~winfuture.de|~infranken.de|~echo-online.de
 /taunton-user-consent.js
 /fileadmin/templates/js/cconsent.js
 /wp-content/plugins/okf-euconsent
