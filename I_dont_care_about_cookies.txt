@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 345.202212091242
+! Version: 345.202212121349
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 09 Dec 2022 11:42 UTC
+! Last modified: 12 Dec 2022 13:49 UTC
 !
 !
 ! GLOBAL RULES
@@ -237,7 +237,7 @@
 ###modalCookieContainer
 ##._cookies-cookies-bar
 ##.CookieDirectiveHeight
-###accept-cookie:not(button)
+###accept-cookie:not(button):not(a)
 ~mulders-opel.nl,~xmradio.nl###accept-cookies:not(button):not([class*="btn"])
 ###mw-cookie-policy
 ###cookieMgn
@@ -11453,7 +11453,7 @@
 ###shopify-section-cookie-banner
 ##.cookie__floating--bottom-right
 ~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it,~dmsg.de,~bgk.pl,~exagon.de,~sozialversicherung-kompetent.de,~varcevanje-energije.si,~donauregion.at,~salzkammergut.at,~studentenwerkfrankfurt.de,~manduka.com###cconsent-modal.ccm--visible
-##app-accept-cookies
+~tiwag.at##app-accept-cookies
 ##.cookie-consent.small
 ##.cookies[data-accepturl]
 ##.m-popup.m-popup__cookies
@@ -13635,6 +13635,12 @@
 ###__next div[class*="CookieMessage"]
 ###__nuxt div[class*="cookie-banner"]
 ##body.dp--cookie-consent .page-overlay
+###cookie-notice-wrapper-advanced
+##.cookies-banner-overlay
+##.main-cpu[data-pu*="cookies"]
+##.consent-cookie-box
+##.cookie__prompt-box
+##.cookie123-popup
 !
 ! CUSTOM RULES
 !
@@ -16276,7 +16282,6 @@ pamiec.pl##.JSWrapper
 mazowieckie.pl##.JSWrapper
 csp.edu.pl##.JSWrapper
 mzkjastrzebie.com##.JSWrapper
-vlan.be###modalCookie
 ww-ag.com##.WW-cookiemodul
 bicyclette-verte.fr##div[class*="cookies"]
 tantra-massage-prague.cz##.window_foot
@@ -18266,7 +18271,6 @@ wasted.fr###cookies
 stylefile.de##.ui-dialog
 engvig.no###cookie
 layerstack.com##.promotion-footer
-accor.com###cookiesAccorJobs
 pazienti.it##.pz-disclaimer--cookie
 dealz.pl##.jet-popup
 nfpa.org###fixed_footer
@@ -19206,7 +19210,6 @@ unogs.com##div[data-bind*="eucookie"]
 onlinesim.ru###termsbox
 arconvert.it###reveal-cookies, .reveal-modal-bg
 storaenso.com##.overlay-wrapper
-bittrex.com##.notification
 mecindo.se###c-bar
 comtradeshop.com##body > div:not([id]):not([class])
 interamt.de##.ia-m-cookie-flyout
@@ -21090,7 +21093,6 @@ gravitycoach.com##.elo-snackbar
 jovempan.com.br##.custom-container-lgpd
 thecompleteuniversityguide.co.uk##.cookie_lbox
 zyro.com##.zyro-cookies
-vinos.de##.consent-cookie-box--lightbox
 flipsnack.com##.modal-backdrop
 chargify.com##.gdpr
 airwallex.com##main > footer ~ div
@@ -21161,7 +21163,6 @@ bagaggio.com.br##.lgpd
 lineheart.lu###policy_banner, .policy-banner-overlay
 zig-star.com##.md-consent
 aoc.com##.cookies
-isawitfirst.com##.main-cpu[data-pu*="cookies"]
 chinahighlights.com##.web_cookie
 fertighaus.de##.BannerWrapper
 sslplus.de###ccmRoot
@@ -21623,7 +21624,6 @@ bacelic.hr##.cookies
 casinocosmopol.se###casino-picker-modal
 delicasaitalia-uk.com##.ec-notices
 uk.barclays##.barclays-consent
-truecaller.com###app > .fixed[class*="bottom"]
 arbetsformedlingen.se##.af-cookie
 lecoqsportif.com##div[class*="cookiesPopup"]
 sodresantoro.com.br##.ss-modal-cookies
@@ -22666,7 +22666,6 @@ hollandbikeshop.com##.cookies-sec
 lagenhetsbyte.se###cookie-modal-wrapper
 skatteverket.se##skv-cookie-banner, fin-skv-cookie-banner
 ncgmovies.com##.v-notification-list
-kabelshop.nl##.cookie123-popup
 sinalco.de###bccs-modal ~ .modal-backdrop
 intelligent-heizen.info###bs-cookie-bar
 wtk.pl###cookie-consent
@@ -22684,6 +22683,15 @@ kick.com###app > span
 hardstuck.gg###hs-accept-cc
 lego.com##div[class*="CookieDisclaimer"], #footer ~ [class*="emotion-cache"], #prompt-footer, div[data-test="cookie-sign-posting"]
 esdemarca.com##.e3_cookies
+bittrex.com##.MuiAlert-standardInfo
+aena.es##.cookies-elixregtech
+truecaller.com###__nuxt > div > .bottom-0, #__nuxt > .bottom-0
+gemini.pl##.vue-portal-target ~ div:last-child, #modal-cookies
+aptekagemini.pl###kukiz
+niederoesterreich-card.at##.cc
+vinos.de##.consent-cookie-box--lightbox
+qwertee.com###root > .bottom-0
+e-muse.com.tw##.container-component > .dialog ~ div:last-child, .ns-cookie-privacy-wrapper
 !
 ! SCRIPT BLOCKING
 !
@@ -22936,7 +22944,7 @@ eu_cookie_banner.js^
 /modules/idxcookies/*
 /javascript/cookieser.js
 /cookiesWidget/widget.js
-consent.cookiebot.com$domain=~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~stadtmobil.de|~wwf.fi|~login.nos.pt|~asambeauty.com|~cineplex.de|~berlingske.dk|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~linak.es|~linak.de|~cajamar.es|~digitaltrends.com|~mein-grundeinkommen.de|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~biomarkt.de|~harzwasserwerke.de|~stern.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de|~spiele-kostenlos-online.de|~ekstrabladet.dk|~epochtimes.de
+consent.cookiebot.com$domain=~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~tme.eu|~stadtmobil.de|~wwf.fi|~login.nos.pt|~asambeauty.com|~cineplex.de|~berlingske.dk|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~linak.es|~linak.de|~cajamar.es|~digitaltrends.com|~mein-grundeinkommen.de|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~biomarkt.de|~harzwasserwerke.de|~stern.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de|~spiele-kostenlos-online.de|~ekstrabladet.dk|~epochtimes.de
 /ccp-sites/components/structure/cookie-notification/*
 /cookies-info.js
 cookies.algo.at
@@ -23959,7 +23967,7 @@ consent*$domain=t-mobile.cz
 cc.labu24.de$domain=labu24.de
 cookies.ptj.de$domain=ptj.de
 consent.autopflege24.net$domain=autopflege24.net
-privacy-center.org$domain=elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr|muyinteresante.es|t-mobile.pl|autocasion.com|europasur.es|pisos.com|lagacetadesalamanca.es|meilleure-innovation.com|huelvainformacion.es
+privacy-center.org$domain=elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr|muyinteresante.es|t-mobile.pl|autocasion.com|europasur.es|pisos.com|lagacetadesalamanca.es|meilleure-innovation.com|huelvainformacion.es|futura-sciences.com
 /consent$domain=natune.net|hemnet.se
 cookie-banner*$domain=studio3t.com
 /cookies_2020$domain=pensionlisboa.com
