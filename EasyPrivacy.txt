@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202212150443
+! Version: 202212151145
 ! Title: EasyPrivacy
-! Last modified: 15 Dec 2022 04:43 UTC
+! Last modified: 15 Dec 2022 11:45 UTC
 ! Expires: 6 days (update frequency)
 %include easylist:template_header.txt
 ! 
@@ -998,6 +998,7 @@
 /beacon/get/*
 /beacon/info?
 /beacon/init?
+/beacon/media?
 /beacon/metrics
 /beacon/page?
 /beacon/perf
@@ -4378,7 +4379,6 @@
 /tagmanager/pptm.
 /tagmgmt/bootstrap.
 /tagomnitureengine.js
-/tags/angular-
 /tags?session_id=
 /TagSvc/*
 /tagx.js
@@ -6208,6 +6208,7 @@ _mongo_stats/
 ||sitedataprocessing.com^
 ||sixtrk.com^
 ||sjpf.io^
+||soapfighters.com^
 ||solutionshindsight.net^
 ||speedyfox.io^
 ||speedyrhino.co^
@@ -8646,6 +8647,7 @@ _mongo_stats/
 ||truconversion.com^$third-party
 ||truehits.in.th^$third-party
 ||truehits1.gits.net.th^$third-party
+||truffle.one^$third-party
 ||truoptik.com^$third-party
 ||trysera.com^$third-party
 ||tscounter.com^$third-party
@@ -30579,7 +30581,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||guce.advertising.com/collectIdentifiers$~third-party
 @@||healthgateway.gov.bc.ca/snowplow.js$~third-party
 @@||hearstapps.com/static/comscore.$script,domain=womenshealthmag.com
-@@||helidon.io/docs/v3/pages/mp/metrics/metrics.js$~third-party
+@@||helidon.io/docs/*/metrics/metrics$~third-party,xmlhttprequest
 @@||hello.myfonts.net/count/$stylesheet,domain=cfr.org|furniturevillage.co.uk|luggagehero.com
 @@||herokuapp.com/api/analytics$domain=madeincookware.com
 @@||hirosystems.vscode-unpkg.net/*/clarity-lsp/$domain=github.dev|vscode.dev
