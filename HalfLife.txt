@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: uh9C6zux2ZiwMhQdofixQQ
+! Checksum: xDwD0bhQszj/FdBh4551EQ
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202212220828
-! Last Modified: 2022年12月22日 08:28
+! Version: 202212221407
+! Last Modified: 2022年12月22日 14:07
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -2736,6 +2736,10 @@ ubmcmm.baidustatic.com
 ||pm8lw.xyz^
 ||tx9ff.top^
 ||pivlzt.xyz^
+||jkasn.com^
+||mumessn.cn^
+||phcoal.com^
+||omtend.com^
 .8ox.cn
 ##.btn[href*="/viphktv.com/"]
 ##[class][onclick*=".ununxsxs.top"]
@@ -14776,6 +14780,9 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzzyk.com/js/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+xcyy.tv##body > a
+xcyy.tv##body > style + [id]
+xcyy.tv##body > style + [id] + img
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -22605,7 +22612,7 @@ qq.com#@#.side_ad
 ##.wrap + #btmBox
 ##.wrap + #midBox
 ##body[ontouchstart] > #topBox
-##script[src="/static/base.js"] + #couplet
+##script[src$="/base.js"] + #couplet
 !#T66y.com
 redircdn.com##.al
 rvlev.com,t66y.com#?#.tpc_content:-abp-has(>b:nth-child(n+40)>span>a[onmouseover="this.style.background='#DEF5CD';"]:-abp-contains(91TV)) > :nth-child(-n+45)
