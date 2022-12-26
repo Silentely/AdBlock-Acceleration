@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 346.202212211219
+! Version: 346.202212260950
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 21 Dec 2022 12:19 UTC
+! Last modified: 26 Dec 2022 09:50 UTC
 !
 !
 ! GLOBAL RULES
@@ -705,7 +705,7 @@
 ###scc-mask
 ###cookiesAlert
 ###layer_cookie
-~nike.com##.cookies-popup:not(body):not(html)
+~autoersatzteile.de,~nike.com##.cookies-popup:not(body):not(html)
 ###user-cookie-message
 ###cookie-information
 ##div[aria-describedby*="cookie-info"]
@@ -833,7 +833,7 @@
 ###messcookie
 ###cookieView
 ###cookiealert
-##.cookiealert:not(body):not(html)
+~visti.it##.cookiealert:not(body):not(html)
 ###cookie-policies
 ##.cbar_banner:not(body):not(html)
 ##.info_cookie:not(body):not(html)
@@ -7174,7 +7174,7 @@
 ##.UPM__PrivacyRibbon:not(body):not(html)
 ##.main-cookie-bar-container
 ##.cookies-aviso:not(body):not(html)
-##.popup--cookies
+~autoersatzteile.de##.popup--cookies
 ###CookiPopin
 ##.rp-cookie-banner:not(body):not(html)
 ###cookieNoticeContent
@@ -12541,7 +12541,7 @@
 ##.cookie-message__wrap
 ###CookieReportsBannerAZ
 ###EUcookieBanner
-###root ~ script[src*="cdn-client.medium.com"] ~ div > div:not([role]):not([tabindex])
+###root ~ script[src*="cdn-client.medium.com"] ~ div > div:not([role]):not([tabindex]):not([id]):not([class*="jfk"]):not([class*="gtx"])
 ###gdpr-cookie-message-overlay
 ###unitcookieonpageBar
 ##.mm-cookie-banner
@@ -13275,7 +13275,7 @@
 ##.cookie-preferences-dialog
 ###cookies.notification.active
 ##.cookies-overly
-##.cookies-popup__wrapper
+~autoersatzteile.de##.cookies-popup__wrapper
 ###divCookiesPopup
 ###__next [class*="cookieBanner"]
 ##.cookie-notifier-section
@@ -13652,6 +13652,7 @@
 ###js_euCookieBanner
 ##.tracking-consent ~ .modal-backdrop
 ##.tracking-consent ~ .veil
+###cookieconsent-sticky
 !
 ! CUSTOM RULES
 !
@@ -20302,7 +20303,6 @@ geiger-edelmetalle.de##div[class*="cookie-consent"]
 honeygain.com###root > footer ~ div, #root > div + div + div:last-child
 castforward.de##.footer-box ~ div
 greatis.com###cookie-greatis
-medtronic-diabetes.nl##.block-medtronic-cookie
 forget.finance###root > .MuiBox-root
 perfectpetinsurance.co.uk###root > div > div:first-child:not(:only-child)
 dictionnaire-synonyme.com##.cookies
@@ -21067,7 +21067,6 @@ lotuscars.com###consent-modal
 edclub.com##.__CC_popup
 vastervik.se##.cookies
 webflow.com###consent-container
-motorola.com.br###motorola-cookies
 mav.hu##app-cookie
 yokanavi.com##.agreement
 fotor.com##div[class*="UseCookie"]
@@ -21832,10 +21831,6 @@ gns3.com###oio-container > div + div + div ~ div:last-child
 haerke.de###seite > div[style*="absolute"]
 riserapp.com##.Cookie
 webmdhealthservices.com##.cookiePolicyModal
-workspace.google.com##main > div:last-child:not(only-child)
-business.google.com###CookieDialog
-santatracker.google.com##santa-notice
-play.google.com###gb iframe[src*="ogs.google."][src*="widget/callout"]
 truevirtualworld.com##.card-cookie
 punpro.com##div[class*="CookieSession"]
 siamsport.co.th###popup-ss
@@ -22188,7 +22183,6 @@ fashionunited.uk##.MuiSnackbar-root
 fashionunited.de##.MuiSnackbar-root
 fashionunited.nl##.MuiSnackbar-root
 fashionunited.be##.MuiSnackbar-root
-fi.google.com##span[jsslot] > div > div > div > span[jsslot] > div[data-visible="true"]
 hoppscotch.io##.toasted-container
 balluff.com##div[x-data*="ConsentDialog"]
 conduktor.io##.cookie-though
@@ -22240,7 +22234,6 @@ hertz.co.uk###new_cookie_container
 neo24.pl##div[class*="cookiesBlock"]
 mylife.com##.ccpa-container, .eula-terms
 picrew.me##.st-Terms_Wrapper
-levykauppax.fi###cookieconsent-sticky
 www-youtube-com.translate.goog##ytd-consent-bump-v2-lightbox, tp-yt-iron-overlay-backdrop
 kvwl.de##.m-react-ccm
 corona-kvwl.de##.m-react-ccm
@@ -22715,6 +22708,16 @@ interactivebrokers.co.uk###cookie-modal
 sygic.com###cookie-modal
 hendrix-genetics.com##.cookie-container
 woolworth.de###CybotCookiebotDialog
+tise.com###app > nav + div ~ div
+hardwareinside.de##.notice--cookieAdvanced
+motorola.com.br###motorola-cookies
+motorola.com.ar###motorola-cookies
+whos-perfect.de###cookie-consent
+workspace.google.com##main > div:last-child:not(only-child)
+business.google.com###CookieDialog
+santatracker.google.com##santa-notice
+play.google.com###gb iframe[src*="ogs.google."][src*="widget/callout"]
+fi.google.com##fi-cookie-consent
 !
 ! SCRIPT BLOCKING
 !
@@ -23235,6 +23238,7 @@ cookies.ptj.de
 /cookieseubox.js
 /cookie/cc_cookie.js
 /cookieConsent.min.js
+/category-assets/experiences/recurring/cookies
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
