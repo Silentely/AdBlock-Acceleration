@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: kbD0JYabHQ1tcHLf3fcWoA
+! Checksum: SxtTPAxGI1FzUdGdmz4w9Q
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202301062008
-! Last Modified: 2023年01月06日 20:08
+! Version: 202301070204
+! Last Modified: 2023年01月07日 02:04
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -1373,6 +1373,7 @@ ubmcmm.baidustatic.com
 ###ad > .pre-img
 ###ad-SNSSplashAd
 ###ad1[onclick="window.open(this.url)"]
+###ad1[style^="position:"]
 ###adBody07
 ###adLeftFloat
 ###adRightFloat
@@ -2108,15 +2109,21 @@ ubmcmm.baidustatic.com
 /\.zdx[0-9]{1,2}\.site:/$script,third-party
 ||23.234.217.11^
 ||23.234.217.12^
+##a[href*="/ky53362.com"]
+||0s6s0.top^
 ||100ytrf.com^
 ||401aww.com^
+||51xl.xyz^$third-party
 ||5r562.cn^
 ||81xs.xyz^
 ||ahwiaw.xyz^
 ||aliyun6969.cn^
+||aol32.cn^
 ||creawww.top^
+||fyfvaxi.cn^
 ||gadscc.xyz^
 ||htbdvx.xyz^
+||huifuhuo.com^
 ||huishij.net^
 ||huitoukao.com^
 ||huiyanzhi.com^
@@ -2126,33 +2133,32 @@ ubmcmm.baidustatic.com
 ||igusoft.com^
 ||ikbgika.cn^
 ||irygym.xyz^
+||leeleo.top^$third-party
+||leiwo.xyz^
+||mdi5k.cn^
 ||neipa.xyz^
 ||njslx.cn^
 ||noiea.xyz^
 ||ofgysy.xyz^
+||pafcpd.xyz^
 ||pddbtn.xyz^
 ||ps123.online^
+||qingfengxq.com^
 ||rglctlo.cn^
 ||sange20221226.xyz^
 ||sc4mh.cn^
 ||slowbeat.fun^
 ||soqikbe.cn^
+||timothy.wang^
 ||u1011.com^
 ||unmnkkq.cn^
 ||vbgr7.cn^
 ||vec4o.fun^
 ||wpiwoo.xyz^
-||yanjiusuo.cc^
-||leiwo.xyz^
-||yzgid.cn^
 ||wzkxke.xyz^
-||leeleo.top^$third-party
-||0s6s0.top^
-||aol32.cn^
+||yanjiusuo.cc^
 ||yretx.cn^
-||fyfvaxi.cn^
-||timothy.wang^
-##A[href*="/ky53362.com"]
+||yzgid.cn^
 ##.btn[href*="/viphktv.com/"]
 ##[class][onclick*=".ununxsxs.top"]
 ##a[href$=".120ydrayy.com"]
@@ -12948,6 +12954,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||myhack58.com/Articleacb0
 ||myhack58.com^*0$script
 ||myqcloud.com/ad/
+||myqcloud.com/wp-content/uploads/huoxingyun.
 ||mysteelcdn.com/advert/
 ||mysteelcdn.com/common/*/js/img_ad.
 ||mysteelcdn.com/common/mysteel/home/v2/js/index_image.
@@ -14299,12 +14306,8 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzsky.cn/images/a_d_
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
-||myqcloud.com/wp-content/uploads/huoxingyun.
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
-jingangjing.com##.free
-jingangjing.com##.free-popup
-tmioe.com##.adtag + .entry-copyright
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -15152,7 +15155,6 @@ ccb.com.cn###leftSideAd
 kuai8.com###left_Ad
 hao.360.cn,hao.360.com###left_float
 sina.com.cn###left_focus_ad
-939394.xyz##DIV[id^="left_layer"]
 hao123.com###leftbannerv2
 xc6b.com###leftbottbox
 ri1.site,www.wenxuecity.com###leftside
@@ -16130,6 +16132,7 @@ lenovo.com.cn##.adsense-wrap
 3dmgame.com##.adshop
 qinbing.cn##.adspic_mid2
 av.movie##.adss-160x600
+tmioe.com##.adtag + .entry-copyright
 chinaz.com,gw54.com,ofweek.com,xgw5.com,yawin.cn##.adtext
 92sucai.com##.adtg2
 gdmm.com##.adtop > .module
@@ -16496,7 +16499,6 @@ hao.360.cn##.cangbao_redbags
 duba.com##.car_ads
 pixabay.com##.carbon-ad
 steamstats.cn##.card-link
-qq.com##[dt-params*="ad_creative_"]
 16888.com##.cardataclass
 htcui.com##.carousel
 byxx.com##.cataAD
@@ -16930,6 +16932,8 @@ chineseinla.com##.forum_banner_ads
 880sy.com##.fot_btom
 win7xzb.com##.four_box
 v2ex.com##.fr > a[href^="https://www.digitalocean.com/"]
+jingangjing.com##.free
+jingangjing.com##.free-popup
 1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com##.frs_act_repost_wrapper_outter
 tieba.baidu.com##.frs_pb_leadapp_pop_show
 ytbbs.com##.ftop_ad_2016
@@ -18713,6 +18717,7 @@ sina.cn##[data-href*="://sax"] + aside
 sina.cn##[data-href*="://sax"] + aside + blockquote
 sina.com.cn##[data-info^="ad_"]
 sina.cn##[data-videojc*="://sax"]
+qq.com##[dt-params*="ad_creative_"]
 sina.cn##[href*="://sax"]
 39.net##[id^="ac_im"]
 jjwxc.net##[id^="adp_"]
@@ -19353,6 +19358,7 @@ wenku.baidu.com##div[id^="html-reader-AD-"]
 wenku.baidu.com##div[id^="html-reader-banner-"]
 viu.com##div[id^="info"]
 jjhuashui.com##div[id^="jinsom-widget-slider-"]
+939394.xyz##div[id^="left_layer"]
 tyenews.com##div[id^="metaslider_widget-"]
 jd.com##div[id^="miaozhen"]
 4c.cn##div[id^="mid_ad"]
@@ -19592,7 +19598,7 @@ ldqk.xyz,masuit.com#?#.panel:-abp-has(>.panel-body>a>img)
 lenovo.com.cn#?#.imgNewText:-abp-has(>footer>.info>.source:-abp-contains(/广告/))
 lenovo.com.cn#?#a:-abp-has(>div>p:-abp-contains(广告))
 yyrtv.com##li[class*="baidu"]
-pianbb.com,pianmax.com##li[class]:not(.index):not(.hidden-ps):not(.hidden-xs):not(.active)
+pianbus.com,pianmas.com##li[class]:not(.index):not(.hidden-ps):not(.hidden-xs):not(.active)
 3g.qq.com##li[data-adtype="qbad"] > a[class^="type"]
 so.com##li[data-cpc_query]
 1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com##li[data-daid]
@@ -19836,6 +19842,7 @@ lm-us.com#@#.advertisement_above_footer
 jd.com#@#.adwords
 epubit.com#@#.article_share
 dingdong.ganji.com#@#.banner
+xchina.co#@#.banner_ad
 ishangman.com#@#.bottom_ad
 douban.com#@#.download-ad
 typecho.wiki#@#.downloadad
@@ -21024,6 +21031,7 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com##style[id^="s-"] + 
 ||b1.xiao84.com^
 ||b17.8794.cn^
 ||b7sw62.pingshu8.xyz^
+||baidu1.cardbaobao.com^
 ||baidu1.codejie.net^
 ||baiduada.babihu.com^
 ||baidujs.cnys.com^
