@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 346.202301071046
+! Version: 346.202301091048
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 07 Jan 2023 10:46 UTC
+! Last modified: 09 Jan 2023 10:48 UTC
 !
 !
 ! GLOBAL RULES
@@ -1879,7 +1879,7 @@
 ###cookiesPolicyHolder
 ##body > .ckOuter
 ##.barCookie:not(body):not(html)
-###div_cookiespolicy_notification
+~gift.be###div_cookiespolicy_notification
 ###gel-cookie-banner
 ##.cookie-compilance:not(body):not(html)
 ##.M4T-cookie:not(body):not(html)
@@ -13654,6 +13654,9 @@
 ##.tracking-consent ~ .veil
 ###cookieconsent-sticky
 ##.fs-cc > [fs-cc]
+##.notice--cookieAdvanced
+###cookie_manager_body_overlay
+##.tx-nim-cookie-consent
 !
 ! CUSTOM RULES
 !
@@ -15994,7 +15997,6 @@ sunny-dessous.de##.cookie_licence
 rynekzdrowia.pl##.rodo
 telering.at##.uc-fab.uc-fab-open
 dijaspora.online##.cookie-uslovi
-jetbrains.com##.jba-agreement-panel
 kaspersky.pt##.notification-bar.bottom
 verkkokauppa.com##.vk-cookie-notification
 grrif.ch###RGPD
@@ -19966,7 +19968,6 @@ kitchentime.com##.cookie
 kiloo.com##.cmp-main
 zebrapen.ca##.spu-box
 linfusion.fr##.modal-cookie
-bigmeatlove.de###consent
 idera.com##.idCookiePolicyBanner
 nikkei.com##.k-privacy, #ccpa-block
 dreame-technology.com##.jsFixedMessage
@@ -20539,7 +20540,6 @@ spoferan.com##.fixed.overlay--active
 codit.eu##.langSelector
 ketnet.be###root > div > div:last-child
 valitor.is##.disclaimer
-hejto.pl##footer ~ .fixed
 hrt.hr###__next > div > .fixed
 genesis.com##.privacy-dialog
 3dprinting.com##.mdl-js-bigsnackbar
@@ -21244,7 +21244,6 @@ petlove.com.br##.card-bottom
 farmaciasdirect.com##.fd-cookies
 posti.fi###consent-popup
 tresorit.com##main ~ aside, sticky-notification
-bandaancha.eu##.euCk
 hertz.ca##div[class*="PrivacyPolicyBanner"]
 sagepub.com##header [role="alert"]
 theartnewspaper.com###__next > div > .fixed
@@ -22708,7 +22707,6 @@ sygic.com###cookie-modal
 hendrix-genetics.com##.cookie-container
 woolworth.de###CybotCookiebotDialog
 tise.com###app > nav + div ~ div
-hardwareinside.de##.notice--cookieAdvanced
 motorola.com.br###motorola-cookies
 motorola.com.ar###motorola-cookies
 whos-perfect.de###cookie-consent
@@ -22720,6 +22718,13 @@ fi.google.com##fi-cookie-consent
 bigcommerce.com##div[class*="ConsentManager"]
 otcmarkets.com###userAgreementBanner
 stockhouse.com##.sh-cookie-dialog
+hejto.pl##footer ~ .fixed
+insolve.hr###cookieModal
+jetbrains.com##.jba-agreement-panel
+bigmeatlove.de###consent
+long-covid.at###consent
+koketsfavoriter.se##.cookie
+iru.ru###policyBlockForFirstVisit
 !
 ! SCRIPT BLOCKING
 !
@@ -23241,6 +23246,8 @@ cookies.ptj.de
 /cookie/cc_cookie.js
 /cookieConsent.min.js
 /category-assets/experiences/recurring/cookies
+/storage/ui/cookies-banner
+/cookiedisturber/*
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23344,6 +23351,7 @@ consent.scm-verlagsgruppe.de
 /wp-content/plugins/consent-magic-pro
 ||7gra.us/consentbar$script
 ||consent-bist.de/public/app.js$script
+||consent.digiapi.com/consent.js$script
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -23665,7 +23673,6 @@ api.brookiebot.com
 /superficialeyes.com
 /childlikeform.com
 /chickensstation.com
-/basketballbelieve.com
 ||pcz.pl/static/js/moo-cooker.js$script
 /eucd/eucd.min.js
 ||cinabre.sudoc.abes.fr/psi_gui/js/bandeau.js$script
