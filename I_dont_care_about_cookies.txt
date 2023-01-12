@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 346.202301091048
+! Version: 346.202301121257
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 09 Jan 2023 10:48 UTC
+! Last modified: 12 Jan 2023 12:57 UTC
 !
 !
 ! GLOBAL RULES
@@ -1767,7 +1767,7 @@
 ##.bb-header__accept-cookies
 ###platform_cookie_policy_bar
 ###cnill_banner
-###nq_cnilbanner
+~leslipfrancais.fr###nq_cnilbanner
 ###noticeAboutCookies
 ###cookiePreferences_front-end
 ##.cookieheight:not(body):not(html)
@@ -10252,7 +10252,7 @@
 ###gh-cookie-hint
 ~ffm.to,~orcd.co,~ditto.fm,~backl.ink##.privacy-notice-gdpr
 ###wf_cookie_notice_wrapper
-~sovendus.com###BorlabsCookieBox
+~sternwarte-muenchen.de,~sovendus.com###BorlabsCookieBox
 ###gdprToolbar
 ###__accept_cookie[data-position="bottom"]
 ###gfbsmd_cookiepolicy
@@ -13657,6 +13657,7 @@
 ##.notice--cookieAdvanced
 ###cookie_manager_body_overlay
 ##.tx-nim-cookie-consent
+##.fixed[x-data*="CookieBanner()"]
 !
 ! CUSTOM RULES
 !
@@ -20190,7 +20191,6 @@ covid19.gov.lv##.gdpr_discplaimer
 data.gov.lv###AnalyticsPrompt
 farmina.com###cookies
 rum21.no###root > div:last-child > span
-pracuj.pl##.cookie-agreements
 harvard.edu###osmyModal
 hellospain.de##.st_notification_wrap
 pushsquare.com##.dgp-consent
@@ -22383,7 +22383,6 @@ thegoodocs.com##.cookie__form
 lordicon.com###cookies
 eib.org###eib-popup-policy, .cookies-home_overlay
 assura.ch###__next > div[class] > div[display]
-filen.io###cookie-consent
 capcut.com##.lv_cookie_banner-wrapper
 hyundai.com##.mainTopBanner
 hyundai.com.br##.footertextbox
@@ -22447,7 +22446,6 @@ slupsk.eu##body > div > div[style*="182968"], body > #cookies
 fizyka.org###pp
 tusclasesparticulares.com###pp
 edywerder.ch##.kadence-conversion-banner
-corriere.it##.tp-modal.manine-modal
 fxhome.com##.elementor-location-footer[data-elementor-type="section"], section[class*="cookiesContainer"]
 dreamersforum.nl###cookiewarning_header
 piensasolutions.com##.drop[name="cookies"]
@@ -22610,7 +22608,6 @@ optomaeurope.com###msgbg
 stagobel.be##div[x-data*="alpineGdpr"]
 monuta.nl##monuta-cookie-compliance-banner
 nplus1.ru##footer .fixed
-castorama.pl##.background-overlay
 joomshaper.com###cookie-consent
 onlineradiobox.com##.modal--cookies
 puzzlegarage.com##.modal--cookies
@@ -22635,7 +22632,6 @@ dreamworks.com##.notice-modal
 framer.com##.cy-cookieBanner
 back4app.com##footer ~ .w-full.fixed
 rbainvest.hr###cd-module-main
-rba.hr###cd-module-main, #root ~ reach-portal
 mi.com##.micloud-app > div > div[class*="policy"], .cookie-privace
 smahospital.jp##.p-gdpr
 vr.it###cookie
@@ -22725,6 +22721,13 @@ bigmeatlove.de###consent
 long-covid.at###consent
 koketsfavoriter.se##.cookie
 iru.ru###policyBlockForFirstVisit
+pracuj.pl##div[data-library*="cookie-agreement"]
+castorama.pl##.background-overlay, .cookieBar-darkening::before
+suntransfers.com##.c-alert-cookie
+rba.hr###cd-module-main, #root ~ reach-portal > .fixed > .backdrop-filter
+arbeitsagentur.de###nsyCookieBanner
+ampli.com.br##cookie-police-bar
+filen.io###__next > div ~ div, #root > div ~ div
 !
 ! SCRIPT BLOCKING
 !
@@ -23248,6 +23251,7 @@ cookies.ptj.de
 /category-assets/experiences/recurring/cookies
 /storage/ui/cookies-banner
 /cookiedisturber/*
+/wp-content/plugins/lightweight-cookie-notice
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23262,7 +23266,7 @@ wpjslib-chunk-consent-form.js^
 ||libertatea.ro/consent/config.js$script
 consent-notice.magix.com
 /taunton-user-consent-eu
-||consensu.org/t/consent_$script,domain=~softzone.es
+||consensu.org/t/consent_$script
 consentmanager.mgr.consensu.org$domain=~sourceforge.net|~webfail.com|~sudoku-aktuell.de
 /consently.min.js
 ||s.adroll.com/j/consent.js$script
@@ -23755,7 +23759,6 @@ tag.goadopt.io
 ||hu-manity.co/hu-banner$script
 /js/rgpd/*
 /module-rgpd/*
-/rcs_cpmt/*$domain=~video.corriere.it
 /bloc/django/ckcsfrg
 ccm19.vucx.de
 /avia-bootstrap/js/klaro/*
