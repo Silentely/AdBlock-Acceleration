@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 346.202301121257
+! Version: 346.202301131126
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 12 Jan 2023 12:57 UTC
+! Last modified: 13 Jan 2023 11:26 UTC
 !
 !
 ! GLOBAL RULES
@@ -13426,7 +13426,7 @@
 ##body > .btn-cookie
 ###popup-cookie-container
 ##.tracking-consent-popup.modal
-###ppms_cm_popup_overlay[class*="cm"]
+~campact.de###ppms_cm_popup_overlay[class*="cm"]
 ##.tna-cookie-banner
 ##.tc-banner.tc-banner--active
 ##.modal_mask.cookies
@@ -13658,6 +13658,7 @@
 ###cookie_manager_body_overlay
 ##.tx-nim-cookie-consent
 ##.fixed[x-data*="CookieBanner()"]
+###app > #consent-panel.legal-consent
 !
 ! CUSTOM RULES
 !
@@ -21421,7 +21422,6 @@ nocowanie.pl###site-navigation ~ div
 teliacarrier.com###modal-cookies-general
 lokinn.com###toast-container
 kfcvisit.com###toast-container
-dr-braunger.de##.tx-dm-cookies
 nano.org##.cookie-consent
 liste-finanzamt.de###dsgvo
 fairgarage.com###dsgvo
@@ -21811,7 +21811,6 @@ hifi4you.de###consent
 send.cz##.cookie-ok
 deutsches-sportabzeichen.de###cookieman-modal
 redhotpawn.com###cookieConsentElId
-gettr.com##.app-content > div + div:last-child
 escavador.com##.c-popup-consentimento
 vizjer.pl###cookies
 eni.com##c-ecp-cookies-banner
@@ -22590,8 +22589,6 @@ epo.org###matomoBanner
 loteriamkcafe.pl###pop_up
 bloomreach.com##.exp-cookies-obal
 frigelar.com.br###modalPrivacyPolicy
-energiauutiset.fi##.ltcn
-vitriini.fi##.ltcn
 hospitalesparque.es###gdpr-modal
 solicitor.info###msgbg
 optoma.com##.cookie--wrap, .cookieBackgaround
@@ -22728,6 +22725,11 @@ rba.hr###cd-module-main, #root ~ reach-portal > .fixed > .backdrop-filter
 arbeitsagentur.de###nsyCookieBanner
 ampli.com.br##cookie-police-bar
 filen.io###__next > div ~ div, #root > div ~ div
+energiauutiset.fi##.ltcn
+vitriini.fi##.ltcn
+arbesko.com##.ltcn
+remitly.com##footer > [class^="footer"] ~ div
+coe.int##.coe-cookies-consent-popup
 !
 ! SCRIPT BLOCKING
 !
@@ -23252,6 +23254,7 @@ cookies.ptj.de
 /storage/ui/cookies-banner
 /cookiedisturber/*
 /wp-content/plugins/lightweight-cookie-notice
+/typo3conf/ext/dm_cookies/*
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23516,6 +23519,7 @@ cmp.pafo.fairbung.com
 ||cmps.o2.cz/delivery$script
 /tcf-cmp.min.js
 ||fastcmp.com/fast-cmp.js$script
+||veodys.fr/api/cmp$script
 ||gofundme.com/js/3.0/visitorCookie.js$script
 /CookiesDirective
 CookieAccept/affirmation.js
@@ -24060,6 +24064,7 @@ ccm.$domain=abload.de
 /cookie-box$domain=schmalz.com
 /popupConsent/*$domain=the-fence.com
 /cookie-files/*$domain=paradoxwikis.com
+cmp.quantcast.com$domain=gettr.com
 !
 ! FILTERLIST ONLY
 !
