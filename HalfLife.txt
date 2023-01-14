@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: lBYlo+aOaT7tR7WAdxc8Tw
+! Checksum: V9273orrhCmIqUN11MDLgw
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202301140827
-! Last Modified: 2023年01月14日 08:27
+! Version: 202301141404
+! Last Modified: 2023年01月14日 14:04
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -612,6 +612,7 @@ netflix.mom,netflixya.com,yanetflix.com##+js(aopw,document.onkeydown)
 4kya.com###player_pause
 ||wp.com/netflixya.com/upload/$image
 ||yanetflix.com/upload/vod/$image
+www.sbdm.net##.dplayer-web-fullscreen-fix .billhao-head-image, .dplayer-web-fullscreen-fix #topnav
 yatu.tv##.dplayer-web-fullscreen-fix #tburl,#loadtop,[id^=myas],#myds1,#daohang
 yatu.tv,yhdm15.com##+js(set,document.oncontextmenu,trueFunc)
 ch-hr12333.com
@@ -2267,6 +2268,8 @@ ubmcmm.baidustatic.com
 ||koatkm.xyz^
 ||scbt.asia^
 ||laafrce.cn^
+||xh33g.net^
+||xjpphoto.com^
 ##.btn[href*="/viphktv.com/"]
 ##[class][onclick*=".ununxsxs.top"]
 ##a[href$=".120ydrayy.com"]
@@ -18648,7 +18651,8 @@ cangjige.net##.wp[style="height:36px;padding-top:15px;"]
 tui18.com##.wp[style^="width:"]
 start.firefoxchina.cn##.wrap > div[style]:last-child
 99a21.com##.wrap-head-spots
-939394.xyz##.wrap.mb8.mt5 + div[class]:not(.outer)
+939394.xyz##.allBg > DIV[style="display: block;"]
+939394.xyz##.wrap.mb8.mt5 ~ DIV[class]:not(.outer)
 123.com.cn##.wraper_ad
 5yfz.com##.wrapper > p
 image.baidu.com##.wrapper_dot_box.dot_black
