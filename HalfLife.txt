@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: 0QCnUhuqz4w9IJi3Ugqg1A
+! Checksum: lBYlo+aOaT7tR7WAdxc8Tw
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202301140204
-! Last Modified: 2023年01月14日 02:04
+! Version: 202301140827
+! Last Modified: 2023年01月14日 08:27
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -449,14 +449,13 @@ yy.com,le.com##+js(nowebrtc)
 ||tracker.$xhr,websocket,script,ping
 ||p2p.$xhr,websocket,ping,domain=~huya.com|~binance.com
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
-m.youku.com,v.youku.com##+js(nano-stb, r--,, 0.02)
-!m.youku.com,v.youku.com##+js(cookie-remover, cna)
+!m.youku.com,v.youku.com##+js(nano-stb, r--,, 0.02)
 atm.youku.com
 cad.youku.com
 @@||mmstat.com^$domain=youku.com
-||cibntv.net/youku/$media,important
+||cibntv.net/youku/$media,mp4
 ||valipl.cp31.ott.cibntv.net/$media
-|https://static.youku.com/index/js/ikuAdapterNew.js
+!|https://static.youku.com/index/js/ikuAdapterNew.js
 ||sealine.youku.com/yk/*callback=adpagesdk$script
 iqiyi.com##.black-screen[data-cupid="adblock-blackscreen"]
 iqiyi.com##div[data-adzone],#block-V
@@ -2263,6 +2262,11 @@ ubmcmm.baidustatic.com
 ||ztwrnpd.cn^
 ||ztxstudy.club^
 ||zunnnh.xyz^
+||jqtzw.xyz^
+||ddqhnjb.cn^
+||koatkm.xyz^
+||scbt.asia^
+||laafrce.cn^
 ##.btn[href*="/viphktv.com/"]
 ##[class][onclick*=".ununxsxs.top"]
 ##a[href$=".120ydrayy.com"]
@@ -11153,7 +11157,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||bqiapp.com/api/config/ad?
 ||brand.sogou.com/micro?yyid=
 ||bs.baidu.com/app-ads%
-||bt-tt.com/ad.js
+||bt-tt.com/ad
 ||bt.cn/bbs/newsimg/
 ||bt121.net/ats/
 ||bt888bf.com/da.aspx
