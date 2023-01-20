@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: NVPq5qDq+CrKod51+GNR6A
+! Checksum: 1R9jOfgb7tn8K3WZQqWsgg
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202301192009
-! Last Modified: 2023年01月19日 20:09
+! Version: 202301200206
+! Last Modified: 2023年01月20日 02:06
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -500,7 +500,6 @@ reachmax.cn
 scorecardresearch.com
 tencentmind.com
 xtgreat.com
-@@||g.w.bilicdn1.com/$script,domain=bilibili.com
 bilibili.com##.ad-report, .ad-floor
 bilibili.com##.gg-floor-module,#slide_ad,a[href^="//cm.bilibili.com"]
 ||api.bilibili.com/x/web-show/res/loc?pf=$~script
@@ -592,7 +591,7 @@ statsy.net
 ||dyncdn.me/static/20/js/showads.js$script
 ||dyncdn.me/static/20/js/expla$script
 age.tv,agemys.net##+js(noeval-if, devtoolsDetector)
-||toutiaoimg.com/origin/$image,domain=mgtv1.org|agemys.net|acgndmku.com|subaibaiys.com
+||toutiaoimg.com/origin/$image,domain=agemys.net|acgndmku.com|subaibaiys.com
 cdn.sosrom.cn
 hanmidy.com,bimiacg4.net##+js(acis,Object.defineProperty,location.href)
 d58zz.com
@@ -613,13 +612,9 @@ netflix.mom,netflixya.com,yanetflix.com##+js(aopw,document.onkeydown)
 ||wp.com/netflixya.com/upload/$image
 ||yanetflix.com/upload/vod/$image
 www.sbdm.net##.dplayer-web-fullscreen-fix .billhao-head-image, .dplayer-web-fullscreen-fix #topnav
+|https://dd-static.jd.com/ddimg/jfs/t1/173245/15/28822/346324/62fcb4b0Eb437d047/136a1e04890320b8.jpg$image,domain=subaibaiys.com
 yatu.tv##.dplayer-web-fullscreen-fix #tburl,#loadtop,[id^=myas],#myds1,#daohang
 yatu.tv,yhdm15.com##+js(set,document.oncontextmenu,trueFunc)
-ch-hr12333.com
-cppoc.com
-g1c5.com
-geoparker.net
-jinrongwang.net
 onenews.vip
 quickapp.cn
 v4dwkcv.com
@@ -1385,8 +1380,6 @@ ubmcmm.baidustatic.com
 ###ad_box1
 ###ad_box2
 ###ad_full
-###fc_foot > #f_skyf
-##.m_acmsd
 ###ad_globle_div
 ###ad_headerbanner
 ###adad
@@ -1436,6 +1429,7 @@ ubmcmm.baidustatic.com
 ###eis_pad1
 ###eis_pad2
 ###everydayadv_mask
+###fc_foot > #f_skyf
 ###fixed-bottom-modal[style^="right:"][style$="px; display: block;"]
 ###fk_faiVisitStateAd
 ###floatAd
@@ -1834,6 +1828,7 @@ ubmcmm.baidustatic.com
 ##.lol_ad
 ##.lyzm-prevent
 ##.m1938-container
+##.m_acmsd
 ##.main-ad-l
 ##.main-ad-r
 ##.main-ad-r + .topad
@@ -2108,9 +2103,9 @@ ubmcmm.baidustatic.com
 /\.(cc|com|top|xyz)\/i\/v$/$third-party,xmlhttprequest
 /\.(com|cn|top|xyz)\/(j|K)\/[0-9]{6}$/$script,third-party
 /\.(cyou|ink)\/[a-z]{4}_[0-9]{5}_[a-z]{5}js\?/$script,third-party
+||121.204.246.13^
 ||23.234.217.11^
 ||23.234.217.12^
-||121.204.246.13^
 ##a[href*=".aff007.pro"]
 ##a[href*="/331.run"]
 ##a[href*="/832106.top"]
@@ -2134,26 +2129,31 @@ ubmcmm.baidustatic.com
 ||81xs.xyz^
 ||8ccrv.xyz^
 ||ahwiaw.xyz^
+||ajkcdpm.cn^
 ||aliyun6969.cn^
 ||aol32.cn^
 ||aqtcw.cn^
 ||aswtai.xyz^
 ||banhui.xyz^
+||bavxxf.xyz^
 ||bfdaawe.top^
 ||bgjjwl.cn^
 ||bkisss.com^
 ||bqg16.cc^
 ||bqrkubs.cn^
 ||bqtwbx.xyz^
+||buttn.cyou^
 ||cerfbup.xyz^
 ||creawww.top^
 ||cuwuqo.xyz^
 ||damhixs.cn^
 ||ddqhnjb.cn^
 ||dfepm.xyz^
+||dfghaqea.xyz^
 ||dgozp.com^
 ||doracms.cn^
 ||doublechen.online^
+||doubleclicks.biz^
 ||dxgyl.xyz^
 ||e8jp9.com^
 ||ebzqyow.cn^
@@ -2167,6 +2167,7 @@ ubmcmm.baidustatic.com
 ||frpns.com^
 ||fujbjb.xyz^
 ||fyfvaxi.cn^
+||fyzbvwb.cn^
 ||gadscc.xyz^
 ||geiaxbk.cn^
 ||ggrhsx.cn^
@@ -2181,6 +2182,7 @@ ubmcmm.baidustatic.com
 ||hualu.live^
 ||huifuhuo.com^
 ||huihemou.com^
+||huijizhen.com^
 ||huishij.net^
 ||huitoukao.com^
 ||huiyanzhi.com^
@@ -2192,6 +2194,7 @@ ubmcmm.baidustatic.com
 ||igusoft.com^
 ||ikbgika.cn^
 ||ikbhgj.cn^
+||imassg.xyz^
 ||inkuae.com^
 ||ionqv.cn^
 ||irygym.xyz^
@@ -2257,6 +2260,7 @@ ubmcmm.baidustatic.com
 ||rdoybkd.cn^
 ||renzhongjiaoyu.xyz^
 ||rglctlo.cn^
+||ruyqiolnz.cyou^
 ||salangane.asia^
 ||sange20221226.xyz^
 ||sc4mh.cn^
@@ -2324,8 +2328,10 @@ ubmcmm.baidustatic.com
 ||yretx.cn^
 ||ysgekq.xyz^
 ||ytpae.xyz^
+||yunwu.red^
 ||yuqingby.fun^
 ||yzgid.cn^
+||zdrvtmj.cn^
 ||zeipw.xyz^
 ||zmdtcw.cn^
 ||znktkt.cn^
@@ -2335,17 +2341,6 @@ ubmcmm.baidustatic.com
 ||ztxstudy.club^
 ||zunnnh.xyz^
 ||zxtkfvm.cn^
-||imassg.xyz^
-||ruyqiolnz.cyou^
-||fyzbvwb.cn^
-||zdrvtmj.cn^
-||bavxxf.xyz^
-||huijizhen.com^
-||buttn.cyou^
-||dfghaqea.xyz^
-||doubleclicks.biz^
-||ajkcdpm.cn^
-||yunwu.red^
 ##.btn[href*="/viphktv.com/"]
 ##[class][onclick*=".ununxsxs.top"]
 ##a[href$=".120ydrayy.com"]
