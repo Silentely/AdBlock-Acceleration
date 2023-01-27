@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 346.202301251129
+! Version: 346.202301271051
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 25 Jan 2023 11:29 UTC
+! Last modified: 27 Jan 2023 10:51 UTC
 !
 !
 ! GLOBAL RULES
@@ -547,7 +547,7 @@
 ###cookietext
 ###cookie-notice-uk
 ###panel_cookie_dol
-~ebilet.pl,~awwwards.com,~paradoxplaza.com###cookies-info
+~ebilet.pl,~paradoxplaza.com###cookies-info
 ###cookiesPanel
 ###cookie-cnil-box
 ###dr-cookie-info-box
@@ -794,7 +794,7 @@
 ##.cookie_ribon:not(body):not(html)
 ##.infoCookies:not(body):not(html)
 ###cookieInformacja
-~towerhousewares.co.uk,~stadtwerke-flensburg.de,~hepster.com,~zentrale-pruefstelle-praevention.de,~bookmygarage.com,~finom.co,~deineapotheke.at,~swedbank.se,~swedbank.com,~planeo.de,~dogedash.com,~teacheconomy.de,~sevdesk.de,~sevdesk.at,~nintendo.com,~veygo.com,~puratos.pl,~bike-components.de,~bremerhaven.de,~onlinedepartment.nl,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~monese.com,~nuxeo.com,~opngo.com,~sachsenallee.de,~melcloud.com,~intersport.de##.cookie-banner:not(body):not(html)
+~towerhousewares.co.uk,~stadtwerke-flensburg.de,~hepster.com,~zentrale-pruefstelle-praevention.de,~bookmygarage.com,~deineapotheke.at,~swedbank.se,~swedbank.com,~planeo.de,~dogedash.com,~teacheconomy.de,~sevdesk.de,~sevdesk.at,~nintendo.com,~veygo.com,~puratos.pl,~bike-components.de,~bremerhaven.de,~onlinedepartment.nl,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~monese.com,~nuxeo.com,~opngo.com,~sachsenallee.de,~melcloud.com,~intersport.de##.cookie-banner:not(body):not(html)
 ###cookienotice
 ###overlay-cookielaw-form
 ##.cookie-info-wrapper:not(body):not(html)
@@ -8459,7 +8459,7 @@
 ###popup--cookies
 ###ckinfo > .alert-dismissible
 ###shaim_cks
-###GibsonPrivacy
+##.global-overlays__overlay[data-tag-name*="cookie-banner"]
 ###privacy-policy-link-wrapper
 ##.CookieNoticeBanner:not(body):not(html)
 ###iframe-wrap-netinfo-consent
@@ -9554,7 +9554,7 @@
 ##.cookie-container-show > #cookie-header-position
 ###mtt-cookie-notice
 ##.custom-cookie-bar:not(body):not(html)
-##.cookie-info__container
+~finom.co##.cookie-info__container
 ###rgpd_bloc
 ###form ~ section[id*="CookiesNotification"]
 ###policy-div > .policy-div-sub
@@ -11908,7 +11908,7 @@
 ##.gdprCookieAlertPopup
 ###cookieCardBg
 ##.cookie-notification__bar
-~skuola.net,~tgcom24.mediaset.it,~mediasetplay.mediaset.it,~nablawave.com##.iubenda-cs-content
+~nablawave.com,~skuola.net,~tgcom24.mediaset.it,~mediasetplay.mediaset.it##.iubenda-cs-content
 ##.universalcookiedisclaimer
 ###gdpr-banner-wrapper
 ###sp-cc[action*="cookiepref"]
@@ -16052,7 +16052,6 @@ jdvhotels.com###ccs-notification
 delock.de###cookie_private
 neoprofs.org###page-footer ~ div
 classic-trader.com###jGrowl
-soompi.com###gdpr-root
 thomsonreuters.com##.dismissible-banner, .pl_announcements
 trafikverket.se###ctl00_Content_EmptyPage_CoockieInformation_CookieContainer
 openweathermap.org###stick-footer-panel
@@ -22092,7 +22091,6 @@ sofiacomputers.net###uslpolzvane
 stormgain.com##div[id*="gdprcookies"]
 adulttime.com##.CookieConsent-Wrapper-BackgroundBox
 calendardate.com##footer ~ [style*="fixed"]
-lynkco.com.cn##.privacyPolicy
 visiontimes.com##.cookieNotice--isVisible
 boords.com###__next > .fixed[class*="bottom"]
 sparebank1.no###opt-in
@@ -22725,6 +22723,16 @@ mazeikiai.lt##.alert-info
 addgene.org##.alert-info
 lada.ru###main-scroll-layer ~ div
 kingscross.co.uk##.argent_consent
+ixbt.com##.gdpr-root
+localrent.com##.privacy_policies
+gibson.com###cookieModal
+epiphone.com###cookieModal
+oko.press##.fixed.bottom-0
+carvertical.com##div[class*="BisquitsBanner"]
+frenchentree.com##.dpl-cookie-banner
+sonarworks.com##footer ~ .sticky
+lynkco.com##footer ~ div[style*="fixed"]
+lynkco.com.cn##.privacyPolicy
 !
 ! SCRIPT BLOCKING
 !
@@ -23251,6 +23259,7 @@ cookies.ptj.de
 /wp-content/plugins/lightweight-cookie-notice
 /typo3conf/ext/dm_cookies/*
 /cookie-consent-dialogue.js
+/dist/scripts/cookie-control
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23731,6 +23740,7 @@ wpjslib-chunk-notification.js^
 /ccnst/ccbundle.min.js
 ||cc.mpa-web.de/public/app.js$script
 /klaro/klaro-pe.js
+/users/ccbundle2.min.js
 /iubenda_cs$domain=~radiomontecarlo.net|~video.repubblica.it|~video.lastampa.it|~nablawave.com|~buondi.it|~tgcom24.mediaset.it|~mediasetinfinity.mediaset.it|~telerama.fr|~skuola.net
 /amp-user-notification-
 ||sn.sanoma.fi/js/sccm$script
@@ -24060,6 +24070,7 @@ ccm.$domain=abload.de
 /cookie-files/*$domain=paradoxwikis.com
 cmp.quantcast.com$domain=gettr.com
 /wrapperMessagingWithoutDetection$domain=politico.eu|lovelybooks.de|idealo.de|idealo.at|idealo.es|idealo.fr|idealo.it|idealo.co.uk|femmeactuelle.fr|hausjournal.net|lepoint.fr|chefkoch.de
+coco.we-online.com$domain=we-online.com
 !
 ! FILTERLIST ONLY
 !
