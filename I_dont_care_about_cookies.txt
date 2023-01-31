@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 346.202301271051
+! Version: 346.202301310957
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 27 Jan 2023 10:51 UTC
+! Last modified: 31 Jan 2023 09:57 UTC
 !
 !
 ! GLOBAL RULES
@@ -2721,7 +2721,7 @@
 ###CookieDisclaimer
 ##.cookiesOptin:not(body):not(html)
 ###pnlCookieMessage
-~nablawave.com###iubenda-cs-banner[style]
+~tomshw.it,~nablawave.com###iubenda-cs-banner[style]
 ##.iubenda-ibadge
 ###iubenda-cs-banner ~ #pushiub
 ###ut_cookie_warning_bar
@@ -11908,7 +11908,7 @@
 ##.gdprCookieAlertPopup
 ###cookieCardBg
 ##.cookie-notification__bar
-~nablawave.com,~skuola.net,~tgcom24.mediaset.it,~mediasetplay.mediaset.it##.iubenda-cs-content
+~tomshw.it,~nablawave.com,~skuola.net,~tgcom24.mediaset.it,~mediasetplay.mediaset.it##.iubenda-cs-content
 ##.universalcookiedisclaimer
 ###gdpr-banner-wrapper
 ###sp-cc[action*="cookiepref"]
@@ -12549,7 +12549,7 @@
 ###root .cookie.fixed-bottom
 ###page ~ [id*="cookiebar"]
 ##.dcx-cookie-consense
-##.banner[class*="cookie-consent"]
+##.banner[class*="cookie-consent"]:not(body)
 ##comply-consent-manager
 ##.cookie-consent-shadow-bg
 ###js-cookies-footer
@@ -13299,7 +13299,7 @@
 ##.popupAvisCookies
 ##.yc-cookie-banner
 ##app-cookies-notification
-##.react-box-container[data-box-key*="CookiesConsent"]
+##.amastyCookiePopup
 ###allow-cookie-container
 ###page [class*="CookieInfo"]
 ###root div[class*="cookieTip"]
@@ -22500,7 +22500,6 @@ g2a.com##.agreements-container
 insightsforprofessionals.com##.cookie-container
 icex.es###cookies, #cookies-message-new
 slidelizard.com###cookie-info-dialog
-magazineluiza.com.br##main > section ~ div:last-child
 becherovka.com##.visible_cookie_panel
 d2iq.com##.banner-alert
 morfose.flexxis.nl##footer
@@ -22733,6 +22732,11 @@ frenchentree.com##.dpl-cookie-banner
 sonarworks.com##footer ~ .sticky
 lynkco.com##footer ~ div[style*="fixed"]
 lynkco.com.cn##.privacyPolicy
+rhein-main-steht-auf.de##.privacy-settings-root
+vecer.com##div[x-show="show"] > .fixed
+them.us##.page > div[class*="MessageBanner"]
+academy.com###main-content ~ div[role="complementary"]
+magazineluiza.com.br##main > section ~ div[width="100%"]
 !
 ! SCRIPT BLOCKING
 !
@@ -23741,7 +23745,7 @@ wpjslib-chunk-notification.js^
 ||cc.mpa-web.de/public/app.js$script
 /klaro/klaro-pe.js
 /users/ccbundle2.min.js
-/iubenda_cs$domain=~radiomontecarlo.net|~video.repubblica.it|~video.lastampa.it|~nablawave.com|~buondi.it|~tgcom24.mediaset.it|~mediasetinfinity.mediaset.it|~telerama.fr|~skuola.net
+/iubenda_cs$domain=~radiomontecarlo.net|~tomshw.it|~video.repubblica.it|~video.lastampa.it|~nablawave.com|~buondi.it|~tgcom24.mediaset.it|~mediasetinfinity.mediaset.it|~telerama.fr|~skuola.net
 /amp-user-notification-
 ||sn.sanoma.fi/js/sccm$script
 /api/rest/settings/public?fields=endUserAgreement
@@ -24071,6 +24075,7 @@ ccm.$domain=abload.de
 cmp.quantcast.com$domain=gettr.com
 /wrapperMessagingWithoutDetection$domain=politico.eu|lovelybooks.de|idealo.de|idealo.at|idealo.es|idealo.fr|idealo.it|idealo.co.uk|femmeactuelle.fr|hausjournal.net|lepoint.fr|chefkoch.de
 coco.we-online.com$domain=we-online.com
+/modulos/cookies$domain=villagrancanaria.com
 !
 ! FILTERLIST ONLY
 !
