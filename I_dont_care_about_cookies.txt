@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 346.202301310957
+! Version: 346.202302040419
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 31 Jan 2023 09:57 UTC
+! Last modified: 04 Feb 2023 04:19 UTC
 !
 !
 ! GLOBAL RULES
@@ -13607,7 +13607,6 @@
 ##.gdpr-visibility-on
 ##.h-cookie-consent
 ##.gravitolightCMP-background-overlay
-##.z-cookie-alert
 ##.js-cookie-consent-box
 ##.cookies-notice__container
 ###consentsPolicyDialog
@@ -22737,6 +22736,8 @@ vecer.com##div[x-show="show"] > .fixed
 them.us##.page > div[class*="MessageBanner"]
 academy.com###main-content ~ div[role="complementary"]
 magazineluiza.com.br##main > section ~ div[width="100%"]
+veho.fi##.z-cookie-alert
+bau-tech.shop###cookie-consent
 !
 ! SCRIPT BLOCKING
 !
@@ -23488,6 +23489,7 @@ tag=ui/privacy/CookiesConsent
 /dock-privacy-settings.esm.js
 ||privacy.wum.rocks/public/app.js$script
 /tagcommander/privacy_
+/serviceform-tools/privacy/sf-privacy
 ||cmp.nextday.media/cmp$script,domain=~vi.nl|~omroepwest.nl
 cmp.dreamlab.pl
 /media/cmp/int_cmp_banner
