@@ -1,17 +1,17 @@
 [Adblock Plus 2.0]
-! Version: 346.202302040419
+! Version: 346.202302061001
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 04 Feb 2023 04:19 UTC
+! Last modified: 06 Feb 2023 10:01 UTC
 !
 !
 ! GLOBAL RULES
 !
 ###stickyCookieBar
 ##.cookiebar-bar:not(body):not(html)
-~bportugal.pt,~otpbank.ro,~anadibank.com,~e-shelter.de###sliding-popup
+~otpbank.ro,~anadibank.com,~itextpdf.com,~e-shelter.de###sliding-popup
 ###cookie_bar_top
 ###cookielaw:not(.modal)
 ~conso.ro,~daimler.com,~ihreapotheken.de,~filmboxlive.com###cookiePolicy:not(.reveal):not(.modal)
@@ -547,7 +547,7 @@
 ###cookietext
 ###cookie-notice-uk
 ###panel_cookie_dol
-~ebilet.pl,~paradoxplaza.com###cookies-info
+~paradoxplaza.com###cookies-info
 ###cookiesPanel
 ###cookie-cnil-box
 ###dr-cookie-info-box
@@ -2979,7 +2979,7 @@
 ###mention-cookies
 ###archie-widget-privacy
 ##.cookieDisclaimerContainer
-###eu-cookie-law
+###eu-cookie-law:not(a)
 ##.header-cookies:not(body):not(html)
 ##.cookie_accept:not(body):not(html):not(input):not(a):not([id*="main"])
 ###cf-cookie-banner
@@ -4364,7 +4364,7 @@
 ##.cookie-directive-container
 ###eucookiebar-outer
 ##.topmessage-cookie:not(body):not(html)
-###cookie_dialog
+~otpbank.ro,~anadibank.com,~itextpdf.com###cookie_dialog
 ##.accept-my-cookie:not(body):not(html)
 ##.cookiefloater:not(body):not(html)
 ###andytimes_privacy_div
@@ -9384,7 +9384,7 @@
 ###page-footer ~ #cookie-layer
 ##.navsticky .privacypolicy
 ###privacypolicycontainer
-~doleasingu.com,~superdrug.com##body > #privacy[style*="display"]
+##body > #privacy[style*="display"]:not(.modal)
 ##body > #privacy[style*="fixed"]
 ##body > #privacy[style*="visible"]
 ##body > #privacy[style*="transition"]
@@ -9393,7 +9393,7 @@
 ###optinmessagebg ~ #optInMessage-new
 ###notification-bars div[id*="cookie-policy"]
 ###tc_priv_CustomOverlay
-~otpbank.ro,~anadibank.com,~bitbrain.com##.eu-cookie-compliance-banner:not(body)
+~otpbank.ro,~anadibank.com,~itextpdf.com##.eu-cookie-compliance-banner:not(body)
 ~pvcvoordeel.nl##.js-cookie-popup:not(body):not(html)
 ##.max_wp_cookie_notification
 ##.full-width-bar.important[style*="block"] .notif-bar
@@ -13659,6 +13659,7 @@
 ##.cookie-notice__background
 ##.footer-cookie-section
 ##.consent-tracking--footer
+###__tealiumDNS_banner
 !
 ! CUSTOM RULES
 !
@@ -20820,7 +20821,6 @@ fernwaerme-gemeinschaft.de##.cookie-overlay::before
 lovehoney.co.uk##.dis_message
 lovehoney.com.au##.dis_message
 europe-mountains.com###cookie
-chemrxiv.org##header > [role="alert"]
 artsper.com##.ui-pnotify[aria-role*="alert"]
 gidsingezondheid.nl##footer ~ .popup_overlay
 pushkin.institute##.beono-flashmessage
@@ -21727,7 +21727,6 @@ ti.com###tiGDPRecModal
 uber.com##body > [data-baseweb="toaster"]
 cliveemson.co.uk###cookie-consent-form
 ranzijn.nl###app > .fixed
-pch.com###__tealiumDNS_banner
 picarto.tv##div[class*="CookieCompliance"]
 basic-tutorials.de##body > div:not([id]):not([class])
 goodie.pl###main-container > div > footer ~ div[class]
@@ -22733,11 +22732,19 @@ lynkco.com##footer ~ div[style*="fixed"]
 lynkco.com.cn##.privacyPolicy
 rhein-main-steht-auf.de##.privacy-settings-root
 vecer.com##div[x-show="show"] > .fixed
-them.us##.page > div[class*="MessageBanner"]
 academy.com###main-content ~ div[role="complementary"]
 magazineluiza.com.br##main > section ~ div[width="100%"]
 veho.fi##.z-cookie-alert
 bau-tech.shop###cookie-consent
+foxtrail.fjallraven.com##main ~ section
+ebilet.pl##eb-cookies-policy-dialog
+afilio.de###consent-overlay
+raeer.com###RaeerGoogleCookiesBox
+cyberfolks.pl##.cfGdprCookieConsentPopup
+silverstonetek.com##.cookie
+them.us##.page > div[class*="MessageBanner"]
+wired.com##.page > div[class*="MessageBanner"]
+figshare.com##header > [role="alert"]
 !
 ! SCRIPT BLOCKING
 !
@@ -23864,7 +23871,7 @@ CheckCookiePolicy*$domain=remixshop.com
 /gdpr-idgy$domain=vejutechnika.lt
 /pltk.js$domain=goodcontent.pl
 /surbma-yes-no-popup/*$domain=bysarahkhan.com
-/consent.js$domain=tryinteract.com|mobilejob.com|op.fi|finanz-forum.de
+/consent.js$domain=tryinteract.com|mobilejob.com|op.fi|finanz-forum.de|carhartt.com
 /consentMgmt/*$domain=comdirect.de
 /privacy.js$domain=pasztor.at
 /tealium-external/*$domain=weltverbesserer.de
