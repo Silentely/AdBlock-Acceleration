@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 346.202302061001
+! Version: 346.202302071304
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 06 Feb 2023 10:01 UTC
+! Last modified: 07 Feb 2023 13:04 UTC
 !
 !
 ! GLOBAL RULES
@@ -11377,7 +11377,7 @@
 ##.bbc-cookie-message
 ###cookie-consent-target
 ##.ng-scope[ng-controller*="cookie_consent"]
-##body > #dblclkbnr > div:not([id]):not([class])
+###__tealiumDNS_banner
 ##.active[am-cookiebanner]
 ###cpnb_warningBoxBgOverlay
 ##.wp-cookie-notice
@@ -13659,7 +13659,7 @@
 ##.cookie-notice__background
 ##.footer-cookie-section
 ##.consent-tracking--footer
-###__tealiumDNS_banner
+###consentBanner + #consentLock
 !
 ! CUSTOM RULES
 !
@@ -13999,8 +13999,6 @@ blasapisguncuevas.blogcindario.com##body > div[id][class]
 intrage.it##.BoxPrivacy
 ingemecanica.com##.encabez
 fxsolver.com###tframe
-infiniti.nl##body > .c_128
-infiniti.de##body > .c_128
 nkd.com###DIV_1
 eksiegarnia.pl###kuki
 dailyedge.ie###notify-container
@@ -14013,7 +14011,6 @@ akcneletaky.sk###infoCoo
 paysdelaloire.fr##.tx-pnfcnil
 ingyen-van.hu###figyu
 steffen-hanske.de###note
-infiniti.co.uk##body > .c_128
 firstsave.co.uk##.msgBox p
 hrportal.hu###fixdivgoogle
 miplo.pl##.error.rounded
@@ -14183,23 +14180,7 @@ enerpoint.it###container > div[style]
 qbasic.at###ckkasten-container
 sapsalis.gr##.termsnote
 sconfini.eu###sbox-window, #sbox-overlay
-ulianavalerio.it##.alert-info, .alert-warning, .alert-box
-komunitnicestiny.cz##.alert, #alert
 cyclingarchives.com###header > div[id*="zxcw"]
-destinyghosthunter.net##.alert-dismissible, .alert-dismissable, .alert--dismissable, .pmd-alert-dismissible
-auditoriaswireless.net###adk_acblock
-zs1mm.edu.pl##body > div:not([id]):not([class])
-fowtcg.it##.alert-dismissible, .alert-dismissable, .alert--dismissable, .pmd-alert-dismissible
-alcoholics-anonymous.org.uk###cook, .cook
-forumlekarza.pl###cpolicy_wrap
-ncplusgo.pl##.js-messages
-autogasnord.it##.pre-privacy-container
-moly.hu###eu
-infiniti.fr##body > .c_128
-lotus-planete.com###lotus-cookies-wrap
-docdroid.net##.ui-pnotify
-aegonalapkezelo.hu###AEGONCookieLine
-monptivoisinage.com###com-message, #bandHead
 tvgids24.nl###cbar
 theinvergordonarchive.org###CQ
 meteo-service.nl###popup-container
@@ -14317,7 +14298,6 @@ vfl.dk###vcc_container
 compassionuk.org##.notification-bar
 gmp.police.uk##.alert, #alert
 vidahost.com###vh-cookie-terms
-nissan.be##body > .c_128
 omnitel.lt##.oop-notification
 hardloopschema.nl###interContainer, #interVeil
 ahlens.se##.ah-warning
@@ -14361,7 +14341,6 @@ activexsoft.es##body > div[class*="msg-cookies"]
 doku5.com###msgWindowX
 domain.com###alertBar
 zoiglapp.de###boxes
-infiniti.hu##body > .c_128
 theerlangelist.com###privacy_note
 suzuki2wheels.be##.policy-window
 aviva.es###ventanaFlotante
@@ -21688,11 +21667,9 @@ pribram.cz##.cookies
 money.com.tr##.kvkk
 24sata.hr###didomi-host
 njuskalo.hr###didomi-host
-huffingtonpost.es###acceptationCMPWall
 independent.ie###didomi-host, a[onclick*="Didomi.preferences"]
 i-de.es##.backdropCookies, .backdropCookies + div
 relago.hr##body > .container
-notion.so###__next > section[class*="partial"]
 abercrombie.com##.flash-message[data-flash-message-group-id*="cookie-accept"]
 wolframalpha.com###__next > div > section:last-of-type
 informator.ua##.coockies
@@ -22745,6 +22722,14 @@ silverstonetek.com##.cookie
 them.us##.page > div[class*="MessageBanner"]
 wired.com##.page > div[class*="MessageBanner"]
 figshare.com##header > [role="alert"]
+notion.so###__next > div > .visibility-partial
+dfg.de##.bab-modul-cookie-consent
+skyfi.com###app-body > div > div > div > .fixed.bottom-0
+logitec.co.jp##datasign-widget-web-component
+bol.com##div[data-x="cookie-pop-up"]
+completeaquatics.co.uk##.carcona-cookie-notice
+rollstuhl-kurier.de###webwerk-cookies
+infiniti.com##.c_128
 !
 ! SCRIPT BLOCKING
 !
@@ -23272,6 +23257,7 @@ cookies.ptj.de
 /typo3conf/ext/dm_cookies/*
 /cookie-consent-dialogue.js
 /dist/scripts/cookie-control
+||am-static.com/cookie-banner$script
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23538,6 +23524,7 @@ cmp.pafo.fairbung.com
 /tcf-cmp.min.js
 ||fastcmp.com/fast-cmp.js$script
 ||veodys.fr/api/cmp$script
+||precmp.prisa.com/dist/cmp.js$script
 ||gofundme.com/js/3.0/visitorCookie.js$script
 /CookiesDirective
 CookieAccept/affirmation.js
@@ -23984,7 +23971,6 @@ trcking.min.js^$domain=canalplus.com|canal-plus.com
 /it-cc.js$domain=geze.de|geze.pl
 /ConsentInit.min.js$domain=smartphonehoesjes.nl
 /cookieser.js$domain=aco.com.pl
-/vfConsentCookiesCs.js$domain=vodafone.cz
 consent-*$domain=nwb-jobboerse.de
 /almacmp$domain=ampparit.com|etuovi.com|vuokraovi.com|arvopaperi.fi|nettikaravaani.com|nettimoto.com
 /cookie_flyout.js$domain=festo.com
@@ -24085,6 +24071,7 @@ cmp.quantcast.com$domain=gettr.com
 /wrapperMessagingWithoutDetection$domain=politico.eu|lovelybooks.de|idealo.de|idealo.at|idealo.es|idealo.fr|idealo.it|idealo.co.uk|femmeactuelle.fr|hausjournal.net|lepoint.fr|chefkoch.de
 coco.we-online.com$domain=we-online.com
 /modulos/cookies$domain=villagrancanaria.com
+/vfConsentCookies$domain=vodafone.cz
 !
 ! FILTERLIST ONLY
 !
