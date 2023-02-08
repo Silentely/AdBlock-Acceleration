@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 346.202302071304
+! Version: 346.202302081158
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 07 Feb 2023 13:04 UTC
+! Last modified: 08 Feb 2023 11:58 UTC
 !
 !
 ! GLOBAL RULES
@@ -13660,6 +13660,9 @@
 ##.footer-cookie-section
 ##.consent-tracking--footer
 ###consentBanner + #consentLock
+###cookie-law-info-bar ~ .cli-modal-backdrop
+###welcomebar-wrapper-gdpr
+##.show--consent:not(.force--consent) #cc-main
 !
 ! CUSTOM RULES
 !
@@ -21668,7 +21671,6 @@ money.com.tr##.kvkk
 24sata.hr###didomi-host
 njuskalo.hr###didomi-host
 independent.ie###didomi-host, a[onclick*="Didomi.preferences"]
-i-de.es##.backdropCookies, .backdropCookies + div
 relago.hr##body > .container
 abercrombie.com##.flash-message[data-flash-message-group-id*="cookie-accept"]
 wolframalpha.com###__next > div > section:last-of-type
@@ -21890,7 +21892,6 @@ ticketswap.it##ticketswap-portal > ul
 ticketswap.se##ticketswap-portal > ul
 ticketswap.com.br##ticketswap-portal > ul
 rewardlink.io##.snackbar
-culture.ru###__next main + div ~ div:last-child, .notify-bar
 coupons.de###cmpwrapper
 okdo.com##div[class*="c-notification-bar"]
 wimhofmethod.com###appHeader > div:first-child:not(:only-child)
@@ -22272,7 +22273,6 @@ bancobmg.com.br##.acceptance-terms
 prima-obchod.cz##.wcookies
 lastminute.co.il##.messages-container
 twitchcon.com##div[x-data="gdpr"]
-displayspecifications.com###cookie-consent
 miui.com###_navbar ~ .fixed[class*="rounded"]
 smiteproleague.com##.root > .is-visible
 topformula.se##.ca-cookie-consent
@@ -22730,6 +22730,8 @@ bol.com##div[data-x="cookie-pop-up"]
 completeaquatics.co.uk##.carcona-cookie-notice
 rollstuhl-kurier.de###webwerk-cookies
 infiniti.com##.c_128
+culture.ru###__next > div > footer ~ div, .notify-bar
+spinbackup.com##.spin-ai-gtm-banner
 !
 ! SCRIPT BLOCKING
 !
@@ -23364,6 +23366,7 @@ consent.scm-verlagsgruppe.de
 ||consent.prointernet.com/consent.js$script
 ||consentmanager.net/delivery/js/cmp$script,domain=~winfuture.de|~infranken.de|~echo-online.de
 ||consentmanager.net/delivery/cmp$script,domain=~winfuture.de|~infranken.de|~echo-online.de
+/coockieconsent.js
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
