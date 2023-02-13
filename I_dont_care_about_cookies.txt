@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 346.202302120905
+! Version: 346.202302131152
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 12 Feb 2023 09:05 UTC
+! Last modified: 13 Feb 2023 11:52 UTC
 !
 !
 ! GLOBAL RULES
@@ -323,7 +323,7 @@
 ###huk_cookie_prefernce_panel
 ###privacypopup
 ~nationalgallery.co.uk###cookiePolicyPopup
-~tiger.nl###cookieMessage
+###cookieMessage
 ##.js-cookieComply:not(body):not(html)
 ###wsjconsent
 ###cookiemsgbox
@@ -1011,7 +1011,7 @@
 ###zc_cookie_notice
 ###theLawCookie
 ###ccm-cookiesDisclosure
-~blackboard.com,~litebit.eu,~tiger.nl##.CookieConsent:not(body):not(html)
+~senda.pl,~blackboard.com##.CookieConsent:not(body):not(html)
 ###cookies_confirmation_bar
 ###cookie_msn
 ###cookie-privacy-policy
@@ -11847,7 +11847,7 @@
 ##.gdrp-wrap.gdrp-show
 ##.cookie-permission--backdrop
 ##.c-cnil-wrapper
-~get-in-it.de###__next div[class*="CookieConsent"]
+~senda.pl,~get-in-it.de###__next div[class*="CookieConsent"]
 ###popup-cookie-policy-small
 ##.eightworks-cookie-consent-plus
 ##.eightworks-cookie-consent-plus-toggler
@@ -13663,6 +13663,7 @@
 ###cookie-law-info-bar ~ .cli-modal-backdrop
 ###welcomebar-wrapper-gdpr
 ##.show--consent:not(.force--consent) #cc-main
+##.notification__cookies
 !
 ! CUSTOM RULES
 !
@@ -19749,7 +19750,6 @@ i-posciel.pl###cookie
 servicestatus.net##.cf__visible
 nanu-nana.de###overlay
 lebegesund.de##lgv-cookie-manager
-shsu.blackboard.com##.lb-overlay, .lb-wrapper-absolute
 unitedwardrobe.com###__next > section
 hotel-neue-post.de##.evconsent-dialog-container
 claudiakookt.nl###sticky
@@ -22079,7 +22079,6 @@ notco.com##.CookiesContainer
 nytimes.com##.free-form-content > .banner__container, .CookieBanner > .banner__container, #alertBannerMount, .gdpr.expanded-dock + div, .CookieBanner ~ .banner__container
 dw.com##.cookie__wrap
 tweakers.net###koekieBar:not(.tall)
-devicespecifications.com###cookie-consent
 foncia.com##app-foncia-cookie-banner
 nordnet.no##.cookie-consent
 nordnet.fi##.cookie-consent
@@ -22425,7 +22424,6 @@ saurclient.fr###cookies, .sds-m-cookiebanner
 europa.eu###edp-cookies-banner, .customCookie, .cookie-section
 lefigaro.fr##.fig-consent-banner
 aliexpress.ru##div[class*="PrivacyPolicyBanner"]
-nordvpn.com##.CookieConsentExperiment
 svt.se##.svt-cookie-message
 tomtom.com###themeFooter, div[data-component-name="Footer"] ~ .fixed
 eneba.com###app > footer ~ div, main > div + div + div:last-child
@@ -22736,6 +22734,13 @@ knime.com##.cookie-modal
 finna.cat###cookies_configuration
 rikstv.no###cookie-consent
 mora.nl###dmccRoot
+get-in-it.de###GetIn_CookieConsentBox
+shsu.blackboard.com##.lb-overlay, .lb-wrapper-absolute
+nordvpn.com##div[class*="CookieConsent"]
+tue.nl###cookie-consent
+inserv.lv###cookie-consent
+rockymountaineer.com##.l-page__cookies
+zero-to-nix.com###app > ile-root > .fixed
 !
 ! SCRIPT BLOCKING
 !
@@ -22954,7 +22959,6 @@ cookie_choices.min.js^
 /plugins/system/cookiespolicynotificationbar
 ||cookieassistant.com/widget.js$script
 /helper-scripts/cookieconsent/*
-/msifestiwal/Scripts/cookies.js
 /cookie-overlay-pl.js
 /cookie.notify.js
 /cpol/cookiepolicy.php
