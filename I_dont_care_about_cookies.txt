@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 346.202302140904
+! Version: 346.202302151037
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 14 Feb 2023 09:04 UTC
+! Last modified: 15 Feb 2023 10:37 UTC
 !
 !
 ! GLOBAL RULES
@@ -2721,7 +2721,7 @@
 ###CookieDisclaimer
 ##.cookiesOptin:not(body):not(html)
 ###pnlCookieMessage
-~tomshw.it,~nablawave.com###iubenda-cs-banner[style]
+~tomshw.it,~nablawave.com,~repubblica.it###iubenda-cs-banner
 ##.iubenda-ibadge
 ###iubenda-cs-banner ~ #pushiub
 ###ut_cookie_warning_bar
@@ -11908,7 +11908,7 @@
 ##.gdprCookieAlertPopup
 ###cookieCardBg
 ##.cookie-notification__bar
-~tomshw.it,~nablawave.com,~skuola.net,~tgcom24.mediaset.it,~mediasetplay.mediaset.it##.iubenda-cs-content
+~tomshw.it,~nablawave.com,~repubblica.it,~skuola.net,~tgcom24.mediaset.it,~mediasetplay.mediaset.it##.iubenda-cs-content
 ##.universalcookiedisclaimer
 ###gdpr-banner-wrapper
 ###sp-cc[action*="cookiepref"]
@@ -13665,6 +13665,9 @@
 ##.show--consent:not(.force--consent) #cc-main
 ##.notification__cookies
 ##.navbar-fixed-bottom[id*="CookiesManager"]
+##.cookie-consent__bar-wrapper
+###cookiePolicyBannerDiv
+##.notice[id*="cookieWarning"]
 !
 ! CUSTOM RULES
 !
@@ -15181,7 +15184,6 @@ toolbox.com###m_privacyPolicy_privacyNotice
 phoneklinik.com##.jcncontainer.jcntopoverlay
 freemeteo.gr###cookies
 hmc.org.uk###modal-mask
-rajsvitidel.cz##.cc_wrapper
 spotlight.pl##.statement-container
 inver.com###notice
 hkik.hu##.alert-info, .alert-warning, .alert-box
@@ -22121,13 +22123,6 @@ login.coinbase.com##div[data-testid="banner-container"]
 tele2.nl###targetedPopupFrame
 privatbank.ua##.cookies
 gamesforplay.com##.notification
-fashionunited.info##.MuiSnackbar-root
-fashionunited.com##.MuiSnackbar-root
-fashionunited.fr##.MuiSnackbar-root
-fashionunited.uk##.MuiSnackbar-root
-fashionunited.de##.MuiSnackbar-root
-fashionunited.nl##.MuiSnackbar-root
-fashionunited.be##.MuiSnackbar-root
 hoppscotch.io##.toasted-container
 balluff.com##div[x-data*="ConsentDialog"]
 conduktor.io##.cookie-though
@@ -22416,7 +22411,6 @@ rawpixel.com##div[data-test-id="check-cookie-consent"]
 vigo.de##.wx_consentbanner
 samsung.com##.helptips__container, #cookie_component
 saurclient.fr###cookies, .sds-m-cookiebanner
-europa.eu###edp-cookies-banner, .customCookie, .cookie-section
 lefigaro.fr##.fig-consent-banner
 aliexpress.ru##div[class*="PrivacyPolicyBanner"]
 svt.se##.svt-cookie-message
@@ -22712,8 +22706,6 @@ afilio.de###consent-overlay
 raeer.com###RaeerGoogleCookiesBox
 cyberfolks.pl##.cfGdprCookieConsentPopup
 silverstonetek.com##.cookie
-them.us##.page > div[class*="MessageBanner"]
-wired.com##.page > div[class*="MessageBanner"]
 figshare.com##header > [role="alert"]
 notion.so###__next > div > .visibility-partial
 dfg.de##.bab-modul-cookie-consent
@@ -22754,6 +22746,21 @@ confused.com##t-cookie-popup
 akwarystyczny24.pl##div[id*="cookiemodule"]
 eremit.de##.lightbox-backdrop-cc-dialog
 bons-plans-voyage-new-york.com###vef-cookie-notice
+yandex.com##.app div[class*="Cookie__cookie"], div[data-cookiebanner]
+toloka.ai##div[data-cookiebanner]
+webnode.com##.w-cookie-bar
+oraclecloud.com##.cookie-consent
+angel-domaene.de###cookie-consent
+europa.eu###edp-cookies-banner, .customCookie, .cookie-section
+volvocars-partner.pl##.cookies_relative
+them.us##.page > div[class*="MessageBanner"]
+wired.com##.page > div[class*="MessageBanner"]
+gq.com##.page > div[class*="MessageBanner"]
+spoutible.com##.cookie-alert-modal, .modal-backdrop
+krasserstoff.com###messageboard
+mvideo.ru##mvid-cookie-notification
+chipsnsips.com##.third-party-optin
+elvah.de###__nuxt > div > section:first-child
 !
 ! SCRIPT BLOCKING
 !
@@ -23653,6 +23660,7 @@ sibboventures.mgr.consensu.org
 /min-js?f=js/rodo.js
 /rodo_rmf
 /popup/rodo.min.js
+/rodo/rodo.js
 ||www.capitol.fr/streaming/cnil/cnil.js$script
 ||prismamediadigital.com/cnil.min.js$script
 ||newsletters.ftv-preprod.fr/cnil/js$script
@@ -23766,7 +23774,7 @@ wpjslib-chunk-notification.js^
 /klaro/klaro-pe.js
 /users/ccbundle2.min.js
 /pandectes-core.js
-/iubenda_cs$domain=~radiomontecarlo.net|~tomshw.it|~video.repubblica.it|~video.lastampa.it|~nablawave.com|~buondi.it|~tgcom24.mediaset.it|~mediasetinfinity.mediaset.it|~telerama.fr|~skuola.net
+/iubenda_cs$domain=~radiomontecarlo.net|~tomshw.it|~repubblica.it|~video.lastampa.it|~nablawave.com|~buondi.it|~tgcom24.mediaset.it|~mediasetinfinity.mediaset.it|~telerama.fr|~skuola.net
 /amp-user-notification-
 ||sn.sanoma.fi/js/sccm$script
 /api/rest/settings/public?fields=endUserAgreement
@@ -23999,7 +24007,7 @@ trcking.min.js^$domain=canalplus.com|canal-plus.com
 /ConsentInit.min.js$domain=smartphonehoesjes.nl
 /cookieser.js$domain=aco.com.pl
 consent-*$domain=nwb-jobboerse.de
-/almacmp$domain=ampparit.com|etuovi.com|vuokraovi.com|arvopaperi.fi|nettikaravaani.com|nettimoto.com
+/almacmp$domain=ampparit.com|etuovi.com|vuokraovi.com|arvopaperi.fi|nettikaravaani.com|nettimoto.com|kotikokki.net
 /cookie_flyout.js$domain=festo.com
 /klaro.js$domain=beckhoff.com
 /Manolo_CookieConsent/*$domain=manoloblahnik.com
