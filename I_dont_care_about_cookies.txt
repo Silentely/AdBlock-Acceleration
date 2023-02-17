@@ -1,17 +1,17 @@
 [Adblock Plus 2.0]
-! Version: 346.202302151037
+! Version: 347.202302171008
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 15 Feb 2023 10:37 UTC
+! Last modified: 17 Feb 2023 10:08 UTC
 !
 !
 ! GLOBAL RULES
 !
 ###stickyCookieBar
 ##.cookiebar-bar:not(body):not(html)
-~otpbank.ro,~anadibank.com,~itextpdf.com,~e-shelter.de###sliding-popup
+~anadibank.com,~itextpdf.com,~otpbank.ro###sliding-popup.sliding-popup-bottom
 ###cookie_bar_top
 ###cookielaw:not(.modal)
 ~conso.ro,~daimler.com,~ihreapotheken.de,~filmboxlive.com###cookiePolicy:not(.reveal):not(.modal)
@@ -4364,7 +4364,7 @@
 ##.cookie-directive-container
 ###eucookiebar-outer
 ##.topmessage-cookie:not(body):not(html)
-~otpbank.ro,~anadibank.com,~itextpdf.com###cookie_dialog
+~itextpdf.com,~otpbank.ro###cookie_dialog
 ##.accept-my-cookie:not(body):not(html)
 ##.cookiefloater:not(body):not(html)
 ###andytimes_privacy_div
@@ -9393,7 +9393,7 @@
 ###optinmessagebg ~ #optInMessage-new
 ###notification-bars div[id*="cookie-policy"]
 ###tc_priv_CustomOverlay
-~otpbank.ro,~anadibank.com,~itextpdf.com##.eu-cookie-compliance-banner:not(body)
+~cgi.com,~anadibank.com,~itextpdf.com,~otpbank.ro##.eu-cookie-compliance-banner
 ~pvcvoordeel.nl##.js-cookie-popup:not(body):not(html)
 ##.max_wp_cookie_notification
 ##.full-width-bar.important[style*="block"] .notif-bar
@@ -13668,6 +13668,7 @@
 ##.cookie-consent__bar-wrapper
 ###cookiePolicyBannerDiv
 ##.notice[id*="cookieWarning"]
+##.cookiesOptInBanner
 !
 ! CUSTOM RULES
 !
@@ -14183,7 +14184,6 @@ viralagenda.com###viral-footer
 alatest.nl##.identity-noticebar-content
 aicanet.it##.popup-view
 firstdraftnews.com##.welcome-message
-solarenvi.cz###cs_bx
 enerpoint.it###container > div[style]
 qbasic.at###ckkasten-container
 sapsalis.gr##.termsnote
@@ -14191,15 +14191,11 @@ sconfini.eu###sbox-window, #sbox-overlay
 cyclingarchives.com###header > div[id*="zxcw"]
 tvgids24.nl###cbar
 theinvergordonarchive.org###CQ
-meteo-service.nl###popup-container
 valher.si##body > table
-zahradnikrby.cz###cs_bx
-v10.pl##body > div:not([id]):not([class])[style*="fixed"], body > div:not([id]):not([class])[style*="absolute"]
-hlidacipes.org###hlidacipes_cookies
-affecto.fi##.privacy-policy-container
+solarenvi.cz###cs_bx
+zahradnikrby.cz###cs_bx, #cs_bx_envl
+v10.pl##body > div[style*="width"]
 datatypes.net###cw
-regalideidesideri.it##.centered-container .msg
-teemo.gg##.alert, #alert
 dnevnik.si###app-messages
 einbuergerungstest-online.eu##.alert-info, .alert-warning, .alert-box
 cinquantamila.it###privacy_advisor
@@ -14706,7 +14702,6 @@ futurelearn.com##.m-heads-up-banner[aria_label="Cookie banner"]
 ksk-koeln.de###dpWarningWrapper
 bulls.de##footer > div[class*="cookie-hinweis"]
 fairmondo.de##.l-news-header
-ou.nl###M093A
 vodafone.hu##.cookie_fix
 tarifaexpert.hu##.lablec_suti_szabaly
 grammophon-platten.de###hinweise
@@ -17558,7 +17553,6 @@ gtalfh.com##.alert, #alert
 newspaperdirect.com###dialog_cookies
 oferty-dom.pl###dspcookie
 selectel.ru##.ui-cookies
-nbcsports.com###activation-form ~ div[style*="fixed"]
 scentre.pl##.consent, #consent
 mariobarthtattoo.com###POPUPS_WRAPPER
 nextgentel.no##.blocker
@@ -19227,7 +19221,6 @@ musikguru.de###CookieBox
 edecaformacion.com###contenidoCookies
 foodtribe.com###root > div[class]:last-child:not(:only-child)
 heimkinoraum.de##div[id^="mod_cookie"]
-ryneklazienek.pl###axnBodyContainer
 shimano.com##.message.fixed
 brusletto.no###cookie
 ao.com###ao-cb[data-tag-section*="cookie_banner"]
@@ -20846,7 +20839,6 @@ e-fellows.net###efnCookieConsent
 uchi.ru##._UCHI_COOKIE__widget
 foter.com##.fo4-cookie
 vestel-germany.de###custom-modal-cookie
-bell-labs.com###n-cookie-notice
 tesco.pl###privacyOuterContainer
 tesco.com###sticky-bar-wrapper
 albaparty.org###disclaimer
@@ -20861,7 +20853,6 @@ lovehoney.eu##.dis_message
 stanley.ru##.test-mode__wrap
 antenasgsm.com##.cookies
 dynavap.com###cookie
-cypress.com###complianceoverlay.complianceoverlay
 sportsoft.co.uk###toast-container
 beiersdorf.de##form > .popup
 beiersdorf.ch##form > .popup
@@ -20974,7 +20965,6 @@ crucial.com##.app-light > div[style*="fixed"]
 concursosnobrasil.com.br###lgpd
 japanmotors.pl##.cookie
 nordiskporselen.com###kjeks
-belgium.be##.cookies
 smitegame.com##.page > .is-visible
 ryd.one##.xy-consent
 onepercentclub.com##.notification-bar-container
@@ -22761,6 +22751,10 @@ krasserstoff.com###messageboard
 mvideo.ru##mvid-cookie-notification
 chipsnsips.com##.third-party-optin
 elvah.de###__nuxt > div > section:first-child
+vitens.nl##.cookie-modal
+caf.com###cafModal
+bell-labs.com###n-cookie-notice
+linearb.io##.cookie-consent
 !
 ! SCRIPT BLOCKING
 !
@@ -23120,7 +23114,6 @@ cookie-bar.salessquad.co.uk
 /rh-cookieconsent-microsites.min.js
 /components/content/cookie-overlay/*
 cookiemon.atcom.gr
-||nbcsports.com/cookie-ack.js$script
 /js/gdpr/gdpr-cookie
 /jquery.ihavecookies.$domain=~wisla-plock.pl
 /b2b-market/src/addons/cookie-consent/*
@@ -24106,6 +24099,7 @@ cmp.quantcast.com$domain=gettr.com
 coco.we-online.com$domain=we-online.com
 /modulos/cookies$domain=villagrancanaria.com
 /vfConsentCookies$domain=vodafone.cz
+/jimmsconsent$domain=jimms.fi
 !
 ! FILTERLIST ONLY
 !
@@ -24114,13 +24108,12 @@ coco.we-online.com$domain=we-online.com
 ||asusworld.it/scripts/CookiesAgreement/script.js$script
 ||pandora.net/it-it/cookie-policy$xmlhttprequest
 ###gh > .gh-banner-active.gh-banner
-ladige.it###sliding-popup
 calciomercato.com###ca_banner
 guideitech.com##.pea_cook_wrapper
 fifa.com##.mdl-overlay
 lubliniec.eu###cadre_alert_cookies
 cnet.com###-e_xobwhg_utggxk
 gsk.com,lufthansa.com,brusselsairlines.com,maxxim.de,drillisch-online.de,deutschlandsim.de,m2m-mobil.de,yourfone.de,smartmobil.de,simplytel.de,discotel.de,bildconnect.de,handyvertrag.de,sim.de,premiumsim.de,winsim.de,1und1.de,mainova.de###__tealiumGDPRcpPrefs
-heathrow.com,heathrowexpress.com,hsbc.co.uk,ti.com,nettbutikk.telenor.no,epson.com,lulu.com,3mpolska.pl,bosch-professional.com,centrum24.pl,cisco.com,command.pl,e.huawei.com,lavazzacoffee.pl,logitech.com,logitechg.com,post-it.pl,ups.com,vacansoleil.pl###__tealiumGDPRecModal
+royalmail.com,heathrow.com,heathrowexpress.com,hsbc.co.uk,ti.com,nettbutikk.telenor.no,epson.com,lulu.com,3mpolska.pl,bosch-professional.com,centrum24.pl,cisco.com,command.pl,e.huawei.com,lavazzacoffee.pl,logitech.com,logitechg.com,post-it.pl,ups.com,vacansoleil.pl###__tealiumGDPRecModal
 @@||nf.pl/js/libs/cookiesDirective.js$script
 overdrive.com###bkgOverlay
