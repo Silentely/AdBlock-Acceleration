@@ -1,17 +1,17 @@
 [Adblock Plus 2.0]
-! Version: 347.202302171008
+! Version: 347.202302201030
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 17 Feb 2023 10:08 UTC
+! Last modified: 20 Feb 2023 10:30 UTC
 !
 !
 ! GLOBAL RULES
 !
 ###stickyCookieBar
 ##.cookiebar-bar:not(body):not(html)
-~anadibank.com,~itextpdf.com,~otpbank.ro###sliding-popup.sliding-popup-bottom
+~anadibank.com,~itextpdf.com###sliding-popup.sliding-popup-bottom
 ###cookie_bar_top
 ###cookielaw:not(.modal)
 ~conso.ro,~daimler.com,~ihreapotheken.de,~filmboxlive.com###cookiePolicy:not(.reveal):not(.modal)
@@ -4364,7 +4364,7 @@
 ##.cookie-directive-container
 ###eucookiebar-outer
 ##.topmessage-cookie:not(body):not(html)
-~itextpdf.com,~otpbank.ro###cookie_dialog
+~itextpdf.com###cookie_dialog
 ##.accept-my-cookie:not(body):not(html)
 ##.cookiefloater:not(body):not(html)
 ###andytimes_privacy_div
@@ -9393,7 +9393,7 @@
 ###optinmessagebg ~ #optInMessage-new
 ###notification-bars div[id*="cookie-policy"]
 ###tc_priv_CustomOverlay
-~cgi.com,~anadibank.com,~itextpdf.com,~otpbank.ro##.eu-cookie-compliance-banner
+~cgi.com,~otpbank.ro,~anadibank.com,~itextpdf.com##.eu-cookie-compliance-banner
 ~pvcvoordeel.nl##.js-cookie-popup:not(body):not(html)
 ##.max_wp_cookie_notification
 ##.full-width-bar.important[style*="block"] .notif-bar
@@ -13669,6 +13669,8 @@
 ###cookiePolicyBannerDiv
 ##.notice[id*="cookieWarning"]
 ##.cookiesOptInBanner
+###cookiesBanner_wrapper
+###cookiesBanner_background
 !
 ! CUSTOM RULES
 !
@@ -17330,7 +17332,6 @@ staatsbibliothek-berlin.de###tracking-info
 kotimikro.fi##.afubar-top
 treated.com###gdprTreated
 blog.bankinter.com###cookies
-gizmodo.com###privacypolicy .privacy-box
 falriver.co.uk###gpdr, #GPDR, #gdpr, #GDPR
 immo24.direct##.uk-first-column > .uk-text-center ~ .uk-panel
 radarvirtuel.com###cnil, .cnil, #CNIL
@@ -17587,7 +17588,6 @@ kube.no###cookie
 creative.com##.ck-notiz
 improbable.io##div[class*="CookieBarstyled"]
 weymuller.fr###tracker-warning
-nordkurier.de###nk-cookie-consent
 ezvizlife.com##.footer ~ .coverShow
 pepboys.com###ccContainer
 salesmanago.pl###popup, .popup
@@ -18113,7 +18113,6 @@ reifen-dinser.de##.cookies
 tang-freres.fr##.welcome
 spotify.com###main > .Root > section, .mh-message-bar
 ovplaza.nl##.cookie-consent
-spox.com##.spxcib.open
 scholieren.com##.cookie-consent
 asket.com##.site-notice
 scummvm.org##.cookie-consent
@@ -21299,7 +21298,6 @@ motorflash.com##.cookiesNew
 lawinsider.com###header ~ .light-blue-bordered-card
 strawpoll.de###consent-overlay
 mitsubishi-motors.ca##.cookiemodal
-eika.no##.no-eika-cookieconsent
 searchforsites.co.uk###cookieConsent, #modal-overlay
 fvg.it###cookieModal
 tsuche.com###c-c
@@ -21611,7 +21609,6 @@ sas.sk##.cookiesTextOutter
 howrse.de##.cmpoverlay
 howrse.com##.cmpoverlay
 bridgestonesports.bridgestone.com.br##.modalContainer
-vg.no##.schibsted-data-controller
 iol.co.za###root > footer ~ div
 armegoszto.hu##.v-snack--bottom
 rekonise.com##.consent-snackbar
@@ -22755,6 +22752,8 @@ vitens.nl##.cookie-modal
 caf.com###cafModal
 bell-labs.com###n-cookie-notice
 linearb.io##.cookie-consent
+sweez.ch###cookies-adviser
+vg.no##.schibsted-data-controller
 !
 ! SCRIPT BLOCKING
 !
@@ -23983,6 +23982,7 @@ trcking.min.js^$domain=canalplus.com|canal-plus.com
 /messagingNoTcfApi.js$domain=aftenposten.no|vg.no|svd.se|bt.no|aftenbladet.no|e24.no|minmote.no|klart.se
 /consent-layer/*$domain=bahn.de
 /checkcookies.js$domain=iracing.com
+/wrapperMessagingWithoutDetection.js$domain=vg.no
 /ice.js$domain=lifesycle.co.uk
 /cookies$domain=next-immo.com
 /fnGdpr.js$domain=financer.com
