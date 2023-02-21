@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 347.202302201030
+! Version: 347.202302211240
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 20 Feb 2023 10:30 UTC
+! Last modified: 21 Feb 2023 12:40 UTC
 !
 !
 ! GLOBAL RULES
@@ -158,7 +158,7 @@
 ###privacy-cookieMessage
 ###xanda-cookie-policy
 ##.future-cookie-bar:not(body):not(html)
-~oead.at,~kalenderwoche.de,~hawle.de,~pruadviser.co.uk,~unikrn.com,~barzahlen.de,~biblioteka.wroc.pl,~makelaarsland.nl###cookie-notice
+~oead.at,~kalenderwoche.de,~hawle.de,~pruadviser.co.uk,~unikrn.com,~rappjmed.ch,~biblioteka.wroc.pl,~makelaarsland.nl###cookie-notice
 ###cookie-notice ~ #popmake-overlay
 ###block-cookie-compliance-cookie-compliance
 ###openglobal_privacy_widget
@@ -2971,7 +2971,7 @@
 ##.bandeauCookies:not(body):not(html)
 ##.cook-accept:not(body):not(html)
 ##.disclaimer_cookies:not(body):not(html)
-~barzahlen.de,~biblioteka.wroc.pl##.cookie-notice-container
+~rappjmed.ch,~biblioteka.wroc.pl##.cookie-notice-container
 ##.accettazioneCookies:not(body):not(html)
 ###aceptacioncookies
 ###cl-banner
@@ -10224,7 +10224,7 @@
 ##.gbpr-popup:not(body):not(html)
 ###r_cookie_hinweis
 ##.gdpr-backdrop
-##.frontendPrivacy__consentBanner
+##.cookiesOptInBanner
 ###cookieBlockOverlay
 ###msg_cookie_accept
 ##.cookie-disclaimer-backdrop
@@ -13668,7 +13668,6 @@
 ##.cookie-consent__bar-wrapper
 ###cookiePolicyBannerDiv
 ##.notice[id*="cookieWarning"]
-##.cookiesOptInBanner
 ###cookiesBanner_wrapper
 ###cookiesBanner_background
 !
@@ -22754,6 +22753,7 @@ bell-labs.com###n-cookie-notice
 linearb.io##.cookie-consent
 sweez.ch###cookies-adviser
 vg.no##.schibsted-data-controller
+esbank.pl###cookie_info_es
 !
 ! SCRIPT BLOCKING
 !
@@ -22864,7 +22864,7 @@ jquery-easy-eu-cookie-law.js^
 /js/cookie-info.js
 /cookie_law/plugin.js
 /jslibrary/cookiewarning?
-/wp-content/plugins/cookie-notice$domain=~kapitalkontor.com|~sovendus.com|~barzahlen.de
+/wp-content/plugins/cookie-notice$domain=~kapitalkontor.com|~sovendus.com|~rappjmed.ch
 ||airnewzealand.co.nz/vbook/actions/cookieconsent$script
 /cg_cookie.js
 ||grsuk.com/scripts/cookie-info.js$script
@@ -23092,7 +23092,7 @@ bs-cookie.staging.springbok.agency
 /SharedComponents/bundle-scripts/cookie-consent
 /cookieconsent.klaro.
 /js/cookies_bar
-/modal/cookie-wall/?modal_view=true
+/modal/cookie-wall/?modal_view=true$domain=~100partnerprogramme.de
 /wp-content/plugins/better_cookie_consent/*
 /js/jquery-eu-cookie-law-popup
 flipdish-cookie-consent*
@@ -23280,6 +23280,7 @@ cookies.ptj.de
 /cookie-consent-dialogue.js
 /dist/scripts/cookie-control
 ||am-static.com/cookie-banner$script
+/marked-cookie-consent-web/*
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
