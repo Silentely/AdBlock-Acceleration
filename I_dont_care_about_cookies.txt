@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 347.202302211240
+! Version: 347.202302221017
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 21 Feb 2023 12:40 UTC
+! Last modified: 22 Feb 2023 10:17 UTC
 !
 !
 ! GLOBAL RULES
@@ -13670,6 +13670,8 @@
 ##.notice[id*="cookieWarning"]
 ###cookiesBanner_wrapper
 ###cookiesBanner_background
+###root div[class*="SmallCookieModal"]
+###cookieNotificationContainer
 !
 ! CUSTOM RULES
 !
@@ -14784,7 +14786,6 @@ czesci-samochodowe.wroclaw.pl###popup, .popup
 sockshop.co.uk###CNwrap
 scandtrack.com###st_cookie
 bzwbk.pl##.cookie-btn
-newsnow.co.uk###pmbar
 gruppocarraro.it##body > div:not([id]):not([class])
 riddarhuset.se##.cookieWidget
 dvdbluray.hu###sutibox
@@ -17760,7 +17761,6 @@ insurancebusinessmag.com##.notification_strip
 friv-games.com##.privacy-popup
 regione.vda.it###disclaimer-box
 italiarail.com##body > div[style*="block"]
-wsj.com###cx-notification
 avanza.se##aza-cookie-message
 wofox.com##.main-privacy-popup
 suzukimoto.pt##.policy-window
@@ -18283,7 +18283,6 @@ gknpm.com##clients-cookie-policy
 alfabank.ru###alfa > .platform > noindex, #agreement-popup
 ncalculators.com##.consent, #consent
 valais.ch##.notification
-stayfriends.de##.cookie
 enjoynu.com###coookie
 vanderpoelmontage.nl##.cookie-settings
 kvb.de###cc_hint, #cc_technical, #cc_statistical
@@ -22095,8 +22094,6 @@ nottinghamforest.co.uk##.popup-wrapper
 torcedores.com###navve-cookie-block
 pebmed.com.br##.modal-cookie
 sorare.com###root > .webp > div:first-child
-myfitnesspal.com##.MuiSnackbar-anchorOriginBottomCenter
-myfitnesspal.cn##.MuiSnackbar-anchorOriginBottomCenter
 beamdog.com###gdpr-consent-form
 mensxp.com##.consent-container
 sentaifilmworks.com###sfw-msg
@@ -22130,7 +22127,6 @@ innn.it###cookieConsentModal ~ div
 factoryberlin.com##.flyntComponent[is*="cookie-optin"]
 fydeos.com##.cookie-modal
 sanarmed.com###__next > nav + div > div[class*="Wrapper"]
-nebenan.de##.c-layout-wrap ~ article
 4game.com##.fcw-wrap
 onlyandsons.com##.overlay-backdrop
 incomputer.cz##.cookies-fixed-left
@@ -22754,6 +22750,7 @@ linearb.io##.cookie-consent
 sweez.ch###cookies-adviser
 vg.no##.schibsted-data-controller
 esbank.pl###cookie_info_es
+nexcess.net##div[class*="CookieAcceptance"]
 !
 ! SCRIPT BLOCKING
 !
@@ -23595,7 +23592,7 @@ jquery.smartCookie.min.js^
 /ja/controlCookies.js
 /utils/CookiePrompter
 /Wamoco_CookieConsentUi/*
-quantcast.mgr.consensu.org$domain=~sourceforge.net|~tumblr.com|~wpolityce.pl|~player.livespotting.com|~indy100.com|~vi.nl|~independent.co.uk|~express.co.uk|~joe.ie|~joe.co.uk|~avsforum.com|~pcgamer.com|~nfl.com|~filmvandaag.nl|~gamesradar.com|~iol.pt
+quantcast.mgr.consensu.org$domain=~sourceforge.net|~tumblr.com|~wpolityce.pl|~player.livespotting.com|~indy100.com|~vi.nl|~independent.co.uk|~express.co.uk|~joe.ie|~joe.co.uk|~avsforum.com|~nfl.com|~filmvandaag.nl|~gamesradar.com|~iol.pt
 gemius.mgr.consensu.org
 sddan.mgr.consensu.org
 digitrust.mgr.consensu.org
@@ -23712,6 +23709,7 @@ api.brookiebot.com
 /childlikeform.com
 /chickensstation.com
 /colossalchance.com
+/aliasanvil.com
 ||pcz.pl/static/js/moo-cooker.js$script
 /eucd/eucd.min.js
 ||cinabre.sudoc.abes.fr/psi_gui/js/bandeau.js$script
@@ -24101,6 +24099,7 @@ coco.we-online.com$domain=we-online.com
 /modulos/cookies$domain=villagrancanaria.com
 /vfConsentCookies$domain=vodafone.cz
 /jimmsconsent$domain=jimms.fi
+/rcs_cpmt/*$domain=open.online
 !
 ! FILTERLIST ONLY
 !
