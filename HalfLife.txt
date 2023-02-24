@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: /QxCd+Dn/SJl/GeG0G+jQQ
+! Checksum: DR4We7bKudZEBb2xXPiEXA
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202302241407
-! Last Modified: 2023年02月24日 14:07
+! Version: 202302242009
+! Last Modified: 2023年02月24日 20:09
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -592,7 +592,8 @@ statsy.net
 ||dyncdn.me/static/20/js/expla$script
 age.tv,agemys.net##+js(noeval-if, devtoolsDetector)
 ||toutiaoimg.com/origin/$image,domain=agemys.net|acgndmku.com|subaibaiys.com
-996dm.com,dmlaa.com,dandanzan.com,dandanzan10.top,nunuyy5.org,btnull.*##+js(m3u-prune, /^http/, /^https:\/\/vip\.lz-?cdn\d*\./)
+!996dm.com,dmlaa.com,dandanzan.com,dandanzan10.top,nunuyy5.org,btnull.*##+js(m3u-prune, /^http/, /^https:\/\/vip\.lz-?cdn\d*\..+\.m3u8$/)
+dandanzan.cf,nunuyingyuan.com,ddys.buzz##+js(m3u-prune, /^http/, /^https:\/\/vip\.ffzy-(?:play|online)\d*\..+\.m3u8$/)
 dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,RTCPeerConnection,null)
 dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,webkitRTCPeerConnection,null)
 dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,mozRTCPeerConnection,null)
@@ -2849,6 +2850,11 @@ newduba.cn###jq_youxi
 ||lkdhlp.xyz^
 ||hgsly.buzz^
 ||okwg.top^
+||sfsxl.xyz^
+||d7i.cn^
+||1kanz.cn^
+||niumeng.xyz^
+||sdfg68.com^
 ##.btn[href*="/viphktv.com/"]
 ##[class][onclick*=".ununxsxs.top"]
 ##a[href$=".120ydrayy.com"]
