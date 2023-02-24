@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 347.202302230951
+! Version: 347.202302241005
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 23 Feb 2023 09:51 UTC
+! Last modified: 24 Feb 2023 10:05 UTC
 !
 !
 ! GLOBAL RULES
@@ -13672,6 +13672,8 @@
 ###cookiesBanner_background
 ###root div[class*="SmallCookieModal"]
 ###cookieNotificationContainer
+##.ccConsentHolder
+##.z-cookie-alert[class*="bottom"]
 !
 ! CUSTOM RULES
 !
@@ -21194,7 +21196,6 @@ benq.eu###cookie-fullscreen
 plusmobile.fr##.gdpr
 svd.se###schibsted-data-controller-sticky
 aftenposten.no###data-controller-sticky
-bt.no###data-controller-sticky
 traderepublic.com##.consentCard
 tfwm.org.uk##.wmnds-cookies-banner
 foodwatch.org##.cn-banner
@@ -22750,6 +22751,8 @@ compress-or-die.com##.module_consent__main
 woolworth.de###CybotCookiebotDialog
 woolworth.pl###CybotCookiebotDialog
 uwartsonline.nl###cookie-consent-modal
+herbiesheadshop.com##.cookies-politic__section
+librus.pl##.x-float-wrap
 !
 ! SCRIPT BLOCKING
 !
@@ -23977,10 +23980,10 @@ brsimg.com/gdpr$script,domain=boursorama.com
 trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookie-banner$domain=hauptbahnhofcity.wien
 /cookiefly/*$domain=internet-rockstars.com
-/messagingNoTcfApi.js$domain=aftenposten.no|vg.no|svd.se|bt.no|aftenbladet.no|e24.no|minmote.no|klart.se
+/messagingNoTcfApi.js$domain=aftenposten.no|vg.no|svd.se|aftenbladet.no|e24.no|minmote.no|klart.se
 /consent-layer/*$domain=bahn.de
 /checkcookies.js$domain=iracing.com
-/wrapperMessagingWithoutDetection.js$domain=vg.no|boerse.de
+/wrapperMessagingWithoutDetection.js$domain=vg.no|boerse.de|bt.no
 /ice.js$domain=lifesycle.co.uk
 /cookies$domain=next-immo.com
 /fnGdpr.js$domain=financer.com
