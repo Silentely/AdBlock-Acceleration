@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: BIK4NqURsL+uIi6/fHWCZg
+! Checksum: E2aH2gVSYxnKKmjxnEfTZw
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202303061408
-! Last Modified: 2023年03月06日 14:08
+! Version: 202303062010
+! Last Modified: 2023年03月06日 20:10
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -471,7 +471,8 @@ static.g.iqiyi.com
 ||ssports.iqiyi.com/json/shop/shopInfo
 ||ssports.iqiyi.com/app/$media,object-subrequest
 show.ssports.com
-v.qq.com###player  .txp_zt_content
+v.qq.com###player .txp_zt_content
+v.qq.com##.quick_games.quick_item,div.card-wrap
 qq.com##.mod_ad, .txp_ad, div.l_qq_com, .txp-watermark, .txp_ad_link, .txp_zt_video, .adWrap, .iwan-wrapper
 qq.com#@#+js(nowebrtc)
 video.qq.com#@#+js(set,RTCPeerConnection,null)
@@ -592,8 +593,6 @@ statsy.net
 ||dyncdn.me/static/20/js/expla$script
 age.tv,agemys.net##+js(noeval-if, devtoolsDetector)
 ||toutiaoimg.com/origin/$image,domain=agemys.net|acgndmku.com|subaibaiys.com
-!996dm.com,dmlaa.com,dandanzan.com,dandanzan10.top,nunuyy5.org,btnull.*##+js(m3u-prune, /^http/, /^https:\/\/vip\.lz-?cdn\d*\..+\.m3u8$/)
-dandanzan.cf,nunuyingyuan.com,ddys.buzz##+js(m3u-prune, /^http/, /^https:\/\/vip\.ffzy-(?:play|online)\d*\..+\.m3u8$/)
 dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,RTCPeerConnection,null)
 dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,webkitRTCPeerConnection,null)
 dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,mozRTCPeerConnection,null)
@@ -634,6 +633,7 @@ stgowan.com
 -1688-wp-media/ads/
 -90mh-gg.
 .bid/ads/
+/xianbao_theme/script/intelligence.
 .blog/ads/
 .bt*.com/imgs.js?t=
 .cam/ads/
@@ -3002,6 +3002,7 @@ newduba.cn###jq_youxi
 ||feixun.info^
 ||teowa.cyou^
 ||okcf.top^
+||pqjprom.cn^
 ##.btn[href*="/viphktv.com/"]
 ##[class][onclick*=".ununxsxs.top"]
 ##a[href$=".120ydrayy.com"]

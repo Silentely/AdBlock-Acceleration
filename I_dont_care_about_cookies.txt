@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 347.202302271344
+! Version: 347.202303061322
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 27 Feb 2023 13:44 UTC
+! Last modified: 06 Mar 2023 13:22 UTC
 !
 !
 ! GLOBAL RULES
@@ -8959,7 +8959,7 @@
 ###gdpr-navbar
 ###cookies_dialog
 ##.bottom-cookie-wrap:not(body):not(html)
-~inshared.nl###cookie-settings.cookie-settings
+##.js-shb-inss-login__cookie-consent
 ##.gdpr-show[data-closable]
 ##.sg-cw-cookie:not(body):not(html)
 ###GDPR_block
@@ -20865,8 +20865,6 @@ flyrotax.com###CookieSettingsContainer
 amorespossiveis.com.br###idLGPD
 freiewelt.net###cmmodal
 bankmillennium.pl##wc-cookies-marketing
-handelsbanken.se##shb-cookie-consent, .js-shb-inss-login__cookie-consent
-handelsbanken.nl##shb-cookie-consent
 ageofempires.com##.popup.disable-screen
 ultimatecourses.com##.uc-cookies
 ihk-akademie.de###privacy-statement
@@ -23990,7 +23988,6 @@ trcking.min.js^$domain=canalplus.com|canal-plus.com
 /sygnal42-gdpr/*$domain=blitzrechner.de
 /CookieLayer.js$domain=multipower.com
 /cookie_management.js$domain=meteoradar.ch
-/website-cookie-consent/*$domain=halebop.se
 /Cookie/*$domain=nif.no
 /klaro-no-css.js$domain=frag-einen-anwalt.de
 /cookieconsent/*$domain=stema.de|expert.es
@@ -24012,7 +24009,6 @@ consent-*$domain=nwb-jobboerse.de
 /base-nf.js$domain=lecanardenchaine.fr
 toestemmingen.snp.nl$domain=snp.nl
 /cm/*$domain=howatherm.de
-/osb-cmp.min.mjs$domain=tvgids.nl
 consent.maerkischekiste.de$domain=maerkischekiste.de
 /it_nsc.min.js$domain=nonsolocap.it
 h1.versicherungsjournal.de$domain=versicherungsjournal.de
@@ -24104,6 +24100,7 @@ coco.we-online.com$domain=we-online.com
 /rcs_cpmt/*$domain=open.online
 /ph-cookie-helper-mu/*$domain=uwartsonline.nl
 .consent-$domain=pcgames.de
+/cookie-preferences$domain=halebop.se
 !
 ! FILTERLIST ONLY
 !
