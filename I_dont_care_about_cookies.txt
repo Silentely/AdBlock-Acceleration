@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 347.202303061322
+! Version: 347.202303071035
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 06 Mar 2023 13:22 UTC
+! Last modified: 07 Mar 2023 10:35 UTC
 !
 !
 ! GLOBAL RULES
@@ -1376,7 +1376,7 @@
 ##.nmCookieNotifier:not(body):not(html)
 ###nav-cookie
 ###cm-cookie-popin
-~seatris.ai##.cookie_container:not(body):not(html)
+~healthmate.withings.com,~seatris.ai##.cookie_container:not(body):not(html)
 ###cookiesWarningBackground
 ##.consentement_cookies
 ###msgcookies
@@ -8931,7 +8931,7 @@
 ###cookie-banner-message
 ###_orkla-cookie-disclaimer
 ###modal-cookies ~ .modal-backdrop
-##body > #cookies.active
+~healthmate.withings.com##body > #cookies.active
 ##body > #cookies.popup
 ##.notice[data-notice="cookie"]
 ##.cookie-rodo--center:not(body):not(html)
@@ -13674,6 +13674,8 @@
 ###cookieNotificationContainer
 ##.ccConsentHolder
 ##.z-cookie-alert[class*="bottom"]
+##.cookie-policy__banner
+###pmc-check-prod ~ #modal-already-shared
 !
 ! CUSTOM RULES
 !
@@ -18798,7 +18800,6 @@ thefork.it###root > div > p
 alldomains.hosting###adh-cookie-dnt, #adh-cookie-accept
 openuserjs.org##.alert-dismissible
 hobbyfarms.com##.cookieTkd
-condor.com##.cookie__bg
 helloclue.com###gatsby-focus-wrapper > section:first-child
 thegoodnessproject.co.uk###cookies_enabled
 starmix.de###muffin
@@ -19844,8 +19845,6 @@ canbeuseful.com###cookies
 thenakedpharmacy.com##.cookie
 qbilon.net##.cookie
 playstation.com##.psw-bottom-left[data-qa="gdpr-setting"]
-atozmath.com###consentframe
-medcalc.org###consentframe
 labyrinthos.co##.floating.bottom
 esmarket.gr###mstm-cookie
 cajeando.com##.cookies
@@ -22094,10 +22093,6 @@ mensxp.com##.consent-container
 sentaifilmworks.com###sfw-msg
 ing.it###sticky-page-top-cnt
 ing.com.tr##.kvk-footer-warning
-coinbase.com###root > div + div[class^="esm__Container"]:last-child, div[class*="ContentHub__FooterWrapper"] ~ div:last-child, #popup-root ~ div[class*="Layout"] ~ div:not([data-element])
-pro.coinbase.com###page_content > div + div:last-child
-help.coinbase.com###__next > section[class*="footer"] ~ div
-login.coinbase.com##div[data-testid="banner-container"]
 tele2.nl###targetedPopupFrame
 privatbank.ua##.cookies
 gamesforplay.com##.notification
@@ -22751,6 +22746,11 @@ uwartsonline.nl###cookie-consent-modal
 herbiesheadshop.com##.cookies-politic__section
 librus.pl##.x-float-wrap
 arbeitsagentur.de###nsyCookieBanner
+atozmath.com###consentframe
+coinbase.com###root > div > [class*="backgroundAlternate"], div[class*="ContentHub__FooterWrapper"] ~ div:last-child, #popup-root ~ div[class*="Layout"] ~ div:not([data-element])
+nft.coinbase.com##footer ~ .fixed[class*="bottom"]
+pro.coinbase.com###page_content > div + div:last-child
+login.coinbase.com##div[data-testid="banner-container"]
 !
 ! SCRIPT BLOCKING
 !
@@ -24091,7 +24091,7 @@ ccm.$domain=abload.de
 /cookie-box$domain=schmalz.com
 /popupConsent/*$domain=the-fence.com
 /cookie-files/*$domain=paradoxwikis.com
-cmp.quantcast.com$domain=gettr.com
+cmp.quantcast.com$domain=gettr.com|deviantart.com
 /wrapperMessagingWithoutDetection$domain=politico.eu|lovelybooks.de|idealo.de|idealo.at|idealo.es|idealo.fr|idealo.it|idealo.co.uk|femmeactuelle.fr|hausjournal.net|lepoint.fr|chefkoch.de
 coco.we-online.com$domain=we-online.com
 /modulos/cookies$domain=villagrancanaria.com
