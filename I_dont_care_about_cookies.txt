@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 347.202303071035
+! Version: 347.202303081357
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 07 Mar 2023 10:35 UTC
+! Last modified: 08 Mar 2023 13:57 UTC
 !
 !
 ! GLOBAL RULES
@@ -13676,6 +13676,7 @@
 ##.z-cookie-alert[class*="bottom"]
 ##.cookie-policy__banner
 ###pmc-check-prod ~ #modal-already-shared
+##.tt-cookie-consent
 !
 ! CUSTOM RULES
 !
@@ -16117,7 +16118,6 @@ freeimages.com##.navbar-qards
 datafox.de##.popup-banner
 lyricsmode.com##body > div:not([id]):not([class])
 recurly.com##.recurly-gdpr
-pokewiki.de###gl-topbar-bg, #gl-topbar
 aa.com###aa_optoutmulti-Modal
 lzinios.lt##body > div:not([id]):not([class])
 heroku.com###heroku-cookie-banner
@@ -18119,7 +18119,6 @@ asket.com##.site-notice
 scummvm.org##.cookie-consent
 web-axioma.ru##.confform
 imaginanet.com##.cookies
-clubmed.co.uk##.Line-container > .fixed.shadow
 adelaida.ro###barwrap
 mikronis.hr##.cookies
 buket.hr##.kukip
@@ -18846,7 +18845,6 @@ delibio.fr##.cookie
 dollargeneral.com###myModal
 patook.com###cookies_subtext
 hpicheck.com###toasts-container
-clubmed.fr##.Layout > .fixed
 latestdeals.co.uk###root > div > main + div
 audirvana.com##.elementor-popup-modal
 dvb-t2-portal.de###coPolicyMain
@@ -21191,7 +21189,6 @@ people.cn###shengmingTip
 bipandgo.com##.ucm_wrapper
 benq.eu###cookie-fullscreen
 plusmobile.fr##.gdpr
-svd.se###schibsted-data-controller-sticky
 aftenposten.no###data-controller-sticky
 traderepublic.com##.consentCard
 tfwm.org.uk##.wmnds-cookies-banner
@@ -22736,7 +22733,6 @@ caf.com###cafModal
 bell-labs.com###n-cookie-notice
 linearb.io##.cookie-consent
 sweez.ch###cookies-adviser
-vg.no##.schibsted-data-controller
 esbank.pl###cookie_info_es
 nexcess.net##div[class*="CookieAcceptance"]
 compress-or-die.com##.module_consent__main
@@ -22751,6 +22747,14 @@ coinbase.com###root > div > [class*="backgroundAlternate"], div[class*="ContentH
 nft.coinbase.com##footer ~ .fixed[class*="bottom"]
 pro.coinbase.com###page_content > div + div:last-child
 login.coinbase.com##div[data-testid="banner-container"]
+vicuspelle.ch##.cookie-model
+clubmed.co.uk##.Layout > .fixed
+clubmed.us##.Layout > .fixed
+yamibuy.com##.cookie
+atlasstoked.com##.gdprModal
+finn.no###schibsted-banner
+bytbil.com##.schibsted-info
+motek.no##.js-gdpr
 !
 ! SCRIPT BLOCKING
 !
@@ -23393,7 +23397,6 @@ gdpr.internetbrands.com
 ||.be/api/gdpr$script
 ||.nl/api/gdpr$script
 -gdpr-min.js^
-/gdpr-transparency-apnxs/latest/gdpr-bundle.js
 ||sitemaps.services.zam.com/gdpr_optout.js$script
 /ibeugdpr.min.js
 ||consensu.org/gdpr/cmp/gdpr-cmp-ui.js$script
@@ -23463,10 +23466,10 @@ pdcc.gdpr.es
 ||ecos.am/gdpr.js$script
 /modal-gdpr.umd.js
 /gdpr_notice.js
+/gdpr-transparency-apnxs/latest/gdpr-bundle.js
 /media/plg_system_eprivacy$domain=~reshade.me
 ||recepttar.hu/js/privacy.js$script
 cmp.dmgmediaprivacy.co.uk$domain=~metro.co.uk
-jssdk.privacy.pre.schibsted.com
 ||secureprivacy.ai/secureprivacy-plugin/$script
 /vendor/weka/privacykit/*
 ||privacy.clym.io/js/clym-widget.js$script
@@ -23479,7 +23482,6 @@ jssdk.privacy.pre.schibsted.com
 ||privacypolicy.trgr.be/widget$script
 /privacyopt.js
 /privacypolicy/styles/all/template/remove_url.js
-||psi.schibsted.com/api/v2/privacy/notification$script
 /wp-content/plugins/privacy-policy-info/*
 /e-privacy.min.js
 /privacyConsentBar.js
@@ -23973,15 +23975,14 @@ cdn.civiccomputing.com$domain=metoffice.gov.uk|churchofengland.org|yodel.co.uk|t
 /iCookie/*$domain=h-supertools.com
 /he-consent/*$domain=dennree.de
 /uc_cookie$domain=gastro24.de|gastro-hero.de
-cmp.$domain=telerama.fr|courrierinternational.com|vodkaster.com|tek.no|finn.no|histoire-et-civilisations.com|malservice.aftonbladet.se
+cmp.$domain=telerama.fr|courrierinternational.com|vodkaster.com|svd.se|histoire-et-civilisations.com|malservice.aftonbladet.se|vg.no|tv.nu|tek.no|finn.no|pent.no|godt.no
 brsimg.com/gdpr$script,domain=boursorama.com
 trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookie-banner$domain=hauptbahnhofcity.wien
 /cookiefly/*$domain=internet-rockstars.com
-/messagingNoTcfApi.js$domain=aftenposten.no|vg.no|svd.se|aftenbladet.no|e24.no|minmote.no|klart.se
+/messagingNoTcfApi.js$domain=aftenposten.no|svd.se|aftenbladet.no|e24.no|minmote.no|klart.se
 /consent-layer/*$domain=bahn.de
 /checkcookies.js$domain=iracing.com
-/wrapperMessagingWithoutDetection.js$domain=vg.no|boerse.de|bt.no
 /ice.js$domain=lifesycle.co.uk
 /cookies$domain=next-immo.com
 /fnGdpr.js$domain=financer.com
@@ -24050,15 +24051,12 @@ cookie-banner*$domain=studio3t.com
 /ensighten/*$domain=britishairways.com|ba.com
 /klaro$domain=tarif4you.de
 ccm.carpassion.com$domain=carpassion.com
-cmp.godt.no$domain=godt.no
-cmp.pent.no$domain=pent.no
 /cookie-policy/*$domain=hotmart.com
 /consent-$domain=widforss.no
 /acmp.js$domain=ameblo.jp
 /dkmb_gdpr.js$domain=fightful.com
 /uc-cmp/*$domain=santander.de
 /cookpop.min.js$domain=electromenager-compare.com
-cmp.tv.nu$domain=tv.nu
 /aw-cookie.min.js$domain=soprema.fr
 /fc_cookie.js$domain=bosch-stiftung.de
 cmp.lavie.fr$domain=lavie.fr
@@ -24097,7 +24095,8 @@ coco.we-online.com$domain=we-online.com
 /modulos/cookies$domain=villagrancanaria.com
 /vfConsentCookies$domain=vodafone.cz
 /jimmsconsent$domain=jimms.fi
-/rcs_cpmt/*$domain=open.online
+/wrapperMessagingWithoutDetection.js$domain=vg.no|boerse.de|bt.no
+/rcs_cpmt/*$domain=open.online|style.corriere.it
 /ph-cookie-helper-mu/*$domain=uwartsonline.nl
 .consent-$domain=pcgames.de
 /cookie-preferences$domain=halebop.se
