@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 347.202303081357
+! Version: 347.202303101024
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 08 Mar 2023 13:57 UTC
+! Last modified: 10 Mar 2023 10:24 UTC
 !
 !
 ! GLOBAL RULES
@@ -7736,7 +7736,7 @@
 ##.ec-cookie-bar:not(body):not(html)
 ##m-cookies-notice
 ##.alertaModal .msg.cookies
-~kombi.de##.fusion-privacy-bar:not(body):not(html)
+##.fusion-privacy-bar
 ###consentBanner
 ##.v2-cookie-disclaimer
 ##.cookieBar-filler:not(body):not(html)
@@ -15410,7 +15410,6 @@ alterego.waw.pl###SITE_ROOT ~ .siteAspectsContainer
 frichti.co##.notification--CNIL
 gwpharm.com##.main > .block.block-block.show
 ttv.pl###msgLayer
-androidcentral.com##.usr-msg
 oysteryachts.com##.top-header
 vrin.fr###Disclaimer
 locservice.fr###CookiesInfos, #CookiesInfosPrefix
@@ -20021,7 +20020,6 @@ spirou.com##.modal-cookies
 vr-expert.nl##.elementor-popup-modal
 dish.com##.ccpa
 totallymoney.com##.tm-cookie-banner__spacer
-tickets.motorsport-total.com###app > div:last-child:not(:only-child)
 insomnia.gr###elInsomniaCookieBar
 consolewars.de##.cookies_dim
 fitnessraum.de##.cc-gdpr-modal, .modal-backdrop
@@ -21777,7 +21775,6 @@ whiskynet.hu###__nuxt footer ~ div:not([style])
 norgesgruppen.no###coco
 smakmagasinet.no###coco
 naturvardsverket.se###App > div
-koh-i-noor.cz###EuConsentV2, .modal-backdrop
 iplt20.com##.cookie
 mp.br###termo-uso, #modalConsentimento, .modal-backdrop, .lumis-service-privacyterm, .cookie-container.active
 odsluchane.eu##.alert-flash
@@ -21886,7 +21883,6 @@ burgerking.co.uk##div[class*="toast-container"] ~ div:not([data-testid])
 burgerking.fr##main > header ~ div:last-child
 makeship.com##.consent-wrapper
 gv.at###am-cookie, #l42-cc__body
-parlament.gv.at##.popupOverlay
 bakecaincontrii.com##.alert.fixed-bottom
 superology.com##.omnom-nom
 thephuketnews.com##.fixed-bottom
@@ -22755,6 +22751,10 @@ atlasstoked.com##.gdprModal
 finn.no###schibsted-banner
 bytbil.com##.schibsted-info
 motek.no##.js-gdpr
+coloursofistria.com##.altcm-fixed
+koh-i-noor.cz###EuConsentV2, .modal-backdrop
+levnesporaky.cz###EuConsentV2, .modal-backdrop
+javarush.com##.cookie-consent
 !
 ! SCRIPT BLOCKING
 !
@@ -24095,11 +24095,12 @@ coco.we-online.com$domain=we-online.com
 /modulos/cookies$domain=villagrancanaria.com
 /vfConsentCookies$domain=vodafone.cz
 /jimmsconsent$domain=jimms.fi
-/wrapperMessagingWithoutDetection.js$domain=vg.no|boerse.de|bt.no
+/wrapperMessagingWithoutDetection.js$domain=vg.no|boerse.de|bt.no|liberation.fr
 /rcs_cpmt/*$domain=open.online|style.corriere.it
 /ph-cookie-helper-mu/*$domain=uwartsonline.nl
 .consent-$domain=pcgames.de
 /cookie-preferences$domain=halebop.se
+/Libs/cookies$domain=nadeta.cz
 !
 ! FILTERLIST ONLY
 !
