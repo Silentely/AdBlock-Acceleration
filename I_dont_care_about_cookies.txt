@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 347.202303111829
+! Version: 347.202303131053
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 11 Mar 2023 18:29 UTC
+! Last modified: 13 Mar 2023 10:53 UTC
 !
 !
 ! GLOBAL RULES
@@ -698,7 +698,7 @@
 ##.eucookie:not(body):not(html)
 ##.coockie:not(body):not(html)
 ##.container-cookie-notice
-~roli.com,~msn.com,~eurogamer.net,~rtlxl.nl,~zdf.de,~crfashionbook.com,~rockpapershotgun.com,~zdnet.com,~mensjournal.com,~cbsnews.com,~cbslocal.com,~assetstore.unity.com,~gmx.com,~gmx.es,~gmx.fr,~gmx.co.uk,~mail.com,~kruidvat.nl,~kruidvat.be,~trekpleister.nl,~tvn24.pl,~popsugar.co.uk,~rte.ie,~tunein.com,~oe24.at,~sika.com,~merkurmarkt.at,~boomerang-tv.pl,~cnbc.com,~1001spiele.de,~dhl.de,~sport.pl,~reisetopia.de,~mtvuutiset.fi,~billa.at,~aerztezeitung.de,~okazii.ro,~credit-suisse.com,~avisendanmark.dk,~milwaukeetool.eu,~geizhals.at,~geizhals.de,~geizhals.eu,~ryobitools.eu,~puma.com,~ikea.com,~beko.com,~gamespot.com,~blaklader.at,~blaklader.be,~blaklader.ca,~blaklader.com,~blaklader.cz,~blaklader.de,~blaklader.dk,~blaklader.ee,~blaklader.es,~blaklader.fi,~blaklader.fr,~blaklader.ie,~blaklader.it,~blaklader.nl,~blaklader.no,~blaklader.pl,~blaklader.se,~blaklader.uk###cookie-preferences
+~roli.com###cookie-preferences
 ###notificacio-cookies
 ##.cookies-message:not(body):not(html):not([class*="seal"])
 ###scc-consent
@@ -10188,7 +10188,6 @@
 ##.cookie-prompt__wrap
 ###rgpd__info__
 ~hotelsbarriere.com,~ufz.de##footer ~ div[id*="cookie-banner"]
-~msn.com,~eurogamer.net,~rtlxl.nl,~zdf.de,~crfashionbook.com,~rockpapershotgun.com,~zdnet.com,~mensjournal.com,~cbsnews.com,~cbslocal.com,~assetstore.unity.com,~gmx.com,~gmx.es,~gmx.fr,~gmx.co.uk,~mail.com,~kruidvat.nl,~kruidvat.be,~trekpleister.nl,~tvn24.pl,~popsugar.co.uk,~rte.ie,~tunein.com,~oe24.at,~sika.com,~merkurmarkt.at,~boomerang-tv.pl,~cnbc.com,~1001spiele.de,~dhl.de,~sport.pl,~reisetopia.de,~mtvuutiset.fi,~billa.at,~aerztezeitung.de,~okazii.ro,~credit-suisse.com,~avisendanmark.dk,~milwaukeetool.eu,~geizhals.at,~geizhals.de,~geizhals.eu,~ryobitools.eu,~puma.com,~ikea.com,~beko.com,~gamespot.com,~blaklader.at,~blaklader.be,~blaklader.ca,~blaklader.com,~blaklader.cz,~blaklader.de,~blaklader.dk,~blaklader.ee,~blaklader.es,~blaklader.fi,~blaklader.fr,~blaklader.ie,~blaklader.it,~blaklader.nl,~blaklader.no,~blaklader.pl,~blaklader.se,~blaklader.uk###onetrust-consent-sdk
 ###park-cookiebar-el
 ###cerezsorgula.cerezsorgula
 ##.gdprNotice:not(body):not(html)
@@ -13677,6 +13676,7 @@
 ##.cookie-policy__banner
 ###pmc-check-prod ~ #modal-already-shared
 ##.tt-cookie-consent
+###consent-tracking-custom
 !
 ! CUSTOM RULES
 !
@@ -22756,6 +22756,7 @@ javarush.com##.cookie-consent
 idowa.de##.needsclick
 foraum.de##.needsclick
 osnews.com##.ez-cookie-banner
+miravia.es##body > .container
 !
 ! SCRIPT BLOCKING
 !
@@ -23283,6 +23284,7 @@ cookies.ptj.de
 /dist/scripts/cookie-control
 ||am-static.com/cookie-banner$script
 /marked-cookie-consent-web/*
+||app.falconcookie.de/storage$script
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
