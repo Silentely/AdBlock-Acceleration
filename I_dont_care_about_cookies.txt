@@ -1,17 +1,17 @@
 [Adblock Plus 2.0]
-! Version: 347.202303131053
+! Version: 347.202303141236
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 13 Mar 2023 10:53 UTC
+! Last modified: 14 Mar 2023 12:36 UTC
 !
 !
 ! GLOBAL RULES
 !
 ###stickyCookieBar
 ##.cookiebar-bar:not(body):not(html)
-~anadibank.com,~itextpdf.com###sliding-popup.sliding-popup-bottom
+~anadibank.com,~lotusbakeries.nl,~itextpdf.com###sliding-popup.sliding-popup-bottom
 ###cookie_bar_top
 ###cookielaw:not(.modal)
 ~conso.ro,~daimler.com,~ihreapotheken.de,~filmboxlive.com###cookiePolicy:not(.reveal):not(.modal)
@@ -1470,7 +1470,7 @@
 ###cookie_ok1
 ##.cookies_bandeau:not(body):not(html)
 ###wk_cookiebar
-~inwerk.de,~bioplanete.com,~miltenyibiotec.com,~brabus.com,~promondo.de,~acerta.be###modal-cookie
+###consent-tracking-custom
 ###modal-cookie + .reveal-modal-bg
 ##.cookies-information:not(body):not(html)
 ###toolbar_cookies
@@ -9393,7 +9393,7 @@
 ###optinmessagebg ~ #optInMessage-new
 ###notification-bars div[id*="cookie-policy"]
 ###tc_priv_CustomOverlay
-~cgi.com,~otpbank.ro,~anadibank.com,~itextpdf.com##.eu-cookie-compliance-banner
+~cgi.com,~otpbank.ro,~anadibank.com,~lotusbakeries.nl,~itextpdf.com##.eu-cookie-compliance-banner
 ~pvcvoordeel.nl##.js-cookie-popup:not(body):not(html)
 ##.max_wp_cookie_notification
 ##.full-width-bar.important[style*="block"] .notif-bar
@@ -10845,7 +10845,7 @@
 ###rodoinfo[style*="2980b9"]
 ##.bb-banner[aria-label*="cookieconsent"]
 ###iwcc-background[data-domain-name]
-~eam.de,~eam-netz.de##.tx-om-cookie-consent
+~starmoney.de##.tx-om-cookie-consent
 ###react-cookie-approval
 ###js-gdpr-cookie-popup
 ###js-gdpr-cookie-open
@@ -12549,7 +12549,7 @@
 ###page ~ [id*="cookiebar"]
 ##.dcx-cookie-consense
 ##.banner[class*="cookie-consent"]:not(body)
-##comply-consent-manager
+##.tt-cookie-consent
 ##.cookie-consent-shadow-bg
 ###js-cookies-footer
 ##.cookies_warn
@@ -13675,8 +13675,6 @@
 ##.z-cookie-alert[class*="bottom"]
 ##.cookie-policy__banner
 ###pmc-check-prod ~ #modal-already-shared
-##.tt-cookie-consent
-###consent-tracking-custom
 !
 ! CUSTOM RULES
 !
@@ -17114,7 +17112,6 @@ revenue.ie##.darker
 drupal.org###drupalorg-crosssite-gdpr
 gosu.ai##gosu-notification
 coinsquare.com###body ~ div
-starmoney.de##.footer-banner-wrap
 prudential.co.za##.investor-type-box .cookie-policy-text
 bravotv.com##.gdpr
 marseille.fr###app > div > div[style*="fixed"] > div > div[role="alertdialog"]
@@ -21187,7 +21184,6 @@ people.cn###shengmingTip
 bipandgo.com##.ucm_wrapper
 benq.eu###cookie-fullscreen
 plusmobile.fr##.gdpr
-aftenposten.no###data-controller-sticky
 traderepublic.com##.consentCard
 tfwm.org.uk##.wmnds-cookies-banner
 foodwatch.org##.cn-banner
@@ -22322,7 +22318,6 @@ commentcoder.com##div[class*="gdpr__Modal"]
 carsized.com##body > center ~ center
 mycards.hdfcbank.com##.hdfc-page > div[style*="center"]
 unigine.com##.bottom-notice
-holmasto.fi##gds-consent-manager
 dafy-moto.com##.js-cookie-headband
 gruene-bundestag.de##.cn-wrapper
 hansanders.nl###cookie-dialog-wrapper
@@ -22757,6 +22752,11 @@ idowa.de##.needsclick
 foraum.de##.needsclick
 osnews.com##.ez-cookie-banner
 miravia.es##body > .container
+startapro.hu###cookie
+barenbrug.fr##vk-cookie-manager
+kokoomus.fi##gds-consent-manager
+holmasto.fi##gds-consent-manager
+hdz-nrw.de##.cc
 !
 ! SCRIPT BLOCKING
 !
@@ -23285,6 +23285,7 @@ cookies.ptj.de
 ||am-static.com/cookie-banner$script
 /marked-cookie-consent-web/*
 ||app.falconcookie.de/storage$script
+/brd_cookies_consent/*
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23392,6 +23393,7 @@ consent.scm-verlagsgruppe.de
 ||consentmanager.net/delivery/js/cmp$script,domain=~winfuture.de|~infranken.de|~echo-online.de
 ||consentmanager.net/delivery/cmp$script,domain=~winfuture.de|~infranken.de|~echo-online.de
 /coockieconsent.js
+consent.comply-app.com
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -23978,17 +23980,17 @@ cdn.civiccomputing.com$domain=metoffice.gov.uk|churchofengland.org|yodel.co.uk|t
 /iCookie/*$domain=h-supertools.com
 /he-consent/*$domain=dennree.de
 /uc_cookie$domain=gastro24.de|gastro-hero.de
-cmp.$domain=telerama.fr|courrierinternational.com|vodkaster.com|svd.se|histoire-et-civilisations.com|malservice.aftonbladet.se|vg.no|tv.nu|tek.no|finn.no|pent.no|godt.no
+cmp.$domain=telerama.fr|courrierinternational.com|vodkaster.com|svd.se|histoire-et-civilisations.com|malservice.aftonbladet.se|vg.no|tv.nu|tek.no|finn.no|pent.no|godt.no|aftenposten.no
 brsimg.com/gdpr$script,domain=boursorama.com
 trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookie-banner$domain=hauptbahnhofcity.wien
 /cookiefly/*$domain=internet-rockstars.com
-/messagingNoTcfApi.js$domain=aftenposten.no|svd.se|aftenbladet.no|e24.no|minmote.no|klart.se
 /consent-layer/*$domain=bahn.de
 /checkcookies.js$domain=iracing.com
 /ice.js$domain=lifesycle.co.uk
 /cookies$domain=next-immo.com
 /fnGdpr.js$domain=financer.com
+/messagingNoTcfApi.js$domain=svd.se|aftenbladet.no|e24.no|minmote.no|klart.se
 /sygnal42-gdpr/*$domain=blitzrechner.de
 /CookieLayer.js$domain=multipower.com
 /cookie_management.js$domain=meteoradar.ch
@@ -24104,6 +24106,7 @@ coco.we-online.com$domain=we-online.com
 .consent-$domain=pcgames.de
 /cookie-preferences$domain=halebop.se
 /Libs/cookies$domain=nadeta.cz
+/standard-cookies/*$domain=standard.sk
 !
 ! FILTERLIST ONLY
 !
