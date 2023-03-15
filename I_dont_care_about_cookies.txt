@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 347.202303141236
+! Version: 347.202303151202
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 14 Mar 2023 12:36 UTC
+! Last modified: 15 Mar 2023 12:02 UTC
 !
 !
 ! GLOBAL RULES
@@ -114,7 +114,7 @@
 ~qatarairways.com###cookieContainer
 ##.footer-cookies-policy
 ##.eucookie_disclaimer:not(body):not(html)
-~adtipp.de,~handelsregister.de,~bk.com###cookie-popup
+~dvwg.de,~adtipp.de,~bk.com###cookie-popup
 ###cookie-background
 ##.cookie-law:not(body):not(html):not(.post-content)
 ###cookie_tab_main
@@ -13675,6 +13675,7 @@
 ##.z-cookie-alert[class*="bottom"]
 ##.cookie-policy__banner
 ###pmc-check-prod ~ #modal-already-shared
+##.container_cookies_alert
 !
 ! CUSTOM RULES
 !
@@ -13943,7 +13944,6 @@ mountain.es###messagebar
 dictzone.com###ac
 qrzcq.com##body > div:not([id]):not([class])
 stoeger.net##.sqs-announcement-bar
-gore-ljudje.net##.blockUI
 winsornewton.com###PECR
 flugladen.de##.notificationContainer
 lca.pl###popupDiv
@@ -14203,11 +14203,10 @@ zahradnikrby.cz###cs_bx, #cs_bx_envl
 v10.pl##body > div[style*="width"]
 datatypes.net###cw
 dnevnik.si###app-messages
-einbuergerungstest-online.eu##.alert-info, .alert-warning, .alert-box
+einbuergerungstest-online.eu###header + .alert
 cinquantamila.it###privacy_advisor
 englishgratis.com###privacy_box_container
 sexomercadobcn.com##.hidder, .disclamer
-nordschleswiger.dk##.TopAdvertising-Content-Wrapper > .Seeems-CollapsibleArea
 heim-und-haustiere.de###hinweise
 librogame.net###system-message, #system-messages, #system-message-container
 concordiaubezpieczenia.pl##.head-page-information
@@ -14564,7 +14563,6 @@ kapszulavadasz.hu###cook, .cook
 kalkulatorkalorii.net##.ek-bar
 manualslib.com##.policy, #policy, .cpolicy
 alablaboratoria.pl###cover
-kkuriren.se###p_ciCont
 alko-memy.pl###cookieMain
 kierunekspozywczy.pl###cook, .cook
 blackspur.com###MainTable div[style*="background:#333"]
@@ -14643,7 +14641,6 @@ overcoming.co.uk###msg_top_bar
 somethingartistic.net###hellobar-slider
 valtifest.nl###cerabox, #cerabox-background
 volvotrucks.nl##.headerNotification
-havoline.com##.blockUI
 zetchilli.pl##.giodoContainer
 marathondumontsaintmichel.com##.confidentialite
 humanic.net###privacyOverlay
@@ -14651,7 +14648,6 @@ webmaster-rank.info###footerSlideContainer
 216dt.com###bdy > div[style*="fixed"]
 pingvinpatika.hu##.alert-info, .alert-warning, .alert-box
 voglioviverecosi.com##.alert-dismissible, .alert-dismissable, .alert--dismissable, .pmd-alert-dismissible
-ekuriren.se###p_ciCont
 britmodeller.com##.ipsMessage_error
 liquiddota.com##body > div:not([id]):not([class])
 digivaardigdigiveilig.nl###boxes
@@ -15653,7 +15649,6 @@ merseyfire.gov.uk###popup_box
 baumtronics.com##.banner, #banner
 autohaus-eberstein.de###notify2
 01-telecharger.com###cokkies
-impelshop.com###privacy_policy
 capitandenim.com###menscookie
 optochtenkalender.nl##.PanelPopUp
 thinkshoes.com###data-privacy-bar
@@ -16308,7 +16303,6 @@ luisaviaroma.com##.privacy-box
 westword.com##.compliance
 shouldianswer.co.uk##.consent, #consent
 zurich.de##.mod-notification-teaser
-rockhard.de###yt-message
 myth-weavers.com###consent_container
 sportskeeda.com##.consent-pop-up
 tzorg.nl##.notification
@@ -17227,7 +17221,6 @@ iceland.co.uk##.policy-dialog
 karum.pl###cookie
 tunnelbear.com##.banner-wrap
 tygodniksiedlecki.com##.rodo-bg
-private.com###cookies
 siemoneit-racing.de###getnoticeData
 moneymaven.io##.consent-ui
 3t.no###notification
@@ -17641,9 +17634,6 @@ tokuweb.de##.alertbanner
 kbaur-gmbh.com##.alertbanner
 gestaltamwerk.de##.alertbanner
 ajs-bw.de##.alertbanner
-hetweeractueel.nl##body > div[id^="WG"]
-achteruitkijkspiegel.nl##body > div[id^="WG"]
-recordplanet.nl##body > div[id^="WG"]
 fdu.org.ua###pd_popup
 telehit.com##.Privacy.Telehit
 voetbalnederland.nl##body > div[style*="border"]
@@ -22757,6 +22747,12 @@ barenbrug.fr##vk-cookie-manager
 kokoomus.fi##gds-consent-manager
 holmasto.fi##gds-consent-manager
 hdz-nrw.de##.cc
+tu.no###__next > .fixed[class*="bottom"]
+mbl.is###cookie-consent
+cdlens.com##.jsPrivacy
+impelshop.com##.jsPrivacy
+bitvavo.com###cookie-wall
+recordplanet.nl##body > div[id^="WG"]
 !
 ! SCRIPT BLOCKING
 !
@@ -23645,7 +23641,6 @@ sibboventures.mgr.consensu.org
 ||etracker.de/optin_overlay.php$script
 /libraries/google/do-not-track.js
 /tracking-permission-dialog.js
-||origin-images.wikia.com/fandom-ae-assets/tracking-opt-in$script
 /tracking-opt-in.min.js
 /contaotrackingmanager/*
 /peg_utils/tracking/*
@@ -24107,6 +24102,8 @@ coco.we-online.com$domain=we-online.com
 /cookie-preferences$domain=halebop.se
 /Libs/cookies$domain=nadeta.cz
 /standard-cookies/*$domain=standard.sk
+/Disclaimer.js$domain=private.com
+consent.$domain=seeandso.com
 !
 ! FILTERLIST ONLY
 !
