@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 347.202303151202
+! Version: 347.202303161147
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 15 Mar 2023 12:02 UTC
+! Last modified: 16 Mar 2023 11:47 UTC
 !
 !
 ! GLOBAL RULES
@@ -3076,7 +3076,7 @@
 ##.cookie-thing:not(body):not(html)
 ##.contenedor_cookies:not(body):not(html)
 ##.cookie__top:not(body):not(html)
-~archimag.com,~igbce.de##.eupopup-container:not(body):not(html)
+~archimag.com##.eupopup-container:not(body):not(html)
 ##.cookies-ribbon:not(body):not(html)
 ###cookie_short_info
 ##.mikit_bandeau_cookies
@@ -11402,7 +11402,7 @@
 ##.cookie-consent-notification
 ###cookie-data-container
 ##.go-cookies-warning
-~bienvenue-a-la-ferme.com,~normandiealaferme.com,~lagazettedemontpellier.fr,~sufilog.com##.orejime-AppContainer
+##.orejime-button-cookie-manager__wrapper
 ##.cookies-rodo
 ###bongdpr
 ##.fixed-bottom[data-name*="CookieConsent"]
@@ -13676,6 +13676,7 @@
 ##.cookie-policy__banner
 ###pmc-check-prod ~ #modal-already-shared
 ##.container_cookies_alert
+##.ez-cookie-banner
 !
 ! CUSTOM RULES
 !
@@ -14208,12 +14209,7 @@ cinquantamila.it###privacy_advisor
 englishgratis.com###privacy_box_container
 sexomercadobcn.com##.hidder, .disclamer
 heim-und-haustiere.de###hinweise
-librogame.net###system-message, #system-messages, #system-message-container
-concordiaubezpieczenia.pl##.head-page-information
-farmacosmo.it###bottombar
-ttela.se##.ttelcGRCookieContainer
-carmenthyssenmalaga.org###divAlertas
-orgoglionerd.it##.irpclw
+librogame.net###system-message
 gmsystem.pl##body > form
 therapia.cz##.CC_wrap
 tagsistant.net###sbox-window, #sbox-overlay
@@ -18525,7 +18521,6 @@ tradingview.com##div[class^="toast-positioning-wrapper"]
 webastoconnect.com##.alert.ecc.show-ecc
 toptal.com###modal-host ~ div
 tune.de##.notification-bar
-ts.fi##body > div:not([id]):not([class])
 begindot.com##.elementor-popup-modal
 ntp.msn.com##.cookieWallBanner-1, .ComplianceHyperlink-1
 inatural.com.pl###cookie
@@ -22740,7 +22735,6 @@ levnesporaky.cz###EuConsentV2, .modal-backdrop
 javarush.com##.cookie-consent
 idowa.de##.needsclick
 foraum.de##.needsclick
-osnews.com##.ez-cookie-banner
 miravia.es##body > .container
 startapro.hu###cookie
 barenbrug.fr##vk-cookie-manager
@@ -22753,6 +22747,8 @@ cdlens.com##.jsPrivacy
 impelshop.com##.jsPrivacy
 bitvavo.com###cookie-wall
 recordplanet.nl##body > div[id^="WG"]
+viperhardseltzer.nl##.customOverlaybc
+mobrog.com##.mobrog-privacyM-first-container
 !
 ! SCRIPT BLOCKING
 !
@@ -23093,7 +23089,6 @@ bs-cookie.staging.springbok.agency
 /js/cookies_bar
 /modal/cookie-wall/?modal_view=true$domain=~100partnerprogramme.de
 /wp-content/plugins/better_cookie_consent/*
-/js/jquery-eu-cookie-law-popup
 flipdish-cookie-consent*
 /js/cookie-law-ansi
 cookieconsent.syreta.com
@@ -23282,6 +23277,7 @@ cookies.ptj.de
 /marked-cookie-consent-web/*
 ||app.falconcookie.de/storage$script
 /brd_cookies_consent/*
+/modules/hicookielaw/*
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23549,6 +23545,7 @@ cmp.pafo.fairbung.com
 ||fastcmp.com/fast-cmp.js$script
 ||veodys.fr/api/cmp$script
 ||precmp.prisa.com/dist/cmp.js$script
+||gravito.net/alehdetcmp$script
 ||gofundme.com/js/3.0/visitorCookie.js$script
 /CookiesDirective
 CookieAccept/affirmation.js
@@ -23691,7 +23688,6 @@ nexus.ensighten.com
 privacidade.api.milvus.com.br
 global.ketchcdn.com
 ||e-i.com/SITW$script
-||unpkg.com/orejime$script
 ||cassiecloud.com/loader.js$script
 ||baycloud.com/tgcl.min.js$script
 ||s2.getsitecontrol.com/widgets$script
@@ -23711,6 +23707,7 @@ api.brookiebot.com
 /childlikeform.com
 /chickensstation.com
 /colossalchance.com
+||unpkg.com/orejime$script
 /aliasanvil.com
 ||pcz.pl/static/js/moo-cooker.js$script
 /eucd/eucd.min.js
@@ -23754,7 +23751,6 @@ wpjslib-chunk-notification.js^
 /tvp-tcfapi.js
 ||ccm19.de/app/public/app.js$script
 ||ccm.ceasy.de/public/app.js$script
-/js/orejime/js/orejime.js
 /ccm/public/app.js?apiKey
 ||ccm19.de/app.js$script
 /wwwschutz.min.js
@@ -23767,6 +23763,7 @@ wpjslib-chunk-notification.js^
 /klaro/klaro-pe.js
 /users/ccbundle2.min.js
 /pandectes-core.js
+/orejime.js
 /iubenda_cs$domain=~radiomontecarlo.net|~tomshw.it|~repubblica.it|~video.lastampa.it|~nablawave.com|~buondi.it|~tgcom24.mediaset.it|~mediasetinfinity.mediaset.it|~telerama.fr|~skuola.net
 /amp-user-notification-
 ||sn.sanoma.fi/js/sccm$script
