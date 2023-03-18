@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: /UWkgWeA5UuTvR8TL4pcYg
-! Version: 202303172340
+! Checksum: FvXUbLzee8B6YlP+hdvBpA
+! Version: 202303180530
 ! Title: EasyList China
-! Last modified: 17 Mar 2023 23:40 UTC
+! Last modified: 18 Mar 2023 05:30 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/easylist/easylistchina/
 !
@@ -1433,7 +1433,7 @@ newduba.cn###jq_youxi
 ##a[href*="?invite_code="] > img[src*=".com"]
 ##a[href*="?register="] > img[src*=".douyinpic.com"]
 ##a[href*="?register="] > img[width="100%"]
-##a[href="/bbs/"] > img[src*=".bcebos.com"]
+##a[href="/forum/"] > img[src*=".bcebos.com"]
 ##a[href="/e/member/register/index.php?tobind=0&groupid=1"]
 ##a[href="/gghtml/tyc.html"]
 ##a[href="/goto.php?url=hth"]
@@ -1476,6 +1476,8 @@ newduba.cn###jq_youxi
 ##a[target="_blank"] > img[src*=".ikstatic.cn"][style="width:100%;height:100%"]
 ~mgtv.com##a[target="_blank"] > img[src*="hitv.com"]
 ##a[target="_blank"][onclick*="广告点击"]
+##.app-down-fix.body-fix
+##.player-news > .news-list
 ##body .has-ad
 ##body[onload*="u()"] > #x
 ##center > a[target="_blank"] > img[style="padding- bottom:5px;width:960px;height:120px;"]
@@ -2560,6 +2562,11 @@ newduba.cn###jq_youxi
 ||gauqeo.xyz^
 ||huluxia.com^$third-party
 ||tfallview.live^
+||effetspositifs.com^
+||xwewwgk.cn^
+||jusheng.asia^
+||jusheng.icu^
+||yalayi.net^
 !
 ##.btn[href*="/viphktv.com/"]
 ##[class][onclick*=".ununxsxs.top"]
@@ -9074,7 +9081,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||1fzw.com/content/templates/zjbnew/yxj.js
 ||1ketang.com/Runtime/js/play
 ||1stchina.net/static/js/jquery.in.
-||1vkx.cn/public/*/plugins/
 ||1x6666.com/img/
 ||2008mm.com^*.js
 ||2008xxx.com:888
@@ -13342,8 +13348,14 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zztongyun.com/static/js/sh.
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||tlxxw.cc/public/1/assets/js/custom/tt.
+||tlxxw.cc/public/*/plugins/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+55188.com##.wz_text
+55188.com##DIV[class^="gg"]
+55188.com##.couplet
+toolfk.com##.ad
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -16017,9 +16029,6 @@ xiaopi.com##.gg_box
 zt5.com##.gg_bt
 sinolub.com##.gg_cen
 eastday.com##.gg_channel_r_b
-55188.com,g138.com##.gg_head_l
-55188.com,g138.com##.gg_head_m
-55188.com,g138.com##.gg_head_r
 acglala.net##.gg_img
 itdog.cn##.gg_link
 yicai.com##.gg_loadpage
@@ -18949,7 +18958,6 @@ gohome.com.hk#@#div[id^="div-gpt-ad"]
 @@||192.168.*.1/$generichide
 @@||192.168.*/advertising_$stylesheet
 @@||199it.com^$generichide
-@@||1vkx.cn/public/*/jquery.min.js
 @@||2018x.bid/adview.js
 @@||210.40.130.91^*/ad.css?$stylesheet
 @@||2345.com/images/activity/20171111/open/j/close.png
@@ -21401,7 +21409,7 @@ fqsousou.com,kengso.com#@#.user-share
 @@||guahao.cn/common/js/plugins/fingerprint.js
 @@||hao123img.com/resource/zt/widget/service/util/clickTrack.
 @@||hdslb.com/bfs/cm/cm-sdk/static/js/bili-collect.js
-@@||hdslb.com/bfs/seed/log/report/log-reporter.js
+@@/log/report/*$script,domain=bilibili.com
 @@||highcharts.com.cn/highcharts/modules/heatmap.js
 @@||hk01.com^*/ga_trace.js
 @@||hk01.com^*/scripts/ga.js
