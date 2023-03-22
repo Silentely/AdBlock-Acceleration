@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 347.202303171310
+! Version: 347.202303220523
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 17 Mar 2023 13:10 UTC
+! Last modified: 22 Mar 2023 05:23 UTC
 !
 !
 ! GLOBAL RULES
@@ -3981,7 +3981,7 @@
 ###flashCookies
 ##.sc-cookies:not(body):not(html)
 ###MSoftCookieWarn
-~takarekbank.hu,~bricoman.fr,~bricomart.es##.cookie-accept:not(body):not(html):not(.btn):not(button)
+##.cookie-accept:not(body):not(html):not(.btn):not(button):not([class*="button"])
 ##.am-cookie-notice:not(body):not(html)
 ###biscuitFormDiv
 ###okno_rcookie
@@ -6007,7 +6007,7 @@
 ##.c-cookie-message:not(body):not(html)
 ###footerCookieDirective
 ##.ppr_priv_document_cookie_banner
-~takarekbank.hu##.js-cookie-container:not(body):not(html)
+##.js-cookie-container:not(body):not(html)
 ##.fr-c-message-wrap
 ##.ud-component--eu-cookie-message--app
 ###weusecookies
@@ -10366,7 +10366,7 @@
 ##body > div[class^="index_cookieNotification"]
 ##body > .active[class*="CookieAlert"]
 ##.cookieToGo.show.popup
-##iframe[src*="cmp.faktor.mgr.consensu.org"] ~ #fingerprint
+##div[class*="consent-manager_pageFiller"]
 ##.ui-site-rgpdCookiebar
 ###cookie_bottom_bar
 ##.region-gdpr #cookie-ban
@@ -14692,7 +14692,6 @@ surveycircle.com###consent_info
 amnesty.fr###content > div > div:not([style]):not([id])
 willys.se##.ax-global-messages
 greek-weather.org##.notice-top
-anisearch.de##.urgent-msg
 rocva.nl##.brochure-overlay, .brochure-overlay-bg
 giornalepop.it###policy-alert
 badplaats.nl##.cnotice
@@ -15441,7 +15440,6 @@ elsignificadode.net###bn-cookies
 louder.com##.hint
 coherent.com##body > div:not([id]):not([class])
 survio.com###cookies
-m.omroepwest.nl##.c-cbp-container
 aktionspreis.de##.leiste_vollstaendig
 moment-liege.be###coo
 mega-mania.com.pt##.pl-cookies
@@ -16005,7 +16003,6 @@ refresher.cz##.gdpr-panel
 opgevenisgeenoptie.nl##.cbar-wrapper
 optical-center.fr###cookieOk
 usporedi.hr###privacyPolicyModal, .modal-backdrop
-skdd.hr##.newsBottom
 hrdlog.net###DivCookies
 mercola.com##.gdpr-container
 netflixlovers.it###cs_container
@@ -16805,7 +16802,6 @@ eonline.com##.view-gdpr
 lloyd.com###globalerror
 hario.com###sample-dialog.dialog
 ads.nipr.ac.jp##.backdrop
-urbia.de##.layer-confirm-bottom
 lactalisfoodservice.es##.LSSI
 hoteldiamant.cz##.nl_cookies
 gewinnspiel.toom.de##.notification
@@ -20609,7 +20605,6 @@ pixlr.com##.policies, #agreement-wrapper
 info.pl##.zgody-popup, .head-page-information
 bnext.es###cookies
 solaris-store.com###cookies
-bricomarche.pt##.cookies
 slerp.com###root > div > div + div ~ div:last-child
 ecwid.com##.gdpr-window, .ec-notices
 easyparkitalia.it##.rah-static
@@ -22307,7 +22302,6 @@ picwish.com###cookies-win
 reolink.com##div[class*="cookie-popup"]
 chaincheck.de###float-bar
 innerengineering.com##.MuiSnackbar-anchorOriginBottomCenter
-animeschedule.net##.custom-consent-popup
 sofort.com###Cookietext
 medizinfuchs.de##.ConsentHint
 medizinfuchs.at##.ConsentHint
@@ -22353,7 +22347,6 @@ samsung.com##.helptips__container, #cookie_component
 saurclient.fr###cookies, .sds-m-cookiebanner
 lefigaro.fr##.fig-consent-banner
 aliexpress.ru##div[class*="PrivacyPolicyBanner"]
-svt.se##.svt-cookie-message
 tomtom.com###themeFooter, div[data-component-name="Footer"] ~ .fixed
 eneba.com###app > footer ~ div, main > div + div + div:last-child
 hypeclothinga.com###__next > .chakra-fade
@@ -22750,6 +22743,10 @@ dailymotion.com###consent-group
 nitropack.io###cookie-consent
 magentatv.pl##nav > [class*="InfoBar"]
 globalsolaratlas.info##gsa-cookie-banner
+skdd.hr###rgnCookie
+svt.se##.svt-cookie-message, #svtrecept__cookie
+digita.ai##.alert-popup
+animeschedule.net##.custom-consent
 !
 ! SCRIPT BLOCKING
 !
@@ -23433,7 +23430,7 @@ gdpr-banner.awsmpsa.com
 ||prizelogic.com/gdpr/third-party-optin.min.js$script
 /gdpr-popup.js
 /wordpress-ptchrgdprplugin/*
-gdpr-wrapper.privacymanager.io$domain=~kinuskikissa.fi|~geenstijl.nl|~dailybuzz.nl|~rtvnoord.nl|~omroepbrabant.nl|~futurezone.at|~profil.at|~kurier.at|~weeronline.nl|~lablue.de|~vesti.bg
+gdpr-wrapper.privacymanager.io$domain=~kinuskikissa.fi|~geenstijl.nl|~dailybuzz.nl|~rtvnoord.nl|~futurezone.at|~profil.at|~kurier.at|~weeronline.nl|~lablue.de|~vesti.bg
 ||evidon.com/pub/gdprnotice.js$script
 /wp-content/plugins/ct-ultimate-gdpr
 ||gdpr.mandarin-medien.de/manager.js$script
@@ -23504,7 +23501,7 @@ tag=ui/privacy/CookiesConsent
 ||privacy.wum.rocks/public/app.js$script
 /tagcommander/privacy_
 /serviceform-tools/privacy/sf-privacy
-||cmp.nextday.media/cmp$script,domain=~vi.nl|~omroepwest.nl
+||cmp.nextday.media/cmp$script,domain=~vi.nl
 cmp.dreamlab.pl
 /media/cmp/int_cmp_banner
 ||consensu.org/delivery/cmp.min.js$script
@@ -23522,7 +23519,7 @@ cmp.osano.com
 ||vlitag.com/plugins/cmp$script
 cmp.md-nx.com
 cdn.opencmp.net$domain=~foraum.de|~idowa.de
-cmp.faktor.mgr.consensu.org$domain=~omroepwest.nl|~consent.talpanetwork.com
+cmp.faktor.mgr.consensu.org$domain=~consent.talpanetwork.com
 ||gravito.net/cmp$script
 cdncmp.richaudience.com
 ||heymatic.com/assets/cmp$script
@@ -23742,7 +23739,7 @@ wpjslib-chunk-notification.js^
 ||samtykker.agm.as/agent.js$script
 ||samtykker.agdermedia.no/agent.js$script
 /PopUpPriva/PopPrivacymin.js
-||dialogue.sp-prod.net/messagingWithoutDetection.js$script,domain=~globalplayer.com
+||dialogue.sp-prod.net/messagingWithoutDetection.js$script
 /datenschutz.min.js
 /ccm19.js
 /app.dsgvo.min.js
@@ -23831,7 +23828,7 @@ consent.truste.com$domain=oracle.com
 /consent.css$domain=scholieren.com
 /cookiescript.js$domain=basiszinssatz.de
 /cookies/bundle$domain=lucozadeenergy.com
-/cmp/*$domain=guitarbackingtrack.com|bonniermag.se|carriereonline.com|sparkasse.at|01net.com|gizchina.com
+/cmp/*$domain=guitarbackingtrack.com|bonniermag.se|carriereonline.com|sparkasse.at|01net.com|gizchina.com|liebherr.com
 /ip-consent.min.js$domain=weersverwachting.nl
 cookiebot.com$domain=fluke.com
 /tui-cookie-bar.html$domain=tuicruises.com
