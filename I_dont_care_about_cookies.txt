@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 347.202303220523
+! Version: 347.202303241102
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 22 Mar 2023 05:23 UTC
+! Last modified: 24 Mar 2023 11:02 UTC
 !
 !
 ! GLOBAL RULES
@@ -243,7 +243,7 @@
 ###cookieMgn
 ###__ndcc_cookieImpliedConsent
 ###cookie-drop
-~stromnetz-hamburg.de,~epochtimes.fr,~clasohlson.com,~cafe-royal.com,~rituals.com##.cookie-bar:not(body):not(html)
+~stilord.pl,~stilord.it,~stilord.es,~stilord.de,~stilord.fr,~stilord.com,~stromnetz-hamburg.de,~epochtimes.fr,~clasohlson.com,~cafe-royal.com,~rituals.com##.cookie-bar:not(body):not(html)
 ~mea.com,~mitsubishielectric.com##.cookie_policy:not(body):not(html):not(#Content):not(#page)
 ###rb-cookie-container
 ~analog.com###cookie-consent-container
@@ -1569,7 +1569,7 @@
 ###informacja-o-cookies
 ###cookies-layer
 ##div[data-veci="cookies-policy"]
-##.cookie-info-box:not(body):not(html)
+~stilord.pl,~stilord.it,~stilord.es,~stilord.de,~stilord.fr,~stilord.com##.cookie-info-box:not(body):not(html)
 ##.cookie-messages:not(body):not(html)
 ###cookies_legislation
 ##.contcookies:not(body):not(html)
@@ -13028,7 +13028,7 @@
 ###csb_cookiehandler_icon
 ###csb_cookiehandler
 ###cmpboxrecall
-##.widget-cookie-bar
+~stilord.pl,~stilord.it,~stilord.es,~stilord.de,~stilord.fr,~stilord.com##.widget-cookie-bar
 ###header1_PanelCookie
 ###___gatsby div[data-cy*="cookie-policy"]
 ###root div[data-cy*="cookiePopup"]
@@ -13599,7 +13599,7 @@
 ###pnlCookieConsent
 ###cookieinfo--container
 ##.c-announcement--cookie
-##.ccm-root #ccm-widget
+##.ez-cookie-banner
 ###CCM_popup
 ###___gatsby div[class*="CookieNotification"]
 ###__tealiumGDPRcpPrefs .preferences_prompt_control_analytics
@@ -13676,7 +13676,6 @@
 ##.cookie-policy__banner
 ###pmc-check-prod ~ #modal-already-shared
 ##.container_cookies_alert
-##.ez-cookie-banner
 !
 ! CUSTOM RULES
 !
@@ -17930,7 +17929,6 @@ nationalcircus.org.uk##.cookie
 fischer.de##.cookie
 macorlux.pt##.cookie
 techmart.bg##.cookie
-oetkercollection.com##.cookie
 happywithyoga.com##.cookie
 skiline.cc##.cookie
 ulsterbank.ie##.cookie
@@ -20170,7 +20168,6 @@ phonemore.com##.gdpr
 correos.com###myCookies
 simplyhealth.co.uk###sh-cookie-banner
 indacoin.com###root > div[style*="block"]
-116117.de##.layer-cookie
 narzedziawarszawa.pl###cookie
 kronikaonline.ro###page-mask
 lotosnavigator.pl##.alert-dismissible
@@ -20322,7 +20319,6 @@ checkrobin.com###privacybox
 teliacompany.com##.tc-modal
 xpay.de###xpCookieBanner
 knubel.de###ConsentMsg.NotYetSelected
-oetker.de##.pd-main
 5ingredients15minutes.com##.gpdr-agreement
 altmarkt-galerie-dresden.de##.mdl-modal__backdrop, #mdl-overlay
 shop.teekampagne.de##body > div:not([id]):not([class])
@@ -22747,6 +22743,7 @@ skdd.hr###rgnCookie
 svt.se##.svt-cookie-message, #svtrecept__cookie
 digita.ai##.alert-popup
 animeschedule.net##.custom-consent
+oetkercollection.com##.cookie
 !
 ! SCRIPT BLOCKING
 !
@@ -23276,6 +23273,7 @@ cookies.ptj.de
 ||app.falconcookie.de/storage$script
 /brd_cookies_consent/*
 /modules/hicookielaw/*
+/kbv-cookieconsent.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23501,6 +23499,7 @@ tag=ui/privacy/CookiesConsent
 ||privacy.wum.rocks/public/app.js$script
 /tagcommander/privacy_
 /serviceform-tools/privacy/sf-privacy
+/privacy-dialog-tracking.js
 ||cmp.nextday.media/cmp$script,domain=~vi.nl
 cmp.dreamlab.pl
 /media/cmp/int_cmp_banner
@@ -23762,6 +23761,8 @@ wpjslib-chunk-notification.js^
 /users/ccbundle2.min.js
 /pandectes-core.js
 /orejime.js
+/ccm/app.js?apiKey
+||cc.diewebsitemacherei.de/app.js$script
 /iubenda_cs$domain=~radiomontecarlo.net|~tomshw.it|~repubblica.it|~video.lastampa.it|~nablawave.com|~buondi.it|~tgcom24.mediaset.it|~mediasetinfinity.mediaset.it|~telerama.fr|~skuola.net
 /amp-user-notification-
 ||sn.sanoma.fi/js/sccm$script
@@ -23812,6 +23813,7 @@ static.clickskeks.at
 /ConsentManager,Sticky
 /ccm19/public/*
 /coolkies-walkies/*
+ccm19.dsg-schweiz.ch
 /consumer/cookie/client$domain=bt.com
 /frontend/ajax/cookies$domain=romstal.ro
 /rodo-agreement-$domain=gremimedia.pl|zw.com.pl
