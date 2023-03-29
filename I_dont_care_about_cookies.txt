@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 347.202303280922
+! Version: 347.202303290901
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 28 Mar 2023 09:22 UTC
+! Last modified: 29 Mar 2023 09:01 UTC
 !
 !
 ! GLOBAL RULES
@@ -3643,7 +3643,7 @@
 ###cookiesoverview
 ##.site-message--cookies
 ###ukCookiePopup
-##.cookie-toast:not(body):not(html)
+~radicigroup.com##.cookie-toast:not(body):not(html)
 ###cookies-nag
 ###ode-cookie-popup
 ###cookiesText
@@ -13676,6 +13676,9 @@
 ##.z-cookie-alert[class*="bottom"]
 ##.cookie-policy__banner
 ###pmc-check-prod ~ #modal-already-shared
+##.GDPRConsent--widget
+###dbb-gdpr
+###__next div[aria-describedby*="cookie-banner-dialog"]
 !
 ! CUSTOM RULES
 !
@@ -20817,7 +20820,6 @@ evavonangern.de##.disclaimer
 airsoft.ch##.cb
 mediapart.fr##.cc-modal
 icabanken.se###blockbackground, #removeOnClose
-labellevie.com###confidentiality
 rnbee.ru###yw-cookie-gdpr
 jeanscentre.nl###gatsby-focus-wrapper > div:last-child
 uni-tuebingen.de##.in2-modal__blackbox, #privacy-background, #privacy-container
@@ -20865,7 +20867,6 @@ ifaa.de##.cmnstr-outer
 placedumarche.fr##.sky-cookies-banner
 xmlgold.eu##.cookie-window
 kedglobal.com##.cookies_layer
-dbb.de###dbb-gdpr
 satrucker.co.za##div[id*="cookie-notice"]
 almedina.net##.footer-fixed-bar
 23degrees.io##consent-toast
@@ -22642,7 +22643,6 @@ rikstv.no###cookie-consent
 mora.nl###dmccRoot
 get-in-it.de###GetIn_CookieConsentBox
 shsu.blackboard.com##.lb-overlay, .lb-wrapper-absolute
-nordvpn.com##div[class*="CookieConsent"]
 tue.nl###cookie-consent
 inserv.lv###cookie-consent
 rockymountaineer.com##.l-page__cookies
@@ -22747,6 +22747,11 @@ lexmark.com##.tui-gdpr
 calabria7.it##.elementor-location-popup
 caldigit.com##.elementor-location-popup
 i4wifi.cz###CPrivacy-Panel
+syrovarnya.com##div[class*="cookiesMessage"]
+venngage.com##.gdpr
+nicepage.com###np-cookie-consent
+weedmaps.com##div[data-testid="notification"]
+met.com##.met-cookie
 !
 ! SCRIPT BLOCKING
 !
