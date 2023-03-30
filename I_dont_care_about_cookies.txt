@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 347.202303290901
+! Version: 347.202303301221
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 29 Mar 2023 09:01 UTC
+! Last modified: 30 Mar 2023 12:21 UTC
 !
 !
 ! GLOBAL RULES
@@ -22752,6 +22752,7 @@ venngage.com##.gdpr
 nicepage.com###np-cookie-consent
 weedmaps.com##div[data-testid="notification"]
 met.com##.met-cookie
+satfilm.pl##.App > footer ~ div
 !
 ! SCRIPT BLOCKING
 !
@@ -23541,7 +23542,6 @@ cmp.optad360.io
 ||seznam.cz/js/cmp$script
 /pubtech-cmp
 cmp.pafo.fairbung.com
-||sibbo.net/v2/sibbo-cmp$script
 ||24net.cz/resources/js/cmp.js$script
 /quorn-cmp.min.js
 ||cmps.o2.cz/delivery$script
@@ -23549,6 +23549,7 @@ cmp.pafo.fairbung.com
 ||fastcmp.com/fast-cmp.js$script
 ||veodys.fr/api/cmp$script
 ||precmp.prisa.com/dist/cmp.js$script
+/sibbo-cmp-core.js$domain=~atresplayer.com
 ||gravito.net/alehdetcmp$script
 cmp.setupcmp.com
 ||gofundme.com/js/3.0/visitorCookie.js$script
@@ -23609,7 +23610,6 @@ shinystat.mgr.consensu.org
 dan.mgr.consensu.org
 ogury.mgr.consensu.org
 inforpl.mgr.consensu.org
-sibboventures.mgr.consensu.org
 ||ciasteczkowapolityka.pl/getscript$script
 ||bsl.nl/extern/smbv-incl/script.js$script
 ||ssl.synovite-scripts.com/ut$script
@@ -23980,7 +23980,7 @@ cdn.civiccomputing.com$domain=metoffice.gov.uk|churchofengland.org|yodel.co.uk|t
 /iCookie/*$domain=h-supertools.com
 /he-consent/*$domain=dennree.de
 /uc_cookie$domain=gastro24.de|gastro-hero.de
-cmp.$domain=telerama.fr|courrierinternational.com|vodkaster.com|svd.se|histoire-et-civilisations.com|malservice.aftonbladet.se|vg.no|tv.nu|tek.no|finn.no|pent.no|godt.no|aftenposten.no
+cmp.$domain=telerama.fr|courrierinternational.com|vodkaster.com|svd.se|histoire-et-civilisations.com|malservice.aftonbladet.se|vg.no|tv.nu|tek.no|finn.no|pent.no|godt.no|aftenposten.no|omni.se
 brsimg.com/gdpr$script,domain=boursorama.com
 trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookie-banner$domain=hauptbahnhofcity.wien

@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: +pBl2Gv0plQ/bwdHpSBMXQ
+! Checksum: sY6UCsyjzgBiHFHuAp39Bg
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202303301407
-! Last Modified: 2023年03月30日 14:07
+! Version: 202303302009
+! Last Modified: 2023年03月30日 20:09
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -3333,6 +3333,7 @@ newduba.cn###jq_youxi
 ||yangsir.xyz^
 ||qianqian.red^
 ||gcejdac.cn^
+||a44u.icu^
 ##.btn[href*="/viphktv.com/"]
 ##[class][onclick*=".ununxsxs.top"]
 ##a[href$=".120ydrayy.com"]
@@ -20379,10 +20380,17 @@ jmcomic1.city,jmcomic1.win##a[href^="http"]:not([href*="jmcom"]) > img
 !#7
 !#8
 !#91porny.com
+###playerJsvLayer.jsv-layer
 ##.btn-outline-primary[href*=".cc"]
 91porny.com,9s102.xyz,jiuse205.com,jiuse390.xyz,jiuse970.com##.container-fluid.p-0[class*="mb-"]
 91porny.com,9s102.xyz,jiuse205.com,jiuse390.xyz,jiuse970.com##.jsv-g1
 ##header + #main:nth-child(n+4) > div[id^="po-s"]:not(#po-shd)
+##header + #main:nth-child(n+4) > .container-fluid.mb-3.p-0
+##header + #main:nth-child(n+4) > .container-fluid.mb-3.p-0 + .jsv-g1
+##header + #main:nth-child(n+4) > .container-fluid.mb-0.p-0
+##header + #main:nth-child(n+4) > .container-fluid.mb-0.p-0 + .jsv-g1
+##header + #main:nth-child(n+4) > .jsv.jsv-g1.mb-0 > .container-fluid.mb-3.p-0
+##.fixed-bottom.jsv.jsv-g1
 ||27gh.cc^$popup,third-party
 !#99re.com
 .gif|$domain=99re.com
