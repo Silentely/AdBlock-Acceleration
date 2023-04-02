@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: ueoHoFqc8Am2cCOYjB4z/A
+! Checksum: lxbs9c8qdaNsKO4d+l3HTQ
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202304021404
-! Last Modified: 2023年04月02日 14:04
+! Version: 202304030202
+! Last Modified: 2023年04月03日 02:02
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -2037,6 +2037,7 @@ newduba.cn###jq_youxi
 ##a#wrapper_right_bg[target="_blank"]
 ##a.ad_links
 ##a[href$=".php"] > img[src*=".bcebos.com"]
+##a[href$=".xyz:8443"]
 ##a[href*=".com/?Extend="]
 ##a[href*=".com/Register.aspx?aid="]
 ##a[href*=".com/Register/?a="]
@@ -2070,6 +2071,7 @@ newduba.cn###jq_youxi
 ##a[href="/gghtml/tyc.html"]
 ##a[href="/goto.php?url=hth"]
 ##a[href="/static/xzgg/index.html"]
+##a[href="/vod/detail/id/118265.html"]
 ##a[href="javascript:GoGd();"]
 ##a[href="javascript:GoTp();"]
 ##a[href="javascript:window.GoTp();"]
@@ -2077,7 +2079,6 @@ newduba.cn###jq_youxi
 ##a[href^="/hy-"][ontouchstart]
 ##a[href^="http"] > img[src*="pic.rmb.bdstatic.com/"][src$=".gif"]
 ##a[href^="http://ad.moemoe."]
-##a[href="/vod/detail/id/118265.html"]
 ##a[href^="javascript:GoDb"]
 ##a[href^="javascript:gl012"]
 ##a[href^="javascript:gl012"] + img
@@ -2175,17 +2176,18 @@ newduba.cn###jq_youxi
 ||194.59.220.161^
 ||23.234.217.11^
 ||23.234.217.12^
+||1136999.com^
+||230579.top^
 ||aaaaa599.com^
 ||aaaaa663.com^
 ||aaaaa855.com^
-||jerrytom.xyz^
-||qiwjiy.xyz^
-||jwronx.xyz^
-||xingyang.in^
-||1136999.com^
-||230579.top^
 ||gwvzgjb.cn^
+||jerrytom.xyz^
+||jwronx.xyz^
+||qiwjiy.xyz^
 ||wangjiayi.fun^
+||xingyang.in^
+||yulingaa.xyz^
 ##.btn[href*="/viphktv.com/"]
 ##[class][onclick*=".ununxsxs.top"]
 ##a[href$=".120ydrayy.com"]
@@ -2412,7 +2414,7 @@ newduba.cn###jq_youxi
 ##a[href*="/bgm9z.com"]
 ##a[href*="/blfanss.com"]
 ##a[href*="/bli2a.com/"]
-##a[href*="/bucd.icu/"]
+##a[href*="/bucd.icu"]
 ##a[href*="/ck345.cc"]
 ##a[href*="/cslpldyc.me"]
 ##a[href*="/ctyitopo17.com"]
@@ -11965,6 +11967,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||mat1.gtimg.com/cq/flash/
 ||mat1.gtimg.com/ent/flash/*300
 ||maxthonimg.com/v6/festival/
+||mbalib.com/common/a_mbalib/
 ||mcmod.cn/editor/upload/20221126/1669399546_2_ONBt.
 ||mcncc.com/yeyou/*.htm
 ||me680.com/js/*.js
@@ -13051,7 +13054,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||videojj.com/flash/bin/vjj_config.xml
 ||videowood.me/assets/js/popup.js
 ||videowood.tv/popjavascript
-||vidhub.cc/huimee/
 ||vip.luanren.com/data/*.gif
 ||vip27j.xyz/dh.js
 ||vipdage.com/wp-content/uploads/ad/
@@ -20761,14 +20763,16 @@ bejson.com##img[src^="data"]
 bingfeng.tw###adbt
 bingfeng.tw##.wow-ad-link
 !#boylove.cc
-boylov.xyz,boylove.cc###fake_avivid_waterfall_webpush
-boylov.xyz,boylove.cc##.owl-carousel
-boylov.xyz,boylove.cc##.swiper-wrapper
-boylov.xyz,boylove.cc#?#:-abp-has(>.adsbyexoclick)
-boylov.xyz,boylove.cc##div[data-type="1"]
-boylov.xyz,boylove.cc##div[style="display: block"]
+boylov.xyz,boylove.cc,boyloves.fun###fake_avivid_waterfall_webpush
+boylov.xyz,boylove.cc,boyloves.fun##.owl-carousel
+boylov.xyz,boylove.cc,boyloves.fun##.swiper-wrapper
+##a[href*="/yfj8159.com"]
+boylov.xyz,boylove.cc,boyloves.fun#?#:-abp-has(>.adsbyexoclick)
+boylov.xyz,boylove.cc,boyloves.fun##div[data-type="1"]
+boylov.xyz,boylove.cc,boyloves.fun##div[style="display: block"]
 ||boylov.xyz^*/img/20*.gif
 ||boylove.cc^*/img/20*.gif
+||boyloves.fun^*/img/20*.gif
 !#Btkitty
 ##a[href^="http://yunbofangbt."]
 @@||baidu.com^*&cb=BaiduSuggestion.
@@ -21073,6 +21077,7 @@ $image,third-party,domain=258zw.com
 /ceshi127722.
 /dayu2.html?channelCode=$csp=script-src
 /hmzn_*_*_*.js?$script,third-party
+/jquery-ui.js?166$script,~third-party
 /js/easyAD.js
 /js/easyAD2.js
 /js/mangoIndexBanner.js
@@ -21095,7 +21100,6 @@ $image,third-party,domain=258zw.com
 /xxgg/pf*.js
 /xxgg/pv.js
 /xxgg/xsggs.js
-/jquery-ui.js?166$script,~third-party
 ://*:*/chunyu.html?k=$csp=script-src
 ://*:*/yeyue.html?k=$csp=script-src
 :6607/qy/$script,third-party
