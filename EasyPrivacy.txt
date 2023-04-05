@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202304042330
+! Version: 202304050547
 ! Title: EasyPrivacy
-! Last modified: 04 Apr 2023 23:30 UTC
+! Last modified: 05 Apr 2023 05:47 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -2449,8 +2449,6 @@
 /jscripts/analytics.js
 /jserrLog?
 /jslogger.php?ref=
-/jsnlog.js
-/jsnlog.min.js
 /json/stats?
 /json/tracking/*
 /json?mbox=
@@ -12856,6 +12854,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||shoplocal.com/it.ashx?
 ||shopnetic.com^$third-party
 ||shorthand.com/analytics/
+||showstopped.com/owa/log.php
+||showstopped.com/owa/modules/base/dist/owa.tracker.js
 ||sinajs.cn/open/analytics/
 ||sitebooster.com/sb/wix/p?$third-party
 ||sitefinity.com/collect/
@@ -15376,7 +15376,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||net.haier.com^
 ||netflix.com/msl/playapi/cadmium/logblob/
 ||netuplayer.top/cdn-cgi/trace
-||newegg.com/amber3/tracking?
+||newegg.com/amber3/
+||newegg.com/gfplib.js
 ||news.google.com/_/v
 ||newscom.com/js/v2/ga.js
 ||newser.com/utility.aspx?
@@ -30357,7 +30358,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||gomokuworld.com/app/modules/analyze.js$~third-party
 @@||google-analytics.com/analytics.js$domain=beinsports.com|brooklinen.com|healthrangerstore.com|jackbox.tv|k2radio.com|koel.com|kowb1290.com|stressless.com|tracking.narvar.com|truwin.com|westernunion.com
 @@||google-analytics.com/plugins/ga/inpage_linkid.js$domain=westernunion.com
-@@||googleoptimize.com/optimize.js$script,domain=binglee.com.au|inquirer.com|investing.com|lodgecastiron.com|tentree.ca
+@@||googleoptimize.com/optimize.js$script,domain=binglee.com.au|inquirer.com|investing.com|lodgecastiron.com|tentree.ca|virginmedia.com
 @@||googletagmanager.com/gtag/js$script,domain=academy.com|acornonline.com|aliexpress.com|carhartt-wip.com|cbslocal.com|devclass.com|ejgiftcards.com|herculesstands.com|honeystinger.com|kawasaki.com|liene-life.com|livongo.com|m.putlocker.how|mediaite.com|montcopa.org|schwab.com|toptal.com|virginplus.ca|winefolly.com
 @@||googletagmanager.com/gtm.js$domain=acehardware.com|acornonline.com|ads.spotify.com|aeromexico.com|aliexpress.com|atptour.com|axeptio.eu|backcountry.com|binglee.com.au|bsa-whitelabel.com|bybit.com|bybitglobal.com|carhartt-wip.com|ccleaner.com|chipotle.com|complex.com|coolermaster.com|crello.com|cyclingnews.com|cypress.io|dmv.ca.gov|doodle.com|dropps.com|easternbank.com|edwardjones.com|elnuevodia.com|ergotron.com|expressvpn.com|festoolusa.com|flytap.com|formula1.com|fortune.com|gorillamind.com|gravitydefyer.com|gumtree.com|harveynorman.co.nz|harveynorman.com.au|herculesstands.com|houseofbilocca.com|independent.co.uk|jn.pt|kedronparkhotel.com.au|konami.com|lecker.de|level.travel|mcgeeandco.com|mercell.com|montcopa.org|mysmartprice.com|nflgamepass.com|nielsendodgechryslerjeepram.com|nordvpn.com|nourison.com|oakandfort.com|petsathome.com|pgatoursuperstore.com|pioneer.eu|plaion.com|plantsome.ca|primeoak.co.uk|prisonfellowship.org|prizehometickets.com.au|qrcode-monkey.com|royalbank.com|runescape.com|scotsman.com|soranews24.com|soundguys.com|stressless.com|support.creative.com|swarajyamag.com|talent.lowes.com|theretrofitsource.com|trademe.co.nz|tumi.com|uclabruins.com|uniqlo.com|upwork.com|uqr.to|zennioptical.com|zinio.com
 @@||gov.au/Scripts/ga.js$script,~third-party
@@ -30457,7 +30458,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||mxpnl.com^$domain=mixpanel.com
 @@||my.dxdelivery.com/js/tracking.js$script,~third-party
 @@||myaccount.chicagotribune.com/assets/scripts/tag-manager/googleTag.js$~third-party
-@@||myaccount.depositprotection.com/Scripts/lib/jsnlog/$script,~third-party
 @@||mycourses.pearson.com/shared/static/*/component/ga.min.js$~third-party
 @@||mywebar.com/js/tracking_worker.js$~third-party
 @@||natureetdecouvertes.com^*/pixel.png$~third-party
@@ -30488,7 +30488,6 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||ondemand.sas.com^$subdocument
 @@||onenote.com^*/aria-web-telemetry
 @@||online-metrix.net/fp/tags.js$domain=donorschoose.org
-@@||online.tivo.com/assets/tve/common/js/vendor/jsnlog/$script,~third-party
 @@||onlinebanking.usbank.com/TUX/public/libs/adobe/appmeasurement.js$script,~third-party
 @@||onlyfans.com/theme/onlyfans/spa/statistics.js$~third-party
 @@||open.spotifycdn.com/cdn/build/embed/overture.$script,domain=open.spotify.com
@@ -30566,6 +30565,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=skyback.ru|szukajka
 @@||sephora-track.inside-graph.com/gtm/$domain=sephora.com
 @@||sephora-track.inside-graph.com/ig.js$domain=sephora.com
 @@||sephora.com/js/ufe/isomorphic/thirdparty/fp.min.js$script,~third-party
+@@||service.apport.net/apport-spa-common/src/tracking/tracking.js$~third-party
 @@||shoonya.finvasia.com/fingerprint2.min.js$script,~third-party
 @@||shop.bmw.com.au/assets/analytics-setup.js$~third-party
 @@||shopify.com/*assets/pixel.gif$image,domain=metrovac.com
