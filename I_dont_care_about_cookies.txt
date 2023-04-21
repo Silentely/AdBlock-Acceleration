@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 347.202304191210
+! Version: 347.202304211138
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 19 Apr 2023 12:10 UTC
+! Last modified: 21 Apr 2023 11:38 UTC
 !
 !
 ! GLOBAL RULES
@@ -705,7 +705,7 @@
 ###scc-mask
 ###cookiesAlert
 ###layer_cookie
-~autoersatzteile.de,~nike.com##.cookies-popup:not(body):not(html)
+~e-zikoapteka.pl,~autoersatzteile.de,~nike.com##.cookies-popup:not(body):not(html)
 ###user-cookie-message
 ###cookie-information
 ##div[aria-describedby*="cookie-info"]
@@ -965,7 +965,7 @@
 ###cookie-monster-bar
 ###footerCookies
 ###cookie-accept-panel
-##.cookies-info:not(body):not(html)
+~e-zikoapteka.pl##.cookies-info:not(body):not(html)
 ###cnil-cookie
 ~educhel.ru,~eduface.ru,~edumsko.ru##.cookies_popup:not(body):not(html)
 ##.cookies_popup_bottom_container
@@ -13676,6 +13676,9 @@
 ##.z-cookie-alert[class*="bottom"]
 ##.cookie-policy__banner
 ###pmc-check-prod ~ #modal-already-shared
+##.loyxx-cookie-button
+##.ca-cookie-consent
+###__next div[aria-describedby*="cookie-banner-message"]
 !
 ! CUSTOM RULES
 !
@@ -15894,7 +15897,6 @@ transportfever.net##.notification
 acorianooriental.pt##.allow-cookies
 wattsindustries.nl###header1_overlay2
 digi-film.ro###sticky-popup
-namemc.com##.alert-warning
 manche.fr##.cmHeaderTop
 re.public.polimi.it###jGrowl
 azurewebsites.net###legal-info
@@ -22180,7 +22182,6 @@ lastminute.co.il##.messages-container
 twitchcon.com##div[x-data="gdpr"]
 miui.com###_navbar ~ .fixed[class*="rounded"]
 smiteproleague.com##.root > .is-visible
-topformula.se##.ca-cookie-consent
 getsquire.com###__next > div:first-child
 additioapp.com###btn-cookies
 se-ecatalog.ru##.coockie_box
@@ -22740,12 +22741,15 @@ drank.nl##header ~ .fixed.bottom-0
 asus.com###cookieTable
 florinus.lt##.blah_blah_blah_holder
 finis-feinstes.at##.cookie-shadow
-jolstad.no##adstate-portal[usecookiepopup]
 chocoladepartners.nl##.ec-notices
 amazon.com##.accept-cookies--modal
-elcykelkompaniet.se##.ca-cookie-consent
 superbexperience.com###root > div > .container-style
 historiademexicobreve.com##.wpfront-fixed-position
+jolstad.no##.show-cookie-pop-up
+wasserkunst-hamburg.de##[id*="koekje"]
+toolfix.ie###mz_genericOverlay, .mz_cookieConsent
+heavins.ie###mz_genericOverlay, .mz_cookieConsent
+futura-sciences.com##.poool-widget
 !
 ! SCRIPT BLOCKING
 !
@@ -22932,7 +22936,7 @@ jquery.cookiepol.js^
 /fortune_cookie_popup.js
 /cookiecsnt2/js/cookie.min.js
 /cookies-note.js
-policy.app.cookieinformation.com$domain=~kartor.eniro.se|~kart.gulesider.no|~kort.degulesider.dk|~map.krak.dk|~altibox.no|~babysam.dk|~elkjop.no|~minaftale.dk|~skousen.dk|~skousen.no|~whiteaway.com|~whiteaway.no|~whiteaway.se|~dvdoo.dk
+policy.app.cookieinformation.com$domain=~kartor.eniro.se|~kart.gulesider.no|~kort.degulesider.dk|~map.krak.dk|~altibox.no|~lomax.dk|~lomax.se|~babysam.dk|~elkjop.no|~minaftale.dk|~skousen.dk|~skousen.no|~whiteaway.com|~whiteaway.no|~whiteaway.se|~dvdoo.dk
 /cookienotice/Js/*
 /wp-content/plugins/fortune-cookie-consent-policy/*
 ||gdl-cookiebar.tnt-digital.com/js/$script
@@ -23276,6 +23280,7 @@ cookies.ptj.de
 /brd_cookies_consent/*
 /modules/hicookielaw/*
 /kbv-cookieconsent.js
+/cookie-consent-mycity.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23561,7 +23566,7 @@ jquery.smartCookie.min.js^
 /bundle_CookieLegalNotice.prod.js
 /acceptCookies.js
 /i_CookieConsent.js
-/Amasty_GdprCookie$domain=~planet-cards.co.uk|~sunkost.no|~wondrium.com|~nova-motors.de|~moleonline.com|~durstexpress.de|~littlelunch.com|~twinpack.nl|~eckeroline.fi|~eilles.de|~xt500parts.com|~matthys.net|~leserservice.ch
+/Amasty_GdprCookie$domain=~planet-cards.co.uk|~sunkost.no|~wondrium.com|~nova-motors.de|~moleonline.com|~durstexpress.de|~littlelunch.com|~twinpack.nl|~eckeroline.fi|~eilles.de|~xt500parts.com|~norli.no|~matthys.net|~leserservice.ch
 /ts/components/CookieConsent.
 /SDG_CookieLayer.min.js
 /slr_js/allowCookies.js
@@ -23898,7 +23903,6 @@ stormyachiever.com$domain=thewindowsclub.com
 thirstylettuce.com$domain=thewindowsclub.com
 /gcb/*$domain=gallup.com
 /gdpr/native-message$domain=wiwo.de
-koekje.js^$domain=baustellenabsicherung24.de
 /getdisclaimer$domain=wikifolio.com
 /echonetcookie$domain=muenchenticket.de
 /cookies-anekis.js$domain=premiosopenbank.com
@@ -24082,7 +24086,7 @@ ccm.$domain=abload.de
 /boldCookie_custom.js$domain=investice.cz
 /consent.$domain=strato.de|strato.nl|strato.fr|strato.es|strato.se|strato-hosting.co.uk
 /ujam_tracking/*$domain=ujam.com
-/utag.js$domain=louisvuitton.com|esprit.de|ing.es|stepstone.de|stepstone.at|santander.pl|swisscom.ch|prada.com|here.com|guloggratis.dk|privatebanking.hsbc.com|hsbc.pl|comparethemarket.com
+/utag.js$domain=louisvuitton.com|esprit.de|ing.es|stepstone.de|stepstone.at|santander.pl|swisscom.ch|prada.com|here.com|guloggratis.dk|privatebanking.hsbc.com|hsbc.pl|comparethemarket.com|tk-aerztefuehrer.de
 /brabo-cookie/*$domain=brandpreventiewinkel.nl
 /cookie-box$domain=schmalz.com
 /popupConsent/*$domain=the-fence.com
@@ -24103,6 +24107,7 @@ coco.we-online.com$domain=we-online.com
 /Disclaimer.js$domain=private.com
 consent.$domain=seeandso.com
 /privacy/*$domain=patente.it
+koekje.js^$domain=baustellenabsicherung24.de
 !
 ! FILTERLIST ONLY
 !
