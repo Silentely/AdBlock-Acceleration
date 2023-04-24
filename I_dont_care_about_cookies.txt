@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 347.202304211138
+! Version: 347.202304241007
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 21 Apr 2023 11:38 UTC
+! Last modified: 24 Apr 2023 10:07 UTC
 !
 !
 ! GLOBAL RULES
@@ -122,7 +122,7 @@
 ##.cookie-prompt:not(body):not(html)
 ###cookie-info
 ~wahre-superstars.de,~klang-hamburg.de##.cookie_notice:not(body):not(html)
-~fitx.de,~freenet-energy.de##.cookie_overlay:not(body):not(html)
+~kika.ee,~kika.lt,~fitx.de,~freenet-energy.de##.cookie_overlay:not(body):not(html)
 ##body > #cookie[style*="display"]
 ###cookie-notifcation-banner
 ###ctl00_privacyCookies_LIPCNB_PrivacyandCookiesNoticePanel
@@ -472,7 +472,7 @@
 ###cookie-opt-in-footer
 ###cookie-opt-in-button
 ##.cookie_bar_wrapper:not(body):not(html)
-##.cookie_bar:not(body):not(html)
+~kika.ee,~kika.lt##.cookie_bar:not(body):not(html)
 ###popcc12
 ###cookie-note
 ##.cdp-cookies-alerta
@@ -18732,7 +18732,6 @@ codeherent.tech##snack-bar-container
 newscientist.com##.prompt--modal.section
 bbb.org##body > .MuiDrawer-root
 gadventures.com##.privacy-control
-teleticketservice.com##.ts-header-message
 siepomaga.pl###cookies
 nodecheck.io##footer > .fixed-bottom
 bonify.de###__next [class*="UserConsent"]
@@ -21982,7 +21981,6 @@ chrome-stats.com##.consent-overlay, .cookie-consent
 sf.gr###cookiesManagement
 cardinal.gr###cookiesManagement
 pokemondb.net###gdpr-confirm
-hero-wars.com##.modal-cookie, #app > .disclaimer
 techgig.com##.gdpr-info
 hardforce.com###rgpd-cookies
 radio-canada.ca###react-app > div:first-child:not(:only-child)[class]
@@ -22750,6 +22748,12 @@ wasserkunst-hamburg.de##[id*="koekje"]
 toolfix.ie###mz_genericOverlay, .mz_cookieConsent
 heavins.ie###mz_genericOverlay, .mz_cookieConsent
 futura-sciences.com##.poool-widget
+metademolab.com###root > div[style*="fixed"]
+harrisscarfe.com.au##.modal-backdrop
+zen.com##.disable-background::before, div[id*="ppms_cm"]
+hero-wars.com##.overlay__cookie, .disclaimer-overlay
+teleticketservice.com##.ts-header-message
+economictimes.com##.privacy_block, .du_consent
 !
 ! SCRIPT BLOCKING
 !
@@ -23281,6 +23285,7 @@ cookies.ptj.de
 /modules/hicookielaw/*
 /kbv-cookieconsent.js
 /cookie-consent-mycity.js
+/components/src/cookie-consent/*
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23596,6 +23601,7 @@ jquery.smartCookie.min.js^
 /ja/controlCookies.js
 /utils/CookiePrompter
 /Wamoco_CookieConsentUi/*
+/standaloneModalCookie.js
 quantcast.mgr.consensu.org$domain=~sourceforge.net|~tumblr.com|~wpolityce.pl|~player.livespotting.com|~indy100.com|~vi.nl|~independent.co.uk|~express.co.uk|~joe.ie|~joe.co.uk|~avsforum.com|~nfl.com|~filmvandaag.nl|~gamesradar.com|~iol.pt
 gemius.mgr.consensu.org
 sddan.mgr.consensu.org
@@ -23977,7 +23983,7 @@ cdn.civiccomputing.com$domain=metoffice.gov.uk|churchofengland.org|yodel.co.uk|t
 /iCookie/*$domain=h-supertools.com
 /he-consent/*$domain=dennree.de
 /uc_cookie$domain=gastro24.de|gastro-hero.de
-cmp.$domain=telerama.fr|courrierinternational.com|vodkaster.com|svd.se|histoire-et-civilisations.com|malservice.aftonbladet.se|vg.no|tv.nu|tek.no|finn.no|pent.no|godt.no|aftenposten.no|omni.se
+cmp.$domain=telerama.fr|courrierinternational.com|vodkaster.com|svd.se|histoire-et-civilisations.com|malservice.aftonbladet.se|vg.no|tv.nu|tek.no|finn.no|pent.no|godt.no|aftenposten.no|omni.se|e24.no
 brsimg.com/gdpr$script,domain=boursorama.com
 trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookie-banner$domain=hauptbahnhofcity.wien
@@ -23987,7 +23993,7 @@ trcking.min.js^$domain=canalplus.com|canal-plus.com
 /ice.js$domain=lifesycle.co.uk
 /cookies$domain=next-immo.com
 /fnGdpr.js$domain=financer.com
-/messagingNoTcfApi.js$domain=svd.se|aftenbladet.no|e24.no|minmote.no|klart.se
+/messagingNoTcfApi.js$domain=svd.se|aftenbladet.no|minmote.no|klart.se
 /sygnal42-gdpr/*$domain=blitzrechner.de
 /CookieLayer.js$domain=multipower.com
 /cookie_management.js$domain=meteoradar.ch
@@ -24026,7 +24032,6 @@ h1.versicherungsjournal.de$domain=versicherungsjournal.de
 /Ronis_Cookie/*$domain=slaters.co.uk
 /Hmm24_Cookiebanner/*$domain=zaehlerschrank24.de
 consensu.org$domain=shinden.pl
-js_privacy_cmp*$domain=e24.no
 /CookieThough.js$domain=wochenblitz.com
 /CookieWall/*$domain=eon.pl
 cookiebanner*$domain=unibo.it
@@ -24081,7 +24086,7 @@ cookies.tanke-guenstig.de$domain=tanke-guenstig.de
 ccm1.$domain=dlr.de
 ccm.$domain=abload.de
 /cmapp/*$domain=ccm19.de
-/ppp/js/permission-client$domain=meinaccount.gmx.net|hilfe.gmx.net|mein.web.de
+/ppp/js/permission-client$domain=mein.web.de|meinaccount.gmx.net|hilfe.gmx.net
 /cookies_utils.js$domain=uca.es
 /boldCookie_custom.js$domain=investice.cz
 /consent.$domain=strato.de|strato.nl|strato.fr|strato.es|strato.se|strato-hosting.co.uk
@@ -24108,6 +24113,7 @@ coco.we-online.com$domain=we-online.com
 consent.$domain=seeandso.com
 /privacy/*$domain=patente.it
 koekje.js^$domain=baustellenabsicherung24.de
+js_privacy_cmp*$domain=e24.no
 !
 ! FILTERLIST ONLY
 !
