@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 347.202304241007
+! Version: 348.202305100856
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 24 Apr 2023 10:07 UTC
+! Last modified: 10 May 2023 08:56 UTC
 !
 !
 ! GLOBAL RULES
@@ -1718,7 +1718,7 @@
 ##.cookies__open > div[class*="cookiebar"]
 ###ec-cookie-messages-container
 ###eircom-cookies-notice
-~mediamarkt.ch##.cookie-info-layer:not(body):not(html)
+##.cookie-info-layer:not(body):not(html)
 ##.cookie-info-close-wrapper
 ##.cookie-information-text
 ###services-cookie
@@ -2150,7 +2150,7 @@
 ###divCookInfo
 ###cookicnil
 ###lawEU
-~mediamarkt.ch##.cookie-info-header:not(body):not(html)
+##.cookie-info-header:not(body):not(html)
 ###popin-accept-cookie
 ~ankerkraut.de,~openfoodnetwork.org.uk##.cookies-banner:not(body):not(html)
 ##.cookies_banner:not(body):not(html)
@@ -4628,7 +4628,7 @@
 ###cookie-foo
 ###informativa_cookie
 ###adimo-cookie
-~mediamarkt.ch###cookie-info-layer
+###cookie-info-layer
 ##.cookieNotif:not(body):not(html)
 ##.COOKIENOTICE:not(body):not(html)
 ###cookie_info_breve
@@ -4874,7 +4874,7 @@
 ###privacy-policy-banner
 ##.text-cookies-notification
 ##.bottom--cookie-bar-overlay
-~mediamarkt.ch##.cookie-info-modal:not(body):not(html)
+##.cookie-info-modal:not(body):not(html)
 ###EU_cookie
 ##.cookieadv:not(body):not(html)
 ##.rts-cookies-warning-pannel
@@ -10159,7 +10159,7 @@
 ###ensNotifyBanner ~ .ensModalBackdrop
 ##.cookiesBarOverlay
 ##.cookie-backdrop
-###ACCsmallCookieLayer
+###ACClayerBackground
 ###cookie-modal ~ .modal-backdrop
 ##.BlogHeader__cookies-banner
 ###\[CookieBanner\]
@@ -13331,7 +13331,7 @@
 ##.c-gc-cookiebar
 ###swcookies-wrapper
 ##.cookiesBackground
-###mms-consent-portal-container
+##.app-cookies-notification
 ###cmplz-cookiebanner-container
 ###CookieConsentDialog
 ##.js-modal-first-cookie
@@ -13426,7 +13426,7 @@
 ##body > .btn-cookie
 ###popup-cookie-container
 ##.tracking-consent-popup.modal
-~campact.de###ppms_cm_popup_overlay[class*="cm"]
+~campact.de,~deutschland.de###ppms_cm_popup_overlay[class*="cm"]
 ##.tna-cookie-banner
 ##.tc-banner.tc-banner--active
 ##.modal_mask.cookies
@@ -16201,7 +16201,6 @@ rewolucjawoc.pl##.footer + .copy
 postermywall.com###user-consent-form
 pogodynka.pl###accept
 firstdraftnews.org##.welcome-message
-similarweb.com##.sw-notification
 q-park.de##.service-messages
 crazyhairs.de###cookies
 distance.to##.consent, #consent
@@ -21334,7 +21333,6 @@ multibonus.ru###root > div > header[color="info"]
 headforpoints.com##.ancr-pos-bottom
 teacheconomy.de##.cookie-banner-button
 zdrofit.pl###cookies, #backdrop
-skandia.se###kakhylla, #kakoverdrag
 trox.de##.trox-consent-manager
 supremenewyork.com###top_notice
 krone.bz##div[class*="cookie-banner"]
@@ -21595,7 +21593,6 @@ pribram.cz##.cookies
 money.com.tr##.kvkk
 24sata.hr###didomi-host
 njuskalo.hr###didomi-host
-independent.ie###didomi-host, a[onclick*="Didomi.preferences"]
 relago.hr##body > .container
 abercrombie.com##.flash-message[data-flash-message-group-id*="cookie-accept"]
 wolframalpha.com###__next > div > section:last-of-type
@@ -22754,6 +22751,11 @@ zen.com##.disable-background::before, div[id*="ppms_cm"]
 hero-wars.com##.overlay__cookie, .disclaimer-overlay
 teleticketservice.com##.ts-header-message
 economictimes.com##.privacy_block, .du_consent
+miniclip.com##.mc-consents-wrapper
+mekkafood.com###cookieprefs
+dropbox.com###consent-iframe
+mediamarkt.pl##.cookie-box
+laboremus.de##body > div[style*="fixed"]
 !
 ! SCRIPT BLOCKING
 !
