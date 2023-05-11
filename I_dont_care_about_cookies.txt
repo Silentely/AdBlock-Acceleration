@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 348.202305100856
+! Version: 348.202305110859
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 10 May 2023 08:56 UTC
+! Last modified: 11 May 2023 08:59 UTC
 !
 !
 ! GLOBAL RULES
@@ -13206,7 +13206,7 @@
 ###data-consent-notification
 ##.cookie-layer.js-cookie-layer
 ###__next div[aria-label*="cookie banner"]
-###___gatsby div[data-testid="gdpr-modal"]
+###__next div[aria-describedby*="cookie-banner-message"]
 ###js-cookiesettingsmodale
 ###root [data-testid*="cookie-banner"]
 ##.cookie-bottom-main
@@ -13678,7 +13678,6 @@
 ###pmc-check-prod ~ #modal-already-shared
 ##.loyxx-cookie-button
 ##.ca-cookie-consent
-###__next div[aria-describedby*="cookie-banner-message"]
 !
 ! CUSTOM RULES
 !
@@ -13713,7 +13712,6 @@ neckermann.com###st_popup, #st_overlay, #ewcm_container
 thejournal.ie###notify-container
 dba.dk##body > div:not([id]):not([class])
 gosc.pl##body > div:not([id]):not([class])[style*="fixed"], body > div:not([id]):not([class])[style*="absolute"]
-bilbasen.dk##body > div:not([id]):not([class])
 stargreen.com##body > div:not([id]):not([class])
 wrzucacz.pl###logo .info
 wattsindustries.com###header1_overlay2
@@ -21395,7 +21393,6 @@ busliniensuche.de###cookieWarning
 hs-esslingen.de##.in2-modal__blackbox
 vy.se##.page > section, #center > section
 oengus.io##.privacy-consent
-headspace.com###gatsby-focus-wrapper > div:last-child
 sundhed.dk##sdk-layout-main-cookiebox
 calendrier-lunaire.net###ezcc
 akemi.de###tw-cookie
@@ -21493,7 +21490,6 @@ arbetsformedlingen.se##.af-cookie
 lecoqsportif.com##div[class*="cookiesPopup"]
 sodresantoro.com.br##.ss-modal-cookies
 top-car-hire.com###cookies
-skylinewebcams.com###pref
 cofan.es##.block-cookies
 passeidireto.com##pd-cookie-banner
 isc2.org##.notice--warning
@@ -21547,7 +21543,6 @@ sas.sk##.cookiesTextOutter
 howrse.de##.cmpoverlay
 howrse.com##.cmpoverlay
 bridgestonesports.bridgestone.com.br##.modalContainer
-iol.co.za###root > footer ~ div
 armegoszto.hu##.v-snack--bottom
 rekonise.com##.consent-snackbar
 myoffice.ru###cookie
@@ -22756,6 +22751,12 @@ mekkafood.com###cookieprefs
 dropbox.com###consent-iframe
 mediamarkt.pl##.cookie-box
 laboremus.de##body > div[style*="fixed"]
+skylinewebcams.com###prefs
+iol.co.za###root > div[role="dialog"]
+defacto.com.tr###kvkk_notification
+ebc.com.br###sliding-popup, #viewlet-disclaimer
+shopee.com.br###main > div > div[style*="z-index"]
+kp.ua##.modal_policy
 !
 ! SCRIPT BLOCKING
 !
@@ -22942,7 +22943,7 @@ jquery.cookiepol.js^
 /fortune_cookie_popup.js
 /cookiecsnt2/js/cookie.min.js
 /cookies-note.js
-policy.app.cookieinformation.com$domain=~kartor.eniro.se|~kart.gulesider.no|~kort.degulesider.dk|~map.krak.dk|~altibox.no|~lomax.dk|~lomax.se|~babysam.dk|~elkjop.no|~minaftale.dk|~skousen.dk|~skousen.no|~whiteaway.com|~whiteaway.no|~whiteaway.se|~dvdoo.dk
+policy.app.cookieinformation.com$domain=~kartor.eniro.se|~kart.gulesider.no|~kort.degulesider.dk|~map.krak.dk|~norlys.dk|~altibox.no|~lomax.dk|~lomax.se|~babysam.dk|~elkjop.no|~minaftale.dk|~skousen.dk|~skousen.no|~whiteaway.com|~whiteaway.no|~whiteaway.se|~dvdoo.dk
 /cookienotice/Js/*
 /wp-content/plugins/fortune-cookie-consent-policy/*
 ||gdl-cookiebar.tnt-digital.com/js/$script
@@ -23812,7 +23813,7 @@ ccm19.vucx.de
 /usercentrics-sdk/*
 ||cc.dalten.cz/ccJs$script
 /ccm19os/*
-||transcend.io/cm/$script
+||transcend.io/cm/$script,domain=~hubblecontacts.com
 /avisopcdidomi$domain=~as.com
 webcache.datareporter.eu
 webcache-eu.datareporter.eu
@@ -24099,13 +24100,13 @@ ccm.$domain=abload.de
 /popupConsent/*$domain=the-fence.com
 /cookie-files/*$domain=paradoxwikis.com
 cmp.quantcast.com$domain=gettr.com|deviantart.com
-/wrapperMessagingWithoutDetection$domain=politico.eu|lovelybooks.de|idealo.de|idealo.at|idealo.es|idealo.fr|idealo.it|idealo.co.uk|femmeactuelle.fr|hausjournal.net|lepoint.fr|chefkoch.de
+/wrapperMessagingWithoutDetection$domain=politico.eu|lovelybooks.de|idealo.de|idealo.at|idealo.es|idealo.fr|idealo.it|idealo.co.uk|femmeactuelle.fr|hausjournal.net|lepoint.fr|chefkoch.de|caradisiac.com
 coco.we-online.com$domain=we-online.com
 /modulos/cookies$domain=villagrancanaria.com
 /vfConsentCookies$domain=vodafone.cz
 /jimmsconsent$domain=jimms.fi
 /wrapperMessagingWithoutDetection.js$domain=vg.no|boerse.de|bt.no|liberation.fr
-/rcs_cpmt/*$domain=open.online|style.corriere.it
+/rcs_cpmt/*$domain=open.online|style.corriere.it|giroditalia.it
 /ph-cookie-helper-mu/*$domain=uwartsonline.nl
 .consent-$domain=pcgames.de
 /cookie-preferences$domain=halebop.se
