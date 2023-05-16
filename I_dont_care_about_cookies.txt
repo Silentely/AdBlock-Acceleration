@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 348.202305110859
+! Version: 348.202305161047
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 11 May 2023 08:59 UTC
+! Last modified: 16 May 2023 10:47 UTC
 !
 !
 ! GLOBAL RULES
@@ -7659,7 +7659,7 @@
 ##.so-cookie-wrapper:not(body):not(html)
 ###gdpr_cookie_line
 ##.rw-cookie-notification
-~northernpowergrid.com###gdprBanner
+###gdprBanner
 ##.bcpNotificationBar:not(body):not(html)
 ###cookiesInfoDiv
 ###wt-confirm-layer
@@ -13214,7 +13214,7 @@
 ##.data-policy-dialog
 ##.Cookies_CookiesPopin
 ##.cookieConsentWrapper
-~lcp.fr###cookiesjsr
+~northernpowergrid.com,~lcp.fr###cookiesjsr
 ###consent-banner-container
 ###mch-cookie-consent
 ##cookie-alert
@@ -13678,6 +13678,7 @@
 ###pmc-check-prod ~ #modal-already-shared
 ##.loyxx-cookie-button
 ##.ca-cookie-consent
+###root div[data-portal-id="cookie-consent"] #cookie_consent_dialog
 !
 ! CUSTOM RULES
 !
@@ -20257,7 +20258,6 @@ rbc.ua###privasypolicy-info, .privacy
 hotels-insolites.com###cookie
 spyflix.com###consentPopup
 altin.in###kvkk
-activobank.pt###cookies
 ghostery.com###ghostery-consent
 fotooehlmann.com###modal_cct, .modal-backdrop
 embl.org##.vf-banner
@@ -21499,7 +21499,6 @@ ma-calculatrice.fr###manger-des-minis-gateaux
 arbiton.com##.cookies
 elopage.com##.Toastify ~ .elo-btn
 deutsche-bank.es##.modal-cookie
-northernpowergrid.com##header > .ch2-icon
 norcamp.de###cookieCD
 banneke.com###cookie-block
 kennisopenbaarbestuur.nl##.jqmConfirm, #cookieStatus
@@ -21990,7 +21989,6 @@ autoteile-favorit.com##.ets_cookie_banber_block
 2gis.ru###confirm ~ footer
 xt500parts.com##.amgdprcookie-modal-container
 notco.com##.CookiesContainer
-nytimes.com##.free-form-content > .banner__container, .CookieBanner > .banner__container, #alertBannerMount, .gdpr.expanded-dock + div, .CookieBanner ~ .banner__container
 dw.com##.cookie__wrap
 tweakers.net###koekieBar:not(.tall)
 foncia.com##app-foncia-cookie-banner
@@ -22331,18 +22329,6 @@ lezec-shop.cz###ccmng
 byggmesteren.as##.adn-window, .adn-editButton
 tp-link.com##div[id*="tp-cookie"]
 christabehr-jerusalem.de##.mini_cookie_stack
-xxxlutz.at###root > footer ~ div, #root ~ div
-xxxlutz.de###root > footer ~ div, #root ~ div
-xxxlutz.ch###root > footer ~ div, #root ~ div
-xxxlutz.hu###root > footer ~ div, #root ~ div
-xxxlutz.cz###root > footer ~ div, #root ~ div
-moemax.at###root > footer ~ div, #root ~ div
-moemax.hu###root > footer ~ div, #root ~ div
-moemax.de###root > footer ~ div, #root ~ div
-moebelix.cz###root > footer ~ div, #root ~ div
-moebelix.at###root > footer ~ div, #root ~ div
-moebelix.sk###root > footer ~ div, #root ~ div
-poco.de###root > footer ~ div, #root ~ div
 thiriet.ch###pv
 fizza.se##div[data-storage-item*="cookiename"]
 singaporeair.com##sia-cookie
@@ -22463,7 +22449,6 @@ wtk.pl###cookie-consent
 milliescookies.com##privacy-settings
 wentworthpuzzles.com##privacy-settings
 dreamworks.com##.notice-modal
-framer.com##.cy-cookieBanner
 back4app.com##footer ~ .w-full.fixed
 rbainvest.hr###cd-module-main
 mi.com##.micloud-app > div > div[class*="policy"], .cookie-privace
@@ -22602,7 +22587,6 @@ raeer.com###RaeerGoogleCookiesBox
 cyberfolks.pl##.cfGdprCookieConsentPopup
 silverstonetek.com##.cookie
 figshare.com##header > [role="alert"]
-notion.so###__next > div > .visibility-partial
 dfg.de##.bab-modul-cookie-consent
 skyfi.com###app-body > div > div > div > .fixed.bottom-0
 logitec.co.jp##datasign-widget-web-component
@@ -22757,6 +22741,36 @@ defacto.com.tr###kvkk_notification
 ebc.com.br###sliding-popup, #viewlet-disclaimer
 shopee.com.br###main > div > div[style*="z-index"]
 kp.ua##.modal_policy
+thepodcasthost.com##.tph-cookie-notice
+northernpowergrid.com##.ch2-open-settings-btn
+activobank.pt##.overlay-cookies, #cookies
+swisstours.com##.cookiesApproval
+eobuwie.com.pl##.modal-consents
+amazon.co.uk###cookie-pref-disclaimer
+xxxlutz.at###root > footer ~ div, #root ~ div
+xxxlutz.de###root > footer ~ div, #root ~ div
+xxxlutz.ch###root > footer ~ div, #root ~ div
+xxxlutz.hu###root > footer ~ div, #root ~ div
+xxxlutz.cz###root > footer ~ div, #root ~ div
+moemax.at###root > footer ~ div, #root ~ div
+moemax.hu###root > footer ~ div, #root ~ div
+moemax.de###root > footer ~ div, #root ~ div
+moebelix.cz###root > footer ~ div, #root ~ div
+moebelix.at###root > footer ~ div, #root ~ div
+moebelix.sk###root > footer ~ div, #root ~ div
+poco.de###root > footer ~ div, #root ~ div
+xxxlesnina.hr###root > footer ~ div, #root ~ div
+xxxlesnina.rs###root > footer ~ div, #root ~ div
+xxxlesnina.si###root > footer ~ div, #root ~ div
+jvctv.eu##div[id*="cookieModule"]
+metar-taf.com##.cookies
+yesterdaystractors.com###dvCookieMessage
+framer.com##div[data-framer-name="EU"]
+sescsp.org.br##.container-policy, .overlay
+notion.so##div + section.visibility-partial
+solidaris-wallonie.be##app-pop-up-tracking
+stuffthatworks.health##.snackbar-disclaimer
+nytimes.com##.gdpr.expanded-dock + div, .CookieBanner > .banner__container, #alertBannerMount
 !
 ! SCRIPT BLOCKING
 !
@@ -23185,7 +23199,7 @@ plugin-cookie-consent/build
 /lgpd-cookie/*
 /cookiebox_uc_build.js
 /gen/cookie-notification
-/cookiesjsr.min.js$domain=~lcp.fr
+/cookiesjsr.min.js$domain=~northernpowergrid.com|~lcp.fr
 /wp-content/plugins/eu-cookies-bar/*
 /cookieOverlay-view.js
 /js/Widgets/cookieWidget$domain=~losteria.de
@@ -23195,7 +23209,7 @@ plugin-cookie-consent/build
 /woody-addon-cookies/*
 /__enzuzo-cookiebar.js
 /cookie_policy/ack.js
-/cookies-popup.js$domain=~northernpowergrid.com
+/cookies-popup.js
 /zedwcookie/*
 /cookiedisclosure/core.js
 ||cookie.thynk.media/app.js$script
@@ -23289,6 +23303,8 @@ cookies.ptj.de
 /kbv-cookieconsent.js
 /cookie-consent-mycity.js
 /components/src/cookie-consent/*
+/webtoffee-gdpr-cookie-consent/*
+||cookies.neuca24.pl/nc.js$script
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23938,7 +23954,7 @@ spellsalsa.com$domain=interestingengineering.com
 /website-cookie-preferences$domain=nationaltrust.org.uk
 /cookie-bundle$domain=zoopla.co.uk
 /cookie-wall$domain=xebia.com
-/otBannerSdk.js$domain=dhl.com|gusto.at|mintos.com|thetrainline.com|pons.com|coca-cola-deutschland.de|avast.com|avg.com|washingtonpost.com|mendeley.com|coca-cola.pl|coca-cola.co.uk|coca-cola.dk|technics.com|elle.se|fyens.dk|mtb-news.de|rennrad-news.de|emtb-news.de|springerprofessional.de
+/otBannerSdk.js$domain=dhl.com|gusto.at|mintos.com|thetrainline.com|pons.com|coca-cola-deutschland.de|avast.com|avg.com|washingtonpost.com|mendeley.com|coca-cola.pl|coca-cola.co.uk|coca-cola.dk|technics.com|fyens.dk|mtb-news.de|rennrad-news.de|emtb-news.de|springerprofessional.de
 /cp01.js$domain=jzzo.com
 /klaro/*$domain=salesviewer.com
 /gdpr.bundle.js$domain=mediacourant.nl
@@ -24117,6 +24133,8 @@ consent.$domain=seeandso.com
 /privacy/*$domain=patente.it
 koekje.js^$domain=baustellenabsicherung24.de
 js_privacy_cmp*$domain=e24.no
+/cmp.js$domain=behindthename.com
+it-cc.index.js^$domain=boellhoff.com
 !
 ! FILTERLIST ONLY
 !
