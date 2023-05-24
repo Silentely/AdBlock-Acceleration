@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 348.202305170900
+! Version: 348.202305240855
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 17 May 2023 09:00 UTC
+! Last modified: 24 May 2023 08:55 UTC
 !
 !
 ! GLOBAL RULES
@@ -1089,7 +1089,7 @@
 ###cookiePolicyWarn
 ###alert-cookie
 ##.eu_cookie:not(body):not(html):not(#content)
-~schwaebisch-hall.de##.cookie-note:not(body):not(html)
+~zav-sava.si,~schwaebisch-hall.de##.cookie-note:not(body):not(html)
 ###ck_dsclr
 ##.skryptcookies-pl:not(body):not(html)
 ###cookieFrame
@@ -1491,7 +1491,7 @@
 ###MessageCookie
 ###mensaje_cookies
 ###cookiesLegalMessage
-~quooker.de,~quooker.be###cookie_wrapper
+###div-cookie-note
 ###footer_cookie
 ###footer_cookies
 ##.footer_cookies:not(body):not(html)
@@ -7446,7 +7446,7 @@
 ##.CInfo[data-cookie-info]
 ##.bloc_cookie:not(body):not(html)
 ###gdpr-cookie-banner
-~danskemedier.dk###gdpr-cookie-message
+~logpay.de,~danskemedier.dk###gdpr-cookie-message
 ##.box-cookie-consent:not(body):not(html)
 ###notice-cookie-block-info
 ~cottonon.com##.gdpr-sticky-container
@@ -12627,7 +12627,7 @@
 ###lp_eu_container
 ###shopify-section-gdpr-notice
 ##.dsgvo-footer[class*="fixed"]
-###modal-cookie-man
+~zav-sava.si###modal-cookie-man
 ###aviso-privacidade
 ##.cookies-notificator
 ###overlay-accept-cookies
@@ -18506,7 +18506,6 @@ ixxat.com##.cookie
 ahliunited.com.kw##.greyCookie
 httpstatus.io##.snackbar
 maxmind.com###mm-ccpa-notice
-ozon.ru###__nuxt > .layout-page > div:last-child:not([class])
 head-fi.org##.notices
 tradingview.com##div[class^="toast-positioning-wrapper"]
 webastoconnect.com##.alert.ecc.show-ecc
@@ -22783,6 +22782,13 @@ euronics.hu##.cookie-overLay
 asna.ru##div[class*="modalCookies"]
 aimtuto.com###ckWrap
 post.ch##.ppm-cookie-banner
+jtl-software.de###consent
+nooz-optics.com###gatsby-focus-wrapper > .fixed.bottom-0
+ozon.ru##div[data-widget="cookieBubble"]
+temu.com##body > div > div[class*="popup"]
+tuasaude.com##.consent-bar-wrapper
+vectornator.io##.cookies
+webshop.nl##div[class*="Gdpr-module"]
 !
 ! SCRIPT BLOCKING
 !
@@ -23142,7 +23148,7 @@ cookie-bar.salessquad.co.uk
 /components/content/cookie-overlay/*
 cookiemon.atcom.gr
 /js/gdpr/gdpr-cookie
-/jquery.ihavecookies.$domain=~wisla-plock.pl
+/jquery.ihavecookies.$domain=~wisla-plock.pl|~danskemedier.dk
 /b2b-market/src/addons/cookie-consent/*
 /vue/components/cookie-monster
 /wp-content/plugins/do-you-want-cookies/*
@@ -23587,6 +23593,7 @@ cmp.pafo.fairbung.com
 ||gravito.net/alehdetcmp$script
 cmp.setupcmp.com
 cmp.mediavine.com
+/sibbo-cmp-loader.js
 ||gofundme.com/js/3.0/visitorCookie.js$script
 /CookiesDirective
 CookieAccept/affirmation.js
@@ -23634,6 +23641,7 @@ jquery.smartCookie.min.js^
 /utils/CookiePrompter
 /Wamoco_CookieConsentUi/*
 /standaloneModalCookie.js
+/Detco_CookieBanner/*
 quantcast.mgr.consensu.org$domain=~sourceforge.net|~tumblr.com|~wpolityce.pl|~player.livespotting.com|~indy100.com|~vi.nl|~independent.co.uk|~express.co.uk|~joe.ie|~joe.co.uk|~avsforum.com|~nfl.com|~filmvandaag.nl|~gamesradar.com|~iol.pt
 gemius.mgr.consensu.org
 sddan.mgr.consensu.org
@@ -24143,7 +24151,7 @@ coco.we-online.com$domain=we-online.com
 /standard-cookies/*$domain=standard.sk
 /Disclaimer.js$domain=private.com
 consent.$domain=seeandso.com
-/privacy/*$domain=patente.it
+/privacy/*$domain=patente.it|leroymerlin.fr
 koekje.js^$domain=baustellenabsicherung24.de
 js_privacy_cmp*$domain=e24.no
 /cmp.js$domain=behindthename.com
