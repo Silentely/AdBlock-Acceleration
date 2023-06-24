@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 348.202306121040
+! Version: 348.202306240829
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 12 Jun 2023 10:40 UTC
+! Last modified: 24 Jun 2023 08:29 UTC
 !
 !
 ! GLOBAL RULES
@@ -5045,7 +5045,7 @@
 ##.adv-cookie:not(body):not(html)
 ##.cookierinfor:not(body):not(html)
 ##.cookie-disclamer:not(body):not(html)
-##.box-cookie-notice:not(body):not(html)
+##.box-cookie-notice
 ###acceptCookiesContainer
 ###pb-cookies-policy-banner
 ##.euCookieLaw:not(body):not(html)
@@ -5542,7 +5542,7 @@
 ###panCookieRequest
 ###cookiesenabled
 ##.framework_cookies:not(body):not(html)
-##.js-cookie-overlay:not(body):not(html)
+##.js-cookie-overlay
 ##.cookie-popin:not(body):not(html)
 ~grander.com,~cyberforum.de,~bauen-und-heimwerken.de,~lsi-bochum.de,~membersuite.com,~wesendit.com,~accessosicuro.rete.toscana.it,~dmsg.de,~bgk.pl,~exagon.de,~sozialversicherung-kompetent.de,~varcevanje-energije.si,~donauregion.at,~salzkammergut.at,~studentenwerkfrankfurt.de,~manduka.com,~oberoesterreich.at,~upperaustria.com,~hornirakousko.cz,~gorna-austria.pl,~hornerakusko.sk,~oberoesterreich.nl,~swffm.de##.cc-window[aria-label*="consent"]
 ###cookie-nag
@@ -13683,6 +13683,13 @@
 ###camus-cookie-disclaimer
 ###lgpd-consent-widget
 ##body._cookiebanner::after
+##.eu-cookie-compliance-popup-open > #sliding-popup
+##.sv-cookie-management
+###website_cookies_bar
+##.component\:cookie-consent-dialog
+##.osf-cookies-consent
+###box-cookie-notice
+###container_cookieConsent
 !
 ! CUSTOM RULES
 !
@@ -18948,7 +18955,6 @@ abc.com##body > div[style*="fixed"]
 tw-calc.net##.cookie
 solutions-numeriques.com###cookies
 alcatelmobile.com##.elementor-location-footer ~ div[class*="astra"], .acepta-cookies
-telekom.de###cookies.bounceInDown, .pi-notification
 top-dent.cz##body > .CA
 montersi.pl##.motersi-cookie-notice
 anhaenger-bayern.de###privacyPolicyWindow
@@ -22594,7 +22600,6 @@ rollstuhl-kurier.de###webwerk-cookies
 infiniti.com##.c_128
 culture.ru###__next > div > footer ~ div, .notify-bar
 spinbackup.com##.spin-ai-gtm-banner
-knime.com##.cookie-modal
 finna.cat###cookies_configuration
 rikstv.no###cookie-consent
 mora.nl###dmccRoot
@@ -22731,6 +22736,7 @@ economictimes.com##.privacy_block, .du_consent
 miniclip.com##.mc-consents-wrapper
 mekkafood.com###cookieprefs
 dropbox.com###consent-iframe
+mediamarkt.es###gdpr-cookie-layer
 mediamarkt.pl##.cookie-box
 laboremus.de##body > div[style*="fixed"]
 skylinewebcams.com###prefs
@@ -22791,6 +22797,14 @@ webshop.nl##div[class*="Gdpr-module"]
 kicksmaniac.com###cookie-modal, .cookie-button
 eversheds-sutherland.com###cp-cookie-popup
 huge.se##.section-cookies-notice-outer
+knime.com##.cookie-modal
+public.gr##section[class*="CookiesConsent"]
+fresha.com##div[class*="Toast"] ~ div[class*="Wrapper"] ~ div
+singlebox.app##footer ~ .fixed
+telekom.mk###cookiesModal
+telekom.de###main ~ #cookies
+telekom.sk##.con-ban-wrapper
+yourwineonline.be##.cookies
 !
 ! SCRIPT BLOCKING
 !
@@ -23042,7 +23056,7 @@ eu_cookie_banner.js^
 /modules/idxcookies/*
 /javascript/cookieser.js
 /cookiesWidget/widget.js
-consent.cookiebot.com$domain=~deutschesapothekenportal.de|~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~plaion.com|~jyllands-posten.dk|~tme.eu|~stadtmobil.de|~wwf.fi|~login.nos.pt|~asambeauty.com|~cineplex.de|~berlingske.dk|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~koeln.de|~cliente.nos.pt|~parkerlebnis.de|~deadwalk.io|~linak.es|~linak.de|~cajamar.es|~digitaltrends.com|~mein-grundeinkommen.de|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~biomarkt.de|~harzwasserwerke.de|~stern.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de|~spiele-kostenlos-online.de|~ekstrabladet.dk|~epochtimes.de
+consent.cookiebot.com$domain=~deutschesapothekenportal.de|~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~plaion.com|~jyllands-posten.dk|~tme.eu|~stadtmobil.de|~wwf.fi|~login.nos.pt|~asambeauty.com|~cineplex.de|~berlingske.dk|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~koeln.de|~cliente.nos.pt|~parkerlebnis.de|~deadwalk.io|~linak.es|~linak.de|~cajamar.es|~digitaltrends.com|~mein-grundeinkommen.de|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~biomarkt.de|~harzwasserwerke.de|~stern.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de|~ekstrabladet.dk|~epochtimes.de
 /ccp-sites/components/structure/cookie-notification/*
 /cookies-info.js
 cookies.algo.at
@@ -23325,6 +23339,8 @@ cookies.ptj.de
 /components/src/cookie-consent/*
 /webtoffee-gdpr-cookie-consent/*
 ||cookies.neuca24.pl/nc.js$script
+/cookies/manage-cookies-runtime
+/typo3conf/ext/ppw_cookie/*
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23588,7 +23604,6 @@ cmp.pafo.fairbung.com
 /quorn-cmp.min.js
 ||cmps.o2.cz/delivery$script
 /tcf-cmp.min.js
-||fastcmp.com/fast-cmp.js$script
 ||veodys.fr/api/cmp$script
 ||precmp.prisa.com/dist/cmp.js$script
 /sibbo-cmp-core.js$domain=~atresplayer.com
@@ -23596,6 +23611,7 @@ cmp.pafo.fairbung.com
 cmp.setupcmp.com
 cmp.mediavine.com
 /sibbo-cmp-loader.js
+||fastcmp.com/fast-cmp$script
 ||gofundme.com/js/3.0/visitorCookie.js$script
 /CookiesDirective
 CookieAccept/affirmation.js
@@ -23644,7 +23660,7 @@ jquery.smartCookie.min.js^
 /Wamoco_CookieConsentUi/*
 /standaloneModalCookie.js
 /Detco_CookieBanner/*
-quantcast.mgr.consensu.org$domain=~sourceforge.net|~tumblr.com|~wpolityce.pl|~player.livespotting.com|~indy100.com|~vi.nl|~independent.co.uk|~express.co.uk|~joe.ie|~joe.co.uk|~avsforum.com|~nfl.com|~filmvandaag.nl|~gamesradar.com|~iol.pt
+quantcast.mgr.consensu.org$domain=~sourceforge.net|~tumblr.com|~wpolityce.pl|~player.livespotting.com|~indy100.com|~vi.nl|~independent.co.uk|~express.co.uk|~joe.ie|~joe.co.uk|~avsforum.com|~nfl.com|~filmvandaag.nl|~gamesradar.com|~iol.pt|~spiele-kostenlos-online.de
 gemius.mgr.consensu.org
 sddan.mgr.consensu.org
 digitrust.mgr.consensu.org
@@ -24158,6 +24174,7 @@ koekje.js^$domain=baustellenabsicherung24.de
 js_privacy_cmp*$domain=e24.no
 /cmp.js$domain=behindthename.com
 it-cc.index.js^$domain=boellhoff.com
+/cookiecontrol.js$domain=rembutiken.se
 !
 ! FILTERLIST ONLY
 !
