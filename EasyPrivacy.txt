@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202307060513
+! Version: 202307061129
 ! Title: EasyPrivacy
-! Last modified: 06 Jul 2023 05:13 UTC
+! Last modified: 06 Jul 2023 11:29 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -1103,6 +1103,7 @@
 /eluminate?
 /email/track/*$image
 /email/tracking?
+/email_opened_tracking_pixel?
 /EmailOpenTrackLog.aspx?$image
 /EmbedAsyncLogger.
 /emos2.js$~xmlhttprequest
@@ -3864,6 +3865,9 @@ _WebVitalsReporter_
 ! parked domains
 /ls.php?t=
 /track.php?domain=
+! pinterest.*
+/ContextLogResource/*
+/statslogresource/*
 ! Amazon
 /action-impressions/*
 /ajax/counter?ctr=
@@ -13792,6 +13796,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||eharmony.ca/fd/
 ||eharmony.co.uk/bd/
 ||eighten-bloc-party.thebrowser.company/script.js
+||elitesingles.com/cs/tp.png?
 ||embed.reddit.com/svc/shreddit
 ||engagefront.meteomedia.com^
 ||engagefront.theweathernetwork.com^
@@ -14122,6 +14127,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||metrics.ted.com^
 ||metricsishare.rediff.com^
 ||metro.co.uk/base/rta/
+||metro.co.uk/cvx/client/sync/fpc?
 ||metroweekly.com/tools/blog_add_visitor/
 ||meucdn.vip/cdn-cgi/trace
 ||mewe.com/ubk4jrxn.js
