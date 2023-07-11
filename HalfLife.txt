@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: WJiwQ/XhJdDrsHH6lrZfeA
+! Checksum: NBV8X9FEoSgXGeCIFKeOeQ
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202307102010
-! Last Modified: 2023年07月10日 20:10
+! Version: 202307110207
+! Last Modified: 2023年07月11日 02:07
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -632,7 +632,6 @@ stgowan.com
 .bid/ads/
 .blog/ads/
 .bt*.com/imgs.js?t=
-.xyz/*=$object,third-party
 .buzz/*=$object,third-party
 .cam/ads/
 .cc/ad/
@@ -757,6 +756,7 @@ stgowan.com
 .vip/style/vue.js?v=
 .work/ads/
 .xn--fiqs8s:7385/
+.xyz/*=$object,third-party
 .xyz/99x/
 .xyz/ad/
 .xyz/js/ads/
@@ -2191,9 +2191,12 @@ newduba.cn###jq_youxi
 ||23.234.217.11^
 ||23.234.217.12^
 ||3400.org^
+||52kuwang.cn^
 ||abrnfctkn.xyz^
 ||amerzbj.cn^
 ||baiduisjkbvsjkl.com^
+||baiduvjsbvjknlsvsv.com^
+||bdates.fun^
 ||berylnbb.com^
 ||bkhblj.xyz^
 ||caider.fun^
@@ -2206,6 +2209,8 @@ newduba.cn###jq_youxi
 ||dhkipdsc.xyz^
 ||donchen501.cn^
 ||dstbunkfw.xyz^
+||duoying.vip^$third-party
+||erfskhnpter.xyz^
 ||euitx.cn^
 ||evidhjksdtgyxrh.xyz^
 ||eyq3nog.icu^
@@ -2226,15 +2231,19 @@ newduba.cn###jq_youxi
 ||kahgjjd.com^
 ||kgeesh.site^
 ||kl91ccp.com^
+||kxm1b0u.com^
 ||lanver.fun^
+||lwide.xyz^
 ||metaversemolecule.com^
 ||nryqr.cn^
 ||one6u.xyz^
+||pirxzl.xyz^
 ||plbs9k.icu^
 ||powedw.com^
 ||qhx1h2g.com^
 ||qifyeldy.top^
 ||relafp.xyz^
+||ronbbf.xyz^
 ||rtumdhdk.xyz^
 ||rtumwzp.icu^
 ||soushubah.com^$third-party
@@ -2244,24 +2253,17 @@ newduba.cn###jq_youxi
 ||tqdctl.xyz^
 ||uejdsw.com^
 ||ulojlvmejkaem.xyz^
+||uyq3ruf.icu^
 ||v1gyb.xyz^
 ||wubizigeng.com^
 ||wuye3d.com^
 ||xccadc.com^
 ||xiaoxiuapp.com^
 ||yh18h8s.com^
-||52kuwang.cn^
-||kxm1b0u.com^
-||bdates.fun^
-||zfcdirf.icu^
-||ronbbf.xyz^
-||lwide.xyz^
-||pirxzl.xyz^
-||zfteiv.xyz^
-||uyq3ruf.icu^
-||duoying.vip^$third-party
 ||ymhyw6.lol^
 ||zerolcp.cn^
+||zfcdirf.icu^
+||zfteiv.xyz^
 ||zonyff.xyz^
 ##a[href$="/1c626.com"]
 ##a[href$="/77adc.com"]
@@ -9274,7 +9276,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||coolpc.com.tw/img/topweb.html
 ||copyfuture.com/images/zhifubao.jpg
 ||cornpic.com/images/*.gif
-||cosxcos.cc/uploads/aaybabc/
 ||cp121.com/js2/
 ||cp2.eastmoney.com^
 ||cpbl-elta.cdn.hinet.net/web/images/ad_
@@ -12192,8 +12193,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzzyk.com/js/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
-188soft.com##.safety
-188soft.com##.cont_d_l_dow + .down-center
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -13722,9 +13721,9 @@ tools.2345.com##._hb-box + .mod
 qq.com##._switchad
 pincong.rocks##.a-a
 gamer.com.tw##.a-mercy-d:not([href*=".gamer."])
-cupfox.app##.a2-box[class^="jsx-"]
 159i.com##.a1.style25
 159i.com##.a1d
+cupfox.app##.a2-box[class^="jsx-"]
 159i.com##.a2.style25
 159i.com##.a2d
 159i.com##.a3d
@@ -14457,6 +14456,7 @@ aihami.com##.conText > div[style*="width:"]
 firefox.com.cn,firefoxchina.cn##.cont-promote
 ifeng.com##.cont_bottom_Yy
 ifeng.com##.cont_bottom_YySmall
+188soft.com##.cont_d_l_dow + .down-center
 u-car.com.tw##.contad
 dragon-guide.net##.container > .gutter:first-child
 zxzjtv.com##.container > .none
@@ -15863,6 +15863,7 @@ finance.ifeng.com##.sConRbox
 laozuo.org##.s_ad125
 zww.me##.sad
 vansky.com##.safari_pop
+188soft.com##.safety
 baidu.com##.sam_iebrowser_banner
 image.baidu.com##.sample0
 image.baidu.com##.sample1
@@ -16978,7 +16979,6 @@ pixabay.com##div[class*="sponsoredWithResults"]
 wenku.baidu.com##div[class*="tiger-"][class*="-dialog"]
 yiche.com##div[class*="words-ad"]
 vpsmm.com##div[class*="xx"]
-cosxcos.cc##div[class*="yy"]
 ifeng.com##div[class="adbox02"]
 5119.cn##div[class="downDz"]
 ithome.com.tw##div[class="span4"]
@@ -19278,6 +19278,7 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com##style[id^="s-"] + 
 ||mnwor.xuanlishi.com^
 ||mo-tuo.com^
 ||mo.gushiji.cc^
+||moon.ibytecdn.cn^
 ||mountain.zhidao.baidu.com^
 ||mpb1.iteye.com^
 ||mps.wenkuzu.com^
