@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 348.202307090946
+! Version: 348.202307170949
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 09 Jul 2023 09:46 UTC
+! Last modified: 17 Jul 2023 09:49 UTC
 !
 !
 ! GLOBAL RULES
@@ -13691,6 +13691,7 @@
 ###box-cookie-notice
 ###container_cookieConsent
 ##.cpm-cookies-bar
+##.cc-revoke ~ #securitiModalBackground
 !
 ! CUSTOM RULES
 !
@@ -20025,7 +20026,6 @@ urlaubsgruss.com##.dscheck
 sekwens.com###module-aboveBox
 hot.dk###scw
 nicequest.com###footer ~ div
-orange.pl###__next > div > section[role="region"], .opl-cookie-control
 stadt-galerie-hameln.de###mdl-overlay
 schaeffler.fr##.scha__cookie-banner
 auchan.ru###root > div > footer ~ div
@@ -21141,7 +21141,6 @@ petlove.com.br##.card-bottom
 farmaciasdirect.com##.fd-cookies
 posti.fi###consent-popup
 tresorit.com##main ~ aside, sticky-notification
-hertz.ca##div[class*="PrivacyPolicyBanner"]
 sagepub.com##header [role="alert"]
 theartnewspaper.com###__next > div > .fixed
 people.cn###shengmingTip
@@ -21710,7 +21709,6 @@ webmdhealthservices.com##.cookiePolicyModal
 truevirtualworld.com##.card-cookie
 punpro.com##div[class*="CookieSession"]
 siamsport.co.th###popup-ss
-reddit.watch##.v-content__wrap > .container > .align-end
 pttavm.com##.cookie-box
 transa.ch##.cookie-box
 neonet.pl##div[class*="cookiesBlock"]
@@ -22081,7 +22079,6 @@ geizhals.eu##.gh-notification--type-info
 komplettbank.se##.kb-cc
 komplettbank.fi##.kb-cc
 komplettbank.no##.kb-cc
-hertz.co.uk###new_cookie_container
 neo24.pl##div[class*="cookiesBlock"]
 mylife.com##.ccpa-container, .eula-terms
 picrew.me##.st-Terms_Wrapper
@@ -22347,7 +22344,6 @@ vsemayki.ru###__next > div > section[style*="bottom"]
 rejlers.fi##.shadow-form[data-controller*="cookies--alert"]
 scania.com##.m-cookie
 bestofdate.com###ww-blackout
-reddit.com###SHORTCUT_FOCUSABLE_DIV > div> div > section > [style*="Toaster"], shreddit-async-loader[bundlename*="cookie_banner"]
 umm.nordpoolgroup.com###modal-overlay
 g2a.com##.agreements-container
 insightsforprofessionals.com##.cookie-container
@@ -22809,6 +22805,13 @@ fh-zwickau.de##.tx-whzcookieconsent-banner
 emailleschilder.de##.cb-wrapper
 eventfrog.ch###tf-modal-container
 eventfrog.de###tf-modal-container
+reddit.watch##.v-content__wrap > .container > .align-end
+reddit.com###SHORTCUT_FOCUSABLE_DIV > div> div > section > [style*="Toaster"], shreddit-async-loader[bundlename*="cookie_banner"]
+redd.it##shreddit-async-loader[bundlename*="cookie_banner"]
+addnorth.se##footer ~ .messages
+mubert.com##.notification-manager
+nordvpn.com##astro-island[props*="cookieWidget"]
+e-food.gr###smartbanner-container + div > div:last-child:not(:only-child)
 !
 ! SCRIPT BLOCKING
 !
@@ -24005,8 +24008,6 @@ spellsalsa.com$domain=interestingengineering.com
 /snap-popup.js$domain=maggiore.it|amicoblu.it
 /apprise$domain=podrozerowerowe.info
 /data-consent.$domain=stadtwerke-luebz.de
-/neo-cookie-layer.js$domain=united-domains.de
-/cookie-layer.js$domain=united-domains.de|mercedes-benz.io
 /cookieWidget.min.js$domain=peter-bringts.de
 /cookie-consent/*$domain=lux-residence.com|cyberghostvpn.com
 privacy-manager-v*$domain=df.eu
@@ -24055,6 +24056,7 @@ trcking.min.js^$domain=canalplus.com|canal-plus.com
 /ice.js$domain=lifesycle.co.uk
 /cookies$domain=next-immo.com
 /fnGdpr.js$domain=financer.com
+/cookie-layer.js$domain=mercedes-benz.io
 /messagingNoTcfApi.js$domain=svd.se|aftenbladet.no|minmote.no|klart.se
 /sygnal42-gdpr/*$domain=blitzrechner.de
 /CookieLayer.js$domain=multipower.com
