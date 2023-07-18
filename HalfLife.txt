@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: k7SnVPbjUEFnh19GI48lJQ
+! Checksum: 3X4JEHdc1Wxe1iC/O5Z2Lg
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202307172010
-! Last Modified: 2023年07月17日 20:10
+! Version: 202307180206
+! Last Modified: 2023年07月18日 02:06
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -1706,6 +1706,7 @@ newduba.cn###jq_youxi
 ##.adpc > .module
 ##.adpc > .promote-link
 ##.adpc > .promote-link-
+##.adpc > .promote-link_
 ##.ads > #video_playr_sider
 ##.ads > a > img[src*=".sinaimg."]
 ##.ads-after-content
@@ -2055,7 +2056,6 @@ newduba.cn###jq_youxi
 ##a#wrapper_left_bg[target="_blank"]
 ##a#wrapper_right_bg[target="_blank"]
 ##a.ad_links
-##.adpc > .promote-link_
 ##a.hengfu > img.hengfu
 ##a[href$=".cc:8443"]
 ##a[href$=".php"] > img[src*=".bcebos.com"]
@@ -2195,14 +2195,18 @@ newduba.cn###jq_youxi
 ##a[href*=".f2ocoin.com/"]
 ##a[href*="/9966699.vip"]
 ##a[href*="/mug749.vip"]
+||1379a.xyz^
 ||1u5gy.xyz^
 ||3400.org^
 ||52kuwang.cn^
+||a8age.com^
 ||abrnfctkn.xyz^
 ||allcp.xyz^
 ||amerzbj.cn^
 ||baiduisjkbvsjkl.com^
 ||baiduvjsbvjknlsvsv.com^
+||baitaiz.com^
+||bbges.xyz^
 ||bdates.fun^
 ||berylnbb.com^
 ||betcss.site^
@@ -2232,6 +2236,7 @@ newduba.cn###jq_youxi
 ||dyeperd.icu^
 ||eghyahl.cn^
 ||erfskhnpter.xyz^
+||esgher.fun^
 ||esgher.site^
 ||euitx.cn^
 ||evidhjksdtgyxrh.xyz^
@@ -2249,8 +2254,10 @@ newduba.cn###jq_youxi
 ||hanwdsii.com^
 ||hdpdrandpd.xyz^
 ||hfqdipw.cn^
+||hgf8hck.com^
 ||hikykhz.icu^
 ||hlnr9q.icu^
+||hohmaryt.com^
 ||hpvwdkn.cn^
 ||hsadeg.site^
 ||hstbrt.xyz^
@@ -2281,11 +2288,13 @@ newduba.cn###jq_youxi
 ||lifyeldl.top^
 ||lwide.xyz^
 ||metaversemolecule.com^
+||mifyeldx.top^
 ||misapopait.com^
 ||mlstx.cn^
 ||moobtcnse.xyz^
 ||ngbthf.xyz^
 ||nieae.xyz^
+||njogejt.icu^
 ||nqdufv.xyz^
 ||nryqr.cn^
 ||oifyeldk.top^
@@ -2321,6 +2330,7 @@ newduba.cn###jq_youxi
 ||ulojlvmejkaem.xyz^
 ||uyq3ruf.icu^
 ||v1gyb.xyz^
+||vnfsbl.xyz^
 ||wubizigeng.com^
 ||wuye3d.com^
 ||wyq3rum.icu^
@@ -2329,26 +2339,17 @@ newduba.cn###jq_youxi
 ||xiaoxiuapp.com^
 ||xjzyhp.xyz^
 ||xmxupz.xyz^
+||xpcwrgy.cn^
+||xtbzff.xyz^
 ||xukou.net^
 ||yh18h8s.com^
 ||ymhyw6.lol^
 ||zcvyzsyd.icu^
-||hgf8hck.com^
-||esgher.fun^
-||xpcwrgy.cn^
-||njogejt.icu^
-||vnfsbl.xyz^
-||bbges.xyz^
-||xtbzff.xyz^
-||1379a.xyz^
-||zifyeldq.top^
-||zexfzson.icu^
-||baitaiz.com^
-||hohmaryt.com^
-||mifyeldx.top^
 ||zerolcp.cn^
+||zexfzson.icu^
 ||zfcdirf.icu^
 ||zfteiv.xyz^
+||zifyeldq.top^
 ||ziravd.xyz^
 ||zonyff.xyz^
 ||zypzzv.xyz^
@@ -12279,8 +12280,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzzyk.com/js/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
-ikandy1.com##A[href*="/ky-a.html"]
-18board.com,18board.net,18p2p.com,18p2p.tv##.altbg2 > td[width="50%"]
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -14165,6 +14164,7 @@ pilifx.com##.alltop
 18board.com,18board.net,18p2p.com,18p2p.tv##.altbg2 > td[width="20%"] > a[target="_blank"]
 18board.com,18board.net,18p2p.com,18p2p.tv##.altbg2 > td[width="25%"]
 18board.com,18board.net,18p2p.com,18p2p.tv##.altbg2 > td[width="33%"]
+18board.com,18board.net,18p2p.com,18p2p.tv##.altbg2 > td[width="50%"]
 gugeys.cc##.am-g
 maguays.cc##.animate-bounce-up
 gufengmh.com##.animated
@@ -16768,6 +16768,7 @@ php.cn##a[href*="/go."]:not([href*="Fwww.php"])
 dy2018.com,xiaopian.com##a[href*="/htmlcode/"]
 cableabc.com##a[href*="/img1/"]
 ooopn.com##a[href*="/jump.html"]
+ikandy1.com##a[href*="/ky-a.html"]
 ithome.com##a[href*="/lapin."]
 ithome.com##a[href*="/lapin."] + .ad
 jandan.net##a[href*="/money.php?"]
