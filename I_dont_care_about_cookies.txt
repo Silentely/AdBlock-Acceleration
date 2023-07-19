@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 348.202307170949
+! Version: 348.202307191125
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 17 Jul 2023 09:49 UTC
+! Last modified: 19 Jul 2023 11:25 UTC
 !
 !
 ! GLOBAL RULES
@@ -84,7 +84,7 @@
 ###cookies-fancybox
 ~finnair.com,~barnardos.org.uk,~rapidonline.com,~fotopuzzle.de,~monpuzzlephoto.fr,~newpharma.be,~markets.com,~bmihealthcare.co.uk,~puzzleyou.be,~fotondo.cz##.cookie-policy:not(body):not(html)
 ###cookieMsg
-~dogedash.com,~kramp.com##.cookie-message:not(body):not(html):not(.modal-body)
+~correos.es,~dogedash.com,~kramp.com##.cookie-message:not(body):not(html):not(.modal-body)
 ~cloud.im,~ikb.at,~wolters-rundreisen.de,~schulze-immobilien.de,~harry-gerlach.de,~veygo.com,~hotelsbarriere.com,~ufz.de,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~icould.com,~evaair.com,~formula1.com###cookie-banner:not(a)
 ##.block-cookies-popup:not(body):not(html)
 ###cookieStatement
@@ -2152,7 +2152,7 @@
 ###lawEU
 ##.cookie-info-header:not(body):not(html)
 ###popin-accept-cookie
-~ankerkraut.de,~openfoodnetwork.org.uk##.cookies-banner:not(body):not(html)
+~iledefrance-mobilites.fr,~ankerkraut.de,~openfoodnetwork.org.uk##.cookies-banner:not(body):not(html)
 ##.cookies_banner:not(body):not(html)
 ##.loi_hamon:not(body):not(html)
 ###cookies_men
@@ -12608,7 +12608,7 @@
 ##.cookie-banner-window
 ###cookiePopup ~ #blackOverlay
 ###gdpr_cnt
-~elcorteingles.es##.cmp-experiencefragment--cookies
+##.cookies-reminder-v2
 ###gdpr-consent-box
 ###cookiesHint
 ###privacy-msg-container
@@ -20879,7 +20879,6 @@ avl-ludwigsburg.de##.page-overlay
 recordsale.de##.personalization-request
 servihabitat.com##.portlet-boundary[class*="condiciones"]
 calendly.com###gdpr-region ~ [data-component="sticker"]
-correos.es##.correosCookies, .sc-correos-cdk-cookies-module
 liverpoolfc.com###LfcCookieContent
 aldeparty.eu###disclaimer
 remove.bg##.banner.fixed-bottom
@@ -20903,7 +20902,6 @@ rtl.hr##.app__content ~ div
 nivea.pl##.policy-info
 supercast.tech##.cookie-consent
 correios.com.br###cookiesId
-citilink.ru##.PersonalDataConfirm
 werkstars.de##.wsr--data-protection
 lambdatest.com##.cookiesdiv
 dofus.com##.ak-modal-wrapper, .ui-widget-overlay
@@ -21225,7 +21223,6 @@ radio1.ch###cookie
 sportoutlet.no##.main-layout > .fixed
 kinderaerzte-moelln.de##.wrapper-confirmation-privacy
 ouraring.com##.tailwind > .fixed
-deepl.com###dl_cookieBanner
 teknikkdeler.no##.cookies
 gymgrossisten.com##.overlay-banner
 e-rolety.eu###cookie
@@ -22812,6 +22809,14 @@ addnorth.se##footer ~ .messages
 mubert.com##.notification-manager
 nordvpn.com##astro-island[props*="cookieWidget"]
 e-food.gr###smartbanner-container + div > div:last-child:not(:only-child)
+wszystko.pl##wpl-cookies
+perplexity.ai##main > div > .fixed.bottom-sm
+deepl.com###dl_cookieBanner
+citilink.ru###__next main ~ div
+arsys.es##.drop[name="cookies"]
+arsys.fr##.drop[name="cookies"]
+arsys.pt##.drop[name="cookies"]
+arsys.net##.drop[name="cookies"]
 !
 ! SCRIPT BLOCKING
 !
@@ -23987,7 +23992,6 @@ cookie_settings*$domain=aerotime.aero
 /cookieconsent.$domain=stadt-bobingen.de
 troubledtail.com$domain=interestingengineering.com
 spellsalsa.com$domain=interestingengineering.com
-/tracking.js$domain=arsys.es|arsys.fr|arsys.pt|arsys.net
 /privacy/Bootstrap$domain=tescobank.com
 /cookieconsent$domain=adlkofen.de|mieterengel.de|twisto.pl
 /CookieWall/clb.js$domain=innogy.pl
