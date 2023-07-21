@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 348.202307191125
+! Version: 348.202307201010
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 19 Jul 2023 11:25 UTC
+! Last modified: 20 Jul 2023 10:10 UTC
 !
 !
 ! GLOBAL RULES
@@ -2992,7 +2992,7 @@
 ###monitcookie
 ###cookie-gm-new
 ###politique_confidentialite
-~netbox.cz,~sberbank.si,~ab.gr,~maxi.rs,~delhaize.be,~mega-image.ro,~cinemaxx.de,~aucoffre.com,~milliman.com##.cookiesModal:not(body):not(html)
+##.cc-revoke ~ #securitiModalBackground
 ###HCECookieManagerContainer
 ###bitbay-cookies
 ##.cookie-tool-container
@@ -13691,7 +13691,6 @@
 ###box-cookie-notice
 ###container_cookieConsent
 ##.cpm-cookies-bar
-##.cc-revoke ~ #securitiModalBackground
 !
 ! CUSTOM RULES
 !
@@ -17864,7 +17863,6 @@ ziggo.nl##.cookiewall__wrapper
 disneyplus.com###webAppFooter ~ div
 verkeerplaza.nl##.cookie-consent
 lovense.com##.u-cookie
-stellarium-web.org##.v-snack
 kk.org##body > .modal-footer
 komtet.ru###alert-users
 actionaid.fr##.rgpd
@@ -19171,7 +19169,6 @@ bonopoly.de###hinweis_button
 daviddarling.info###cookie
 uni-lj.si##body > .dark
 sourcenaturals.com###policy_div
-sanslicark.com##.v-snack
 samaritans.org###footer ~ div[class*="root"]
 trontv.com##.jw-popups
 bad-reichenhaller.de##.vex-overlay, .preferences-alert
@@ -19366,7 +19363,6 @@ dplay.es###app dialog[class*="notification"]
 got-it.ai##.gi-Cookie
 swstrings.com##.notification-container
 truefittandhill.co.uk##.consent, #consent
-joker.com##.v-snack, .v-dialog--persistent
 metrobankonline.co.uk##.metro-cookiebar__block
 regmag.pl###cookie
 donald.pl###__next > footer ~ div
@@ -19518,7 +19514,6 @@ rbinternational.com.pl###cms-cookie-approvment
 nettbil.no##.nb-cookie-bar
 brandwatch.com###bw-cookie-sys-active
 kunstsammlung.de###cookie
-f8.com##.v-snack--top
 eredivisie.pl##[id^="viewCookies"]
 ergon.nl###ergcb
 carinthia.eu##.dcCookieModal
@@ -19953,7 +19948,6 @@ orderbird.com###modal
 toggl.com##.toggl-cw-body, .consent-wrapper
 kora.fr##.cookie
 zurich.co.uk###opnotification
-whitepages.com##.v-snack__wrapper
 jiosaavn.com##.c-toast
 wegrow.info##.modal-backdrop
 clickandtoner.es###beapp_cookies
@@ -21546,7 +21540,6 @@ sas.sk##.cookiesTextOutter
 howrse.de##.cmpoverlay
 howrse.com##.cmpoverlay
 bridgestonesports.bridgestone.com.br##.modalContainer
-armegoszto.hu##.v-snack--bottom
 rekonise.com##.consent-snackbar
 myoffice.ru###cookie
 opensource.google##snack-bar-container
@@ -22817,6 +22810,12 @@ arsys.es##.drop[name="cookies"]
 arsys.fr##.drop[name="cookies"]
 arsys.pt##.drop[name="cookies"]
 arsys.net##.drop[name="cookies"]
+canyon.eu##.fixed.bottom-0
+stellarium-web.org##.v-snack
+sanslicark.com##.v-snack
+joker.com##.v-snack
+armegoszto.hu##.v-snack
+amiunique.org##.v-snack
 !
 ! SCRIPT BLOCKING
 !
@@ -24119,7 +24118,7 @@ consent*$domain=t-mobile.cz
 cc.labu24.de$domain=labu24.de
 cookies.ptj.de$domain=ptj.de
 consent.autopflege24.net$domain=autopflege24.net
-privacy-center.org$domain=elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr|muyinteresante.es|t-mobile.pl|autocasion.com|europasur.es|pisos.com|lagacetadesalamanca.es|meilleure-innovation.com|huelvainformacion.es|futura-sciences.com
+privacy-center.org$domain=elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr|muyinteresante.es|t-mobile.pl|autocasion.com|europasur.es|pisos.com|lagacetadesalamanca.es|meilleure-innovation.com|huelvainformacion.es|futura-sciences.com|elpais.com
 /consent$domain=natune.net|hemnet.se
 cookie-banner*$domain=studio3t.com
 /cookies_2020$domain=pensionlisboa.com
