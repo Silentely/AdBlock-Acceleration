@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 348.202307260422
+! Version: 348.202307310534
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 26 Jul 2023 04:22 UTC
+! Last modified: 31 Jul 2023 05:34 UTC
 !
 !
 ! GLOBAL RULES
@@ -10169,7 +10169,7 @@
 ##body > section#acc-bottom[style]
 ###GeneralCookies ~ .ui-widget-overlay
 ###GeneralCookies ~ .ui-dialog[aria-describedby="GeneralCookiesModal"]
-###zone_CMP_grande
+##.cpm-cookies-bar
 ###bongo_cookie_info
 ###___gatsby div[class*="CookieNotice"]
 ##.pagesection--disclaimer[data-module="euCookie"]
@@ -10262,7 +10262,7 @@
 ##.container.CookieConfirmation
 ###europeCookieWrapper
 ###coookieees-wrap
-###js_euCookieModal
+##.mi-responsive-player + .mi-consent-layer
 ##.cookie-card_popup_fixed
 ##.popupCookiesBG:not(body):not(html)
 ###grve-privacy-bar
@@ -13648,7 +13648,7 @@
 ###app div[data-testid*="cookies-module"]
 ###cookieNoticeUser
 ###as24-cmp-popup
-###js_euCookieBanner
+###cmgr_cookie_manager_html_container
 ##.tracking-consent ~ .modal-backdrop
 ##.tracking-consent ~ .veil
 ###cookieconsent-sticky
@@ -13690,7 +13690,6 @@
 ##.osf-cookies-consent
 ###box-cookie-notice
 ###container_cookieConsent
-##.cpm-cookies-bar
 !
 ! CUSTOM RULES
 !
@@ -17092,7 +17091,6 @@ aujourdhui.com###notification
 checkpoint.com###notification
 cm.be##.new-notification
 gla.ac.uk###consent, #editconsent
-eyeonspain.com###cp
 dsm.com###cp
 1mot.net###cp
 bytom.com.pl##byt-cookie-law-info
@@ -22814,6 +22812,11 @@ sanslicark.com##.v-snack
 joker.com##.v-snack
 armegoszto.hu##.v-snack
 amiunique.org##.v-snack
+helthjem.no##.schibsted-bar
+sunglasses-shop.bg##.notification-wrapper
+lazoptics.gr##.new-cookie-supercontainer
+eyeons.com##.alternis-cookie
+youporn.com###cookie_consent_wrapper
 !
 ! SCRIPT BLOCKING
 !
@@ -23458,6 +23461,7 @@ consent.scm-verlagsgruppe.de
 consent.comply-app.com
 ||kesko.fi/kconsent$script
 ||unpkg.com/@segment/consent-manager$script
+cache.consentframework.com
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -23621,6 +23625,7 @@ cmp.setupcmp.com
 cmp.mediavine.com
 /sibbo-cmp-loader.js
 ||fastcmp.com/fast-cmp$script
+cmp.springernature.com
 ||gofundme.com/js/3.0/visitorCookie.js$script
 /CookiesDirective
 CookieAccept/affirmation.js
@@ -24047,7 +24052,7 @@ cdn.civiccomputing.com$domain=metoffice.gov.uk|churchofengland.org|yodel.co.uk|t
 /iCookie/*$domain=h-supertools.com
 /he-consent/*$domain=dennree.de
 /uc_cookie$domain=gastro24.de|gastro-hero.de
-cmp.$domain=telerama.fr|courrierinternational.com|vodkaster.com|svd.se|histoire-et-civilisations.com|malservice.aftonbladet.se|vg.no|tv.nu|tek.no|finn.no|pent.no|godt.no|aftenposten.no|omni.se|e24.no
+cmp.$domain=telerama.fr|courrierinternational.com|vodkaster.com|svd.se|histoire-et-civilisations.com|malservice.aftonbladet.se|vg.no|tv.nu|tek.no|finn.no|pent.no|godt.no|aftenposten.no|omni.se|e24.no|helthjem.no
 brsimg.com/gdpr$script,domain=boursorama.com
 trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookie-banner$domain=hauptbahnhofcity.wien
