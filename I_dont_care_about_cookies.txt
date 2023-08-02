@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 348.202307310534
+! Version: 348.202308020914
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 31 Jul 2023 05:34 UTC
+! Last modified: 02 Aug 2023 09:14 UTC
 !
 !
 ! GLOBAL RULES
@@ -9755,7 +9755,7 @@
 ~swedbank.se###cookie-consent-dialog
 ##.accept-cookies-toast
 ##.cn-window[aria-label="cookieconsent"]
-##.Common-Layout-StandardBody.withFooter > div[class*="Common-Layout-StyleJamSiteWideMessage"]
+###container_cookieConsent
 ##.bar-Cookies:not(body):not(html)
 ##.ndm-cookie-consent-popup
 ##.cookie--message:not(body):not(html)
@@ -10455,7 +10455,7 @@
 ###cookies-manager-msg
 ##.ui-dialog.cookie-consent
 ##.ui-dialog.cookie-consent ~ .ui-widget-overlay
-###r9-gdpr.r9-gdpr-container
+###box-cookie-notice
 ##.lupcom_cookie_switch
 ###accept_cookie_container
 ###cookiedismiss
@@ -13688,8 +13688,6 @@
 ###website_cookies_bar
 ##.component\:cookie-consent-dialog
 ##.osf-cookies-consent
-###box-cookie-notice
-###container_cookieConsent
 !
 ! CUSTOM RULES
 !
@@ -22828,7 +22826,7 @@ cookiewarning4.js^
 /wp-content/mu-plugins/cookie_notifier
 ||freegamehosting.eu/js/cookies.js$script
 ||jp2w.pl/a/cookie.js$script
-cookieConsent.js^$domain=~talktalk.co.uk|~blackboard.com|~kayak.pl|~gamersgate.com
+cookieConsent.js^$domain=~talktalk.co.uk|~blackboard.com|~gamersgate.com
 /inc/cookiechoices.js
 ||metpartner.pl/cookie/info_cookie.js$script
 ||catalogo.pusc.it/pusc_jquery.cookie.min.js$script
@@ -22853,7 +22851,7 @@ bootstrap-cookie-consent.js^
 cookieDisclaimer.js^
 /public/scripts/cookie/popup.js
 ||gartneriraadgivningen.dk/skinCss/website/js/cookie/cookie.js$script
-/cookieconsent.js$domain=~blackboard.com|~kayak.pl|~portal.easygreenenergy.at|~oekostrom.at|~gin-rummy-online.com|~gamersgate.com|~spielemax.de|~tonershop.at
+/cookieconsent.js$domain=~blackboard.com|~portal.easygreenenergy.at|~oekostrom.at|~gin-rummy-online.com|~gamersgate.com|~spielemax.de|~tonershop.at
 /cookieconsentpopup.js
 cookiePolicyEUPopin*
 cookielawscript.js^
@@ -23495,7 +23493,7 @@ gdpr-banner.awsmpsa.com
 ||securebrainpull.com/gdpr/$script
 ||gdpr500.com/widget/pandawidget/$script
 /bundle-gdpr.min.js
-/gdpr/CookieConsent$domain=~kayak.pl
+/gdpr/CookieConsent
 /2018-gdpr.js
 /gdpr-cmp-ui.js
 /js/gdpr.min.
@@ -23574,12 +23572,12 @@ privacy.claytonhomes.com
 /s4s-privacy-module/*
 /shopsshort/privacy/*
 ||heg-cp.com/upm/privacy-manager$script
-tag=ui/privacy/CookiesConsent
 /dock-privacy-settings.esm.js
 ||privacy.wum.rocks/public/app.js$script
 /tagcommander/privacy_
 /serviceform-tools/privacy/sf-privacy
 /privacy-dialog-tracking.js
+/privacy/providers/CookiesDataProvider
 ||cmp.nextday.media/cmp$script,domain=~vi.nl
 cmp.dreamlab.pl
 /media/cmp/int_cmp_banner
@@ -23652,7 +23650,7 @@ jquery.smartCookie.min.js^
 /wp-content/plugins/1990KB-CookieConsent/*
 /Magento_Cookie/js/notices
 /iwCookieBanner
-/CookieConsent.js$domain=~cinestar.de|~blackboard.com|~kayak.pl|~gamersgate.com
+/CookieConsent.js$domain=~cinestar.de|~blackboard.com|~gamersgate.com
 /js/CookieConsentNew
 /CookieManagerUi.js
 /widgets/global/vendors~LegalCookies
