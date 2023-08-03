@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 348.202308020914
+! Version: 348.202308031008
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 02 Aug 2023 09:14 UTC
+! Last modified: 03 Aug 2023 10:08 UTC
 !
 !
 ! GLOBAL RULES
@@ -133,7 +133,7 @@
 ~hl.co.uk##.cookieBanner:not(body):not(html):not(#sprd-main)
 ~wgv.de###cookie_bg
 ###cookie_header
-~regioneo.pl,~czyodebrac.pl,~altheaprovence.com,~moodle.com###cookie-law-info-bar
+##.osf-cookies-consent
 ###cookie-div
 ##.cookieLight:not(body):not(html)
 ###cookiePopUp
@@ -12027,7 +12027,7 @@
 ##.mf-cookie-banner
 ###cookie-dim
 ##.usercookiemanagement
-~regioneo.pl,~czyodebrac.pl,~altheaprovence.com,~moodle.com###cliSettingsPopup
+~altheaprovence.com###cliSettingsPopup
 ###flash-container ~ div div[data-testid="main-cookies-banner-container"]
 ###prompt-cookies
 ###gdpr_message
@@ -13660,7 +13660,7 @@
 ##.footer-cookie-section
 ##.consent-tracking--footer
 ###consentBanner + #consentLock
-###cookie-law-info-bar ~ .cli-modal-backdrop
+##.component\:cookie-consent-dialog
 ###welcomebar-wrapper-gdpr
 ##.show--consent:not(.force--consent) #cc-main
 ##.notification__cookies
@@ -13686,8 +13686,8 @@
 ##.eu-cookie-compliance-popup-open > #sliding-popup
 ##.sv-cookie-management
 ###website_cookies_bar
-##.component\:cookie-consent-dialog
-##.osf-cookies-consent
+~altheaprovence.com##body:not(.cli-barmodal-open) #cookie-law-info-bar
+###cookie-law-info-bar ~ .cli-modal-backdrop
 !
 ! CUSTOM RULES
 !
@@ -19747,7 +19747,6 @@ boulderholisticvet.com##.elementor-popup-modal
 catpublications.com###gtmAlert
 solid-thueringen.de##.disclaimer
 wiltmann.de###cde
-homebook.pl##.hb-layout ~ div
 seriea.pl##[id^="viewCookies"]
 undo.net###fullpersonal, #fullboxpersonal
 deandavid.at##.v-overlay, .v-dialog__content
@@ -22299,7 +22298,6 @@ meliuz.com.br##.cookies-c
 lhotellerie-restauration.fr###cookieConsent
 rawpixel.com##div[data-test-id="check-cookie-consent"]
 vigo.de##.wx_consentbanner
-samsung.com##.helptips__container, #cookie_component
 saurclient.fr###cookies, .sds-m-cookiebanner
 lefigaro.fr##.fig-consent-banner
 aliexpress.ru##div[class*="PrivacyPolicyBanner"]
@@ -22815,6 +22813,9 @@ sunglasses-shop.bg##.notification-wrapper
 lazoptics.gr##.new-cookie-supercontainer
 eyeons.com##.alternis-cookie
 youporn.com###cookie_consent_wrapper
+samsung.com##.helptips__container, #cookie_component, .js-smtc-cookie
+smartthingsfind.samsung.com##.fixed.bottom-0
+book.io##.foobar-cookie
 !
 ! SCRIPT BLOCKING
 !
@@ -23347,7 +23348,7 @@ cookies.ptj.de
 /kbv-cookieconsent.js
 /cookie-consent-mycity.js
 /components/src/cookie-consent/*
-/webtoffee-gdpr-cookie-consent/*
+/webtoffee-gdpr-cookie-consent/*$domain=~altheaprovence.com
 ||cookies.neuca24.pl/nc.js$script
 /cookies/manage-cookies-runtime
 /typo3conf/ext/ppw_cookie/*
