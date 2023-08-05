@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 348.202308040957
+! Version: 348.202308051003
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 04 Aug 2023 09:57 UTC
+! Last modified: 05 Aug 2023 10:03 UTC
 !
 !
 ! GLOBAL RULES
@@ -106,7 +106,7 @@
 ###cookie_shout
 ###cookie-alert
 ###EUCookie
-~jackjones.com,~schuurman-schoenen.nl,~werkenbijpathe.nl,~interspar.at,~spar.at,~spar.hu,~spar.hr,~spar.si##.cookie-notification:not(body):not(html)
+~schuurman-schoenen.nl,~werkenbijpathe.nl,~interspar.at,~spar.at,~spar.hu,~spar.hr,~spar.si##.cookie-notification:not(body):not(html)
 ###eprivacy
 ~dominospizza.pl,~penny.hu,~penny.cz###cookie-message
 ###cookieinfo-container
@@ -460,7 +460,7 @@
 ###polityka-cookie
 ###snippet-cookieControl-cookieInfo
 ###WP-cookie-info
-~kulturprojekte.berlin,~rapidonline.com,~humboldtforum.org,~berlinartweek.de,~gov.lv,~riga.lv,~search.itaa.be,~dehn.at,~hetwkz.nl,~umcutrecht.nl,~ticsante.com,~techopital.com,~sandro-paris.com,~feuvert.fr,~ad.win.nl,~conclude.com,~thinkproject.com,~dehn.de###cookieConsent:not(.modal)
+~kulturprojekte.berlin,~rapidonline.com,~humboldtforum.org,~berlinartweek.de,~gov.lv,~riga.lv,~search.itaa.be,~dehn.at,~ticsante.com,~techopital.com,~sandro-paris.com,~feuvert.fr,~ad.win.nl,~conclude.com,~thinkproject.com,~dehn.de###cookieConsent:not(.modal)
 ###cookie-info-box
 ##.avs-cookie-message:not(body):not(html)
 ###header-cookie
@@ -855,7 +855,7 @@
 ###svtCookieInformationContainer
 ~fredolsen.es##.cookies-warning:not(body):not(html)
 ##.dom-content--eu-banner
-~jobcenter-ge.de,~arbeitsagentur.de,~routershop.nl,~researchaffiliates.com###cookieDialog
+~jobcenter-ge.de,~arbeitsagentur.de,~routershop.nl,~headsetwinkel.nl,~researchaffiliates.com###cookieDialog
 ##.cookie_optin_box:not(body):not(html)
 ###CookieContainer
 ###jumper_cookies
@@ -13688,6 +13688,8 @@
 ###website_cookies_bar
 ~altheaprovence.com##body:not(.cli-barmodal-open) #cookie-law-info-bar
 ###cookie-law-info-bar ~ .cli-modal-backdrop
+###___gatsby div[class*="CookiesBanner-module"]
+##.w-full.fixed[data-test="consent-banner"]
 !
 ! CUSTOM RULES
 !
@@ -17363,7 +17365,6 @@ historysearch.com##.hs-state-left
 opensport.es###cookies
 sqlgate.com##.popup.download-page
 zwickautourist.de###bauch-binder
-insideevs.com##.m1-footer-messages
 foramax.hu##body > .ct, body > .cc
 greentechmedia.com##body > div[style*="transp"]
 the-beam.com##.privacy-policy
@@ -21141,7 +21142,6 @@ atlatszo.hu###the_popup
 cm.games###cookie
 liftango.com##.fs-cc-symbol
 specscart.co.uk##.cookie
-consumentenbond.nl##.w-full[data-test="consent-banner"]
 galaxus.de###__next > div[aria-hidden]:not([data-layout-container])
 galaxus.at###__next > div[aria-hidden]:not([data-layout-container])
 brewdog.com###segment-consent-banner
@@ -21974,7 +21974,6 @@ autoteile-favorit.com##.ets_cookie_banber_block
 2gis.ru###confirm ~ footer
 xt500parts.com##.amgdprcookie-modal-container
 notco.com##.CookiesContainer
-dw.com##.cookie__wrap
 tweakers.net###koekieBar:not(.tall)
 foncia.com##app-foncia-cookie-banner
 nordnet.no##.cookie-consent
@@ -22816,6 +22815,14 @@ book.io##.foobar-cookie
 larian.com##.ciastko
 poool.tech###app > .fade-in-enter-done
 poool.fr###app > .fade-in-enter-done
+ncts.ie##.nctoverlay, #cookiesBtn
+tapo.com###tapo-cookie
+jackjones.com##.overlay-backdrop
+evercast.us##.ck-cookie-w, .cookie-preference-button
+learngerman.dw.com##.content-container > footer ~ div
+surfshark.com###__next > footer ~ div[class*="animationEnterDone"]
+reebok.eu##section[data-test="cookie-banner"]
+lekarna.cz###popup-customer-data
 !
 ! SCRIPT BLOCKING
 !
@@ -24048,11 +24055,11 @@ cookie-policy*$domain=ubuntu.com
 consent.js^$domain=zitatezumnachdenken.com
 cdn.civiccomputing.com$domain=metoffice.gov.uk|churchofengland.org|yodel.co.uk|totalwar.com|gfps.com|mann.tv|lawgazette.co.uk|gfms.com
 /cnst.js$domain=tauschticket.de
-/cookies/*$domain=liberbank.es|stickypassword.com
+/cookies/*$domain=liberbank.es|stickypassword.com|webkamery.online
 /iCookie/*$domain=h-supertools.com
 /he-consent/*$domain=dennree.de
 /uc_cookie$domain=gastro24.de|gastro-hero.de
-cmp.$domain=telerama.fr|courrierinternational.com|vodkaster.com|svd.se|histoire-et-civilisations.com|malservice.aftonbladet.se|vg.no|tv.nu|tek.no|finn.no|pent.no|godt.no|aftenposten.no|omni.se|e24.no|helthjem.no
+cmp.$domain=telerama.fr|courrierinternational.com|vodkaster.com|svd.se|histoire-et-civilisations.com|malservice.aftonbladet.se|vg.no|tv.nu|tek.no|finn.no|pent.no|godt.no|aftenposten.no|omni.se|e24.no|helthjem.no|minmote.no
 brsimg.com/gdpr$script,domain=boursorama.com
 trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookie-banner$domain=hauptbahnhofcity.wien
@@ -24063,7 +24070,7 @@ trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookies$domain=next-immo.com
 /fnGdpr.js$domain=financer.com
 /cookie-layer.js$domain=mercedes-benz.io
-/messagingNoTcfApi.js$domain=svd.se|aftenbladet.no|minmote.no|klart.se
+/messagingNoTcfApi.js$domain=svd.se|aftenbladet.no|klart.se
 /sygnal42-gdpr/*$domain=blitzrechner.de
 /CookieLayer.js$domain=multipower.com
 /cookie_management.js$domain=meteoradar.ch
@@ -24096,7 +24103,6 @@ h1.versicherungsjournal.de$domain=versicherungsjournal.de
 /mdv.cookie.js$domain=biehler-cycling.com
 /alert-info.js$domain=asus.com
 /alert-info_cn.js$domain=asus.com.cn
-/cmp.genesis$domain=vodafone.de
 /newCookieChoice.js$domain=vape-phone.fr
 /cookie-settings-manager$domain=aok.de
 /Ronis_Cookie/*$domain=slaters.co.uk
