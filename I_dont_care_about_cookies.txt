@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 348.202308060912
+! Version: 348.202308070957
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 06 Aug 2023 09:12 UTC
+! Last modified: 07 Aug 2023 09:57 UTC
 !
 !
 ! GLOBAL RULES
@@ -794,7 +794,7 @@
 ##.cookie_ribon:not(body):not(html)
 ##.infoCookies:not(body):not(html)
 ###cookieInformacja
-~towerhousewares.co.uk,~stadtwerke-flensburg.de,~hepster.com,~zentrale-pruefstelle-praevention.de,~bookmygarage.com,~deineapotheke.at,~swedbank.se,~swedbank.com,~planeo.de,~dogedash.com,~teacheconomy.de,~sevdesk.de,~sevdesk.at,~nintendo.com,~veygo.com,~puratos.pl,~bike-components.de,~bremerhaven.de,~onlinedepartment.nl,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~monese.com,~nuxeo.com,~opngo.com,~sachsenallee.de,~melcloud.com,~intersport.de##.cookie-banner:not(body):not(html)
+~towerhousewares.co.uk,~stadtwerke-flensburg.de,~hepster.com,~zentrale-pruefstelle-praevention.de,~bookmygarage.com,~deineapotheke.at,~swedbank.se,~sparbankentanum.se,~swedbank.com,~planeo.de,~dogedash.com,~teacheconomy.de,~sevdesk.de,~sevdesk.at,~nintendo.com,~veygo.com,~puratos.pl,~bike-components.de,~bremerhaven.de,~onlinedepartment.nl,~voltadol.at,~gsk-gebro.at,~shop.halebop.se,~monese.com,~nuxeo.com,~opngo.com,~sachsenallee.de,~melcloud.com,~intersport.de##.cookie-banner:not(body):not(html)
 ###cookienotice
 ###overlay-cookielaw-form
 ##.cookie-info-wrapper:not(body):not(html)
@@ -6979,7 +6979,7 @@
 ##.hidden-print[data-test-id*="cookie-alert"]
 ###cookie-p[ng-controller="cookiePolicyController"]
 ###exp_cookie_compliance-wrap
-~swedbank.se##div[data-cookie-banner]:not([class*="modal"])
+~swedbank.se,~sparbankentanum.se##div[data-cookie-banner]:not([class*="modal"])
 ###cookie-tajekoztato
 ##cookie-law-el
 ###c-hinweis-cookie
@@ -9752,7 +9752,7 @@
 ##.o-floating-card.js-privacy
 ###pagehead > #cookies.open
 ###bandeau_popin_cookie
-~swedbank.se###cookie-consent-dialog
+~swedbank.se,~sparbankentanum.se###cookie-consent-dialog
 ##.accept-cookies-toast
 ##.cn-window[aria-label="cookieconsent"]
 ###container_cookieConsent
@@ -13690,6 +13690,7 @@
 ###cookie-law-info-bar ~ .cli-modal-backdrop
 ###___gatsby div[class*="CookiesBanner-module"]
 ##.w-full.fixed[data-test="consent-banner"]
+##barracookies
 !
 ! CUSTOM RULES
 !
@@ -17831,7 +17832,6 @@ hayu.com##div[class^="styled__AlertsContainer"]
 imovirtual.com###root > footer ~ div
 riccos-camera.de###cookieholder
 restaurant-liris.lu##.coockies
-motor1.com##.m1-footer-messages
 labor-staber.de###lwcook
 brainly.com.br##.brn-cookie-policy-wrapper
 primocanale.it###cookie
@@ -18307,7 +18307,6 @@ aigle.com##.CookiesLayer
 paecklipunkt.ch##pp-cookie-dialog
 rankersta.com##.cookie
 nissannews.com###privacyModal
-android.com##snack-bar-container
 lastminutetravel.com##.weUseCookies
 leti.com##.NoticesBox
 fmscan.org###cookieDiv
@@ -22459,7 +22458,6 @@ xeit.ch###x-cookie-banner, .xeit-dsgvo-alert
 biomecanics.com##.cookies
 garvalin.com##.cookies
 cecotec.es##.cookie-consent
-eezy.nrw##.privacy-center
 grahamhancock.com###cookie-law
 ale.se##.MuiSnackbarContent-root
 pkobp.pl###pko-cookie-rodo-first, .js-ajax-overlay
@@ -22722,21 +22720,6 @@ activobank.pt##.overlay-cookies, #cookies
 swisstours.com##.cookiesApproval
 eobuwie.com.pl##.modal-consents
 amazon.co.uk###cookie-pref-disclaimer
-xxxlutz.at###root > footer ~ div, #root ~ div
-xxxlutz.de###root > footer ~ div, #root ~ div
-xxxlutz.ch###root > footer ~ div, #root ~ div
-xxxlutz.hu###root > footer ~ div, #root ~ div
-xxxlutz.cz###root > footer ~ div, #root ~ div
-moemax.at###root > footer ~ div, #root ~ div
-moemax.hu###root > footer ~ div, #root ~ div
-moemax.de###root > footer ~ div, #root ~ div
-moebelix.cz###root > footer ~ div, #root ~ div
-moebelix.at###root > footer ~ div, #root ~ div
-moebelix.sk###root > footer ~ div, #root ~ div
-poco.de###root > footer ~ div, #root ~ div
-xxxlesnina.hr###root > footer ~ div, #root ~ div
-xxxlesnina.rs###root > footer ~ div, #root ~ div
-xxxlesnina.si###root > footer ~ div, #root ~ div
 jvctv.eu##div[id*="cookieModule"]
 metar-taf.com##.cookies
 yesterdaystractors.com###dvCookieMessage
@@ -22823,6 +22806,9 @@ lekarna.cz###popup-customer-data
 suhrkamp.de###whcm
 gov.in##.cookies-wrapper
 moneytalksnews.com###footer-overlay
+mango.com###cookies
+android.com##snack-bar-container, .glue-cookie-notification-bar
+koenigsegg.com##section[data-component*="cookie-notice"]
 !
 ! SCRIPT BLOCKING
 !
@@ -23360,6 +23346,7 @@ cookies.ptj.de
 /cookies/manage-cookies-runtime
 /typo3conf/ext/ppw_cookie/*
 /cookie-consent-widget/*
+/modules/pages/js/cookie-dialog.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23567,7 +23554,6 @@ cmp.dmgmediaprivacy.co.uk$domain=~metro.co.uk
 /privacyConsentBar.js
 ||tagcommander.com/privacy$script,domain=~labanquepostale.fr
 ||isgprivacy.cbsi.com/dist/optanon$script,domain=~cbsnews.com|~startrek.com|~insideedition.com|~cbslocal.com|~etonline.com|~cc.com
-/contao-privacy-center.js
 privacy-policy.u-lab.nl
 ||trustcommander.net/privacy$script,domain=~tf1info.fr|~tf1.fr|~edeka.de
 app.eprivacy-keeper.eu
@@ -23587,6 +23573,7 @@ privacy.claytonhomes.com
 /serviceform-tools/privacy/sf-privacy
 /privacy-dialog-tracking.js
 /privacy/providers/CookiesDataProvider
+/contao-privacy-center
 ||cmp.nextday.media/cmp$script,domain=~vi.nl
 cmp.dreamlab.pl
 /media/cmp/int_cmp_banner
@@ -23630,8 +23617,8 @@ cmp.pafo.fairbung.com
 ||gravito.net/alehdetcmp$script
 cmp.setupcmp.com
 cmp.mediavine.com
-/sibbo-cmp-loader.js
 ||fastcmp.com/fast-cmp$script
+/sibbo-cmp-loader.js
 cmp.springernature.com
 ||gofundme.com/js/3.0/visitorCookie.js$script
 /CookiesDirective
