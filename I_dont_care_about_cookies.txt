@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 348.202308070957
+! Version: 348.202308080718
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 07 Aug 2023 09:57 UTC
+! Last modified: 08 Aug 2023 07:18 UTC
 !
 !
 ! GLOBAL RULES
@@ -310,7 +310,7 @@
 ##.gn-cookie-alert:not(body):not(html)
 ###ca_banner
 ###cookiecomplience
-~portal.by.aok.de,~segeln-lernen.de,~bootsfuehrerschein.de,~sportbootfuehrerschein.de,~job-impulse.com,~studio-eight.com##.cookie-alert:not(body):not(html)
+~airbaltic.com,~portal.by.aok.de,~segeln-lernen.de,~bootsfuehrerschein.de,~sportbootfuehrerschein.de,~job-impulse.com,~studio-eight.com##.cookie-alert:not(body):not(html)
 ~faircore4eosc.eu###cookiePopupContainer
 ###qb_cookie_consent_main
 ##.cookies_policy_container
@@ -865,7 +865,7 @@
 ###cookies_warning
 ##.regional-cookie-warning
 ###pl_cookies
-##.cookie-alert-content
+##barracookies
 ###CookieSaveMsg
 ###cookie-window
 ###privacybanner
@@ -5352,7 +5352,7 @@
 ###divPiskot
 ###footer_cook
 ###content-ucoc-cookies
-~ivaucher.pt,~verpackungsregister.org,~leoprinting.fr,~bosch-climate.be,~argenta.be,~essent.nl,~energiewonen.nl###cookieConsentModal
+##.w-full.fixed[data-test="consent-banner"]
 ###cookieConsentModal ~ .lean-overlay
 ###cookie-law-uw
 ~compravo.de,~perpedale.de###cookie-jar
@@ -11996,7 +11996,7 @@
 ##.nxm2CookieBar
 ###gdpr-acceptance
 ##.cmp-popup-cookies
-###cookieConsentModal ~ .iziModal-overlay
+###___gatsby div[class*="CookiesBanner-module"]
 ##.tx-nim-cookie-consent
 ###hst3-cookieconsent-consent-popup
 ###__next div[class*="cookies-bar"]
@@ -13688,9 +13688,7 @@
 ###website_cookies_bar
 ~altheaprovence.com##body:not(.cli-barmodal-open) #cookie-law-info-bar
 ###cookie-law-info-bar ~ .cli-modal-backdrop
-###___gatsby div[class*="CookiesBanner-module"]
-##.w-full.fixed[data-test="consent-banner"]
-##barracookies
+###overlay-cookiebanner
 !
 ! CUSTOM RULES
 !
@@ -18563,7 +18561,6 @@ newsletter2go.it###hidecookien2go
 buyorbye.pl###cookie
 knoema.com###gdpr
 electrovoice.com##.alert-dismissible
-baldursgate3.game##.cookies
 tilda.cc###t-footer > div > div[data-storage-item*="cookie"]
 download-manager.online##.cookie-bottom
 faire.fr###cookieLab
@@ -20811,7 +20808,6 @@ ultimatecourses.com##.uc-cookies
 ihk-akademie.de###privacy-statement
 ontariocolleges.ca###privacy-statement
 dekra-norisko.fr##.dekra-gdpr
-starcar.de###modal-overlay
 service.gov.uk##.cbanner-govuk-cookie-banner, #dm-cookie-banner
 tierarzt24.de##.vet_cookies
 loewe.tv##.cookey-pop
@@ -20840,7 +20836,6 @@ mein-apothekenmanager.de###cn-wrapper
 ntb.no##.footer__notification
 videosmile.ru###accept_q
 akpool.de###consent
-penguinrandomhouse.de##.cl-window-bg
 ifaa.de##.cmnstr-outer
 placedumarche.fr##.sky-cookies-banner
 xmlgold.eu##.cookie-window
@@ -20849,8 +20844,6 @@ satrucker.co.za##div[id*="cookie-notice"]
 almedina.net##.footer-fixed-bar
 23degrees.io##consent-toast
 jku.at##.ccpopup
-atlasformen.de##.cookie-modal, .modal-backdrop
-atlasformen.co.uk###divBottomStickyLayer
 partssource.com###divBodyContainer > div > div > .justify-content-center
 voeazul.com.br##.az_cookie
 sanitarium.com.au##.cookie--modal
@@ -21130,7 +21123,6 @@ benq.eu###cookie-fullscreen
 plusmobile.fr##.gdpr
 traderepublic.com##.consentCard
 tfwm.org.uk##.wmnds-cookies-banner
-foodwatch.org##.cn-banner
 newsworthy.se##.Snack
 avtomobilizem.com##.c-notice
 actual.at##.c-notice
@@ -21140,7 +21132,6 @@ liftango.com##.fs-cc-symbol
 specscart.co.uk##.cookie
 galaxus.de###__next > div[aria-hidden]:not([data-layout-container])
 galaxus.at###__next > div[aria-hidden]:not([data-layout-container])
-brewdog.com###segment-consent-banner
 fupro.de##.modal-backdrop
 fujifilm.com##.m-cookie-confirm
 mezoko.com###cookie
@@ -22792,7 +22783,6 @@ youporn.com###cookie_consent_wrapper
 samsung.com##.helptips__container, #cookie_component, .js-smtc-cookie
 smartthingsfind.samsung.com##.fixed.bottom-0
 book.io##.foobar-cookie
-larian.com##.ciastko
 poool.tech###app > .fade-in-enter-done
 poool.fr###app > .fade-in-enter-done
 ncts.ie##.nctoverlay, #cookiesBtn
@@ -22809,6 +22799,19 @@ moneytalksnews.com###footer-overlay
 mango.com###cookies
 android.com##snack-bar-container, .glue-cookie-notification-bar
 koenigsegg.com##section[data-component*="cookie-notice"]
+larian.com##.ciastko
+baldursgate3.game##.ciastko
+kozterkep.hu###cookie-consent
+studentendrukker.be###cookieConsentModal, .iziModal-overlay
+atlasformen.co.uk###modalCookies, .modal-backdrop
+atlasformen.de###modalCookies, .modal-backdrop
+atlasformen.nl###modalCookies, .modal-backdrop
+atlasformen.hu###modalCookies, .modal-backdrop
+atlasformen.ch###modalCookies, .modal-backdrop
+atlasformen.pl###modalCookies, .modal-backdrop
+autokiila.fi##.cookie-box
+ipon.hu##div[x-data="cookiePolicy"]
+thenounproject.com##div[data-callback*="CookiesBanner"]
 !
 ! SCRIPT BLOCKING
 !
@@ -23347,6 +23350,7 @@ cookies.ptj.de
 /typo3conf/ext/ppw_cookie/*
 /cookie-consent-widget/*
 /modules/pages/js/cookie-dialog.js
+/typo3temp/assets/compressed/cookieman
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23784,6 +23788,7 @@ api.brookiebot.com
 /colossalchance.com
 ||unpkg.com/orejime$script
 /aliasanvil.com
+||epccm19.com/app.js$script
 ||pcz.pl/static/js/moo-cooker.js$script
 /eucd/eucd.min.js
 ||cinabre.sudoc.abes.fr/psi_gui/js/bandeau.js$script
@@ -23892,6 +23897,7 @@ static.clickskeks.at
 /ccm19/public/*
 /coolkies-walkies/*
 ccm19.dsg-schweiz.ch
+||jsdelivr.net/npm/cookify$script
 /consumer/cookie/client$domain=bt.com
 /frontend/ajax/cookies$domain=romstal.ro
 /rodo-agreement-$domain=gremimedia.pl|zw.com.pl
@@ -24181,6 +24187,7 @@ js_privacy_cmp*$domain=e24.no
 it-cc.index.js^$domain=boellhoff.com
 /cookiecontrol.js$domain=rembutiken.se
 /Custom_clubhinweis$domain=ofdb.de
+/infrasdk.js$domain=nofluffjobs.com
 !
 ! FILTERLIST ONLY
 !
