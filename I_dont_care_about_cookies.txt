@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 348.202308080718
+! Version: 348.202308090550
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 08 Aug 2023 07:18 UTC
+! Last modified: 09 Aug 2023 05:50 UTC
 !
 !
 ! GLOBAL RULES
@@ -4406,7 +4406,7 @@
 ###cookie_accept_container
 ###divAvisCookies
 ##.cookie-usage-notification
-###shopillaxcookielaw-wrapper
+###cookiebannerWrapper
 ###home-legal-infos-bottom
 ###rb_cookieBox
 ###cokiesinfo
@@ -19849,7 +19849,6 @@ livexlive.com##.tos-footer
 kissnofrog.com##.nt-cc
 egumenita.ro##.cookies
 spandidos-publications.com##.footer > #navbar
-jobbsafari.se###__next > [class^="Ufti"]
 plaster-miodu.pl###growls-br
 dialdirect.co.uk##.elementor-popup-modal
 affairenmarktplatz.com###overlay-content
@@ -22004,7 +22003,6 @@ privatbank.ua##.cookies
 gamesforplay.com##.notification
 hoppscotch.io##.toasted-container
 balluff.com##div[x-data*="ConsentDialog"]
-conduktor.io##.cookie-though
 italotreno.it##.pre-header-bar.cookies, #cookie-row
 bagsandcoversdirect.co.uk##.cookbx
 moovitapp.com##mv-cookie-banner
@@ -22812,6 +22810,14 @@ atlasformen.pl###modalCookies, .modal-backdrop
 autokiila.fi##.cookie-box
 ipon.hu##div[x-data="cookiePolicy"]
 thenounproject.com##div[data-callback*="CookiesBanner"]
+jobbsafari.se###__next > footer ~ div
+tzdubrovnik.hr###mygdprPopupHR
+forbesenespanol.com##.fixed[data-toast*="cookies"]
+incogni.com##aside[class*="cookie-consent"]
+reimaginethegame.economist.com##div[class*="tracking_banner"]
+myshopify.com###shopillaxcookielaw-wrapper
+shopify.com##.tw-sticky[data-controller="cookies-notice"]
+hospitaldaluz.pt###RootCookieTool
 !
 ! SCRIPT BLOCKING
 !
@@ -23351,6 +23357,7 @@ cookies.ptj.de
 /cookie-consent-widget/*
 /modules/pages/js/cookie-dialog.js
 /typo3temp/assets/compressed/cookieman
+/cookiethough.min.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
