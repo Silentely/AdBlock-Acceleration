@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 348.202308090550
+! Version: 349.202308100714
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 09 Aug 2023 05:50 UTC
+! Last modified: 10 Aug 2023 07:14 UTC
 !
 !
 ! GLOBAL RULES
@@ -12229,7 +12229,7 @@
 ###___gatsby div[class*="Cookiebar"]
 ##.cookie_settings_container
 ##.cookie_settings_toggle
-~mammut.com###__next div[class*="CookiePopup"]
+###__next div[class*="CookiePopup"]
 ##.flatsome-cookies--active
 ###cookieNotif
 ##.cookies.cookies_active
@@ -13689,6 +13689,7 @@
 ~altheaprovence.com##body:not(.cli-barmodal-open) #cookie-law-info-bar
 ###cookie-law-info-bar ~ .cli-modal-backdrop
 ###overlay-cookiebanner
+###didomiConsentOverlay
 !
 ! CUSTOM RULES
 !
@@ -19623,9 +19624,6 @@ vpnunlimitedapp.com##.badge_privacy
 keepsolid.com##.badge_privacy
 vpnlite.net##.badge_privacy
 abetterrouteplanner.com##div[data-e2e="menu-button"] + div:not([data-e2e])
-feinewerkzeuge.de###cookiefeinewerkzeuge
-fine-tools.com###cookiefeinewerkzeuge
-utensiliprofessionali.com###cookiefeinewerkzeuge
 nowonline.com.br##div[id^="cookies"]
 easycookasia.de##.elementor-popup-modal
 spectyou.com##snack-bar-container
@@ -21442,7 +21440,6 @@ lvsas.sk##.cookies
 tally-weijl.com##.cookie, .overlay
 jak.se##.consent-backdrop
 endlessdungeon.game##.cookies
-swissborg.com###main ~ div
 brak.de###cookieman-modal
 eventwide.com##.privacy-blanket, .privacy-dialog
 zu-zweit.de###cookies-modal
@@ -22462,7 +22459,6 @@ testfully.io##.cookie-modal
 seb.lv###seb-consent
 knigogid.ru##.b-cookie
 uwec.edu###_pc
-anwb.nl##.critical-dialog
 wspay.info###open_preferences_center
 kiswe.com##.popup
 tietalent.com###__next footer ~ div
@@ -22538,7 +22534,6 @@ lynkco.com##footer ~ div[style*="fixed"]
 lynkco.com.cn##.privacyPolicy
 rhein-main-steht-auf.de##.privacy-settings-root
 vecer.com##div[x-show="show"] > .fixed
-academy.com###main-content ~ div[role="complementary"]
 magazineluiza.com.br##main > section ~ div[width="100%"]
 veho.fi##.z-cookie-alert
 bau-tech.shop###cookie-consent
@@ -22818,6 +22813,14 @@ reimaginethegame.economist.com##div[class*="tracking_banner"]
 myshopify.com###shopillaxcookielaw-wrapper
 shopify.com##.tw-sticky[data-controller="cookies-notice"]
 hospitaldaluz.pt###RootCookieTool
+anwb.nl###TRCO-application
+pildorasdefe.net##.cookies
+academy.com##.content-wrapper > div > div[role="complementary"]
+menobr.ru##div[class*="cookieContainer"]
+swissborg.com##.cookieBox + div
+mckinseyaccelerate.com##doc-layout-cookie-policy-banner
+alvexo.com##.sticky_cookies_txt
+donnons.org##.noconsent-info
 !
 ! SCRIPT BLOCKING
 !
