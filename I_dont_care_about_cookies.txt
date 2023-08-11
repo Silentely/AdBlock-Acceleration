@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 349.202308100714
+! Version: 349.202308110508
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 10 Aug 2023 07:14 UTC
+! Last modified: 11 Aug 2023 05:08 UTC
 !
 !
 ! GLOBAL RULES
@@ -13690,6 +13690,9 @@
 ###cookie-law-info-bar ~ .cli-modal-backdrop
 ###overlay-cookiebanner
 ###didomiConsentOverlay
+##.gdpr-cookies-warning-float-box
+##.gdpr-cookies-floatButton
+###root div[data-test*="cookie-toaster"]
 !
 ! CUSTOM RULES
 !
@@ -22821,6 +22824,12 @@ swissborg.com##.cookieBox + div
 mckinseyaccelerate.com##doc-layout-cookie-policy-banner
 alvexo.com##.sticky_cookies_txt
 donnons.org##.noconsent-info
+att.com###gpc-banner-container
+cvent.com##div[data-cvent-id*="cookie-banner"]
+nchsoftware.com###ckndiv
+godox.eu###x13eucookies-icon
+bulgarianproperties.com###cookie_bar_new
+bulgarianproperties.bg###cookie_bar_new
 !
 ! SCRIPT BLOCKING
 !
@@ -23361,6 +23370,8 @@ cookies.ptj.de
 /modules/pages/js/cookie-dialog.js
 /typo3temp/assets/compressed/cookieman
 /cookiethough.min.js
+||beyond-cookiebanner.de/app.js$script
+/assets/js/cookie_consent_manager
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23588,6 +23599,7 @@ privacy.claytonhomes.com
 /privacy-dialog-tracking.js
 /privacy/providers/CookiesDataProvider
 /contao-privacy-center
+/wp-content/plugins/myagileprivacy/*
 ||cmp.nextday.media/cmp$script,domain=~vi.nl
 cmp.dreamlab.pl
 /media/cmp/int_cmp_banner
@@ -23634,6 +23646,7 @@ cmp.mediavine.com
 ||fastcmp.com/fast-cmp$script
 /sibbo-cmp-loader.js
 cmp.springernature.com
+determinator.service-cmp.com
 ||gofundme.com/js/3.0/visitorCookie.js$script
 /CookiesDirective
 CookieAccept/affirmation.js
@@ -23682,6 +23695,7 @@ jquery.smartCookie.min.js^
 /Wamoco_CookieConsentUi/*
 /standaloneModalCookie.js
 /Detco_CookieBanner/*
+/vfConsentCookies
 quantcast.mgr.consensu.org$domain=~sourceforge.net|~tumblr.com|~wpolityce.pl|~player.livespotting.com|~indy100.com|~vi.nl|~independent.co.uk|~express.co.uk|~joe.ie|~joe.co.uk|~avsforum.com|~nfl.com|~filmvandaag.nl|~gamesradar.com|~iol.pt|~spiele-kostenlos-online.de
 gemius.mgr.consensu.org
 sddan.mgr.consensu.org
@@ -24130,7 +24144,7 @@ consent*$domain=t-mobile.cz
 cc.labu24.de$domain=labu24.de
 cookies.ptj.de$domain=ptj.de
 consent.autopflege24.net$domain=autopflege24.net
-privacy-center.org$domain=elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr|muyinteresante.es|t-mobile.pl|autocasion.com|europasur.es|pisos.com|lagacetadesalamanca.es|meilleure-innovation.com|huelvainformacion.es|futura-sciences.com|elpais.com
+privacy-center.org$domain=elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr|muyinteresante.es|t-mobile.pl|autocasion.com|europasur.es|pisos.com|lagacetadesalamanca.es|meilleure-innovation.com|huelvainformacion.es|futura-sciences.com|elpais.com|diariodejerez.es
 /consent$domain=natune.net|hemnet.se
 cookie-banner*$domain=studio3t.com
 /cookies_2020$domain=pensionlisboa.com
@@ -24179,7 +24193,6 @@ cmp.quantcast.com$domain=gettr.com|deviantart.com|pr0gramm.com
 /wrapperMessagingWithoutDetection$domain=politico.eu|lovelybooks.de|idealo.de|idealo.at|idealo.es|idealo.fr|idealo.it|idealo.co.uk|femmeactuelle.fr|hausjournal.net|lepoint.fr|chefkoch.de|caradisiac.com
 coco.we-online.com$domain=we-online.com
 /modulos/cookies$domain=villagrancanaria.com
-/vfConsentCookies$domain=vodafone.cz
 /jimmsconsent$domain=jimms.fi
 /wrapperMessagingWithoutDetection.js$domain=vg.no|boerse.de|bt.no|liberation.fr
 /rcs_cpmt/*$domain=open.online|style.corriere.it|giroditalia.it
