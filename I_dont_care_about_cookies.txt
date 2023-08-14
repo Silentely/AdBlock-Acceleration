@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 349.202308110508
+! Version: 349.202308140815
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 11 Aug 2023 05:08 UTC
+! Last modified: 14 Aug 2023 08:15 UTC
 !
 !
 ! GLOBAL RULES
@@ -13693,6 +13693,8 @@
 ##.gdpr-cookies-warning-float-box
 ##.gdpr-cookies-floatButton
 ###root div[data-test*="cookie-toaster"]
+###cookie_banner_overlay
+###cookie_consent_wrapper
 !
 ! CUSTOM RULES
 !
@@ -13851,7 +13853,6 @@ nba.com###nba_tos
 danmarklaeser.dk###lbmodal-overlay, #lbmodal
 aso.fr##.confidentialite
 blogs-r.com##body > div:not([id]):not([class])[style*="fixed"], body > div:not([id]):not([class])[style*="absolute"]
-cio-online.com###dialog.bulle_bas
 grandeavenue.fr##.fixedBanner
 motomoto.pl###itlbox
 bluearan.co.uk###slider
@@ -14654,7 +14655,6 @@ valtifest.nl###cerabox, #cerabox-background
 volvotrucks.nl##.headerNotification
 zetchilli.pl##.giodoContainer
 marathondumontsaintmichel.com##.confidentialite
-humanic.net###privacyOverlay
 webmaster-rank.info###footerSlideContainer
 216dt.com###bdy > div[style*="fixed"]
 pingvinpatika.hu##.alert-info, .alert-warning, .alert-box
@@ -16640,7 +16640,6 @@ sociall.io##mat-dialog-container
 crackwatch.com##.Overlay
 dinamalar.com##.quickslide
 iqoption.com##div[data-test-id="notification-position-container-block"]
-coop.co.uk##footer ~ div
 flows.be###flows-cookie-compliance-popup
 netflixinbelgie.be##body > div[class^="app"]
 fansbreak.com###cookies
@@ -21356,7 +21355,6 @@ tv-sport.de##.rcb-banner
 yunexpress.com##.Cookie-wrapper
 wodka-gorbatschow.de##.legacy
 allianz-pro-grundgesetz.de###cookieEu
-bayern.de###cookie, #matomoCookieNotification, div[id^="cbanner"], #message-container.message-container
 fondmarknaden.se###FM-cookie-consent-modal
 delfi.ee##div[class^="C-modal"]
 szerencsejatek.hu##.cookie-consent-modal
@@ -22263,7 +22261,6 @@ crossfit.com###app ~ #modal, #globalMenu ~ div[style*="fixed"]
 gen-i.si##.cookie, .cookies_new
 hrw.org###hrw-cookie-dialog
 agar.io##.mc-cookiebar
-startmail.com###__main ~ .banner
 tropter.com##.tropter-cookiesbar
 razer.com###tos-razer, .component-sticky-dialog
 toothbrushbattery.com##.woocommerce-store-notice
@@ -22731,7 +22728,6 @@ post.ch##.ppm-cookie-banner
 jtl-software.de###consent
 nooz-optics.com###gatsby-focus-wrapper > .fixed.bottom-0
 ozon.ru##div[data-widget="cookieBubble"]
-temu.com##body > div > div[class*="popup"]
 tuasaude.com##.consent-bar-wrapper
 vectornator.io##.cookies
 webshop.nl##div[class*="Gdpr-module"]
@@ -22775,7 +22771,6 @@ helthjem.no##.schibsted-bar
 sunglasses-shop.bg##.notification-wrapper
 lazoptics.gr##.new-cookie-supercontainer
 eyeons.com##.alternis-cookie
-youporn.com###cookie_consent_wrapper
 samsung.com##.helptips__container, #cookie_component, .js-smtc-cookie
 smartthingsfind.samsung.com##.fixed.bottom-0
 book.io##.foobar-cookie
@@ -22830,6 +22825,16 @@ nchsoftware.com###ckndiv
 godox.eu###x13eucookies-icon
 bulgarianproperties.com###cookie_bar_new
 bulgarianproperties.bg###cookie_bar_new
+xoxo-mobile.at###cc-modal-1, .modal-backdrop
+bayern.de###cookie, #matomoCookieNotification, body > .cookie
+landtag.de###matomo-cookie-consent
+temu.com##body > div > div[class*="popup"]
+uferstudios.com##hylo-cookie-banner
+weingarten-grosse-groessen.de##.cc-overlay
+wd40.nl##div[x-data="cookieModal"]
+startmail.com##footer ~ .banner
+specshop.pl##.iai_cookie
+laumat.at###laumatcookiebox
 !
 ! SCRIPT BLOCKING
 !
@@ -23559,6 +23564,7 @@ pdcc.gdpr.es
 /modal-gdpr.umd.js
 /gdpr_notice.js
 /gdpr-transparency-apnxs/latest/gdpr-bundle.js
+/wp-content/plugins/lexon-gdpr/*
 /media/plg_system_eprivacy$domain=~reshade.me
 ||recepttar.hu/js/privacy.js$script
 cmp.dmgmediaprivacy.co.uk$domain=~metro.co.uk
@@ -24144,7 +24150,7 @@ consent*$domain=t-mobile.cz
 cc.labu24.de$domain=labu24.de
 cookies.ptj.de$domain=ptj.de
 consent.autopflege24.net$domain=autopflege24.net
-privacy-center.org$domain=elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr|muyinteresante.es|t-mobile.pl|autocasion.com|europasur.es|pisos.com|lagacetadesalamanca.es|meilleure-innovation.com|huelvainformacion.es|futura-sciences.com|elpais.com|diariodejerez.es
+privacy-center.org$domain=elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr|muyinteresante.es|t-mobile.pl|autocasion.com|europasur.es|pisos.com|lagacetadesalamanca.es|meilleure-innovation.com|huelvainformacion.es|futura-sciences.com|elpais.com|diariodejerez.es|france24.com
 /consent$domain=natune.net|hemnet.se
 cookie-banner*$domain=studio3t.com
 /cookies_2020$domain=pensionlisboa.com
@@ -24190,7 +24196,7 @@ ccm.$domain=abload.de
 /popupConsent/*$domain=the-fence.com
 /cookie-files/*$domain=paradoxwikis.com
 cmp.quantcast.com$domain=gettr.com|deviantart.com|pr0gramm.com
-/wrapperMessagingWithoutDetection$domain=politico.eu|lovelybooks.de|idealo.de|idealo.at|idealo.es|idealo.fr|idealo.it|idealo.co.uk|femmeactuelle.fr|hausjournal.net|lepoint.fr|chefkoch.de|caradisiac.com
+/wrapperMessagingWithoutDetection$domain=politico.eu|lovelybooks.de|idealo.de|idealo.at|idealo.es|idealo.fr|idealo.it|idealo.co.uk|femmeactuelle.fr|hausjournal.net|lepoint.fr|chefkoch.de|caradisiac.com|anderes-wort.de
 coco.we-online.com$domain=we-online.com
 /modulos/cookies$domain=villagrancanaria.com
 /jimmsconsent$domain=jimms.fi
@@ -24211,6 +24217,7 @@ it-cc.index.js^$domain=boellhoff.com
 /cookiecontrol.js$domain=rembutiken.se
 /Custom_clubhinweis$domain=ofdb.de
 /infrasdk.js$domain=nofluffjobs.com
+/cookies_master.js$domain=bayern.de
 !
 ! FILTERLIST ONLY
 !
