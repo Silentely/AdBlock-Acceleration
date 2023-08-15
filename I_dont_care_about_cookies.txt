@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 349.202308140815
+! Version: 349.202308151030
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 14 Aug 2023 08:15 UTC
+! Last modified: 15 Aug 2023 10:30 UTC
 !
 !
 ! GLOBAL RULES
@@ -13695,6 +13695,9 @@
 ###root div[data-test*="cookie-toaster"]
 ###cookie_banner_overlay
 ###cookie_consent_wrapper
+###cookie-modern-overlay
+###cookie-modern-overlay + #cookie-modern-info
+###snippet-cookiesConsent-cookiesconsent
 !
 ! CUSTOM RULES
 !
@@ -21604,7 +21607,6 @@ decathlon.com.br##.cookie-policies
 sudoku-knacker.de##.v-bottom-sheet
 medicalseeds.cz##.cookieForward
 gov.br###lgpd-cookie-banner-janela, #politicaPrivacidade, .br-cookiebar
-easystempel.de###cookie-modern-overlay, #cookie-modern-info
 vulco.hr##.cookie
 eiendomspriser.no##.adn-window
 daiichisankyo.com###cookieLicense
@@ -22835,6 +22837,8 @@ wd40.nl##div[x-data="cookieModal"]
 startmail.com##footer ~ .banner
 specshop.pl##.iai_cookie
 laumat.at###laumatcookiebox
+stempel-bestellen.de###swCookieAccept
+pornmd.com###hiding_div
 !
 ! SCRIPT BLOCKING
 !
