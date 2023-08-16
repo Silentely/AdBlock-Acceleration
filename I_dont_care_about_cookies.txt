@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 349.202308151030
+! Version: 349.202308160827
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 15 Aug 2023 10:30 UTC
+! Last modified: 16 Aug 2023 08:27 UTC
 !
 !
 ! GLOBAL RULES
@@ -3054,7 +3054,7 @@
 ###cookies_alert_container
 ##.mk-cookieBox:not(body):not(html)
 ###allow-cookies-popup
-###popinCookies
+###snippet-cookiesConsent-cookiesconsent
 ###MCcookieChoiceInfo
 ###announcementeCookies
 ###lscookiesMax
@@ -9370,7 +9370,7 @@
 ###privacy-notice-container
 ###ui-cookienotification
 ##body > #cookie.bottom
-##.footer_inscription ~ #cookie_parent
+###dxCookieConsentContainer
 ##.sticky-bar--cookie:not(body):not(html)
 ###onedomain-cookie-consent
 ###onedomain-cookie-consent ~ .modal-backdrop
@@ -9525,7 +9525,7 @@
 ###eucp_container
 ##body > #cookie.cookieShow
 ###gdprComponent > div[class^="GDPR-module_card"]
-~coolmath.com##.gdpr-overlay:not(body):not(html)
+~officiallondontheatre.com,~coolmath.com##.gdpr-overlay:not(body):not(html)
 ##.gdpr-overlay ~ .gdpr-close-button
 ##.top-gdpr-notice:not(body):not(html)
 ##.cookie-animation-open[class*="cookie-notification"]
@@ -13697,7 +13697,10 @@
 ###cookie_consent_wrapper
 ###cookie-modern-overlay
 ###cookie-modern-overlay + #cookie-modern-info
-###snippet-cookiesConsent-cookiesconsent
+##.popin-is-open #popinCookies
+##.popin-is-open #popinConsents
+###x13eucookies-icon
+###__next div[class*="Cookiebar_Cookiebar"]
 !
 ! CUSTOM RULES
 !
@@ -19844,7 +19847,6 @@ trainsweateat.com###root > div > div:first-child > div + div:last-child
 vivaconagua.org###sccBanner
 amd.com###privacy-popup
 nedeljnik.rs###kuki_upozorenje
-wohnkonzept.co.at##.ConsentBanner
 playsnake.org##.cookies
 playtictactoe.org##.cookies
 content.de##div[id*="hinweis-cookie"]
@@ -21670,7 +21672,6 @@ sedep.com.br###cookiesAceitar
 connect.beinsports.com##.app-container > div:not(.app-content)
 connect.bein.com##.app-container > div:not(.app-content)
 bobex.be###bbx_modal_cookie
-gns3.com###oio-container > div + div + div ~ div:last-child
 haerke.de###seite > div[style*="absolute"]
 riserapp.com##.Cookie
 webmdhealthservices.com##.cookiePolicyModal
@@ -22824,7 +22825,6 @@ donnons.org##.noconsent-info
 att.com###gpc-banner-container
 cvent.com##div[data-cvent-id*="cookie-banner"]
 nchsoftware.com###ckndiv
-godox.eu###x13eucookies-icon
 bulgarianproperties.com###cookie_bar_new
 bulgarianproperties.bg###cookie_bar_new
 xoxo-mobile.at###cc-modal-1, .modal-backdrop
@@ -22839,6 +22839,12 @@ specshop.pl##.iai_cookie
 laumat.at###laumatcookiebox
 stempel-bestellen.de###swCookieAccept
 pornmd.com###hiding_div
+hanse-haus-greifswald.de###cookie-law-info-bar
+webex.com###theme-provider > div[class]:first-child:not(:only-child)
+gns3.com###oio-container > .baseline-grid + div:not([role])
+montaleparfums.com###montale_cookie_consent_banner
+wohnkonzept.co.at##.ConsentBanner
+agoda.com##.ConsentBanner
 !
 ! SCRIPT BLOCKING
 !
