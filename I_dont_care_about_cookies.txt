@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 349.202308160827
+! Version: 349.202308170814
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 16 Aug 2023 08:27 UTC
+! Last modified: 17 Aug 2023 08:14 UTC
 !
 !
 ! GLOBAL RULES
@@ -3443,7 +3443,7 @@
 ###wwf-cookie
 ##.bloque_ventanaCookies
 ##.c-cookie-policy:not(body):not(html)
-~vorteile.net###cookieConsentOverlay
+~bayernportal.de,~vorteile.net###cookieConsentOverlay
 ##.component-cookie-alert
 ##.qb-cookielaw-bar:not(body):not(html)
 ##.webshop-cookie-warning
@@ -9943,7 +9943,7 @@
 ##.combinedConsent_bottom.combined_consent_js_inited
 ##.barra_cookie:not(body):not(html)
 ###js\.cookie\.banner
-##.top-message[data-vcv-top-banner]
+###__next div[class*="Cookiebar_Cookiebar"]
 ##.modal__cookie--message
 ##.cookie-policy-msg:not(body):not(html)
 ##.cookie-policy-class:not(body):not(html)
@@ -13700,7 +13700,7 @@
 ##.popin-is-open #popinCookies
 ##.popin-is-open #popinConsents
 ###x13eucookies-icon
-###__next div[class*="Cookiebar_Cookiebar"]
+##.tx-ppw-cookie
 !
 ! CUSTOM RULES
 !
@@ -13708,7 +13708,6 @@ m.facebook.com##div[data-testid="cookie-policy-manage-dialog"], body > div[id] ~
 fb.com##div[class*="cookieBanner"]
 linkedin.com###js-notification-wrapper[role="alert"], .global-alert.global-alert--yield, #global-alert-queue, #artdeco-global-alert-container, .alert, #alert
 twitter.com##.twtr-data-protection
-yahoo.com###guce-inline-consent-iframe, #gdpr[style*="padding"], #y-shade, #applet_p_50000174, .tdv2-applet-nagbar, .login-body + .login-footer
 duckduckgo.com##.badge-link.ddg-extension-hide
 bing.com###bnp_cookie_banner[aria-modal="false"], #bnp_ttc_div, #thp_notf_div, .b_hide.bnp_ttc, #t_termsInfo
 ask.com###ccbar, #cp-banner
@@ -22712,7 +22711,6 @@ metar-taf.com##.cookies
 yesterdaystractors.com###dvCookieMessage
 framer.com##div[data-framer-name="EU"]
 sescsp.org.br##.container-policy, .overlay
-notion.so##div + section.visibility-partial
 solidaris-wallonie.be##app-pop-up-tracking
 stuffthatworks.health##.snackbar-disclaimer
 nytimes.com##.gdpr.expanded-dock + div, .CookieBanner > .banner__container, #alertBannerMount
@@ -22785,7 +22783,6 @@ jackjones.com##.overlay-backdrop
 evercast.us##.ck-cookie-w, .cookie-preference-button
 learngerman.dw.com##.content-container > footer ~ div
 surfshark.com###__next > footer ~ div[class*="animationEnterDone"]
-reebok.eu##section[data-test="cookie-banner"]
 lekarna.cz###popup-customer-data
 suhrkamp.de###whcm
 gov.in##.cookies-wrapper
@@ -22845,6 +22842,19 @@ gns3.com###oio-container > .baseline-grid + div:not([role])
 montaleparfums.com###montale_cookie_consent_banner
 wohnkonzept.co.at##.ConsentBanner
 agoda.com##.ConsentBanner
+notion.so###__next [class*="cookiePreferencesBanner"]
+reebok.eu##section[data-test="cookie-banner"]
+miles-mobility.com##div[data-testid="cookie-consent"]
+librinova.com##.ln-cookie-consent
+wpbakery.com##.top-message
+visualcomposer.com##.top-message
+macpaw.com###root > div[class*="notification"]
+privacysavvy.com##.ps-cookiebar
+cgd.pt###CgdCookieManager
+jobs.jobconvo.com###root ~ div
+ed-live.de###mhCookie_container
+velovert.com###modal_cookies
+geld.de##.geld-layer-cookie-approval
 !
 ! SCRIPT BLOCKING
 !
@@ -24092,7 +24102,7 @@ cdn.civiccomputing.com$domain=metoffice.gov.uk|churchofengland.org|yodel.co.uk|t
 /iCookie/*$domain=h-supertools.com
 /he-consent/*$domain=dennree.de
 /uc_cookie$domain=gastro24.de|gastro-hero.de
-cmp.$domain=telerama.fr|courrierinternational.com|vodkaster.com|svd.se|histoire-et-civilisations.com|malservice.aftonbladet.se|vg.no|tv.nu|tek.no|finn.no|pent.no|godt.no|aftenposten.no|omni.se|e24.no|helthjem.no|minmote.no
+cmp.$domain=telerama.fr|courrierinternational.com|vodkaster.com|svd.se|histoire-et-civilisations.com|malservice.aftonbladet.se|vg.no|tv.nu|tek.no|finn.no|pent.no|godt.no|aftenposten.no|omni.se|e24.no|helthjem.no|minmote.no|aftenbladet.no
 brsimg.com/gdpr$script,domain=boursorama.com
 trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookie-banner$domain=hauptbahnhofcity.wien
@@ -24103,7 +24113,7 @@ trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookies$domain=next-immo.com
 /fnGdpr.js$domain=financer.com
 /cookie-layer.js$domain=mercedes-benz.io
-/messagingNoTcfApi.js$domain=svd.se|aftenbladet.no|klart.se
+/messagingNoTcfApi.js$domain=svd.se|klart.se
 /sygnal42-gdpr/*$domain=blitzrechner.de
 /CookieLayer.js$domain=multipower.com
 /cookie_management.js$domain=meteoradar.ch
@@ -24228,6 +24238,8 @@ it-cc.index.js^$domain=boellhoff.com
 /Custom_clubhinweis$domain=ofdb.de
 /infrasdk.js$domain=nofluffjobs.com
 /cookies_master.js$domain=bayern.de
+/kixsimpletrack/*$domain=materiel-velo.com
+/CKCookieConsent.js$domain=caseking.de
 !
 ! FILTERLIST ONLY
 !
