@@ -18,103 +18,103 @@ jobs:
         uses: actions/checkout@v3.5.3
             
       - name: AdGuard DNS filter #AdGuard 官方维护的广告规则，涵盖多种过滤规则
-        uses: carlosperate/download-file-action@v2.0.0
+        uses: carlosperate/download-file-action@v2.0.1
         with: 
           file-url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
           file-name: AdGuard_Simplified_Domain_Names_Filter.txt
 
       - name: Anti-AD #号称是目前中文区命中率最高的广告过滤列表，实现了精确的广告屏蔽和隐私保护
-        uses: carlosperate/download-file-action@v2.0.0
+        uses: carlosperate/download-file-action@v2.0.1
         with: 
           file-url: https://anti-ad.net/easylist.txt
           file-name: Anti_AD_Easylist.txt
 
       - name: EasyList China #面向中文用户的 EasyList 去广告规则
-        uses: carlosperate/download-file-action@v2.0.0
+        uses: carlosperate/download-file-action@v2.0.1
         with: 
           file-url: https://easylist-downloads.adblockplus.org/easylistchina.txt
           file-name: EasyList_China.txt
 
       - name: EasyPrivacy #反隐私跟踪、挖矿规则
-        uses: carlosperate/download-file-action@v2.0.0
+        uses: carlosperate/download-file-action@v2.0.1
         with: 
           file-url: https://easylist.to/easylist/easyprivacy.txt
           file-name: EasyPrivacy.txt
       
       - name: I dont care about cookies #屏蔽网站的Cookies警告
-        uses: carlosperate/download-file-action@v2.0.0
+        uses: carlosperate/download-file-action@v2.0.1
         with: 
           file-url: https://www.i-dont-care-about-cookies.eu/abp/
           file-name: I_dont_care_about_cookies.txt      
       
       - name: HalfLife #涵盖了 EasyList China、EasyList Lite、CJX ’s Annoyance、乘风视频过滤规则，以及补充的其它规则
-        uses: carlosperate/download-file-action@v2.0.0
+        uses: carlosperate/download-file-action@v2.0.1
         with: 
           file-url: https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad.txt
           file-name: HalfLife.txt  
           
       - name: CJX's EasyList Lite
-        uses: carlosperate/download-file-action@v2.0.0
+        uses: carlosperate/download-file-action@v2.0.1
         with: 
           file-url: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt
           file-name: CJX's_EasyList_Lite.txt  
           
       - name: CJX's Annoyance List
-        uses: carlosperate/download-file-action@v2.0.0
+        uses: carlosperate/download-file-action@v2.0.1
         with: 
           file-url: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
           file-name: CJX's_Annoyance_List.txt  
           
       - name: Xinggsf_rule #乘风通用广告过滤规则
-        uses: carlosperate/download-file-action@v2.0.0
+        uses: carlosperate/download-file-action@v2.0.1
         with: 
           file-url: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
           file-name: Xinggsf_rule.txt
 
       - name: Xinggsf_mv #乘风视频广告过滤规则
-        uses: carlosperate/download-file-action@v2.0.0
+        uses: carlosperate/download-file-action@v2.0.1
         with: 
           file-url: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt
           file-name: Xinggsf_mv.txt
 
       - name: Fanboy's Social Blocking List #禁止社交媒体图标列表
-        uses: carlosperate/download-file-action@v2.0.0
+        uses: carlosperate/download-file-action@v2.0.1
         with: 
           file-url: https://easylist-downloads.adblockplus.org/fanboy-social.txt
           file-name: Fanboy-social.txt
 
       - name: ADgk #手机去广告
-        uses: carlosperate/download-file-action@v2.0.0
+        uses: carlosperate/download-file-action@v2.0.1
         with: 
           file-url: https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
           file-name: ADgk.txt
           
       - name: 大圣净化 #针对国内视频网站
-        uses: carlosperate/download-file-action@v2.0.0
+        uses: carlosperate/download-file-action@v2.0.1
         with: 
           file-url: https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
           file-name: ds_hosts.txt
           
       - name: 1024_hosts #去色情网站和澳门皇家赌场
-        uses: carlosperate/download-file-action@v2.0.0
+        uses: carlosperate/download-file-action@v2.0.1
         with: 
           file-url: https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts
           file-name: 1024_hosts.txt
           
       - name: iOSAdblockList #海外维护针对移动网站的广告主机列表
-        uses: carlosperate/download-file-action@v2.0.0
+        uses: carlosperate/download-file-action@v2.0.1
         with: 
           file-url: https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/Hosts.txt
           file-name: iPv4_hosts.txt
           
       - name: StevenBlack #国外维护比较知名的屏幕广告主机列表,整合和扩展多个精心设计的主机文件
-        uses: carlosperate/download-file-action@v2.0.0
+        uses: carlosperate/download-file-action@v2.0.1
         with: 
           file-url: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
           file-name: Steven_hosts
           
       - name: Hblock #自动提取来自很多规则源的恶意广告主机列表
-        uses: carlosperate/download-file-action@v2.0.0
+        uses: carlosperate/download-file-action@v2.0.1
         with: 
           file-url: https://hblock.molinero.dev/hosts
           file-name: Hblock_hosts
@@ -126,13 +126,13 @@ jobs:
 #          file-name: Malware_host.txt
 
       - name: Adblock Warning Removal List  #去除禁止广告拦截提示规则
-        uses: carlosperate/download-file-action@v2.0.0
+        uses: carlosperate/download-file-action@v2.0.1
         with: 
           file-url: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
           file-name: antiadblockfilters.txt
 
       - name: Fanboy’s Annoyances List  #去除页面弹窗广告规则
-        uses: carlosperate/download-file-action@v2.0.0
+        uses: carlosperate/download-file-action@v2.0.1
         with: 
           file-url: https://secure.fanboy.co.nz/fanboy-annoyance.txt
           file-name: fanboy-annoyance.txt
