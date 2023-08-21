@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 349.202308170814
+! Version: 349.202308210900
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 17 Aug 2023 08:14 UTC
+! Last modified: 21 Aug 2023 09:00 UTC
 !
 !
 ! GLOBAL RULES
@@ -2638,7 +2638,7 @@
 ###CookieInformationDiv
 ###CookieWarningLink
 ###cookie_top
-~xs4all.nl,~constantcontact.com,~saxion.edu,~xmradio.nl,~pieseauto.ro##.cookie-wall:not(body):not(html):not(.cw-modal)
+~xs4all.nl,~constantcontact.com,~xmradio.nl,~pieseauto.ro##.cookie-wall:not(body):not(html):not(.cw-modal)
 ###cookie-accepted
 ###cookie-notice-banner
 ##.cookielaw_wrapper:not(body):not(html)
@@ -4947,7 +4947,7 @@
 ###ctl00_ctl00_MainPane_Content_MainContent_PopupControlCookies_PW-1
 ###cn-cookie
 ##.gb-cookie-consent:not(body):not(html)
-~hema.nl,~saxion.edu##.js-cookie-wall:not(body):not(html)
+##.js-cookie-wall:not(body):not(html):not([class*="modal"])
 ###boxCookie
 ##.sky-component-cookie-notice
 ##.cookie-policy-statement
@@ -11837,7 +11837,7 @@
 ###sm_optin_btn_review
 ###modal-root .RgpdPopup
 ##.gdpr_overlay
-###gdpr_banner_portal
+##.tx-ppw-cookie
 ###cookiesaviso
 ##.ws-cookie-notice
 ###viewport > .cookie.fixed
@@ -13700,7 +13700,6 @@
 ##.popin-is-open #popinCookies
 ##.popin-is-open #popinConsents
 ###x13eucookies-icon
-##.tx-ppw-cookie
 !
 ! CUSTOM RULES
 !
@@ -17017,7 +17016,6 @@ boticas23.com###cookies
 crex24.com##div[class*="cookies_block"]
 taskmanagement24.com###cookiesBlock
 thezoereport.com##body > div > div[class*=" "]
-jumbo.com##.jum-cookie-message
 labvolution.de##.user-notes-notification
 nfs.as###toast, .toast
 szybko.pl###toast, .toast
@@ -18735,7 +18733,6 @@ papajohns.es###root > div > div[class*="snackbar"]
 episerver.de##.cookie-consent
 codeherent.tech##snack-bar-container
 newscientist.com##.prompt--modal.section
-bbb.org##body > .MuiDrawer-root
 gadventures.com##.privacy-control
 siepomaga.pl###cookies
 nodecheck.io##footer > .fixed-bottom
@@ -22836,7 +22833,6 @@ specshop.pl##.iai_cookie
 laumat.at###laumatcookiebox
 stempel-bestellen.de###swCookieAccept
 pornmd.com###hiding_div
-hanse-haus-greifswald.de###cookie-law-info-bar
 webex.com###theme-provider > div[class]:first-child:not(:only-child)
 gns3.com###oio-container > .baseline-grid + div:not([role])
 montaleparfums.com###montale_cookie_consent_banner
@@ -22855,6 +22851,19 @@ jobs.jobconvo.com###root ~ div
 ed-live.de###mhCookie_container
 velovert.com###modal_cookies
 geld.de##.geld-layer-cookie-approval
+hanse-haus-greifswald.de###cookie-law-info-bar
+internetpasoapaso.com###cookie-law-info-bar
+voissy.com###pb-navbar-cookies-accept
+bbb.org##dialog[aria-label*="cookies"]
+charliemonroe.net##.cookie
+helitransair.com##.privacyoption_overlay
+answerthepublic.com##.cookie-main
+cricut.com###consent-tracking
+timestore.cz###cookie
+ljekarna-pablo.hr##.gdpr-container-wrapper
+destinations.ua##.cookies
+l28.nl###cookie_popup_body
+24tv.ua##.private-policy
 !
 ! SCRIPT BLOCKING
 !
@@ -23397,6 +23406,7 @@ cookies.ptj.de
 /cookiethough.min.js
 ||beyond-cookiebanner.de/app.js$script
 /assets/js/cookie_consent_manager
+/wp-content/plugins/viva-cookie-consent/*
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23734,6 +23744,7 @@ shinystat.mgr.consensu.org
 dan.mgr.consensu.org
 ogury.mgr.consensu.org
 inforpl.mgr.consensu.org
+consensu.infor.pl
 ||ciasteczkowapolityka.pl/getscript$script
 ||bsl.nl/extern/smbv-incl/script.js$script
 ||ssl.synovite-scripts.com/ut$script
