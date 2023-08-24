@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 349.202308220614
+! Version: 349.202308240741
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 22 Aug 2023 06:14 UTC
+! Last modified: 24 Aug 2023 07:41 UTC
 !
 !
 ! GLOBAL RULES
@@ -33,7 +33,7 @@
 ###cookieSpace
 ###cookie_drop_container
 ###cookielaw2
-~journal.hr,~merkur.si,~dbfakt.de,~modellbau-metz.com,~d-power-modellbau.com,~der-druckerprofi.de,~senec.com,~taschenhirn.de,~pyroweb.de,~fussballgucken.info,~costomovil.es,~tesa.com,~ns.nl,~tyg.se,~stoffe.de,~myfabrics.co.uk,~latka.cz,~global.commerce-connector.com,~rotterdammersvoorelkaar.nl,~melcloud.com,~danishfamilysearch.com,~calvinklein.de,~calvinklein.co.uk,~calvinklein.com,~calvinklein.be,~calvinklein.fr,~calvinklein.es,~calvinklein.hr,~calvinklein.ch,~calvinklein.lu,~calvinklein.fi,~calvinklein.dk,~calvinklein.ru,~calvinklein.si,~calvinklein.at,~calvinklein.lv,~calvinklein.bg,~calvinklein.se,~calvinklein.ie,~calvinklein.cz,~calvinklein.pl,~calvinklein.lt,~calvinklein.sk,~calvinklein.nl,~calvinklein.it,~calvinklein.ee,~calvinklein.pt,~calvinklein.hu,~tommy.com##.cookie-notice:not(body):not(html):not(#wrapper):not(#footer)
+~journal.hr,~merkur.si,~dbfakt.de,~modellbau-metz.com,~d-power-modellbau.com,~der-druckerprofi.de,~senec.com,~taschenhirn.de,~pyroweb.de,~fussballgucken.info,~selgros.de,~costomovil.es,~tesa.com,~ns.nl,~tyg.se,~stoffe.de,~myfabrics.co.uk,~latka.cz,~global.commerce-connector.com,~rotterdammersvoorelkaar.nl,~melcloud.com,~danishfamilysearch.com,~calvinklein.de,~calvinklein.co.uk,~calvinklein.com,~calvinklein.be,~calvinklein.fr,~calvinklein.es,~calvinklein.hr,~calvinklein.ch,~calvinklein.lu,~calvinklein.fi,~calvinklein.dk,~calvinklein.ru,~calvinklein.si,~calvinklein.at,~calvinklein.lv,~calvinklein.bg,~calvinklein.se,~calvinklein.ie,~calvinklein.cz,~calvinklein.pl,~calvinklein.lt,~calvinklein.sk,~calvinklein.nl,~calvinklein.it,~calvinklein.ee,~calvinklein.pt,~calvinklein.hu,~tommy.com##.cookie-notice:not(body):not(html):not(#wrapper):not(#footer)
 ###Cookies:not([class*="headline"])
 ~ejot.de,~ejot.at,~ejot.cn,~ejot.co.uk,~sparda.de,~sparda-n.de,~sparda-bw.de,~sparda-hessen.de,~sparda-west.de,~inwerk.de,~bioplanete.com,~miltenyibiotec.com,~brabus.com,~nobilia.de,~springlane.de###cookieLayer
 ##.cookiePrompt:not(body):not(html)
@@ -3369,7 +3369,7 @@
 ##.cookie_monster:not(body):not(html)
 ###msg-cookies
 ###eu-cookies
-~2ip.io,~senec.com,~taschenhirn.de,~pyroweb.de,~fussballgucken.info###klaro div[class*="cookie-modal"]
+~2ip.io,~senec.com,~taschenhirn.de,~pyroweb.de,~fussballgucken.info,~selgros.de###klaro div[class*="cookie-modal"]
 ##.cookielaw-msg:not(body):not(html)
 ##.mod-cookiepolicy:not(body):not(html)
 ###coockiechoice
@@ -7515,7 +7515,7 @@
 ##.cookinfo .cookinfo__wrapper
 ##.gdpr-consent-banner:not(body):not(html)
 ###cmp-container-id
-###inforcwp
+###x13eucookies-icon
 ##div[class*="popup_cmpPopupPopup"]
 ###stm_gdpr_popup-main
 ###euCookie ~ .lb_overlay
@@ -10997,7 +10997,7 @@
 ##.show-cookies-message
 ###cookietool-message
 ##app-cookies-menu
-~senec.com,~taschenhirn.de,~pyroweb.de,~fussballgucken.info###klaro div[class*="cookie-notice"]
+~senec.com,~taschenhirn.de,~pyroweb.de,~fussballgucken.info,~selgros.de###klaro div[class*="cookie-notice"]
 ##.container > .row.cookieShell
 ###privacy-window.privacy-window
 ###vlnt-cookie-consent
@@ -13160,7 +13160,7 @@
 ###rgpd_bandeau
 ###CookieModalOverlay
 ##.cookies-cmp-trigger
-~senec.com,~taschenhirn.de,~pyroweb.de,~fussballgucken.info##.klaro div[class*="cookie-modal"]
+~senec.com,~taschenhirn.de,~pyroweb.de,~fussballgucken.info,~selgros.de##.klaro div[class*="cookie-modal"]
 ###cc-cookie-overlay
 ###cc-cookie-message
 ###tc_privacy_wrapper
@@ -13699,7 +13699,8 @@
 ###cookie-modern-overlay + #cookie-modern-info
 ##.popin-is-open #popinCookies
 ##.popin-is-open #popinConsents
-###x13eucookies-icon
+###didomi-host ~ #consentCover
+##consent-slide-in-component
 !
 ! CUSTOM RULES
 !
@@ -13774,7 +13775,6 @@ xtremmedia.com###mensacok
 herbaciani.pl##body > div:not([id]):not([class])
 waw.pl###wip.stability, .alert-warning, .komunikat
 costco.co.uk##.site-messages-container
-adverts.ie###notify-container-sticky-wrapper
 siemens.pl##.alert.block.show, .PopupDiv
 laznianowa.pl##body > div:not([id]):not([class])
 swiatnauki.pl###menu
@@ -19646,7 +19646,6 @@ fantasy.motogp.com###root > div
 info-retraite.fr##.cookies
 was-reimt-sich-auf.de###cookies-modal, #cookies-backdrop
 okpedia.it##.privacy
-uswitch.com###us-cookies
 surveymonkey.com##.mds-gdpr-cookie-banner, .wds-overlay
 frameworktraining.co.uk##.fwt_cookie
 aarsfjv.dk##dffedb-cookie-consent
@@ -20158,7 +20157,6 @@ enercoop.fr###cookieLab
 hifi-schluderbacher.de###cookies-modal
 studentbeans.com##body > div[data-hypernova-key^="Pages"] > div:not([style])
 rspb.org.uk##.cookie-preferences
-selgros.de###overlay-oiljs
 vomar.nl##sw-cookiemessage
 primrose.co.uk###cookies
 pizza-david.at###app > .v-overlay, #app > .v-dialog__content
@@ -20541,7 +20539,6 @@ antiquariat.de##.confirm-cookie
 orange.jobs##.dgt-opt-inout
 prothomalo.com###gdpr-policy
 sphinxcomputer.de###sphinxcookie
-allegro.eu##.idm-cookie-overlay, .idm-cookie-policy
 patisserie-cabosse.fr##.cabosseadsbottom
 grifols.com###cookie-intro-modal, .aui-overlay
 verve5.de###lux-cookie-dialog, #lux-cookie-show-modal-dialog, .backdrop, ._dialog_overlay
@@ -22259,7 +22256,6 @@ gen-i.si##.cookie, .cookies_new
 hrw.org###hrw-cookie-dialog
 agar.io##.mc-cookiebar
 tropter.com##.tropter-cookiesbar
-razer.com###tos-razer, .component-sticky-dialog
 toothbrushbattery.com##.woocommerce-store-notice
 retevis.eu##.woocommerce-store-notice
 retevis.info##.woocommerce-store-notice
@@ -22851,6 +22847,7 @@ velovert.com###modal_cookies
 geld.de##.geld-layer-cookie-approval
 hanse-haus-greifswald.de###cookie-law-info-bar
 internetpasoapaso.com###cookie-law-info-bar
+autosecurite.be###cookie-law-info-bar
 voissy.com###pb-navbar-cookies-accept
 bbb.org##dialog[aria-label*="cookies"]
 charliemonroe.net##.cookie
@@ -22876,6 +22873,10 @@ kauf-unique.de###vu_consent
 kauf-unique.at###vu_consent
 millenniumbcp.pt##div[id*="CookiesMsg"]
 sixt-neuwagen.de##.user-consent
+gocompare.com###gc-stickee-cookie-banner
+allegro.eu##.idm-cookie-overlay, .idm-cookie-policy
+allegro.pl##.custom-cookie-alert
+telcel.com##.telcel-banner-aviso-cookies, .comp-telcel-banner-superior
 !
 ! SCRIPT BLOCKING
 !
@@ -23766,7 +23767,6 @@ consensu.infor.pl
 ||wroclaw.pl/portal/themes/js/script-rodo.min.js$script
 /scripts/pookie.js
 ||metasrc.com/assets/javascripts/compliance.js$script
-||geo.fr/assets/scripts/sourcepoint.js$script
 /wp-content/plugins/rodo/rodo_script.js
 ||cdn.praivacy.eu/scripts$script
 ||script.getcomplied.com/scripts/complyWidget/assets/getCompliedListWidget.js$script
@@ -24195,7 +24195,7 @@ cc.labu24.de$domain=labu24.de
 cookies.ptj.de$domain=ptj.de
 consent.autopflege24.net$domain=autopflege24.net
 privacy-center.org$domain=elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr|muyinteresante.es|t-mobile.pl|autocasion.com|europasur.es|pisos.com|lagacetadesalamanca.es|meilleure-innovation.com|huelvainformacion.es|futura-sciences.com|elpais.com|diariodejerez.es|france24.com
-/consent$domain=natune.net|hemnet.se
+/consent$domain=natune.net
 cookie-banner*$domain=studio3t.com
 /cookies_2020$domain=pensionlisboa.com
 /ensighten/*$domain=britishairways.com|ba.com
