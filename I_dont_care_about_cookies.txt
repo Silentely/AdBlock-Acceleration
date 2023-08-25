@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 349.202308240741
+! Version: 349.202308250756
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 24 Aug 2023 07:41 UTC
+! Last modified: 25 Aug 2023 07:56 UTC
 !
 !
 ! GLOBAL RULES
@@ -33,7 +33,7 @@
 ###cookieSpace
 ###cookie_drop_container
 ###cookielaw2
-~journal.hr,~merkur.si,~dbfakt.de,~modellbau-metz.com,~d-power-modellbau.com,~der-druckerprofi.de,~senec.com,~taschenhirn.de,~pyroweb.de,~fussballgucken.info,~selgros.de,~costomovil.es,~tesa.com,~ns.nl,~tyg.se,~stoffe.de,~myfabrics.co.uk,~latka.cz,~global.commerce-connector.com,~rotterdammersvoorelkaar.nl,~melcloud.com,~danishfamilysearch.com,~calvinklein.de,~calvinklein.co.uk,~calvinklein.com,~calvinklein.be,~calvinklein.fr,~calvinklein.es,~calvinklein.hr,~calvinklein.ch,~calvinklein.lu,~calvinklein.fi,~calvinklein.dk,~calvinklein.ru,~calvinklein.si,~calvinklein.at,~calvinklein.lv,~calvinklein.bg,~calvinklein.se,~calvinklein.ie,~calvinklein.cz,~calvinklein.pl,~calvinklein.lt,~calvinklein.sk,~calvinklein.nl,~calvinklein.it,~calvinklein.ee,~calvinklein.pt,~calvinklein.hu,~tommy.com##.cookie-notice:not(body):not(html):not(#wrapper):not(#footer)
+~journal.hr,~merkur.si,~dbfakt.de,~modellbau-metz.com,~d-power-modellbau.com,~der-druckerprofi.de,~senec.com,~taschenhirn.de,~pyroweb.de,~fussballgucken.info,~selgros.de,~costomovil.es,~tesa.com,~ns.nl,~tyg.se,~stoffe.de,~myfabrics.co.uk,~latka.cz,~global.commerce-connector.com,~rotterdammersvoorelkaar.nl,~melcloud.com,~danishfamilysearch.com,~calvinklein.de,~calvinklein.co.uk,~calvinklein.com,~calvinklein.be,~calvinklein.fr,~calvinklein.es,~calvinklein.hr,~calvinklein.ch,~calvinklein.lu,~calvinklein.fi,~calvinklein.dk,~calvinklein.ru,~calvinklein.si,~calvinklein.at,~calvinklein.lv,~calvinklein.bg,~calvinklein.se,~calvinklein.ie,~calvinklein.cz,~calvinklein.pl,~calvinklein.lt,~calvinklein.sk,~calvinklein.nl,~calvinklein.it,~calvinklein.ee,~calvinklein.pt,~calvinklein.hu##.cookie-notice:not(body):not(html):not(#wrapper):not(#footer)
 ###Cookies:not([class*="headline"])
 ~ejot.de,~ejot.at,~ejot.cn,~ejot.co.uk,~sparda.de,~sparda-n.de,~sparda-bw.de,~sparda-hessen.de,~sparda-west.de,~inwerk.de,~bioplanete.com,~miltenyibiotec.com,~brabus.com,~nobilia.de,~springlane.de###cookieLayer
 ##.cookiePrompt:not(body):not(html)
@@ -630,7 +630,7 @@
 ###cnil_alert
 ##.cookie-pop-up-container
 ~cykelgear.dk###cookieDisclaimer
-~studentenwerk-dresden.de,~refoweb.nl,~yello.de###cookieconsent:not(.btn):not(.el-Modal)
+~studentenwerk-dresden.de,~refoweb.nl###cookieconsent:not(.btn):not(.el-Modal)
 ###cookie_div
 ###CookieQBanner
 ###cookieWindowContainer
@@ -5710,7 +5710,7 @@
 ###HFS_CookieHint
 ###boite_dialog_cookie
 ##.dk-cookies-bar:not(body):not(html)
-~team.blue,~aurumcars.de,~urbanarrow.com,~yello.de##.js-cookie-consent:not(body):not(html):not(.in):not(.btn)
+###didomi-host ~ #consentCover
 ###dm_cookiela_bar
 ###cookie_notif
 ###cp-cookie-banner
@@ -9050,7 +9050,7 @@
 ###cookieAgreeBar
 ###EC-CookieLaw-Notification
 ##.politica-cookies-container
-###headerTopTracking
+##consent-slide-in-component
 ##.s-cookies-info:not(body):not(html)
 ##body > #legalbar.legal
 ###cookie_prefs_bumper
@@ -10728,7 +10728,7 @@
 ##.common-header-js .common-header-gdpr
 ###above-header .legal-consent
 ##.l-container.c-cookie__container
-~deichmann.com,~vanharen.nl,~dosenbach.ch##.cookie-consent__wrapper
+###didomiConsentOverlay
 ##.module-cookies.cookie-bar--is-visible
 ###cookie-notice-popup
 ###page > #tenantAcceptText
@@ -11567,7 +11567,7 @@
 ###policy-cookies-info-panel
 ##.widget.cookies
 ###root div[class*="PrivacyPolicyNotice"]
-~abconcerts.be##.cookie-consent[role="dialog"]:not(.lightbox)
+###root div[data-test*="cookie-toaster"]
 ###ask-gdpr-cookie
 ###cookie-consent-veil
 ###cookie_regulation_info
@@ -13689,18 +13689,14 @@
 ~altheaprovence.com##body:not(.cli-barmodal-open) #cookie-law-info-bar
 ###cookie-law-info-bar ~ .cli-modal-backdrop
 ###overlay-cookiebanner
-###didomiConsentOverlay
 ##.gdpr-cookies-warning-float-box
 ##.gdpr-cookies-floatButton
-###root div[data-test*="cookie-toaster"]
 ###cookie_banner_overlay
 ###cookie_consent_wrapper
 ###cookie-modern-overlay
 ###cookie-modern-overlay + #cookie-modern-info
 ##.popin-is-open #popinCookies
 ##.popin-is-open #popinConsents
-###didomi-host ~ #consentCover
-##consent-slide-in-component
 !
 ! CUSTOM RULES
 !
@@ -21502,7 +21498,6 @@ banggood.com##.modal-cookie, .bg_gdpr_popup
 dashlane.com##.privacy-consent-enter-done
 general-overnight.com##.cookie-layer
 bnn.in.th##.the-pdpa-consent-bar
-tommy.com##.cookie
 prostata-hilfe-deutschland.de###ccModal, .modal-backdrop
 internxt.com##div[class*="cookiesBgFallback"]
 sportland-erlangen.de##.cookieflag, .cookieset
@@ -22877,6 +22872,9 @@ gocompare.com###gc-stickee-cookie-banner
 allegro.eu##.idm-cookie-overlay, .idm-cookie-policy
 allegro.pl##.custom-cookie-alert
 telcel.com##.telcel-banner-aviso-cookies, .comp-telcel-banner-superior
+swedoffice.se###cbckchangeholderFirst
+datatilsynet.no##.cookie-consent
+visionexpress.hu##.cookie-consent
 !
 ! SCRIPT BLOCKING
 !
@@ -23616,7 +23614,6 @@ cmp.dmgmediaprivacy.co.uk$domain=~metro.co.uk
 ||privacy.clym.io/js/clym-widget.js$script
 /js/privacypolicy.js
 /bosch-privacy-settings-
-/js/general/avada-privacy.js
 ||public.message-business.com/Javascript/mb.privacyManager$script
 ||cdn.reeltime.no/pm_assets/privacy/$script
 ||ftcguardian.com/privacy-update$script
@@ -24004,7 +24001,6 @@ cookiebot.com$domain=fluke.com
 /cb-scripts$domain=convertir-une-image.com
 cookies.teraz.sk$domain=teraz.sk
 /cookie-policy.css$domain=independent.com.mt
-/yello-cookie-layer.js$domain=yello.de
 /zsmessagebar.js$domain=christian.education
 /pmc-pp-tou/privacy.min.js$domain=rollingstone.com
 /cookie-consent$domain=outage.report
