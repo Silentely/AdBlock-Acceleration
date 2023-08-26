@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 349.202308250756
+! Version: 349.202308260541
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 25 Aug 2023 07:56 UTC
+! Last modified: 26 Aug 2023 05:41 UTC
 !
 !
 ! GLOBAL RULES
@@ -13697,6 +13697,7 @@
 ###cookie-modern-overlay + #cookie-modern-info
 ##.popin-is-open #popinCookies
 ##.popin-is-open #popinConsents
+##.box-cookie-policy
 !
 ! CUSTOM RULES
 !
@@ -16775,7 +16776,6 @@ toluna.com##.notification-center
 ticketmarket.lt##.consent, #consent
 poe.de###notice
 ozcouponscode.com##.policy_footer
-onlinetvrecorder.com###footerdiv > div[style*="z-index"]
 drivetribe.com###root > div ~ div[class*=" "]
 ibm.com##.ibm-canada-notice, .ibm-canada-notice-button
 infomir.eu###cb
@@ -17833,7 +17833,6 @@ imovirtual.com###root > footer ~ div
 riccos-camera.de###cookieholder
 restaurant-liris.lu##.coockies
 labor-staber.de###lwcook
-brainly.com.br##.brn-cookie-policy-wrapper
 primocanale.it###cookie
 calovo.de##.ga-opt-in
 endesaclientes.com###GeneralCookies
@@ -20880,7 +20879,6 @@ strefakonsumencka.pl##.cookies
 focus-home.com###app > nav + div
 wayofleaf.com###cpop
 crucial.com##.app-light > div[style*="fixed"]
-concursosnobrasil.com.br###lgpd
 japanmotors.pl##.cookie
 nordiskporselen.com###kjeks
 smitegame.com##.page > .is-visible
@@ -21043,7 +21041,6 @@ finanzwende.de##.cn-wrapper
 wooclap.com##span[aria-labelledby*="cookie-banner"]
 goldbet.it###drop-cookie, .cookieOC
 wizards.com###primary-area ~ .vue-portal-target ~ div, #app nav > .fixed, #wizardCookieBanner, div[data-fetch-key*="CookiePrompt"], #__layout footer ~ .vue-portal-target ~ [data-fetch-key]
-pciconcursos.com.br###lgpd
 digitalife.com.mx###cookieModal
 mandmdirect.de###cookieModal
 rhb.ch###consent
@@ -22843,6 +22840,7 @@ geld.de##.geld-layer-cookie-approval
 hanse-haus-greifswald.de###cookie-law-info-bar
 internetpasoapaso.com###cookie-law-info-bar
 autosecurite.be###cookie-law-info-bar
+equalexchange.co.uk###cookie-law-info-bar
 voissy.com###pb-navbar-cookies-accept
 bbb.org##dialog[aria-label*="cookies"]
 charliemonroe.net##.cookie
@@ -22875,6 +22873,8 @@ telcel.com##.telcel-banner-aviso-cookies, .comp-telcel-banner-superior
 swedoffice.se###cbckchangeholderFirst
 datatilsynet.no##.cookie-consent
 visionexpress.hu##.cookie-consent
+pciconcursos.com.br###lgpd
+panelinha.com.br###lgpd
 !
 ! SCRIPT BLOCKING
 !
@@ -23418,6 +23418,7 @@ cookies.ptj.de
 ||beyond-cookiebanner.de/app.js$script
 /assets/js/cookie_consent_manager
 /wp-content/plugins/viva-cookie-consent/*
+/cookieMessage.min.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23522,7 +23523,7 @@ consent.scm-verlagsgruppe.de
 ||idealo.com/storage/cmp/consent-management.js$script
 ||consent.prointernet.com/consent.js$script
 /coockieconsent.js
-||consentmanager.net/delivery$script,domain=~winfuture.de|~infranken.de|~echo-online.de
+||consentmanager.net/delivery$script,domain=~winfuture.de|~echo-online.de
 consent.comply-app.com
 ||kesko.fi/kconsent$script
 ||unpkg.com/@segment/consent-manager$script
