@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202308271151
+! Version: 202308271649
 ! Title: EasyPrivacy
-! Last modified: 27 Aug 2023 11:51 UTC
+! Last modified: 27 Aug 2023 16:49 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -641,6 +641,7 @@
 /cdn-cgi/beacon/*
 /cdn-cgi/ping?$image
 /cdn-cgi/rum?
+/cdn-cgi/trace|$xmlhttprequest
 /cdn-cgi/zaraz/*
 /cdn_cookie_service.$image
 /cdnperf-rum.
@@ -11186,6 +11187,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||odysee.com/log/
 ||ohnorobot.com/verify.pl?
 ||olytics.omeda.com^
+||ondigitalocean.app/insight-analytics.js
 ||onecount.net/onecount/oc_track/
 ||onescreen.net/os/static/pixels/
 ||onesignal.com/api/v*/apps/
@@ -13277,6 +13279,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||advgo.net/hits/
 ||advgo.net/mushroom/
 ||analitica.webrpp.com^
+||analytics.lasegunda.ecn.cl^
 ||citiservi.es/adstrack?
 ||collector-videoplayer.5centscdn.net^
 ||contadores.miarroba.com^
@@ -13331,6 +13334,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tracker.prom.ua^
 ! Vietnamese
 ||analytics.yomedia.vn^
+||countervov.emitech.vn^
 ||f-emc.ngsp.gov.vn^
 ||fpt.shop/fa_tracking.js
 ||tracking.aita.gov.vn^
@@ -13358,7 +13362,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||abcnews.com/assets/dtci/js/at.js
 ||abebooks.com/timer.gif?
 ||about.me/track?
-||abysscdn.com/cdn-cgi/trace
 ||academia.edu/record_hit
 ||accor.com/g/collect?
 ||accuterm.com/data/stat.js
@@ -13767,7 +13770,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||freedownloadmanager.org/ajax/th_view.php
 ||freepik.*/download.gif?
 ||freepik.com/_ga?
-||freeplayervideo.com/cdn-cgi/trace
 ||freeprivacypolicy.com/track/
 ||fresnel-events.vimeocdn.com^
 ||ft.com/ingest?
@@ -13853,9 +13855,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||hotstar.com/v1/track
 ||houzz.com/hsc/aetrk/
 ||houzz.com/js/log?
-||hqq.ac/cdn-cgi/trace
-||hqq.to/cdn-cgi/trace
-||hqq.tv/cdn-cgi/trace
 ||html5games.com/event/
 ||hulkshare.com/ajax/tracker.php
 ||hulu.com/metricsconfig
@@ -13957,7 +13956,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||linkedin.com/sensorCollect/
 ||links.strava.com^$image
 ||linktr.ee/events
-||linris.xyz/cdn-cgi/trace
 ||lists.ccmbg.com^
 ||littlebigsnake.com/event?
 ||livehdcams.com/api/events
@@ -14008,7 +14006,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||medium.com/_/batch
 ||medium.com/_/clientele/reports/performance/
 ||meduza.io/stat/
-||megaplay.cc/cdn-cgi/trace
 ||mercedes-benz.com/datadog-
 ||merriam-webster.com/lapi/v1/mwol-search/stats/lookup
 ||messari.io/js/wutangtrack.js
@@ -14027,7 +14024,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||metro.co.uk/base/rta/
 ||metro.co.uk/cvx/client/sync/fpc?
 ||metroweekly.com/tools/blog_add_visitor/
-||meucdn.vip/cdn-cgi/trace
 ||mewe.com/ubk4jrxn.js
 ||mi.academy.com/p/js/1.js
 ||mi.dickssportinggoods.com/p/js/1.js
@@ -14069,7 +14065,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||neowin.net/ws/$websocket
 ||net.haier.com^
 ||netflix.com/msl/playapi/cadmium/logblob/
-||netuplayer.top/cdn-cgi/trace
 ||newegg.com/amber3/tracking
 ||newegg.com/gfplib.js
 ||news.google.com/_/v
@@ -14088,7 +14083,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||norton.com/service/norton/head?
 ||novanthealth.org/v1/tagular/beam
 ||novelcool.com/files/js/yh_tj.js
-||ntvid.online/cdn-cgi/trace
 ||nyt.com/ads/tpc-check.html$domain=nytimes.com
 ||nytimes.com/v1/purr-cache
 ||nzpages.co.nz/modules/common/track.js
@@ -14118,7 +14112,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||pardot.com/pd.js
 ||paypal.com/credit-presentment/log
 ||paypal.com/platform/tealeaftarget
-||pcgamesn.com/cdn-cgi/trace
 ||pcmag.com/js/ga.js
 ||pcmag.com/js/z0WVjCBSEeGLoxIxOQVEwQ.min.js
 ||pendo.scopus.com/data/ptm.gif
@@ -14149,10 +14142,8 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||plausible.ripped.guide^
 ||plausible.safing.io^
 ||play.google.com/log
-||player-cdn.com/cdn-cgi/trace
 ||player-telemetry.vimeo.com^
 ||plenty.vidio.com^
-||plushd.bio/cdn-cgi/trace
 ||pm.dailykos.com^
 ||pm.geniusmonkey.com^
 ||poki.com/observer/
@@ -14543,7 +14534,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||vsco.co/api/cantor/track
 ||w3-reporting.reddit.com^
 ||wa.gmx.co.uk^
-||waaw.to/cdn-cgi/trace
 ||wal.wolfram.com^
 ||walmart.ca/api/bsp/logger
 ||walmart.ca/api/home-page/logger
@@ -14566,7 +14556,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||wikimonde.com/matom.js
 ||wikipedia.org/beacon/
 ||windy.com/sedlina/ga/
-||wiztube.xyz/cdn-cgi/trace
 ||wnyc.org/analytics/
 ||wolfram.com/common/javascript/analytics.js
 ||wolfram.com/common/javascript/wal/
@@ -14589,7 +14578,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||yandex.com/clck/
 ||yandex.eu/clck/
 ||yandex.ru/clck/
-||yandexcdn.com/cdn-cgi/trace
 ||yelp.*/sit_rep
 ||yelp.com/ad_acknowledgment
 ||yelp.com/ad_syndication_user_tracking
@@ -32835,7 +32823,9 @@ arketing.indianadunes.com^
 ||odnoklassniki.ru/dk?cmd=videoStatNew
 ||ok.ru/dk?cmd=videoStatNew
 ||ozon.ru/tracker/
+||pikabu.ru/ajax/analytics.php
 ||pikabu.ru/apps/*/analytics.js
+||pikabu.ru/stat/
 ||pixels.boxberry.ru^
 ||rabota.by/analytics?
 ||rabota.by/stat?
@@ -32900,6 +32890,7 @@ arketing.indianadunes.com^
 ||estadisticas.lanacion.com.ar^
 ||estadonline.publiguias.cl^
 ||g.siliconweek.es^
+||genial.guru/metric-collector
 ||geo.emol.cl^
 ||gruporeforma.com/clickGrupoReforma.js
 ||hits.antena3.com^
@@ -32965,12 +32956,14 @@ arketing.indianadunes.com^
 ||target.ukr.net^
 ! Vietnamese
 ||analytics.aita.gov.vn^
+||api.baomoi.com^$image
 ||coccoc.com/log
 ||log.ttbc-hcm.gov.vn^
 ||logsbin.dantri.com.vn^
 ||pixel.coccoc.com^
 ||tka.tiki.vn/pixel/
 ||track-srv.vietnamnet.vn^
+||w-api.baomoi.com^$image
 ! Specific blocking filters necessary for sites allowlisting with $genericblock filter option
 ! Gamestar.de
 /ping.gif?$domain=gamestar.de
