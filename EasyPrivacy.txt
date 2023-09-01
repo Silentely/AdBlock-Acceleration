@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202308311626
+! Version: 202308312337
 ! Title: EasyPrivacy
-! Last modified: 31 Aug 2023 16:26 UTC
+! Last modified: 31 Aug 2023 23:37 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -505,7 +505,6 @@
 /awp.log
 /awpys.log
 /aws-analytics.js
-/aws-analytics/*
 /awstats.js
 /awstats_misc_tracker
 /azion-pulse.js
@@ -812,41 +811,21 @@
 /common/tracker.js
 /compile/AppMeasurement.
 /comscore-js-
-/comscore-json/*
 /comscore-min.js
-/comscore-pageview-
-/comscore/pageview_
 /comscore?
 /comscore_beacon/*
 /comscore_pageview
-/comscore_ping
-/comscore_stats.
-/ComscoreAnalytics.
 /comscorebeacon.
-/ComScorePlugin.
-/confiant-tag.
 /confiant.js
-/config/analytics.js
 /configuration-stat.js
-/containertag?
-/contentanalytics/*
 /contentiq.js
-/ContentTrackingCall.
 /conversion_async.
 /convertro.js
-/cookie.crumb
 /cookie.gif?
-/cookie/visitor/*
-/cookie?affiliate
-/Cookie?merchant=
-/cookie_ga.
+/cookie_ga.js
 /cookieAnalytics.
 /cookieId.htm
-/CookieMapping?
-/cookieMonster?
-/CookiePingback?
 /cookies/render?
-/CookieSetterAS3.
 /cookietag?
 /coopcommerce-pixel.
 /coradiant.js
@@ -2032,6 +2011,7 @@
 /omniture?
 /omniture_tracking.
 /omniunih.js
+/one-plugin-analytics-comscore/*
 /onedot.php?
 /onestat.js
 /onetag/*
@@ -3524,6 +3504,7 @@
 ://collect.*/pageview
 ://collector.*/event
 ://fathom.$domain=~fathom.fm|~fathom.info|~fathom.io|~fathom.video|~fathom.world|~fathomdelivers.com|~fathomseo.com|~usesfathom.com
+://gtrack.*/dye
 ://internal-matomo.
 ://lightning.*/launch/
 ://matomo.$domain=~matomo.org
@@ -5576,6 +5557,7 @@ _mongo_stats/
 ||logrocket.io^$third-party
 ||logz.io^$third-party
 ||lookery.com^$third-party
+||loomi-prod.xyz^$third-party
 ||loopa.net.au^$third-party
 ||loopfuse.net^$third-party
 ||lopley.com^$third-party
@@ -10508,6 +10490,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||experience.contextly.com^
 ||extole.io/core.js
 ||extole.io^*/core.js
+||ezoic.net/ezqlog?
 ||f-log-at.grammarly.io^
 ||f-log-test.grammarly.io^
 ||f.email.bjs.com^*/1x2.gif
@@ -10997,6 +10980,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||metrix.emagister.com^
 ||mikeneko.apollo.moe/js/script.js
 ||minutemediacdn.com/campaign-manager-client/
+||mircheigeshoa.com/prod/smi/fp.min.js
 ||mixpanel.com/track?
 ||mj-snowplow-static-js.s3.amazonaws.com^
 ||mkcms.com/stats.js
@@ -13328,6 +13312,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||alljapanesepass.com/rstat
 ||als-svc.nytimes.com^
 ||altruja.de/js/micro/integration-ga.js
+||alwayslucky.com/platform/webvitals
 ||amazon.com/1/aiv-web-player/1/OE^
 ||amazon.com/1/events/$domain=~aws.amazon.com
 ||amazon.com/empty.gif?$image
@@ -33161,6 +33146,7 @@ arketing.indianadunes.com^
 @@||lightning.bleacherreport.com^*/launch-$~third-party
 @@||listrakbi.com^$image,script,stylesheet,domain=sks-bottle.com
 @@||live.rezync.com^$script,domain=batteriesplus.com
+@@||loader-cdn.azureedge.net/prod/smi/loader.min.js$domain=pressdemocrat.com
 @@||logging.apache.org^$~third-party
 @@||logo.clearbit.com^$image,third-party
 @@||lr-ingest.io/LogRocket.min.js$domain=smartcare.com
