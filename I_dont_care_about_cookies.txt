@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 349.202308280945
+! Version: 349.202309050920
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 28 Aug 2023 09:45 UTC
+! Last modified: 05 Sep 2023 09:20 UTC
 !
 !
 ! GLOBAL RULES
@@ -855,7 +855,7 @@
 ###svtCookieInformationContainer
 ~fredolsen.es##.cookies-warning:not(body):not(html)
 ##.dom-content--eu-banner
-~jobcenter-ge.de,~arbeitsagentur.de,~routershop.nl,~headsetwinkel.nl,~researchaffiliates.com###cookieDialog
+~jobcenter-ge.de,~arbeitsagentur.de,~researchaffiliates.com###cookieDialog:not([aria-modal])
 ##.cookie_optin_box:not(body):not(html)
 ###CookieContainer
 ###jumper_cookies
@@ -8579,7 +8579,7 @@
 ###lmf_privacy_cookiebar
 ###dsgvo-cookie-container
 ##.gdpr-notice-policy-container
-##.GDPRPanel-root:not(body):not(html)
+##.gdprToolbar
 ###cookie-control-master
 ###cookieWallModal
 ###cookieWallModal ~ .modal-backdrop
@@ -13699,7 +13699,9 @@
 ##.popin-is-open #popinConsents
 ##.box-cookie-policy
 ##.js-cookie-banner-blur
-##.gdprToolbar
+###app .pageContainer > div[class*="cookieConsent"]
+###cookies-bar-bottom
+###iubenda-cs-banner.iubenda-cs-visible
 !
 ! CUSTOM RULES
 !
@@ -19959,9 +19961,6 @@ sync.me###cookies
 futbollab.com###overbox-politica
 ivideon.com##.iv-ui-website-cookie-compliance, .iv-persistent-notification[data-id*="cookie"], .iv-ui-q2a-cookie-compliance
 oxi-corp.com##.cookies-modal
-cam4.com###promptArea
-cam4.es###promptArea
-cam4.fr###promptArea
 holodilnik.ru##.alert-compliance
 geekjack.net###gdpr
 meder-frankfurt.de###ch
@@ -21843,7 +21842,6 @@ ilmanifesto.it##.info-banner
 karrierekaserne.de##.autoprivacy
 abfallwirtschaft-freiburg.de###pro_cookiebox
 darmas.de###mod-darmas-cookies
-golvprofilshop.se###cookie-consent-modal, .modal-backdrop
 showcasecinemas.co.uk##s72-cookie-consent
 lamoda.ru##.page > [class*="widget"], .unipop__container ~ div
 pitch.com##.platform--cookies--container
@@ -22852,6 +22850,7 @@ destinations.ua##.cookies
 l28.nl###cookie_popup_body
 24tv.ua##.private-policy
 postnl.nl##pnl-cookie-wall-widget
+postnl.be##pnl-cookie-wall-widget
 vente-unique.com###vu_consent
 vente-unique.be###vu_consent
 vente-unique.nl###vu_consent
@@ -22881,6 +22880,16 @@ nicequest.com###nicequest-app #footer ~ div, #nicequest-app div[data-testid="top
 softwaretested.com###privacy-popup
 action.com##.cookieModal
 atende.net##.termos_cookie_privacidade, #btn-open-preferencia-cookies
+meduza.io##.GDPRPanel-module-root
+golvprofilshop.se###cookie-consent-modal, .modal-backdrop
+esjobogarden.se###cookie-consent-modal, .modal-backdrop
+biancodipuro.ch##.ngcookiewarning
+greatone.pl###zamknij_cookies
+recortelirico.com.br##div[class*="s-gdpr-c-c"]
+fler.cz##div[class*="unit-cookies"]
+loombard.pl##.modal[id*="cookieconsent"]
+megfoglak.hu##.modal.consent
+cmo.de##.toast-container
 !
 ! SCRIPT BLOCKING
 !
