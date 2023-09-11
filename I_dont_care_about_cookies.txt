@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 349.202309061015
+! Version: 349.202309110921
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 06 Sep 2023 10:15 UTC
+! Last modified: 11 Sep 2023 09:21 UTC
 !
 !
 ! GLOBAL RULES
@@ -458,7 +458,7 @@
 ###cookie_agree
 ~kruk.eu###cookie_agreement
 ###polityka-cookie
-###snippet-cookieControl-cookieInfo
+###snippet-cookieSettings-cookieInfo
 ###WP-cookie-info
 ~kulturprojekte.berlin,~rapidonline.com,~humboldtforum.org,~berlinartweek.de,~gov.lv,~riga.lv,~search.itaa.be,~dehn.at,~ticsante.com,~techopital.com,~sandro-paris.com,~feuvert.fr,~ad.win.nl,~conclude.com,~thinkproject.com,~dehn.de###cookieConsent:not(.modal)
 ###cookie-info-box
@@ -789,7 +789,7 @@
 ###showCookieInfo
 ###ccconsent
 ##.cookie-compliance-container
-~okto.tv,~bhw.de,~dslbank.de,~metro.de,~metro.fr,~metro.at,~metro.hu,~metro.bg,~makro.nl,~axa-im.fr,~pronovabkk.de##.cookie-disclaimer:not(body):not(html)
+~okto.tv,~bhw.de,~dslbank.de,~axa-im.fr,~pronovabkk.de##.cookie-disclaimer:not(body):not(html)
 ###cookie_popup
 ##.cookie_ribon:not(body):not(html)
 ##.infoCookies:not(body):not(html)
@@ -5707,7 +5707,7 @@
 ##.cc-banner-wrapper:not(body):not(html)
 ###cookie-ribbon
 ###tiFy_CookieLaw
-###HFS_CookieHint
+~reiseauskunft.insa.de###HFS_CookieHint
 ###boite_dialog_cookie
 ##.dk-cookies-bar:not(body):not(html)
 ###didomi-host ~ #consentCover
@@ -6264,7 +6264,7 @@
 ##cookiless-div
 ###js-cookie-box
 ###eclcookie
-###allow-cookies
+##.gdpr_cookie_notice
 ###__consent[data-md-component="consent"]
 ###cookie_baner
 ##.cookie-law__container
@@ -7580,7 +7580,7 @@
 ##.gdpr-terms-banner:not(body):not(html)
 ###GdprCookieBanner
 ##.popup-cookie-2018:not(body):not(html)
-~swedbank.com,~sevdesk.de,~sevdesk.at,~metro.de,~metro.fr,~metro.at,~metro.hu,~metro.bg,~makro.nl##.cookie-banner-overlay
+~swedbank.com,~sevdesk.de,~sevdesk.at##.cookie-banner-overlay
 ###cookie_terms_div
 ##.cookies[data-cookie="banner"]
 ##.wordpress-gdpr-popup
@@ -10251,7 +10251,7 @@
 ###gh-cookie-hint
 ~ffm.to,~orcd.co,~ditto.fm,~backl.ink##.privacy-notice-gdpr
 ###wf_cookie_notice_wrapper
-~sternwarte-muenchen.de,~sovendus.com###BorlabsCookieBox
+~sovendus.com,~sternwarte-muenchen.de###BorlabsCookieBox
 ###gdprToolbar
 ###__accept_cookie[data-position="bottom"]
 ###gfbsmd_cookiepolicy
@@ -13704,6 +13704,7 @@
 ###iubenda-cs-banner.iubenda-cs-visible
 ###__next div[class*="SchibstedBanner"]
 ###pwa_container ~ .cookie_blocker
+##.cookie__floating--top-right
 !
 ! CUSTOM RULES
 !
@@ -15991,7 +15992,6 @@ rynekzdrowia.pl##.rodo
 telering.at##.uc-fab.uc-fab-open
 dijaspora.online##.cookie-uslovi
 kaspersky.pt##.notification-bar.bottom
-verkkokauppa.com##.vk-cookie-notification
 grrif.ch###RGPD
 loggly.com##.promotion
 rtp.pt###rtpprivacycontent
@@ -16503,7 +16503,6 @@ everything5pounds.com##.__ADORIC__[style*="fixed"]
 ring.com###teconsent
 netflix-nederland.nl##body > div[class^="app"]
 sothebys.com###NotificationOverlay
-srf.ch##.personalizationMessageWrapper
 rusmeteo.net##.alert-danger.in
 programiz.com##.privacy-policy
 buzzpeoplemag.com##.sca.block
@@ -19456,7 +19455,6 @@ surelighttech.com###growls-br
 biosyn.de###consent
 wabu-care.com###root > div > main ~ div
 clubsim.com.hk##.cookie
-prohardver.hu###accept-container
 logout.hu###accept_container
 express.pl##.newWebsite
 ego4u.de###consent
@@ -21330,7 +21328,6 @@ web.dev##web-snackbar
 kraemer.de###consentLayer
 landkreis-ostallgaeu.de###cookie
 gordonua.com##.cookie-label
-metro.ca##.cookie-consent
 rejestracja.makro.pl##.cookies
 postel.it###postel-cookies
 global.abb##.cookie
@@ -22828,11 +22825,6 @@ jobs.jobconvo.com###root ~ div
 ed-live.de###mhCookie_container
 velovert.com###modal_cookies
 geld.de##.geld-layer-cookie-approval
-hanse-haus-greifswald.de###cookie-law-info-bar
-internetpasoapaso.com###cookie-law-info-bar
-autosecurite.be###cookie-law-info-bar
-equalexchange.co.uk###cookie-law-info-bar
-podcaliptus.com###cookie-law-info-bar
 voissy.com###pb-navbar-cookies-accept
 bbb.org##dialog[aria-label*="cookies"]
 charliemonroe.net##.cookie
@@ -22892,6 +22884,10 @@ tele2.nl###targetedPopupFrame
 brico-travo.com###modal-rgpd, .overlay::after
 partille-tool.se###CookiesSettings
 cleveroad.com###gatsby-focus-wrapper > main + div
+tonerlagret.se##.cookie-cutter
+euskadi.eus###cookies-block
+blogger.com##div[data-noticekey*="EuCookieNotice"]
+metro.ca##.cookie-consent
 !
 ! SCRIPT BLOCKING
 !
