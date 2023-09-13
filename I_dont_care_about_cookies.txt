@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 349.202309121759
+! Version: 349.202309130836
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 12 Sep 2023 17:59 UTC
+! Last modified: 13 Sep 2023 08:36 UTC
 !
 !
 ! GLOBAL RULES
@@ -10508,7 +10508,7 @@
 ##.cookie-section-fixed-top
 ###dsgvoWrapper.jsDsgvoWrapper
 ##.content-con-cookie
-##.contentasset[data-cid="DATA_PRIVACY_BAR"]
+###root div[data-testid*="jet-cookie-consent"]
 ##.gdpr-block-wrap
 ###ctl00_EmergencyBanner_uiDivCookie
 ##.c-cookiebanner
@@ -13706,7 +13706,7 @@
 ###pwa_container ~ .cookie_blocker
 ##.cookie__floating--top-right
 ##.cookie-toast-wrap
-###root div[data-testid*="jet-cookie-consent"]
+###JOISH987_bar
 !
 ! CUSTOM RULES
 !
@@ -18999,7 +18999,6 @@ nhc.no###dpm-consent-form
 gardeningknowhow.com##.consent, #consent
 sato.fi###app-container > div > .hide-on-print > div
 aide.fi##.navbar-fixed-bottom
-bonprix.pl###JOISH987_bar
 grenscorridorn69.nl##.cdk-overlay-container
 play.pl##.cookies-mine
 hearingaidknow.com##.gdpr
@@ -21297,7 +21296,6 @@ krone.bz##div[class*="cookie-banner"]
 fahrrad-xxl.de##.fxxl-cookie-mainmodal, .modal-overlay
 cartodebat.fr###notice
 roonlabs.com##.elementor-popup-modal
-mod.io###achtung-overlay
 permisecole.com###rgpd
 elisa.fi##.react-navi-ea-cookie-disclaimer, .ea-cookie-disclaimer
 medienportal-sachsen-anhalt.de##.hinweis
@@ -22895,6 +22893,10 @@ moneycontrol.com###ccw
 ouraring.com##div[data-cy*="consent-manager-banner"]
 ground.news##.fixed.bottom-0
 clinic3.ru###agreedBanner
+palit.com###pp_overlay, #pp_info
+mod.io###container ~ .tw-fixed
+yomiuri.co.jp###consentModal
+helmholtz.software##.fixed[data-testid="cookie-consent-matomo"]
 !
 ! SCRIPT BLOCKING
 !
@@ -23442,6 +23444,7 @@ cookies.ptj.de
 /michnhokn/cookie-banner/*
 ||ddjnocookie.com/prod_public$script
 /modules/cookie_policy/frontend/*
+/cookie_popup.js
 ||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
@@ -23650,7 +23653,7 @@ cmp.dmgmediaprivacy.co.uk$domain=~metro.co.uk
 ||tagcommander.com/privacy$script,domain=~labanquepostale.fr
 ||isgprivacy.cbsi.com/dist/optanon$script,domain=~cbsnews.com|~startrek.com|~insideedition.com|~cbslocal.com|~etonline.com|~cc.com
 privacy-policy.u-lab.nl
-||trustcommander.net/privacy$script,domain=~tf1info.fr|~tf1.fr|~edeka.de
+||trustcommander.net/privacy$script,domain=~tf1info.fr|~tf1.fr|~edeka.de|~ravensburger.de|~ravensburger.co.uk
 app.eprivacy-keeper.eu
 /wp-content/plugins/en-privacy-notification/*
 privacy.claytonhomes.com
@@ -23943,6 +23946,7 @@ wpjslib-chunk-notification.js^
 /ccm/app.js?apiKey
 ||cc.diewebsitemacherei.de/app.js$script
 ||ccm.entire-media.de/public/app.js$script
+||piazza.cc/public/app.js$script
 /iubenda_cs$domain=~radiomontecarlo.net|~tomshw.it|~repubblica.it|~video.lastampa.it|~nablawave.com|~buondi.it|~tgcom24.mediaset.it|~mediasetinfinity.mediaset.it|~telerama.fr|~skuola.net
 /amp-user-notification-
 ||sn.sanoma.fi/js/sccm$script
@@ -24285,6 +24289,7 @@ it-cc.index.js^$domain=boellhoff.com
 /infrasdk.js$domain=nofluffjobs.com
 /cookies_master.js$domain=bayern.de
 /CKCookieConsent.js$domain=caseking.de
+/ccm_$domain=kro-ncrv.nl
 !
 ! FILTERLIST ONLY
 !
