@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 349.202309151051
+! Version: 349.202309180955
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 15 Sep 2023 10:51 UTC
+! Last modified: 18 Sep 2023 09:55 UTC
 !
 !
 ! GLOBAL RULES
@@ -861,7 +861,7 @@
 ###jumper_cookies
 ~effector.pl,~finom.co,~lmt.lv,~dish.co,~pagetiger.com,~bynco.com,~bakken.nl##.cookie-info:not(body):not(html)
 ###cookieCopy
-###eu_cookie
+~datagrottan.se###eu_cookie
 ###cookies_warning
 ##.regional-cookie-warning
 ###pl_cookies
@@ -2798,7 +2798,7 @@
 ###cookieagree
 ###banner_privacy_blitz
 ###header-cookie-bar
-~la-becanerie.com##.cc_banner-wrapper
+~btvnovinite.bg,~la-becanerie.com##.cc_banner-wrapper
 ##.bannerInformativaEU
 ###eu-cp-banner
 ###cookieAdv
@@ -4347,8 +4347,8 @@
 ###cookie_souhlas_div
 ###gs-cookie-policy
 ###cookies-infos
-~sap.com,~tmz.com,~proximustv.be,~proximus.be,~tripit.com,~concursolutions.com,~fortune.com##.truste_overlay:not(body):not(html)
-~sap.com,~tmz.com,~proximustv.be,~proximus.be,~tripit.com,~concursolutions.com,~fortune.com##.truste_box_overlay
+~sap.com,~tmz.com,~proximustv.be,~proximus.be,~tripit.com,~concur.com,~concur.de,~concursolutions.com,~fortune.com##.truste_overlay:not(body):not(html)
+~sap.com,~tmz.com,~proximustv.be,~proximus.be,~tripit.com,~concur.com,~concur.de,~concursolutions.com,~fortune.com##.truste_box_overlay
 ###CookiesBar
 ##.msg-cookies:not(body):not(html)
 ###bys-cookiemessage
@@ -6593,7 +6593,7 @@
 ##.cookie-message-box:not(body):not(html)
 ###cookieNotice_other
 ###cookiesconsent
-~sap.com,~tmz.com,~proximustv.be,~proximus.be,~tripit.com,~concursolutions.com,~fortune.com###truste-consent-track
+~sap.com,~tmz.com,~proximustv.be,~proximus.be,~tripit.com,~concur.com,~concur.de,~concursolutions.com,~fortune.com###truste-consent-track
 ###messages > #cookies
 ##.coockieWindow:not(body):not(html)
 ##.cookies-policy-message
@@ -7834,7 +7834,7 @@
 ##.dsgvo-container:not(body):not(html)
 ##.gdpr-onboarding-container
 ##.gdpr[data-gdpr-popup]
-~la-becanerie.com##.cc_banner.cc_container--open
+~btvnovinite.bg,~la-becanerie.com##.cc_banner.cc_container--open
 ##.cookie-overlay + .cp-wrap
 ###p_lt_ctl00_CookieNotice_pnlCookieNotice
 ##.__gdprConfirmOverlay
@@ -9800,7 +9800,7 @@
 ###ptm_cookie_law
 ##.reveal-modal[id*="cookie"] ~ .reveal-modal-bg
 ~schuurman-schoenen.nl##.cookie-notification-modal
-~wacom.com,~sap.com,~tmz.com,~proximustv.be,~proximus.be,~tripit.com,~concursolutions.com,~fortune.com###consent_blackbar:not(.idcac)
+~wacom.com,~sap.com,~tmz.com,~proximustv.be,~proximus.be,~tripit.com,~concur.com,~concur.de,~concursolutions.com,~fortune.com###consent_blackbar:not(.idcac)
 ##.p-notification-bar-cookieconsent
 ###noty-cnil.alert-dismissable
 ###NLC_textLayer
@@ -10180,7 +10180,7 @@
 ##.cp-popup-overlay
 ##.cp-popup-overlay ~ .cp-popup.cp-popup-visible
 ###rgpd-msg.alert
-##.notification[data-handler-notification*="\"case\": \"cookie\""]
+###extended-consent-banner
 ##.app div[data-qa-file="CookieAcceptance"]
 ##.footer ~ .cookielaw-form.is-active
 ###rs_gdprBanner
@@ -12901,7 +12901,7 @@
 ###gdpr-banner-component
 ###root div[aria-label*="cookie banner"]
 ###app .cookie-curtain
-##.privacysettings__iframeLightBox
+##.cookies.iparsys.parsys
 ###mod-eu-cookies
 ###mod-eu-cookies-overlay
 ###cookie-disclaimer-box
@@ -13714,7 +13714,9 @@
 ###__next div[class*="gdpr_Banner"]
 ##body > div > .adn-window.adn-message
 ##.adn-editButton[onclick*="consent"]
-##.cookies.iparsys.parsys
+##.iai_cookie
+###cookie-opt-in-overlay
+###ccg-cookie-consent-banner
 !
 ! CUSTOM RULES
 !
@@ -17608,7 +17610,6 @@ sakharov-center.ru###kuk
 dna.fi###dna-gdpr-info
 wedos.cz##.dialog-message
 infovojna.sk###gpCookie
-camelcamelcamel.com###cmp-ui-iframe
 criticker.com###i_cookies
 warka.com.pl###rodo_env, .cookies
 dialight.com##.notice
@@ -18400,7 +18401,6 @@ hausinfo.ch##.m-privacy
 funkypigeon.com##.fp_cookies
 british-legal-centre.com###targetDiv
 cocinaabuenashoras.com###cookies
-roland-rechtsschutz.de##.mod-alert
 abschied-nehmen.info##.tscUiNotificationWrapper
 chainreactioncycles.com##.crc_cookie_overlay, .crc_cookie_opt_in
 stib-mivb.be##.cookie
@@ -20139,7 +20139,6 @@ e-coop.it##.cookies
 thermengutscheine.at###cmp-container
 mercateo.sk###header-popup-info
 fan.com.pl###cookie
-ubs.com##.lightbox__container
 moto-opinie.info###colorbox, #cboxOverlay
 jobst-mobile.de###datenschutzBalgeNew
 half-the-battle.de##div[data-editable*="CookieNotif"]
@@ -22736,9 +22735,9 @@ landtag.de###matomo-cookie-consent
 temu.com##body > div > div[class*="popup"]
 uferstudios.com##hylo-cookie-banner
 weingarten-grosse-groessen.de##.cc-overlay
+der-metronom.de##.cc-overlay
 wd40.nl##div[x-data="cookieModal"]
 startmail.com##footer ~ .banner
-specshop.pl##.iai_cookie
 laumat.at###laumatcookiebox
 stempel-bestellen.de###swCookieAccept
 pornmd.com###hiding_div
@@ -22876,6 +22875,15 @@ barclaycard.co.uk##.pecr-banner
 simbrief.com###cookie-settings
 barclays.net###modal-pecr
 uk.barclays##.barclays-consent, .c-modal-overlay, #modalCookies
+ubs.com##.lightbox__container
+byfood.com###page-footer ~ div
+cadena88.com##body > div[id*="cookie"]
+eframe.co.uk###cookies
+ubereats.com##div[role="alert"][data-baseweb="toast"]
+assurances.groupebpce.com##.modal-backdrop
+sky.com.br###wrap-aviso-cookie
+getmailbird.com###mb-footer-lawmsg
+blueridgemountains.com##.msg[data-cookie-consent]
 !
 ! SCRIPT BLOCKING
 !
@@ -23428,7 +23436,6 @@ cookies.ptj.de
 /fcc-cookie-consent.js
 /gdpr-cookie-consent.min.js
 /cookieConsentScript
-||tmgonlinemedia.nl/consent/script/consent.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
 wpjslib-chunk-consent-form.js^
@@ -23461,7 +23468,7 @@ browser-consent-front.coco.s-cloud.fi
 /consent.webmasterplan.com/v2
 /js/adsconsent.min.js
 ||consent.truste.com/get?name=notice.js$script
-||consent.trustarc.com/notice$script,domain=~tripit.com|~concursolutions.com|~fortune.com
+||consent.trustarc.com/notice$script,domain=~tripit.com|~concur.com|~concur.de|~concursolutions.com|~fortune.com
 consent-manager.metomic.io
 cmp.uniconsent.com$domain=~photopea.com
 /consent-banner-bootstrap
@@ -23981,6 +23988,7 @@ static.clickskeks.at
 /coolkies-walkies/*
 ccm19.dsg-schweiz.ch
 ||jsdelivr.net/npm/cookify$script
+ccm19.boxspring-welt
 /consumer/cookie/client$domain=bt.com
 /frontend/ajax/cookies$domain=romstal.ro
 /rodo-agreement-$domain=gremimedia.pl|zw.com.pl
@@ -24199,7 +24207,7 @@ consent*$domain=t-mobile.cz
 cc.labu24.de$domain=labu24.de
 cookies.ptj.de$domain=ptj.de
 consent.autopflege24.net$domain=autopflege24.net
-privacy-center.org$domain=elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr|muyinteresante.es|t-mobile.pl|autocasion.com|europasur.es|pisos.com|lagacetadesalamanca.es|meilleure-innovation.com|huelvainformacion.es|futura-sciences.com|elpais.com|diariodejerez.es|leonoticias.com|france24.com|retinatendencias.com
+privacy-center.org$domain=elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr|muyinteresante.es|t-mobile.pl|autocasion.com|europasur.es|pisos.com|lagacetadesalamanca.es|meilleure-innovation.com|huelvainformacion.es|futura-sciences.com|elpais.com|diariodejerez.es|leonoticias.com|france24.com|retinatendencias.com|eldiadecordoba.es
 /consent$domain=natune.net
 cookie-banner*$domain=studio3t.com
 /cookies_2020$domain=pensionlisboa.com
