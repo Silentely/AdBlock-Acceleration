@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 349.202309180955
+! Version: 349.202309190901
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 18 Sep 2023 09:55 UTC
+! Last modified: 19 Sep 2023 09:01 UTC
 !
 !
 ! GLOBAL RULES
@@ -705,7 +705,7 @@
 ###scc-mask
 ###cookiesAlert
 ###layer_cookie
-~effector.pl,~e-zikoapteka.pl,~autoersatzteile.de,~autoteiledirekt.de,~nike.com##.cookies-popup:not(body):not(html)
+~mercedes-benz.cr,~effector.pl,~e-zikoapteka.pl,~autoersatzteile.de,~autoteiledirekt.de,~nike.com##.cookies-popup:not(body):not(html)
 ###user-cookie-message
 ###cookie-information
 ##div[aria-describedby*="cookie-info"]
@@ -9838,7 +9838,7 @@
 ##.wpc-cookie-warning:not(body):not(html)
 ###banner-accept-cookies
 ###dsgvo-cookie
-##body > #page-privacy > .page-privacy__dialog_banner
+###ccg-cookie-consent-banner
 ###bloc_cookie.footer
 ###cookie-notification-container
 ##.navbar-fixed-bottom.navbar-privacy
@@ -13716,7 +13716,7 @@
 ##.adn-editButton[onclick*="consent"]
 ##.iai_cookie
 ###cookie-opt-in-overlay
-###ccg-cookie-consent-banner
+###cookieconsentwarning
 !
 ! CUSTOM RULES
 !
@@ -13786,7 +13786,6 @@ smulweb.nl##.accept_container
 epiotrkow.pl##.user_politic_pop
 bygningskultur2015.dk###lbmodal-overlay, #lbmodal
 racjonalista.pl###_ci
-xtremmedia.com###mensacok
 herbaciani.pl##body > div:not([id]):not([class])
 waw.pl###wip.stability, .alert-warning, .komunikat
 costco.co.uk##.site-messages-container
@@ -21491,7 +21490,6 @@ lequipe.fr##.Alerts__item--nonBlockingAlert
 creality3dofficial.com##.pub-tip
 creality3dofficial.eu##.pub-tip
 xn--90aivcdt6dxbc.xn--p1ai##.l-modal-cookie
-pribram.cz##.cookies
 money.com.tr##.kvkk
 24sata.hr###didomi-host
 njuskalo.hr###didomi-host
@@ -22199,7 +22197,6 @@ saurclient.fr###cookies, .sds-m-cookiebanner
 lefigaro.fr##.fig-consent-banner
 aliexpress.ru##div[class*="PrivacyPolicyBanner"]
 tomtom.com###themeFooter, div[data-component-name="Footer"] ~ .fixed
-eneba.com###app > footer ~ div, main > div + div + div:last-child
 hypeclothinga.com###__next > .chakra-fade
 watch-strap.eu##.cookies_panel_2022
 remienky.sk##.cookies_panel_2022
@@ -22361,7 +22358,6 @@ biomecanics.com##.cookies
 garvalin.com##.cookies
 grahamhancock.com###cookie-law
 ale.se##.MuiSnackbarContent-root
-pkobp.pl###pko-cookie-rodo-first, .js-ajax-overlay
 8x8.vc###success > div > div:last-child
 volksbund.de###cc
 lastmile.lt##button[aria-label="Slapukų nustatymai"]
@@ -22884,6 +22880,18 @@ assurances.groupebpce.com##.modal-backdrop
 sky.com.br###wrap-aviso-cookie
 getmailbird.com###mb-footer-lawmsg
 blueridgemountains.com##.msg[data-cookie-consent]
+lemmofuture.com##.policy-initiative-ask-box-cover
+eltrox.pl##.modal-gdpr, .overlay-gdpr
+woccu.org###cookie_area
+unclutterapp.com##.useCookiesAccept
+xtremmedia.com##.gdprModal
+pkobp.pl###footer ~ div[class*="pkobp"], .pko-cookie-rodo
+warspotting.net##.toast-message
+kensington.com##.Promotional-corner
+cinemark.cl###modal-cookies-template
+pribram.cz##.cookies
+nemocnicepribram.cz###cookies_lista_2022
+mojandroid.sk###cookie-law-info-bar
 !
 ! SCRIPT BLOCKING
 !
@@ -23436,6 +23444,7 @@ cookies.ptj.de
 /fcc-cookie-consent.js
 /gdpr-cookie-consent.min.js
 /cookieConsentScript
+/cookienoticepro.script.js
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
 wpjslib-chunk-consent-form.js^
@@ -23479,7 +23488,6 @@ cmp.uniconsent.com$domain=~photopea.com
 /gdpr/consent.js
 choices.consentframework.com
 consentserve.mgr.consensu.org
-analytics-consent-manager.azureedge.net
 /mgm_consent.js
 ||hoffmann-group.com/common/consent$script
 /dv_t3_consent_management/*
@@ -23691,7 +23699,6 @@ cmp.cls.pm
 /truendo_cmp.pid.js
 cmp.optad360.io
 ||snigelweb.com/sncmp$script
-||seznam.cz/js/cmp$script
 /pubtech-cmp
 cmp.pafo.fairbung.com
 ||24net.cz/resources/js/cmp.js$script
@@ -23708,6 +23715,8 @@ cmp.mediavine.com
 /sibbo-cmp-loader.js
 cmp.springernature.com
 determinator.service-cmp.com
+||seznam.cz/js/cmp2/scmp.js$script
+||seznam.cz/js/cmp2/scmp-external.js$script
 ||gofundme.com/js/3.0/visitorCookie.js$script
 /CookiesDirective
 CookieAccept/affirmation.js
@@ -24278,6 +24287,9 @@ it-cc.index.js^$domain=boellhoff.com
 /CKCookieConsent.js$domain=caseking.de
 /ccm_$domain=kro-ncrv.nl
 /tac.js$domain=avenuedelabrique.com
+/ConsentManager/*$domain=flvw.de
+analytics-consent-manager*$domain=terveystalo.com
+seznam.cz$domain=firmy.cz
 !
 ! FILTERLIST ONLY
 !
