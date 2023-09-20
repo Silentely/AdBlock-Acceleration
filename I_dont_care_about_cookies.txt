@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 349.202309190901
+! Version: 349.202309200834
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 19 Sep 2023 09:01 UTC
+! Last modified: 20 Sep 2023 08:34 UTC
 !
 !
 ! GLOBAL RULES
@@ -8266,7 +8266,7 @@
 ~hutchinson.com,~ebonline.be##body > #cookies[style*="display"]
 ##body > #cookies[style*="position"]
 ##body > #cookies[style*="bottom"]
-##body > .cookies[style*="display"]
+~campusbrno.cz##body > .cookies[style*="display"]
 ##body > .cookies[style*="position"]
 ##body > .cookies[style*="bottom"]
 ~vandalism-sounds.com,~danbolig.dk##body > .cookie[style*="block"]
@@ -11293,7 +11293,7 @@
 ##.cookies-privacy-popup
 ###data-protection.data-protection-overlay
 ###js-tracking-notice
-##.footer ~ .cookies
+~campusbrno.cz##.footer ~ .cookies
 ###cookie.notification
 ##.js-gdpr-overlay.visible
 ##.gdpr[ng-controller*="GdprController"]
@@ -18661,7 +18661,6 @@ wieisdemol.be###cover-div
 xometry.com###lo-privacy-banner
 comau.com##.cookie__wrap
 print24.com##.cookie__wrap
-animalchannel.co##.consent-box
 hallofbrands.gr###gdpr-modal, .modal-backdrop
 sofifa.com##.wrapper .bp3-callout.bp3-intent-danger
 direktno.rs###saglasnost-container
@@ -19005,7 +19004,6 @@ opti-wohnwelt.de##.accContentWrapper div[class*="gdprBar"]
 quickappninja.com###qan-cookie-policy-gdpr
 e-armet.pl###cookie
 cb500.net###keks
-ronproject.com##.consent-box
 schuhe-mustang.at###cookie
 india.com###co-container
 vapstore.de###header-promo
@@ -20999,7 +20997,6 @@ digitalife.com.mx###cookieModal
 mandmdirect.de###cookieModal
 rhb.ch###consent
 ing.fr##.ing-CookieManagementNext
-bayernlb.de##.lg-backdrop
 dbvis.com##.uk-notification
 aok-erleben.de##.csm[data-module="cookie-manager-dialog"]
 hyser.ua##.privacy-policy
@@ -22592,8 +22589,6 @@ economictimes.com##.privacy_block, .du_consent
 miniclip.com##.mc-consents-wrapper
 mekkafood.com###cookieprefs
 dropbox.com###consent-iframe
-mediamarkt.es###gdpr-cookie-layer
-mediamarkt.pl##.cookie-box
 laboremus.de##body > div[style*="fixed"]
 skylinewebcams.com###prefs
 iol.co.za###root > div[role="dialog"]
@@ -22673,7 +22668,6 @@ helthjem.no##.schibsted-bar
 sunglasses-shop.bg##.notification-wrapper
 lazoptics.gr##.new-cookie-supercontainer
 eyeons.com##.alternis-cookie
-samsung.com##.helptips__container, #cookie_component, .js-smtc-cookie
 smartthingsfind.samsung.com##.fixed.bottom-0
 book.io##.foobar-cookie
 poool.tech###app > .fade-in-enter-done
@@ -22892,6 +22886,19 @@ cinemark.cl###modal-cookies-template
 pribram.cz##.cookies
 nemocnicepribram.cz###cookies_lista_2022
 mojandroid.sk###cookie-law-info-bar
+procurator.com##py-anonymous-consent-management
+velotaf.com###modal_cookies
+nendaz.org###disclaimerCtn
+samsung.com##.helptips__container, #cookie_component, .js-smtc-cookie, #bgc-cookie-popup
+mediamarkt.es###gdpr-cookie-layer
+mediamarkt.pl##.cookie-box
+ostsee24.de##.consent-box
+expocasa.it##.cc-window
+androidide.com##body > .fixed.bottom-0.left-0.right-0
+wsa.gov.pl###bipCookieModal
+hkw.de##.hkw-cookie-consent
+filmelier.com##.lgpd
+domclick.ru##div[class*="CookieAlert"]
 !
 ! SCRIPT BLOCKING
 !
@@ -23945,6 +23952,7 @@ wpjslib-chunk-notification.js^
 ||ccm.entire-media.de/public/app.js$script
 ||piazza.cc/public/app.js$script
 /cbgCConsent.js
+||ccm.land24.de/app.js?apiKey$script
 /iubenda_cs$domain=~radiomontecarlo.net|~tomshw.it|~repubblica.it|~video.lastampa.it|~nablawave.com|~buondi.it|~tgcom24.mediaset.it|~mediasetinfinity.mediaset.it|~telerama.fr|~skuola.net
 /amp-user-notification-
 ||sn.sanoma.fi/js/sccm$script
