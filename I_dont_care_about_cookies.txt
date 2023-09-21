@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 349.202309200834
+! Version: 349.202309211030
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 20 Sep 2023 08:34 UTC
+! Last modified: 21 Sep 2023 10:30 UTC
 !
 !
 ! GLOBAL RULES
@@ -7406,7 +7406,7 @@
 ##.gdprMessage:not(body):not(html)
 ##.cookies.is-visible:not(body):not(html)
 ###ccc > #ccc-notify
-~go-e.com,~canalplus.com,~hansapark.de##div[class*="CookieBanner"]:not([class*="page"]):not([class*="Layout"]):not(.app)
+~nova-web.de,~go-e.com,~canalplus.com,~hansapark.de##div[class*="CookieBanner"]:not([class*="page"]):not([class*="Layout"]):not(.app)
 ##.card-cookie-notice
 ###smart-cmp-host
 ###gdprsticky
@@ -8296,7 +8296,7 @@
 ##.footer__gdrp:not(body):not(html)
 ##.note_cookie:not(body):not(html)
 ##.sqs-cookie-banner-v2
-~libelium.com,~music.yandex.ru,~music.yandex.com,~totalcasino.pl##.gdpr-popup:not(body):not(html)
+~libelium.com,~totalcasino.pl##.gdpr-popup:not(body):not(html)
 ##.gdpr-compliance-wrapper
 ~naekranie.pl###modal-rodo-info
 ###modal-rodo-info ~ .reveal-modal-bg
@@ -13717,6 +13717,9 @@
 ##.iai_cookie
 ###cookie-opt-in-overlay
 ###cookieconsentwarning
+###klaro > .klaro > .bg
+###data-tracking-banner
+##.fixed[data-cy*="cookie-notice"]
 !
 ! CUSTOM RULES
 !
@@ -17056,7 +17059,6 @@ domuswire.com###privacy, .privacy
 mieszko.pl###privacy, .privacy
 spectrumled.pl###privacy, .privacy
 portal.dsv.com###privacy, .privacy
-boxtal.com###privacy, .privacy
 karmy.com.pl###privacy, .privacy
 prevac.eu###privacy, .privacy
 bmjv.de###privacy, .privacy
@@ -18834,7 +18836,6 @@ specialarad.ro###cookies
 designingbuildings.co.uk###overlay-designingBuildingsAnywhere
 unitedway.org##.footer-notification
 epri.com##.cookie-sheet, .md-scroll-mask
-weerstatistieken.nl###darker
 silicagel.de##body > div:not([id]):not([class])
 verkuendung-bayern.de##.vkp-cookie-message
 clipartlogo.com##.navbar-qards
@@ -21273,7 +21274,6 @@ packster.de##.page-overlay
 hdg.de###cookiebg, #hdg-cookie-accept
 zeitzeugen-portal.de###cookiebg, #hdg-cookie-accept
 assurland.com###consentManagementPlatform, .modal-backdrop
-web.dev##web-snackbar
 kraemer.de###consentLayer
 landkreis-ostallgaeu.de###cookie
 gordonua.com##.cookie-label
@@ -21347,10 +21347,6 @@ broadbandspeedtest.org.uk##.cm-wrapper
 loveholidays.com##.c-o--
 reinigungsberater.de###cCoverlay, #cC
 monster-soluce.com###cookies-pop
-buecher.de###klaro
-nur-positive-nachrichten.de###klaro
-nunido.de###klaro
-buecher-sale.de###klaro
 tablesgenerator.com##.consent-dialog
 hotellhudik.se###mb_modules_popups_Container
 bankinter.com###capabkpolicyInicial
@@ -21707,7 +21703,6 @@ okdo.com##div[class*="c-notification-bar"]
 wimhofmethod.com###appHeader > div:first-child:not(:only-child)
 interion.cz##.mcc-modal
 compuprint.com###pryck
-pagespeed.web.dev##c-wiz > div > div > div > div[jscontroller][jsaction$=");"]
 scoresaber.com##.sticky-footer
 hotcleaner.com##footer > div > div:first-child
 kobo.com##body > div[id^="cki"]
@@ -22525,8 +22520,6 @@ motek.no##.js-gdpr
 coloursofistria.com##.altcm-fixed
 koh-i-noor.cz###EuConsentV2, .modal-backdrop
 levnesporaky.cz###EuConsentV2, .modal-backdrop
-idowa.de##.needsclick
-foraum.de##.needsclick
 miravia.es##body > .container
 startapro.hu###cookie
 barenbrug.fr##vk-cookie-manager
@@ -22769,6 +22762,7 @@ vente-unique.it###vu_consent
 vente-unique.pl###vu_consent
 vente-unique.ch###vu_consent
 vente-unique.pt###vu_consent
+vente-unique.es###vu_consent
 vente-unique.lu###vu_consent
 venta-unica.com###vu_consent
 kauf-unique.de###vu_consent
@@ -22899,6 +22893,13 @@ wsa.gov.pl###bipCookieModal
 hkw.de##.hkw-cookie-consent
 filmelier.com##.lgpd
 domclick.ru##div[class*="CookieAlert"]
+web.dev##web-snackbar
+nur-positive-nachrichten.de###klaro
+nunido.de###klaro
+regioactive.de###dialogconsent, .reveal-modal-bg
+pernambucanas.com.br##div[class*="CookieContent"]
+dotnetconf.net###cookie-consent
+weerstatistieken.nl###ccWrapper
 !
 ! SCRIPT BLOCKING
 !
@@ -23692,7 +23693,7 @@ cmp-loader.choice.faktor.io
 cmp.osano.com
 ||vlitag.com/plugins/cmp$script
 cmp.md-nx.com
-cdn.opencmp.net$domain=~foraum.de|~idowa.de
+cdn.opencmp.net
 cmp.faktor.mgr.consensu.org$domain=~consent.talpanetwork.com
 ||gravito.net/cmp$script
 cdncmp.richaudience.com
