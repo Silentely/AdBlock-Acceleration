@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 349.202309211030
+! Version: 349.202309250709
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 21 Sep 2023 10:30 UTC
+! Last modified: 25 Sep 2023 07:09 UTC
 !
 !
 ! GLOBAL RULES
@@ -251,7 +251,7 @@
 ###cookies_container
 ###cookiePromptWrapper
 ###szcookiewrp
-~cdu-fraktion.berlin.de###cookie-disclaimer:not(.modal)
+~cdu-fraktion.berlin.de###cookie-disclaimer:not([class*="modal"])
 ##.cookieConfirmation:not(body):not(html)
 ###cookiepop
 ###Cookie-Append
@@ -447,7 +447,7 @@
 ##.noticebody .annoying
 ##.cl_bar:not(body):not(html)
 ###ws-cookie-consent-msg
-###accept_cookies:not(button):not([class*="btn"])
+###accept_cookies:not(button):not([class*="btn"]):not(.modal)
 ##.blockUIbody .blockOverlay
 ###icanhascookie
 ~wgv.de###cookie_overlay:not(.modal)
@@ -10082,7 +10082,7 @@
 ##.js-content > div[automation="cookie-consent"]
 ##.fixed[x-data*="CookieBanner()"]
 ###plg-cookienotice.visible
-###privacy-policies-banner.privacy-policies-banner
+###cookie-alerts
 ###eut-privacy-bar[style*="block"]
 ##.dv-responsive div[data-bind*="CookiesInfo"]
 ##.cookieBubble[style*="fixed"] > .cb-wrapper
@@ -13720,6 +13720,7 @@
 ###klaro > .klaro > .bg
 ###data-tracking-banner
 ##.fixed[data-cy*="cookie-notice"]
+###__next div[data-testid*="cookie-permission"]
 !
 ! CUSTOM RULES
 !
@@ -20351,7 +20352,6 @@ swoodie.de##.module-wrap[data-label="Popup"].showPopup, .gf-popupOverlay
 laver.co.uk###cookies
 factoryoficina.com##.st_notification_wrap
 digitalland.de###ccm
-getir.com###__next > [class*="Drawer"]
 teambank.de##cookie-layer, .cdk-overlay-container
 kupzidle.cz##body > .shadow
 campbellsoup.co.uk##.cookies
@@ -20953,7 +20953,6 @@ afar.com##.preloaded_lightbox[style*="overflow"]
 ulefone.com##.footermsg
 unicajabanco.es##.CC05:not(.cc05-privada) #cookieModalStart
 detmir.ru###app-container footer ~ div
-br.de###__next > .fixed, #__next [class*="CookieContainer"]
 petz.com.br##.policy-warning-banner
 unwetterhilfen.de##.App > div > .banner
 screenbud.com##.ccWrapper
@@ -22613,7 +22612,6 @@ gcore.com##gcore-cookies-settings
 smallworldfs.com###barCookies
 euronics.hu##.cookie-overLay
 asna.ru##div[class*="modalCookies"]
-aimtuto.com###ckWrap
 post.ch##.ppm-cookie-banner
 jtl-software.de###consent
 nooz-optics.com###gatsby-focus-wrapper > .fixed.bottom-0
@@ -22900,6 +22898,12 @@ regioactive.de###dialogconsent, .reveal-modal-bg
 pernambucanas.com.br##div[class*="CookieContent"]
 dotnetconf.net###cookie-consent
 weerstatistieken.nl###ccWrapper
+fameplay.tv##.privacy-wrapper
+praxisplan.at###consent-modal
+isybank.com##.cookie-modal, .modal-backdrop
+aimtuto.com###ckWrap
+techedubyte.com###ckWrap
+lvgmc.lv##.cookies__container
 !
 ! SCRIPT BLOCKING
 !
@@ -23453,6 +23457,7 @@ cookies.ptj.de
 /gdpr-cookie-consent.min.js
 /cookieConsentScript
 /cookienoticepro.script.js
+/dsgvo/js/cookiemonster
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
 wpjslib-chunk-consent-form.js^
@@ -23832,14 +23837,38 @@ consensu.infor.pl
 /rodo_rmf
 /popup/rodo.min.js
 /rodo/rodo.js
-||www.capitol.fr/streaming/cnil/cnil.js$script
-||prismamediadigital.com/cnil.min.js$script
-||newsletters.ftv-preprod.fr/cnil/js$script
-/Dock/DockContent/Cards/GDPRCard/index.js
-nanoGDPR.min.js^
-/GDPR/GDPR.js
-/GDPRPanelComponent
+||sn.sanoma.fi/js/sccm$script
+/ccm19.js
+||ccm19.de/app/public/app.js$script
+ccm19.vucx.de
+||ccm.ceasy.de/public/app.js$script
+/ccm/public/app.js?apiKey
+||ccm19.de/app.js$script
+/ccm19os/*
+/ccm19/app.js
+/ccm19_$domain=~ccm19.de
+/ccm19/public/*
+/ccm/app.js?apiKey
+ccm19.dsg-schweiz.ch
+||epccm19.com/app.js$script
+||ccm.entire-media.de/public/app.js$script
+ccm19.boxspring-welt
+||ccm.land24.de/app.js?apiKey$script
+||ccm.f1st.de/app.js?apiKey$script
+/cc.js?renew=false&referer=www.rs2.de
+||dam.bbcchannels.com/m/2fmpg/js/outside-iframe.js$script
+||dam.bbcchannels.com/m/2fmph/js/outside-iframe.js$script
+||cct-pubweb.com/ccpa$script
+||wpcc.io/lib$script
+||cc.dalten.cz/ccJs$script
+||resourcesurw.azureedge.net/js/cc55.js$script
+/ccnst/ccbundle.min.js
+||cc.mpa-web.de/public/app.js$script
+/users/ccbundle2.min.js
+||cc.diewebsitemacherei.de/app.js$script
+||piazza.cc/public/app.js$script
 ||tdn.r42tag.com/lib/ut$script
+||prismamediadigital.com/cnil.min.js$script
 ||c.betrad.com/pub/third.js$script
 fundingchoices.google.com
 fundingchoicesmessages.google.com$domain=~rtl.hr|~kledgeb.blogspot.com|~fernsehserien.de|~bbc.com|~iol.pt|~stooq.pl|~stooq.com|~adshnk.com
@@ -23858,12 +23887,9 @@ a.svtrd.com$domain=~ns.nl
 ||borderfree.com/v1/dist/cbt.js$script
 ||cdn.justuno.com/mwgt$script
 ||caringzinc.com/v2$script
-||dam.bbcchannels.com/m/2fmpg/js/outside-iframe.js$script
-||dam.bbcchannels.com/m/2fmph/js/outside-iframe.js$script
 cdn.truendo.com
 ||intelligentscissors.com/v2$script
 ||cdn.adnuntius.com/adn.dmp.js$script
-||cct-pubweb.com/ccpa$script
 widgets.legalmonster.com
 nexus.ensighten.com
 ||einfachonline.com/sid$script
@@ -23891,31 +23917,38 @@ api.brookiebot.com
 /colossalchance.com
 ||unpkg.com/orejime$script
 /aliasanvil.com
-||epccm19.com/app.js$script
 ||api.byscuit.com/data/client$script
 ||pcz.pl/static/js/moo-cooker.js$script
 /eucd/eucd.min.js
 ||cinabre.sudoc.abes.fr/psi_gui/js/bandeau.js$script
+||www.capitol.fr/streaming/cnil/cnil.js$script
 /euopties.js
 /cknotiz.js
+/Dock/DockContent/Cards/GDPRCard/index.js
 /common/disclaimer/load.min.js
 wpjslib-chunk-notification.js^
+nanoGDPR.min.js^
 /js/cpb.min.js
 /utag.tagsOptOut.js
 ||app.termly.io/embed.min.js$script
 ||static.wpolityce.pl/rhododendron/js/terms_of_service.js$script
+||newsletters.ftv-preprod.fr/cnil/js$script
+/js/components/es6/PrivacyPolicy
 /info_cook.js
 /js/datenschutz.js
+||js.hs-analytics.net/analytics$script
 ||c.sd1.fr/cn/cn.min.js$script
+||jsdelivr.net/wp/wp-slimstat$script
 ||zgody.infor.pl/build/assets/js/main.js$script
+/js/dsvgo.
 ||static.s-sfr.fr/stats/sbtF.js$script
 /dsgvo_2018.js
 /js/dsgvo.js
 ||partner.vxcp.de/_js/vxcp_Common.js$script
-/cc.js?renew=false&referer=www.rs2.de
 /twcdisclaimer.js
 /jqueryCL.min.js
 /trustArcHelper.js
+/GDPR/GDPR.js
 ||widget.clym.io/clym.js$script
 ||htmedia.in/analytics-js/dap.js$script
 /ufti/uftiLoader.min.js
@@ -23926,52 +23959,35 @@ wpjslib-chunk-notification.js^
 ||samtykker.agdermedia.no/agent.js$script
 /PopUpPriva/PopPrivacymin.js
 ||dialogue.sp-prod.net/messagingWithoutDetection.js$script
+||htmedia.in/analytics-js$script
 /datenschutz.min.js
-/ccm19.js
 /app.dsgvo.min.js
 /trigoAboveBox.jquery.js
 /dsgvoinit.min.js
 /styleguide/mxqasqco.js
+/js/rgpd/*
 /tvp-tcfapi.js
-||ccm19.de/app/public/app.js$script
-||ccm.ceasy.de/public/app.js$script
-/ccm/public/app.js?apiKey
-||ccm19.de/app.js$script
+/avia-bootstrap/js/klaro/*
 /wwwschutz.min.js
-/ccm19/app.js
 /dsvgobanner.js
 /wecoma-lite.js
-||resourcesurw.azureedge.net/js/cc55.js$script
-/ccnst/ccbundle.min.js
-||cc.mpa-web.de/public/app.js$script
 /klaro/klaro-pe.js
-/users/ccbundle2.min.js
+/js/tarteaucitron
 /pandectes-core.js
 /orejime.js
-/ccm/app.js?apiKey
-||cc.diewebsitemacherei.de/app.js$script
-||ccm.entire-media.de/public/app.js$script
-||piazza.cc/public/app.js$script
+||jsdelivr.net/npm/cookify$script
 /cbgCConsent.js
-||ccm.land24.de/app.js?apiKey$script
 /iubenda_cs$domain=~radiomontecarlo.net|~tomshw.it|~repubblica.it|~video.lastampa.it|~nablawave.com|~buondi.it|~tgcom24.mediaset.it|~mediasetinfinity.mediaset.it|~telerama.fr|~skuola.net
 /amp-user-notification-
-||sn.sanoma.fi/js/sccm$script
 /api/rest/settings/public?fields=endUserAgreement
 ||congstar-media.de/fileadmin/cpolicy/$script
 connect.danone.es
-/js/components/es6/PrivacyPolicy
 ||codice.shinystat.it/cgi-bin/getcod.cgi$script
 ||whitepress.pl/common/pltk/$script
-||js.hs-analytics.net/analytics$script
-||jsdelivr.net/wp/wp-slimstat$script
-/js/dsvgo.
 /Flurrybox_EnhancedPrivacy/*
 ||static.axept.io/sdk$script
 /tarteaucitron.css
 notice.sp-prod.net
-||htmedia.in/analytics-js$script
-||wpcc.io/lib$script
 tag.goadopt.io
 /typo3conf/ext/supi/*
 ||omnigrafitalia.it/policy$script
@@ -23979,16 +23995,12 @@ tag.goadopt.io
 /koriolis_gtm/theshield
 ||fourmizz.fr/rgpd$script
 ||hu-manity.co/hu-banner$script
-/js/rgpd/*
 /module-rgpd/*
+/GDPRPanelComponent
 /bloc/django/ckcsfrg
-ccm19.vucx.de
-/avia-bootstrap/js/klaro/*
 ||exm-medien.de/cman$script
 ||e2d-cms.de/cman$script
 /usercentrics-sdk/*
-||cc.dalten.cz/ccJs$script
-/ccm19os/*
 ||transcend.io/cm/$script,domain=~hubblecontacts.com
 /avisopcdidomi$domain=~as.com
 webcache.datareporter.eu
@@ -23996,17 +24008,11 @@ webcache-eu.datareporter.eu
 cdn.realpeoplemedia.co.uk
 /assets-usercentrics/uc-version
 /Sticky2,ConsentManager
-/ccm19_$domain=~ccm19.de
 static.clickskeks.at
 ||aida.de/assets/coobann/$script
-/js/tarteaucitron
 /ModalEngage,ConsentManager,Sticky
 /ConsentManager,Sticky
-/ccm19/public/*
 /coolkies-walkies/*
-ccm19.dsg-schweiz.ch
-||jsdelivr.net/npm/cookify$script
-ccm19.boxspring-welt
 /consumer/cookie/client$domain=bt.com
 /frontend/ajax/cookies$domain=romstal.ro
 /rodo-agreement-$domain=gremimedia.pl|zw.com.pl
@@ -24225,7 +24231,7 @@ consent*$domain=t-mobile.cz
 cc.labu24.de$domain=labu24.de
 cookies.ptj.de$domain=ptj.de
 consent.autopflege24.net$domain=autopflege24.net
-privacy-center.org$domain=elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr|muyinteresante.es|t-mobile.pl|autocasion.com|europasur.es|pisos.com|lagacetadesalamanca.es|meilleure-innovation.com|huelvainformacion.es|futura-sciences.com|elpais.com|diariodejerez.es|leonoticias.com|france24.com|retinatendencias.com|eldiadecordoba.es
+privacy-center.org$domain=elconfidencial.com|diariodecadiz.es|lavozdegalicia.es|publico.es|diariodesevilla.es|eleconomista.es|granadahoy.com|malagahoy.es|diariodealmeria.es|lavozdeasturias.es|culturainquieta.com|segre.com|mappy.com|radioplayer.fr|goplay.be|lavoixdunord.fr|muyinteresante.es|t-mobile.pl|autocasion.com|europasur.es|pisos.com|lagacetadesalamanca.es|meilleure-innovation.com|huelvainformacion.es|futura-sciences.com|elpais.com|diariodejerez.es|leonoticias.com|france24.com|retinatendencias.com|eldiadecordoba.es|fameplay.tv
 /consent$domain=natune.net
 cookie-banner*$domain=studio3t.com
 /cookies_2020$domain=pensionlisboa.com
