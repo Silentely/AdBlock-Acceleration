@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 350.202310201014
+! Version: 350.202310230809
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 20 Oct 2023 10:14 UTC
+! Last modified: 23 Oct 2023 08:09 UTC
 !
 !
 ! GLOBAL RULES
@@ -11436,7 +11436,7 @@
 ###ecm_cookieConsentBanner
 ~sunny.co.uk##.cookie-acceptance-modal
 ##.showCookiebanner
-~fleurop.de,~esm-computer.de##.cookie-permission-container
+~fleurop.de,~esm-computer.de,~calmwaters.de##.cookie-permission-container
 ##.rstbox[data-title*="RODO"]
 ##.rstbox[data-title*="RODO"] ~ .rstbox_overlay
 ##.cookie_banner_background
@@ -12333,7 +12333,7 @@
 ##.c-cookie-consent-modal
 ###mhp-cl.mhp-cl
 ##.cookie-notice-overlay
-###dcCookieHelper--bg
+##.eu-privacy-overlay
 ##.cookie-settings-band
 ###gdpr-disclaimer
 ##.acceptCookiesPanel
@@ -13725,7 +13725,8 @@
 ###toast-cookie-info
 ##.fd-consent-main
 ##gdpr-policy-banner
-##.eu-privacy-overlay
+##.cookie-bottom-popup
+##.cookies-advanced-consent-manager.minimized
 !
 ! CUSTOM RULES
 !
@@ -14014,7 +14015,6 @@ prezzoforte.it###bottombar
 toysrus.pt##body > div:not([id]):not([class])
 paivyri.fi##body > center > table[style*="width:100%"]
 netcarshow.com###cNag
-euromaster.de###lytic_layer, #lytic_askbox
 netvaerkslokomotivet.dk###ck_row
 codziennikfeministyczny.pl###bazinga-muffin-container
 box10.com###cwarn-box
@@ -16056,7 +16056,6 @@ jdvhotels.com###ccs-notification
 delock.de###cookie_private
 neoprofs.org###page-footer ~ div
 classic-trader.com###jGrowl
-thomsonreuters.com##.dismissible-banner, .pl_announcements
 trafikverket.se###ctl00_Content_EmptyPage_CoockieInformation_CookieContainer
 openweathermap.org###stick-footer-panel
 starressa.com###modal-home
@@ -19462,7 +19461,6 @@ brandwatch.com###bw-cookie-sys-active
 kunstsammlung.de###cookie
 eredivisie.pl##[id^="viewCookies"]
 ergon.nl###ergcb
-carinthia.eu##.dcCookieModal
 indigogames.xyz##.toast
 costain.com##.cookies
 winfuture.mobi###message_id
@@ -22601,7 +22599,6 @@ mubert.com##.notification-manager
 nordvpn.com##astro-island[props*="cookieWidget"]
 e-food.gr###smartbanner-container + div > div:last-child:not(:only-child)
 wszystko.pl##wpl-cookies
-perplexity.ai##main > div > .fixed.bottom-sm
 deepl.com###dl_cookieBanner
 citilink.ru###__next main ~ div
 arsys.es##.drop[name="cookies"]
@@ -22918,6 +22915,10 @@ restaurantdepot.com###consent-dialog
 brp.com###consent-dialog
 schott.com###cookies
 anker.com##div[class*="FeatureBar"]
+carinthia.eu##.dcCookieModal
+hh.ru##div[data-qa*="lux-container"] > div[class*="wrapper_static-mobile"]
+funmail2u.de##td > #message
+perplexity.ai##.fixed.bottom-sm.left-sm.bg-background
 !
 ! SCRIPT BLOCKING
 !
@@ -23797,6 +23798,7 @@ jquery.smartCookie.min.js^
 /standaloneModalCookie.js
 /Detco_CookieBanner/*
 /vfConsentCookies
+/Cookie-Interfrog/*
 quantcast.mgr.consensu.org$domain=~sourceforge.net|~tumblr.com|~wpolityce.pl|~player.livespotting.com|~indy100.com|~vi.nl|~independent.co.uk|~express.co.uk|~joe.ie|~joe.co.uk|~avsforum.com|~nfl.com|~filmvandaag.nl|~gamesradar.com|~iol.pt|~spiele-kostenlos-online.de
 gemius.mgr.consensu.org
 sddan.mgr.consensu.org
@@ -23936,6 +23938,7 @@ api.brookiebot.com
 ||unpkg.com/orejime$script
 /aliasanvil.com
 ||api.byscuit.com/data/client$script
+||cdn.lawwwing.com/widgets$script
 ||pcz.pl/static/js/moo-cooker.js$script
 /eucd/eucd.min.js
 ||cinabre.sudoc.abes.fr/psi_gui/js/bandeau.js$script
