@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 350.202310230809
+! Version: 350.202310250826
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 23 Oct 2023 08:09 UTC
+! Last modified: 25 Oct 2023 08:26 UTC
 !
 !
 ! GLOBAL RULES
@@ -13727,6 +13727,7 @@
 ##gdpr-policy-banner
 ##.cookie-bottom-popup
 ##.cookies-advanced-consent-manager.minimized
+###eu-cookie-compliance-overlay
 !
 ! CUSTOM RULES
 !
@@ -18848,7 +18849,6 @@ onassis.org###js-content > div > .relative > .bg-blue
 puppet.com##.pm-gdpr, .puppet-cookie-banner
 freudtools.com##.x-consent
 sanook.com###__next > div > footer ~ div
-atu.de###App .notificationBar
 magio.tv###root > div[style]:not([class]):not([id])
 udemy.com##.ud-component--footer--eu-cookie-message
 financialexpress.com##div[id^="google_ads_iframe"][id*="GDPR"]
@@ -22615,7 +22615,6 @@ helthjem.no##.schibsted-bar
 sunglasses-shop.bg##.notification-wrapper
 lazoptics.gr##.new-cookie-supercontainer
 eyeons.com##.alternis-cookie
-smartthingsfind.samsung.com##.fixed.bottom-0
 book.io##.foobar-cookie
 poool.tech###app > .fade-in-enter-done
 poool.fr###app > .fade-in-enter-done
@@ -22834,7 +22833,6 @@ mojandroid.sk###cookie-law-info-bar
 procurator.com##py-anonymous-consent-management
 velotaf.com###modal_cookies
 nendaz.org###disclaimerCtn
-samsung.com##.helptips__container, #cookie_component, .js-smtc-cookie, #bgc-cookie-popup
 mediamarkt.es###gdpr-cookie-layer
 mediamarkt.pl##.cookie-box
 ostsee24.de##.consent-box
@@ -22919,6 +22917,9 @@ carinthia.eu##.dcCookieModal
 hh.ru##div[data-qa*="lux-container"] > div[class*="wrapper_static-mobile"]
 funmail2u.de##td > #message
 perplexity.ai##.fixed.bottom-sm.left-sm.bg-background
+pkgs.org###consent_notice
+smartthingsfind.samsung.com##.fixed.bottom-0
+samsung.com##.helptips__container, #cookie_component, .js-smtc-cookie, #bgc-cookie-popup
 !
 ! SCRIPT BLOCKING
 !
@@ -24332,6 +24333,7 @@ poool.fr/access.min.js$script,domain=spektrum.de
 /cmp_puk.js$domain=commerzbank.de
 /scmp-int.js$domain=mapy.cz
 privacy-mgmt.com$domain=immobilien.derstandard.at
+/js/privacy$domain=atu.de
 !
 ! FILTERLIST ONLY
 !
