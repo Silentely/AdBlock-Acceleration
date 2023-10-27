@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 350.202310250826
+! Version: 350.202310271141
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 25 Oct 2023 08:26 UTC
+! Last modified: 27 Oct 2023 11:41 UTC
 !
 !
 ! GLOBAL RULES
@@ -13310,7 +13310,7 @@
 ##.cookie-snack.show[x-data="CookieSnack"]
 ##.tvcmscookies-notice
 ##body:not([style*="hidden"]) .cmpboxWelcomeGDPR
-~snowthority.com###usercentrics-button
+~wir-machen-druck.de###usercentrics-button
 ###cookies-consent-banner
 ##.ConsentsBannerOverlay
 ###xx-cookies-plugin
@@ -13728,6 +13728,7 @@
 ##.cookie-bottom-popup
 ##.cookies-advanced-consent-manager.minimized
 ###eu-cookie-compliance-overlay
+###gpe-cookies-warn
 !
 ! CUSTOM RULES
 !
@@ -19943,7 +19944,6 @@ hot.dk###scw
 stadt-galerie-hameln.de###mdl-overlay
 schaeffler.fr##.scha__cookie-banner
 auchan.ru###root > div > footer ~ div
-migusto.migros.ch##[data-js-module*="cookie-banner"]
 hbs.hu###sapper > footer
 ids-imaging.com###privacycheck
 jateknet.hu###profiling-accept
@@ -21645,7 +21645,6 @@ kity-rouen.com###cookie
 bhaskar.com###db-portal ~ div:not([style]), div[id*="gdpr"], .gdrpOverlay
 worldjournal.com###privacy-agreement
 nsone.net###gdpr-consent-modal
-qiwi.com###app > div > div:first-child
 essayshark.com##.policies
 samsonite.ro##.mainBlack
 annuaire-inverse-france.com##.cookies
@@ -22920,6 +22919,7 @@ perplexity.ai##.fixed.bottom-sm.left-sm.bg-background
 pkgs.org###consent_notice
 smartthingsfind.samsung.com##.fixed.bottom-0
 samsung.com##.helptips__container, #cookie_component, .js-smtc-cookie, #bgc-cookie-popup
+migros.ch##[data-js-module*="cookie-banner"]
 !
 ! SCRIPT BLOCKING
 !
@@ -23858,6 +23858,7 @@ consensu.infor.pl
 /rodo_rmf
 /popup/rodo.min.js
 /rodo/rodo.js
+/rodo-agreement-popup.min.js
 ||sn.sanoma.fi/js/sccm$script
 /ccm19.js
 ||ccm19.de/app/public/app.js$script
@@ -24001,6 +24002,7 @@ nanoGDPR.min.js^
 /ckpl-webc.min.js
 /js/bundle/GDPRConsent/*
 /js/klaro-no-
+/tcfapi/tcfapi.umd.js
 /iubenda_cs$domain=~radiomontecarlo.net|~tomshw.it|~repubblica.it|~video.lastampa.it|~nablawave.com|~buondi.it|~tgcom24.mediaset.it|~mediasetinfinity.mediaset.it|~telerama.fr|~skuola.net
 /amp-user-notification-
 /api/rest/settings/public?fields=endUserAgreement
