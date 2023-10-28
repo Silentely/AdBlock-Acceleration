@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202310271632
+! Version: 202310272259
 ! Title: EasyPrivacy
-! Last modified: 27 Oct 2023 16:32 UTC
+! Last modified: 27 Oct 2023 22:59 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -25,7 +25,7 @@
 &EventType=DataDealImpression&
 &EventType=Impression&
 &hitType=pageview&
-&http_referer=$script,xmlhttprequest,domain=~facebook.com|~jobscore.com
+&http_referer=$script,xmlhttprequest,domain=~biletomat.pl|~facebook.com|~jobscore.com
 &refer=http$script
 &t=pageview&
 -adobe-analytics.
@@ -1776,7 +1776,6 @@
 /plugins/vdz-google-analytics/*
 /plugins/visitors-traffic-
 /plugins/wordfence/visitor.php?
-/plugins/wp-monero-miner/*
 /pm/pixel.
 /pmc-cxense.js
 /pointeur.gif?
@@ -2455,46 +2454,36 @@
 /tracking/log?
 /tracking/networktrackingservlet
 /tracking/open?
-/tracking/pageview.
 /tracking/pixel.
 /tracking/referrer?
 /tracking/thirdpartytag.js
 /tracking/trackpageview
 /tracking/user_sync_widget?
 /tracking/views/*
-/tracking/xtcore.
-/tracking202/*
+/tracking/xtcore.js
+/tracking202/static/landing.php
 /Tracking?id=
 /tracking?referrer
 /Tracking?t=
 /tracking?vs=
-/tracking_ajax.
-/tracking_frame_
-/tracking_headerJS_
 /tracking_id_
-/tracking_iframe.
-/tracking_pix.
 /tracking_pixel
 /tracking_unitary/*
-/trackingab?
 /trackingCode-
 /trackingCode.js
-/TrackingCookieCheck.
-/TrackingCookieCheck?
 /trackingcookies.
 /trackingDTM.js
 /trackingEventsBlocks/*
-/trackingFooter.
+/trackingFooter.js
 /trackingGA.js
-/TrackingHandler.
-/trackingheader.
+/TrackingHandler.js
+/trackingheader.js
 /trackingImpression/*
 /trackingp.gif
 /trackingPixel.
 /TrackingPixel/*
-/trackingScriptLoader.
 /trackingTools.
-/trackingVtm.
+/trackingVtm.js
 /trackIt.js
 /trackit.php?
 /trackit.pl?
@@ -2503,11 +2492,11 @@
 /tracklog.
 /trackmerchant.js
 /trackmvisit?
-/tracknat.
 /trackopen.cgi?
 /trackPage.js?
 /trackpagecover?
-/trackpageview.
+/trackpageview.js
+/trackpageview.php
 /trackPageView/*
 /TrackPageview?
 /trackpixel?
@@ -2523,10 +2512,8 @@
 /trackvisit?
 /TrackVisitors/*
 /TrackWebPage?
-/traffic-source-cookie.
-/traffic-source-cookie/*
+/traffic-source-cookie.min.js
 /traffic/status.gif?
-/traffic/track^
 /traffic_record.php?
 /TrafficCookie.js
 /traffictrade/*
@@ -2738,7 +2725,9 @@
 /wp-content/tracker.js
 /wp-js/analytics.js
 /wp-monero-miner-class.js
+/wp-monero-miner-util.min.js
 /wp-monero-miner.js
+/wp-monero-miner.min.js
 /wp-slimstat.js
 /wp-slimstat.min.js
 /wp-statistics-tracker.min.js
@@ -4528,6 +4517,7 @@ _mongo_stats/
 ||haveamint.com^$third-party
 ||hbwrapper.com^$third-party
 ||heapanalytics.com^$third-party
+||heatmap.com^$third-party
 ||heatmap.it^$third-party
 ||heatmap.services^$third-party
 ||hellosherpa.com^$third-party
@@ -8763,6 +8753,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||stat.4u.pl^$third-party
 ||stat.pl^$third-party
 ||tagcdn.com^$third-party
+||trafficscanner.pl^$third-party
 ||volvelle.tech^$third-party
 ||way2traffic.com^$third-party
 ! Portuguese
@@ -32901,6 +32892,7 @@ arketing.indianadunes.com^
 @@||wsj.net/iweb/static_html_files/cxense-candy.js$script,domain=marketwatch.com
 @@||www.ups.com/WebTracking/processInputRequest
 @@||xeroshoes.co.uk/affiliate/scripts/trackjs.js$~third-party
+@@||xfinity.com/stream/js/api/fingerprint.js$~third-party
 @@||yottaa.net^$script,domain=containerstore.com|hannaandersson.com
 @@||zoominfo.com/c/amplitude-js$script,~third-party
 ! ! amplitude.com/libs
