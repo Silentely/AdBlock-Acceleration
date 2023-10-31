@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: vJrvEPM1wr07WdZWJq3P+Q
+! Checksum: lZex7qRTXc/eV03kDBl2qg
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202310310206
-! Last Modified: 2023年10月31日 02:06
+! Version: 202310310825
+! Last Modified: 2023年10月31日 08:25
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -2581,6 +2581,14 @@ newduba.cn###jq_youxi
 ||zcpsc.top^
 ||zents2.top^
 ||zjdruhn.xyz^
+||gmx37.top^
+||gmx31.top^
+||durynslg.xyz^
+||bnnfvd.xyz^
+||nyvgbt.xyz^
+||hnkhgw.com^
+||bpbfymv.xyz^
+||iccjkn.icu^
 ||zzyy17.top^
 ||zzyy18.top^
 ||zzyy19.top^
@@ -11550,6 +11558,9 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzzyk.com/js/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+poedb.tw###head_toolbar + .text-center
+track718.com##.track-search-ad
+track718.com##.track-adsense-ad
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -17653,7 +17664,7 @@ android-doc.com,apk.tw,chaojizhibo.net,chtoen.com,dizhishengcheng.com,doitwell.t
 @@||piaotian.com/scripts/readindex/tongji.js
 @@||piccool.com/2home/phpAdsNew/
 @@||pinduoduo.com/advert/$~third-party
-@@||poedb.tw/js/
+@@||poedb.tw^*ad$script,~third-party
 @@||poedb.tw^$generichide
 @@||popart.hk/newweb/$generichide
 @@||pos.baidu.com^$script,domain=fxpan.com|htqyy.com
