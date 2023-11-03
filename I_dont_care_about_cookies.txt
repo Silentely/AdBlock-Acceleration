@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 350.202310271141
+! Version: 350.202311031030
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 27 Oct 2023 11:41 UTC
+! Last modified: 03 Nov 2023 10:30 UTC
 !
 !
 ! GLOBAL RULES
@@ -5402,7 +5402,7 @@
 ###cookies_confirm_box
 ##.v-app-PortletCookiesLaw
 ###NetsNOCookie
-##.x-cookies.b-system-dialog
+###gpe-cookies-warn
 ###bigcookies
 ##.wrap-cookies-desktop
 ###WeUseCookies
@@ -9936,7 +9936,7 @@
 ###cookies_msg_subwrapper
 ##.m-header-cookie-notice
 ###ctl00_ucDatenschutz
-##.b-system-dialog.is-open.is-cookies
+###eu-cookie-compliance-overlay
 ###LegalsCookieHinweis
 ##body > .cookie_messaging
 ##.privacy-policyis-sticky
@@ -13727,8 +13727,6 @@
 ##gdpr-policy-banner
 ##.cookie-bottom-popup
 ##.cookies-advanced-consent-manager.minimized
-###eu-cookie-compliance-overlay
-###gpe-cookies-warn
 !
 ! CUSTOM RULES
 !
@@ -18315,7 +18313,6 @@ dazn.com##aside[class*="cookie-banner"], div[class*="cookieDisclaimer"]
 reportz.io##.rp-CookiesConsent
 roche.com###myDataPrivacyPopup, .modal-backdrop
 zorgbaar.be##.notice
-unbound.com###js-cookies
 fallentitans.com##.footer
 refurbished.sk##.cookies
 player.pl##.modal-rodo
@@ -21827,8 +21824,6 @@ adulttime.com##.CookieConsent-Wrapper-BackgroundBox
 calendardate.com##footer ~ [style*="fixed"]
 visiontimes.com##.cookieNotice--isVisible
 boords.com###__next > .fixed[class*="bottom"]
-sparebank1.no###opt-in
-atlantic.money###opt-in
 autoteile-favorit.com##.ets_cookie_banber_block
 2gis.com.cy###confirm ~ div
 2gis.ru###confirm ~ footer
@@ -22174,7 +22169,6 @@ rejlers.fi##.shadow-form[data-controller*="cookies--alert"]
 scania.com##.m-cookie
 bestofdate.com###ww-blackout
 umm.nordpoolgroup.com###modal-overlay
-g2a.com##.agreements-container
 insightsforprofessionals.com##.cookie-container
 icex.es###cookies, #cookies-message-new
 slidelizard.com###cookie-info-dialog
@@ -22325,7 +22319,6 @@ wspay.info###open_preferences_center
 kiswe.com##.popup
 tietalent.com###__next footer ~ div
 vy.no###app-mount-point-for--cookie-banner
-ameli.fr###idPopupWARecueilConsentement
 vistula.pl###bottom-cookies
 spokojenypes.cz##.cookie-setting
 strato.de##.responsive-video > [class*="consent"]
@@ -22747,7 +22740,6 @@ cmo.de##.toast-container
 aripaev.ee##div[class*="CookieOverlay"]
 eurosender.com###__next > div[class*="container"]
 suncalc.org###cc--main
-tele2.nl###targetedPopupFrame
 brico-travo.com###modal-rgpd, .overlay::after
 partille-tool.se###CookiesSettings
 cleveroad.com###gatsby-focus-wrapper > main + div
@@ -22920,6 +22912,16 @@ pkgs.org###consent_notice
 smartthingsfind.samsung.com##.fixed.bottom-0
 samsung.com##.helptips__container, #cookie_component, .js-smtc-cookie, #bgc-cookie-popup
 migros.ch##[data-js-module*="cookie-banner"]
+walmart.ca##.sticky.nav-clickable-padded[role="banner"]
+unbound.com###js-cookies
+tele2.nl###targetedPopupFrame
+g2a.com##div[data-test-id="cookie-modal"], .agreements-container
+audacityteam.org##astro-island[component-url*="CookieConsent"]
+ameli.fr###idPopupWARecueilConsentement, #bandeauConsentement, #pageConsentement
+eiendomsmegler1.no###opt-in
+sparebank1.no###opt-in
+atlantic.money###opt-in
+sonusparadisi.cz###cookie-form
 !
 ! SCRIPT BLOCKING
 !
@@ -24039,6 +24041,7 @@ static.clickskeks.at
 /ModalEngage,ConsentManager,Sticky
 /ConsentManager,Sticky
 /coolkies-walkies/*
+/tagcommander/tc_
 /consumer/cookie/client$domain=bt.com
 /frontend/ajax/cookies$domain=romstal.ro
 /rodo-agreement-$domain=gremimedia.pl|zw.com.pl
@@ -24189,7 +24192,7 @@ cdn.civiccomputing.com$domain=metoffice.gov.uk|churchofengland.org|yodel.co.uk|t
 /iCookie/*$domain=h-supertools.com
 /he-consent/*$domain=dennree.de
 /uc_cookie$domain=gastro24.de|gastro-hero.de
-cmp.$domain=telerama.fr|courrierinternational.com|vodkaster.com|svd.se|histoire-et-civilisations.com|malservice.aftonbladet.se|vg.no|tv.nu|tek.no|finn.no|pent.no|godt.no|aftenposten.no|omni.se|e24.no|helthjem.no|minmote.no|aftenbladet.no
+cmp.$domain=telerama.fr|courrierinternational.com|vodkaster.com|svd.se|histoire-et-civilisations.com|malservice.aftonbladet.se|vg.no|tv.nu|tek.no|finn.no|pent.no|godt.no|aftenposten.no|omni.se|e24.no|helthjem.no|minmote.no|aftenbladet.no|klart.se
 brsimg.com/gdpr$script,domain=boursorama.com
 trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookie-banner$domain=hauptbahnhofcity.wien
@@ -24200,7 +24203,7 @@ trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookies$domain=next-immo.com
 /fnGdpr.js$domain=financer.com
 /cookie-layer.js$domain=mercedes-benz.io
-/messagingNoTcfApi.js$domain=svd.se|klart.se
+/messagingNoTcfApi.js$domain=svd.se
 /sygnal42-gdpr/*$domain=blitzrechner.de
 /CookieLayer.js$domain=multipower.com
 /cookie_management.js$domain=meteoradar.ch
