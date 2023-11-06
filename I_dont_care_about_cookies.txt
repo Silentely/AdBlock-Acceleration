@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 350.202311031030
+! Version: 350.202311060919
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 03 Nov 2023 10:30 UTC
+! Last modified: 06 Nov 2023 09:19 UTC
 !
 !
 ! GLOBAL RULES
@@ -310,7 +310,7 @@
 ##.gn-cookie-alert:not(body):not(html)
 ###ca_banner
 ###cookiecomplience
-~airbaltic.com,~portal.by.aok.de,~segeln-lernen.de,~bootsfuehrerschein.de,~sportbootfuehrerschein.de,~job-impulse.com,~studio-eight.com##.cookie-alert:not(body):not(html)
+~sp215.info,~airbaltic.com,~portal.by.aok.de,~segeln-lernen.de,~bootsfuehrerschein.de,~sportbootfuehrerschein.de,~job-impulse.com,~studio-eight.com##.cookie-alert:not(body):not(html)
 ~faircore4eosc.eu###cookiePopupContainer
 ###qb_cookie_consent_main
 ##.cookies_policy_container
@@ -3004,7 +3004,7 @@
 ##.cookiesMsg:not(body):not(html)
 ###block-zodiac-site-cookie
 ###prihvacamKolacice
-~audemarspiguet.com,~flybe.com###cookie-policy-modal
+##.cc-modal-backdrop
 ###polCookies
 ##.eprjcookie:not(body):not(html)
 ##.blockCookieNotification
@@ -8652,7 +8652,7 @@
 ~boschbad.nl##.cookieAgree:not(body):not(html)
 ##.cc[data-notice="cookies"]
 ##.abnormMediaCookieConsent
-###cookie-policy-modal ~ .modal-backdrop
+###cookieConsentMainContainer
 ##.bipPasekCookie:not(body):not(html)
 ###cookiesManagerFrameBox
 ###div_akceptacja
@@ -11610,7 +11610,7 @@
 ###cookie\ warning
 ###boxCookiesAccept
 ##.eu_cookie_wrapper
-~dodo.fr,~falter.at##.amgdprcookie-bar-template
+~dodo.fr##.amgdprcookie-bar-template
 ##.site-footer ~ .gdpr
 ##.iCookie.iCookie-whitered
 ##.q-cookie-consent__container
@@ -12783,8 +12783,8 @@
 ###klaro .cooki-modal
 ###__next div[class*="cookieBar"]
 ###cookie.olw-cookie
-###lightbox-cnil
-###lightbox-cnil ~ .dijitDialogUnderlayWrapper
+##.cookie-bottom-popup
+##.cookies-advanced-consent-manager.minimized
 ##.privacy-policy-consent
 ###privacyCookieDisclaimer
 ##.lgpd-message
@@ -13725,8 +13725,8 @@
 ###toast-cookie-info
 ##.fd-consent-main
 ##gdpr-policy-banner
-##.cookie-bottom-popup
-##.cookies-advanced-consent-manager.minimized
+###cookiesdirective-container
+##.cookiebar-overlay
 !
 ! CUSTOM RULES
 !
@@ -21720,8 +21720,6 @@ z4u.zurich.com.pt##.CookiesBox
 dreamdoors.co.uk##.cookie-acception
 unilae.com###cookies-modal
 jdsupra.com###cookiesModal
-vakantieveilingen.nl###__next > div > div:first-child
-vakantieveilingen.be###__next > div > div:first-child
 oase-teichbau.de##div[x-data*="app.components.cookieConsent"]
 endclothing.com###footer ~ div[style*="opacity"]
 petalmaps.com###app > [class*="privacy"]
@@ -21897,7 +21895,6 @@ proxyparts.de##.cookies
 proxyparts.es##.cookies
 proxyparts.pl##.cookies
 onderdelenlijn.nl##.cookies
-flip.pt###access
 culturecalling.com##.hiddenFields ~ .consent
 turismo.gal##.bandaAceptacion
 xunta.gal##.bandaAceptacion
@@ -22561,7 +22558,6 @@ gcore.com##gcore-cookies-settings
 smallworldfs.com###barCookies
 euronics.hu##.cookie-overLay
 asna.ru##div[class*="modalCookies"]
-post.ch##.ppm-cookie-banner
 jtl-software.de###consent
 nooz-optics.com###gatsby-focus-wrapper > .fixed.bottom-0
 ozon.ru##div[data-widget="cookieBubble"]
@@ -22922,6 +22918,12 @@ eiendomsmegler1.no###opt-in
 sparebank1.no###opt-in
 atlantic.money###opt-in
 sonusparadisi.cz###cookie-form
+vakantieveilingen.nl###__next > div[class*="variable"] > .MuiBox-root:first-child > .MuiBox-root:first-child
+vakantieveilingen.be###__next > div[class*="variable"] > .MuiBox-root:first-child > .MuiBox-root:first-child
+exitlag.com###cookie-exitlag
+citibankonline.pl###cookiePolicyBanner.show
+flip.pt###access
+audental.co.uk##.DmxlabsKooke
 !
 ! SCRIPT BLOCKING
 !
@@ -23663,6 +23665,7 @@ pdcc.gdpr.es
 /gdpr-transparency-apnxs/latest/gdpr-bundle.js
 /wp-content/plugins/lexon-gdpr/*
 /popin-gdpr.js
+/modules/gdprpro/*
 /media/plg_system_eprivacy$domain=~reshade.me
 ||recepttar.hu/js/privacy.js$script
 cmp.dmgmediaprivacy.co.uk$domain=~metro.co.uk
@@ -24297,7 +24300,7 @@ ccm.$domain=abload.de
 /ppp/js/permission-client$domain=mein.web.de|meinaccount.gmx.net|hilfe.gmx.net
 /cookies_utils.js$domain=uca.es
 /boldCookie_custom.js$domain=investice.cz
-/consent.$domain=strato.de|strato.nl|strato.fr|strato.es|strato.se|strato-hosting.co.uk
+/consent.$domain=strato.de|strato.nl|strato.fr|strato.es|strato.se|strato-hosting.co.uk|onlinestempel.ch
 /ujam_tracking/*$domain=ujam.com
 /utag.js$domain=louisvuitton.com|esprit.de|ing.es|stepstone.de|stepstone.at|santander.pl|swisscom.ch|prada.com|here.com|guloggratis.dk|privatebanking.hsbc.com|hsbc.pl|comparethemarket.com|tk-aerztefuehrer.de|eurostar.com
 /brabo-cookie/*$domain=brandpreventiewinkel.nl
