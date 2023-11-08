@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 350.202311060919
+! Version: 350.202311080932
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 06 Nov 2023 09:19 UTC
+! Last modified: 08 Nov 2023 09:32 UTC
 !
 !
 ! GLOBAL RULES
@@ -12678,7 +12678,7 @@
 ###pnlEUCookieBanner
 ##.cookie-modal__overlay
 ###__next div[class*="ConsentBanner"][class*="Wrapper"]
-###cookie-message ~ #footer::after
+##.cookie-message-overlay
 ##.container-cookie-consent
 ##.b-cookies-informer
 ##.cookie-usage-info
@@ -13564,7 +13564,6 @@
 ##.main-row > #footer ~ #divDisabledBackground
 ###bottom-cookie-banner
 ###ccm_notification_host
-###ccm_notification_host ~ .--pushpro_backdrop
 ##.cookie-alert-strip-container
 ##.content-cookie-hint
 ###root div[data-testid*="cookies-banner"]
@@ -13727,6 +13726,7 @@
 ##gdpr-policy-banner
 ###cookiesdirective-container
 ##.cookiebar-overlay
+##.cookie--banner
 !
 ! CUSTOM RULES
 !
@@ -14590,7 +14590,6 @@ aziendasicura.net###FrstCksDiv
 hardreset.hu###system-message, #system-messages, #system-message-container
 yogenfruz.pl##.shotimoo
 brdfinance.ro###cook, .cook
-ebok.jmdi.pl##.ui-notificationbar.top
 battlecam.com##.navigation-notify
 lma.eu.com##.banner, #banner
 crowdstrike.com###optInMessage
@@ -16044,7 +16043,6 @@ avaaz.org##.gdpr-block-cookies, .gdpr-block-privacy
 chilloutzone.net###cozConsentNugget
 supercell.com##.bs-site-alert
 themaven.net##.consent-ui
-coop.se##.js-personalInformationNotice
 broadcom.com##.ribbon-wrapper
 technischeunie.nl###footer-slideup-highlight-banner
 cryptokitties.co##.BottomBanner
@@ -16264,7 +16262,6 @@ mql5.com##.float-vertical-panel
 aeiou.pt###aeiou-barrier-wrapper
 thunderhead.com###js-thcb-banner
 alaraby.co.uk##.privacy_prompt
-befestigungsfuchs.de###disclaimer_bg
 malopolska.pl##div[id*="cookieinfoarticle"]
 foodkombi.de##.warning-app
 vivus.dk##.global-notification
@@ -20080,7 +20077,6 @@ brimfinancial.com##.statement_block
 schauspiel.koeln##.dataprotection
 wedoogift.com##wdgg-cookies-preferences-banner
 buffer.com###__next > div > [class*="Banner"]
-enercoop.fr###cookieLab
 hifi-schluderbacher.de###cookies-modal
 studentbeans.com##body > div[data-hypernova-key^="Pages"] > div:not([style])
 rspb.org.uk##.cookie-preferences
@@ -20105,7 +20101,6 @@ romertopfwinkel.nl###wizkom-js-app > .fixed
 hochparterre.ch##.cookie
 tvprograma.lt##.cookieBubble
 bcu.ac.uk##.action-bar
-e-coop.it##.cookies
 thermengutscheine.at###cmp-container
 mercateo.sk###header-popup-info
 fan.com.pl###cookie
@@ -20735,7 +20730,6 @@ gnosis.io###consent
 tingstad.com##.cookie-manager
 7plus.com.au###app > [class*="cookieContainer"]
 tuigroup.com###tui-cc
-apotal.de###footer::after
 focustaiwan.tw###jsGDPR
 verfassungsblog.de##.tve-leads-ribbon
 cbtnuggets.com###__next [class*="BannerContainer"]
@@ -20827,7 +20821,6 @@ lojabuettner.com.br##.eula-bg
 mobilarena.hu###rules-accept
 medspa.bg##.popup-policy
 elevensports.com###__next ~ div[class^="css"]
-chregister.ch##.ui-notificationbar
 synology.com##.syno_cookie_element
 r7.com##.toolkit-privacy-box
 skillbox.ru##.cookies
@@ -22924,6 +22917,16 @@ exitlag.com###cookie-exitlag
 citibankonline.pl###cookiePolicyBanner.show
 flip.pt###access
 audental.co.uk##.DmxlabsKooke
+coop.ch##swc-cookie-banner
+enercoop.fr###cookieLab
+coop.br##.ui-notificationbar
+chregister.ch##.ui-notificationbar
+3dcoat.com###cookiesModal
+casellimoveis.com.br###__next > div[class*="Terms"]
+providenciadedeus.org.br##.aceite
+his-mobile.com##.cookieagree
+sage.hr###landing-consent
+teamgroupinc.com##.privacyArea
 !
 ! SCRIPT BLOCKING
 !
@@ -22931,7 +22934,6 @@ audental.co.uk##.DmxlabsKooke
 cookie_meldung.js^
 cookiewarning.js^
 cookiewarning4.js^
-||catalogocoop.it/cookie.js$script
 /wp-content/mu-plugins/cookie_notifier
 ||freegamehosting.eu/js/cookies.js$script
 ||jp2w.pl/a/cookie.js$script
@@ -23882,6 +23884,7 @@ ccm19.dsg-schweiz.ch
 ccm19.boxspring-welt
 ||ccm.land24.de/app.js?apiKey$script
 ||ccm.f1st.de/app.js?apiKey$script
+ccm.npo.nl
 /cc.js?renew=false&referer=www.rs2.de
 ||dam.bbcchannels.com/m/2fmpg/js/outside-iframe.js$script
 ||dam.bbcchannels.com/m/2fmph/js/outside-iframe.js$script
@@ -24008,6 +24011,7 @@ nanoGDPR.min.js^
 /js/bundle/GDPRConsent/*
 /js/klaro-no-
 /tcfapi/tcfapi.umd.js
+||mein.clickskeks.at/app.js?apiKey$script
 /iubenda_cs$domain=~radiomontecarlo.net|~tomshw.it|~repubblica.it|~video.lastampa.it|~nablawave.com|~buondi.it|~tgcom24.mediaset.it|~mediasetinfinity.mediaset.it|~telerama.fr|~skuola.net
 /amp-user-notification-
 /api/rest/settings/public?fields=endUserAgreement
@@ -24140,7 +24144,6 @@ troubledtail.com$domain=interestingengineering.com
 spellsalsa.com$domain=interestingengineering.com
 /privacy/Bootstrap$domain=tescobank.com
 /cookieconsent$domain=adlkofen.de|mieterengel.de|twisto.pl
-/CookieWall/clb.js$domain=innogy.pl
 /gdpr/*$domain=e-pages.dk|synopsys.com|broedersgezondheidswinkel.nl
 /easycmp$domain=lagerhaus.at
 /cookielab/*$domain=ol.fr
@@ -24244,7 +24247,6 @@ h1.versicherungsjournal.de$domain=versicherungsjournal.de
 /Hmm24_Cookiebanner/*$domain=zaehlerschrank24.de
 consensu.org$domain=shinden.pl
 /CookieThough.js$domain=wochenblitz.com
-/CookieWall/*$domain=eon.pl
 cookiebanner*$domain=unibo.it
 trustarc.com$domain=avantiwestcoast.co.uk
 /cookie_layer.js$domain=billiger-mietwagen.de
@@ -24342,6 +24344,9 @@ poool.fr/access.min.js$script,domain=spektrum.de
 /scmp-int.js$domain=mapy.cz
 privacy-mgmt.com$domain=immobilien.derstandard.at
 /js/privacy$domain=atu.de
+/cookiewall/*$domain=saeco.de
+/CookieWall/*$domain=eon.pl
+/Cookies.js$domain=sage.co.uk
 !
 ! FILTERLIST ONLY
 !
