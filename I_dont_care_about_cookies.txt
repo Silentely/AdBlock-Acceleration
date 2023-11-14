@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 350.202311080932
+! Version: 350.202311141021
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 08 Nov 2023 09:32 UTC
+! Last modified: 14 Nov 2023 10:21 UTC
 !
 !
 ! GLOBAL RULES
@@ -705,7 +705,7 @@
 ###scc-mask
 ###cookiesAlert
 ###layer_cookie
-~mercedes-benz.cr,~effector.pl,~allecco.pl,~e-zikoapteka.pl,~zikodermo.pl,~autoersatzteile.de,~autoteiledirekt.de,~nike.com##.cookies-popup:not(body):not(html)
+~mercedes-benz.cr,~effector.pl,~autoersatzteile.de,~autoteiledirekt.de,~nike.com##.cookies-popup:not(body):not(html):not(.open)
 ###user-cookie-message
 ###cookie-information
 ##div[aria-describedby*="cookie-info"]
@@ -965,7 +965,7 @@
 ###cookie-monster-bar
 ###footerCookies
 ###cookie-accept-panel
-~allecco.pl,~e-zikoapteka.pl,~zikodermo.pl##.cookies-info:not(body):not(html)
+##.js-cookies-info
 ###cnil-cookie
 ~educhel.ru,~eduface.ru,~edumsko.ru##.cookies_popup:not(body):not(html)
 ##.cookies_popup_bottom_container
@@ -1947,7 +1947,7 @@
 ###warning_EU_cookiemsg
 ~viennahouse.com###cookie-box
 ~ivolta.pl##.cookies_footer:not(body):not(html)
-~gruenderservice.at,~wko.at###cookiehint
+###cookiehint
 ###expat_cookies
 ###ph-cookies-akkoord
 ###cookiebar-cookiepolicy
@@ -8217,7 +8217,7 @@
 ###js-cookie-hint
 ###wn_cookiebar
 ###ccc > #ccc-overlay
-~videogameschronicle.com###ccc > #ccc-overlay ~ div[id^="ccc"]
+###ccc > #ccc-overlay ~ div[id^="ccc"]
 ###dvt_cookiechoiceinfo
 ##.privacyPolicyBanner:not(body):not(html)
 ##.par-privacy-policy-info
@@ -13727,6 +13727,7 @@
 ###cookiesdirective-container
 ##.cookiebar-overlay
 ##.cookie--banner
+##.mb-0[data-cookie-wall-dialog]
 !
 ! CUSTOM RULES
 !
@@ -15691,7 +15692,6 @@ theoutlinerofgiants.com###toog-cookies
 keefcooks.com##.cookiecon
 savio.it###box-overlay
 mobileworldcentre.com##.alert-warning
-kupigume.hr##.ant-notification
 wiener-metropol.at##body > div:not([id]):not([class])
 fnvzzp.nl###bottom
 vzdusin.cz##.euc
@@ -15887,7 +15887,6 @@ mailplanet.it###discl
 fabled.com##.alert, #alert
 vergelijk.be##div[data-rendering-area="dialogs"] > div > div > div[data-bind*="PopupBehavior"]:not([data-role])
 citybee.cz##.cookies-rules
-switchbay.com##.ant-notification
 depv.de###root > div > div:first-child[class]
 szpitalkarowa.pl###cookies
 oldrailwaylinegc.co.uk##.notice-wrap
@@ -22273,7 +22272,6 @@ esdemarca.com##.e3_cookies
 bittrex.com##.MuiAlert-standardInfo
 aena.es##.cookies-elixregtech
 truecaller.com###__nuxt > div > .bottom-0, #__nuxt > .bottom-0
-gemini.pl##.vue-portal-target ~ div:last-child, #modal-cookies
 aptekagemini.pl###kukiz
 niederoesterreich-card.at##.cc
 vinos.de##.consent-cookie-box--lightbox
@@ -22616,12 +22614,6 @@ larian.com##.ciastko
 baldursgate3.game##.ciastko
 kozterkep.hu###cookie-consent
 studentendrukker.be###cookieConsentModal, .iziModal-overlay
-atlasformen.co.uk###modalCookies, .modal-backdrop
-atlasformen.de###modalCookies, .modal-backdrop
-atlasformen.nl###modalCookies, .modal-backdrop
-atlasformen.hu###modalCookies, .modal-backdrop
-atlasformen.ch###modalCookies, .modal-backdrop
-atlasformen.pl###modalCookies, .modal-backdrop
 autokiila.fi##.cookie-box
 ipon.hu##div[x-data="cookiePolicy"]
 thenounproject.com##div[data-callback*="CookiesBanner"]
@@ -22867,6 +22859,7 @@ nytimes.com###dock-container[data-testid*="gdpr"]
 hudy.cz##.cookie-modal
 gasspisen.se###__next > #slide-out + div ~ div
 aliexpress.com###gdpr-new-container, #voyager-gdpr
+aliexpress.us###gdpr-new-container, #voyager-gdpr
 cc.cz##.b-cookie-bar
 octopusenergy.it###content ~ div
 octopusenergy.es##div[data-testid="iconCookies"]
@@ -22927,6 +22920,15 @@ providenciadedeus.org.br##.aceite
 his-mobile.com##.cookieagree
 sage.hr###landing-consent
 teamgroupinc.com##.privacyArea
+sfc.edu##.fixed[x-data*="noticeAccepted"]
+gemini.pl###modal-cookies
+findmcserver.com##.ant-notification
+kupigume.hr##.ant-notification
+atlasformen.ch###modalCookies, .modal-backdrop
+maxoutil.com##.fixed[x-data*="Amasty.Cookie"]
+evernote.com##footer ~ .fixed.w-full
+magadanmedia.ru##.cookies-wrap
+shuttle.rs###__next > div > div[class*="bottom"]
 !
 ! SCRIPT BLOCKING
 !
@@ -23072,7 +23074,6 @@ jquery.eu-cookie-consent.min.js^
 ||gratiz.nl/cookie-script.js$script
 /cookie-service/js/client.js
 /js/euc_cookie.js
-||wko.at/css-js/scripts/cookie.js$script
 /web/components/cookie-consent/*
 /jquery.cookiesdirective.js$domain=~servizionline.gruppoascopiave.it
 ||cookie-consent.azureedge.net/gdpr.js$script
@@ -23181,7 +23182,6 @@ consent.cookiebot.com$domain=~deutschesapothekenportal.de|~storyhouseegmont.dk|~
 /ccp-sites/components/structure/cookie-notification/*
 /cookies-info.js
 cookies.algo.at
-||wko.at/gcm/cookie.js$script
 ||cookiehub.net/c$script
 /widgets/eu-cookie-law/*
 ||app.cookieyes.com/client_data$script
@@ -23482,6 +23482,9 @@ cookies.ptj.de
 /dsgvo/js/cookiemonster
 /cookie_consent_js
 /cookie-consent-request.js
+/wp-content/plugins/borlabs-cookie/*
+||wko.at/gcm/cookie.js$script
+||wko.at/css-js/scripts/cookie.js$script
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
 wpjslib-chunk-consent-form.js^
@@ -23588,6 +23591,7 @@ consent.comply-app.com
 ||kesko.fi/kconsent$script
 ||unpkg.com/@segment/consent-manager$script
 cache.consentframework.com
+||wko.at/static/ct/consent.js$script
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -24259,7 +24263,6 @@ consent*$domain=t-mobile.cz
 /jquery.cookiekit.js$domain=dgeg.gov.pt
 /tc_privacy/*$domain=matmut.fr
 /cookie_modal/*$domain=shirtee.com
-/borlabs-cookie$domain=finance-magazin.de
 /cf-analytics/*$domain=chatfuel.com
 cc.labu24.de$domain=labu24.de
 cookies.ptj.de$domain=ptj.de
