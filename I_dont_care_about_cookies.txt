@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 350.202311141021
+! Version: 350.202311150927
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 14 Nov 2023 10:21 UTC
+! Last modified: 15 Nov 2023 09:27 UTC
 !
 !
 ! GLOBAL RULES
@@ -10511,7 +10511,7 @@
 ###root div[data-testid*="jet-cookie-consent"]
 ##.gdpr-block-wrap
 ###ctl00_EmergencyBanner_uiDivCookie
-##.c-cookiebanner
+~baua.de##.c-cookiebanner
 ##local-privacy-settings
 ###js_cookies-information
 ##.o-gdpr[data-controller="gdpr"]
@@ -13728,6 +13728,7 @@
 ##.cookiebar-overlay
 ##.cookie--banner
 ##.mb-0[data-cookie-wall-dialog]
+###ga-cookie-policy-wrapper
 !
 ! CUSTOM RULES
 !
@@ -14677,7 +14678,6 @@ rendi.hu##body > div:not([id]):not([class])
 overcoming.co.uk###msg_top_bar
 somethingartistic.net###hellobar-slider
 valtifest.nl###cerabox, #cerabox-background
-volvotrucks.nl##.headerNotification
 zetchilli.pl##.giodoContainer
 marathondumontsaintmichel.com##.confidentialite
 webmaster-rank.info###footerSlideContainer
@@ -14806,7 +14806,6 @@ studioevil.com###SE-disclaimer
 miciny.cz###fixedBar
 dagelijksestandaard.nl##.dgd_stb_box
 energiedirect.nl###wall
-volvotrucks.gr##.headerNotification
 net-s.pl##.regulations
 rozwojowiec.pl###fixedBar
 jobbio.com##.alert-info, .alert-warning, .alert-box
@@ -19541,7 +19540,6 @@ nextmarkets.com##nm-cookie-dialog
 findino.ch##.CookieView
 thairath.co.th##main > div > footer ~ div
 insighttimer.com###footer ~ .rounded
-risekombucha.com##body > .widget
 rechtslupe.de###dsChoice
 bgbasket.com###private_info
 yuden.co.jp##[id^="yuden_gdpr"]
@@ -19914,7 +19912,6 @@ heizung-solar24.de##.becc-ol
 scandinavianphoto.no###content-container ~ [style*="height:0"] ~ div
 devmedia.com.br##.termos-politica
 ricochet.com###ricochet-cookie-bar
-emarketer.com##.emgdpr-cookies
 kochen-und-design.de##body > div:not([id]):not([class])
 napaonline.com##.CCPA
 kofc.org##kc-cookie-consent
@@ -19963,7 +19960,6 @@ sprintersports.com##.cookies-settings
 ryanair.com##rooms-cookies-policy, .trboModuleContainer, .ryr-cookie-popup
 robe-materiel-medical.com##.w3-container
 digitfoto.de###cookieds, #cookiedsdetails, #bodygrau
-bim.yaskawa.com##.pop
 madalinliviu.ro##.cookies
 stadtwerke-stuttgart.de##.modal--cookies
 magazineexchange.co.uk##.ui-widget, .ui-widget-overlay
@@ -20388,7 +20384,6 @@ le-fleuriste-22.fr###rgpd_bouton, #rgpd_demande
 slantastoffe.de##.overlay
 solaredge.com###se-cookies-usage-bar
 winkelparade.nl###notification-bar
-comstern.de###cookit
 mellerud.de###popup
 augenchirurgie.clinic##.cookies
 weglot.com##.elementor-popup-modal
@@ -20814,7 +20809,6 @@ merckgroup.com##.new-cookie__modal
 pspdfkit.com##.pspdfCookieDialog
 konsumenternas.se###tc-consent
 pepeenergy.com##.modal-cookie
-elasticemail.com###elastic-cookie-notice
 churchs.com###ccpa
 lojabuettner.com.br##.eula-bg
 mobilarena.hu###rules-accept
@@ -22929,6 +22923,7 @@ maxoutil.com##.fixed[x-data*="Amasty.Cookie"]
 evernote.com##footer ~ .fixed.w-full
 magadanmedia.ru##.cookies-wrap
 shuttle.rs###__next > div > div[class*="bottom"]
+bim.yaskawa.com##.pop
 !
 ! SCRIPT BLOCKING
 !
@@ -23178,7 +23173,7 @@ eu_cookie_banner.js^
 /modules/idxcookies/*
 /javascript/cookieser.js
 /cookiesWidget/widget.js
-consent.cookiebot.com$domain=~deutschesapothekenportal.de|~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~plaion.com|~runescape.com|~jyllands-posten.dk|~apoteket.se|~tme.eu|~stadtmobil.de|~wwf.fi|~login.nos.pt|~asambeauty.com|~cineplex.de|~berlingske.dk|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~koeln.de|~cliente.nos.pt|~parkerlebnis.de|~deadwalk.io|~linak.es|~linak.de|~cajamar.es|~digitaltrends.com|~mein-grundeinkommen.de|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~biomarkt.de|~harzwasserwerke.de|~stern.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de|~ekstrabladet.dk|~epochtimes.de
+consent.cookiebot.com$domain=~deutschesapothekenportal.de|~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~plaion.com|~runescape.com|~jyllands-posten.dk|~apoteket.se|~tme.eu|~stadtmobil.de|~wwf.fi|~login.nos.pt|~asambeauty.com|~cineplex.de|~berlingske.dk|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~koeln.de|~cliente.nos.pt|~parkerlebnis.de|~deadwalk.io|~linak.es|~linak.de|~cajamar.es|~digitaltrends.com|~mein-grundeinkommen.de|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~biomarkt.de|~harzwasserwerke.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de|~ekstrabladet.dk|~epochtimes.de
 /ccp-sites/components/structure/cookie-notification/*
 /cookies-info.js
 cookies.algo.at
@@ -23586,7 +23581,7 @@ consent.scm-verlagsgruppe.de
 ||idealo.com/storage/cmp/consent-management.js$script
 ||consent.prointernet.com/consent.js$script
 /coockieconsent.js
-||consentmanager.net/delivery$script,domain=~winfuture.de|~echo-online.de
+||consentmanager.net/delivery$script,domain=~winfuture.de|~echo-online.de|~stern.de
 consent.comply-app.com
 ||kesko.fi/kconsent$script
 ||unpkg.com/@segment/consent-manager$script
@@ -23672,6 +23667,7 @@ pdcc.gdpr.es
 /wp-content/plugins/lexon-gdpr/*
 /popin-gdpr.js
 /modules/gdprpro/*
+||gdpr-api.sharethis.com/cmp$script
 /media/plg_system_eprivacy$domain=~reshade.me
 ||recepttar.hu/js/privacy.js$script
 cmp.dmgmediaprivacy.co.uk$domain=~metro.co.uk
@@ -23815,7 +23811,6 @@ quantcast.mgr.consensu.org$domain=~sourceforge.net|~tumblr.com|~wpolityce.pl|~pl
 gemius.mgr.consensu.org
 sddan.mgr.consensu.org
 digitrust.mgr.consensu.org
-sharethis.mgr.consensu.org
 webads.mgr.consensu.org
 etarget.mgr.consensu.org
 optad360.mgr.consensu.org
