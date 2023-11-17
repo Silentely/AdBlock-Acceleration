@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 350.202311150927
+! Version: 350.202311170827
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 15 Nov 2023 09:27 UTC
+! Last modified: 17 Nov 2023 08:27 UTC
 !
 !
 ! GLOBAL RULES
@@ -423,7 +423,7 @@
 ###cookie_toolbar
 ###eulaw
 ~e-domizil.de,~statik.be,~login.nos.pt,~mit-dem-rad-zur-arbeit.de,~dwd.de,~nerdstar.tv,~bund.de,~bafin.de,~onlinezugangsgesetz.de,~duvel.com,~dagvandewetenschap.be,~materna.de,~thw.de,~bka.de,~bmbf.de,~bafa.de,~bamf.de###cookiebanner:not(.modal)
-~e-domizil.de,~statik.be,~dwd.de,~nerdstar.tv,~bund.de,~bafin.de,~onlinezugangsgesetz.de,~duvel.com,~dagvandewetenschap.be,~materna.de,~thw.de,~bka.de,~bmbf.de,~bafa.de,~advodan.dk,~technikmuseum.berlin##.cookiebanner:not(body):not(html):not(#header)
+~kkh.de,~e-domizil.de,~statik.be,~dwd.de,~nerdstar.tv,~bund.de,~bafin.de,~onlinezugangsgesetz.de,~duvel.com,~dagvandewetenschap.be,~materna.de,~thw.de,~bka.de,~bmbf.de,~bafa.de,~advodan.dk,~technikmuseum.berlin##.cookiebanner:not(body):not(html):not(#header)
 ##.cookieHolder:not(body):not(html)
 ###cookieAgree
 ##.cookie_alert:not(body):not(html)
@@ -8793,7 +8793,7 @@
 ###notice_cnil.fixed
 ###eu_opt_in_cookie_banner
 ##.block-notification--cookies
-##div[data-cookiebar]
+~kkh.de##div[data-cookiebar]
 ##.sw-cookie-container:not(body):not(html)
 ##.popover-md.cookie:not(body):not(html)
 ###cookie_allow_fix
@@ -13729,6 +13729,9 @@
 ##.cookie--banner
 ##.mb-0[data-cookie-wall-dialog]
 ###ga-cookie-policy-wrapper
+##.eu-cookies-bar-cookies-bar-wrap
+##.eu-cookies-bar-cookies-bar-settings-wrap
+##.eu-cookies-bar-cookies-settings-call-container
 !
 ! CUSTOM RULES
 !
@@ -19340,7 +19343,6 @@ revolver.news##.notice
 newrepublic.com##.popup-consent
 gmu.edu###mason-cookie-banner
 finanzia.no##.theme-privacy-container
-cookpad.com##.flex[data-id="cookie_dialog"]
 reiseversicherung.de###erv-cookie
 leagueoflegends.com##.riotbar-alert
 codility.com##.cookies
@@ -22924,6 +22926,8 @@ evernote.com##footer ~ .fixed.w-full
 magadanmedia.ru##.cookies-wrap
 shuttle.rs###__next > div > div[class*="bottom"]
 bim.yaskawa.com##.pop
+cookpad.com##div[data-controller*="cookies-consent"]
+axo-actifs.fr###cookies_frame
 !
 ! SCRIPT BLOCKING
 !
@@ -23948,6 +23952,7 @@ api.brookiebot.com
 /aliasanvil.com
 ||api.byscuit.com/data/client$script
 ||cdn.lawwwing.com/widgets$script
+/hallowedinvention.com
 ||pcz.pl/static/js/moo-cooker.js$script
 /eucd/eucd.min.js
 ||cinabre.sudoc.abes.fr/psi_gui/js/bandeau.js$script
@@ -24007,7 +24012,6 @@ nanoGDPR.min.js^
 ||jsdelivr.net/npm/cookify$script
 /cbgCConsent.js
 /ckpl-webc.min.js
-/js/bundle/GDPRConsent/*
 /js/klaro-no-
 /tcfapi/tcfapi.umd.js
 ||mein.clickskeks.at/app.js?apiKey$script
