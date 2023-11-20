@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 350.202311170827
+! Version: 350.202311201040
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 17 Nov 2023 08:27 UTC
+! Last modified: 20 Nov 2023 10:40 UTC
 !
 !
 ! GLOBAL RULES
@@ -106,7 +106,7 @@
 ###cookie_shout
 ###cookie-alert
 ###EUCookie
-~schuurman-schoenen.nl,~werkenbijpathe.nl,~interspar.at,~spar.at,~spar.hu,~spar.hr,~spar.si##.cookie-notification:not(body):not(html)
+~schuurman-schoenen.nl,~werkenbijpathe.nl##.cookie-notification:not(body):not(html)
 ###eprivacy
 ~dominospizza.pl,~penny.hu,~penny.cz###cookie-message
 ###cookieinfo-container
@@ -13232,7 +13232,7 @@
 ###header div[class*="CookieBar"]
 ##.sticky_cookie_warning
 ##.toastCookiePolicy
-~tricount.com##.show--consent:not(.force--consent) #cc_div
+##.show--consent:not(.force--consent) #cc_div
 ###ap-cookie-wall
 ###cookies_settings_bar
 ###root div[class*="CookieWarning"]
@@ -13732,6 +13732,8 @@
 ##.eu-cookies-bar-cookies-bar-wrap
 ##.eu-cookies-bar-cookies-bar-settings-wrap
 ##.eu-cookies-bar-cookies-settings-call-container
+##.consent-cookie-box--lightbox
+##.data-consent[data-banner]
 !
 ! CUSTOM RULES
 !
@@ -20846,7 +20848,6 @@ sj.no###root header nav + .MuiBox-root, .experiencefragment > .MuiContainer-root
 vitrado.de##app-google-consent
 cinch.co.uk###___gatsby > [data-testid="overlay"], #___gatsby > div > [data-testid="cookie-banner"]
 gravitycoach.com##.elo-snackbar
-jovempan.com.br##.custom-container-lgpd
 thecompleteuniversityguide.co.uk##.cookie_lbox
 zyro.com##.zyro-cookies
 flipsnack.com##.modal-backdrop
@@ -21681,7 +21682,6 @@ airgradient.com##.cookie-container
 emsc.eu###splashscreen
 sidusheroes.com##div[class*="cookie__show"]
 wwf.ru##.is-header-message-dock
-uni-rostock.de##.data-consent
 algolia.com###__next > div[class*="fixed"]
 plati.market##.gdpr
 plati.ru##.gdpr
@@ -21928,7 +21928,6 @@ hella.com##.black-overlay
 prowaretech.com###warn-cookies
 avocode.com###notification-bar + div
 apteka911.ua##.cookie
-deutsches-meeresmuseum.de##.data-consent
 zsroznavska.cz##.uu5-bricks-cookie-bar
 filman.cc###cookies
 naf.no###cookie-consent
@@ -22270,7 +22269,6 @@ aena.es##.cookies-elixregtech
 truecaller.com###__nuxt > div > .bottom-0, #__nuxt > .bottom-0
 aptekagemini.pl###kukiz
 niederoesterreich-card.at##.cc
-vinos.de##.consent-cookie-box--lightbox
 qwertee.com###root > .bottom-0
 e-muse.com.tw##.container-component > .dialog ~ div:last-child, .ns-cookie-privacy-wrapper
 libmanuels.fr##ion-app ~ div
@@ -22928,6 +22926,11 @@ shuttle.rs###__next > div > div[class*="bottom"]
 bim.yaskawa.com##.pop
 cookpad.com##div[data-controller*="cookies-consent"]
 axo-actifs.fr###cookies_frame
+lexiq.hu###cookie
+isbank.de##.cookie-container
+jovempan.com.br##.custom-container-lgpd
+skoob.com.br##.container-lgpd
+kteohellas.gr###cookiesettings-dialog
 !
 ! SCRIPT BLOCKING
 !
@@ -23377,7 +23380,7 @@ plugin-cookie-consent/build
 /jquery.rgpd-cookies.js
 /bandeau_cookie.js
 /dist/js/cookie-consent
-/cookieconsent.min.js$domain=~sonnenverlauf.de|~mondverlauf.de|~leanlibrary.com|~suncalc.org|~retrogames.cc|~exagon.de|~sozialversicherung-kompetent.de|~varcevanje-energije.si|~khl.ru|~bauen-und-heimwerken.de|~carport-diagnose.de|~tricount.com|~fransdewitte.nl
+/cookieconsent.min.js$domain=~sonnenverlauf.de|~mondverlauf.de|~leanlibrary.com|~suncalc.org|~retrogames.cc|~exagon.de|~sozialversicherung-kompetent.de|~varcevanje-energije.si|~khl.ru|~bauen-und-heimwerken.de|~carport-diagnose.de|~fransdewitte.nl
 /cookieConsentApp.js.gz
 /fileadmin/templates/cookie/fc_thin.js
 cdn.cookiecode.nl
@@ -23484,6 +23487,7 @@ cookies.ptj.de
 /wp-content/plugins/borlabs-cookie/*
 ||wko.at/gcm/cookie.js$script
 ||wko.at/css-js/scripts/cookie.js$script
+/frontend-core/js/cookieBox.js
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
 wpjslib-chunk-consent-form.js^
@@ -23585,12 +23589,13 @@ consent.scm-verlagsgruppe.de
 ||idealo.com/storage/cmp/consent-management.js$script
 ||consent.prointernet.com/consent.js$script
 /coockieconsent.js
-||consentmanager.net/delivery$script,domain=~winfuture.de|~echo-online.de|~stern.de
+||consentmanager.net/delivery$script,domain=~winfuture.de|~echo-online.de|~stern.de|~spar.hu|~spar.hr|~spar.at|~spar.si|~interspar.at
 consent.comply-app.com
 ||kesko.fi/kconsent$script
 ||unpkg.com/@segment/consent-manager$script
 cache.consentframework.com
 ||wko.at/static/ct/consent.js$script
+||consenttool.haendlerbund.de/app.js?apiKey$script
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -23749,7 +23754,6 @@ cmp.pafo.fairbung.com
 ||cmps.o2.cz/delivery$script
 /tcf-cmp.min.js
 ||veodys.fr/api/cmp$script
-||precmp.prisa.com/dist/cmp.js$script
 /sibbo-cmp-core.js$domain=~atresplayer.com
 ||gravito.net/alehdetcmp$script
 cmp.setupcmp.com
@@ -24218,7 +24222,6 @@ trcking.min.js^$domain=canalplus.com|canal-plus.com
 /cookie_management.js$domain=meteoradar.ch
 /Cookie/*$domain=nif.no
 /cookieconsent/*$domain=stema.de|expert.es
-/cookieBox.js$domain=vinos.de
 /cmp$domain=schwaebische.de|gameswelt.ch|gameswelt.de|gameswelt.at
 /dg-governance/*$domain=nytimes.com|inyt.com
 /it-cc.js$domain=geze.de|geze.pl
