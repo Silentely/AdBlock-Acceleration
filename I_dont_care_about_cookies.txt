@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 350.202311210951
+! Version: 350.202311230804
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 21 Nov 2023 09:51 UTC
+! Last modified: 23 Nov 2023 08:04 UTC
 !
 !
 ! GLOBAL RULES
@@ -12755,7 +12755,7 @@
 ##.cookies-banner__overlay
 ###mp-misc-cookie-bar
 ###consent-mgmt-banner
-##.cookie-consent-component
+##.mb-0[data-cookie-wall-dialog]
 ###___gatsby [class*="Cookies-module"]
 ##.cookie-consent-app
 ###cookiera_figyelmezteto_doboz
@@ -13727,10 +13727,10 @@
 ###cookiesdirective-container
 ##.cookiebar-overlay
 ##.cookie--banner
-##.mb-0[data-cookie-wall-dialog]
 ##.eu-cookies-bar-cookies-bar-wrap
 ##.eu-cookies-bar-cookies-bar-settings-wrap
 ##.eu-cookies-bar-cookies-settings-call-container
+##.cookiebanner-overlay
 !
 ! CUSTOM RULES
 !
@@ -14260,14 +14260,7 @@ draagle.com###nonsense_root
 wearewater.org##.messages
 homejardin.com##td[valign="top"] > p[style*="text-align:justify"]
 flyordie.com###eucc
-adeccomedical.fr##.bannerContainer
-raikaritten.it##.bottom_note
-vanitybamboo.com###div_c
-alectia.com###NavigationHeader > .smart-object[style*="white"]
-flitsers.nl###cc_overlay
-grupazywiec.pl###apollo-bar
 abt-s.pl###myModal, .modal-backdrop, .reveal-modal-bg
-telefonoassistenza.net###window
 ako-uctovat.sk###message_wrap
 professioneparquet.it###system-message, #system-messages, #system-message-container
 loterieplus.com##.ck_popin
@@ -16029,7 +16022,6 @@ perforce.com##.EUc
 detektor.fm##.stb-container.stb-top-right-container
 siropsport.fr##.analytics
 easyeda.com##.priv-tips
-bw-online-shop.com##.modal-mask-class.show-modal
 freemake.com###bottombar
 planeteanimal.com##.consent, #consent
 tsb.co.uk###cookies
@@ -22905,6 +22897,14 @@ freesound.org##.toast
 what3words.com##w3w-cookies-notice
 schaden.news###cmp_modal, .modal-backdrop
 raider.bg###cookie_script
+duunitori.fi##.gdpr-modal
+plex.tv##section[class*="CookieBar"]
+spitfireaudio.com##.cookie-consent
+janushenderson.com###ccc-action-button
+mangooutlet.com###cookies
+crocoblock.com###modal-cookie
+bhaptics.com###__next > .fixed.w-full
+bgextras.co.uk##body > div[class*="opts"]
 !
 ! SCRIPT BLOCKING
 !
@@ -23154,7 +23154,7 @@ eu_cookie_banner.js^
 /modules/idxcookies/*
 /javascript/cookieser.js
 /cookiesWidget/widget.js
-consent.cookiebot.com$domain=~deutschesapothekenportal.de|~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~plaion.com|~runescape.com|~jyllands-posten.dk|~apoteket.se|~tme.eu|~stadtmobil.de|~wwf.fi|~login.nos.pt|~asambeauty.com|~cineplex.de|~berlingske.dk|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~koeln.de|~cliente.nos.pt|~parkerlebnis.de|~deadwalk.io|~linak.es|~linak.de|~cajamar.es|~digitaltrends.com|~mein-grundeinkommen.de|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~biomarkt.de|~harzwasserwerke.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de|~ekstrabladet.dk|~epochtimes.de
+consent.cookiebot.com$domain=~deutschesapothekenportal.de|~storyhouseegmont.dk|~storyhouseegmont.no|~storyhouseegmont.se|~egmont.com|~plaion.com|~runescape.com|~jyllands-posten.dk|~apoteket.se|~tme.eu|~stadtmobil.de|~wwf.fi|~login.nos.pt|~asambeauty.com|~cineplex.de|~berlingske.dk|~digimon.kochfilms.de|~kino.dk|~hoyavision.com|~koeln.de|~cliente.nos.pt|~parkerlebnis.de|~deadwalk.io|~linak.es|~linak.de|~cajamar.es|~digitaltrends.com|~mein-grundeinkommen.de|~werder.de|~finanzmarktwelt.de|~danbolig.dk|~bt.dk|~scubadiving.com|~biomarkt.de|~harzwasserwerke.de|~dasinvestment.com|~derivate.bnpparibas.com|~werkenbijlidl.nl|~swspremberg.de|~nngroup.com|~bankia.es|~bergbauernmilch.de|~ekstrabladet.dk|~epochtimes.de|~ub.edu
 /ccp-sites/components/structure/cookie-notification/*
 /cookies-info.js
 cookies.algo.at
