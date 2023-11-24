@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: wKlYhJr+sx/YhJ0UFB4Odg
-! Version: 202311240551
+! Checksum: bDIdg28uF1YneeO4fqlSMQ
+! Version: 202311241151
 ! Title: EasyList China
-! Last modified: 24 Nov 2023 05:51 UTC
+! Last modified: 24 Nov 2023 11:51 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/easylist/easylistchina/
 !
@@ -1220,7 +1220,7 @@ newduba.cn###jq_youxi
 ##.davwheat-ad
 ##.dipiao
 ##.div-search-box.col-lg-offset-2.col-lg-8 > a[href^="http"][target="_blank"]
-##.dplayer-notice + .top-right-tips
+##.dplayer > .tips
 ##.duilian > .leftd
 ##.ec-ad
 ##.edtj
@@ -1590,6 +1590,7 @@ newduba.cn###jq_youxi
 ##img[onclick^="window.open"][src*="pc.qq.com"]
 ##img[src$=".gif"][style="width:100%;max-width: 960px;height:45px;margin-bottom:2px;"]
 ##img[src$="/img/tianbo.gif"]
+##img#GGADIMG
 ##img[src*=".c-ctrip.com"][style="width:100%;height:70px;"]
 ##img[src*=".jd.com"][style="width:100%;height:70px;"]
 ##img[src*=".meituan.net"][style="width:100%;height:70px;"]
@@ -1598,6 +1599,7 @@ newduba.cn###jq_youxi
 ##img[src*=".sinaimg."][style="width:150px;height:300px"]
 ##script + #coupletBox
 ##script + #rbbox
+##.player-box > [style*="flex; justify"]
 ##script + a[href] > img[src*="lbsugc.cdn.bcebos.com"]
 ##script + a[target="_bank"] > img[src*=".c-ctrip.com"][style="width:100%;height:auto;"]
 ##script + div[id^="a-loading-"]
@@ -2294,7 +2296,10 @@ newduba.cn###jq_youxi
 ||huxsvl.xyz^
 ||kkeojk.xyz^
 ||tobyxev.com^
+||wecklrb.cn^
 ||zzyy19.top^
+##a[href*=".erodatalabs.com/"]
+##a[href*=".hyenadata.com/"]
 ||zzyy20.top^
 !
 ##[style*="sotv.me"]
@@ -11267,8 +11272,12 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zztongyun.com/static/js/sh.
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||gg88.bj.bcebos.com^
+||asiav.cyou/myupdatelist.
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+aaread.space##.navi
+aaread.space##DIV[style^="position: fixed; bottom:"]
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -14753,7 +14762,6 @@ kaifu.com##.play_fmt
 ttsp.tv##.play_list_adbox
 1111.baidu.com,bdimg.com,tieba.baidu.com,tieba.com,xingqu.baidu.com##.play_list_panel
 ifeng.com##.playad
-netfly.tv##.player-box > [style^="display"]
 senfun.net##.player-recommend
 qq.com##.player-side-ads
 league-funny.com##.player_bb
