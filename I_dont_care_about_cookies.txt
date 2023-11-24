@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 350.202311230804
+! Version: 350.202311241049
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 23 Nov 2023 08:04 UTC
+! Last modified: 24 Nov 2023 10:49 UTC
 !
 !
 ! GLOBAL RULES
@@ -7406,7 +7406,7 @@
 ##.gdprMessage:not(body):not(html)
 ##.cookies.is-visible:not(body):not(html)
 ###ccc > #ccc-notify
-~monese.com,~nova-web.de,~go-e.com,~canalplus.com,~hansapark.de##div[class*="CookieBanner"]:not([class*="page"]):not([class*="Layout"]):not(.app)
+~sumsub.com,~monese.com,~nova-web.de,~go-e.com,~canalplus.com,~hansapark.de##div[class*="CookieBanner"]:not([class*="page"]):not([class*="Layout"]):not(.app)
 ##.card-cookie-notice
 ###smart-cmp-host
 ###gdprsticky
@@ -9579,7 +9579,7 @@
 ##.js-website-cookie-notification
 ###cookieAlertBig
 ##.cookieAlertBigTop:not(body):not(html)
-##section[class*="CookieBanner"]
+~sumsub.com##section[class*="CookieBanner"]
 ##.cookieBarAniIn:not(body):not(html)
 ###tracking-agree.sticky-bottom
 ###unileverCookiePopup
@@ -13731,6 +13731,8 @@
 ##.eu-cookies-bar-cookies-bar-settings-wrap
 ##.eu-cookies-bar-cookies-settings-call-container
 ##.cookiebanner-overlay
+##.mod_cookiebar_optin_medium
+###cookie-flash-message
 !
 ! CUSTOM RULES
 !
@@ -14261,19 +14263,9 @@ wearewater.org##.messages
 homejardin.com##td[valign="top"] > p[style*="text-align:justify"]
 flyordie.com###eucc
 abt-s.pl###myModal, .modal-backdrop, .reveal-modal-bg
-ako-uctovat.sk###message_wrap
-professioneparquet.it###system-message, #system-messages, #system-message-container
 loterieplus.com##.ck_popin
 fotozine.org###kukijima
-praktiker.bg###infomessage
-tysiagotuje.pl##body > div > div:not([id]):not([class])[style*="fixed"]
-numericable.mobi##.toastComponent
-bordersdown.net###message-1
-diyaudio.pl###navbar_notice_11
-kelloggs.fr###kelloggsfrance
-xilo1934.it##body > div:not([id]):not([class])
-mediatheque.sainthilairederiez.fr###info_message
-wabeco-remscheid.de###myModal, .modal-backdrop, .reveal-modal-bg
+bordersdown.net##.msgbox
 ardes.bg##.c-msg
 villamadruzzo.com##.tpca
 tma-winding.com###system-message, #system-messages, #system-message-container
@@ -20357,7 +20349,6 @@ kristo-friseure.de##.cookies-holder
 adac.de##.cookie--layer
 sheldrickwildlifetrust.org##.cookie
 antwerpen.be##aui-cookie-consent
-wehkamp.nl###header > aside
 novibet.gr##.setCookies
 elektro-met.pl###cookie
 estetic-dent-sklep.pl###cookie
@@ -21792,7 +21783,6 @@ kyivindependent.com##div[class*="Footer_cookies"]
 bulldogjob.pl###__next > footer ~ .fixed
 muni.cz##.muniweb-cookies
 1avisum.de##.announcement
-moneyfarm.com###gatsby-focus-wrapper > div[class*="header"] > div:first-child
 majkl3d.cz##.CA
 majkl3d.sk##.CA
 turk.net##.rey-cookieNotice
@@ -22588,7 +22578,6 @@ bulgarianproperties.bg###cookie_bar_new
 xoxo-mobile.at###cc-modal-1, .modal-backdrop
 bayern.de###cookie, #matomoCookieNotification, body > .cookie
 landtag.de###matomo-cookie-consent
-temu.com##body > div > div[class*="popup"]
 uferstudios.com##hylo-cookie-banner
 weingarten-grosse-groessen.de##.cc-overlay
 der-metronom.de##.cc-overlay
@@ -22643,8 +22632,6 @@ kauf-unique.at###vu_consent
 millenniumbcp.pt##div[id*="CookiesMsg"]
 sixt-neuwagen.de##.user-consent
 gocompare.com###gc-stickee-cookie-banner
-allegro.eu##.idm-cookie-overlay, .idm-cookie-policy
-allegro.pl##.custom-cookie-alert
 telcel.com##.telcel-banner-aviso-cookies, .comp-telcel-banner-superior
 swedoffice.se###cbckchangeholderFirst
 pciconcursos.com.br###lgpd
@@ -22905,6 +22892,16 @@ mangooutlet.com###cookies
 crocoblock.com###modal-cookie
 bhaptics.com###__next > .fixed.w-full
 bgextras.co.uk##body > div[class*="opts"]
+wmt.top##.cookie
+sumsub.com##button[class*="CookieButton"]
+wehkamp.nl###header > div > aside.full-width.full-height
+bialettikave.hu###popup_hatter, #popop_cont
+grandoptical.cz##.cookie-consent
+diyaudio.pl##.notice[data-notice-id="11"]
+allegro.eu##.idm-cookie-overlay, .idm-cookie-policy
+allegro.pl##.custom-cookie-alert
+moneyfarm.com###gatsby-focus-wrapper > div[class*="Header"] > div, #root > div > main + div
+polsatbox.pl##.modal-overlay
 !
 ! SCRIPT BLOCKING
 !
@@ -23463,6 +23460,7 @@ cookies.ptj.de
 ||wko.at/css-js/scripts/cookie.js$script
 /frontend-core/js/cookieBox.js
 ||cookiemanager.dk/js/cm.js$script
+/mod_pixim_cookie/*
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
 wpjslib-chunk-consent-form.js^
@@ -23571,6 +23569,7 @@ consent.comply-app.com
 cache.consentframework.com
 ||wko.at/static/ct/consent.js$script
 ||consenttool.haendlerbund.de/app.js?apiKey$script
+||consent.extrazimut.net/consent.js$script
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
