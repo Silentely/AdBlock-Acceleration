@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 350.202311241049
+! Version: 350.202311301133
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 24 Nov 2023 10:49 UTC
+! Last modified: 30 Nov 2023 11:33 UTC
 !
 !
 ! GLOBAL RULES
@@ -13733,6 +13733,7 @@
 ##.cookiebanner-overlay
 ##.mod_cookiebar_optin_medium
 ###cookie-flash-message
+##.cookie-overLay
 !
 ! CUSTOM RULES
 !
@@ -14262,16 +14263,9 @@ draagle.com###nonsense_root
 wearewater.org##.messages
 homejardin.com##td[valign="top"] > p[style*="text-align:justify"]
 flyordie.com###eucc
-abt-s.pl###myModal, .modal-backdrop, .reveal-modal-bg
 loterieplus.com##.ck_popin
 fotozine.org###kukijima
 bordersdown.net##.msgbox
-ardes.bg##.c-msg
-villamadruzzo.com##.tpca
-tma-winding.com###system-message, #system-messages, #system-message-container
-eaux-de-normandie.fr###notifybar
-mcclic.com###dialog
-musicworks.it###infromativap
 lonelyplanet.com##.alert, #alert
 sabrain.com##.message-panel[data-notice-id="brainscookienotice"]
 matoga.com.pl##body > div:not([id]):not([class])
@@ -14920,7 +14914,6 @@ initalia.it##.notice-wrap
 playinfinity.it##.alert-dismissible, .alert-dismissable, .alert--dismissable, .pmd-alert-dismissible
 vta.lt##.cooask
 thefourthphase.com###red-bull-cookie-notification
-radiologie-mannheim.de###myModal, .modal-backdrop, .reveal-modal-bg
 securedbydesign.com##.interimpopup
 fc-koeln.de##.mod-alert
 rkw-kompetenzzentrum.de###rkw-infolayer
@@ -18396,7 +18389,6 @@ redislabs.com###gdpr-modal
 badminton.de###cookieGradient, #cookiePrivacy
 altima-sfi.com###politica
 picdumps.com###pcdc
-sberbank.com##.personal-data-warning
 jbl.de##.uim .overlay, .uim .overlay ~ .container.basic-modal
 pacjent.gov.pl###cookies, #zgoda.sekcja-ciasteczka
 hp.com###privacy-notification
@@ -20788,7 +20780,6 @@ mav.hu##app-cookie
 yokanavi.com##.agreement
 fotor.com##div[class*="UseCookie"]
 wacomstore.com.br###privacy-popup
-sbermarket.ru##.alerts + div
 redenacionalderadio.com.br###viewlet-disclaimer
 sj.no###root header nav + .MuiBox-root, .experiencefragment > .MuiContainer-root:first-child
 vitrado.de##app-google-consent
@@ -22383,10 +22374,6 @@ herbiesheadshop.com##.cookies-politic__section
 librus.pl##.x-float-wrap
 arbeitsagentur.de###nsyCookieBanner
 atozmath.com###consentframe
-coinbase.com###root > div > [class*="backgroundAlternate"], div[class*="ContentHub__FooterWrapper"] ~ div:last-child, #popup-root ~ div[class*="Layout"] ~ div:not([data-element])
-nft.coinbase.com##footer ~ .fixed[class*="bottom"]
-pro.coinbase.com###page_content > div + div:last-child
-login.coinbase.com##div[data-testid="banner-container"]
 vicuspelle.ch##.cookie-model
 clubmed.co.uk##.Layout > .fixed
 clubmed.us##.Layout > .fixed
@@ -22485,7 +22472,6 @@ space.cc##div[class*="cookiepig"]
 ipn.pt###cookie-law-panel
 gcore.com##gcore-cookies-settings
 smallworldfs.com###barCookies
-euronics.hu##.cookie-overLay
 asna.ru##div[class*="modalCookies"]
 jtl-software.de###consent
 nooz-optics.com###gatsby-focus-wrapper > .fixed.bottom-0
@@ -22678,7 +22664,6 @@ mod.io###container ~ .tw-fixed
 yomiuri.co.jp###consentModal
 helmholtz.software##.fixed[data-testid="cookie-consent-matomo"]
 moddrop.com##.cm-fill-bot
-promobit.com.br###__next .fixed.bottom-0
 withlocals.com##aside[class*="CookieConsent"], div[class*="CookieOverlay"]
 xs.cz##.cookie
 abconcerts.be##.cookie-consent
@@ -22902,6 +22887,15 @@ allegro.eu##.idm-cookie-overlay, .idm-cookie-policy
 allegro.pl##.custom-cookie-alert
 moneyfarm.com###gatsby-focus-wrapper > div[class*="Header"] > div, #root > div > main + div
 polsatbox.pl##.modal-overlay
+promobit.com.br###__next > .fixed[class*="bottom"]
+bezpiecznedane.gov.pl##.cookie-popup-modal, .modal-backdrop
+coinbase.com###root > div > [class*="backgroundAlternate"], #popup-root ~ div[class*="Layout"] ~ div:not([data-element])
+nft.coinbase.com##footer ~ div[style*="bottom"][style*="fixed"]
+pro.coinbase.com###page_content > div > div > div + div:not([style])
+help.coinbase.com###__next > div > div[style*="fixed"]
+sberbank.com##div[class*="CookieWarning"], #__next footer ~ div
+sbermarket.ru##div[class*="Cookies"]
+radiologie-mannheim.de###cookie_bar_v2
 !
 ! SCRIPT BLOCKING
 !
@@ -23570,6 +23564,7 @@ cache.consentframework.com
 ||wko.at/static/ct/consent.js$script
 ||consenttool.haendlerbund.de/app.js?apiKey$script
 ||consent.extrazimut.net/consent.js$script
+/cs_consent_modal.js
 /js/gdpr_footer.js
 /js/gdpr.min.js
 /js/comun/avisopcgdpr.js
@@ -23615,7 +23610,7 @@ gdpr-banner.awsmpsa.com
 ||prizelogic.com/gdpr/third-party-optin.min.js$script
 /gdpr-popup.js
 /wordpress-ptchrgdprplugin/*
-gdpr-wrapper.privacymanager.io$domain=~kinuskikissa.fi|~geenstijl.nl|~dailybuzz.nl|~futurezone.at|~verkeerplaza.nl|~profil.at|~kurier.at|~weeronline.nl|~vesti.bg
+gdpr-wrapper.privacymanager.io$domain=~kinuskikissa.fi|~geenstijl.nl|~dailybuzz.nl|~verkeerplaza.nl|~profil.at|~kurier.at|~weeronline.nl|~vesti.bg
 ||evidon.com/pub/gdprnotice.js$script
 /wp-content/plugins/ct-ultimate-gdpr
 ||gdpr.mandarin-medien.de/manager.js$script
