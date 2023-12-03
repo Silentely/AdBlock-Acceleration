@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 350.202311301133
+! Version: 351.202312030519
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 30 Nov 2023 11:33 UTC
+! Last modified: 03 Dec 2023 05:19 UTC
 !
 !
 ! GLOBAL RULES
@@ -859,7 +859,7 @@
 ##.cookie_optin_box:not(body):not(html)
 ###CookieContainer
 ###jumper_cookies
-~effector.pl,~finom.co,~lmt.lv,~dish.co,~pagetiger.com,~bynco.com,~bakken.nl##.cookie-info:not(body):not(html)
+~effector.pl,~finom.co,~lmt.lv,~dish.co,~hd.digital,~pagetiger.com,~bynco.com,~bakken.nl##.cookie-info:not(body):not(html)
 ###cookieCopy
 ~datagrottan.se###eu_cookie
 ###cookies_warning
@@ -4386,7 +4386,7 @@
 ###cookieopt
 ###cookieMessageBar
 ##.privacy-message:not(body):not(html)
-~myunidays.com##.c-cookie-banner:not(body):not(html)
+##.c-cookie-banner:not(body):not(html)
 ##.cookies-law:not(body):not(html)
 ###uni_accept_cookie
 ##.eu-pruda-cookies:not(body):not(html)
@@ -6129,7 +6129,7 @@
 ###eu-susenka
 ##.acceptCookieButton:not(body):not(html):not(a)
 ###qubit-eu-cookie
-~dish.co###euCookieBanner
+~dish.co,~hd.digital###euCookieBanner
 ###bloquecookies
 ###allow-cookie-message
 ##.cookie-notice-bar:not(body):not(html)
@@ -13145,7 +13145,7 @@
 ###cookieWarnLayer
 ###CookieDisclaimerBanner
 ###cw-cookie-warning
-~myunidays.com##.js-cookie-banner-container
+##.js-cookie-banner-container
 ###klaroDIV .klaro
 ##.cookies-band-overlay
 ###__next [data-debug-name*="cookie-consent"]
@@ -13734,6 +13734,7 @@
 ##.mod_cookiebar_optin_medium
 ###cookie-flash-message
 ##.cookie-overLay
+###modal-cookies-template
 !
 ! CUSTOM RULES
 !
@@ -14266,14 +14267,6 @@ flyordie.com###eucc
 loterieplus.com##.ck_popin
 fotozine.org###kukijima
 bordersdown.net##.msgbox
-lonelyplanet.com##.alert, #alert
-sabrain.com##.message-panel[data-notice-id="brainscookienotice"]
-matoga.com.pl##body > div:not([id]):not([class])
-swarovskioptik.com###cpp-wrapper
-voiceanddatazone.com###popup, .blocker
-expogatemilano.org##body > div:not([id]):not([class])[style*="fixed"], body > div:not([id]):not([class])[style*="absolute"]
-kreuzwort-raetsel.net##body > div:not([id]):not([class])
-jobdiagnosis.com###benefits
 repostuj.pl##.jumbotron
 visit.brussels##.confirm
 variart.org##.alert-dismissible, .alert-dismissable, .alert--dismissable, .pmd-alert-dismissible
@@ -16351,7 +16344,6 @@ halifax.dk###page-cookies
 cityexpress.com##.ctn-cookies
 crans-montana.ch##.mm-page > div[style*="fixed"]
 bip.um.wroc.pl###cookies
-hd.se##.gdpr
 toldot.ru###prbl
 haewa.de##.occ-lock, .occ-overlay
 lincolnelectric.com###cp_wrapper
@@ -20434,7 +20426,6 @@ liquidweb.com##.lw-cookie-banner
 bitfineon.com###root ~ div > [class*="StyledLayer"]
 mein-saunashop.de##.v-overlay, .v-dialog__content
 koupelny-sen.cz###cookie
-dish.co##.mod-cookie-consent
 txone-networks.com###cookies_msak
 eldirectorio.co###gdpr
 discordtemplates.com##.consent-card
@@ -21334,7 +21325,6 @@ rekonise.com##.consent-snackbar
 myoffice.ru###cookie
 opensource.google##snack-bar-container
 flintshire.gov.uk##.fcc-cookie-consent
-myunidays.com##.toast
 vista.com##div[class*="footerNotificationWrapper"]
 alexia.fr###_cc_a, ._cc_op::before
 careconord-pieces-occasion.fr###choc-banner-dialog
@@ -22718,7 +22708,6 @@ xtremmedia.com##.gdprModal
 pkobp.pl###footer ~ div[class*="pkobp"], .pko-cookie-rodo
 warspotting.net##.toast-message
 kensington.com##.Promotional-corner
-cinemark.cl###modal-cookies-template
 pribram.cz##.cookies
 nemocnicepribram.cz###cookies_lista_2022
 mojandroid.sk###cookie-law-info-bar
@@ -22896,6 +22885,10 @@ help.coinbase.com###__next > div > div[style*="fixed"]
 sberbank.com##div[class*="CookieWarning"], #__next footer ~ div
 sbermarket.ru##div[class*="Cookies"]
 radiologie-mannheim.de###cookie_bar_v2
+sites.google.com##div[data-cookie-path]
+wildberries.by##.modal--cookie
+cineplanet.com.pe##.consent
+hoer.live##.cookie-consent
 !
 ! SCRIPT BLOCKING
 !
@@ -23455,6 +23448,7 @@ cookies.ptj.de
 /frontend-core/js/cookieBox.js
 ||cookiemanager.dk/js/cm.js$script
 /mod_pixim_cookie/*
+/jquery.cookiepolicy.js
 ||privacy.ariadneathome.nl/script/consent.js$script
 ||privacy.vtwonen.nl/script/consent.js$script
 wpjslib-chunk-consent-form.js^
@@ -23686,6 +23680,7 @@ privacy.claytonhomes.com
 /privacy/providers/CookiesDataProvider
 /contao-privacy-center
 /wp-content/plugins/myagileprivacy/*
+/recomm-apps-upm/privacy-manager
 ||cmp.nextday.media/cmp$script,domain=~vi.nl
 cmp.dreamlab.pl
 /media/cmp/int_cmp_banner
@@ -23723,7 +23718,6 @@ cmp.pafo.fairbung.com
 ||cmps.o2.cz/delivery$script
 /tcf-cmp.min.js
 ||veodys.fr/api/cmp$script
-/sibbo-cmp-core.js$domain=~atresplayer.com
 ||gravito.net/alehdetcmp$script
 cmp.setupcmp.com
 cmp.mediavine.com
@@ -23734,6 +23728,7 @@ determinator.service-cmp.com
 ||seznam.cz/js/cmp2/scmp.js$script
 ||seznam.cz/js/cmp2/scmp-external.js$script
 cmp.meteored.com
+/sibbo-cmp-router.js
 ||gofundme.com/js/3.0/visitorCookie.js$script
 /CookiesDirective
 CookieAccept/affirmation.js
@@ -24140,7 +24135,7 @@ spellsalsa.com$domain=interestingengineering.com
 /cookieWidget.min.js$domain=peter-bringts.de
 /cookie-consent/*$domain=lux-residence.com|cyberghostvpn.com|gea-waldviertler.at|gea-waldviertler.de
 privacy-manager-v*$domain=df.eu
-/consent/*$domain=renault.de|ultraleicht-trekking.com
+/consent/*$domain=renault.de|ultraleicht-trekking.com|verbund.com
 /checkCookieConsent/*$domain=andrewssykes.fr
 /consent-manager/*$domain=cornelsen.de|pdf24.org
 /tcf2.js$domain=0calc.com|0rechner.de|0calc.fr
