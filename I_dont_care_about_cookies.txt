@@ -1,10 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 351.202312080946
+! Version: 351.202312111019
 ! Title: I don't care about cookies
 ! Expires: 3 days
 ! Licence: https://www.gnu.org/licenses/gpl-3.0.html
 ! Homepage: https://www.i-dont-care-about-cookies.eu/
-! Last modified: 08 Dec 2023 09:46 UTC
+! Last modified: 11 Dec 2023 10:19 UTC
 !
 !
 ! GLOBAL RULES
@@ -705,7 +705,7 @@
 ###scc-mask
 ###cookiesAlert
 ###layer_cookie
-~mercedes-benz.cr,~effector.pl,~autoersatzteile.de,~autoteiledirekt.de,~nike.com##.cookies-popup:not(body):not(html):not(.open)
+##.cookie-overLay
 ###user-cookie-message
 ###cookie-information
 ##div[aria-describedby*="cookie-info"]
@@ -7174,7 +7174,7 @@
 ##.UPM__PrivacyRibbon:not(body):not(html)
 ##.main-cookie-bar-container
 ##.cookies-aviso:not(body):not(html)
-~autoersatzteile.de,~autoteiledirekt.de##.popup--cookies
+###__next div[data-testid*="cookie-bar"]
 ###CookiPopin
 ##.rp-cookie-banner:not(body):not(html)
 ###cookieNoticeContent
@@ -13733,7 +13733,6 @@
 ##.cookiebanner-overlay
 ##.mod_cookiebar_optin_medium
 ###cookie-flash-message
-##.cookie-overLay
 ##.cookie-banner-tm__overlay
 ##.cookie-banner-tm
 !
@@ -20260,8 +20259,6 @@ jimenezmovilidad.es###cookies
 nordicbet.dk##snack-bar-container
 nordicbet.com##snack-bar-container
 chiptehnika.si##.noty_cont
-theweathernetwork.com##.woahbar
-meteomedia.com##.woahbar
 warp2search.net##.alert-warning
 doopla.pl##div[cmp]
 elektriker-wissen.de###f_cookie
@@ -20682,7 +20679,6 @@ sanitarium.com.au##.cookie--modal
 sanitarium.co.nz##.cookie--modal
 autosolar.es##.cookie-configuration
 desarrolloweb.com##dile-cookies-consent
-avl-ludwigsburg.de##.page-overlay
 recordsale.de##.personalization-request
 servihabitat.com##.portlet-boundary[class*="condiciones"]
 calendly.com###gdpr-region ~ [data-component="sticker"]
@@ -22394,7 +22390,6 @@ skdd.hr###rgnCookie
 svt.se##.svt-cookie-message, #svtrecept__cookie
 digita.ai##.alert-popup
 animeschedule.net##.custom-consent
-autodoc.de##.gdpr-panel
 ruegenmagic.de###confirm_cookies
 licenseglobal.com###__next > .fixed.bottom-0
 actievandedag.nl###__next > div > .fixed.bottom-0
@@ -22891,6 +22886,12 @@ samsonite.ro##.mainBlack
 merrell.pl##div[class*="cookieBanner"]
 arbys.com##div[class*="cookieBanner"]
 tandem.net##section[class*="cookieBanner"]
+meteomedia.com##.woahbar
+theweathernetwork.com##.woahbar
+borginokkar.is##.vrk-cookie-privacy-policy
+avl-ludwigsburg.de##.page-overlay, .cookies-popup
+autodoc.de##.gdpr-panel
+autodoc.pro##div[class*="user-consent"]
 !
 ! SCRIPT BLOCKING
 !
