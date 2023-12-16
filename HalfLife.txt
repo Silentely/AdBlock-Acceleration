@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: iUqfDSnrSufRWc80mQf4qQ
+! Checksum: btSb3aHPPz7Hps6cs2udSg
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202312161400
-! Last Modified: 2023年12月16日 14:00
+! Version: 202312162000
+! Last Modified: 2023年12月16日 20:00
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -471,7 +471,6 @@ static.g.iqiyi.com
 ||ssports.iqiyi.com/json/shop/shopInfo
 ||ssports.iqiyi.com/app/$media,object-subrequest
 show.ssports.com
-!v.qq.com###player .txp_zt_content
 v.qq.com##.quick_games.quick_item
 !qq.com##.mod_ad, .txp_ad, .txp_ad_link, .adWrap
 qq.com##+js(json-prune, ads ad material.video)
@@ -2145,7 +2144,6 @@ newduba.cn###jq_youxi
 ##a[href^="/ad/"] > img[id][src*="hdslb.com"]
 ##a[href^="/hy-"][ontouchstart]
 ##a[href^="/template/1/html/ad/"]
-##a[href^="http"] > img[src*="p.sda1.dev"]
 ##a[href^="http"] > img[src*="pic.rmb.bdstatic.com/"][src$=".gif"]
 ##a[href^="http://ad.moemoe."]
 ##a[href^="javascript:GoDb"]
@@ -3211,6 +3209,11 @@ newduba.cn###jq_youxi
 ||nrfhbd.xyz^
 ||cfateu.xyz^
 ||acemof.top^
+||qvrdlvz.cn^
+||bdzdd2-sdd53-vxc.com^
+##a[href*="/abg0066.com"]
+||tqznjujv.xyz^
+||88dgs.top^
 ||zzyy19.top^
 ||zzyy20.top^
 ##[style*="sotv.me"]
@@ -4622,7 +4625,6 @@ newduba.cn###jq_youxi
 ||huishengqihang.xyz^
 ||huishij.net^
 ||hujunhao.name^
-||huluxia.com^$third-party
 ||humgrww.xyz^
 ||hummingexam.com^
 ||hunlimd.cn^
@@ -11290,6 +11292,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzsky.com/images/a_d_
 ||zztongyun.com/static/js/sh.
 ||zzz4.com/JS_AD/
+||adsmind.gdtimg.com^
 ||zzzyk.com/js/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
@@ -16609,7 +16612,7 @@ lihkg.com#?#div[class^="_"]:-abp-has(>div>div>.adsbygoogle)
 linkedin.com#?#.core-rail > div > div[id^="ember"]:-abp-has(.feed-shared-actor__description span:-abp-contains(/促銷內容|广告/))
 linkedin.com#?#.core-rail > div > div[id^="ember"]:-abp-has(.feed-shared-actor__sub-description span:-abp-contains(/促銷內容|广告/))
 manhuadb.com#?#.comicbook-index:-abp-has(>a[href^="http"])
-meiyida01.com,myd666.tv#?#.module-item:-abp-has(>.module-item-titlebox>a[href*="/download/"])
+meiyida01.com,myd666.tv#?#.module-item:-abp-has(>.module-item-titlebox>a[href*="/download"])
 mongoing.com#?#.widget_custom_html:-abp-has(> .custom-html-widget > a[href^="http"]:not([href*="mongoing.com"]))
 mrmad.com.tw#?#div[id^="mrmad-"]:-abp-has(>.adsbygoogle)
 muchong.com#?#.forum_Post_index:-abp-has(nobr:-abp-contains(18))
