@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: Bdft1Dh6VHb93D82m891Jw
+! Checksum: AasqBob3zphXBI9ZlLd5qg
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202312160200
-! Last Modified: 2023年12月16日 02:00
+! Version: 202312160800
+! Last Modified: 2023年12月16日 08:00
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -458,7 +458,13 @@ cad.youku.com
 ||valipl.cp31.ott.cibntv.net/$media
 !|https://static.youku.com/index/js/ikuAdapterNew.js
 ||sealine.youku.com/yk/*callback=adpagesdk$script
-iqiyi.com##div[data-adzone],#block-V
+iqiyi.com##.black-screen[data-cupid=adblock-blackscreen]
+iqiyi.com##.cupid-panel + div, div[data-adzone],#block-V
+iqiyi.com##+js(set, Object.prototype.parseXML, noopFunc)
+iqiyi.com##+js(set, Object.prototype.blackscreenDuration, 1)
+iqiyi.com##+js(set, QiyiPlayerProphetData.a.data, {})
+||iqiyi.com/videos/other/202$xmlhttprequest
+||71edge.com/videos/other/202$xmlhttprequest
 ||iqiyipic.com/image/20*_100000$image
 apisgame.iqiyi.com
 static.g.iqiyi.com
@@ -588,10 +594,6 @@ dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,webkitRTCPeerConnection,null)
 dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,mozRTCPeerConnection,null)
 dandanzan.com,dandanzan10.top,nunuyy5.org#@#+js(nowebrtc)
 dandanzan.com,dandanzan10.top,nunuyy5.org##.gm-fp-body video:style(max-height:100%!important)
-wpadmngr.com
-|https://static.cloudflareinsights.com/beacon.min.js^$xhr,script
-||nunuyingyuan.tk/serviceworker.js^$script
-||nunuyy.cf/serviceworker.js^$script
 aqours.today
 chushoushijian.cn
 z4a.net
@@ -3200,6 +3202,16 @@ newduba.cn###jq_youxi
 ||zzbmxl.xyz^
 ||zzyy17.top^
 ||zzyy18.top^
+||kyjwtxei.xyz^
+||f780f.space^
+||awzddev.cn^
+||qznjujv.xyz^
+||hvlitr.xyz^
+||mbfhwag.xyz^
+||trojangfw.xyz^
+||nrfhbd.xyz^
+||cfateu.xyz^
+||acemof.top^
 ||zzyy19.top^
 ||zzyy20.top^
 ##[style*="sotv.me"]
