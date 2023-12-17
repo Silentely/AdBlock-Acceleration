@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: r/lIxdgBZDrOf0NeWUBZrw
+! Checksum: Gzd33dXqy9BphMrf1A8LlA
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202312170801
-! Last Modified: 2023年12月17日 08:01
+! Version: 202312171400
+! Last Modified: 2023年12月17日 14:00
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -449,13 +449,15 @@ yy.com,le.com##+js(nowebrtc)
 ||tracker.$xhr,websocket,script,ping
 ||p2p.$xhr,websocket,ping,domain=~huya.com|~binance.com
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
-!m.youku.com,v.youku.com##+js(nano-stb, r--,, 0.02)
-m.youku.com,v.youku.com##+js(m3u-prune,'',/^https:\/\/[\w\.]+ott\.cibntv\.net.+?\.m3u8\?/)
+!m.youku.com,v.youku.com##+js(nano-stb,,,0)
+!m.youku.com,v.youku.com##+js(m3u-prune,'',/^https:\/\/[\w\.]+ott\.cibntv\.net.+?\.m3u8\?/)
 atm.youku.com
 cad.youku.com
 @@||mmstat.com^$domain=youku.com
 ||cibntv.net/youku/$media
 ||valipl.cp31.ott.cibntv.net/$media
+||alicdn.com/*yksdk/*sdk.js$script,domain=youku.com
+||alicdn.com/awsc/et/
 !|https://static.youku.com/index/js/ikuAdapterNew.js
 ||sealine.youku.com/yk/*callback=adpagesdk$script
 iqiyi.com##.black-screen[data-cupid=adblock-blackscreen]
@@ -3224,6 +3226,9 @@ newduba.cn###jq_youxi
 ||oryhic.xyz^
 ||phcrjth.xyz^
 ||ytjzqde.xyz^
+||nbhixt.xyz^
+||uphcrjth.xyz^
+||bphcrjth.xyz^
 ||zzyy19.top^
 ||zzyy20.top^
 ##[style*="sotv.me"]
