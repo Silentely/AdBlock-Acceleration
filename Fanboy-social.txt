@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: 38SjeIIBeMNnuPAK3KH33A
-! Version: 202401091751
+! Checksum: 6fCwCI+k4lukbS5msgqAoA
+! Version: 202401092350
 ! Title: Fanboy's Social Blocking List
-! Last modified: 09 Jan 2024 17:51 UTC
+! Last modified: 09 Jan 2024 23:50 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! License: http://creativecommons.org/licenses/by/3.0/
@@ -13,6 +13,7 @@
 !
 !--------------------------General blocking rules-----------------------------!
 ! *** easylist:fanboy-addon/fanboy_social_general_block.txt ***
+! fanboy_social_general_block.txt
 -buttons-facebook.
 -buttons-twitter.
 -facebook-likeButton-
@@ -730,6 +731,7 @@ _twitter_follow.
 /wp-content/plugins/videolock/*$script
 !------------------------General element hiding rules-------------------------!
 ! *** easylist:fanboy-addon/fanboy_social_general_hide.txt ***
+! fanboy_social_general_hide.txt
 ###BottomSocialLinks
 ###FBslideout
 ###FaceBookStayInTouch
@@ -12354,6 +12356,7 @@ _twitter_follow.
 ##.feature > #tell-a-friend
 !-------------------------Third-party blocking rules--------------------------!
 ! *** easylist:fanboy-addon/fanboy_social_thirdparty.txt ***
+! fanboy_social_thirdparty.txt
 ||addnow.com^$third-party
 ||addthis.com^$third-party
 ||addthiscdn.com^$domain=~addthis.com
@@ -12500,11 +12503,13 @@ _twitter_follow.
 ||zextit.com/partners/$third-party
 !--------------------------Specific blocking filters--------------------------!
 ! *** easylist:fanboy-addon/fanboy_social_specific_block.txt ***
+! fanboy_social_specific_block.txt
 ||ipaddress.com/shariff/
 ||naturalnews.com/getviews2.
 ||people.com.cn/img/2020fenxiang/
 !------------------------Specific element hiding rules------------------------!
 ! *** easylist:fanboy-addon/fanboy_social_specific_hide.txt ***
+! fanboy_social_specific_hide.txt
 artistdirect.com###FollowBut
 iflscience.com###FollowOnGoogleNewsBtn
 c-sharpcorner.com###IconContainer
@@ -13368,6 +13373,8 @@ retbit.com##.zox-post-soc-stat
 footwearnews.com,indiewire.com##[class^="_socialMedia_"]
 motortrend.com##[data-c="social-share"]
 sundayworld.com##[data-testid="article-share"]
+dw.com##[data-tracking-name="footer-section-social-media"]
+dw.com##[data-tracking-name^="sharing-icons-"]
 eteknix.com##[href="https://bit.ly/39WhWFF"]
 eteknix.com##[href="https://bit.ly/3pozgtL"]
 eteknix.com##[href="https://bit.ly/3qLFns9"]
@@ -13505,6 +13512,7 @@ bbc.com##div[class*="TagShareWrapper"]
 !#include fanboy_social_specific_uBO.txt
 !------------------------Rules for international sites------------------------!
 ! *** easylist:fanboy-addon/fanboy_social_international.txt ***
+! fanboy_social_international.txt
 !
 !---------- Non-English Social Media Elements ----------
 !
@@ -14363,6 +14371,7 @@ haberinadresi.com,minika.com.tr##.sosyal
 diyanet.tv##.sosyal-alt-ust
 !---------------------------------Allowlists----------------------------------!
 ! *** easylist:fanboy-addon/fanboy_social_allowlist_general_hide.txt ***
+! fanboy_social_allowlist_general_hide.txt
 gifyagusi.pl#@##fan-exit
 gifyagusi.pl#@##fanback
 facebook.com#@##fb_header
@@ -14467,6 +14476,7 @@ ixbt.com#@#.social_links
 nothiefsallowed.com#@#.twitter-timeline
 petsmart.com#@#a[href^="https://www.facebook.com/sharer/sharer.php"]
 ! *** easylist:fanboy-addon/fanboy_social_allowlist.txt ***
+! fanboy_social_allowlist.txt
 @@/angular-facebook.js
 @@/wp-content/plugins/bwp-minify/min/?*,wp-content$script,stylesheet,~third-party
 @@/wp-content/plugins/share-this-image/*$~third-party
