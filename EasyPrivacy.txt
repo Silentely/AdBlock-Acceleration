@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202401160925
+! Version: 202401161555
 ! Title: EasyPrivacy
-! Last modified: 16 Jan 2024 09:25 UTC
+! Last modified: 16 Jan 2024 15:55 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -14256,6 +14256,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||wc.yahoodns.net^$image
 ||wccftech.com/cnt7vfDVvWa3.js
 ||web.whatsapp.com/wam
+||webd-assets.cdn4dd.com/s.js$domain=doordash.com
 ||weblog.flyasiana.com^
 ||webmd.com/static/v/c?
 ||weedmaps.com/pixel?
@@ -14623,8 +14624,12 @@ abema.tv##^script:has-text(NREUM)
 abema.tv##+js(rmnt, script, NREUM)
 ! #endif
 ! #endif
-://coomer.su^$xmlhttprequest,method=patch|post
-://kemono.su^$xmlhttprequest,method=patch|post
+://coomer.su^$xhr,method=patch|post
+://kemono.su^$xhr,method=patch|post
+@@/^https:\/\/coomer\.su\/api\/v1\/favorites\/(?:creator|post)\/(?:[a-z]{6,16}\/){1,2}\d{8,9}$/$xhr,1p,match-case,method=post
+@@/^https:\/\/coomer\.su\/[a-z]{6,16}\/user\/[a-z]{6,16}\/post\/\d{8,9}$/$xhr,1p,match-case,method=post
+@@/^https:\/\/kemono\.su\/api\/v1\/favorites\/(?:creator|post)\/(?:[a-z]{6,16}\/){1,2}\d{8,9}$/$xhr,1p,match-case,method=post
+@@/^https:\/\/kemono\.su\/[a-z]{6,16}\/user\/[a-z]{6,16}\/post\/\d{8,9}$/$xhr,1p,match-case,method=post
 @@||coomer.su/.well-known/ddos-guard/mark/|
 @@||kemono.su/.well-known/ddos-guard/mark/|
 ! -----------------Individual cname tracking systems-----------------!
@@ -42846,6 +42851,7 @@ abema.tv##+js(rmnt, script, NREUM)
 ||cdp.yna.co.kr^
 ||chosun.com/hitlog/
 ||count.munhwa.com^
+||cue.search.naver.com/api/*/log/
 ||data-logdelivery.wconcept.co.kr^
 ||daumcdn.net^*/awsa.js
 ||gmarket.co.kr/js/common/uuid.js
@@ -42997,6 +43003,7 @@ abema.tv##+js(rmnt, script, NREUM)
 ||goya.rutube.ru^
 ||hh.ru/analytics^
 ||hh.ru/stat?
+||interfax.ru/cnt/
 ||irecommend.ru/collect/
 ||jetvis.ru/stat/
 ||kommersant.ru/a.asp?p=
