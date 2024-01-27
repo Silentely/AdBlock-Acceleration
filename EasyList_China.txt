@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: gunWWizhc015PtJFZWnbMw
-! Version: 202401270551
+! Checksum: KK0/MM+HlgHZ/c8NculFtQ
+! Version: 202401271151
 ! Title: EasyList China
-! Last modified: 27 Jan 2024 05:51 UTC
+! Last modified: 27 Jan 2024 11:51 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/easylist/easylistchina/
 !
@@ -1631,6 +1631,8 @@ newduba.cn###jq_youxi
 ##script + #rbbox
 ##script + a[href] > img[src*="lbsugc.cdn.bcebos.com"]
 ##script + a[target="_bank"] > img[src*=".c-ctrip.com"][style="width:100%;height:auto;"]
+##a[href*=".taobao.com"] > img[src*=".tucao."]
+##.pause-ad
 ##script + div[id^="a-loading-"]
 ##script[src="/js/sy2.js"] + div[align="center"]
 ##span[title="neteasefooter"]
@@ -3269,6 +3271,8 @@ newduba.cn###jq_youxi
 ||chgpuxim.xyz^
 ||dmdnlr.xyz^
 ||kaurieseluxate.com^
+||lioyfmp.cn^
+||xhgpuxim.xyz^
 ||zzyy19.top^
 ||zzyy20.top^
 !
@@ -10885,7 +10889,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||tt1069.com/script.min.js
 ||tt1069.com/t0602.js
 ||ttavav6.com/zz/
-||tucao.cam/uploadfile/*/300-86.
 ||tui.gtimg.com//res/
 ||tui555.com/public/gong/js/a_
 ||tuicool.com/images/upload/aliyun
@@ -11359,6 +11362,10 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzzyk.com/js/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+taiwanus.net##td[width="900"] + td[width="320"]
+csgoob.com##.lg\:basis-1
+csgoob.com##.lg\:sticky.lg\:top-22 > .card-shadow:not(.py-4)
+csgoob.com###ADback
 szxx.com.cn###A1
 szxx.com.cn###A2
 gpcxw.com###AA2
@@ -13251,7 +13258,7 @@ dimtown.com##.aggd
 wmzhe.com##.aibyte_ad
 moe.best##.alert
 5217kdy1.xyz##.alert-success + center
-eetop.cn,tucao.cam##.alert_windows
+eetop.cn##.alert_windows
 ali213.net##.ali-photo-carousel-pic > li > a[href*=".fhyx."]
 phpvar.com##.aliPic
 sm.cn##.ali_row[ad_aid]
@@ -14187,7 +14194,6 @@ youivr.com##.header-widget-region
 iqiyi.com##.headerLink01
 iqiyi.com##.headerLink02
 jiegeng.com##.header__item--fr
-tucao.cam##.header_rmb
 seehd.so##.header_wrap + .tac + table[align="center"]
 aguitar.cn,guitarchina.com##.headerbanner
 aguitar.cn##.headerbanner2
@@ -18645,7 +18651,6 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com##style[id^="s-"] + 
 ||v1.phb123.com^
 ||v1.taksh.cn^
 ||v1.wphonelife.com^
-||ve.kj-cy.cn^
 ||vip.panggugu.com^
 ||vjie.com^$third-party
 ||vv1.pyhfxdm.cn^
