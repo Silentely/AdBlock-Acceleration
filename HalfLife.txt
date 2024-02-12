@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: gQP9XE2owkuEyz7kkgP0Cg
+! Checksum: FM9ItPE6Zg1jBDtiesJPWg
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202402120200
-! Last Modified: 2024年02月12日 02:00
+! Version: 202402121400
+! Last Modified: 2024年02月12日 14:00
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -471,7 +471,7 @@ static.g.iqiyi.com
 ||ssports.iqiyi.com/json/shop/shopInfo
 ||ssports.iqiyi.com/app/$media,object-subrequest
 show.ssports.com
-v.qq.com##.quick_games.quick_item
+v.qq.com##.quick_games.quick_item, div.game-switch-ad
 !qq.com##.mod_ad, .txp_ad, .txp_ad_link, .adWrap
 qq.com##+js(json-prune, ads ad material.video)
 !qq.com##+js(no-xhr-if,/trace\.|\/collect/)
@@ -4070,6 +4070,19 @@ newduba.cn###jq_youxi
 ||zzyy17.top^
 ||zzyy18.top^
 ||zzyy19.top^
+||lxtuzcb.cn^
+||ydttxdqe.xyz^
+||zpcj8.online^
+||vrxhnr.xyz^
+||pzphmkf.xyz^
+||oswowg.xyz^
+||lekfez.icu^
+||tihdjd.xyz^
+||szmns.cn^
+||bellessb.com^
+##a[href*=".wzfqitm.com/"]
+||cdttxdqe.xyz^
+||mobiteu.cn^
 ||zzyy20.top^
 ##[style*="sotv.me"]
 ##a[href$="/1c626.com"]
@@ -12403,7 +12416,7 @@ dmzj.com###khdDown
 0597kk.com###kk_head_ad
 0597kk.com###kk_oTransContainer2
 1m3d.com###klp_adtop
-zn508.com###klp_hdp
+zn509.com###klp_hdp
 baidu.com###knowledge-answer
 csdn.net###kp_box_476
 csdn.net###kp_box_58
@@ -13043,7 +13056,7 @@ yahoo.com##.GeminiPortalStreamAd_handleViewport
 3dmgame.com##.Gmaeinfobtn_tab > span
 zhihu.com##.GoodsRecommendCard
 downg.com##.Gs_d[href$=".exe"]
-52fzwg.com,79tao.com,hqol.cn,icabbs.com,k7d.com,kxdao.net,mcncc.com,sunwy.org,twunbbs.com,wnflb.com,wnflb2023.com,wnflb66.com,xkeba.com,zn508.com##.GzList
+52fzwg.com,79tao.com,hqol.cn,icabbs.com,k7d.com,kxdao.net,mcncc.com,sunwy.org,twunbbs.com,wnflb.com,wnflb2023.com,wnflb66.com,xkeba.com,zn509.com##.GzList
 le.com##.H-tg
 chinaz.com##.HeaderAdvert
 diyifanwen.com##.Hzh1
@@ -16926,7 +16939,7 @@ ruanyifeng.com##p[style="text-align:center;font-size: 16px;"]
 zzkdhb.com##p[style^="width: 100%; margin: 0px;"]
 isiyuan.net#?##page-list > ul > .layui-row:-abp-has(.ad)
 pcbeta.com#?#div[class]:-abp-properties(/height: (169|171)px;/)
-zn508.com#?##portal_block_69_content > li:-abp-has(a[href^="http"])
+zn509.com#?##portal_block_69_content > li:-abp-has(a[href^="http"])
 ruanyifeng.com#?#.asset-content > p:-abp-contains(/二维|助教|0 元|报名费|原价/) + p + p > img
 ruanyifeng.com#?#.asset-content > p:-abp-contains(/二维|助教|0 元|报名费|原价/) + p > img
 runoob.com#?#.sidebar-box:-abp-has(.re-600160)
