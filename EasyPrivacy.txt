@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202402171115
+! Version: 202402171608
 ! Title: EasyPrivacy
-! Last modified: 17 Feb 2024 11:15 UTC
+! Last modified: 17 Feb 2024 16:08 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -53,6 +53,7 @@
 .gif?Log=
 .jp/pv?
 .jp/static/js/track.js
+.js?id=GTM-
 .lms-analytics/
 .net/l.gif?
 .no/app/aas/a
@@ -1061,6 +1062,7 @@
 /gtag.min.js
 /GTag/general_tracker.js
 /gtag/js?
+/gtm-data-layer-$script
 /gtm-listeners.js
 /gtm-suite.js
 /gtm.js
@@ -14409,12 +14411,12 @@ abema.tv##+js(rmnt, script, NREUM)
 ! #endif
 ://coomer.su^$xhr,method=patch|post
 ://kemono.su^$xhr,method=patch|post
-@@/^https:\/\/coomer\.su\/api\/v1\/(?:fansly|onlyfans)\/user\/[0-9A-Z_a-z]+\/post\/[-0-9A-Za-z]+(?:\/flag)?$/$xhr,1p,match-case,method=post
-@@/^https:\/\/coomer\.su\/api\/v1\/favorites\/creator\/(?:fansly|onlyfans)\/[0-9A-Z_a-z]+$/$xhr,1p,match-case,method=post
-@@/^https:\/\/coomer\.su\/api\/v1\/favorites\/post\/(?:fansly|onlyfans)\/[0-9A-Z_a-z]+\/\d+$/$xhr,1p,match-case,method=post
-@@/^https:\/\/kemono\.su\/api\/v1\/(?:afdian|boosty|discord|dlsite|fan(?:box|tia)|gumroad|onlyfans|patreon|subscribestar)\/user\/[0-9A-Z_a-z]+\/post\/[-0-9A-Za-z]+(?:\/flag)?$/$xhr,1p,match-case,method=post
-@@/^https:\/\/kemono\.su\/api\/v1\/favorites\/creator\/(?:afdian|boosty|discord|dlsite|fan(?:box|tia)|gumroad|onlyfans|patreon|subscribestar)\/[0-9A-Z_a-z]+$/$xhr,1p,match-case,method=post
-@@/^https:\/\/kemono\.su\/api\/v1\/favorites\/post\/(?:afdian|boosty|discord|dlsite|fan(?:box|tia)|gumroad|onlyfans|patreon|subscribestar)\/[0-9A-Z_a-z]+\/[0-9A-Za-z]+$/$xhr,1p,match-case,method=post
+@@/^https:\/\/coomer\.su\/api\/v1\/(?:fansly|onlyfans)\/user\/[.0-9A-Z_a-z]+\/post\/[-0-9A-Za-z]+(?:\/flag)?$/$xhr,1p,match-case,method=post
+@@/^https:\/\/coomer\.su\/api\/v1\/favorites\/creator\/(?:fansly|onlyfans)\/[.0-9A-Z_a-z]+$/$xhr,1p,match-case,method=post
+@@/^https:\/\/coomer\.su\/api\/v1\/favorites\/post\/(?:fansly|onlyfans)\/[.0-9A-Z_a-z]+\/\d+$/$xhr,1p,match-case,method=post
+@@/^https:\/\/kemono\.su\/api\/v1\/(?:afdian|boosty|discord|dlsite|fan(?:box|tia)|gumroad|onlyfans|patreon|subscribestar)\/user\/[.0-9A-Z_a-z]+\/post\/[-0-9A-Za-z]+(?:\/flag)?$/$xhr,1p,match-case,method=post
+@@/^https:\/\/kemono\.su\/api\/v1\/favorites\/creator\/(?:afdian|boosty|discord|dlsite|fan(?:box|tia)|gumroad|onlyfans|patreon|subscribestar)\/[.0-9A-Z_a-z]+$/$xhr,1p,match-case,method=post
+@@/^https:\/\/kemono\.su\/api\/v1\/favorites\/post\/(?:afdian|boosty|discord|dlsite|fan(?:box|tia)|gumroad|onlyfans|patreon|subscribestar)\/[.0-9A-Z_a-z]+\/[0-9A-Za-z]+$/$xhr,1p,match-case,method=post
 @@||coomer.su/.well-known/ddos-guard/mark/|
 @@||kemono.su/.well-known/ddos-guard/mark/|
 
@@ -49344,6 +49346,7 @@ abema.tv##+js(rmnt, script, NREUM)
 ||game-i.daa.jp/skin/analytics.php
 ||gizmodo.jp/api/SurveyCountCollection?
 ||goo.ne.jp^*/vltracedmd.js
+||gtm.diamond.jp^
 ||hatarako.net/api/recommend/analyze_logger
 ||i2i.jp/bin/
 ||img.syosetu.org/js/c_
