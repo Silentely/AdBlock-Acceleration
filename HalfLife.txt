@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: rh58BJT6T6RTW5gw79rnNQ
+! Checksum: ubYRaNSKV1v6fASlxQ9Kpg
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202402291400
-! Last Modified: 2024年02月29日 14:00
+! Version: 202402292001
+! Last Modified: 2024年02月29日 20:01
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -2237,6 +2237,7 @@ newduba.cn###jq_youxi
 ##style + .a-loading
 ##style + .need_grid_img
 ##style + .vdgdo
+##.adpcc
 ##table[style="border:#7D8C8E solid 1px;height: 30px;text-align: center;"]
 ##td[id^="td_"] > a[href^="/htmm/"]
 ##vg-pause-d
@@ -2432,6 +2433,15 @@ newduba.cn###jq_youxi
 ||xsfajf.xyz^
 ||fefgvh.xyz^
 ||tduenkq839.shop^
+||execuri.com^
+||88lm06.com^
+||szmnl.cn^
+||sdjkbcjksbdsvv.com^
+||mlhtr.cn^
+##a[href*=".imiwang.com/"]
+||shanvezhu.com^
+||zhaweifeng.com^
+##a[href*="/dsf71.cc"]
 ||yyddkm526.shop^
 ||zagyjnn.cn^
 ||zopuqv.icu^
@@ -7122,7 +7132,7 @@ $popup,third-party,domain=76fengyun.com|avsdown.com|downdv.com|downdvs.com|downh
 ||yy18.info^*thanks$popup
 !----------------------Specific advert blocking filters-----------------------!
 $image,third-party,domain=lady1.top
-$script,third-party,domain=52movieba.com|audio699.com|kan-tv.com|m.supfree.net|movieffm.net|xiaoheimi.net
+$script,third-party,domain=52movieba.com|audio699.com|kan-tv.com|m.supfree.net|movieffm.net|xiaoxintv.net
 $script,third-party,websocket,domain=52codes.net
 $third-party,xmlhttprequest,domain=subhd.tv|subhdtw.com|xyg688.com|zzzzz688.com
 .194007.com/4058.gif
@@ -11490,6 +11500,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zztongyun.com/static/js/sh.
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
+||8h93.com^*.gif
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
 manhuabika.com##a[href*="/ad/"]
@@ -17811,6 +17822,7 @@ guailie.com#@#.google-ad
 18-comic.work,18comic.org,18comic.vip,jmcomic.me##.div_sticky2
 18-comic.work,18comic.org,18comic.vip,jmcomic.me##.modal-backdrop
 /exads-adblock-$image
+18-comic.work,18comic.org,18comic.vip,jmcomic.me#?#:-abp-has(>ins+style)
 18-comic.work,18comic.org,18comic.vip,jmcomic.me#?#:-abp-has(>ins+script)
 18-comic.work,18comic.org,18comic.vip,jmcomic.me#?#:-abp-has(>script+ins)
 18-comic.work,18comic.org,18comic.vip,jmcomic.me#?#:not(body):-abp-has(>script[src*=".realsrv.com"])
@@ -19032,6 +19044,7 @@ smjb.net##div[style*="height: 50%"]
 ||biquge99.cc/js/dj
 ||bookrb.com/images/jtt
 ||d3iih5w7xp5hdg.cloudfront.net^
+||d2un76zvb5mgzx.cloudfront.net^
 ||dobiez.com/statics/wap_v1/js/qwd.
 ||duanwenxue.com/functions/
 ||fxsc6.net/js/
