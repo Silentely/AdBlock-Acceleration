@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: xjql9I8Ijs3bCgbetdiJtQ
+! Checksum: Kzxqxsa9lwFoj4rIlTWzjw
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202404051400
-! Last Modified: 2024年04月05日 14:00
+! Version: 202404052000
+! Last Modified: 2024年04月05日 20:00
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -461,8 +461,14 @@ cad.youku.com
 iqiyi.com##.black-screen[data-cupid=adblock-blackscreen], .qy-plist-ad
 iqiyi.com##.cupid-panel + div, div[data-adzone],#block-V
 !iqiyi.com##+js(set, Object.prototype.parseXML, noopFunc)
-!iqiyi.com##+js(set, Object.prototype.blackscreenDuration, 1)
+iqiyi.com##+js(set, Object.prototype.blackscreenDuration, 1)
 iqiyi.com##+js(set, QiyiPlayerProphetData.a.data, {})
+t7z.cupid.iqiyi.com
+||mesh.if.iqiyi.com/player/pcw/update/commonAppDownloadData^$xhr
+||static.iqiyi.com/js/common/mars_v.js^$script
+||video.iqiyi.com/ws$websocket
+||www.iqiyi.com/service-worker.js
+||127.0.0.1^$script,domain=iqiyi.com
 !||iqiyi.com/videos/other/202$xmlhttprequest
 !||71edge.com/videos/other/202$xmlhttprequest
 ||iqiyipic.com/image/20*_100000$image
@@ -2841,6 +2847,8 @@ newduba.cn###jq_youxi
 ||hnartcqab847.live^
 ||gfjn5.xyz^
 ||szpzm.cn^
+||dsjhcgvhjsvc.com^
+||2qy9zm.cn^
 ||zsjpi.cn^
 ||zttuvj.xyz^
 ||ztxjutz.xyz^
