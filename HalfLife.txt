@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: Pvn/49khn917caNjttVJng
+! Checksum: pM/RKoY9TCCi9+TqimsTJA
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202404081400
-! Last Modified: 2024年04月08日 14:00
+! Version: 202404082000
+! Last Modified: 2024年04月08日 20:00
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -2881,6 +2881,9 @@ newduba.cn###jq_youxi
 ||qnalzly.top^
 ||mldzwmt.xyz^
 ||guwohvw.icu^
+||1f84e33459.com^
+||vwyycnq.cn^
+||mmo2350.top^
 ||zsjpi.cn^
 ||zttuvj.xyz^
 ||ztxjutz.xyz^
@@ -11632,6 +11635,8 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
 !------------------------Specific element hiding rules------------------------!
+hvhbbs.com##.block[data-widget-definition="SwiperWidget"]
+hvhbbs.com##.margin-add > style + div
 szxx.com.cn###A0
 szxx.com.cn###A1
 szxx.com.cn###A2
@@ -17959,6 +17964,8 @@ guailie.com#@#.google-ad
 ||17ce.com^*_$image
 !#18comic.org
 /exads-adblock-$image
+18-comic.work,18comic.org,18comic.vip,jmcomic.me#?#:-abp-has(>ins+div)
+18-comic.work,18comic.org,18comic.vip,jmcomic.me##a[href*="//"]:not([href*="comic."]) > div[style^="display: block;"]
 18-comic.work,18comic.org,18comic.vip,jmcomic.me###guide-modal
 18-comic.work,18comic.org,18comic.vip,jmcomic.me##.div_sticky2
 18-comic.work,18comic.org,18comic.vip,jmcomic.me##.modal-backdrop
