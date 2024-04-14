@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: 乘风 广告过滤规则
-! Version: 202404021
+! Version: 202404151
 ! Expires: 2 days
 ! Homepage: https://github.com/xinggsf/Adblock-Plus-Rule/issues
 
@@ -52,9 +52,7 @@ tiebac.baidu.com,tieba.baidu.com,jump.bdimg.com,jump2.bdimg.com###thread_list>li
 @@||tb1.bdstatic.com/??/tb/_/*/ad_$script
 !----------------------通用、广告联盟站点-----------------------
 ! 去返利链接
-||jd.com^$removeparam=/^utm_/
-||taobao.com^$removeparam=/^utm_/
-||tmall.com^$removeparam=/^utm_/
+*$doc,removeparam=/^utm_/
 
 ||ad.
 */ad.
@@ -107,6 +105,7 @@ tanx.com
 */vamaker/
 wrating.com
 wwads.cn
+*##.ad
 *##.ad960-90
 *##.adbox
 *##.adtable
