@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: 6abHaUsXNRzDRcjfpMSCdw
+! Checksum: 1FMie54+mlohKpcFru6IuQ
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202404271400
-! Last Modified: 2024年04月27日 14:00
+! Version: 202404280200
+! Last Modified: 2024年04月28日 02:00
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -445,19 +445,14 @@ tieba.baidu.com##.j_click_stats, .j_click_stats+*
 tieba.baidu.com##.more_btn_package
 tieba.baidu.com##.tuijian-wrap
 ! 乘风 视频广告过滤规则
-yy.com,le.com##+js(nowebrtc)
-||tracker.$xhr,websocket,script,ping
-||p2p.$xhr,websocket,ping,domain=~huya.com|~binance.com
 v.youku.com##.control-phonewatch,#right-title-ad-banner, .kui-watermark-0
-!m.youku.com,v.youku.com##+js(m3u-prune,'',/^https:\/\/[\w\.]+ott\.cibntv\.net.+?\.m3u8\?/)
 atm.youku.com
 cad.youku.com
-@@||mmstat.com^$domain=youku.com
+@@||log.mmstat.com/eg.js^$script
 ||cibntv.net/youku/$media
 ||valipl.cp31.ott.cibntv.net/$media
 ||alicdn.com/*yksdk/*sdk.js$script,domain=youku.com
 ||alicdn.com/awsc/et/
-||sealine.youku.com/yk/*callback=adpagesdk$script
 iqiyi.com##.black-screen[data-cupid=adblock-blackscreen], .qy-plist-ad
 iqiyi.com##.cupid-panel + div, div[data-adzone],#block-V
 iqiyi.com##+js(set, Object.prototype.blackscreenDuration, 1)
@@ -489,7 +484,6 @@ cm.l.qq.com
 ||mall.video.qq.com/m/activity/h5/$subdocument
 !||l.qq.com/lview?
 ||qq.com/livemsg?
-!||mark.l.qq.com/fcgi-bin/get_video_mark_all?
 ||gtimg.com/qqlive/
 ||qzonestyle.gtimg.cn/qzone/biz/ac/comm/$script
 |https://imgcache.qq.com/qzone/biz/comm/js/qbs.js
@@ -512,15 +506,17 @@ synacast.com
 de.as.pptv.com
 ||g.pptv.com/game/$subdocument
 ||osswc.pplive.cn/cccms/$image
+||mediamax.suning.com/adssp/sdk/$script
 ||cmvideo.cn/v1/iflyad/$media,image,domain=miguvideo.com
 pub.funshion.com
 ||relive.vodfile.m1905.com/video/qiantie202$media
 1905.com##.pauseInfoWrap:remove()
 sobot.com
-@@||tb.mgtv.com/sdk/*/ad-sdk.
-ad-survey.com
+@@||tb.mgtv.com/sdk/*/ad-sdk.js^$script
 ||video.da.mgtv.com/$media
 ||da.mgtv.com/mediafiles/wiad_creative/$image
+!ad-survey.com
+miaozhen.com
 @@||js.tv.itc.cn/gg.seed.js
 ||css.tv.itc.cn/m/img/player/dlBanner.$image
 ||data.vod.itc.cn/*&prod=ad&$media
@@ -595,9 +591,6 @@ youtube.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefine
 ||youtube.com/ptracking?
 ||google.*/pagead/
 ||gstatic.com/shopping?
-*/preroll/$media,domain=91porn.com
-91p20.space
-waust.at
 ||btsow.motorcycles/app/javu$image
 jads.co
 |https://tellme.pw/go/jav$popup
@@ -605,23 +598,19 @@ jads.co
 !btsow.mom##+js(aeld, click, popunder)
 age.tv,agedm.org##+js(noeval-if, devtoolsDetector)
 ||toutiaoimg.com/origin/$image,domain=agedm.org|acgndmku.com|subaibaiys.com
-dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,webkitRTCPeerConnection,null)
-dandanzan.com,nnyy.in##.gm-fp-body video:style(max-height:100%!important)
-aqours.today
-2qpqwkx.cn
-z4a.net
-|https://dd-static.jd.com/ddimg/jfs/t1/173245/15/28822/346324/62fcb4b0Eb437d047/136a1e04890320b8.jpg$image,domain=subaibaiys.com
+!dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,webkitRTCPeerConnection,null)
+nnyy.in##.gm-fp-body video:style(max-height:100%!important)
 yatu.tv##.dplayer-web-fullscreen-fix #tburl,#loadtop,[id^=myas],#myds1,#daohang
 yatu.tv,yhdm15.com##+js(set,document.oncontextmenu,trueFunc)
-weizhenwx.com
-youle55.com
 ||www.yatu.tv:2082/image/*.gif^$image
 ||www.yatu.tv:2082/m/images/$image
-||nooen.com^$popup
+||tracker.$xhr,websocket,script,ping
+aqours.today
 bixinlive.com
-orgaorg.com
 quandangdang.net
 stgowan.com
+youle55.com
+z4a.net
 ! EasyList China
 !-----------------------General advert blocking filters-----------------------!
 -*-*-*-*.alpha^$script,third-party
@@ -2444,6 +2433,7 @@ newduba.cn###jq_youxi
 ||ddielv.cn^
 ||delhirs.com^
 ||destinyssa.com^
+||dfsgppz.icu^
 ||dianassb.com^
 ||diccsbhij.com^
 ||difhil.icu^
@@ -2579,6 +2569,7 @@ newduba.cn###jq_youxi
 ||hubgets.cn^
 ||huuocxu.icu^
 ||hvxrvef.xyz^
+||hweriou.top^
 ||hyusnisu.top^
 ||hyuwkbu.top^
 ||idffhq.cn^
@@ -2650,6 +2641,7 @@ newduba.cn###jq_youxi
 ||ktyusid.top^
 ||kvyyyde.cn^
 ||kwqnki.xyz^
+||kyaywy.xyz^
 ||kyuwkbd.top^
 ||kzepp.com^
 ||l5kt1.icu^
@@ -2725,6 +2717,7 @@ newduba.cn###jq_youxi
 ||nuhgpx.xyz^
 ||nvdtdsd.xyz^
 ||nvjqtz.xyz^
+||nwxaxx.xyz^
 ||nyt5j.cyou^
 ||o1b04.cyou^
 ||obgekjz.icu^
@@ -2785,6 +2778,7 @@ newduba.cn###jq_youxi
 ||pxzrlf.xyz^
 ||q02orc.cn^
 ||qbhzghb.xyz^
+||qcepqj.icu^
 ||qcohkm.xyz^
 ||qcsvku.xyz^
 ||qdtzbbh.xyz^
@@ -2957,6 +2951,7 @@ newduba.cn###jq_youxi
 ||uywoynr.cn^
 ||vabzndw.cn^
 ||vaekkfv.cn^
+||vbutycp.cn^
 ||vcnpnf.xyz^
 ||vdoqomz.icu^
 ||vdvcjlp.cn^
@@ -3061,12 +3056,6 @@ newduba.cn###jq_youxi
 ||zhaweifeng.com^
 ||zhihucloud.xyz^
 ||zhnnaxe.xyz^
-||kyaywy.xyz^
-||vbutycp.cn^
-||nwxaxx.xyz^
-||hweriou.top^
-||dfsgppz.icu^
-||qcepqj.icu^
 ||zjrtxt.xyz^
 ||znhlxvb.xyz^
 ||zojyob.icu^
@@ -15836,6 +15825,7 @@ winwin7.com##.xzbox-lf
 5119.cn##.xzbtn_new + .xzbtn_new
 pcsoft.com.cn##.xzdz_huodong
 chinayk.com##.yb_banner
+zhcw.com##.ycxdZw
 1kkk.com,dm5.com##.yddiv
 acg17.com##.yhq
 fdc.com.cn##.yifangbanner
@@ -15854,6 +15844,7 @@ eastday.com##.yxxf-warpper
 ifeng.com##.yy_right_bottom
 yiyouliao.com##.yyl-ads-swiper
 yiyouliao.com##.yyl-weiruan-ads-swiper
+zhcw.com##.yzjggw
 ali213.net##.zadmainholder
 qixingquan.com##.zdm
 jinghuasoft.com##.zhifubao
@@ -17826,20 +17817,20 @@ guailie.com#@#.google-ad
 17ce.com##a[href^="http"]:not([href*="17ce.com"]) img
 ||17ce.com^*_$image
 !#18comic.org
-/exads-adblock-$image
 18-comic.work,18comic.org,18comic.vip,jmcomic.me###guide-modal
 18-comic.work,18comic.org,18comic.vip,jmcomic.me##.div_sticky2
 18-comic.work,18comic.org,18comic.vip,jmcomic.me##.modal-backdrop
-18-comic.work,18comic.org,18comic.vip,jmcomic.me##a[href*="//"]:not([href*="comic."]) > [style*="back"]
-18-comic.work,18comic.org,18comic.vip,jmcomic.me##a[href*="//"]:not([href*="comic."]) > div[style^="display: block;"]
-18-comic.work,18comic.org,18comic.vip,jmcomic.me##a[href*="//"]:not([href*="comic."]) > img
-18-comic.work,18comic.org,18comic.vip,jmcomic.me##a[href*="//"]:not([href*="comic."]) > img + [style]
-18-comic.work,18comic.org,18comic.vip,jmcomic.me##style + div[style="cursor: pointer; position: relative;"]
+/exads-adblock-$image
 18-comic.work,18comic.org,18comic.vip,jmcomic.me#?#:-abp-has(>ins+div)
 18-comic.work,18comic.org,18comic.vip,jmcomic.me#?#:-abp-has(>ins+script)
 18-comic.work,18comic.org,18comic.vip,jmcomic.me#?#:-abp-has(>ins+style)
 18-comic.work,18comic.org,18comic.vip,jmcomic.me#?#:-abp-has(>script+ins)
 18-comic.work,18comic.org,18comic.vip,jmcomic.me#?#:not(body):-abp-has(>script[src*=".realsrv.com"])
+18-comic.work,18comic.org,18comic.vip,jmcomic.me##a[href*="//"]:not([href*="comic."]) > [style*="back"]
+18-comic.work,18comic.org,18comic.vip,jmcomic.me##a[href*="//"]:not([href*="comic."]) > div[style^="display: block;"]
+18-comic.work,18comic.org,18comic.vip,jmcomic.me##a[href*="//"]:not([href*="comic."]) > img
+18-comic.work,18comic.org,18comic.vip,jmcomic.me##a[href*="//"]:not([href*="comic."]) > img + [style]
+18-comic.work,18comic.org,18comic.vip,jmcomic.me##style + div[style="cursor: pointer; position: relative;"]
 ||18-comic.work/media/albums/*?$media
 ||18comic.*/media/albums/*?$media
 !#2
@@ -19222,8 +19213,8 @@ $script,third-party,domain=colamanga.com
 @@.com/js/a_d/$domain=colamanga.com
 @@.com/logo/ad.$domain=colamanga.com
 @@||cloudflare.net^$script,domain=colamanga.com
+@@||colamanga.com^$generichide
 colamanga.com##iframe[style*="important"]
-colamanga.com#@#.gg_950
 ||colamanga.com/sw.js
 !#Porn
 ###Video-Shunt-Box + .container
