@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: taDkpjYhXMqyqRcq3GkYQg
+! Checksum: zG31oZBYTqbjRjKGPQjshw
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202405120800
-! Last Modified: 2024年05月12日 08:00
+! Version: 202405121400
+! Last Modified: 2024年05月12日 14:00
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -532,23 +532,11 @@ tv.sohu.com##.x-dl-shake.x-download-panel, #playerBar > div.area ~a
 ||17173.com/if/$script,subdocument
 le.com##+js(set, isAdLoaded, true)
 ||ott.cibntv.net/*/letv-wzgug/$media
-*/letv-gug/$media
-||letvimg.com/$object,xhr
+||letvimg.com/lc*_iscms/202$image
 ||letvimg.com/*_gugwl/$image
-||js.letvcdn.com/*_banner_$script
-||banana.le.com/
-adxvip.com
-behe.com
-biddingx.com
-cr-nielsen.com
-fancyapi.com
+banana.le.com
 ipinyou.com
-kejet.net
-||jd.com/$domain=le.com
-ulmdb.cn
-xelements.cn
-yoyi.com.cn
-zhiziyun.com
+||yoyi.com.cn^3p
 le.com##.min_pause_img
 le.com##.hv_wm_logo
 cctv.com,www.douyu.com##+js(aeld,/visibilitychange|pagehide/)
@@ -595,9 +583,6 @@ yatu.tv,yhdm15.com##+js(set,document.oncontextmenu,trueFunc)
 ||www.yatu.tv:2082/image/*.gif^$image
 ||www.yatu.tv:2082/m/images/$image
 ||tracker.$xhr,websocket,script,ping
-aqours.today
-bixinlive.com
-quandangdang.net
 stgowan.com
 youle55.com
 z4a.net
@@ -3182,6 +3167,7 @@ newduba.cn###jq_youxi
 ||jgidskia.top^
 ||fhvzrr.xyz^
 ||mnpzrgz.xyz^
+||pwuxnr.cn^
 ||zuvbzl.xyz^
 ||zwdtvx.xyz^
 ||zwxxcb.icu^
