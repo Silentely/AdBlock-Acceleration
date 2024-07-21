@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: IFDL5/42if3sACoPn+Ycmg
+! Checksum: nIuvE+dKJmKYkpT3ftSlmg
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202407210801
-! Last Modified: 2024年07月21日 08:01
+! Version: 202407211400
+! Last Modified: 2024年07月21日 14:00
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -2209,6 +2209,7 @@ newduba.cn###jq_youxi
 ##div#xinxi
 ###Zi_ad_a_H
 ##.Zi_ad_a_SB
+##.imagegg-container
 ##div[bannerlist]
 ~ix8.la##div[class^="ADTOPLB_"]
 ##div[class^="is_"] > a > img[referrerpolicy="no-referrer"]
@@ -2266,7 +2267,7 @@ newduba.cn###jq_youxi
 /\.(cc|com|top|xyz)\/i\/v$/$third-party,xmlhttprequest
 /\.(com|cn|top|xyz)\/(j|K)\/[0-9]{6}$/$script,third-party
 /\.(cyou|ink)\/[a-z]{4}_[0-9]{5}_[a-z]{5}js\?/$script,third-party
-||38.33.15.10^
+||38.33.15.*.gif
 ||107.167.16.*.gif
 ||121.204.246.*.gif
 ||154.7.80.158^
@@ -2276,6 +2277,10 @@ newduba.cn###jq_youxi
 ||67.21.92.*.gif
 ||107.167.22.*.gif
 ||cupfox.app^$third-party
+||zqkxlf.com^
+||25662zubo23739.com^
+||88362zubo95838.com^
+||cosmo001.top^
 ||ofebyk.xyz^
 ||mdipsumx.top^
 ||jsdelivr.vip^
@@ -2299,6 +2304,8 @@ newduba.cn###jq_youxi
 ||nouusup.icu^
 ||tyretui.top^
 ||zyfnbl.xyz^
+||uyretut.top^
+||ppxscy1.cn^
 ||wnootzc.icu^
 ||eiuoom.xyz^
 ||bavotr.xyz^
@@ -12316,9 +12323,12 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||zzz4.com/JS_AD/
 ||zzzyk.com/js/
 ||singtao.ca/editions/affiliate_
+||news.ssp.qq.com/ad
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
 landiannews.com##a[href*="ourl.co"]
+||baijs011.xyz^
+||google-js-09.xyz^
 7itv.com##body > div[style]
 fengchedmp.com##body > div[style]
 huya.com##.huya-ab
@@ -21012,6 +21022,7 @@ _box_ad_
 ! CJX's Annoyance List
 !--------------------------General blocking filters---------------------------!
 /wiseatom/banner/pack_
+/bbs/include/javascript/adblock.
 /template/bingfeng/statics/js/pingbi.js
 -bobo_recommend_
 /3dmgamegzh.png
@@ -21489,7 +21500,6 @@ _box_ad_
 ||tencent.com/developer/api/common/getOneAds
 ||10086.cn/together/s?func=together:getAdvertInfos&
 ||bttt11.com/ad.
-||sexinsex.net/bbs/include/javascript/adblock.
 ||fanyi.baidu.com/pc/config
 ||fanyi.baidu.com/ait/config/cms/list?
 ||3dmgame.com/static/image/common/pc_tg3dm.
