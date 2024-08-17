@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202408161138
+! Version: 202408162238
 ! Title: EasyPrivacy
-! Last modified: 16 Aug 2024 11:38 UTC
+! Last modified: 16 Aug 2024 22:38 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -10013,6 +10013,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||data.circulate.com^
 ||data.digitalks.az^
 ||data.eetech.com^
+||data.embeddables.com^
 ||data.gosquared.com^
 ||data.minute.ly^
 ||data.nexxt.com^
@@ -10101,6 +10102,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ecustomeropinions.com^*/i.php?
 ||edge-hls.doppiocdn.com/ping
 ||edge-hls.doppiocdn.live/ping
+||edge-hls.doppiocdn.media/ping
 ||edge.adobedc.net^
 ||edge.bredg.com^$third-party
 ||edgesuite.net^*/googleanalyt
@@ -10976,6 +10978,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||propps.com/v1/referrer/
 ||providesupport.com/cmd/$image
 ||proxy.dzeio.com^
+||proxy.trysavvy.com^
 ||proxycheck.io/v2/
 ||pswec.com/px/$third-party
 ||pt.crossmediaservices.com^
@@ -11135,6 +11138,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||sermoncloud.com/logger/
 ||service.trustpid.com^
 ||session.timecommerce.net^
+||sessions.embeddables.com^
 ||sexhd.pics/x/x.js
 ||sezzle.com/v1/event/log
 ||sfstatic.net/build/js/basicMetricsTracking.
@@ -13156,6 +13160,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||aax-eu-dub.amazon.com^$script
 ||aax-us-iad.amazon.com^$script
 ||ab-machine.forbes.com^
+||ab.chatgpt.com^
 ||ab.fanatical.com^
 ||abcnews.com/assets/dtci/js/abcnews_visitorId.js
 ||abcnews.com/assets/dtci/js/at.js
@@ -13398,6 +13403,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||change.org/api-proxy/-/event_tracker
 ||channel.io/front/v*/channels/*/events
 ||chatfuel.com/cf-analytics/
+||chatgpt.com/ces/
 ||chatroll.com/t.gif
 ||chewy.com/api/event/
 ||chickadvisor.com/js/detect.min.js
@@ -14110,6 +14116,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||p.sfx.ms/is/invis.gif
 ||pac.thescottishsun.co.uk^
 ||pac.thesun.co.uk^
+||papi.stylar.ai^
 ||pappagallu.onefootball.com^
 ||pardot.com/pd.js
 ||paypal.com/credit-presentment/log
@@ -15102,8 +15109,8 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ||pcoptimizedsettings.com/wp-content/plugins/koko-analytics/$script,redirect=noop.js,important
 ||pcoptimizedsettings.com/wp-content/uploads/breeze/google/gtag.js$script,redirect=noop.js,important
 ! GPC
-weather.com,ubereats.com##+js(set, Navigator.prototype.globalPrivacyControl, false)
-weather.com,ubereats.com##+js(set, navigator.globalPrivacyControl, false)
+dnb.com,weather.com,ubereats.com##+js(set, Navigator.prototype.globalPrivacyControl, false)
+dnb.com,weather.com,ubereats.com##+js(set, navigator.globalPrivacyControl, false)
 ! chartbeat.js redirect
 ||static.chartbeat.com/js/chartbeat_mab.js$script,redirect=chartbeat.js
 ||static.chartbeat.com/js/chartbeat.js$script,redirect=chartbeat.js
@@ -52525,6 +52532,7 @@ mustar.meitetsu.co.jp##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 @@||cnet.com/a/video-player/uvpjs-rv/$script,~third-party
 @@||cohesionapps.com/cohesion/$domain=bankrate.com|frontier.com
 @@||cohesionapps.com/preamp/$subdocument,xmlhttprequest,domain=frontier.com
+@@||collections.archives.govt.nz/combo/*/gtag.js$script,~third-party
 @@||collusion.com/static/newrelic.js$script,~third-party
 @@||commerce.adobe.io^$xmlhttprequest,domain=superbrightleds.com
 @@||community.brave.com/t/$xmlhttprequest
