@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: MEICSKF8EGX4AbUx29Xbrg
+! Checksum: 1AygPJfNMvL0Pj6uu0ePyg
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202409231400
-! Last Modified: 2024年09月23日 14:00
+! Version: 202409232000
+! Last Modified: 2024年09月23日 20:00
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -2292,6 +2292,8 @@ newduba.cn###jq_youxi
 ||38.33.15.*.gif
 ||67.21.92.*.gif
 ||cupfox.app^$third-party
+||klkk66.fun^
+||hkjzkrqz.icu^
 ||jwatera.top^
 ||muwqiga.icu^
 ||swad332.fun^
@@ -10831,8 +10833,10 @@ hxsame.hexun.com$domain=~quote.hexun.com
 /mpc/*$domain=52xkdy.com|fydy8.com
 ||ads.yeeyi.com^
 /cuid/*$domain=colamanga.com
+||tsdm39.com/img01/MP3/GG/
 !------------------------Specific element hiding rules------------------------!
 szxx.com.cn###A0
+cn.bing.com##.b_algo:has(.rms_img[src*="=AdsPlus"])
 hdhive.online#?#.mt-4:-abp-has(>.text-lg)
 cnyes.com#?#.content-main > div:-abp-has(>div[id^="div-gpt-ad"])
 cnyes.com#?#article > div:-abp-has(>div[id^="div-gpt-ad"])
@@ -20021,6 +20025,7 @@ _box_ad_
 ||3dmgame.com/static/image/common/pc_tg3dm.
 ||fc.3dmgame.com^
 !------------------------Specific element hiding rules------------------------!
+bilibili.com##.is-rcmd > div:only-child
 thwiki.cc###a-carousel
 baidu.com##.index-module_drawerHand__aRhcO
 bilibili.com##.extension-tips
