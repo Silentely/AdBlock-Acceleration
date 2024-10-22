@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Checksum: 3bGyjLb7v0iakuYQlUCa8w
+! Checksum: tZgdGx20EGkdbieH5GtRrg
 ! Title: My AdFilters
 ! Expires: 12 hours
-! Version: 202410221400
-! Last Modified: 2024年10月22日 14:00
+! Version: 202410222000
+! Last Modified: 2024年10月22日 20:00
 ! Homepage: https://adf.minggo.eu.org
 ! 本规则合并自乘风视频广告过滤规则、EasylistChina、EasylistLite、CJX'sAnnoyance
 ! 并补充了贴吧过滤规则，感谢各位前辈的分享！
@@ -512,6 +512,7 @@ miguvideo.com###adver-box
 pub.funshion.com
 ||relive.vodfile.m1905.com/video/qiantie202$media
 1905.com##.pauseInfoWrap:remove()
+||www.1905.com/uploadfile/2024/0401/20240401094429405834.jpg^$image
 sobot.com
 @@||tb.mgtv.com/sdk/*/ad-sdk.js^$script
 ||video.da.mgtv.com/$media
@@ -519,11 +520,7 @@ sobot.com
 !ad-survey.com
 miaozhen.com
 @@||js.tv.itc.cn/gg.seed.js
-||css.tv.itc.cn/m/img/player/dlBanner.$image
-||data.vod.itc.cn/*&prod=ad&$media
-||api.my.tv.sohu.com/wm/getads.do?
 ||aty.sohu.com/
-adpushup.com
 ||go.sohu.com/
 ||tv.sohu.com/upload/csad/admaster/$image
 tv.sohu.com##.x-dl-shake.x-download-panel, #playerBar > div.area ~a
@@ -576,7 +573,7 @@ litix.io
 jads.co
 |https://tellme.pw/go/jav$popup
 age.tv,agedm.org##+js(noeval-if, devtoolsDetector)
-||toutiaoimg.com/origin/$image,domain=agedm.org|acgndmku.com
+!||toutiaoimg.com/origin/$image,domain=agedm.org|acgndmku.com
 ||dd-static.jd.com^$image,domain=subaibaiys.com
 !dandanzan.com,dandanzan10.top,nunuyy5.org##+js(set,webkitRTCPeerConnection,null)
 nnyy.in##.gm-fp-body video:style(max-height:100%!important)
@@ -2308,6 +2305,8 @@ newduba.cn###jq_youxi
 ||couvxlif.top^
 ||tarvrf.xyz^
 ||sbmhqe.xyz^
+||dayujs.top^
+||fanjs.top^
 ||gpowow.xyz^
 ||jizxnr.xyz^
 ||msmcoa.xyz^
@@ -16842,6 +16841,8 @@ andylain.com,bee.coupons,blogspot.com,blogspot.hk,blogspot.jp,blogspot.tw,comic.
 tangdoucdn.com#@#.video-ad
 i-cable.com#@#.video_ad
 che168.com#@#[data-adid]
+huawei.com#@#.ad-section
+huawei.com#@#.ad-wrap:not(#google_ads_iframe_checktag)
 bitauto.com#@#a[href^="http://ad.doubleclick.net/"]
 brandsales.58.com#@#div[id^="ad_"]
 gohome.com.hk#@#div[id^="div-gpt-ad"]
@@ -17000,6 +17001,7 @@ android-doc.com,apk.tw,chaojizhibo.net,chtoen.com,dizhishengcheng.com,doitwell.t
 @@||95504.net/Advertisement_
 @@||95599.cn^*ad
 @@||tangsanbooks.com^$generichide
+@@||daxiaamu.com^$generichide
 @@||99wbwc.com^$generichide
 @@||99ybcc.com^$generichide
 @@||9zvip.net/wp-content/plugins/detect-adblock/js/ads.js
@@ -18921,7 +18923,7 @@ $image,third-party,domain=258zw.com
 &xhtml?$script,third-party
 .*gcdcjr000.fun/$script,third-party
 .*ryt111.fun/$script,third-party
-.*troytj33.fun/$script,third-party
+.*roytj33.fun/$script,third-party
 .asp?wg&df=$script,third-party
 .asp?wsg&df=$script,third-party
 .baigh8eosmgie*.site^$script,third-party
