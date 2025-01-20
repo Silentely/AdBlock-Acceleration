@@ -1,0 +1,39 @@
+name: 'Auto handle issue'
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+  issues:
+    types: [opened]
+
+jobs:
+  automatic_issues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 自动关闭有done标签且7天内无回复的issue
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        uses: actions-cool/issues-helper@v3.6.0
+        with:
+          actions: 'close-issues'
+          labels: 'done'
+          inactive-day: 7
+          body: |
+            此issue已经被添加了done标签且已经超过7天没有活跃，为了减少issue数量此issue将被自动关闭，如此issue问题仍未解决请手动重新打开本issue
+            
+            --------------------------------------------------------------------------------------- 来自 AdBlock-Acceleration issues自动管理姬
+          contents: 'laugh,heart,rocket'
+      
+      - name: 自动回复新建的issue
+        if: github.event_name == 'issues' && github.event.action == 'opened' && github.event.issue.author_association != 'OWNER'
+        uses: actions-cool/issues-helper@v3.6.0
+        with:
+          actions: 'create-comment'
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            你好 @${{ github.event.issue.user.login }} 欢迎创建issue。
+            1. 如果遇到问题(bug)，请说明执行环境，并详细阐述问题情况以便于复现和解决问题。
+            2. 如果想增加新的功能，请说明这个功能手动实现的过程(pc网页端和app上是如何操作并实现的，尽可能附上相应的网页地址)
+            
+            --------------------------------------------------------------------------------------- 来自 AdBlock-Acceleration issues自动管理姬
+          contents: 'laugh,heart,rocket'
