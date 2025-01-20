@@ -18,6 +18,7 @@ International/China accelerated ad filtering rules subscription（[中文说明]
 
 # Announcement  
 
+* **January 21, 2025, the warehouse.git was reduced in size .** 
 * **January 20, 2025, acceleration address ④ (Fastgit) is replaced with a new address, and acceleration address ⑤ (iQDNS) is removed.**
 * **On October 17, 2023, the warehouse.git was reduced in size .**  
 * **On October 19, 2022, the warehouse.git was reduced in size .**   
