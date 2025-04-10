@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: rcwZ2yJZImYTOWvVlAn3vg
-! Version: 202504101042
+! Checksum: dHUJJElYAuW9VQg88oIFrg
+! Version: 202504101742
 ! Title: Fanboy's Annoyance List
-! Last modified: 2025-04-10 10:42 UTC
+! Last modified: 2025-04-10 17:42 UTC
 ! Expires: 9 days (update frequency)
 ! Homepage: https://easylist.to/
 ! License: http://creativecommons.org/licenses/by/3.0/
@@ -3965,6 +3965,9 @@ ufret.jp##.no-scroll:style(overflow: auto !important;)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/201521
 paircare.jp##.suppress-scroll:style(overflow: auto !important;)
 paircare.jp##main > div.lg\:hidden:has(> div.fixed.z-30.inset-0.overflow-y-auto)
+! https://www.saisoncard.co.jp/credictionary/marketing/article_ads_behavioral_economics.html
+saisoncard.co.jp###modal-overlay:has(.form-area-content__img > [src$="/marketing01.jpg"])
+saisoncard.co.jp##body[style="overflow-y: hidden;"]:style(overflow-y: auto !important;)
 !--------------------------General blocking rules-----------------------------!
 ! fanboy_social_general_block.txt
 -facebook-likeButton-
@@ -38103,6 +38106,7 @@ onlyfans.com##.b-cookies-informer
 github.io,stadium.fi###cookie-bar
 hexagame.io##.cookieWarning
 ! removeclass
+juken-mikata.net##body:remove-class(has-cookie-consent)
 jongcdenv.be,donneurdecellulessouches.be,stammzellenspender.be,stemcelldonor.be,koenvandenheuvel.be,stamceldonor.be,nahima.be##+js(rc, cookieconsent-active, body, stay)
 graziellawicki.com,funnelcockpit.com##+js(rc, gdpr-cookie-notice-center-loaded, , stay)
 ampire.de,verpackungsstadl.ch,imkershoperzgebirge.de,modellbahndealer.de,tillit-bikes.shop,bike-onlineshop.de,futspo.de,compravo.de,perpedale.de,modellbau-jung.de,verpackungsstadl.at,modellbau-vordermaier.de,bike-supply.de##+js(rc, disable, div, stay)
