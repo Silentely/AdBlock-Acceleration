@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202504271144
+! Version: 202504271506
 ! Title: EasyPrivacy
-! Last modified: 27 Apr 2025 11:44 UTC
+! Last modified: 27 Apr 2025 15:06 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -338,6 +338,7 @@
 /api/log-visit
 /api/metrics/collect
 /api/metrics/event
+/api/metrics|$xmlhttprequest
 /api/pageactivity
 /api/pageview/*$ping
 /api/pageview?
@@ -2520,6 +2521,7 @@
 /uutils.fcg?
 /v.gif?
 /v1/adn/visit|
+/v1/log/web-vitals$xmlhttprequest
 /v1/pixel.js
 /v1/pixel?
 /v1/stats/track
@@ -2733,6 +2735,7 @@
 /zhugeio.js
 /ztracker.js
 ://a869.$~image
+://analytics-beacon.
 ://analytics-cdn.
 ://analytics.*/collect
 ://analytics.*/event
@@ -3544,6 +3547,7 @@ omni.soundestlink.com$image
 ||track-selectmedia.com^
 ||trackclicks.info^
 ||tracking24.net^
+||trakle01.online^
 ||transmapp.com^
 ||triplestat.online^
 ||trk-maiorum.com^
@@ -14604,6 +14608,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||mstm.motorsport.com^
 ||myanimelist.net/static/logging.html
 ||mybbc-analytics.files.bbci.co.uk/reverb-client-js/smarttag-
+||myfreecams.com/php/tracking.php?
 ||mylocal.co.uk/api/trpc/analytics.
 ||myspace.com/beacon/
 ||na.groupondata.com^
@@ -15368,6 +15373,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||xhamsterlive.com/pixel/
 ||xhcdn.com/js/*.track.min.js
 ||xing.com/logjam/
+||xmetrics.camsoda.com^
 ||xnxx.com/picserror/
 ||xnxx.tv/picserror/
 ||xp.apple.com/config/*/report/
@@ -53337,6 +53343,7 @@ coomer.su,kemono.su##+js(set-local-storage-item, plausible_ignore, true)
 ||affilate.hh.ru^
 ||agroserver.ru/ct/
 ||analytics.carambatv.ru^
+||api-metric.gosweb.gosuslugi.ru^
 ||api.litres.ru/tracker/
 ||auto.ru/-/ajax/$~xmlhttprequest
 ||auto.ru/cookiesync/
