@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202505020450
+! Version: 202505021156
 ! Title: EasyPrivacy
-! Last modified: 02 May 2025 04:50 UTC
+! Last modified: 02 May 2025 11:56 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -1760,6 +1760,7 @@
 /plugins/pup-comscore/*
 /plugins/stat-dfp/*
 /plugins/status.gif?
+/plugins/tagging/*
 /plugins/userinfo.gif?
 /plugins/vdz-google-analytics/*
 /plugins/visitors-traffic-
@@ -2508,6 +2509,7 @@
 /urchin.html?
 /urchin.js
 /user-context?referrer=
+/user-data-minified.$script
 /userdata_n?
 /userfingerprinttoken/*$xmlhttprequest
 /userfly.js
@@ -2890,10 +2892,15 @@ _WebVitalsReporter_
 /gen_204?$image,other,ping,script
 /generate_204?$image
 ! Server-side GTM
+&cx=c&gtm=
+&ep.analytics_storage=
 &event_name=page_view&
 &l=dataLayer&cx=c
 .js?id=GTM-
+/*JmVu.js?sp=
+/*JmVu.js?tg=
 /ns.html?id=GTM-
+/tag/proxy?id=G-
 ://gtm.*.js?st=
 ://load.*.js?st=$~third-party
 ://sgtm.*.js?
@@ -11781,6 +11788,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tag.rmp.rakuten.com^
 ||tag.statshop.fr^
 ||tagger.opecloud.com^
+||tagging.shiftdigitalapps.io^
 ||taggstar.com^*/taggstar.min.js
 ||tags.catapultx.com^
 ||tags.dxmdp.com^
@@ -14812,6 +14820,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||promos.investing.com/*/digibox.gif?
 ||proporn.com/ajax/log/
 ||proxima.midjourney.com^
+||publicwww.com/mtm/mtm.js
 ||pulpulyy.club/cdn-cgi/trace
 ||pulsar.ebay.com^
 ||pulse.delta.com^
@@ -52881,6 +52890,7 @@ coomer.su,kemono.su##+js(set-local-storage-item, plausible_ignore, true)
 ||vinted.nl/relay/events
 ||vroom.be^*/stats.js?
 ||vroom.be^*/stats.php?
+||woonboulevardpoortvliet.nl/*/Tagging_GTM/
 ! Finnish
 ||analytics.sanoma.fi^
 ||api.nettix.fi/counter/$image
