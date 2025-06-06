@@ -119,9 +119,13 @@ Just copy the table below and use the accelerated address of the corresponding r
 ## Number of historical stars
 ![](https://starchart.cc/Silentely/AdBlock-Acceleration.svg)
 
+
 ## Views
 ![](http://profile-counter.glitch.me/Silentely/count.svg)
 
 ## Git commit log
 [View Full Commit History](https://github.com/Silentely/AdBlock-Acceleration/commits/main)
+
+## Sponsors
+[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
 
