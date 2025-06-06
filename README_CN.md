@@ -123,3 +123,6 @@
 
 ## Git 提交日志
 [查看完整提交历史](https://github.com/Silentely/AdBlock-Acceleration/commits/main)
+
+## 赞助商
+[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
