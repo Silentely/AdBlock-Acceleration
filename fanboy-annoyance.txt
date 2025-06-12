@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: DTgLBjl3Wp9wKcfquQXHgw
-! Version: 202506120442
+! Checksum: KcPHHTM6NHx68svc/mYuPg
+! Version: 202506121142
 ! Title: Fanboy's Annoyance List
-! Last modified: 2025-06-12 04:42 UTC
+! Last modified: 2025-06-12 11:42 UTC
 ! Expires: 9 days (update frequency)
 ! Homepage: https://easylist.to/
 ! License: http://creativecommons.org/licenses/by/3.0/
@@ -4040,6 +4040,7 @@ wfaa.com,wkyc.com##+js(rc,  video__docker_state_docked, , stay)
 ! cbsnews.com (Floating video)
 cbsnews.com##+js(rc, floating, , stay)
 cbsnews.com##.floating
+! Non-English
 ! https://github.com/uBlockOrigin/uAssets/issues/23310
 www.nicovideo.jp##:matches-path(/\/(search|tag)\//) .nicoadVideoItem
 www.nicovideo.jp##:matches-path(/tag/).nicodicNicoadVideoList
@@ -4052,6 +4053,9 @@ paircare.jp##main > div.lg\:hidden:has(> div.fixed.z-30.inset-0.overflow-y-auto)
 ! https://www.saisoncard.co.jp/credictionary/marketing/article_ads_behavioral_economics.html
 saisoncard.co.jp###modal-overlay:has(.form-area-content__img > [src$="/marketing01.jpg"])
 saisoncard.co.jp##body[style="overflow-y: hidden;"]:style(overflow-y: auto !important;)
+! rocket-boys.co.jp
+rocket-boys.co.jp###timeModal
+rocket-boys.co.jp##body[style^="position:"]:style(position: static !important; top: unset !important; width: unset !important;)
 !--------------------------General blocking rules-----------------------------!
 ! fanboy_social_general_block.txt
 -facebook-likeButton-
@@ -21070,7 +21074,6 @@ playswellwithbutter.com#@#a[href^="https://www.pinterest.com/pin/create/button/"
 ###cookieConsent_Div
 ###cookieCont
 ###cookieContener
-###cookieContent
 ###cookieContraption
 ###cookieControl
 ###cookieControlWrapper
@@ -38599,6 +38602,7 @@ tekniikkaosat.fi##+js(set-cookie, __consent, 1)
 hostfly.by##+js(set-cookie, www_hostfly_by:443-s1-CookiePRO_cancel, 1)
 seswater.co.uk##+js(set-cookie, cookie, true)
 flinders.edu.au##+js(set-cookie, gdpr_opted_in, true, , reload, 1)
+assura.ch##+js(set-cookie, cookiePolicyApproved, true)
 seswater.co.uk##+js(set-cookie, performanceAnalytics, false)
 gobiernodecanarias.org##+js(set-cookie, cookies_analitycs_allowed, true)
 blaze.*,blaze.bet.br##+js(set-cookie, accept_policy_regulation, 1)
@@ -48040,6 +48044,7 @@ themarshallproject.org##.email-signup-v2-js
 spectator.org##.email-signup-widget
 rei.com##.email-signup__container
 iximiuz.com##.email-subs-box
+choice.com.au##.email-subscribe
 moneymagpie.com##.email-subscribe-box
 onlyinyourstate.com##.emailSignup-borderRadius
 mirror.co.uk##.email__toaster-component
@@ -50008,6 +50013,7 @@ auto.it##div[class^="ModalNewsletter_"]
 ilgiorno.it,ilrestodelcarlino.it,iltelegrafolivorno.it,lanazione.it,quotidiano.net##div[class^="Newsletter_"]
 ! Japanese
 bluetti.jp###dynamic-react-root + div:has(> div.needsclick input[id^="email_"])
+rocket-boys.co.jp##.fixed-bottom
 mastory.jp##.p-article-mail
 somu-lier.jp##.popup-mailmaga
 twilog.togetter.com##.subscription_banner
