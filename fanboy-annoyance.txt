@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: nob29DQe2b9ZOMn2OdE2Ew
-! Version: 202506292342
+! Checksum: VSV6bBWeRfGXerK4hJzD+w
+! Version: 202506300442
 ! Title: Fanboy's Annoyance List
-! Last modified: 2025-06-29 23:42 UTC
+! Last modified: 2025-06-30 04:42 UTC
 ! Expires: 9 days (update frequency)
 ! Homepage: https://easylist.to/
 ! License: http://creativecommons.org/licenses/by/3.0/
@@ -4028,6 +4028,8 @@ csmonitor.com##+js(set-local-storage-item, csm_unique_stories, $remove$)
 ! deepl.com (login nag and app popup)
 deepl.com##+js(set-local-storage-item, LMT_freeUserUsageBlock, $remove$)
 deepl.com##+js(set-local-storage-item, onboardingData, $remove$)
+! Hide lightbox
+oceana.org##+js(set-cookie, HideDonationLightbox, 1)
 ! https://github.com/uBlockOrigin/uAssets/issues/24709
 yoreparo.com##.cta-bajo-pregunta + div[class^="div-block"]
 yoreparo.com##.post.blur:style(filter: none !important;)
@@ -34389,6 +34391,7 @@ playswellwithbutter.com#@#a[href^="https://www.pinterest.com/pin/create/button/"
 ||cmpv2.pcworld.com^
 ||coco.we-online.com/public/app.js
 ||conclude.com/assets/build/combined.$script
+||consent-manager.thenextweb.com^
 ||consent.23g.io^
 ||consent.canalboat.co.uk^
 ||consent.cmp.oath.com^
@@ -39308,6 +39311,7 @@ butter.us##+js(set-cookie, cookiePolicy, true)
 ag-vmeste.ru##+js(set-cookie, mos_cookie, true)
 hygieniapassit.info,natlawreview.com,knime.com,seventhgeneration.com,press.princeton.edu,ldz.lv,openfiler.com##+js(set-cookie, cookie-agreed, 0)
 buildtheearth.net##+js(set-cookie, mtm_cookie_consent, 1)
+zukunft-jetzt.deutsche-rentenversicherung.de##+js(set-cookie, complianceCookie, accepted)
 crtm.es##+js(set-cookie, crtmcookiesProtDatos, 1, , reload, 1)
 airastana.com##+js(set-cookie, NADevGDPRCookieConsent_portal_2, 1)
 vkf-renzel.nl##+js(set-cookie, handledCookieMessage, 1)
@@ -45076,7 +45080,7 @@ youtube.com#@##consent-bump
 bbc.com#@##consentBanner
 wacom.com#@##consent_blackbar
 voas.fi#@##coockie-modal
-br-dge.to,feierabend.de,kmudigital.at,kontostand.at,serveminecraft.net,vrtranspoint.fi#@##cookie-banner
+br-dge.to,feierabend.de,kmudigital.at,kontostand.at,serveminecraft.net,vrtranspoint.fi,zukunft-jetzt.deutsche-rentenversicherung.de#@##cookie-banner
 channel4.com#@##cookie-consent-banner
 tingstad.com#@##cookie-consent-popup
 notify.events#@##cookie-gdpr
@@ -47347,7 +47351,6 @@ mapyourshow.com###newsletterform
 cyclinguptodate.com,dartsnieuws.com###newsletters
 kyivindependent.com###newsletters-subscribe-box
 lapresse.ca###newsletters-subscription-box-root
-thenextweb.com###newslettersignup
 silicon.co.uk,silicon.de,silicon.es,silicon.fr,silicon.pt###nl-overlay
 arkansasonline.com###nlForm
 sonomamag.com###nlFrameId7020
