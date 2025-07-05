@@ -125,4 +125,5 @@
 [查看完整提交历史](https://github.com/Silentely/AdBlock-Acceleration/commits/main)
 
 ## 赞助商
+[![Powered by Netjett](https://i.miji.bid/2025/07/05/76050236db0a06996ee0fc077b87880b.jpeg)](https://netjett.com "Powered by Netjett - Free VPS for Open Source")
 [![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")

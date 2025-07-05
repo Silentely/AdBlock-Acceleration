@@ -127,5 +127,5 @@ Just copy the table below and use the accelerated address of the corresponding r
 [View Full Commit History](https://github.com/Silentely/AdBlock-Acceleration/commits/main)
 
 ## Sponsors
+[![Powered by Netjett](https://i.miji.bid/2025/07/05/76050236db0a06996ee0fc077b87880b.jpeg)](https://netjett.com "Powered by Netjett - Free VPS for Open Source")
 [![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
-
