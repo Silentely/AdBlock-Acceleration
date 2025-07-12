@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202507112343
+! Version: 202507120548
 ! Title: EasyPrivacy
-! Last modified: 11 Jul 2025 23:43 UTC
+! Last modified: 12 Jul 2025 05:48 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -130,6 +130,7 @@
 /_vercel/speed-insights/script.js
 /_visitcount?
 /a.gif?
+/a/elevar/static/*
 /a/performance_timing/*
 /a8c-analytics.js
 /aap/stats
@@ -1232,6 +1233,7 @@
 /index.php/analytics/cookieAnalytics|$xmlhttprequest
 /index.track?
 /indextools.js
+/init?*&fallbackUserId=
 /inline-pixel.js
 /inpl.measure.jssc
 /insales_counter.js?
@@ -1819,6 +1821,7 @@
 /production/analytics.min.js
 /promo/impression?
 /propagate_cookie.php
+/providers/atLabel/load|
 /pt.gif?
 /pt?type=pv&
 /ptrack.js
@@ -2965,6 +2968,9 @@ _WebVitalsReporter_
 ://sgtm.*.js?
 ://tagging.*.js?aw=
 ://tagging.*/settings.js
+! Stape
+=aWQ9R1RNL*apiKey=$script,~third-party
+=aWQ9R1RNL*page=$script,~third-party
 ! Google
 ||adservice.google.
 ||google.*/url?$ping
@@ -10119,6 +10125,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||curated.fieldtest.cc^
 ||custom.search.yahoo.co.jp/images/window/*.gif
 ||customerlobby.com/ctrack-
+||customers.edgetag.io^
 ||customfingerprints.bablosoft.com^
 ||cws.conviva.com^
 ||d.rcmd.jp^$image
@@ -10329,6 +10336,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||facebook.com/xti.php?
 ||factors.ai/sdk/event/
 ||fairfax.com.au/js/track/
+||fallback.attntags.com^
 ||faphouse.com/api/collector/
 ||fast.fonts.net/jsapi/core/mt.js
 ||fast.wistia.net/assets/external/googleAds.js
@@ -10435,6 +10443,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||geoproapp.com/api/record
 ||geoservice.curse.com^
 ||geotags.refinery89.com^
+||getelevar.com/configs/
 ||getelevar.com/shops/*/events.js
 ||getglue.com^*/count?
 ||getkudos.me/a?$image
