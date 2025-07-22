@@ -1,7 +1,7 @@
 [Adblock Plus 1.1]
-! Version: 202507221149
+! Version: 202507221740
 ! Title: EasyPrivacy
-! Last modified: 22 Jul 2025 11:49 UTC
+! Last modified: 22 Jul 2025 17:40 UTC
 ! Expires: 4 days (update frequency)
 ! *** easylist:template_header.txt ***
 ! 
@@ -11666,6 +11666,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||tags.fullcontact.com^
 ||tags.master-perf-tools.com^
 ||tags.pw.adn.cloud^
+||tagservice.maximus.mobkoi.com^
 ||tagtracking.vibescm.com^
 ||target.mixi.media^
 ||tarteaucitron.io/log/
@@ -15893,6 +15894,9 @@ coomer.su,kemono.su##+js(set-local-storage-item, plausible_ignore, true)
 ||ncbi.nlm.nih.gov/core/pinger/pinger.js
 ncbi.nlm.nih.gov##+js(set, ncbi.sg, {})
 ncbi.nlm.nih.gov##+js(set, ncbi.sg.ping, noopFunc)
+! https://github.com/AdguardTeam/AdguardFilters/issues/209795
+bitdefender.com##body[style="opacity: 0;"]:style(opacity: 1 !important;)
+||sstats.bitdefender.com^$xhr,redirect=noop.txt,important
 ! -----------------Individual cname tracking systems-----------------!
 ! *** easylist:easyprivacy/easyprivacy_specific_cname_dataunlocker.txt ***
 ! easyprivacy_specific_cname_dataunlocker.txt
@@ -18658,6 +18662,7 @@ ncbi.nlm.nih.gov##+js(set, ncbi.sg.ping, noopFunc)
 ! ||std.o.webmd.com^
 ! ||lp.go2.ringcentral.com^
 ! ||w.smobile.wotif.com^
+! ||sstats.bitdefender.com^
 ! 
 ||0tfsd2rwwu3xjstb.edge41.testandtarget.omniture.com^
 ||1ps6e7sort397gy9.edge46.testandtarget.omniture.com^
@@ -27033,7 +27038,6 @@ ncbi.nlm.nih.gov##+js(set, ncbi.sg.ping, noopFunc)
 ||sstats.bbt.com^
 ||sstats.belgiantrain.be^
 ||sstats.bever.nl^
-||sstats.bitdefender.com^
 ||sstats.bnpparibasfortis.be^
 ||sstats.bonappetit.com^
 ||sstats.bookhostels.com^
