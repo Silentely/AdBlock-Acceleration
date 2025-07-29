@@ -14,7 +14,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       packages: write
       actions: write
 
@@ -158,7 +158,7 @@ jobs:
       - name: GitHub Push #推送至库
         uses: ad-m/github-push-action@v0.8.0
         with:
-          github_token: ${{ secrets.TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
 
       - name: Delete old workflow runs
