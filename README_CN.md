@@ -118,8 +118,6 @@
 ## 历史 Star 数
 ![](https://starchart.cc/Silentely/AdBlock-Acceleration.svg)
 
-## 访问量
-![](http://busuanzi.ibruce.info/busuanzi/2.3/busuanzi_value_site_pv.svg)
 
 ## Git 提交日志
 [查看完整提交历史](https://github.com/Silentely/AdBlock-Acceleration/commits/main)
@@ -142,6 +140,7 @@
 
 [github-hosts]: https://raw.githubusercontent.com/racaljk/hosts/master/hosts "hosts on Github"
 [CC-NC-SA-4.0]: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh
+
 
 <div align="center">
   <sub>Made with ❤️ by <a href="https://github.com/Silentely">Silentely</a></sub>
