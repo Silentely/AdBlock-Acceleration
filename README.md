@@ -49,7 +49,9 @@ Filtering tools：
 * 💻 Desktop (global de-advertising)）
   * [AdGuard for Windows](https://adguard.com/zh_cn/adguard-windows/overview.html)
   * [AdGuard for macOS](https://adguard.com/zh_cn/adguard-mac/overview.html)
-  
+
+## 🧩 Project Introduction
+
 🙅‍♂️However, there is a pain point with all of these tools, as the rules are largely hosted on offshore servers, making updates extremely slow or even impossible to successfully update.
 
 😫 A very common scenario: you've configured de-advertising tools for the elders and elderly in your family to prevent them from being phished, scammed or infected with viruses while browsing the web. But the fact is that often, many rules are carefully chosen, but in fact most of them are in the state of failure to update, and then a pop-up box appears, and the elder clicks randomly, but not necessarily what happens after ...... may say that the computer is broken, the update failed....
@@ -57,8 +59,10 @@ Filtering tools：
 💥 This project is designed to solve this problem by updating the rules at light speed without going through any agents.
 
 ## 🕹 Project rationale
+
 The project uses GitHub Actions to download the latest rules every 6 hours every day at UTC time, and then pushes them to GitHub Repo.  
-The rules are distributed in conjunction with a globally accelerated CDN provided by five sites  
+The rules are distributed in conjunction with a globally accelerated CDN provided by multiple sites:
+
 ①[GHUCS](https://raw.githubusercontents.com) (With cache)  
 ②[JsDelivr](https://www.jsdelivr.com) (With cache)  
 ③[Render](https://render.com) (No cache)  
@@ -66,12 +70,14 @@ The rules are distributed in conjunction with a globally accelerated CDN provide
 
 The result is a second-by-second update of all de-advertising rules.
 
-## 🧪 personal test
+## 🧪 Personal test
+
 Under normal network environment (without any proxies, in mainland China network environment)
 * Before using accelerated links: It can take up to 5 minutes and 12 seconds to update up to 13 rules, and 4 updates have failed.
 * When accelerated links are used: all rules are updated within 15 seconds.
 
 ## 🚛 Refinement projects
+
 I'd like you to submit an Issue or Request to help me improve the rules.
 
 Submit the rules that you think you need to update for acceleration. The following points should be noted.
@@ -82,16 +88,9 @@ Submit the rules that you think you need to update for acceleration. The followi
 `https://cdn.jsdelivr.net/gh/username/project name@version/accelerate files`.
 
 ## 🍔 Usage
+
 ⚠️ Note: This rule is not for web proxy tools, don't give it to Surge, ShadowRocket, Quantumult(X), Clash(X/A) and similar tools!
 Just copy the table below and use the accelerated address of the corresponding rule as a link to the subscription rule for the de-advertising tool.
-
-## License
-
-- All code in this project is released under the [MIT License](LICENSE) unless otherwise specified.
-- The README.MD and wiki resources of this project are based on [CC BY-NC-SA 4.0][CC-NC-SA-4.0]. This means you can copy and redistribute the content of this project,
-  but you must **provide appropriate credit and a link to the license**. At the same time, you **may not use this project for commercial purposes**, according to our narrow understanding
-  (with supplementary terms), any profit-making activity is considered a commercial purpose.
-- Please use this project in compliance with local laws and regulations.
 
 ## 📃 List of rules
 
@@ -118,24 +117,20 @@ Just copy the table below and use the accelerated address of the corresponding r
 | Adblock Warning Removal List | [original](https://easylist-downloads.adblockplus.org/antiadblockfilters.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/antiadblockfilters.txt) | [accelerated③](https://raw.cosr.eu.org/antiadblockfilters.txt) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt) |
 | Fanboy’s Annoyances List | [original](https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/fanboy-annoyance.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/fanboy-annoyance.txt) | [accelerated③](https://raw.cosr.eu.org/fanboy-annoyance.txt) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/fanboy-annoyance.txt) |
 
-
-##    Special thanks
+## 🌟 Special thanks
 
 * [@Hackl0us](https://github.com/Hackl0us)
 
+## 📈 Number of historical stars
 
-## Number of historical stars
 ![](https://starchart.cc/Silentely/AdBlock-Acceleration.svg)
 
+## 💰 Sponsors
 
-## Git commit log
-[View Full Commit History](https://github.com/Silentely/AdBlock-Acceleration/commits/main)
-
-## Sponsors
 [![Powered by Netjett](https://i.miji.bid/2025/07/05/76050236db0a06996ee0fc077b87880b.jpeg)](https://netjett.com "Powered by Netjett - Free VPS for Open Source")
 [![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
 
-## License
+## 📜 License
 
 - All code in this project is released under the [MIT License](LICENSE) unless otherwise specified.
 - The README.MD and wiki resources of this project are based on [CC BY-NC-SA 4.0][CC-NC-SA-4.0]. This means you can copy and redistribute the content of this project,

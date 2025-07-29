@@ -56,9 +56,17 @@
 
 💥 这个项目就是为了解决这一难题，无需通过任何代理即可光速更新规则。
 
+## 🧩 项目介绍
+
+这类工具都存在一个痛点，因为规则基本都托管在境外服务器，导致更新极其缓慢，甚至无法成功更新。
+
+一个非常常见的场景：你为家中长辈、老人配置了去广告工具来避免他们在浏览网页时被钓鱼、欺诈或感染病毒。但是事实往往是，精心选择了很多规则，但实际上大部分规则都处于更新失败的状态，然后弹出提示框，长辈乱点，之后不一定怎样了……可能说电脑坏了，更新失败了……
+
 ## 🕹 项目原理
+
 项目使用了 GitHub Actions 在每天 UTC 时间每隔6小时更新下载一次最新规则，然后推送到 GitHub Repo。  
-配合使用五个网站提供的全球加速 CDN 来分发规则  
+配合使用多个网站提供的全球加速 CDN 来分发规则：
+
 ①[GHUCS](https://raw.githubusercontents.com) （具有缓存）  
 ②[jsDelivr](https://www.jsdelivr.com) （具有缓存）   
 ③[Render](https://render.com) （无缓存）    
@@ -67,11 +75,13 @@
 从而实现秒秒钟更新所有去广告规则。
 
 ## 🧪 个人测试
+
 正常网络环境下（无任何代理，在中国大陆网络环境下）
 * 使用加速链接前：更新 13 个规则最长可能需要 5 分钟 12 秒，而且有 4 个更新失败。
 * 使用加速链接后：所有规则在 15秒内全部更新完成。
 
 ## 🚛 完善项目
+
 希望大家可以提交 Issue 或者 Request 来帮助我完善规则
 
 提交认为你们需要更新加速的规则。下面几点需要注意：
@@ -82,6 +92,7 @@
 `https://cdn.jsdelivr.net/gh/用户名/项目名@版本/加速文件`
 
 ## 🍔 使用方法
+
 **⚠️ 注意：** 该规则不是针对网络代理工具的，不要给 Surge、ShadowRocket、Quantumult(X)、Clash(X/A) 等类似工具使用！
 直接拷贝下方表格中，对应规则的加速地址，作为去广告工具的订阅规则链接即可。
 
@@ -111,21 +122,6 @@
 | Fanboy’s Annoyances List | [原始](https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/fanboy-annoyance.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/fanboy-annoyance.txt) | [加速③](https://raw.cosr.eu.org/fanboy-annoyance.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/fanboy-annoyance.txt) |
 
 
-## 特别鸣谢
-
-* [@Hackl0us](https://github.com/Hackl0us)
-
-## 历史 Star 数
-![](https://starchart.cc/Silentely/AdBlock-Acceleration.svg)
-
-
-## Git 提交日志
-[查看完整提交历史](https://github.com/Silentely/AdBlock-Acceleration/commits/main)
-
-## 赞助商
-[![Powered by Netjett](https://i.miji.bid/2025/07/05/76050236db0a06996ee0fc077b87880b.jpeg)](https://netjett.com "Powered by Netjett - Free VPS for Open Source")
-[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
-
 ## License
 
 - 本项目的所有代码除另有说明外,均按照 [MIT License](LICENSE) 发布。
@@ -145,3 +141,17 @@
 <div align="center">
   <sub>Made with ❤️ by <a href="https://github.com/Silentely">Silentely</a></sub>
 </div>
+
+
+## 🌟 特别鸣谢
+
+* [@Hackl0us](https://github.com/Hackl0us)
+
+## 📈 历史 Star 数
+
+![](https://starchart.cc/Silentely/AdBlock-Acceleration.svg)
+
+## 💰 赞助商
+
+[![Powered by Netjett](https://i.miji.bid/2025/07/05/76050236db0a06996ee0fc077b87880b.jpeg)](https://netjett.com "Powered by Netjett - Free VPS for Open Source")
+[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
