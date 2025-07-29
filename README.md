@@ -129,7 +129,7 @@ Just copy the table below and use the accelerated address of the corresponding r
 
 
 ## Views
-![](http://profile-counter.glitch.me/Silentely/count.svg)
+![](http://busuanzi.ibruce.info/busuanzi/2.3/busuanzi_value_site_pv.svg)
 
 ## Git commit log
 [View Full Commit History](https://github.com/Silentely/AdBlock-Acceleration/commits/main)
