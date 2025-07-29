@@ -13,6 +13,11 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      actions: write
+
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4.2.2
@@ -156,6 +161,11 @@ jobs:
           github_token: ${{ secrets.TOKEN }}
           branch: main
 
+      - name: Delete old workflow runs
+        uses: GitRML/delete-workflow-runs@main
+        with:
+          retain_days: '5'
+          keep_minimum_runs: '0'
           
 #      - name: WeChat notification #用于微信推送通知（如有需要删除行头注释）
 #        run: curl https://sc.ftqq.com/${{ secrets.ServerChan }}.send?text=${{ env.FILE_NAME }}AdBlock规则已更新

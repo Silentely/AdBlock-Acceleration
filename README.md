@@ -85,6 +85,14 @@ Submit the rules that you think you need to update for acceleration. The followi
 ⚠️ Note: This rule is not for web proxy tools, don't give it to Surge, ShadowRocket, Quantumult(X), Clash(X/A) and similar tools!
 Just copy the table below and use the accelerated address of the corresponding rule as a link to the subscription rule for the de-advertising tool.
 
+## License
+
+- All code in this project is released under the [MIT License](LICENSE) unless otherwise specified.
+- The README.MD and wiki resources of this project are based on [CC BY-NC-SA 4.0][CC-NC-SA-4.0]. This means you can copy and redistribute the content of this project,
+  but you must **provide appropriate credit and a link to the license**. At the same time, you **may not use this project for commercial purposes**, according to our narrow understanding
+  (with supplementary terms), any profit-making activity is considered a commercial purpose.
+- Please use this project in compliance with local laws and regulations.
+
 ## 📃 List of rules
 
 | 🥑 Rule Name | original address | 🚀 accelerated address① | 🚀 accelerated address② | 🚀 accelerated address③ | 🚀 accelerated address④ |
