@@ -117,6 +117,28 @@ Just copy the table below and use the accelerated address of the corresponding r
 | Adblock Warning Removal List | [original](https://easylist-downloads.adblockplus.org/antiadblockfilters.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/antiadblockfilters.txt) | [accelerated③](https://raw.cosr.eu.org/antiadblockfilters.txt) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt) |
 | Fanboy’s Annoyances List | [original](https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/fanboy-annoyance.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/fanboy-annoyance.txt) | [accelerated③](https://raw.cosr.eu.org/fanboy-annoyance.txt) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/fanboy-annoyance.txt) |
 
+## 📜 License
+
+- All code in this project is released under the [MIT License](LICENSE) unless otherwise specified.
+- The README.MD and wiki resources of this project are based on [CC BY-NC-SA 4.0][CC-NC-SA-4.0]. This means you can copy and redistribute the content of this project,
+  but you must **provide appropriate credit and a link to the license**. At the same time, you **may not use this project for commercial purposes**, according to our narrow understanding
+  (with supplementary terms), any profit-making activity is considered a commercial purpose.
+- Please use this project in compliance with local laws and regulations.
+
+
+<p align="center">
+  <img src="https://github.com/docker/dockercraft/raw/master/docs/img/contribute.png?raw=true" alt="贡献图示">
+</p>
+
+[github-hosts]: https://raw.githubusercontent.com/racaljk/hosts/master/hosts "hosts on Github"
+[CC-NC-SA-4.0]: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh
+
+
+<div align="center">
+  <sub>Made with ❤️ by <a href="https://github.com/Silentely">Silentely</a></sub>
+</div>
+
+
 ## 🌟 Special thanks
 
 * [@Hackl0us](https://github.com/Hackl0us)
@@ -129,11 +151,3 @@ Just copy the table below and use the accelerated address of the corresponding r
 
 [![Powered by Netjett](https://i.miji.bid/2025/07/05/76050236db0a06996ee0fc077b87880b.jpeg)](https://netjett.com "Powered by Netjett - Free VPS for Open Source")
 [![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
-
-## 📜 License
-
-- All code in this project is released under the [MIT License](LICENSE) unless otherwise specified.
-- The README.MD and wiki resources of this project are based on [CC BY-NC-SA 4.0][CC-NC-SA-4.0]. This means you can copy and redistribute the content of this project,
-  but you must **provide appropriate credit and a link to the license**. At the same time, you **may not use this project for commercial purposes**, according to our narrow understanding
-  (with supplementary terms), any profit-making activity is considered a commercial purpose.
-- Please use this project in compliance with local laws and regulations.
