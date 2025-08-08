@@ -239,6 +239,76 @@ jobs:
             fi
           done
 
+      - name: Summarize health-check failures (日志与摘要)
+        if: failure() && (steps.download_rules.outcome == 'failure' || steps.validate_files.outcome == 'failure')
+        env:
+          REPO: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_NUMBER: ${{ github.run_number }}
+          WORKFLOW: ${{ github.workflow }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          files=( \
+            "AdGuard_Simplified_Domain_Names_Filter.txt" \
+            "Anti_AD_Easylist.txt" \
+            "EasyList_China.txt" \
+            "EasyPrivacy.txt" \
+            "HalfLife.txt" \
+            "CJX's_EasyList_Lite.txt" \
+            "CJX's_Annoyance_List.txt" \
+            "Xinggsf_rule.txt" \
+            "Xinggsf_mv.txt" \
+            "Fanboy-social.txt" \
+            "ADgk.txt" \
+            "ds_hosts.txt" \
+            "1024_hosts.txt" \
+            "iPv4_hosts.txt" \
+            "Steven_hosts" \
+            "Hblock_hosts" \
+            "antiadblockfilters.txt" \
+            "fanboy-annoyance.txt" \
+          )
+
+          missing=()
+          html_like=()
+          too_few=()
+          for f in "${files[@]}"; do
+            if [ ! -s "$f" ]; then
+              missing+=("$f"); continue
+            fi
+            if file "$f" | grep -qi 'HTML'; then
+              html_like+=("$f"); continue
+            fi
+            if [ "$(wc -l < "$f")" -lt 50 ]; then
+              too_few+=("$f")
+            fi
+          done
+
+          fmt_list() { [ "$#" -eq 0 ] && echo "无" || printf '\n - %s' "$@"; }
+
+          echo "::group::健康检查失败归纳"
+          echo "缺失/空文件:$(fmt_list "${missing[@]-}")"
+          echo
+          echo "疑似HTML错误页:$(fmt_list "${html_like[@]-}")"
+          echo
+          echo "行数过少(<50):$(fmt_list "${too_few[@]-}")"
+          echo
+          echo "运行日志: https://github.com/${REPO}/actions/runs/${RUN_ID}"
+          echo "::endgroup::"
+
+          {
+            echo "### 下载/健康检查失败归纳"
+            echo
+            echo "- 缺失/空文件:$(fmt_list "${missing[@]-}")"
+            echo
+            echo "- 疑似HTML错误页:$(fmt_list "${html_like[@]-}")"
+            echo
+            echo "- 行数过少(<50):$(fmt_list "${too_few[@]-}")"
+            echo
+            echo "运行日志: https://github.com/${REPO}/actions/runs/${RUN_ID}"
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Notify via Telegram on health-check failure (中文)
         if: failure() && (steps.download_rules.outcome == 'failure' || steps.validate_files.outcome == 'failure')
         env:
