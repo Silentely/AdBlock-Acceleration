@@ -8,9 +8,7 @@
 <img src="https://img.shields.io/github/license/Silentely/AdBlock-Acceleration?color=ff69b4">
 <img src="https://img.shields.io/github/languages/code-size/Silentely/AdBlock-Acceleration?color=blueviolet">
 <img src="https://img.shields.io/github/last-commit/Silentely/AdBlock-Acceleration/main?label=%E4%B8%8A%E6%AC%A1%E6%9B%B4%E6%96%B0&color=success">
-<img src="https://img.shields.io/badge/dynamic/json?label=GitHub%20Followers&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3DSilentely&labelColor=282c34&color=181717&logo=github&longCache=true "关注数量">
 <br>
-<img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FSilentely%2FAdBlock-Acceleration.svg?type=small">
 </div>
 
 # 项目说明
@@ -108,6 +106,18 @@ sha256sum -c checksums.txt
 ```
 
 - 清单：见 `manifest.json`，包含文件大小、哈希与时间戳，便于程序化消费。
+
+## Web 规则索引页（复制/搜索/镜像选择）
+
+- 在线镜像：[https://raw.cosr.eu.org](https://raw.cosr.eu.org)
+- 功能：
+  - 镜像选择：GHUCS / jsDelivr / cosr / gitmirror
+  - 单条一键复制；按“复制当前可见规则链接”批量复制
+  - 即时搜索（按规则名或文件名）
+  - 大小/更新时间来自根目录 `manifest.json`
+  - 主题：浅色（默认）/ 深色 / 跟随系统
+- 深链（复制直达）：`index.html?mirror=ghucs&copy=EasyPrivacy.txt`
+  - 进入即按镜像复制最终链接到剪贴板
 
 
 | 🥑 规则名称 | 原始地址 | 🚀 加速地址① | 🚀 加速地址② | 🚀 加速地址③ | 🚀 加速地址④ |

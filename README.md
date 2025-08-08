@@ -8,9 +8,7 @@
 <img src="https://img.shields.io/github/license/Silentely/AdBlock-Acceleration?color=ff69b4">
 <img src="https://img.shields.io/github/languages/code-size/Silentely/AdBlock-Acceleration?color=blueviolet">
 <img src="https://img.shields.io/github/last-commit/Silentely/AdBlock-Acceleration/main?label=last%20update&color=success">
-<img src="https://img.shields.io/badge/dynamic/json?label=GitHub%20Followers&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3DSilentely&labelColor=282c34&color=181717&logo=github&longCache=true "关注数量">
 <br>
-<img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FSilentely%2FAdBlock-Acceleration.svg?type=small">
 </div>
 
 # Project instruction 
@@ -104,6 +102,18 @@ sha256sum -c checksums.txt
 ```
 
 - manifest: see `manifest.json` for a machine-readable index with file sizes, hashes and timestamps.
+
+## Web index page (rule index with copy/search)
+
+- Online mirror: [https://raw.cosr.eu.org](https://raw.cosr.eu.org)
+- Features:
+  - Mirror selector: GHUCS / jsDelivr / cosr / gitmirror
+  - One-click copy per rule; copy-all for current visible rows
+  - Instant search (by rule name or filename)
+  - Size/Updated time sourced from `manifest.json`
+  - Theme: light (default) / dark / follow system
+- Deep link (copy shortcut): `index.html?mirror=ghucs&copy=EasyPrivacy.txt`
+  - It selects the mirror and copies the final URL to clipboard
 
 - gzip copies: each file also has a `.gz` companion (e.g. `EasyPrivacy.txt.gz`). Most tools can ingest gzip directly or after a quick `gunzip -c file.txt.gz > file.txt`.
 

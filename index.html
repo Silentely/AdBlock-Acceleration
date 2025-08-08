@@ -6,7 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AdBlock-Acceleration 规则索引</title>
   <style>
-    :root { --bg:#0b0e14; --fg:#e6edf3; --muted:#9ba7b4; --accent:#3fb950; --border:#2d333b; }
+    /* 默认浅色主题 */
+    :root { --bg:#ffffff; --fg:#0b0e14; --muted:#57606a; --accent:#0969da; --border:#d0d7de; }
+    /* 深色主题覆盖 */
+    [data-theme="dark"] { --bg:#0b0e14; --fg:#e6edf3; --muted:#9ba7b4; --accent:#3fb950; --border:#2d333b; }
+    /* 跟随系统时，当系统为深色则应用深色变量 */
+    @media (prefers-color-scheme: dark) {
+      [data-theme="system"] { --bg:#0b0e14; --fg:#e6edf3; --muted:#9ba7b4; --accent:#3fb950; --border:#2d333b; }
+    }
     *{box-sizing:border-box}
     body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.6 system-ui,Segoe UI,Roboto,Helvetica,Arial}
     header{padding:20px;border-bottom:1px solid var(--border);display:flex;gap:16px;align-items:center;flex-wrap:wrap}
@@ -40,6 +47,13 @@
           <option value="jsdelivr">jsDelivr</option>
           <option value="cosr">cosr</option>
           <option value="gitmirror">gitmirror</option>
+        </select>
+      </label>
+      <label class="muted">主题: 
+        <select id="theme">
+          <option value="light">浅色</option>
+          <option value="dark">深色</option>
+          <option value="system">跟随系统</option>
         </select>
       </label>
       <button class="btn" id="copyAll">复制当前可见规则链接</button>
@@ -97,6 +111,7 @@
     const $ = (s)=>document.querySelector(s);
     const tbody = $('#rules tbody');
     const mirrorSel = $('#mirror');
+    const themeSel = $('#theme');
     const search = $('#search');
     const toast = $('#toast');
     const updated = $('#updated');
@@ -158,6 +173,17 @@
     }
 
     (async function init(){
+      // 主题初始化：默认浅色，可选跟随系统/深色
+      const THEME_KEY = 'theme';
+      const savedTheme = localStorage.getItem(THEME_KEY) || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      themeSel.value = savedTheme;
+      themeSel.addEventListener('change', ()=>{
+        const v = themeSel.value;
+        document.documentElement.setAttribute('data-theme', v);
+        localStorage.setItem(THEME_KEY, v);
+      });
+
       try{ const res = await fetch('./manifest.json',{cache:'no-store'}); if(res.ok){ manifest = await res.json(); updated.textContent = '更新: '+ new Date(manifest.updatedAt).toLocaleString(); } else { updated.textContent = 'manifest 不可用'; } }
       catch{ updated.textContent = 'manifest 不可用'; }
       render(); attachHandlers(); filter();
