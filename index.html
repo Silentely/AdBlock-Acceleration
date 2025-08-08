@@ -6,27 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AdBlock-Acceleration 规则索引</title>
   <style>
-    /* 默认浅色主题 */
-    :root { --bg:#ffffff; --fg:#0b0e14; --muted:#57606a; --accent:#0969da; --border:#d0d7de; }
-    /* 深色主题覆盖 */
-    [data-theme="dark"] { --bg:#0b0e14; --fg:#e6edf3; --muted:#9ba7b4; --accent:#3fb950; --border:#2d333b; }
-    /* 跟随系统时，当系统为深色则应用深色变量 */
+    /* 主题变量 */
+    :root {
+      /* 浅色默认 */
+      --bg:#ffffff; --fg:#0b0e14; --muted:#57606a; --accent:#0969da; --border:#d0d7de;
+      --surface:#f6f8fa; --control-bg:#ffffff; --control-fg:#0b0e14; --btn-bg:#f6f8fa; --btn-fg:#0b0e14;
+    }
+    [data-theme="dark"] {
+      --bg:#0b0e14; --fg:#e6edf3; --muted:#9ba7b4; --accent:#3fb950; --border:#2d333b;
+      --surface:#0f131a; --control-bg:#0f131a; --control-fg:#e6edf3; --btn-bg:#151a22; --btn-fg:#e6edf3;
+    }
     @media (prefers-color-scheme: dark) {
-      [data-theme="system"] { --bg:#0b0e14; --fg:#e6edf3; --muted:#9ba7b4; --accent:#3fb950; --border:#2d333b; }
+      [data-theme="system"] {
+        --bg:#0b0e14; --fg:#e6edf3; --muted:#9ba7b4; --accent:#3fb950; --border:#2d333b;
+        --surface:#0f131a; --control-bg:#0f131a; --control-fg:#e6edf3; --btn-bg:#151a22; --btn-fg:#e6edf3;
+      }
     }
     *{box-sizing:border-box}
     body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.6 system-ui,Segoe UI,Roboto,Helvetica,Arial}
     header{padding:20px;border-bottom:1px solid var(--border);display:flex;gap:16px;align-items:center;flex-wrap:wrap}
     header h1{margin:0;font-size:18px}
     .controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-    input[type="search"]{padding:8px 10px;border:1px solid var(--border);border-radius:6px;background:#0f131a;color:var(--fg);min-width:240px}
-    select{padding:8px 10px;border:1px solid var(--border);border-radius:6px;background:#0f131a;color:var(--fg)}
+    input[type="search"]{padding:8px 10px;border:1px solid var(--border);border-radius:6px;background:var(--control-bg);color:var(--control-fg);min-width:240px}
+    select{padding:8px 10px;border:1px solid var(--border);border-radius:6px;background:var(--control-bg);color:var(--control-fg)}
     main{padding:16px}
     table{width:100%;border-collapse:collapse}
     th,td{padding:10px;border-bottom:1px solid var(--border);vertical-align:top}
     th{color:var(--muted);text-align:left;font-weight:600}
     a{color:#58a6ff;text-decoration:none}
-    .btn{padding:6px 10px;border:1px solid var(--border);border-radius:6px;background:#151a22;color:var(--fg);cursor:pointer}
+    .btn{padding:6px 10px;border:1px solid var(--border);border-radius:6px;background:var(--btn-bg);color:var(--btn-fg);cursor:pointer}
     .btn:hover{border-color:#3b434c}
     .muted{color:var(--muted)}
     .right{text-align:right}
