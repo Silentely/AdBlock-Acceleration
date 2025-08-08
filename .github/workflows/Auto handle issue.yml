@@ -60,13 +60,6 @@ jobs:
         run: |
           set -euo pipefail
           base="https://api.github.com/repos/$REPO"
-          body=$(cat <<EOF
-你好 @$ISSUE_USER 欢迎创建 issue。
-1. 如果遇到问题 (bug)，请说明执行环境，并详细阐述问题情况以便于复现和解决问题。
-2. 如果想增加新功能，请说明该功能在 PC 网页端 / App 上的手动实现过程，并尽可能附上相关网页地址。
-
-—— 来自 AdBlock-Acceleration issues 自动管理姬
-EOF
-)
-          jq -n --arg body "$body" '{body:$body}' > /tmp/comment.json
+          comment="你好 @$ISSUE_USER 欢迎创建 issue。\\n1. 如果遇到问题 (bug)，请说明执行环境，并详细阐述问题情况以便于复现和解决问题。\\n2. 如果想增加新功能，请说明该功能在 PC 网页端 / App 上的手动实现过程，并尽可能附上相关网页地址。\\n\\n—— 来自 AdBlock-Acceleration issues 自动管理姬"
+          jq -n --arg body "$comment" '{body:$body}' > /tmp/comment.json
           curl -sS -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" "$base/issues/$ISSUE_NUMBER/comments" -d @/tmp/comment.json >/dev/null
