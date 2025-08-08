@@ -105,7 +105,7 @@ sha256sum -c checksums.txt
 
 - manifest: see `manifest.json` for a machine-readable index with file sizes, hashes and timestamps.
 
-- gzip copies: each file also has a `.gz` companion (e.g. `EasyPrivacy.txt.gz`). Most tools can ingest gzip directly or after a quick `gunzip -c file.txt.gz > file.txt`.
+  
 
 | 🥑 Rule Name | original address | 🚀 accelerated address① | 🚀 accelerated address② | 🚀 accelerated address③ | 🚀 accelerated address④ |
 | :----: | :----: | :----: | :----: | :----: | :----: |
