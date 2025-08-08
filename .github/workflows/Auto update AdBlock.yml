@@ -9,163 +9,401 @@ on:
 #  watch:
 #    types: started
  
+concurrency:
+  group: adblock-update
+  cancel-in-progress: true
+
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     permissions:
       contents: write
-      packages: write
       actions: write
 
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4.2.2
-            
-      - name: AdGuard DNS filter #AdGuard 官方维护的广告规则，涵盖多种过滤规则
-        uses: carlosperate/download-file-action@v2.0.2
-        with: 
-          file-url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-          file-name: AdGuard_Simplified_Domain_Names_Filter.txt
-
-      - name: Anti-AD #号称是目前中文区命中率最高的广告过滤列表，实现了精确的广告屏蔽和隐私保护
-        uses: carlosperate/download-file-action@v2.0.2
-        with: 
-          file-url: https://anti-ad.net/easylist.txt
-          file-name: Anti_AD_Easylist.txt
-
-      - name: EasyList China #面向中文用户的 EasyList 去广告规则
-        uses: carlosperate/download-file-action@v2.0.2
-        with: 
-          file-url: https://easylist-downloads.adblockplus.org/easylistchina.txt
-          file-name: EasyList_China.txt
-
-      - name: EasyPrivacy #反隐私跟踪、挖矿规则
-        uses: carlosperate/download-file-action@v2.0.2
-        with: 
-          file-url: https://easylist.to/easylist/easyprivacy.txt
-          file-name: EasyPrivacy.txt
       
-      #- name: I dont care about cookies #屏蔽网站的Cookies警告
-      #  uses: carlosperate/download-file-action@v2.0.1
-      #  with: 
-      #    file-url: https://www.i-dont-care-about-cookies.eu/abp/
-      #    file-name: I_dont_care_about_cookies.txt      
-      
-      - name: HalfLife #涵盖了 EasyList China、EasyList Lite、CJX ’s Annoyance、乘风视频过滤规则，以及补充的其它规则
-        uses: carlosperate/download-file-action@v2.0.2
-        with: 
-          file-url: https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad.txt
-          file-name: HalfLife.txt  
-          
-      - name: CJX's EasyList Lite
-        uses: carlosperate/download-file-action@v2.0.2
-        with: 
-          file-url: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt
-          file-name: CJX's_EasyList_Lite.txt  
-          
-      - name: CJX's Annoyance List
-        uses: carlosperate/download-file-action@v2.0.2
-        with: 
-          file-url: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
-          file-name: CJX's_Annoyance_List.txt  
-          
-      - name: Xinggsf_rule #乘风通用广告过滤规则
-        uses: carlosperate/download-file-action@v2.0.2
-        with: 
-          file-url: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
-          file-name: Xinggsf_rule.txt
+      - name: Validate environment
+        run: |
+          set -euo pipefail
+          echo "Bash version: $BASH_VERSION"
+          echo "Node version: $(node -v || true)"
+          echo "Curl version: $(curl --version | head -n1)"
+      - id: download_rules
+        name: Download rules with retry, mirrors and basic validation (curl)
+        shell: bash
+        run: |
+          set -euo pipefail
 
-      - name: Xinggsf_mv #乘风视频广告过滤规则
-        uses: carlosperate/download-file-action@v2.0.2
-        with: 
-          file-url: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt
-          file-name: Xinggsf_mv.txt
+          download_any() {
+            local out="$1"; shift
+            echo "::group::Downloading $out"
+            for url in "$@"; do
+              echo "Trying: $url"
+              for attempt in 1 2 3; do
+                if curl -fsSL --connect-timeout 10 --max-time 180 -o "$out.tmp" "$url"; then
+                  if [ ! -s "$out.tmp" ]; then
+                    echo "Empty file for $out on attempt $attempt from $url" >&2
+                    rm -f "$out.tmp"; sleep 2; continue
+                  fi
+                  if file "$out.tmp" | grep -qi 'HTML'; then
+                    echo "Looks like HTML error page for $out on attempt $attempt from $url" >&2
+                    rm -f "$out.tmp"; sleep 2; continue
+                  fi
+                  mv "$out.tmp" "$out"
+                  echo "Saved $out (lines: $(wc -l < "$out" 2>/dev/null || echo 0), bytes: $(stat -c%s "$out" 2>/dev/null || stat -f%z "$out"))"
+                  echo "::endgroup::"
+                  return 0
+                fi
+                echo "Retry $attempt for $out ..." >&2
+                sleep 2
+              done
+            done
+            echo "::endgroup::"
+            return 1
+          }
 
-      - name: Fanboy's Social Blocking List #禁止社交媒体图标列表
-        uses: carlosperate/download-file-action@v2.0.2
-        with: 
-          file-url: https://easylist-downloads.adblockplus.org/fanboy-social.txt
-          file-name: Fanboy-social.txt
+          # Mirrors based on this repository for fallback
+          REPO_OWNER="Silentely"
+          REPO_NAME="AdBlock-Acceleration"
+          BASE_GHUCS="https://raw.githubusercontents.com/${REPO_OWNER}/${REPO_NAME}/main"
+          BASE_JSDELIVR="https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}"
+          BASE_COSR="https://raw.cosr.eu.org"
+          BASE_GITMIRROR="https://raw.gitmirror.com/${REPO_OWNER}/${REPO_NAME}/main"
 
-      - name: ADgk #手机去广告
-        uses: carlosperate/download-file-action@v2.0.2
-        with: 
-          file-url: https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
-          file-name: ADgk.txt
-          
-      - name: 大圣净化 #针对国内视频网站
-        uses: carlosperate/download-file-action@v2.0.2
-        with: 
-          file-url: https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
-          file-name: ds_hosts.txt
-          
-      - name: 1024_hosts #去色情网站和澳门皇家赌场
-        uses: carlosperate/download-file-action@v2.0.2
-        with: 
-          file-url: https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts
-          file-name: 1024_hosts.txt
-          
-      - name: iOSAdblockList #海外维护针对移动网站的广告主机列表
-        uses: carlosperate/download-file-action@v2.0.2
-        with: 
-          file-url: https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/Hosts.txt
-          file-name: iPv4_hosts.txt
-          
-      - name: StevenBlack #国外维护比较知名的屏幕广告主机列表,整合和扩展多个精心设计的主机文件
-        uses: carlosperate/download-file-action@v2.0.2
-        with: 
-          file-url: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
-          file-name: Steven_hosts
-          
-      - name: Hblock #自动提取来自很多规则源的恶意广告主机列表
-        uses: carlosperate/download-file-action@v2.0.2
-        with: 
-          file-url: https://hblock.molinero.dev/hosts
-          file-name: Hblock_hosts
+          download_any "AdGuard_Simplified_Domain_Names_Filter.txt" \
+            "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt" \
+            "$BASE_GHUCS/AdGuard_Simplified_Domain_Names_Filter.txt" \
+            "$BASE_JSDELIVR/AdGuard_Simplified_Domain_Names_Filter.txt" \
+            "$BASE_COSR/AdGuard_Simplified_Domain_Names_Filter.txt" \
+            "$BASE_GITMIRROR/AdGuard_Simplified_Domain_Names_Filter.txt"
 
-#      - name: Malware Domain List  #恶意软件过滤规则
-#        uses: carlosperate/download-file-action@v1.0.3
-#        with: 
-#          file-url: https://www.malwaredomainlist.com/hostslist/hosts.txt
-#          file-name: Malware_host.txt
+          download_any "Anti_AD_Easylist.txt" \
+            "https://anti-ad.net/easylist.txt" \
+            "$BASE_GHUCS/Anti_AD_Easylist.txt" \
+            "$BASE_JSDELIVR/Anti_AD_Easylist.txt" \
+            "$BASE_COSR/Anti_AD_Easylist.txt" \
+            "$BASE_GITMIRROR/Anti_AD_Easylist.txt"
 
-      - name: Adblock Warning Removal List  #去除禁止广告拦截提示规则
-        uses: carlosperate/download-file-action@v2.0.2
-        with: 
-          file-url: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-          file-name: antiadblockfilters.txt
+          download_any "EasyList_China.txt" \
+            "https://easylist-downloads.adblockplus.org/easylistchina.txt" \
+            "$BASE_GHUCS/EasyList_China.txt" \
+            "$BASE_JSDELIVR/EasyList_China.txt" \
+            "$BASE_COSR/EasyList_China.txt" \
+            "$BASE_GITMIRROR/EasyList_China.txt"
 
-      - name: Fanboy’s Annoyances List  #去除页面弹窗广告规则
-        uses: carlosperate/download-file-action@v2.0.2
-        with: 
-          file-url: https://secure.fanboy.co.nz/fanboy-annoyance.txt
-          file-name: fanboy-annoyance.txt
+          download_any "EasyPrivacy.txt" \
+            "https://easylist.to/easylist/easyprivacy.txt" \
+            "$BASE_GHUCS/EasyPrivacy.txt" \
+            "$BASE_JSDELIVR/EasyPrivacy.txt" \
+            "$BASE_COSR/EasyPrivacy.txt" \
+            "$BASE_GITMIRROR/EasyPrivacy.txt"
+
+          download_any "HalfLife.txt" \
+            "https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad.txt" \
+            "$BASE_GHUCS/HalfLife.txt" \
+            "$BASE_JSDELIVR/HalfLife.txt" \
+            "$BASE_COSR/HalfLife.txt" \
+            "$BASE_GITMIRROR/HalfLife.txt"
+
+          download_any "CJX's_EasyList_Lite.txt" \
+            "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt" \
+            "$BASE_GHUCS/CJX's_EasyList_Lite.txt" \
+            "$BASE_JSDELIVR/CJX's_EasyList_Lite.txt" \
+            "$BASE_COSR/CJX's_EasyList_Lite.txt" \
+            "$BASE_GITMIRROR/CJX's_EasyList_Lite.txt"
+
+          download_any "CJX's_Annoyance_List.txt" \
+            "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt" \
+            "$BASE_GHUCS/CJX's_Annoyance_List.txt" \
+            "$BASE_JSDELIVR/CJX's_Annoyance_List.txt" \
+            "$BASE_COSR/CJX's_Annoyance_List.txt" \
+            "$BASE_GITMIRROR/CJX's_Annoyance_List.txt"
+
+          download_any "Xinggsf_rule.txt" \
+            "https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt" \
+            "$BASE_GHUCS/Xinggsf_rule.txt" \
+            "$BASE_JSDELIVR/Xinggsf_rule.txt" \
+            "$BASE_COSR/Xinggsf_rule.txt" \
+            "$BASE_GITMIRROR/Xinggsf_rule.txt"
+
+          download_any "Xinggsf_mv.txt" \
+            "https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt" \
+            "$BASE_GHUCS/Xinggsf_mv.txt" \
+            "$BASE_JSDELIVR/Xinggsf_mv.txt" \
+            "$BASE_COSR/Xinggsf_mv.txt" \
+            "$BASE_GITMIRROR/Xinggsf_mv.txt"
+
+          download_any "Fanboy-social.txt" \
+            "https://easylist-downloads.adblockplus.org/fanboy-social.txt" \
+            "$BASE_GHUCS/Fanboy-social.txt" \
+            "$BASE_JSDELIVR/Fanboy-social.txt" \
+            "$BASE_COSR/Fanboy-social.txt" \
+            "$BASE_GITMIRROR/Fanboy-social.txt"
+
+          download_any "ADgk.txt" \
+            "https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt" \
+            "$BASE_GHUCS/ADgk.txt" \
+            "$BASE_JSDELIVR/ADgk.txt" \
+            "$BASE_COSR/ADgk.txt" \
+            "$BASE_GITMIRROR/ADgk.txt"
+
+          download_any "ds_hosts.txt" \
+            "https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts" \
+            "$BASE_GHUCS/ds_hosts.txt" \
+            "$BASE_JSDELIVR/ds_hosts.txt" \
+            "$BASE_COSR/ds_hosts.txt" \
+            "$BASE_GITMIRROR/ds_hosts.txt"
+
+          download_any "1024_hosts.txt" \
+            "https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts" \
+            "$BASE_GHUCS/1024_hosts.txt" \
+            "$BASE_JSDELIVR/1024_hosts.txt" \
+            "$BASE_COSR/1024_hosts.txt" \
+            "$BASE_GITMIRROR/1024_hosts.txt"
+
+          download_any "iPv4_hosts.txt" \
+            "https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/Hosts.txt" \
+            "$BASE_GHUCS/iPv4_hosts.txt" \
+            "$BASE_JSDELIVR/iPv4_hosts.txt" \
+            "$BASE_COSR/iPv4_hosts.txt" \
+            "$BASE_GITMIRROR/iPv4_hosts.txt"
+
+          download_any "Steven_hosts" \
+            "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts" \
+            "$BASE_GHUCS/Steven_hosts" \
+            "$BASE_JSDELIVR/Steven_hosts" \
+            "$BASE_COSR/Steven_hosts" \
+            "$BASE_GITMIRROR/Steven_hosts"
+
+          download_any "Hblock_hosts" \
+            "https://hblock.molinero.dev/hosts" \
+            "$BASE_GHUCS/Hblock_hosts" \
+            "$BASE_JSDELIVR/Hblock_hosts" \
+            "$BASE_COSR/Hblock_hosts" \
+            "$BASE_GITMIRROR/Hblock_hosts"
+
+          download_any "antiadblockfilters.txt" \
+            "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt" \
+            "$BASE_GHUCS/antiadblockfilters.txt" \
+            "$BASE_JSDELIVR/antiadblockfilters.txt" \
+            "$BASE_COSR/antiadblockfilters.txt" \
+            "$BASE_GITMIRROR/antiadblockfilters.txt"
+
+          download_any "fanboy-annoyance.txt" \
+            "https://secure.fanboy.co.nz/fanboy-annoyance.txt" \
+            "$BASE_GHUCS/fanboy-annoyance.txt" \
+            "$BASE_JSDELIVR/fanboy-annoyance.txt" \
+            "$BASE_COSR/fanboy-annoyance.txt" \
+            "$BASE_GITMIRROR/fanboy-annoyance.txt"
+
+      - id: validate_files
+        name: Validate downloaded files
+        shell: bash
+        run: |
+          set -euo pipefail
+          files=( \
+            "AdGuard_Simplified_Domain_Names_Filter.txt" \
+            "Anti_AD_Easylist.txt" \
+            "EasyList_China.txt" \
+            "EasyPrivacy.txt" \
+            "HalfLife.txt" \
+            "CJX's_EasyList_Lite.txt" \
+            "CJX's_Annoyance_List.txt" \
+            "Xinggsf_rule.txt" \
+            "Xinggsf_mv.txt" \
+            "Fanboy-social.txt" \
+            "ADgk.txt" \
+            "ds_hosts.txt" \
+            "1024_hosts.txt" \
+            "iPv4_hosts.txt" \
+            "Steven_hosts" \
+            "Hblock_hosts" \
+            "antiadblockfilters.txt" \
+            "fanboy-annoyance.txt" \
+          )
+          for f in "${files[@]}"; do
+            if [ ! -s "$f" ]; then
+              echo "::error file=$f::file missing or empty"
+              exit 1
+            fi
+            if file "$f" | grep -qi 'HTML'; then
+              echo "::error file=$f::looks like HTML error page"
+              exit 1
+            fi
+            if [ "$(wc -l < "$f")" -lt 50 ]; then
+              echo "::warning file=$f::too few lines (<50), check source health"
+            fi
+          done
+
+      - name: Notify via Telegram on health-check failure (中文)
+        if: failure() && (steps.download_rules.outcome == 'failure' || steps.validate_files.outcome == 'failure')
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          REPO: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_NUMBER: ${{ github.run_number }}
+          WORKFLOW: ${{ github.workflow }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -z "${TELEGRAM_BOT_TOKEN:-}" ] || [ -z "${TELEGRAM_CHAT_ID:-}" ]; then
+            echo "Telegram secrets not set; skip notification"; exit 0;
+          fi
+
+          # Build failure summary (re-check workspace)
+          files=( \
+            "AdGuard_Simplified_Domain_Names_Filter.txt" \
+            "Anti_AD_Easylist.txt" \
+            "EasyList_China.txt" \
+            "EasyPrivacy.txt" \
+            "HalfLife.txt" \
+            "CJX's_EasyList_Lite.txt" \
+            "CJX's_Annoyance_List.txt" \
+            "Xinggsf_rule.txt" \
+            "Xinggsf_mv.txt" \
+            "Fanboy-social.txt" \
+            "ADgk.txt" \
+            "ds_hosts.txt" \
+            "1024_hosts.txt" \
+            "iPv4_hosts.txt" \
+            "Steven_hosts" \
+            "Hblock_hosts" \
+            "antiadblockfilters.txt" \
+            "fanboy-annoyance.txt" \
+          )
+
+          missing=()
+          html_like=()
+          too_few=()
+          for f in "${files[@]}"; do
+            if [ ! -s "$f" ]; then
+              missing+=("$f")
+              continue
+            fi
+            if file "$f" | grep -qi 'HTML'; then
+              html_like+=("$f")
+              continue
+            fi
+            if [ "$(wc -l < "$f")" -lt 50 ]; then
+              too_few+=("$f")
+            fi
+          done
+
+          join_by() { local IFS="$1"; shift; echo "$*"; }
+          fmt_list() {
+            [ "$#" -eq 0 ] && echo "无" && return 0
+            local out=""
+            for x in "$@"; do out+="\n - ${x}"; done
+            echo "$out"
+          }
+
+          url="https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage"
+          msg="【告警】仓库 ${REPO} 的工作流 ${WORKFLOW} 第 #${RUN_NUMBER} 次运行（ID: ${RUN_ID}）下载/健康检查失败。\n\n缺失/空文件:$(fmt_list "${missing[@]-}")\n\n疑似HTML错误页:$(fmt_list "${html_like[@]-}")\n\n行数过少(<50):$(fmt_list "${too_few[@]-}")\n\n查看日志：https://github.com/${REPO}/actions/runs/${RUN_ID}"
+          curl -sS -X POST "$url" -d chat_id="${TELEGRAM_CHAT_ID}" --data-urlencode text="$msg" >/dev/null || true
+
+      - name: Create gzip copies for distribution
+        shell: bash
+        run: |
+          set -euo pipefail
+          files=( AdGuard_Simplified_Domain_Names_Filter.txt Anti_AD_Easylist.txt EasyList_China.txt EasyPrivacy.txt HalfLife.txt "CJX's_EasyList_Lite.txt" "CJX's_Annoyance_List.txt" Xinggsf_rule.txt Xinggsf_mv.txt Fanboy-social.txt ADgk.txt ds_hosts.txt 1024_hosts.txt iPv4_hosts.txt Steven_hosts Hblock_hosts antiadblockfilters.txt fanboy-annoyance.txt )
+          for f in "${files[@]}"; do
+            if [ -f "$f" ]; then
+              gzip -kf -n "$f" || gzip -kf "$f"
+            fi
+          done
+
+      - name: Generate checksums and manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          files=( AdGuard_Simplified_Domain_Names_Filter.txt Anti_AD_Easylist.txt EasyList_China.txt EasyPrivacy.txt HalfLife.txt "CJX's_EasyList_Lite.txt" "CJX's_Annoyance_List.txt" Xinggsf_rule.txt Xinggsf_mv.txt Fanboy-social.txt ADgk.txt ds_hosts.txt 1024_hosts.txt iPv4_hosts.txt Steven_hosts Hblock_hosts antiadblockfilters.txt fanboy-annoyance.txt )
+          : > checksums.txt
+          for f in "${files[@]}"; do
+            if [ -f "$f" ]; then
+              sha256sum "$f" >> checksums.txt
+            fi
+            if [ -f "$f.gz" ]; then
+              sha256sum "$f.gz" >> checksums.txt
+            fi
+          done
+          node -e '
+            const fs=require("fs");
+            const sha=Object.fromEntries(
+              fs.readFileSync("checksums.txt","utf8").trim().split("\n").filter(Boolean).map(l=>{
+                const sp=l.trim().split(/\s+/);
+                const hash=sp.shift();
+                const file=sp.join(" ");
+                return [file, hash];
+              })
+            );
+            const files=Object.keys(sha);
+            const items=files.map(f=>{
+              const s=fs.statSync(f);
+              return { file:f, bytes:s.size, mtime:new Date(s.mtime).toISOString(), sha256:sha[f] };
+            });
+            const manifest={ updatedAt:new Date().toISOString(), files:items };
+            fs.writeFileSync("manifest.json", JSON.stringify(manifest,null,2));
+          '
 
       - name: Commit Changes
         env:
           TZ: Asia/Shanghai
         run: |
           if [ -z "$(git status --porcelain)" ]; then 
-              exit 0
-            else 
-              git add .
-              git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-              git config --local user.name "github-actions bot"
-              git commit -m ":pencil: Update at  $(date +"%Y-%m-%d %H:%M")" -a
-            fi
+            echo "No changes to commit"
+            exit 0
+          else 
+            git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions bot"
+            git pull --rebase origin main || true
+            git add -A
+            git commit -m ":pencil: Update at  $(date +"%Y-%m-%d %H:%M")"
+          fi
 
-      - name: GitHub Push #推送至库
-        uses: ad-m/github-push-action@v0.8.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+      - name: Push changes
+        if: success()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -z "$(git log origin/main..HEAD 2>/dev/null)" ]; then
+            echo "No new commits to push"
+            exit 0
+          fi
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git push origin HEAD:main
 
-      - name: Delete old workflow runs
-        uses: GitRML/delete-workflow-runs@main
-        with:
-          retain_days: '5'
-          keep_minimum_runs: '0'
+      - name: Cleanup old workflow runs (retain 5 days)
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          if ! command -v jq >/dev/null 2>&1; then
+            sudo apt-get update -y && sudo apt-get install -y jq
+          fi
+          repo="$GITHUB_REPOSITORY"
+          base="https://api.github.com/repos/$repo"
+          cutoff=$(( $(date +%s) - 5*24*3600 ))
+          page=1
+          while :; do
+            runs=$(curl -sS -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" "$base/actions/runs?per_page=100&page=$page")
+            count=$(echo "$runs" | jq '.workflow_runs | length')
+            [ "$count" -gt 0 ] || break
+            echo "$runs" | jq -r \
+              --argjson cutoff "$cutoff" \
+              '.workflow_runs[] | select(.status=="completed") | select((.created_at | fromdateiso8601) < $cutoff) | .id' \
+              | while read -r id; do
+                  echo "Deleting run $id"
+                  curl -sS -X DELETE -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" "$base/actions/runs/$id" -o /dev/null -w "%{http_code}\n" | grep -E "^(204|404)$" >/dev/null || true
+                done
+            page=$((page+1))
+          done
           
 #      - name: WeChat notification #用于微信推送通知（如有需要删除行头注释）
 #        run: curl https://sc.ftqq.com/${{ secrets.ServerChan }}.send?text=${{ env.FILE_NAME }}AdBlock规则已更新

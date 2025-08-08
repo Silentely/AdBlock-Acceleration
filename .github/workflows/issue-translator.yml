@@ -5,9 +5,18 @@ on:
   issues: 
     types: [opened]
 
+concurrency:
+  group: issue-translator
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      issues: write
+      contents: read
+      pull-requests: write
     steps:
       - uses: tomsun28/issues-translate-action@v2.7
         with:

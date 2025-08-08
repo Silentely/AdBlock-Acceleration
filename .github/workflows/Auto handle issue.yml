@@ -7,33 +7,67 @@ on:
   issues:
     types: [opened]
 
+concurrency:
+  group: issues-automation
+  cancel-in-progress: true
+
 jobs:
   automatic_issues:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      issues: write
+      contents: read
     steps:
-      - name: 自动关闭有done标签且7天内无回复的issue
+      - name: 自动关闭有done标签且7天内无活跃的issue
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
-        uses: actions-cool/issues-helper@v3.6.2
-        with:
-          actions: 'close-issues'
-          labels: 'done'
-          inactive-day: 7
-          body: |
-            此issue已经被添加了done标签且已经超过7天没有活跃，为了减少issue数量此issue将被自动关闭，如此issue问题仍未解决请手动重新打开本issue
-            
-            --------------------------------------------------------------------------------------- 来自 AdBlock-Acceleration issues自动管理姬
-          contents: 'laugh,heart,rocket'
-      
-      - name: 自动回复新建的issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          if ! command -v jq >/dev/null 2>&1; then
+            sudo apt-get update -y && sudo apt-get install -y jq
+          fi
+          base="https://api.github.com/repos/$REPO"
+          cutoff=$(( $(date +%s) - 7*24*3600 ))
+          page=1
+          while :; do
+            resp=$(curl -sS -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" "$base/issues?state=open&labels=done&per_page=100&page=$page")
+            count=$(echo "$resp" | jq 'length')
+            [ "$count" -gt 0 ] || break
+            echo "$resp" | jq -c '.[] | select(.pull_request|not)' | while read -r issue; do
+              num=$(echo "$issue" | jq -r '.number')
+              updated=$(echo "$issue" | jq -r '.updated_at')
+              updated_ts=$(date -d "$updated" +%s 2>/dev/null || date -j -f "%Y-%m-%dT%H:%M:%SZ" "$updated" +%s)
+              if [ "$updated_ts" -lt "$cutoff" ]; then
+                echo "Closing #$num"
+                curl -sS -X PATCH -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" "$base/issues/$num" -d '{"state":"closed"}' >/dev/null
+                curl -sS -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" "$base/issues/$num/comments" -d @- >/dev/null <<'EOF'
+                {"body":"此 issue 已添加 done 标签且超过 7 天无活跃。为减少 issue 数量此 issue 将被自动关闭，如问题仍未解决请手动重新打开本 issue。\n\n—— 来自 AdBlock-Acceleration issues 自动管理姬"}
+EOF
+              fi
+            done
+            page=$((page+1))
+          done
+
+      - name: 自动回复新建的 issue
         if: github.event_name == 'issues' && github.event.action == 'opened' && github.event.issue.author_association != 'OWNER'
-        uses: actions-cool/issues-helper@v3.6.2
-        with:
-          actions: 'create-comment'
-          issue-number: ${{ github.event.issue.number }}
-          body: |
-            你好 @${{ github.event.issue.user.login }} 欢迎创建issue。
-            1. 如果遇到问题(bug)，请说明执行环境，并详细阐述问题情况以便于复现和解决问题。
-            2. 如果想增加新的功能，请说明这个功能手动实现的过程(pc网页端和app上是如何操作并实现的，尽可能附上相应的网页地址)
-            
-            --------------------------------------------------------------------------------------- 来自 AdBlock-Acceleration issues自动管理姬
-          contents: 'laugh,heart,rocket'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_USER: ${{ github.event.issue.user.login }}
+        run: |
+          set -euo pipefail
+          base="https://api.github.com/repos/$REPO"
+          body=$(cat <<EOF
+你好 @$ISSUE_USER 欢迎创建 issue。
+1. 如果遇到问题 (bug)，请说明执行环境，并详细阐述问题情况以便于复现和解决问题。
+2. 如果想增加新功能，请说明该功能在 PC 网页端 / App 上的手动实现过程，并尽可能附上相关网页地址。
+
+—— 来自 AdBlock-Acceleration issues 自动管理姬
+EOF
+)
+          jq -n --arg body "$body" '{body:$body}' > /tmp/comment.json
+          curl -sS -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" "$base/issues/$ISSUE_NUMBER/comments" -d @/tmp/comment.json >/dev/null

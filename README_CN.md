@@ -7,6 +7,7 @@
 <br>
 <img src="https://img.shields.io/github/license/Silentely/AdBlock-Acceleration?color=ff69b4">
 <img src="https://img.shields.io/github/languages/code-size/Silentely/AdBlock-Acceleration?color=blueviolet">
+<img src="https://img.shields.io/github/last-commit/Silentely/AdBlock-Acceleration/main?label=%E4%B8%8A%E6%AC%A1%E6%9B%B4%E6%96%B0&color=success">
 <img src="https://img.shields.io/badge/dynamic/json?label=GitHub%20Followers&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3DSilentely&labelColor=282c34&color=181717&logo=github&longCache=true "关注数量">
 <br>
 <img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FSilentely%2FAdBlock-Acceleration.svg?type=small">
@@ -97,6 +98,18 @@
 直接拷贝下方表格中，对应规则的加速地址，作为去广告工具的订阅规则链接即可。
 
 ## 📃 规则列表
+
+## 文件完整性与程序化索引
+
+- 校验和：见 `checksums.txt`（由 CI 生成）。本地校验示例：
+
+```bash
+sha256sum -c checksums.txt
+```
+
+- 清单：见 `manifest.json`，包含文件大小、哈希与时间戳，便于程序化消费。
+
+- 压缩副本：每个文件都提供 `.gz` 压缩版（如 `EasyPrivacy.txt.gz`）。多数工具可直接读取 gzip，或使用 `gunzip -c file.txt.gz > file.txt` 解压后使用。
 
 | 🥑 规则名称 | 原始地址 | 🚀 加速地址① | 🚀 加速地址② | 🚀 加速地址③ | 🚀 加速地址④ |
 | :----: | :----: | :----: | :----: | :----: | :----: |
