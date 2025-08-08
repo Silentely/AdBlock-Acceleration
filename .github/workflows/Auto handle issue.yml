@@ -43,9 +43,8 @@ jobs:
               if [ "$updated_ts" -lt "$cutoff" ]; then
                 echo "Closing #$num"
                 curl -sS -X PATCH -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" "$base/issues/$num" -d '{"state":"closed"}' >/dev/null
-                curl -sS -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" "$base/issues/$num/comments" -d @- >/dev/null <<'EOF'
-                {"body":"此 issue 已添加 done 标签且超过 7 天无活跃。为减少 issue 数量此 issue 将被自动关闭，如问题仍未解决请手动重新打开本 issue。\n\n—— 来自 AdBlock-Acceleration issues 自动管理姬"}
-EOF
+                printf '%s' '{"body":"此 issue 已添加 done 标签且超过 7 天无活跃。为减少 issue 数量此 issue 将被自动关闭，如问题仍未解决请手动重新打开本 issue。\\n\\n—— 来自 AdBlock-Acceleration issues 自动管理姬"}' > /tmp/auto-close-comment.json
+                curl -sS -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" "$base/issues/$num/comments" -d @/tmp/auto-close-comment.json >/dev/null
               fi
             done
             page=$((page+1))
