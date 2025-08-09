@@ -27,13 +27,14 @@
     header{padding:20px;border-bottom:1px solid var(--border);display:flex;gap:16px;align-items:center;flex-wrap:wrap}
     header h1{margin:0;font-size:18px}
     .controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-    input[type="search"]{padding:8px 10px;border:1px solid var(--border);border-radius:6px;background:var(--control-bg);color:var(--control-fg);min-width:240px}
+    input[type="search"]{padding:8px 10px;border:1px solid var(--border);border-radius:6px;background:var(--control-bg);color:var(--control-fg);min-width:200px;flex:1 1 240px}
     select{padding:8px 10px;border:1px solid var(--border);border-radius:6px;background:var(--control-bg);color:var(--control-fg)}
     main{padding:16px}
-    table{width:100%;border-collapse:collapse}
+    .table-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+    table{width:100%;border-collapse:collapse;min-width:720px}
     th,td{padding:10px;border-bottom:1px solid var(--border);vertical-align:top}
     th{color:var(--muted);text-align:left;font-weight:600}
-    a{color:#58a6ff;text-decoration:none}
+    a{color:#58a6ff;text-decoration:none;overflow-wrap:anywhere;word-break:break-word}
     .btn{padding:6px 10px;border:1px solid var(--border);border-radius:6px;background:var(--btn-bg);color:var(--btn-fg);cursor:pointer}
     .btn:hover{border-color:#3b434c}
     .muted{color:var(--muted)}
@@ -42,6 +43,25 @@
     .badge{display:inline-block;padding:2px 6px;border:1px solid var(--border);border-radius:999px;font-size:12px;color:var(--muted)}
     .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#11161f;color:var(--fg);border:1px solid var(--border);padding:10px 14px;border-radius:8px;opacity:0;pointer-events:none;transition:opacity .2s}
     .toast.show{opacity:1}
+
+    /* Tablet tweaks */
+    @media (max-width: 820px){
+      table{min-width:640px}
+    }
+    /* Mobile-first adjustments */
+    @media (max-width: 640px){
+      header{padding:12px}
+      header h1{font-size:16px}
+      .controls{gap:8px}
+      input[type="search"]{min-width:0;flex:1 1 100%;width:100%}
+      select{max-width:44vw}
+      th,td{padding:10px}
+      /* Hide less-critical columns on small screens: Original link (2), Size/Time (4) */
+      th:nth-child(2), td:nth-child(2), th:nth-child(4), td:nth-child(4){display:none}
+      /* Ensure action buttons are easy to tap */
+      .btn{padding:8px 12px}
+      .note{font-size:11px}
+    }
   </style>
 </head>
 <body>
@@ -76,6 +96,7 @@
     </div>
   </header>
   <main>
+    <div class="table-wrap">
     <table id="rules">
       <thead>
         <tr>
@@ -88,6 +109,7 @@
       </thead>
       <tbody></tbody>
     </table>
+    </div>
     <p class="note">说明：上方“镜像”决定“复制”按钮输出的链接前缀。大小/时间来自仓库根目录的 manifest.json。</p>
   </main>
   <div id="toast" class="toast">已复制到剪贴板</div>
