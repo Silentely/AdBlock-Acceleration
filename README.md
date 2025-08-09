@@ -7,147 +7,202 @@
 <br>
 <img src="https://img.shields.io/github/license/Silentely/AdBlock-Acceleration?color=ff69b4">
 <img src="https://img.shields.io/github/languages/code-size/Silentely/AdBlock-Acceleration?color=blueviolet">
-<img src="https://img.shields.io/github/last-commit/Silentely/AdBlock-Acceleration/main?label=last%20update&color=success">
+<img src="https://img.shields.io/github/last-commit/Silentely/AdBlock-Acceleration/main?label=%E4%B8%8A%E6%AC%A1%E6%9B%B4%E6%96%B0&color=success">
 <br>
 </div>
 
-# Project instruction 
+<p align="center">
+  <a href="#usage">使用方法</a>
+  · <a href="ANNOUNCEMENTS_CN.md">公告历史</a>
+  · <a href="README_EN.md">English</a>
+</p>
 
-International/China accelerated ad filtering rules subscription（[中文说明](https://github.com/Silentely/AdBlock-Acceleration/blob/main/README_CN.md)）
+# 项目说明
 
-# Announcement  
+为常见去广告工具（AdGuard、uBlock Origin、AdGuard Home 等）提供“国际/中国网络可用”的规则加速订阅：
+- **零代理即可快速更新**：通过多镜像分发，显著降低更新失败率与等待时间。
+- **多镜像冗余**：① GHUCS、② jsDelivr（有缓存，速度快）；③ Render、④ 7ed（无缓存，强一致）。
+- **一键复制与搜索**：内置 Web 索引页支持镜像选择、即时搜索、单条/批量复制。
 
-* **January 21, 2025, the warehouse.git was reduced in size .** 
-* **January 20, 2025, acceleration address ④ (Fastgit) is replaced with a new address, and acceleration address ⑤ (iQDNS) is removed.**
-* **On October 17, 2023, the warehouse.git was reduced in size .**  
-* **On October 19, 2022, the warehouse.git was reduced in size .**   
-* **On ugust 7, 2022, New iQDNS RAW acceleration site added.**   
-* **On June 18, 2022, Add Chengfeng Video Advertising Filter Rules.**    
-* **On June 11, 2022, the accelerated address ② (jsDelivr) resumed resolution in some parts of mainland China. The original accelerated address ④ has a low online rate and is now replacing the Fastgit accelerated address.**    
-* **On May 17, 2022, the accelerated address ② (jsDelivr) was again polluted by DNS in mainland China. In view of the current situation, users in mainland China are advised to use the accelerated address ③ and accelerated address ④.**    
-* **On April 30, 2022, the accelerated address ② (jsDelivr) has resumed access in mainland China.**  
-* **~~On April 28, 2022, the acceleration address ② (jsDelivr) has been polluted by mainland China DNS due to indescribable reasons, users in mainland China please change the acceleration address ② in time.~~**    
-* **On March 22, 2022, the accelerated address ③ stopped resolving and the accelerated address ④ overlapped with the accelerated address ② in some areas, now both have been replaced with new addresses, please update the addresses in time.**    
+# 公告 
 
-## 🔖 Filter Tool Recommendations
+* **2025年01月21日，对仓库.git进行缩减大小。**
 
-Filtering tools：
-* 🌍 browser plug-in
+更多历史请见 [公告历史](ANNOUNCEMENTS_CN.md)。
+
+## 🔖 过滤工具推荐
+
+过滤工具：
+* 🌍 浏览器插件
   * [AdGuard](https://adguard.com)
   * [uBlock Origin](https://github.com/gorhill/uBlock)
   * [AdBlock Plus](https://adblockplus.org)
   * [Adblock](https://getadblock.com)
-* 📺 router terminal
+* 📺 路由器端
   * [AdGuard Home](https://adguard.com/zh_cn/adguard-home/overview.html)
   * [KoolProxyR](https://github.com/user1121114685/koolproxyR)
   * [Adbyby](http://www.adbyby.com/)
-  * [admflt](http://www.admflt.com)
-* 📱 mobile 
+  * [阿呆喵](http://www.admflt.com)
+* 📱 移动端
   * [AdGuard for Android](https://adguard.com/zh_cn/adguard-android/overview.html)
   * [AdGuard for iOS](https://adguard.com/zh_cn/adguard-ios/overview.html)
-* 💻 Desktop (global de-advertising)）
+* 💻 桌面端（全局去广告）
   * [AdGuard for Windows](https://adguard.com/zh_cn/adguard-windows/overview.html)
   * [AdGuard for macOS](https://adguard.com/zh_cn/adguard-mac/overview.html)
 
-## 🧩 Project Introduction
+🙅‍♂️但是这类工具都存在一个痛点，因为规则基本都托管在境外服务器，导致更新极其缓慢，甚至无法成功更新。
 
-🙅‍♂️However, there is a pain point with all of these tools, as the rules are largely hosted on offshore servers, making updates extremely slow or even impossible to successfully update.
+😫 一个非常常见的场景：你为家中长辈、老人配置了去广告工具来避免他们在浏览网页时被钓鱼、欺诈或感染病毒。但是事实往往是，精心选择了很多规则，但实际上大部分规则都处于更新失败的状态，然后弹出提示框，长辈乱点，之后不一定怎样了……可能说电脑坏了，更新失败了……
 
-😫 A very common scenario: you've configured de-advertising tools for the elders and elderly in your family to prevent them from being phished, scammed or infected with viruses while browsing the web. But the fact is that often, many rules are carefully chosen, but in fact most of them are in the state of failure to update, and then a pop-up box appears, and the elder clicks randomly, but not necessarily what happens after ...... may say that the computer is broken, the update failed....
+💥 这个项目就是为了解决这一难题，无需通过任何代理即可光速更新规则。
 
-💥 This project is designed to solve this problem by updating the rules at light speed without going through any agents.
+## 🧩 项目介绍
 
-## 🕹 Project rationale
+这类工具都存在一个痛点，因为规则基本都托管在境外服务器，导致更新极其缓慢，甚至无法成功更新。
 
-The project uses GitHub Actions to download the latest rules every 6 hours every day at UTC time, and then pushes them to GitHub Repo.  
-The rules are distributed in conjunction with a globally accelerated CDN provided by multiple sites:
+一个非常常见的场景：你为家中长辈、老人配置了去广告工具来避免他们在浏览网页时被钓鱼、欺诈或感染病毒。但是事实往往是，精心选择了很多规则，但实际上大部分规则都处于更新失败的状态，然后弹出提示框，长辈乱点，之后不一定怎样了……可能说电脑坏了，更新失败了……
 
-①[GHUCS](https://raw.githubusercontents.com) (With cache)  
-②[JsDelivr](https://www.jsdelivr.com) (With cache)  
-③[Render](https://render.com) (No cache)  
-④[7ed](https://www.7ed.net) (No cache)   
+## 🕹 项目原理
 
-The result is a second-by-second update of all de-advertising rules.
+项目使用了 GitHub Actions 在每天 UTC 时间每隔6小时更新下载一次最新规则，然后推送到 GitHub Repo。  
+配合使用多个网站提供的全球加速 CDN 来分发规则：
 
-## 🧪 Personal test
+①[GHUCS](https://raw.githubusercontents.com) （具有缓存）  
+②[jsDelivr](https://www.jsdelivr.com) （具有缓存）   
+③[Render](https://render.com) （无缓存）    
+④[7ed](https://www.7ed.net) （无缓存）     
 
-Under normal network environment (without any proxies, in mainland China network environment)
-* Before using accelerated links: It can take up to 5 minutes and 12 seconds to update up to 13 rules, and 4 updates have failed.
-* When accelerated links are used: all rules are updated within 15 seconds.
+从而实现秒秒钟更新所有去广告规则。
 
-## 🚛 Refinement projects
+## 🧪 个人测试
 
-I'd like you to submit an Issue or Request to help me improve the rules.
+正常网络环境下（无任何代理，在中国大陆网络环境下）
+* 使用加速链接前：更新 13 个规则最长可能需要 5 分钟 12 秒，而且有 4 个更新失败。
+* 使用加速链接后：所有规则在 15秒内全部更新完成。
 
-Submit the rules that you think you need to update for acceleration. The following points should be noted.
+<a id="usage"></a>
+## 🍔 使用方法
 
-1. the rules need to be on an offshore server, difficult to successfully update or slow to update.
-2. indicate the name, source, and function of the rule.
-3. If the rule you want to speed up is a file in a GitHub project, just use the jsDelivr syntax to speed up the project file **without submitting a request**.
-`https://cdn.jsdelivr.net/gh/username/project name@version/accelerate files`.
+**⚠️ 注意：** 该规则不是针对网络代理工具的，不要给 Surge、ShadowRocket、Quantumult(X)、Clash(X/A) 等类似工具使用！
+直接拷贝下方表格中，对应规则的加速地址，作为去广告工具的订阅规则链接即可。
 
-## 🍔 Usage
+### 🚀 快速开始（3 步）
+1. 打开 Web 规则索引页（见下文“Web 规则索引页”）。
+2. 选择镜像（默认推荐 ① 或 ②），搜索并点击对应规则右侧“复制”。
+3. 在你的去广告工具中粘贴为“自定义订阅/自定义过滤器/阻止列表 URL”。
 
-⚠️ Note: This rule is not for web proxy tools, don't give it to Surge, ShadowRocket, Quantumult(X), Clash(X/A) and similar tools!
-Just copy the table below and use the accelerated address of the corresponding rule as a link to the subscription rule for the de-advertising tool.
+### 📲 各平台导入指南
+- AdGuard（Android/iOS/macOS/Windows）
+  - 路径：设置 → 过滤器 → 自定义过滤器 → 添加 → 粘贴加速地址 → 保存
+- uBlock Origin（浏览器扩展）
+  - 路径：Dashboard（仪表盘）→ Filter lists → Custom → Import/添加自定义 → 粘贴加速地址 → Apply changes
+- AdGuard Home（路由器/家庭网关）
+  - 路径：Filters → DNS blocklists → Add blocklist → 粘贴加速地址 → Save & Update
 
-## 📃 List of rules
+小贴士：同一规则可同时添加多条镜像链接作“冗余”，或保留 1 条主镜像 + 1 条备用镜像，降低单点故障影响。
 
-## File integrity & programmatic index
+### 🧰 批量复制技巧
+- 在 Web 索引页使用“复制当前可见规则链接”即可一键复制表格中所有可见规则。
+- 深链快捷：`index.html?mirror=ghucs&copy=EasyPrivacy.txt`（示例）——进入即选定镜像并复制该文件最终链接。
 
-- checksums: see `checksums.txt` (generated by CI). Verify locally:
+### 🌐 镜像选择建议
+- 追求速度：优先 ① GHUCS、② jsDelivr（有缓存、命中率高）。
+- 强制最新：使用 ③ Render、④ 7ed（无缓存，一般更“新”）。
+- 若某镜像在你所在网络环境不可用，换另一个镜像即可；国内网络建议同时保留一个无缓存镜像作备用。
+
+## 📃 规则列表
+
+## Web 规则索引页（复制/搜索/镜像选择）
+
+- 在线镜像：[https://raw.cosr.eu.org](https://raw.cosr.eu.org)
+- 功能：
+  - 镜像选择：GHUCS / jsDelivr / cosr / gitmirror
+  - 单条一键复制；按“复制当前可见规则链接”批量复制
+  - 即时搜索（按规则名或文件名）
+  - 大小/更新时间来自根目录 `manifest.json`
+  - 主题：浅色（默认）/ 深色 / 跟随系统
+- 深链（复制直达）：`index.html?mirror=ghucs&copy=EasyPrivacy.txt`
+  - 进入即按镜像复制最终链接到剪贴板
+
+| 🥑 规则名称 | 原始地址 | 🚀 加速地址① | 🚀 加速地址② | 🚀 加速地址③ | 🚀 加速地址④ |
+| :----: | :----: | :----: | :----: | :----: | :----: |
+| AdGuard DNS Filter | [原始](https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/AdGuard_Simplified_Domain_Names_Filter.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/AdGuard_Simplified_Domain_Names_Filter.txt) | [加速③](https://raw.cosr.eu.org/AdGuard_Simplified_Domain_Names_Filter.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/AdGuard_Simplified_Domain_Names_Filter.txt) |
+| Anti-AD | [原始](https://anti-ad.net/easylist.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Anti_AD_Easylist.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Anti_AD_Easylist.txt) | [加速③](https://raw.cosr.eu.org/Anti_AD_Easylist.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Anti_AD_Easylist.txt) |
+| EasyList China | [原始](https://easylist-downloads.adblockplus.org/easylistchina.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/EasyList_China.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/EasyList_China.txt) | [加速③](https://raw.cosr.eu.org/EasyList_China.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/EasyList_China.txt) |
+| EasyPrivacy | [原始](https://easylist-downloads.adblockplus.org/easyprivacy.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/EasyPrivacy.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/EasyPrivacy.txt) | [加速③](https://raw.cosr.eu.org/EasyPrivacy.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/EasyPrivacy.txt) |
+| 屏蔽网站的Cookies警告 | [原始](https://www.i-dont-care-about-cookies.eu/abp) | 已在 CI 暂停同步，可能存在再分发许可限制（仅保留原始地址，使用者请按其许可自取）。 |
+| HalfLife | [原始](https://raw.githubusercontent.com/o0HalfLife0o/list/main/ad.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/HalfLife.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/HalfLife.txt ) | [加速③](https://raw.cosr.eu.org/HalfLife.txt ) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/HalfLife.txt ) |
+| CJX's EasyList Lite | [原始](https://raw.githubusercontent.com/cjx82630/cjxlist/main/cjxlist.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/CJX's_EasyList_Lite.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/CJX's_EasyList_Lite.txt) | [加速③](https://raw.cosr.eu.org/CJX's_EasyList_Lite.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/CJX's_EasyList_Lite.txt) |
+| CJX's Annoyance List | [原始](https://raw.githubusercontent.com/cjx82630/cjxlist/main/cjx-annoyance.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/CJX's_Annoyance_List.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/CJX's_Annoyance_List.txt) | [加速③](https://raw.cosr.eu.org/CJX's_Annoyance_List.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/CJX's_Annoyance_List.txt) |
+| 乘风通用广告过滤规则 | [原始](https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt) | [加速③](https://raw.cosr.eu.org/Xinggsf_rule.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt) |
+| 乘风视频广告过滤规则 | [原始](https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt) | [加速③](https://raw.cosr.eu.org/Xinggsf_mv.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt) |
+| 禁止社交媒体图标列表 | [原始](https://easylist-downloads.adblockplus.org/fanboy-social.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Fanboy-social.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Fanboy-social.txt) | [加速③](https://raw.cosr.eu.org/Fanboy-social.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Fanboy-social.txt) |
+| ADgk | [原始](https://banbendalao.coding.net/p/adgk/d/ADgk/git/raw/main/ADgk.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/ADgk.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/ADgk.txt) | [加速③](https://raw.cosr.eu.org/ADgk.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/ADgk.txt) |
+| 大圣净化 | [原始](https://raw.githubusercontent.com/jdlingyu/ad-wars/main/hosts) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/ds_hosts.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/ds_hosts.txt) | [加速③](https://raw.cosr.eu.org/ds_hosts.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/ds_hosts.txt) |
+| 1024 hosts | [原始](https://raw.githubusercontent.com/Goooler/1024_hosts/main/hosts) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/1024_hosts.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/1024_hosts.txt) | [加速③](https://raw.cosr.eu.org/1024_hosts.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/1024_hosts.txt) |
+| iOSAdblockList | [原始](https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/main/Hosts.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/iPv4_hosts.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/iPv4_hosts.txt) | [加速③](https://raw.cosr.eu.org/iPv4_hosts.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/iPv4_hosts.txt) |
+| StevenBlack | [原始](https://raw.githubusercontent.com/StevenBlack/hosts/main/hosts) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Steven_hosts) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Steven_hosts) | [加速③](https://raw.cosr.eu.org/Steven_hosts) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Steven_hosts) |
+| Hblock | [原始](https://hblock.molinero.dev/hosts) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Hblock_hosts) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Hblock_hosts) | [加速③](https://raw.cosr.eu.org/Hblock_hosts) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Hblock_hosts) |
+| Malware Domain List | [原始](https://www.malwaredomainlist.com/hostslist/hosts.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Malware_host.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Malware_host.txt) | [加速③](https://raw.cosr.eu.org/Malware_host.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Malware_host.txt) |
+| Adblock Warning Removal List | [原始](https://easylist-downloads.adblockplus.org/antiadblockfilters.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/antiadblockfilters.txt) | [加速③](https://raw.cosr.eu.org/antiadblockfilters.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt) |
+| Fanboy’s Annoyances List | [原始](https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/fanboy-annoyance.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/fanboy-annoyance.txt) | [加速③](https://raw.cosr.eu.org/fanboy-annoyance.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/fanboy-annoyance.txt) |
+
+### 🧾 FAQ（常见问题）
+- 订阅更新失败或很慢？
+  - 先切换镜像（①/② ↔ ③/④），或在工具中手动“立即更新”。必要时保留一个无缓存镜像作备用。
+- 为什么“屏蔽网站的 Cookies 警告”不提供加速？
+  - 其再分发许可存在限制，已在 CI 暂停同步，仅保留原始地址，使用者请按其许可自取。
+- 更新频率？
+  - CI 每 6 小时拉取上游并推送，通常 15 秒内即可通过镜像完成更新分发（命中缓存时更快）。
+
+## 文件完整性与程序化索引
+
+- 校验和：见 `checksums.txt`（由 CI 生成）。本地校验示例：
 
 ```bash
 sha256sum -c checksums.txt
 ```
 
-- manifest: see `manifest.json` for a machine-readable index with file sizes, hashes and timestamps.
+- 清单：见 `manifest.json`，包含文件大小、哈希与时间戳，便于程序化消费。
 
-## Web index page (rule index with copy/search)
+## 🚛 完善项目
 
-- Online mirror: [https://raw.cosr.eu.org](https://raw.cosr.eu.org)
-- Features:
-  - Mirror selector: GHUCS / jsDelivr / cosr / gitmirror
-  - One-click copy per rule; copy-all for current visible rows
-  - Instant search (by rule name or filename)
-  - Size/Updated time sourced from `manifest.json`
-  - Theme: light (default) / dark / follow system
-- Deep link (copy shortcut): `index.html?mirror=ghucs&copy=EasyPrivacy.txt`
-  - It selects the mirror and copies the final URL to clipboard
+希望大家可以提交 Issue 或者 Request 来帮助我完善规则
 
-- gzip copies: each file also has a `.gz` companion (e.g. `EasyPrivacy.txt.gz`). Most tools can ingest gzip directly or after a quick `gunzip -c file.txt.gz > file.txt`.
+提交认为你们需要更新加速的规则。下面几点需要注意：
 
-| 🥑 Rule Name | original address | 🚀 accelerated address① | 🚀 accelerated address② | 🚀 accelerated address③ | 🚀 accelerated address④ |
-| :----: | :----: | :----: | :----: | :----: | :----: |
-| AdGuard DNS Filter | [original](https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/AdGuard_Simplified_Domain_Names_Filter.txt) <sub>[copy](index.html?mirror=ghucs&copy=AdGuard_Simplified_Domain_Names_Filter.txt)</sub> | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/AdGuard_Simplified_Domain_Names_Filter.txt) <sub>[copy](index.html?mirror=jsdelivr&copy=AdGuard_Simplified_Domain_Names_Filter.txt)</sub> | [accelerated③](https://raw.cosr.eu.org/AdGuard_Simplified_Domain_Names_Filter.txt) <sub>[copy](index.html?mirror=cosr&copy=AdGuard_Simplified_Domain_Names_Filter.txt)</sub> | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/AdGuard_Simplified_Domain_Names_Filter.txt) <sub>[copy](index.html?mirror=gitmirror&copy=AdGuard_Simplified_Domain_Names_Filter.txt)</sub> |
-| Anti-AD | [original](https://anti-ad.net/easylist.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Anti_AD_Easylist.txt) <sub>[copy](index.html?mirror=ghucs&copy=Anti_AD_Easylist.txt)</sub> | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Anti_AD_Easylist.txt) <sub>[copy](index.html?mirror=jsdelivr&copy=Anti_AD_Easylist.txt)</sub> | [accelerated③](https://raw.cosr.eu.org/Anti_AD_Easylist.txt) <sub>[copy](index.html?mirror=cosr&copy=Anti_AD_Easylist.txt)</sub> | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Anti_AD_Easylist.txt) <sub>[copy](index.html?mirror=gitmirror&copy=Anti_AD_Easylist.txt)</sub> |
-| EasyList China | [original](https://easylist-downloads.adblockplus.org/easylistchina.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/EasyList_China.txt) <sub>[copy](index.html?mirror=ghucs&copy=EasyList_China.txt)</sub> | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/EasyList_China.txt) <sub>[copy](index.html?mirror=jsdelivr&copy=EasyList_China.txt)</sub> | [accelerated③](https://raw.cosr.eu.org/EasyList_China.txt) <sub>[copy](index.html?mirror=cosr&copy=EasyList_China.txt)</sub> | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/EasyList_China.txt) <sub>[copy](index.html?mirror=gitmirror&copy=EasyList_China.txt)</sub> |
-| EasyPrivacy | [original](https://easylist-downloads.adblockplus.org/easyprivacy.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/EasyPrivacy.txt) <sub>[copy](index.html?mirror=ghucs&copy=EasyPrivacy.txt)</sub> | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/EasyPrivacy.txt) <sub>[copy](index.html?mirror=jsdelivr&copy=EasyPrivacy.txt)</sub> | [accelerated③](https://raw.cosr.eu.org/EasyPrivacy.txt) <sub>[copy](index.html?mirror=cosr&copy=EasyPrivacy.txt)</sub> | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/EasyPrivacy.txt) <sub>[copy](index.html?mirror=gitmirror&copy=EasyPrivacy.txt)</sub> |
-| I Don't Care About Cookies | [original](https://www.i-dont-care-about-cookies.eu/abp) | 已在 CI 暂停同步，可能存在再分发许可限制（仅保留原始地址，使用者请按其许可自取）。 |
-| HalfLife | [original](https://raw.githubusercontent.com/o0HalfLife0o/list/main/ad.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/HalfLife.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/HalfLife.txt ) | [accelerated③](https://raw.cosr.eu.org/HalfLife.txt ) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/HalfLife.txt ) |
-| CJX's EasyList Lite | [original](https://raw.githubusercontent.com/cjx82630/cjxlist/main/cjxlist.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/CJX's_EasyList_Lite.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/CJX's_EasyList_Lite.txt) | [accelerated③](https://raw.cosr.eu.org/CJX's_EasyList_Lite.txt) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/CJX's_EasyList_Lite.txt) |
-| CJX's Annoyance List | [original](https://raw.githubusercontent.com/cjx82630/cjxlist/main/cjx-annoyance.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/CJX's_Annoyance_List.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/CJX's_Annoyance_List.txt) | [accelerated③](https://raw.cosr.eu.org/CJX's_Annoyance_List.txt) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/CJX's_Annoyance_List.txt) |
-| Chengfeng General Advertising Filter Rules | [original](https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt) | [accelerated③](https://raw.cosr.eu.org/Xinggsf_rule.txt) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt) |
-| Chengfeng Video Advertising Filter Rules | [original](https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt) | [accelerated③](https://raw.cosr.eu.org/Xinggsf_mv.txt) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt) |
-| Fanboy's Social Blocking List | [original](https://easylist-downloads.adblockplus.org/fanboy-social.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Fanboy-social.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Fanboy-social.txt) | [accelerated③](https://raw.cosr.eu.org/Fanboy-social.txt) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Fanboy-social.txt) |
-| ADgk | [original](https://banbendalao.coding.net/p/adgk/d/ADgk/git/raw/main/ADgk.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/ADgk.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/ADgk.txt) | [accelerated③](https://raw.cosr.eu.org/ADgk.txt) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/ADgk.txt) |
-| Great Sage Purification | [original](https://raw.githubusercontent.com/jdlingyu/ad-wars/main/hosts) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/ds_hosts.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/ds_hosts.txt) | [accelerated③](https://raw.cosr.eu.org/ds_hosts.txt) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/ds_hosts.txt) |
-| 1024 hosts | [original](https://raw.githubusercontent.com/Goooler/1024_hosts/main/hosts) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/1024_hosts.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/1024_hosts.txt) | [accelerated③](https://raw.cosr.eu.org/1024_hosts.txt) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/1024_hosts.txt) |
-| iOSAdblockList | [original](https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/main/Hosts.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/iPv4_hosts.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/iPv4_hosts.txt) | [accelerated③](https://raw.cosr.eu.org/iPv4_hosts.txt) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/iPv4_hosts.txt) |
-| StevenBlack | [original](https://raw.githubusercontent.com/StevenBlack/hosts/main/hosts) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Steven_hosts) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Steven_hosts) | [accelerated③](https://raw.cosr.eu.org/Steven_hosts) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Steven_hosts) |
-| Hblock | [original](https://hblock.molinero.dev/hosts) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Hblock_hosts) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Hblock_hosts) | [accelerated③](https://raw.cosr.eu.org/Hblock_hosts) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Hblock_hosts) |
-| Malware Domain List | [original](https://www.malwaredomainlist.com/hostslist/hosts.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Malware_host.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Malware_host.txt) | [accelerated③](https://raw.cosr.eu.org/Malware_host.txt) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Malware_host.txt) |
-| Adblock Warning Removal List | [original](https://easylist-downloads.adblockplus.org/antiadblockfilters.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/antiadblockfilters.txt) | [accelerated③](https://raw.cosr.eu.org/antiadblockfilters.txt) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt) |
-| Fanboy’s Annoyances List | [original](https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/fanboy-annoyance.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/fanboy-annoyance.txt) | [accelerated③](https://raw.cosr.eu.org/fanboy-annoyance.txt) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/fanboy-annoyance.txt) |
+1. 规则需要在境外服务器，难以成功更新或更新缓慢的。
+2. 注明规则的名称、来源、作用
+3. 如果你需要加速的规则是 GitHub 的项目中的文件，请直接使用 jsDelivr 的语法加速项目文件即可，**无需提交请求**。
+`https://cdn.jsdelivr.net/gh/用户名/项目名@版本/加速文件`
 
-## 📜 License
+### 反馈建议与问题报告
+- 提交 Issue 时请尽量附上：
+  - 所在地区与运营商、使用的镜像、工具类型与版本
+  - 失败截图或报错信息、可复现步骤
+  - 涉及的规则名称与链接
 
-- All code in this project is released under the [MIT License](LICENSE) unless otherwise specified.
-- The README.MD and wiki resources of this project are based on [CC BY-NC-SA 4.0][CC-NC-SA-4.0]. This means you can copy and redistribute the content of this project,
-  but you must **provide appropriate credit and a link to the license**. At the same time, you **may not use this project for commercial purposes**, according to our narrow understanding
-  (with supplementary terms), any profit-making activity is considered a commercial purpose.
-- Please use this project in compliance with local laws and regulations.
+## 🌟 特别鸣谢
 
+* [@Hackl0us](https://github.com/Hackl0us)
+
+## 📈 历史 Star 数
+
+![](https://starchart.cc/Silentely/AdBlock-Acceleration.svg)
+
+## 💰 赞助商
+
+[![Powered by Netjett](https://i.miji.bid/2025/07/05/76050236db0a06996ee0fc077b87880b.jpeg)](https://netjett.com "Powered by Netjett - Free VPS for Open Source")
+[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
+
+
+## License
+
+- 本项目的所有代码除另有说明外,均按照 [GPL-3.0 license](LICENSE) 发布。
+- 本项目的README.MD，wiki等资源基于 [CC BY-NC-SA 4.0][CC-NC-SA-4.0] 这意味着你可以拷贝、并再发行本项目的内容，  
+  但是你将必须同样**提供原作者信息以及协议声明**。同时你也**不能将本项目用于商业用途**，按照我们狭义的理解  
+  (增加附属条款)，凡是**任何盈利的活动皆属于商业用途**。
+- 请在遵守当地相关法律法规的前提下使用本项目。
 
 <p align="center">
   <img src="https://github.com/docker/dockercraft/raw/master/docs/img/contribute.png?raw=true" alt="贡献图示">
@@ -156,21 +211,6 @@ sha256sum -c checksums.txt
 [github-hosts]: https://raw.githubusercontent.com/racaljk/hosts/master/hosts "hosts on Github"
 [CC-NC-SA-4.0]: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh
 
-
 <div align="center">
   <sub>Made with ❤️ by <a href="https://github.com/Silentely">Silentely</a></sub>
 </div>
-
-
-## 🌟 Special thanks
-
-* [@Hackl0us](https://github.com/Hackl0us)
-
-## 📈 Number of historical stars
-
-![](https://starchart.cc/Silentely/AdBlock-Acceleration.svg)
-
-## 💰 Sponsors
-
-[![Powered by Netjett](https://i.miji.bid/2025/07/05/76050236db0a06996ee0fc077b87880b.jpeg)](https://netjett.com "Powered by Netjett - Free VPS for Open Source")
-[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
