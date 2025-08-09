@@ -39,7 +39,7 @@
     .btn:hover{border-color:#3b434c}
     .muted{color:var(--muted)}
     .right{text-align:right}
-    .note{margin-top:8px;color:var(--muted);font-size:12px}
+    .note{margin-top:8px;color:var(--muted);font-size:12px;word-break:break-all;overflow-wrap:anywhere}
     .badge{display:inline-block;padding:2px 6px;border:1px solid var(--border);border-radius:999px;font-size:12px;color:var(--muted)}
     .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#11161f;color:var(--fg);border:1px solid var(--border);padding:10px 14px;border-radius:8px;opacity:0;pointer-events:none;transition:opacity .2s}
     .toast.show{opacity:1}
@@ -56,8 +56,15 @@
       input[type="search"]{min-width:0;flex:1 1 100%;width:100%}
       select{max-width:44vw}
       th,td{padding:10px}
+      table{min-width:0}
+      /* 名称列允许换行 */
+      td:first-child{white-space:normal;word-break:break-word}
       /* Hide less-critical columns on small screens: Original link (2), Size/Time (4) */
       th:nth-child(2), td:nth-child(2), th:nth-child(4), td:nth-child(4){display:none}
+      /* Also hide separate Actions column; we will show inline copy in column 3 */
+      th:nth-child(5), td:nth-child(5){display:none}
+      .copy-inline{display:inline-block}
+      .copy-col{display:none}
       /* Ensure action buttons are easy to tap */
       .btn{padding:8px 12px}
       .note{font-size:11px}
@@ -170,9 +177,12 @@
         <tr data-name="${rule.name.toLowerCase()}">
           <td><strong>${rule.name}</strong><div class="note muted">${file}</div></td>
           <td><a href="${rule.original}" target="_blank" rel="noopener">原始</a></td>
-          <td><a href="${link}" target="_blank" rel="noopener">打开当前镜像</a></td>
+          <td>
+            <a href="${link}" target="_blank" rel="noopener">打开当前镜像</a>
+            <button class="btn copy-inline" data-copy="${file}" style="margin-left:8px">复制</button>
+          </td>
           <td class="right"><div>${size}</div><div class="muted">${time}</div></td>
-          <td><button class="btn" data-copy="${file}">复制</button></td>
+          <td><button class="btn copy-col" data-copy="${file}">复制</button></td>
         </tr>`;
     }
     function render(){ tbody.innerHTML = rules.map(rowHTML).join(''); }

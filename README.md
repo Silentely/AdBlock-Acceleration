@@ -8,6 +8,7 @@
 <img src="https://img.shields.io/github/license/Silentely/AdBlock-Acceleration?color=ff69b4">
 <img src="https://img.shields.io/github/languages/code-size/Silentely/AdBlock-Acceleration?color=blueviolet">
 <img src="https://img.shields.io/github/last-commit/Silentely/AdBlock-Acceleration/main?label=%E4%B8%8A%E6%AC%A1%E6%9B%B4%E6%96%B0&color=success">
+<img src="https://api.netlify.com/api/v1/badges/33088bed-6b83-4cfa-818d-183ec9b6a5ef/deploy-status">
 <br>
 </div>
 
