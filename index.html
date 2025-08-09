@@ -44,6 +44,10 @@
     .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#11161f;color:var(--fg);border:1px solid var(--border);padding:10px 14px;border-radius:8px;opacity:0;pointer-events:none;transition:opacity .2s}
     .toast.show{opacity:1}
 
+    /* Right-align actions column */
+    td.actions{ text-align:right; white-space:nowrap }
+    td.actions .btn{ margin-left:8px }
+
     /* Tablet tweaks */
     @media (max-width: 820px){
       table{min-width:640px}
@@ -65,6 +69,10 @@
       th:nth-child(5), td:nth-child(5){display:none}
       .copy-inline{display:inline-block}
       .copy-col{display:none}
+      /* Allocate more width to name and right-align actions */
+      th:first-child, td:first-child{width:70% !important}
+      th:nth-child(3), td:nth-child(3){width:30%;}
+      td.actions{display:flex;justify-content:flex-end;align-items:center;gap:8px}
       /* Ensure action buttons are easy to tap */
       .btn{padding:8px 12px}
       .note{font-size:11px}
@@ -107,7 +115,7 @@
     <table id="rules">
       <thead>
         <tr>
-          <th style="width:26%">规则名称</th>
+          <th style="width:42%">规则名称</th>
           <th>原始地址</th>
           <th>加速地址（随上方镜像切换）</th>
           <th class="right">大小/更新时间</th>
@@ -177,7 +185,7 @@
         <tr data-name="${rule.name.toLowerCase()}">
           <td><strong>${rule.name}</strong><div class="note muted">${file}</div></td>
           <td><a href="${rule.original}" target="_blank" rel="noopener">原始</a></td>
-          <td>
+          <td class="actions">
             <a href="${link}" target="_blank" rel="noopener">打开当前镜像</a>
             <button class="btn copy-inline" data-copy="${file}" style="margin-left:8px">复制</button>
           </td>
