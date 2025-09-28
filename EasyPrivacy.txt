@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202509272355
+! Version: 202509280535
 ! Title: EasyPrivacy
-! Last modified: 27 Sep 2025 23:55 UTC
+! Last modified: 28 Sep 2025 05:35 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 1d552d4eeed8f6f79a014db4ba669688eda1bb4d
+! Commit: 850a51e192db05871792174800bfe53defba79ad
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -15775,11 +15775,11 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||youtube-nocookie.com/robots.txt?
 ||youtube-nocookie.com/youtubei/v1/log_event?
 ||youtube.com/api/stats/ads?
-! ||youtube.com/api/stats/atr?ns=
-! ||youtube.com/api/stats/qoe?fmt=
+||youtube.com/api/stats/atr?ns=*&ver=2&cmt=1.*&fs=0&*&euri&lact=
+||youtube.com/api/stats/qoe?*page&ns=yt&fexp=v1%*&event=streamingstats&
 ||youtube.com/get_video?
 ||youtube.com/pcs/activeview?
-! ||youtube.com/ptracking?html5=1&
+||youtube.com/ptracking?html5=1&video_id=*&cpn=*&ei=*&ptk=youtube_*&pltype=content
 ||youtube.com/set_awesome?
 ||youtube.com/youtubei/v1/log_event?
 ||youtube.googleapis.com/youtubei/v1/log_event?
@@ -16209,6 +16209,13 @@ bitdefender.com##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 ||googletagmanager.com/gtm.js$domain=nexon.com,important
 ||nakanohito.jp^*/bi.js$domain=nexon.com,important
 ! #endif
+! Youtube
+||youtube.com/api/stats/atr?ns=*&ver=2&cmt=1.*&fs=0&*&euri&lact=$badfilter
+||youtube.com/api/stats/qoe?*page&ns=yt&fexp=v1%*&event=streamingstats&$badfilter
+||youtube.com/ptracking?html5=1&video_id=*&cpn=*&ei=*&ptk=youtube_*&pltype=content$badfilter
+||youtube.com/api/stats/atr?ns=*&ver=2&cmt=1.*&fs=0&*&euri&lact=$xhr,method=post
+||youtube.com/api/stats/qoe?*page&ns=yt&fexp=v1%*&event=streamingstats&$xhr,method=post
+||youtube.com/ptracking?html5=1&video_id=*&cpn=*&ei=*&ptk=youtube_*&pltype=content$xhr,method=get
 ! -----------------Individual cname tracking systems-----------------!
 ! *** easylist:easyprivacy/easyprivacy_specific_cname_dataunlocker.txt ***
 ! easyprivacy_specific_cname_dataunlocker.txt
