@@ -1,51 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./assets/styles.css">
   <title>AdBlock-Acceleration 规则索引</title>
-  <style>
-    /* 主题变量 */
-    :root {
-      /* 浅色默认 */
-      --bg:#ffffff; --fg:#0b0e14; --muted:#57606a; --accent:#0969da; --border:#d0d7de;
-      --surface:#f6f8fa; --control-bg:#ffffff; --control-fg:#0b0e14; --btn-bg:#f6f8fa; --btn-fg:#0b0e14;
-    }
-    [data-theme="dark"] {
-      --bg:#0b0e14; --fg:#e6edf3; --muted:#9ba7b4; --accent:#3fb950; --border:#2d333b;
-      --surface:#0f131a; --control-bg:#0f131a; --control-fg:#e6edf3; --btn-bg:#151a22; --btn-fg:#e6edf3;
-    }
-    @media (prefers-color-scheme: dark) {
-      [data-theme="system"] {
-        --bg:#0b0e14; --fg:#e6edf3; --muted:#9ba7b4; --accent:#3fb950; --border:#2d333b;
-        --surface:#0f131a; --control-bg:#0f131a; --control-fg:#e6edf3; --btn-bg:#151a22; --btn-fg:#e6edf3;
-      }
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.6 system-ui,Segoe UI,Roboto,Helvetica,Arial}
-    header{padding:20px;border-bottom:1px solid var(--border);display:flex;gap:16px;align-items:center;flex-wrap:wrap}
-    header h1{margin:0;font-size:18px}
-    .controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-    input[type="search"]{padding:8px 10px;border:1px solid var(--border);border-radius:6px;background:var(--control-bg);color:var(--control-fg);min-width:240px}
-    select{padding:8px 10px;border:1px solid var(--border);border-radius:6px;background:var(--control-bg);color:var(--control-fg)}
-    main{padding:16px}
-    table{width:100%;border-collapse:collapse;table-layout:fixed}
-    th,td{padding:10px;border-bottom:1px solid var(--border);vertical-align:top}
-    th{color:var(--muted);text-align:left;font-weight:600}
-    a{color:#58a6ff;text-decoration:none}
-    .btn{padding:6px 10px;border:1px solid var(--border);border-radius:6px;background:var(--btn-bg);color:var(--btn-fg);cursor:pointer}
-    .btn:hover{border-color:#3b434c}
-    .muted{color:var(--muted)}
-    .right{text-align:right}
-    /* add inner spacing to the Size/Updated column so it doesn't crowd the next column */
-    th.right, td.right{padding-right:54px}
-    .note{margin-top:8px;color:var(--muted);font-size:12px}
-    .badge{display:inline-block;padding:2px 6px;border:1px solid var(--border);border-radius:999px;font-size:12px;color:var(--muted)}
-    .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--surface);color:var(--fg);border:1px solid var(--border);padding:10px 14px;border-radius:8px;opacity:0;pointer-events:none;transition:opacity .2s;box-shadow:0 6px 24px rgba(0,0,0,.12)}
-    .toast.show{opacity:1}
-  </style>
 </head>
 <body>
   <header>
@@ -98,140 +58,9 @@
       </thead>
       <tbody></tbody>
     </table>
-    <p class="note">说明：上方“镜像”决定“复制”按钮输出的链接前缀。大小/时间来自仓库根目录的 manifest.json。</p>
+    <p class="note">说明：上方"镜像"决定"复制"按钮输出的链接前缀。大小/时间来自仓库根目录的 manifest.json。</p>
   </main>
   <div id="toast" class="toast">已复制到剪贴板</div>
-  <script>
-    const owner = 'Silentely';
-    const repo = 'AdBlock-Acceleration';
-    const mirrors = {
-      ghucs: (f) => `https://raw.githubusercontents.com/${owner}/${repo}/main/${encodeURIComponent(f)}`,
-      jsdelivr: (f) => `https://cdn.jsdelivr.net/gh/${owner}/${repo}/${encodeURIComponent(f)}`,
-      cosr: (f) => `https://raw.cosr.eu.org/${encodeURIComponent(f)}`,
-      gitmirror: (f) => `https://raw.gitmirror.com/${owner}/${repo}/main/${encodeURIComponent(f)}`,
-    };
-    const rules = [
-      {name:'AdGuard DNS Filter', file:'AdGuard_Simplified_Domain_Names_Filter.txt', original:'https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt'},
-      {name:'Anti-AD', file:'Anti_AD_Easylist.txt', original:'https://anti-ad.net/easylist.txt'},
-      {name:'EasyList China', file:'EasyList_China.txt', original:'https://easylist-downloads.adblockplus.org/easylistchina.txt'},
-      {name:'EasyPrivacy', file:'EasyPrivacy.txt', original:'https://easylist.to/easylist/easyprivacy.txt'},
-      {name:"I Don't Care About Cookies", file:"I_dont_care_about_cookies.txt", original:'https://www.i-dont-care-about-cookies.eu/abp'},
-      {name:'HalfLife', file:'HalfLife.txt', original:'https://raw.githubusercontent.com/o0HalfLife0o/list/main/ad.txt'},
-      {name:"CJX's EasyList Lite", file:"CJX's_EasyList_Lite.txt", original:'https://raw.githubusercontent.com/cjx82630/cjxlist/main/cjxlist.txt'},
-      {name:"CJX's Annoyance List", file:"CJX's_Annoyance_List.txt", original:'https://raw.githubusercontent.com/cjx82630/cjxlist/main/cjx-annoyance.txt'},
-      {name:'Chengfeng General Rules', file:'Xinggsf_rule.txt', original:'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt'},
-      {name:'Chengfeng Video Rules', file:'Xinggsf_mv.txt', original:'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt'},
-      {name:"Fanboy's Social", file:'Fanboy-social.txt', original:'https://easylist-downloads.adblockplus.org/fanboy-social.txt'},
-      {name:'ADgk', file:'ADgk.txt', original:'https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt'},
-      {name:'Great Sage Purification', file:'ds_hosts.txt', original:'https://raw.githubusercontent.com/jdlingyu/ad-wars/main/hosts'},
-      {name:'1024 hosts', file:'1024_hosts.txt', original:'https://raw.githubusercontent.com/Goooler/1024_hosts/main/hosts'},
-      {name:'iOSAdblockList', file:'iPv4_hosts.txt', original:'https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/main/Hosts.txt'},
-      {name:'StevenBlack', file:'Steven_hosts', original:'https://raw.githubusercontent.com/StevenBlack/hosts/main/hosts'},
-      {name:'Hblock', file:'Hblock_hosts', original:'https://hblock.molinero.dev/hosts'},
-      {name:'Malware Domain List', file:'Malware_host.txt', original:'https://www.malwaredomainlist.com/hostslist/hosts.txt'},
-      {name:'Adblock Warning Removal List', file:'antiadblockfilters.txt', original:'https://easylist-downloads.adblockplus.org/antiadblockfilters.txt'},
-      {name:'Fanboy’s Annoyances', file:'fanboy-annoyance.txt', original:'https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt'},
-    ];
-
-    const $ = (s)=>document.querySelector(s);
-    const tbody = $('#rules tbody');
-    const mirrorSel = $('#mirror');
-    const themeSel = $('#theme');
-    const search = $('#search');
-    const toast = $('#toast');
-    const updated = $('#updated');
-    let manifest = null;
-
-    function humanBytes(n){
-      if(!Number.isFinite(n)) return '-';
-      const u=['B','KB','MB','GB']; let i=0; while(n>=1024&&i<u.length-1){n/=1024;i++} return n.toFixed(i?1:0)+' '+u[i];
-    }
-    function formatDate(dt){
-      const pad = (n)=>String(n).padStart(2,'0');
-      const y = dt.getFullYear();
-      const m = pad(dt.getMonth()+1);
-      const d = pad(dt.getDate());
-      const H = pad(dt.getHours());
-      const M = pad(dt.getMinutes());
-      const S = pad(dt.getSeconds());
-      return `${y}-${m}-${d}  ${H}:${M}:${S}`;
-    }
-    function showToast(msg){ toast.textContent=msg; toast.classList.add('show'); setTimeout(()=>toast.classList.remove('show'),1400); }
-    function buildUrl(file){ const m = mirrorSel.value; return mirrors[m](file); }
-    function rowHTML(rule){
-      const file = rule.file;
-      const m = manifest?.files?.find(x=>x.file===file);
-      const size = m? humanBytes(m.bytes):'-';
-      const time = m? formatDate(new Date(m.mtime)): '-';
-      const link = buildUrl(file);
-      return `
-        <tr data-name="${rule.name.toLowerCase()}">
-          <td><strong>${rule.name}</strong><div class="note muted">${file}</div></td>
-          <td class="right"><div>${size}</div><div class="muted">${time}</div></td>
-          <td><a href="${rule.original}" target="_blank" rel="noopener">原始</a></td>
-          <td><a href="${link}" target="_blank" rel="noopener">打开当前镜像</a></td>
-          <td><button class="btn" data-copy="${file}">复制</button></td>
-        </tr>`;
-    }
-    function render(){ tbody.innerHTML = rules.map(rowHTML).join(''); }
-    function filter(){
-      const q = search.value.trim().toLowerCase();
-      tbody.querySelectorAll('tr').forEach(tr=>{
-        const hit = !q || tr.dataset.name.includes(q) || tr.querySelector('.note').textContent.toLowerCase().includes(q);
-        tr.style.display = hit? '':'none';
-      });
-    }
-
-    mirrorSel.addEventListener('change', ()=>{
-      // persist mirror choice and re-render links for current mirror
-      try{ localStorage.setItem('mirror', mirrorSel.value); }catch(e){}
-      render(); filter(); attachHandlers();
-    });
-    search.addEventListener('input', filter);
-    $('#copyAll').addEventListener('click', async ()=>{
-      const list = Array.from(tbody.querySelectorAll('tr'))
-        .filter(tr=>tr.style.display!=='none')
-        .map(tr=> buildUrl(tr.querySelector('[data-copy]').dataset.copy));
-      if(list.length===0){ showToast('无可见项'); return; }
-      await navigator.clipboard.writeText(list.join('\n'));
-      showToast(`已复制 ${list.length} 条链接`);
-    });
-
-    function attachHandlers(){
-      tbody.querySelectorAll('[data-copy]').forEach(btn=>{
-        btn.addEventListener('click', async ()=>{
-          const file = btn.dataset.copy;
-          const url = buildUrl(file);
-          await navigator.clipboard.writeText(url);
-          showToast('已复制到剪贴板');
-        });
-      });
-    }
-
-    (async function init(){
-      // 主题初始化：默认浅色，可选跟随系统/深色
-      const THEME_KEY = 'theme';
-      const savedTheme = localStorage.getItem(THEME_KEY) || 'light';
-      document.documentElement.setAttribute('data-theme', savedTheme);
-      themeSel.value = savedTheme;
-      themeSel.addEventListener('change', ()=>{
-        const v = themeSel.value;
-        document.documentElement.setAttribute('data-theme', v);
-        localStorage.setItem(THEME_KEY, v);
-      });
-
-      // 镜像初始化：默认使用 cosr，可被本地偏好或 URL 覆盖
-      try{ mirrorSel.value = localStorage.getItem('mirror') || 'cosr'; }catch(e){ mirrorSel.value = 'cosr'; }
-
-      try{ const res = await fetch('./manifest.json',{cache:'no-store'}); if(res.ok){ manifest = await res.json(); updated.textContent = '更新: '+ formatDate(new Date(manifest.updatedAt)); } else { updated.textContent = 'manifest 不可用'; } }
-      catch{ updated.textContent = 'manifest 不可用'; }
-      render(); attachHandlers(); filter();
-      // Query param copy support
-      const usp = new URLSearchParams(location.search);
-      const file = usp.get('copy'); const mirror = usp.get('mirror');
-      if(mirror && mirrors[mirror]){ mirrorSel.value = mirror; render(); attachHandlers(); filter(); }
-      if(file){ const url = buildUrl(file); try{ await navigator.clipboard.writeText(url); showToast('已复制: '+file); }catch(e){} }
-    })();
-  </script>
+  <script src="./assets/script.js"></script>
 </body>
 </html>
