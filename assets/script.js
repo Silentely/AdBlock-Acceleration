@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */
 /**
  * AdBlock-Acceleration Rule Index Application
  * @description Manages the display and interaction of AdBlock rule lists with multiple mirror sources
