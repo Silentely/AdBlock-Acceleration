@@ -109,15 +109,8 @@ jobs:
             "$BASE_COSR/HalfLife.txt" \
             "$BASE_GITMIRROR/HalfLife.txt"
 
-          download_any "CJX's_EasyList_Lite.txt" \
-            "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt" \
-            "$BASE_GHUCS/CJX's_EasyList_Lite.txt" \
-            "$BASE_JSDELIVR/CJX's_EasyList_Lite.txt" \
-            "$BASE_COSR/CJX's_EasyList_Lite.txt" \
-            "$BASE_GITMIRROR/CJX's_EasyList_Lite.txt"
-
           download_any "CJX's_Annoyance_List.txt" \
-            "https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt" \
+            "https://raw.githubusercontent.com/cjx82630/cjxlist/main/cjx-annoyance.txt" \
             "$BASE_GHUCS/CJX's_Annoyance_List.txt" \
             "$BASE_JSDELIVR/CJX's_Annoyance_List.txt" \
             "$BASE_COSR/CJX's_Annoyance_List.txt" \
@@ -211,7 +204,6 @@ jobs:
             "EasyList_China.txt" \
             "EasyPrivacy.txt" \
             "HalfLife.txt" \
-            "CJX's_EasyList_Lite.txt" \
             "CJX's_Annoyance_List.txt" \
             "Xinggsf_rule.txt" \
             "Xinggsf_mv.txt" \
@@ -255,7 +247,6 @@ jobs:
             "EasyList_China.txt" \
             "EasyPrivacy.txt" \
             "HalfLife.txt" \
-            "CJX's_EasyList_Lite.txt" \
             "CJX's_Annoyance_List.txt" \
             "Xinggsf_rule.txt" \
             "Xinggsf_mv.txt" \
@@ -332,7 +323,6 @@ jobs:
             "EasyList_China.txt" \
             "EasyPrivacy.txt" \
             "HalfLife.txt" \
-            "CJX's_EasyList_Lite.txt" \
             "CJX's_Annoyance_List.txt" \
             "Xinggsf_rule.txt" \
             "Xinggsf_mv.txt" \
@@ -382,7 +372,7 @@ jobs:
         run: |
           set -euo pipefail
           shopt -s nullglob
-          files=( AdGuard_Simplified_Domain_Names_Filter.txt Anti_AD_Easylist.txt EasyList_China.txt EasyPrivacy.txt HalfLife.txt "CJX's_EasyList_Lite.txt" "CJX's_Annoyance_List.txt" Xinggsf_rule.txt Xinggsf_mv.txt Fanboy-social.txt ADgk.txt ds_hosts.txt 1024_hosts.txt iPv4_hosts.txt Steven_hosts Hblock_hosts antiadblockfilters.txt fanboy-annoyance.txt )
+          files=( AdGuard_Simplified_Domain_Names_Filter.txt Anti_AD_Easylist.txt EasyList_China.txt EasyPrivacy.txt HalfLife.txt "CJX's_Annoyance_List.txt" Xinggsf_rule.txt Xinggsf_mv.txt Fanboy-social.txt ADgk.txt ds_hosts.txt 1024_hosts.txt iPv4_hosts.txt Steven_hosts Hblock_hosts antiadblockfilters.txt fanboy-annoyance.txt )
           : > checksums.txt
           for f in "${files[@]}"; do
             if [ -f "$f" ]; then
