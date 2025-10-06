@@ -35,14 +35,14 @@ const rules = [
   { name: 'Anti-AD', file: 'Anti_AD_Easylist.txt', original: 'https://anti-ad.net/easylist.txt' },
   { name: 'EasyList China', file: 'EasyList_China.txt', original: 'https://easylist-downloads.adblockplus.org/easylistchina.txt' },
   { name: 'EasyPrivacy', file: 'EasyPrivacy.txt', original: 'https://easylist.to/easylist/easyprivacy.txt' },
-  { name: '屏蔽网站的Cookies警告(I Don\'t Care About Cookies)', file: 'I_dont_care_about_cookies.txt', original: 'https://www.i-dont-care-about-cookies.eu/abp' },
+  { name: 'I Don\'t Care About Cookies', file: 'I_dont_care_about_cookies.txt', original: 'https://www.i-dont-care-about-cookies.eu/abp' },
   { name: 'HalfLife', file: 'HalfLife.txt', original: 'https://raw.githubusercontent.com/o0HalfLife0o/list/main/ad.txt' },
   { name: 'CJX\'s Annoyance List', file: 'CJX\'s_Annoyance_List.txt', original: 'https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt' },
-  { name: '乘风通用广告过滤规则(Chengfeng General Rules)', file: 'Xinggsf_rule.txt', original: 'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt' },
-  { name: '乘风视频广告过滤规则(Chengfeng Video Rules)', file: 'Xinggsf_mv.txt', original: 'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt' },
-  { name: '禁止社交媒体图标列表(Fanboy\'s Social)', file: 'Fanboy-social.txt', original: 'https://easylist-downloads.adblockplus.org/fanboy-social.txt' },
+  { name: 'Chengfeng General Rules', file: 'Xinggsf_rule.txt', original: 'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt' },
+  { name: 'Chengfeng Video Rules', file: 'Xinggsf_mv.txt', original: 'https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt' },
+  { name: 'Fanboy\'s Social', file: 'Fanboy-social.txt', original: 'https://easylist-downloads.adblockplus.org/fanboy-social.txt' },
   { name: 'ADgk', file: 'ADgk.txt', original: 'https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt' },
-  { name: '大圣净化(Great Sage Purification), file: 'ds_hosts.txt', original: 'https://raw.githubusercontent.com/jdlingyu/ad-wars/main/hosts' },
+  { name: '大圣净化(Great Sage Purification)', file: 'ds_hosts.txt', original: 'https://raw.githubusercontent.com/jdlingyu/ad-wars/main/hosts' },
   { name: '1024 hosts', file: '1024_hosts.txt', original: 'https://raw.githubusercontent.com/Goooler/1024_hosts/main/hosts' },
   { name: 'iOSAdblockList', file: 'iPv4_hosts.txt', original: 'https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/main/Hosts.txt' },
   { name: 'StevenBlack', file: 'Steven_hosts', original: 'https://raw.githubusercontent.com/StevenBlack/hosts/main/hosts' },
@@ -131,6 +131,8 @@ function rowHTML(rule) {
   const time = meta ? formatDate(new Date(meta.mtime)) : '-';
   const link = buildUrl(file);
   
+  console.log('Generating row for:', rule.name, 'with file:', file, 'meta:', meta);
+  
   return `
     <tr data-name="${rule.name.toLowerCase()}" data-file="${file.toLowerCase()}">
       <td><strong>${rule.name}</strong><div class="note muted">${file}</div></td>
@@ -145,7 +147,9 @@ function rowHTML(rule) {
  * Renders all rules to the table
  */
 function render() {
+  console.log('Rendering rules...');
   elements.tbody.innerHTML = rules.map(rowHTML).join('');
+  attachHandlers(); // Re-attach handlers after rendering
 }
 
 /**
@@ -238,6 +242,7 @@ async function loadManifest() {
     const response = await fetch(CONFIG.manifestUrl, { cache: 'no-store' });
     if (response.ok) {
       manifest = await response.json();
+      console.log('Manifest loaded successfully:', manifest);
       elements.updated.textContent = '更新: ' + formatDate(new Date(manifest.updatedAt));
     } else {
       throw new Error('Manifest not available');
@@ -292,8 +297,8 @@ async function init() {
   
   // Load data and render
   await loadManifest();
+  console.log('Manifest loaded, rendering rules...');
   render();
-  attachHandlers();
   filterDebounced();
   
   // Set up event listeners
