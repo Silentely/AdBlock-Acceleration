@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202511281748
+! Version: 202511290001
 ! Title: EasyPrivacy
-! Last modified: 28 Nov 2025 17:48 UTC
+! Last modified: 29 Nov 2025 00:01 UTC
 ! Expires: 4 days (update frequency)
-! Commit: a509450b61b54daab809c31e8c4bb4c3266b7eb1
+! Commit: 4e9cd0cee2e95cd6630b1a816f0f1b4094cdeef7
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -363,6 +363,7 @@
 /api/v1/EndpointTracker
 /api/v1/firehose/batch
 /api/v1/firehose?_
+/api/v1/impressions|
 /api/v1/metrics
 /api/v1/reportData/*
 /api/v1/stat?
@@ -5048,6 +5049,7 @@ omni.soundestlink.com$image
 ||lexity.com^$third-party
 ||lfeeder.com^$third-party
 ||lfov.net^$third-party
+||lgrckt-in.com^$third-party
 ||linezing.com^$third-party
 ||linkconnector.com^$third-party
 ||linkifier.com^$third-party
@@ -7101,6 +7103,7 @@ omni.soundestlink.com$image
 ||fewjuice.com^
 ||fewkittens.com^
 ||fieldconfig.com^
+||figsprotein.com^
 ||fillthemap.com^
 ||filtercutter.com^
 ||finalizeforce.com^
@@ -8031,6 +8034,7 @@ omni.soundestlink.com$image
 ||slackpod.com^
 ||slaysweater.com^
 ||slickcontent.com^
+||slimesupplies.net^
 ||slinksuggestion.com^
 ||slopesoap.com^
 ||smallershops.com^
@@ -8450,6 +8454,7 @@ omni.soundestlink.com$image
 ||worldrealize.com^
 ||worriednumber.com^
 ||worriedwine.com^
+||wowfunnow.com^
 ||wrapstretch.com^
 ||wretchedfloor.com^
 ||writerhubs.com^
@@ -15239,6 +15244,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||pornbox.com/event/
 ||pornbox.com/stats/
 ||porzo.com/js/analytics
+||poshmark.com/trck/
 ||prairiedog.hashnode.com^
 ||pravda.com.ua/counter/
 ||prescouter.com/pd.js
@@ -16344,6 +16350,8 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ! https://github.com/AdguardTeam/AdguardFilters/issues/180750
 ||pcoptimizedsettings.com/wp-content/plugins/koko-analytics/$script,redirect=noop.js,important
 ||pcoptimizedsettings.com/wp-content/uploads/breeze/google/gtag.js$script,redirect=noop.js,important
+! https://github.com/AdguardTeam/AdguardFilters/issues/218663
+||d21y75miwcfqoq.cloudfront.net/436f3341$image,redirect=nooptext
 ! GPC
 delta.com,geizhals.de,harborfreight.com,flyfrontier.com,acmemarkets.com,usaa.com,capezio.com,twitch.tv,spotify.com,tidal.com,deezer.com,pandora.com,qobuz.com,soundcloud.com,vimeo.com,x.com,twitter.com,eventbrite.com,wunderground.com,accuweather.com,formula1.com,lenscrafters.com,subway.com,ticketmaster.*,livewithkellyandmark.com,visible.com,porsche.com,uber.com,jdsports.com,engadget.com,yahoo.com,techcrunch.com,rivals.com,kkrt.com,crunchyroll.com,dnb.com,dnb.co.uk,weather.com,ubereats.com##+js(set, Navigator.prototype.globalPrivacyControl, false)
 delta.com,geizhals.de,harborfreight.com,flyfrontier.com,acmemarkets.com,usaa.com,capezio.com,twitch.tv,spotify.com,tidal.com,deezer.com,pandora.com,qobuz.com,soundcloud.com,vimeo.com,x.com,twitter.com,eventbrite.com,wunderground.com,accuweather.com,formula1.com,lenscrafters.com,subway.com,ticketmaster.*,livewithkellyandmark.com,visible.com,porsche.com,uber.com,jdsports.com,engadget.com,yahoo.com,techcrunch.com,rivals.com,kkrt.com,crunchyroll.com,dnb.com,dnb.co.uk,weather.com,ubereats.com##+js(set, navigator.globalPrivacyControl, false)
