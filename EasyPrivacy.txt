@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202512301801
+! Version: 202512310005
 ! Title: EasyPrivacy
-! Last modified: 30 Dec 2025 18:01 UTC
+! Last modified: 31 Dec 2025 00:05 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 3dad11b29959caca75a3a5a2ee706d84737abc20
+! Commit: 136a648db9ab6e9f38f9fd82b8f9cb394b686c85
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -7544,6 +7544,7 @@ omni.soundestlink.com$image
 ||lumpygnome.com^
 ||lumpylumber.com^
 ||lumpywood.com^
+||lunarcave.com^
 ||lunchroomlock.com^
 ||lustroushaven.com^
 ||luxformula.com^
@@ -7551,6 +7552,7 @@ omni.soundestlink.com$image
 ||maddeningpowder.com^
 ||madebyintent.com^
 ||madlysuccessful.com^
+||madnessbuzz.com^
 ||madoverrice.com^
 ||magicaljoin.com^
 ||magicminibox.com^
@@ -16526,6 +16528,8 @@ gbatemp.net##+js(set, admiral, noopFunc)
 usatoday.com##+js(set, gnt.x.adm, '')
 ! anikore.jp
 anikore.jp##html[class^="loading"]:style(visibility: visible !important;)
+! https://github.com/uBlockOrigin/uAssets/issues/31343
+||void.nicopr.fr/rec$method=POST
 ! fedex.com
 fedex.com##+js(set-local-storage-item, fdx_enable_new_detail_page, true)
 ! mweb.jp
@@ -55186,6 +55190,7 @@ bitdefender.com##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 @@||statics.zcool.com.cn/track/sensors.$script,~third-party
 @@||tianyancha.com^*/sensorsdata.$script,~third-party
 @@||tracklog.58.com/referrer_ershouche_m_Now.js$domain=m.renrenche.com
+@@||xykpay.3d2.icbc.com.cn/acs-auth-web/js/fingerprint2.min.js$~third-party
 ! 
 ! ---------- Czech ----------
 ! 
