@@ -135,10 +135,10 @@ function rowHTML(rule) {
 
   return `
     <tr data-name="${rule.name.toLowerCase()}" data-file="${file.toLowerCase()}" class="animate-fade-in">
-      <td><strong class="text-white">${rule.name}</strong><div class="text-xs text-slate-400 mt-1">${file}</div></td>
-      <td class="text-right"><div class="text-slate-200">${size}</div><div class="text-xs text-slate-500 mt-1">${time}</div></td>
-      <td><a href="${rule.original}" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300">原始</a></td>
-      <td><a href="${link}" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300">打开当前镜像</a></td>
+      <td><strong class="text-slate-900 dark:text-white">${rule.name}</strong><div class="text-xs text-slate-500 dark:text-slate-400 mt-1">${file}</div></td>
+      <td class="text-right"><div class="text-slate-900 dark:text-slate-200">${size}</div><div class="text-xs text-slate-500 mt-1">${time}</div></td>
+      <td><a href="${rule.original}" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">原始</a></td>
+      <td><a href="${link}" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">打开当前镜像</a></td>
       <td><button class="btn-secondary text-xs px-3 py-1.5" data-copy="${file}">复制</button></td>
     </tr>`;
 }
