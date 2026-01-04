@@ -16,7 +16,7 @@ const CONFIG = {
     mirror: 'mirror'
   },
   defaults: {
-    theme: 'light',
+    theme: 'dark',
     mirror: 'cosr'
   }
 };
@@ -130,16 +130,16 @@ function rowHTML(rule) {
   const size = meta ? humanBytes(meta.bytes) : '-';
   const time = meta ? formatDate(new Date(meta.mtime)) : '-';
   const link = buildUrl(file);
-  
+
   console.log('Generating row for:', rule.name, 'with file:', file, 'meta:', meta);
-  
+
   return `
-    <tr data-name="${rule.name.toLowerCase()}" data-file="${file.toLowerCase()}">
-      <td><strong>${rule.name}</strong><div class="note muted">${file}</div></td>
-      <td class="right"><div>${size}</div><div class="muted">${time}</div></td>
-      <td><a href="${rule.original}" target="_blank" rel="noopener">原始</a></td>
-      <td><a href="${link}" target="_blank" rel="noopener">打开当前镜像</a></td>
-      <td><button class="btn" data-copy="${file}">复制</button></td>
+    <tr data-name="${rule.name.toLowerCase()}" data-file="${file.toLowerCase()}" class="animate-fade-in">
+      <td><strong class="text-white">${rule.name}</strong><div class="text-xs text-slate-400 mt-1">${file}</div></td>
+      <td class="text-right"><div class="text-slate-200">${size}</div><div class="text-xs text-slate-500 mt-1">${time}</div></td>
+      <td><a href="${rule.original}" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300">原始</a></td>
+      <td><a href="${link}" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300">打开当前镜像</a></td>
+      <td><button class="btn-secondary text-xs px-3 py-1.5" data-copy="${file}">复制</button></td>
     </tr>`;
 }
 
@@ -192,20 +192,41 @@ function attachHandlers() {
 }
 
 /**
- * Initializes theme system
+ * Initializes theme system with Tailwind CSS dark mode
  */
 function initTheme() {
   const savedTheme = localStorage.getItem(CONFIG.storageKeys.theme) || CONFIG.defaults.theme;
-  document.documentElement.setAttribute('data-theme', savedTheme);
+
+  // Apply theme using Tailwind's class-based dark mode
+  function applyTheme(theme) {
+    const html = document.documentElement;
+    if (theme === 'system') {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      html.classList.toggle('dark', prefersDark);
+    } else {
+      html.classList.toggle('dark', theme === 'dark');
+    }
+  }
+
+  // Apply initial theme
+  applyTheme(savedTheme);
   elements.themeSel.value = savedTheme;
-  
+
+  // Listen for theme changes
   elements.themeSel.addEventListener('change', () => {
     const theme = elements.themeSel.value;
-    document.documentElement.setAttribute('data-theme', theme);
+    applyTheme(theme);
     try {
       localStorage.setItem(CONFIG.storageKeys.theme, theme);
     } catch (error) {
       console.warn('Failed to save theme preference:', error);
+    }
+  });
+
+  // Listen for system theme changes when in 'system' mode
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    if (elements.themeSel.value === 'system') {
+      applyTheme('system');
     }
   });
 }

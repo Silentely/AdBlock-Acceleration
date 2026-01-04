@@ -1,66 +1,437 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" class="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="./assets/styles.css">
-  <title>AdBlock-Acceleration 规则索引</title>
+  <title>AdBlock Acceleration - 规则索引</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS (CDN for simplicity) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Space Grotesk', 'sans-serif'],
+            body: ['DM Sans', 'sans-serif'],
+          },
+          colors: {
+            primary: '#3B82F6',
+            secondary: '#1E293B',
+            'cta': '#2563EB',
+            background: '#0F172A',
+            surface: '#1E293B',
+            border: '#334155',
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.3s ease-out',
+            'slide-up': 'slideUp 0.3s ease-out',
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            slideUp: {
+              '0%': { transform: 'translateY(10px)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' },
+            },
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    /* Custom styles for glassmorphism and animations */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+      min-height: 100vh;
+      color: #F1F5F9;
+      overflow-x: hidden;
+    }
+
+    /* Animated background gradient */
+    body::before {
+      content: '';
+      position: fixed;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
+                  radial-gradient(circle at 40% 20%, rgba(59, 130, 246, 0.05) 0%, transparent 40%);
+      animation: pulse-slow 8s ease-in-out infinite;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Glassmorphism effect */
+    .glass {
+      background: rgba(30, 41, 59, 0.6);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .glass-card {
+      background: rgba(30, 41, 59, 0.4);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      transition: all 0.2s ease-out;
+    }
+
+    .glass-card:hover {
+      background: rgba(30, 41, 59, 0.6);
+      border-color: rgba(59, 130, 246, 0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(59, 130, 246, 0.15);
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: rgba(15, 23, 42, 0.5);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgba(59, 130, 246, 0.3);
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(59, 130, 246, 0.5);
+    }
+
+    /* Table styles */
+    .table-container {
+      overflow-x: auto;
+      border-radius: 12px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+    }
+
+    thead tr {
+      background: rgba(59, 130, 246, 0.08);
+    }
+
+    thead th {
+      padding: 16px;
+      text-align: left;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: #60A5FA;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+    }
+
+    tbody tr {
+      transition: all 0.2s ease-out;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    tbody tr:hover {
+      background: rgba(59, 130, 246, 0.05);
+    }
+
+    tbody td {
+      padding: 16px;
+      font-size: 0.875rem;
+      color: #E2E8F0;
+    }
+
+    /* Input and select styles */
+    input[type="search"],
+    select {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      color: #F1F5F9;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.875rem;
+      transition: all 0.2s ease-out;
+      outline: none;
+    }
+
+    input[type="search"]:focus,
+    select:focus {
+      border-color: rgba(59, 130, 246, 0.6);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    }
+
+    input[type="search"]::placeholder {
+      color: #64748B;
+    }
+
+    /* Button styles */
+    .btn-primary {
+      background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: all 0.2s ease-out;
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(59, 130, 246, 0.3);
+      filter: brightness(1.1);
+    }
+
+    .btn-primary:active {
+      transform: translateY(0);
+    }
+
+    .btn-secondary {
+      background: rgba(30, 41, 59, 0.6);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      color: #F1F5F9;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: all 0.2s ease-out;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(59, 130, 246, 0.1);
+      border-color: rgba(59, 130, 246, 0.4);
+    }
+
+    /* Toast notification */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: rgba(30, 41, 59, 0.9);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      color: #F1F5F9;
+      padding: 16px 24px;
+      border-radius: 12px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 500;
+      box-shadow: 0 8px 32px rgba(59, 130, 246, 0.2);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s ease-out;
+      z-index: 1000;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Link styles */
+    a {
+      color: #60A5FA;
+      text-decoration: none;
+      transition: color 0.2s ease-out;
+    }
+
+    a:hover {
+      color: #93C5FD;
+    }
+
+    /* Badge */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 12px;
+      background: rgba(59, 130, 246, 0.1);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      color: #60A5FA;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .controls {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      thead th,
+      tbody td {
+        padding: 12px 8px;
+        font-size: 0.8125rem;
+      }
+    }
+
+    /* Accessibility: Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
 </head>
-<body>
-  <header>
-    <h1>AdBlock-Acceleration规则索引 / Rule Index</h1>
-    <div class="controls">
-      <input id="search" type="search" placeholder="搜索规则… (支持拼音/英文)">
-      <label class="muted">镜像: 
-        <select id="mirror">
-          <option value="ghucs">GHUCS</option>
-          <option value="jsdelivr">jsDelivr</option>
-          <option value="cosr">cosr</option>
-          <option value="gitmirror">gitmirror</option>
-        </select>
-      </label>
-      <label class="muted">主题: 
-        <select id="theme">
-          <option value="light">浅色</option>
-          <option value="dark">深色</option>
-          <option value="system">跟随系统</option>
-        </select>
-      </label>
-      <a
-        href="https://github.com/Silentely/AdBlock-Acceleration"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn"
-        aria-label="在新窗口打开 GitHub 仓库"
-      >GitHub</a>
-      <button class="btn" id="copyAll">复制当前可见规则链接</button>
-      <span class="badge" id="updated">loading…</span>
+<body class="animate-fade-in">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 glass border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <div class="flex flex-col gap-4 animate-slide-up">
+        <!-- Title -->
+        <h1 class="font-heading text-2xl sm:text-3xl font-bold text-white">
+          AdBlock Acceleration
+          <span class="text-blue-400">规则索引</span>
+        </h1>
+
+        <!-- Controls -->
+        <div class="controls flex flex-wrap items-center gap-3">
+          <!-- Search -->
+          <div class="flex-1 min-w-[200px]">
+            <input
+              id="search"
+              type="search"
+              placeholder="搜索规则… (支持拼音/英文)"
+              class="w-full"
+              aria-label="搜索规则"
+            />
+          </div>
+
+          <!-- Mirror Select -->
+          <div class="flex items-center gap-2">
+            <label class="text-sm text-slate-400 whitespace-nowrap">镜像:</label>
+            <select id="mirror" aria-label="选择镜像">
+              <option value="ghucs">GHUCS</option>
+              <option value="jsdelivr">jsDelivr</option>
+              <option value="cosr">cosr</option>
+              <option value="gitmirror">gitmirror</option>
+            </select>
+          </div>
+
+          <!-- Theme Select -->
+          <div class="flex items-center gap-2">
+            <label class="text-sm text-slate-400 whitespace-nowrap">主题:</label>
+            <select id="theme" aria-label="选择主题">
+              <option value="light">浅色</option>
+              <option value="dark" selected>深色</option>
+              <option value="system">跟随系统</option>
+            </select>
+          </div>
+
+          <!-- Actions -->
+          <div class="flex items-center gap-2 ml-auto">
+            <a
+              href="https://github.com/Silentely/AdBlock-Acceleration"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-secondary"
+              aria-label="在新窗口打开 GitHub 仓库"
+            >
+              <svg class="w-5 h-5 inline-block mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              GitHub
+            </a>
+            <button class="btn-primary" id="copyAll" aria-label="复制当前可见规则链接">
+              <svg class="w-5 h-5 inline-block mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+              </svg>
+              复制链接
+            </button>
+          </div>
+        </div>
+
+        <!-- Updated Badge -->
+        <div class="flex items-center gap-2">
+          <span class="badge" id="updated">loading…</span>
+        </div>
+      </div>
     </div>
   </header>
-  <main>
-      <table id="rules">
-        <colgroup>
-          <col style="width:20%">
-          <col style="width:20%">
-          <col style="width:20%">
-          <col style="width:20%">
-          <col style="width:20%">
-        </colgroup>
-      <thead>
-        <tr>
-          <th>规则名称</th>
-          <th class="right">大小/更新时间</th>
-          <th>原始地址</th>
-          <th>加速地址（随上方镜像切换）</th>
-          <th>操作</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-    <p class="note">说明：上方"镜像"决定"复制"按钮输出的链接前缀。大小/时间来自仓库根目录的 manifest.json。</p>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 relative z-10">
+    <div class="glass-card rounded-xl overflow-hidden animate-slide-up" style="animation-delay: 0.1s;">
+      <div class="table-container">
+        <table id="rules" role="table">
+          <colgroup>
+            <col style="width:20%">
+            <col style="width:20%">
+            <col style="width:20%">
+            <col style="width:20%">
+            <col style="width:20%">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>规则名称</th>
+              <th class="text-right">大小/更新时间</th>
+              <th>原始地址</th>
+              <th>加速地址（随上方镜像切换）</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Note -->
+    <p class="mt-6 text-sm text-slate-400 animate-slide-up" style="animation-delay: 0.2s;">
+      <strong class="text-slate-300">说明：</strong>上方"镜像"决定"复制"按钮输出的链接前缀。大小/时间来自仓库根目录的 manifest.json。
+    </p>
   </main>
-  <div id="toast" class="toast">已复制到剪贴板</div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" role="alert" aria-live="polite">
+    <div class="flex items-center gap-2">
+      <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+      </svg>
+      已复制到剪贴板
+    </div>
+  </div>
+
+  <!-- Script -->
   <script src="./assets/script.js"></script>
 </body>
 </html>
