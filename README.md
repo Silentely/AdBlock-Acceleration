@@ -193,7 +193,7 @@ sha256sum -c checksums.txt
 ## 💰 赞助商
 
 [![Powered by Netjett](https://i.miji.bid/2025/07/05/76050236db0a06996ee0fc077b87880b.jpeg)](https://netjett.com "Powered by Netjett - Free VPS for Open Source")
-[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
+[![Powered by DartNode](https://i.mji.rip/2026/01/04/3bf2296ec703a8d811bce184a5ea4245.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
 
 
 ## License
