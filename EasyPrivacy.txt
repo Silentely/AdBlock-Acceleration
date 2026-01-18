@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202601180549
+! Version: 202601181159
 ! Title: EasyPrivacy
-! Last modified: 18 Jan 2026 05:49 UTC
+! Last modified: 18 Jan 2026 11:59 UTC
 ! Expires: 4 days (update frequency)
-! Commit: a4da2063d7b88fe941e4e88790d1e8b293042961
+! Commit: 114f92eefcc75144c96affe4f4d9af2b287a79ae
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -10068,6 +10068,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||app.qualified.com/*/sentry/
 ||app.qualified.com/*/visitor_events
 ||app.revenuehero.io/logs/ingest
+||app.termly.io/api/*/statistics
 ||app.trytada.com/addImpression
 ||app.varify.io/varify.js
 ||app.yesware.com/t/$third-party
@@ -15284,6 +15285,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||mov.t-mobile.com/p/js/1.js
 ||movetv.com/sa-events
 ||mp.imgur.com^
+||mp.sintra.ai^
 ||mp.theepochtimes.com^
 ||mparticle.weather.com/identity/
 ||mps.nbcuni.com/request/page/json/params/*&adunits=$xmlhttprequest
@@ -16254,7 +16256,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ! akamaihd.net
 ||akamaihd.net^$image,domain=globalnews.ca|nycgo.com|stcatharinesstandard.ca
 ! Non-legit domains
-||edge-client^$script,domain=barrons.com
+://edge-client/$domain=barrons.com
 ! Plausible selfhosted
 ||jeremiahlee.com/fanboynz.js
 ! confection.io
@@ -55372,6 +55374,7 @@ bitdefender.com##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 @@||cmn.gyro-n.com/js/gyr.min.js$domain=benesse-style-care.co.jp
 @@||cpt.geniee.jp/hb/*/wrapper.min.js$domain=hoyme.jp
 @@||cybozu.com/*/event.gif?$~third-party
+@@||dan-ball.jp/en/javagame/mine/data/d.gif$image,~third-party
 @@||datadoghq-browser-agent.com/*/datadog-logs.js$domain=crosset.onward.co.jp
 @@||delivery.satr.jp^$script,domain=mieru-ca.com
 @@||deteql.net/recommend/provision?$xmlhttprequest,domain=t-fashion.jp
