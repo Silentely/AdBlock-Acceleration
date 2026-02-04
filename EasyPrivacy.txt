@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202602040006
+! Version: 202602040602
 ! Title: EasyPrivacy
-! Last modified: 04 Feb 2026 00:06 UTC
+! Last modified: 04 Feb 2026 06:02 UTC
 ! Expires: 4 days (update frequency)
-! Commit: ce1d04344c74f16dff23d71671489b0d28dfd084
+! Commit: 8fdff4702b46fe2d7aa80b0b75880b3b63bcc25d
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -2730,8 +2730,10 @@
 /web-analytics.js
 /web-api/log/*
 /web-data-ingress?
+/web-pixel-*/worker.modern.js
 /web-pixel-shopify-app-pixel@
 /web-pixel-shopify-custom-pixel@
+/web-pixels@*/web-pixel-*/sandbox/modern/*
 /web-vitals-analytics.js
 /web-vitals.iife.js
 /web/push?
@@ -10119,6 +10121,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||api.june.so^
 ||api.mambasms.com/monitorEvent/
 ||api.picox.bendingspoons.com/v1/events
+||api.reo.dev^$third-party
 ||api.sardine.ai/assets/loader.min.js$third-party
 ||api.sovendus.com/js/landing.js
 ||api.visitorapi.com^$third-party
@@ -12645,6 +12648,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||vissle.me/track/
 ||visual.ly/track.php?
 ||visualstudio.com/_da.gif?
+||visualwebsiteoptimizer.com/analysis/
 ||visualwebsiteoptimizer.com/cdn/analysis/
 ||visualwebsiteoptimizer.com/dyn
 ||visualwebsiteoptimizer.com/ee.gif?
