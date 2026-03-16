@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: PUjmU4fZty8qG4Efhmvv0w
-! Version: 202603160525
+! Checksum: IjDb1e/aAwbPFdl5YM4fIg
+! Version: 202603161300
 ! Title: Fanboy's Annoyance List
-! Last modified: 2026-03-16 05:25 UTC
+! Last modified: 2026-03-16 13:00 UTC
 ! Expires: 9 days (update frequency)
 ! Homepage: https://easylist.to/
 ! License: http://creativecommons.org/licenses/by/3.0/
@@ -54099,6 +54099,11 @@ genius.com##.android_interstitial:remove()
 ! shufoo.net (mobile app)
 shufoo.net##+js(rc, is-hidden, body)
 shufoo.net##.appdl_modal_overlay
+! sp.nicovideo.jp (mobile app)
+sp.nicovideo.jp###jsAppModalWithLogin
+sp.nicovideo.jp##.is-fixed body:not(.player-horizontal):has(#jsAppModalWithLogin):style(position: static !important; width: unset !important;)
+sp.nicovideo.jp##.is-fixed:has(#jsAppModalWithLogin):style(position: static !important; width: unset !important;)
+sp.nicovideo.jp##body.hdNoFixed.watch:has(#jsAppModalWithLogin):style(padding-top: unset !important; overflow: auto !important; min-height: unset !important;)
 !---------------------------------Allowlists----------------------------------!
 ! fanboy_notifications_allowlist.txt
 @@||bostonherald.com^*/webpush.js$script,~third-party
