@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202604210015
+! Version: 202604210629
 ! Title: EasyPrivacy
-! Last modified: 21 Apr 2026 00:15 UTC
+! Last modified: 21 Apr 2026 06:29 UTC
 ! Expires: 4 days (update frequency)
-! Commit: cb3ca1038b56b62cae068ca233d402601971a36e
+! Commit: 36096590625f7afd7f10595b60932b13e1b4079f
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -7603,6 +7603,7 @@ omni.soundestlink.com$image
 ||internalcondition.com^
 ||internalsink.com^
 ||intricateberry.com^
+||inventorycache.com^$~xmlhttprequest
 ||inventtango.com^
 ||invoicetick.com^
 ||iotapool.com^
@@ -8847,10 +8848,6 @@ omni.soundestlink.com$image
 ||zipthelake.com^
 ||zlp6s.pw^
 ||zonewedgeshaft.com^
-! noopjson
-||acustomizedgift.com^$redirect=noopjson,xmlhttprequest
-||kindhush.com^$redirect=noopjson,xmlhttprequest
-||oceancloudhosts.com^$redirect=noopjson,xmlhttprequest
 ! *** easylist:easyprivacy/easyprivacy_trackingservers_notifications.txt ***
 ! easyprivacy_trackingservers_notifications.txt
 ||actirinius.com^$third-party
@@ -17101,6 +17098,11 @@ abc17news.com,al.com,artforum.com,artnews.com,awkward.com,awkwardmom.com,bailiwi
 baeldung.com,cheatsheet.com,mensjournal.com,pwinsider.com##+js(rmnt, script, admiral)
 gbatemp.net##+js(set, admiral, noopFunc)
 usatoday.com##+js(set, gnt.x.adm, '')
+! noopjson
+||acustomizedgift.com^$redirect=noopjson,xmlhttprequest
+||inventorycache.com^$redirect=noopjson,xmlhttprequest
+||kindhush.com^$redirect=noopjson,xmlhttprequest
+||oceancloudhosts.com^$redirect=noopjson,xmlhttprequest
 ! anikore.jp
 anikore.jp##html[class^="loading"]:style(visibility: visible !important;)
 ! https://github.com/uBlockOrigin/uAssets/issues/31343
