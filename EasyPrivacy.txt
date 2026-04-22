@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202604220631
+! Version: 202604221215
 ! Title: EasyPrivacy
-! Last modified: 22 Apr 2026 06:31 UTC
+! Last modified: 22 Apr 2026 12:15 UTC
 ! Expires: 4 days (update frequency)
-! Commit: d592db9d9dc2655fa16793d49b658747caf8fa95
+! Commit: ef46fe9d199e1c3476609d6a4ca2a33f6d4f466e
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -17070,7 +17070,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=thepiratebay.org|vi
 ! #endif
 ! *** easylist:easyprivacy/easyprivacy_specific_uBO.txt ***
 ! easyprivacy_specific_uBO.txt
-! #if ext_ublock
+! #if (ext_ublock || adguard)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/180750
 ||pcoptimizedsettings.com/wp-content/plugins/koko-analytics/$important,redirect=noop.js,script
 ||pcoptimizedsettings.com/wp-content/uploads/breeze/google/gtag.js$important,redirect=noop.js,script
