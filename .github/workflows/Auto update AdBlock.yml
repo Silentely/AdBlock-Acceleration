@@ -193,6 +193,48 @@ jobs:
             "$BASE_COSR/fanboy-annoyance.txt" \
             "$BASE_GITMIRROR/fanboy-annoyance.txt"
 
+          download_any "AdGuard_Chinese_Filter.txt" \
+            "https://filters.adtidy.org/extension/ublock/filters/224.txt" \
+            "$BASE_GHUCS/AdGuard_Chinese_Filter.txt" \
+            "$BASE_JSDELIVR/AdGuard_Chinese_Filter.txt" \
+            "$BASE_COSR/AdGuard_Chinese_Filter.txt" \
+            "$BASE_GITMIRROR/AdGuard_Chinese_Filter.txt"
+
+          download_any "uBlock_filters.txt" \
+            "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt" \
+            "$BASE_GHUCS/uBlock_filters.txt" \
+            "$BASE_JSDELIVR/uBlock_filters.txt" \
+            "$BASE_COSR/uBlock_filters.txt" \
+            "$BASE_GITMIRROR/uBlock_filters.txt"
+
+          download_any "AWAvenue_Ads_Rule.txt" \
+            "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt" \
+            "$BASE_GHUCS/AWAvenue_Ads_Rule.txt" \
+            "$BASE_JSDELIVR/AWAvenue_Ads_Rule.txt" \
+            "$BASE_COSR/AWAvenue_Ads_Rule.txt" \
+            "$BASE_GITMIRROR/AWAvenue_Ads_Rule.txt"
+
+          download_any "AdGuard_Base_Filter.txt" \
+            "https://filters.adtidy.org/extension/ublock/filters/2.txt" \
+            "$BASE_GHUCS/AdGuard_Base_Filter.txt" \
+            "$BASE_JSDELIVR/AdGuard_Base_Filter.txt" \
+            "$BASE_COSR/AdGuard_Base_Filter.txt" \
+            "$BASE_GITMIRROR/AdGuard_Base_Filter.txt"
+
+          download_any "AdGuard_Mobile_Ads_Filter.txt" \
+            "https://filters.adtidy.org/extension/ublock/filters/11.txt" \
+            "$BASE_GHUCS/AdGuard_Mobile_Ads_Filter.txt" \
+            "$BASE_JSDELIVR/AdGuard_Mobile_Ads_Filter.txt" \
+            "$BASE_COSR/AdGuard_Mobile_Ads_Filter.txt" \
+            "$BASE_GITMIRROR/AdGuard_Mobile_Ads_Filter.txt"
+
+          download_any "NoAppDownload.txt" \
+            "https://raw.githubusercontent.com/banbendalao/ADgk/master/NoAppDownload.txt" \
+            "$BASE_GHUCS/NoAppDownload.txt" \
+            "$BASE_JSDELIVR/NoAppDownload.txt" \
+            "$BASE_COSR/NoAppDownload.txt" \
+            "$BASE_GITMIRROR/NoAppDownload.txt"
+
       - id: validate_files
         name: Validate downloaded files
         shell: bash
@@ -216,6 +258,12 @@ jobs:
             "Hblock_hosts" \
             "antiadblockfilters.txt" \
             "fanboy-annoyance.txt" \
+            "AdGuard_Chinese_Filter.txt" \
+            "uBlock_filters.txt" \
+            "AWAvenue_Ads_Rule.txt" \
+            "AdGuard_Base_Filter.txt" \
+            "AdGuard_Mobile_Ads_Filter.txt" \
+            "NoAppDownload.txt" \
           )
           for f in "${files[@]}"; do
             if [ ! -s "$f" ]; then
@@ -259,6 +307,12 @@ jobs:
             "Hblock_hosts" \
             "antiadblockfilters.txt" \
             "fanboy-annoyance.txt" \
+            "AdGuard_Chinese_Filter.txt" \
+            "uBlock_filters.txt" \
+            "AWAvenue_Ads_Rule.txt" \
+            "AdGuard_Base_Filter.txt" \
+            "AdGuard_Mobile_Ads_Filter.txt" \
+            "NoAppDownload.txt" \
           )
 
           missing=()
@@ -335,6 +389,12 @@ jobs:
             "Hblock_hosts" \
             "antiadblockfilters.txt" \
             "fanboy-annoyance.txt" \
+            "AdGuard_Chinese_Filter.txt" \
+            "uBlock_filters.txt" \
+            "AWAvenue_Ads_Rule.txt" \
+            "AdGuard_Base_Filter.txt" \
+            "AdGuard_Mobile_Ads_Filter.txt" \
+            "NoAppDownload.txt" \
           )
 
           missing=()
@@ -372,7 +432,7 @@ jobs:
         run: |
           set -euo pipefail
           shopt -s nullglob
-          files=( AdGuard_Simplified_Domain_Names_Filter.txt Anti_AD_Easylist.txt EasyList_China.txt EasyPrivacy.txt HalfLife.txt "CJX's_Annoyance_List.txt" Xinggsf_rule.txt Xinggsf_mv.txt Fanboy-social.txt ADgk.txt ds_hosts.txt 1024_hosts.txt iPv4_hosts.txt Steven_hosts Hblock_hosts antiadblockfilters.txt fanboy-annoyance.txt )
+          files=( AdGuard_Simplified_Domain_Names_Filter.txt Anti_AD_Easylist.txt EasyList_China.txt EasyPrivacy.txt HalfLife.txt "CJX's_Annoyance_List.txt" Xinggsf_rule.txt Xinggsf_mv.txt Fanboy-social.txt ADgk.txt ds_hosts.txt 1024_hosts.txt iPv4_hosts.txt Steven_hosts Hblock_hosts antiadblockfilters.txt fanboy-annoyance.txt AdGuard_Chinese_Filter.txt uBlock_filters.txt AWAvenue_Ads_Rule.txt AdGuard_Base_Filter.txt AdGuard_Mobile_Ads_Filter.txt NoAppDownload.txt )
           : > checksums.txt
           for f in "${files[@]}"; do
             if [ -f "$f" ]; then

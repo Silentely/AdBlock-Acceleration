@@ -49,7 +49,13 @@ const rules = [
   { name: 'Hblock', file: 'Hblock_hosts', original: 'https://hblock.molinero.dev/hosts' },
   { name: 'Malware Domain List', file: 'Malware_host.txt', original: 'https://www.malwaredomainlist.com/hostslist/hosts.txt' },
   { name: 'Adblock Warning Removal List', file: 'antiadblockfilters.txt', original: 'https://easylist-downloads.adblockplus.org/antiadblockfilters.txt' },
-  { name: 'Fanboy\'s Annoyances', file: 'fanboy-annoyance.txt', original: 'https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt' }
+  { name: 'Fanboy\'s Annoyances', file: 'fanboy-annoyance.txt', original: 'https://easylist-downloads.adblockplus.org/fanboy-annoyance.txt' },
+  { name: 'AdGuard Chinese Filter', file: 'AdGuard_Chinese_Filter.txt', original: 'https://filters.adtidy.org/extension/ublock/filters/224.txt' },
+  { name: 'uBlock filters', file: 'uBlock_filters.txt', original: 'https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt' },
+  { name: 'AWAvenue Ads Rule (秋风广告规则)', file: 'AWAvenue_Ads_Rule.txt', original: 'https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt' },
+  { name: 'AdGuard Base Filter', file: 'AdGuard_Base_Filter.txt', original: 'https://filters.adtidy.org/extension/ublock/filters/2.txt' },
+  { name: 'AdGuard Mobile Ads Filter', file: 'AdGuard_Mobile_Ads_Filter.txt', original: 'https://filters.adtidy.org/extension/ublock/filters/11.txt' },
+  { name: 'NoAppDownload (禁止下载APP弹窗)', file: 'NoAppDownload.txt', original: 'https://raw.githubusercontent.com/banbendalao/ADgk/master/NoAppDownload.txt' }
 ];
 
 // DOM element references
