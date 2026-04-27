@@ -55,7 +55,7 @@ const rules = [
   { name: 'AWAvenue Ads Rule (秋风广告规则)', file: 'AWAvenue_Ads_Rule.txt', original: 'https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt' },
   { name: 'AdGuard Base Filter', file: 'AdGuard_Base_Filter.txt', original: 'https://filters.adtidy.org/extension/ublock/filters/2.txt' },
   { name: 'AdGuard Mobile Ads Filter', file: 'AdGuard_Mobile_Ads_Filter.txt', original: 'https://filters.adtidy.org/extension/ublock/filters/11.txt' },
-  { name: 'NoAppDownload (禁止下载APP弹窗)', file: 'NoAppDownload.txt', original: 'https://raw.githubusercontent.com/banbendalao/ADgk/master/NoAppDownload.txt' }
+  { name: '百度搜索结果屏蔽百家号(Baidu Ad Block)', file: 'kill-baidu-ad.txt', original: 'https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt' }
 ];
 
 // DOM element references

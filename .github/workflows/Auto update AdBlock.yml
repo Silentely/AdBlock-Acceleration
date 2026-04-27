@@ -228,12 +228,12 @@ jobs:
             "$BASE_COSR/AdGuard_Mobile_Ads_Filter.txt" \
             "$BASE_GITMIRROR/AdGuard_Mobile_Ads_Filter.txt"
 
-          download_any "NoAppDownload.txt" \
-            "https://raw.githubusercontent.com/banbendalao/ADgk/master/NoAppDownload.txt" \
-            "$BASE_GHUCS/NoAppDownload.txt" \
-            "$BASE_JSDELIVR/NoAppDownload.txt" \
-            "$BASE_COSR/NoAppDownload.txt" \
-            "$BASE_GITMIRROR/NoAppDownload.txt"
+          download_any "kill-baidu-ad.txt" \
+            "https://raw.githubusercontent.com/banbendalao/ADgk/master/kill-baidu-ad.txt" \
+            "$BASE_GHUCS/kill-baidu-ad.txt" \
+            "$BASE_JSDELIVR/kill-baidu-ad.txt" \
+            "$BASE_COSR/kill-baidu-ad.txt" \
+            "$BASE_GITMIRROR/kill-baidu-ad.txt"
 
       - id: validate_files
         name: Validate downloaded files
@@ -263,7 +263,7 @@ jobs:
             "AWAvenue_Ads_Rule.txt" \
             "AdGuard_Base_Filter.txt" \
             "AdGuard_Mobile_Ads_Filter.txt" \
-            "NoAppDownload.txt" \
+            "kill-baidu-ad.txt" \
           )
           for f in "${files[@]}"; do
             if [ ! -s "$f" ]; then
@@ -312,7 +312,7 @@ jobs:
             "AWAvenue_Ads_Rule.txt" \
             "AdGuard_Base_Filter.txt" \
             "AdGuard_Mobile_Ads_Filter.txt" \
-            "NoAppDownload.txt" \
+            "kill-baidu-ad.txt" \
           )
 
           missing=()
@@ -394,7 +394,7 @@ jobs:
             "AWAvenue_Ads_Rule.txt" \
             "AdGuard_Base_Filter.txt" \
             "AdGuard_Mobile_Ads_Filter.txt" \
-            "NoAppDownload.txt" \
+            "kill-baidu-ad.txt" \
           )
 
           missing=()
@@ -432,7 +432,7 @@ jobs:
         run: |
           set -euo pipefail
           shopt -s nullglob
-          files=( AdGuard_Simplified_Domain_Names_Filter.txt Anti_AD_Easylist.txt EasyList_China.txt EasyPrivacy.txt HalfLife.txt "CJX's_Annoyance_List.txt" Xinggsf_rule.txt Xinggsf_mv.txt Fanboy-social.txt ADgk.txt ds_hosts.txt 1024_hosts.txt iPv4_hosts.txt Steven_hosts Hblock_hosts antiadblockfilters.txt fanboy-annoyance.txt AdGuard_Chinese_Filter.txt uBlock_filters.txt AWAvenue_Ads_Rule.txt AdGuard_Base_Filter.txt AdGuard_Mobile_Ads_Filter.txt NoAppDownload.txt )
+          files=( AdGuard_Simplified_Domain_Names_Filter.txt Anti_AD_Easylist.txt EasyList_China.txt EasyPrivacy.txt HalfLife.txt "CJX's_Annoyance_List.txt" Xinggsf_rule.txt Xinggsf_mv.txt Fanboy-social.txt ADgk.txt ds_hosts.txt 1024_hosts.txt iPv4_hosts.txt Steven_hosts Hblock_hosts antiadblockfilters.txt fanboy-annoyance.txt AdGuard_Chinese_Filter.txt uBlock_filters.txt AWAvenue_Ads_Rule.txt AdGuard_Base_Filter.txt AdGuard_Mobile_Ads_Filter.txt kill-baidu-ad.txt )
           : > checksums.txt
           for f in "${files[@]}"; do
             if [ -f "$f" ]; then
