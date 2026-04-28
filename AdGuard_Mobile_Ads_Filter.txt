@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: haCZBPLn89z8OJnHy74mqw
-! Diff-Path: ../patches/11/11-s-1777346186-3600.patch
+! Checksum: 3qdl2JU79hgBnunLBKxgIA
+! Diff-Path: ../patches/11/11-s-1777370197-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.69.40
-! TimeUpdated: 2026-04-28T03:13:05+00:00
+! Version: 2.0.69.42
+! TimeUpdated: 2026-04-28T09:53:14+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2440,6 +2440,11 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+pcgamesn.com##.entry-content > div[data-format="isvideo"]
+pcgamesn.com##div[class]:has(> div[id][class]:matches-css(before, content: /^Advertisement$/))
+telepolis.de##div[class^="ad-mobile-"]
+fapnado.xxx##.top
+fapnado.xxx##a[href^="https://www.tckcandy.com/"]
 thelayoff.com##.epp-blinds:style(display: none !important;)
 thelayoff.com##body.anchoradtop:style(margin-top: 0 !important;)
 thelayoff.com##body.anchoradtop > #navbar:style(top: 0 !important;)

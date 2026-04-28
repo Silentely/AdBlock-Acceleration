@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: 3VXW4y+0UrdwJjfN2OqjSg
-! Diff-Path: ../patches/224/224-s-1777353420-3600.patch
+! Checksum: MWWSfFcUe9kbdMSFQx20oA
+! Diff-Path: ../patches/224/224-s-1777373308-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.58.25
-! TimeUpdated: 2026-04-28T05:14:06+00:00
+! Version: 2.1.58.29
+! TimeUpdated: 2026-04-28T10:45:48+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1114,6 +1114,8 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+||udn.com/static/js/google-dfp-native.js
+time.udn.com##.fixed-ad
 niuyank.top##a.centtext
 roomie.tw##div[id^="outer_Post"]
 news.10jqka.com.cn##.advert-common-react
@@ -5284,6 +5286,7 @@ newduba.cn###jq_youxi
 ##.ripro_gg_wrap
 ###gridAdvoOerlay
 ###gridAdvContent
+##div[role="listitem"] .bannerliststyle
 ##.socialmedia > #middletextbanner
 ##a[href^="java"][onclick^="gogogoto"]
 ##a[href*="/122.51.121.126:"]
@@ -5318,6 +5321,9 @@ newduba.cn###jq_youxi
 ||cftiqxg3mp.com^
 ||j1bla75rck.com^
 ||phow238wzh.com^
+||zwlpdo.cn^
+||vyczp.cn^
+||yk9t90dlfx.com^
 ||2g8lomzrb.com^
 ||49dlt9myv.com^
 ||8yo772d29.com^
@@ -5367,7 +5373,6 @@ newduba.cn###jq_youxi
 ||5bkhq0lwmq.com^
 ||nbdpbxkf.top^
 ||u1aczgx9so.com^
-||zinoe.cn^
 ||a51wzxssu.com^
 ||wydk6zdk2.com^
 ||jc7t7it24.com^
@@ -14797,6 +14802,7 @@ meijutt.*/js/pcjs/
 ||riskbird.com/riskbird-api/guest/unionGoods
 ||kuazhi.com/kuazhi_click.
 huaren.live##.pause-love
+udn.com##.fixed-ad
 nfuwow.com##.ad1320top
 doubao.com###activity-entrance-popup-root
 2345.com##.part-banner
