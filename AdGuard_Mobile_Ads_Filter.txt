@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: ZpVef1T1gp3V+6qEkTE25w
-! Diff-Path: ../patches/11/11-s-1777293814-3600.patch
+! Checksum: haCZBPLn89z8OJnHy74mqw
+! Diff-Path: ../patches/11/11-s-1777346186-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.69.39
-! TimeUpdated: 2026-04-27T12:40:32+00:00
+! Version: 2.0.69.40
+! TimeUpdated: 2026-04-28T03:13:05+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2440,6 +2440,9 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+thelayoff.com##.epp-blinds:style(display: none !important;)
+thelayoff.com##body.anchoradtop:style(margin-top: 0 !important;)
+thelayoff.com##body.anchoradtop > #navbar:style(top: 0 !important;)
 toyokeizai.net##.article-related__list > article.article-related__item:has(> div.ad-container)
 techorange.com##.elementor-hidden-desktop:has(> div.e-con-inner:only-child:not(:has(*)))
 immowelt.de##div[data-testid="serp-core-scrollablelistview-testid"] > div[class^="css-"]:has(> div[class] > div[class] > div[id^="div-gam-ad-"])
