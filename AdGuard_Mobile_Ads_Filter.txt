@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: iMc7k4+6pDTQxgWY1La0Fg
-! Diff-Path: ../patches/11/11-s-1777459479-3600.patch
+! Checksum: vyOYDwd2zPnwJfIj98mrUQ
+! Diff-Path: ../patches/11/11-s-1777526204-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.69.45
-! TimeUpdated: 2026-04-29T10:41:37+00:00
+! Version: 2.0.69.46
+! TimeUpdated: 2026-04-30T05:13:09+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -23,6 +23,8 @@
 !
 ! ||mobileapptracking.com^ - don't block this domain with all subdomains. https://forum.adguard.com/index.php?threads/23917/
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/229939
+||yodo1.com^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/222820
 ||banner.bet365partners.com^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/221816
@@ -2441,6 +2443,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+m.soundcloud.com##div[class^="BannerAd"]
 redgifs.com##+js(json-prune, boosted_gifs)
 redgifs.com##+js(json-prune, camera)
 redgifs.com##div[data-feed-module-type="live-cam"]:style(display: none !important;)
