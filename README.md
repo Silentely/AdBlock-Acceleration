@@ -57,12 +57,6 @@
 
 💥 这个项目就是为了解决这一难题，无需通过任何代理即可光速更新规则。
 
-## 🧩 项目介绍
-
-这类工具都存在一个痛点，因为规则基本都托管在境外服务器，导致更新极其缓慢，甚至无法成功更新。
-
-一个非常常见的场景：你为家中长辈、老人配置了去广告工具来避免他们在浏览网页时被钓鱼、欺诈或感染病毒。但是事实往往是，精心选择了很多规则，但实际上大部分规则都处于更新失败的状态，然后弹出提示框，长辈乱点，之后不一定怎样了……可能说电脑坏了，更新失败了……
-
 ## 🕹 项目原理
 
 项目使用了 GitHub Actions 在每天 UTC 时间每隔6小时更新下载一次最新规则，然后推送到 GitHub Repo。  
@@ -73,7 +67,7 @@
 ③[Render](https://render.com) （无缓存）    
 ④[7ed](https://www.7ed.net) （无缓存）     
 
-从而实现秒秒钟更新所有去广告规则。
+从而在数秒内完成所有规则更新。
 
 ## 🧪 个人测试
 
@@ -111,9 +105,7 @@
 - 强制最新：使用 ③ Render、④ 7ed（无缓存，一般更“新”）。
 - 若某镜像在你所在网络环境不可用，换另一个镜像即可；国内网络建议同时保留一个无缓存镜像作备用。
 
-## 📃 规则列表
-
-## Web 规则索引页（复制/搜索/镜像选择）
+## 🌐 Web 规则索引页（复制/搜索/镜像选择）
 
 - 在线镜像：[https://raw.cosr.eu.org](https://raw.cosr.eu.org)
 - 功能：
@@ -131,8 +123,8 @@
 | Anti-AD | [原始](https://anti-ad.net/easylist.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Anti_AD_Easylist.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Anti_AD_Easylist.txt) | [加速③](https://raw.cosr.eu.org/Anti_AD_Easylist.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Anti_AD_Easylist.txt) |
 | EasyList China | [原始](https://easylist-downloads.adblockplus.org/easylistchina.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/EasyList_China.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/EasyList_China.txt) | [加速③](https://raw.cosr.eu.org/EasyList_China.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/EasyList_China.txt) |
 | EasyPrivacy | [原始](https://easylist-downloads.adblockplus.org/easyprivacy.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/EasyPrivacy.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/EasyPrivacy.txt) | [加速③](https://raw.cosr.eu.org/EasyPrivacy.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/EasyPrivacy.txt) |
-| 屏蔽网站的Cookies警告 | [原始](https://www.i-dont-care-about-cookies.eu/abp) | 已在 CI 暂停同步，可能存在再分发许可限制（仅保留原始地址，使用者请按其许可自取）。 |
-| HalfLife | [原始](https://raw.githubusercontent.com/o0HalfLife0o/list/main/ad.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/HalfLife.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/HalfLife.txt ) | [加速③](https://raw.cosr.eu.org/HalfLife.txt ) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/HalfLife.txt ) |
+| 屏蔽网站的Cookies警告 | [原始](https://www.i-dont-care-about-cookies.eu/abp) | 已在 CI 暂停同步，可能存在再分发许可限制。仅保留原始地址，使用者请按其许可自取。 |  |  |
+| HalfLife | [原始](https://raw.githubusercontent.com/o0HalfLife0o/list/main/ad.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/HalfLife.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/HalfLife.txt) | [加速③](https://raw.cosr.eu.org/HalfLife.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/HalfLife.txt) |
 | CJX's Annoyance List | [原始](https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/CJX's_Annoyance_List.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/CJX's_Annoyance_List.txt) | [加速③](https://raw.cosr.eu.org/CJX's_Annoyance_List.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/CJX's_Annoyance_List.txt) |
 | 乘风通用广告过滤规则 | [原始](https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt) | [加速③](https://raw.cosr.eu.org/Xinggsf_rule.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt) |
 | 乘风视频广告过滤规则 | [原始](https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt) | [加速③](https://raw.cosr.eu.org/Xinggsf_mv.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt) |
@@ -194,7 +186,7 @@ sha256sum -c checksums.txt
 
 ## 📈 历史 Star 数
 
-![](https://starchart.cc/Silentely/AdBlock-Acceleration.svg)
+![Star 历史图表](https://starchart.cc/Silentely/AdBlock-Acceleration.svg)
 
 ## 💰 赞助商
 
@@ -205,7 +197,7 @@ sha256sum -c checksums.txt
 ## License
 
 - 本项目的所有代码除另有说明外,均按照 [GPL-3.0 license](LICENSE) 发布。
-- 本项目的README.MD，wiki等资源基于 [CC BY-NC-SA 4.0][CC-NC-SA-4.0] 这意味着你可以拷贝、并再发行本项目的内容，  
+- 本项目的 README.md、wiki 等资源基于 [CC BY-NC-SA 4.0][CC-NC-SA-4.0] 这意味着你可以拷贝、并再发行本项目的内容，  
   但是你将必须同样**提供原作者信息以及协议声明**。同时你也**不能将本项目用于商业用途**，按照我们狭义的理解  
   (增加附属条款)，凡是**任何盈利的活动皆属于商业用途**。
 - 请在遵守当地相关法律法规的前提下使用本项目。

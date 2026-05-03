@@ -93,11 +93,10 @@ Successfully refactored the AdBlock-Acceleration project to improve code quality
 | Metric | Before | After | Change |
 |--------|--------|-------|--------|
 | **Lines in index.html** | 236 | 66 | **-72%** ✅ |
-| **Total project lines** | 236 | 1,110 | +371% (better organized) |
-| **Documented functions** | 0 | 20+ | **∞** ✅ |
-| **Error handlers** | 2 | 8 | **+300%** ✅ |
-| **Separate concerns** | No | Yes | **✅** |
-| **Test coverage** | 0% | Ready for testing | **→** |
+| **Documented functions** | 0 | 20+ | ✅ |
+| **Error handlers** | 2 | 8 | ✅ |
+| **Separate concerns** | No | Yes | ✅ |
+| **Test coverage** | 0% | 0% | 仍需补充 |
 
 ### File Structure
 
@@ -177,74 +176,11 @@ project/
 
 ## Technical Details
 
-### Architecture Improvements
-
-**Before**: Monolithic HTML file
-```html
-<html>
-  <style>/* 50 lines of CSS */</style>
-  <body><!-- HTML structure --></body>
-  <script>/* 130 lines of JS */</script>
-</html>
-```
-
-**After**: Modular architecture
-```html
-<!-- index.html -->
-<html>
-  <link rel="stylesheet" href="./assets/styles.css">
-  <body><!-- Clean HTML structure --></body>
-  <script src="./assets/script.js"></script>
-</html>
-```
-
-### JavaScript Improvements
-
-**Configuration Management**:
-```javascript
-const CONFIG = {
-  owner: 'Silentely',
-  repo: 'AdBlock-Acceleration',
-  manifestUrl: './manifest.json',
-  searchDebounceMs: 300,
-  toastDurationMs: 1400,
-  storageKeys: { theme: 'theme', mirror: 'mirror' },
-  defaults: { theme: 'light', mirror: 'cosr' }
-};
-```
-
-**Error Handling Example**:
-```javascript
-async function loadManifest() {
-  try {
-    const response = await fetch(CONFIG.manifestUrl, { cache: 'no-store' });
-    if (response.ok) {
-      manifest = await response.json();
-      elements.updated.textContent = '更新: ' + formatDate(new Date(manifest.updatedAt));
-    } else {
-      throw new Error('Manifest not available');
-    }
-  } catch (error) {
-    console.error('Failed to load manifest:', error);
-    elements.updated.textContent = 'manifest 不可用';
-  }
-}
-```
-
-**Debouncing Implementation**:
-```javascript
-let searchDebounceTimer = null;
-
-function filterDebounced() {
-  clearTimeout(searchDebounceTimer);
-  searchDebounceTimer = setTimeout(() => {
-    const query = elements.search.value.trim().toLowerCase();
-    elements.tbody.querySelectorAll('tr').forEach(tr => {
-      // Filter logic
-    });
-  }, CONFIG.searchDebounceMs);
-}
-```
+详见 [REFACTORING_NOTES.md](REFACTORING_NOTES.md) 中的完整技术分析，包括：
+- 架构改进（关注点分离）
+- JavaScript 改进（配置管理、错误处理、搜索防抖）
+- 性能优化方案
+- 战略性建议
 
 ---
 
@@ -365,6 +301,6 @@ The project is now well-positioned for future growth and enhancements outlined i
 
 ---
 
-**Date**: October 4, 2025  
+**Date**: October 4, 2025 (最后更新)  
 **Status**: ✅ Complete  
 **Next Phase**: Service worker implementation (recommended)

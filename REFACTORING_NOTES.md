@@ -1,60 +1,65 @@
-# Code Refactoring and Strategic Improvements
+# 代码重构与战略改进
 
-## Overview
-This document outlines the code quality improvements, performance optimizations, and strategic recommendations for the AdBlock-Acceleration project.
+## 概述
 
-## Code Quality Improvements Implemented
+本文档概述了 AdBlock-Acceleration 项目的代码质量改进、性能优化及战略建议。
 
-### 1. Separation of Concerns ✅
-**Before:** 236-line index.html with inline CSS (50 lines) and JavaScript (130 lines)
-**After:** Modular structure with separate files:
-- `index.html` (67 lines) - Clean semantic HTML
-- `assets/styles.css` (191 lines) - Organized CSS with clear sections
-- `assets/script.js` (318 lines) - Well-documented JavaScript with JSDoc
+## 已完成的代码质量改进
 
-**Benefits:**
-- Better maintainability and readability
-- Easier debugging and testing
-- Improved caching (CSS/JS can be cached separately)
-- Better code reusability
+### 1. 关注点分离 ✅
 
-### 2. Enhanced JavaScript Architecture ✅
-**Improvements:**
-- Centralized configuration in `CONFIG` object
-- Proper error handling with try-catch blocks
-- JSDoc documentation for all functions
-- Debounced search (300ms) to reduce DOM operations
-- Better state management
+**重构前：** 236 行的 index.html，内联 CSS（50 行）和 JavaScript（130 行）
+**重构后：** 模块化结构，文件分离：
+- `index.html`（67 行）— 简洁的语义化 HTML
+- `assets/styles.css`（191 行）— 分区组织的 CSS
+- `assets/script.js`（318 行）— 带 JSDoc 文档的 JavaScript
 
-**Key Functions:**
+**收益：**
+- 更好的可维护性和可读性
+- 更容易调试和测试
+- 改进的缓存策略（CSS/JS 可独立缓存）
+- 更好的代码复用性
+
+### 2. 增强的 JavaScript 架构 ✅
+
+**改进内容：**
+- 集中配置于 `CONFIG` 对象
+- 使用 try-catch 进行适当的错误处理
+- 所有函数均添加 JSDoc 文档
+- 搜索防抖（300ms）减少 DOM 操作
+- 更好的状态管理
+
+**关键函数示例：**
 ```javascript
-// Before: Inline callback with no error handling
+// 重构前：无错误处理的内联回调
 search.addEventListener('input', filter);
 
-// After: Debounced search with proper error handling
+// 重构后：带错误边界的防抖搜索
 function filterDebounced() {
   clearTimeout(searchDebounceTimer);
   searchDebounceTimer = setTimeout(() => {
-    // Filter logic with error boundary
+    // 过滤逻辑，含错误边界
   }, CONFIG.searchDebounceMs);
 }
 ```
 
-### 3. Performance Optimizations ✅
-1. **Search Debouncing** - Reduces DOM operations from every keystroke to once per 300ms
-2. **Improved DOM Queries** - Cached element references instead of repeated queries
-3. **Better Data Attributes** - Added `data-file` attribute for faster filtering
-4. **Optimized Rendering** - Single innerHTML update instead of multiple DOM manipulations
+### 3. 性能优化 ✅
 
-### 4. Better Error Handling ✅
+1. **搜索防抖** — 将每次按键的 DOM 操作减少为每 300ms 一次
+2. **优化的 DOM 查询** — 缓存元素引用，避免重复查询
+3. **改进的数据属性** — 添加 `data-file` 属性以加速过滤
+4. **优化的渲染** — 使用单次 innerHTML 更新替代多次 DOM 操作
+
+### 4. 更好的错误处理 ✅
+
 ```javascript
-// Manifest loading with proper error handling
+// 带错误处理的 Manifest 加载
 async function loadManifest() {
   try {
     const response = await fetch(CONFIG.manifestUrl, { cache: 'no-store' });
     if (response.ok) {
       manifest = await response.json();
-      // Update UI
+      // 更新 UI
     } else {
       throw new Error('Manifest not available');
     }
@@ -65,12 +70,12 @@ async function loadManifest() {
 }
 ```
 
-## Additional Performance Optimizations (Recommended)
+## 推荐的额外性能优化
 
-### 1. Service Worker for Offline Support
-Create `sw.js` to cache static assets:
+### 1. Service Worker 离线支持
+
+创建 `sw.js` 以缓存静态资源：
 ```javascript
-// Example service worker implementation
 const CACHE_NAME = 'adblock-accel-v1';
 const urlsToCache = [
   '/',
@@ -88,10 +93,10 @@ self.addEventListener('install', (event) => {
 });
 ```
 
-### 2. Virtual Scrolling for Large Lists
-For lists with 20+ items, implement virtual scrolling to render only visible rows:
+### 2. 大列表虚拟滚动
+
+对于超过 20 个项目的列表，实现虚拟滚动仅渲染可见行：
 ```javascript
-// Pseudo-code for virtual scrolling
 class VirtualScroller {
   constructor(container, items, rowHeight) {
     this.container = container;
@@ -103,56 +108,60 @@ class VirtualScroller {
   render(scrollTop) {
     const startIndex = Math.floor(scrollTop / this.rowHeight);
     const endIndex = startIndex + this.visibleRows;
-    // Render only items[startIndex:endIndex]
+    // 仅渲染 items[startIndex:endIndex]
   }
 }
 ```
 
-### 3. Lazy Loading Manifest Data
-Load manifest data progressively instead of all at once:
+### 3. Manifest 数据懒加载
+
+逐步加载 manifest 数据而非一次性加载：
 ```javascript
 async function loadManifestProgressive() {
   const response = await fetch(CONFIG.manifestUrl);
   const reader = response.body.getReader();
-  // Stream and parse manifest progressively
+  // 流式解析 manifest
 }
 ```
 
-## GitHub Actions Workflow Improvements
+## GitHub Actions 工作流改进
 
-### 1. Parallel Downloads
-The current workflow downloads files sequentially. Consider parallel downloads:
+### 1. 并行下载
 
-**Current:**
+当前工作流按顺序下载文件，建议改为并行下载：
+
+**当前：**
 ```bash
 download_any "File1.txt" "url1"
-download_any "File2.txt" "url2"  # Waits for File1
+download_any "File2.txt" "url2"  # 等待 File1 完成
 ```
 
-**Optimized:**
+**优化后：**
 ```bash
-# Download files in parallel using background processes
+# 使用后台进程并行下载
 for file in "${files[@]}"; do
   download_any "$file" "${urls[$file]}" &
 done
-wait  # Wait for all downloads to complete
+wait  # 等待所有下载完成
 ```
 
-**Expected improvement:** ~50-70% reduction in download time
+**预期改进：** 下载时间减少约 50-70%
 
-### 2. Incremental Updates
-Only download files that have changed:
+### 2. 增量更新
+
+仅下载已变更的文件：
 ```bash
-# Check ETag or Last-Modified headers before downloading
+# 下载前检查 ETag 或 Last-Modified 头
 if should_update "$file"; then
   download_any "$file" "$url"
 else
-  echo "Skipping $file (unchanged)"
+  echo "跳过 $file（未变更）"
 fi
 ```
 
-### 3. Caching Strategy
-Implement GitHub Actions caching for downloaded files:
+### 3. 缓存策略
+
+利用 GitHub Actions 缓存已下载的文件：
 ```yaml
 - name: Cache downloaded rules
   uses: actions/cache@v3
@@ -164,65 +173,65 @@ Implement GitHub Actions caching for downloaded files:
     restore-keys: rules-
 ```
 
-## High-Level Strategic Recommendations
+## 高层战略建议
 
-### 1. **API-First Architecture (Scalability)**
+### 1. API 优先架构（可扩展性）
 
-**Problem:** Current architecture loads all data client-side from a single JSON file. As the number of rules grows, this becomes inefficient.
+**问题：** 当前架构在客户端从单个 JSON 文件加载所有数据。随着规则数量增长，这将变得低效。
 
-**Solution:** Implement a serverless API layer
+**方案：** 实现 Serverless API 层
 
-**Architecture:**
+**架构：**
 ```
-Client (SPA)
+客户端 (SPA)
     ↓
-API Gateway (Cloudflare Workers / AWS Lambda)
+API 网关 (Cloudflare Workers / AWS Lambda)
     ↓
-Database (DynamoDB / Firestore)
+数据库 (DynamoDB / Firestore)
     ↓
-CDN Cache Layer
+CDN 缓存层
 ```
 
-**Benefits:**
-- Paginated data loading (load 10-20 rules at a time)
-- Server-side search and filtering (faster for large datasets)
-- Real-time updates without GitHub Actions
-- Analytics and usage tracking
-- Rate limiting and security
+**收益：**
+- 分页数据加载（每次加载 10-20 条规则）
+- 服务端搜索和过滤（大数据集更快）
+- 无需 GitHub Actions 即可实时更新
+- 使用分析与追踪
+- 速率限制与安全防护
 
-**Example API Endpoints:**
+**API 端点示例：**
 ```
 GET /api/rules?page=1&limit=20
 GET /api/rules/:id
 GET /api/rules/search?q=adguard
-GET /api/mirrors/health  # Check mirror availability
+GET /api/mirrors/health  # 检查镜像可用性
 ```
 
-**Implementation Roadmap:**
-1. Month 1: Design API schema, set up serverless functions
-2. Month 2: Migrate manifest.json to database
-3. Month 3: Implement client-side pagination
-4. Month 4: Add search API and analytics
+**实施路线图：**
+1. 第 1 个月：设计 API Schema，搭建 Serverless 函数
+2. 第 2 个月：将 manifest.json 迁移至数据库
+3. 第 3 个月：实现客户端分页
+4. 第 4 个月：添加搜索 API 和分析功能
 
-### 2. **Multi-CDN Intelligent Routing (Performance)**
+### 2. 多 CDN 智能路由（性能）
 
-**Problem:** Users manually select mirrors. Some mirrors may be slow or unavailable.
+**问题：** 用户手动选择镜像。某些镜像可能速度慢或不可用。
 
-**Solution:** Implement automatic CDN selection based on user location and real-time health checks
+**方案：** 基于用户位置和实时健康检查实现自动 CDN 选择
 
-**Architecture:**
+**架构：**
 ```javascript
 class MirrorManager {
   async selectBestMirror(userLocation, filename) {
-    // 1. Filter mirrors by geo-location
+    // 1. 按地理位置过滤镜像
     const nearbyMirrors = this.filterByLocation(userLocation);
     
-    // 2. Parallel health checks (measure latency)
+    // 2. 并行健康检查（测量延迟）
     const healthChecks = await Promise.allSettled(
       nearbyMirrors.map(m => this.pingMirror(m, filename))
     );
     
-    // 3. Select fastest available mirror
+    // 3. 选择最快的可用镜像
     return this.selectFastest(healthChecks);
   }
   
@@ -238,46 +247,40 @@ class MirrorManager {
 }
 ```
 
-**Features:**
-- Automatic failover if primary mirror is down
-- Load balancing across mirrors
-- Client-side caching of mirror health status
-- A/B testing for mirror performance
+**特性：**
+- 主镜像故障时自动切换
+- 跨镜像负载均衡
+- 客户端缓存镜像健康状态
+- 镜像性能 A/B 测试
 
-**Expected Impact:**
-- 30-50% faster download times for users
-- Better reliability (automatic failover)
-- Improved user experience (no manual selection needed)
+**预期影响：**
+- 用户下载速度提升 30-50%
+- 更好的可靠性（自动故障切换）
+- 改进的用户体验（无需手动选择）
 
-### 3. **Community Contribution Platform (Feature)**
+### 3. 社区贡献平台（功能）
 
-**Problem:** Project maintainer is solely responsible for managing rule sources. Scalability challenge as more rules are added.
+**问题：** 项目维护者独自负责管理规则来源。随着规则增多，可扩展性面临挑战。
 
-**Solution:** Build a community-driven platform for rule submission and validation
+**方案：** 构建社区驱动的规则提交和验证平台
 
-**Features:**
-1. **Rule Submission Portal**
-   ```
-   - Web form for submitting new rule sources
-   - Automatic validation (URL accessibility, format checking)
-   - Preview system before merging
-   ```
+**功能：**
+1. **规则提交门户**
+   - 提交新规则来源的 Web 表单
+   - 自动验证（URL 可访问性、格式检查）
+   - 合并前预览系统
 
-2. **Community Voting System**
-   ```
-   - Users can upvote/downvote rules
-   - Popular rules get priority
-   - Automatic removal of rarely-used rules
-   ```
+2. **社区投票系统**
+   - 用户可对规则投票
+   - 热门规则获得优先级
+   - 自动移除低使用率规则
 
-3. **Rule Health Dashboard**
-   ```
-   - Monitor rule source availability
-   - Track download success rates
-   - Alert on broken sources
-   ```
+3. **规则健康仪表盘**
+   - 监控规则来源可用性
+   - 追踪下载成功率
+   - 来源故障告警
 
-4. **API for Rule Metadata**
+4. **规则元数据 API**
    ```json
    {
      "name": "AdGuard DNS Filter",
@@ -290,10 +293,10 @@ class MirrorManager {
    }
    ```
 
-**Implementation:**
+**实施：**
 ```yaml
-# New GitHub Actions Workflow
-name: Community Rule Validation
+# 新的 GitHub Actions 工作流
+name: 社区规则验证
 on:
   pull_request:
     paths:
@@ -303,98 +306,98 @@ jobs:
   validate-new-rule:
     runs-on: ubuntu-latest
     steps:
-      - name: Validate rule source
+      - name: 验证规则来源
         run: |
-          # Check URL accessibility
-          # Validate file format
-          # Run automated tests
-          # Comment on PR with results
+          # 检查 URL 可访问性
+          # 验证文件格式
+          # 运行自动化测试
+          # 在 PR 上评论结果
 ```
 
-**Benefits:**
-- Reduced maintenance burden
-- Faster addition of new rules
-- Community engagement
-- Better quality control through peer review
+**收益：**
+- 降低维护负担
+- 更快地添加新规则
+- 社区参与
+- 通过同行评审实现更好的质量控制
 
-### 4. **Analytics and Monitoring (Insights)**
+### 4. 分析与监控（洞察）
 
-**Recommendation:** Add privacy-respecting analytics to understand usage patterns
+**建议：** 添加尊重隐私的分析以了解使用模式
 
-**Metrics to Track:**
-- Most popular rules (downloads/copies)
-- Mirror performance and availability
-- Search queries (to improve rule discovery)
-- User geographic distribution
+**需要追踪的指标：**
+- 最受欢迎的规则（下载/复制次数）
+- 镜像性能和可用性
+- 搜索查询（改进规则发现）
+- 用户地理分布
 
-**Implementation (Privacy-First):**
+**实现（隐私优先）：**
 ```javascript
-// Use privacy-focused analytics (e.g., Plausible, Fathom)
+// 使用隐私优先的分析工具（如 Plausible、Fathom）
 class Analytics {
   track(event, data) {
-    // No personal data, no cookies
+    // 无个人数据，无 Cookie
     fetch('https://analytics.example.com/event', {
       method: 'POST',
       body: JSON.stringify({
         event,
         data,
         timestamp: Date.now(),
-        // No user identification
+        // 无用户标识
       })
     });
   }
 }
 
-// Usage
+// 使用示例
 analytics.track('rule_copied', { ruleName: 'AdGuard DNS Filter' });
 analytics.track('mirror_switched', { from: 'jsdelivr', to: 'cosr' });
 ```
 
-## Priority Implementation Order
+## 优先级实施顺序
 
-### Phase 1 (Immediate - 1-2 weeks) ✅ COMPLETED
-- [x] Code refactoring (separation of concerns)
-- [x] Performance optimizations (debouncing, caching)
-- [x] Documentation improvements
+### 阶段 1（立即 — 1-2 周）✅ 已完成
+- [x] 代码重构（关注点分离）
+- [x] 性能优化（防抖、缓存）
+- [x] 文档改进
 
-### Phase 2 (Short-term - 1 month)
-- [ ] Service worker implementation
-- [ ] Parallel downloads in GitHub Actions
-- [ ] Mirror health monitoring
+### 阶段 2（短期 — 1 个月）
+- [ ] Service Worker 实现
+- [ ] GitHub Actions 并行下载
+- [ ] 镜像健康监控
 
-### Phase 3 (Medium-term - 2-3 months)
-- [ ] API-first architecture design
-- [ ] Intelligent mirror routing
-- [ ] Basic analytics implementation
+### 阶段 3（中期 — 2-3 个月）
+- [ ] API 优先架构设计
+- [ ] 智能镜像路由
+- [ ] 基础分析实现
 
-### Phase 4 (Long-term - 3-6 months)
-- [ ] Community contribution platform
-- [ ] Advanced analytics dashboard
-- [ ] Mobile app or browser extension
+### 阶段 4（长期 — 3-6 个月）
+- [ ] 社区贡献平台
+- [ ] 高级分析仪表盘
+- [ ] 移动应用或浏览器扩展
 
-## Metrics for Success
+## 成功指标
 
-**Code Quality:**
-- Lines of code reduced by 30% (236 → 67 in index.html)
-- JavaScript modularity improved (one large function → 20+ documented functions)
-- Maintainability index increased
+**代码质量：**
+- 代码行数减少 30%（index.html 从 236 行降至 67 行）
+- JavaScript 模块化改进（一个大函数 → 20+ 个带文档的函数）
+- 可维护性指数提升
 
-**Performance:**
-- Search response time: <50ms (with debouncing)
-- Page load time: <2s on 3G
-- Lighthouse score: >90
+**性能：**
+- 搜索响应时间：<50ms（带防抖）
+- 页面加载时间：3G 环境下 <2 秒
+- Lighthouse 评分：>90
 
-**User Experience:**
-- Mirror selection automated (future)
-- Offline support added (future)
-- Search relevance improved
+**用户体验：**
+- 镜像选择自动化（未来）
+- 离线支持（未来）
+- 搜索相关性提升
 
-## Conclusion
+## 总结
 
-The code refactoring provides a solid foundation for future enhancements. The strategic recommendations focus on three key areas:
+代码重构为未来的增强奠定了坚实基础。战略建议聚焦于三个关键领域：
 
-1. **Scalability**: API-first architecture enables growth
-2. **Performance**: Intelligent routing improves speed
-3. **Community**: Contribution platform reduces maintenance burden
+1. **可扩展性**：API 优先架构支持增长
+2. **性能**：智能路由提升速度
+3. **社区**：贡献平台降低维护负担
 
-These improvements position the project for sustainable long-term growth while maintaining code quality and user experience.
+这些改进将项目定位为在保持代码质量和用户体验的同时，实现可持续的长期发展。

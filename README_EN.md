@@ -18,7 +18,7 @@
   · <a href="README.md">中文</a>
 </p>
 
-# Project instruction 
+# Project Instructions
 
 International/China accelerated ad filtering rule subscriptions for popular tools (AdGuard, uBlock Origin, AdGuard Home, etc.):
 - Zero-proxy fast updates: distributed via multiple mirrors to significantly reduce failures and waiting time.
@@ -34,12 +34,12 @@ More history: see [Announcement History](ANNOUNCEMENTS_EN.md).
 ## 🔖 Filter Tool Recommendations
 
 Filtering tools：
-* 🌍 browser plug-in
+* 🌍 Browser extension
   * [AdGuard](https://adguard.com)
   * [uBlock Origin](https://github.com/gorhill/uBlock)
   * [AdBlock Plus](https://adblockplus.org)
   * [Adblock](https://getadblock.com)
-* 📺 router terminal
+* 📺 Router / Home Gateway
   * [AdGuard Home](https://adguard.com/zh_cn/adguard-home/overview.html)
   * [KoolProxyR](https://github.com/user1121114685/koolproxyR)
   * [Adbyby](http://www.adbyby.com/)
@@ -47,13 +47,13 @@ Filtering tools：
 * 📱 mobile 
   * [AdGuard for Android](https://adguard.com/zh_cn/adguard-android/overview.html)
   * [AdGuard for iOS](https://adguard.com/zh_cn/adguard-ios/overview.html)
-* 💻 Desktop (global de-advertising)）
+* 💻 Desktop (global ad blocking)
   * [AdGuard for Windows](https://adguard.com/zh_cn/adguard-windows/overview.html)
   * [AdGuard for macOS](https://adguard.com/zh_cn/adguard-mac/overview.html)
 
 ## 🧩 Project Introduction
 
-🙅‍♂️However, there is a pain point with all of these tools, as the rules are largely hosted on offshore servers, making updates extremely slow or even impossible to successfully update.
+🙅‍♂️However, there is a pain point with all of these tools, as the rules are largely hosted on overseas servers, making updates extremely slow or even impossible to successfully update.
 
 😫 A very common scenario: you've configured de-advertising tools for the elders and elderly in your family to prevent them from being phished, scammed or infected with viruses while browsing the web. But the fact is that often, many rules are carefully chosen, but in fact most of them are in the state of failure to update, and then a pop-up box appears, and the elder clicks randomly, but not necessarily what happens after ...... may say that the computer is broken, the update failed....
 
@@ -69,7 +69,7 @@ The rules are distributed in conjunction with a globally accelerated CDN provide
 ③[Render](https://render.com) (No cache)  
 ④[7ed](https://www.7ed.net) (No cache)   
 
-The result is a second-by-second update of all de-advertising rules.
+The result is that all ad-blocking rules can be updated within seconds.
 
 ## 🧪 Personal test
 
@@ -81,7 +81,7 @@ Under normal network environment (without any proxies, in mainland China network
 ## 🍔 Usage
 
 ⚠️ Note: This rule is not for web proxy tools, don't give it to Surge, ShadowRocket, Quantumult(X), Clash(X/A) and similar tools!
-Just copy the table below and use the accelerated address of the corresponding rule as a link to the subscription rule for the de-advertising tool.
+Just copy the table below and use the accelerated address of the corresponding rule as a link to the subscription rule for the ad-blocking tool.
 
 ### 🚀 Quick start (3 steps)
 1. Open the Web index page (see “Web index page” below).
@@ -130,7 +130,7 @@ Tip: You can keep multiple mirror URLs for the same rule as redundancy, or one p
 | EasyList China | [original](https://easylist-downloads.adblockplus.org/easylistchina.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/EasyList_China.txt) <sub>[copy](index.html?mirror=ghucs&copy=EasyList_China.txt)</sub> | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/EasyList_China.txt) <sub>[copy](index.html?mirror=jsdelivr&copy=EasyList_China.txt)</sub> | [accelerated③](https://raw.cosr.eu.org/EasyList_China.txt) <sub>[copy](index.html?mirror=cosr&copy=EasyList_China.txt)</sub> | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/EasyList_China.txt) <sub>[copy](index.html?mirror=gitmirror&copy=EasyList_China.txt)</sub> |
 | EasyPrivacy | [original](https://easylist-downloads.adblockplus.org/easyprivacy.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/EasyPrivacy.txt) <sub>[copy](index.html?mirror=ghucs&copy=EasyPrivacy.txt)</sub> | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/EasyPrivacy.txt) <sub>[copy](index.html?mirror=jsdelivr&copy=EasyPrivacy.txt)</sub> | [accelerated③](https://raw.cosr.eu.org/EasyPrivacy.txt) <sub>[copy](index.html?mirror=cosr&copy=EasyPrivacy.txt)</sub> | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/EasyPrivacy.txt) <sub>[copy](index.html?mirror=gitmirror&copy=EasyPrivacy.txt)</sub> |
 | I Don't Care About Cookies | [original](https://www.i-dont-care-about-cookies.eu/abp) | Sync paused in CI due to redistribution licensing restrictions (only the original address is kept; please follow its license). |
-| HalfLife | [original](https://raw.githubusercontent.com/o0HalfLife0o/list/main/ad.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/HalfLife.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/HalfLife.txt ) | [accelerated③](https://raw.cosr.eu.org/HalfLife.txt ) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/HalfLife.txt ) |
+| HalfLife | [original](https://raw.githubusercontent.com/o0HalfLife0o/list/main/ad.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/HalfLife.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/HalfLife.txt) | [accelerated③](https://raw.cosr.eu.org/HalfLife.txt) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/HalfLife.txt) |
 | CJX's Annoyance List | [original](https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/CJX's_Annoyance_List.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/CJX's_Annoyance_List.txt) | [accelerated③](https://raw.cosr.eu.org/CJX's_Annoyance_List.txt) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/CJX's_Annoyance_List.txt) |
 | Chengfeng General Advertising Filter Rules | [original](https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt) | [accelerated③](https://raw.cosr.eu.org/Xinggsf_rule.txt) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt) |
 | Chengfeng Video Advertising Filter Rules | [original](https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt) | [accelerated③](https://raw.cosr.eu.org/Xinggsf_mv.txt) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt) |
@@ -178,7 +178,7 @@ Submit the rules that you think you need to update for acceleration. The followi
 1. the rules need to be on an offshore server, difficult to successfully update or slow to update.
 2. indicate the name, source, and function of the rule.
 3. If the rule you want to speed up is a file in a GitHub project, just use the jsDelivr syntax to speed up the project file **without submitting a request**.
-`https://cdn.jsdelivr.net/gh/username/project name@version/accelerate files`.
+`https://cdn.jsdelivr.net/gh/username/project@version/file`.
 
 ### Feedback & issue reporting
 - When filing an Issue, please include:
@@ -192,7 +192,7 @@ Submit the rules that you think you need to update for acceleration. The followi
 
 ## 📈 Number of historical stars
 
-![](https://starchart.cc/Silentely/AdBlock-Acceleration.svg)
+![Star History Chart](https://starchart.cc/Silentely/AdBlock-Acceleration.svg)
 
 ## 💰 Sponsors
 

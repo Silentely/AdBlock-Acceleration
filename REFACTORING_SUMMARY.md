@@ -72,15 +72,6 @@ No changes needed! The application works exactly the same way.
 - CSS is organized by sections (Theme, Base, Header, Controls, etc.)
 - JavaScript has clear sections (Configuration, Functions, Initialization)
 
-## Strategic Next Steps
-
-See `REFACTORING_NOTES.md` for detailed analysis of:
-
-1. **API-First Architecture** - Scale to thousands of rules
-2. **Intelligent CDN Routing** - Automatic mirror selection
-3. **Community Platform** - User-submitted rules
-4. **Analytics** - Usage insights without privacy invasion
-
 ## Testing Checklist
 
 - [x] Page loads correctly
@@ -122,13 +113,9 @@ This refactoring maintains 100% backward compatibility:
   function humanBytes(n) { ... }
 </script>
 
-// After: Can import and test
-import { humanBytes } from './assets/script.js';
-describe('humanBytes', () => {
-  it('formats bytes correctly', () => {
-    expect(humanBytes(1024)).toBe('1.0 KB');
-  });
-});
+// After: Functions are standalone and testable
+function humanBytes(n) { /* ... */ }
+// Can be tested in isolation or with a test runner
 ```
 
 ### Easier to Debug
