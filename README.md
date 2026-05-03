@@ -22,7 +22,7 @@
 
 为常见去广告工具（AdGuard、uBlock Origin、AdGuard Home 等）提供“国际/中国网络可用”的规则加速订阅：
 - **零代理即可快速更新**：通过多镜像分发，显著降低更新失败率与等待时间。
-- **多镜像冗余**：① GHUCS、② jsDelivr（有缓存，速度快）；③ Render、④ 7ed（无缓存，强一致）。
+- **多镜像冗余**：① GHUCS、② jsDelivr（有缓存，速度快）；③ cosr、④ gitmirror（无缓存，强一致）。
 - **一键复制与搜索**：内置 Web 索引页支持镜像选择、即时搜索、单条/批量复制。
 
 # 公告 
@@ -64,8 +64,8 @@
 
 ①[GHUCS](https://raw.githubusercontents.com) （具有缓存）  
 ②[jsDelivr](https://www.jsdelivr.com) （具有缓存）   
-③[Render](https://render.com) （无缓存）    
-④[7ed](https://www.7ed.net) （无缓存）     
+③[cosr](https://raw.cosr.eu.org) （无缓存）    
+④[gitmirror](https://www.gitmirror.com) （无缓存）     
 
 从而在数秒内完成所有规则更新。
 
@@ -102,7 +102,7 @@
 
 ### 🌐 镜像选择建议
 - 追求速度：优先 ① GHUCS、② jsDelivr（有缓存、命中率高）。
-- 强制最新：使用 ③ Render、④ 7ed（无缓存，一般更“新”）。
+- 强制最新：使用 ③ cosr、④ gitmirror（无缓存，一般更”新”）。
 - 若某镜像在你所在网络环境不可用，换另一个镜像即可；国内网络建议同时保留一个无缓存镜像作备用。
 
 ## 🌐 Web 规则索引页（复制/搜索/镜像选择）
@@ -122,7 +122,7 @@
 | AdGuard DNS Filter | [原始](https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/AdGuard_Simplified_Domain_Names_Filter.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/AdGuard_Simplified_Domain_Names_Filter.txt) | [加速③](https://raw.cosr.eu.org/AdGuard_Simplified_Domain_Names_Filter.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/AdGuard_Simplified_Domain_Names_Filter.txt) |
 | Anti-AD | [原始](https://anti-ad.net/easylist.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Anti_AD_Easylist.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Anti_AD_Easylist.txt) | [加速③](https://raw.cosr.eu.org/Anti_AD_Easylist.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Anti_AD_Easylist.txt) |
 | EasyList China | [原始](https://easylist-downloads.adblockplus.org/easylistchina.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/EasyList_China.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/EasyList_China.txt) | [加速③](https://raw.cosr.eu.org/EasyList_China.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/EasyList_China.txt) |
-| EasyPrivacy | [原始](https://easylist-downloads.adblockplus.org/easyprivacy.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/EasyPrivacy.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/EasyPrivacy.txt) | [加速③](https://raw.cosr.eu.org/EasyPrivacy.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/EasyPrivacy.txt) |
+| EasyPrivacy | [原始](https://easylist.to/easylist/easyprivacy.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/EasyPrivacy.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/EasyPrivacy.txt) | [加速③](https://raw.cosr.eu.org/EasyPrivacy.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/EasyPrivacy.txt) |
 | 屏蔽网站的Cookies警告 | [原始](https://www.i-dont-care-about-cookies.eu/abp) | 已在 CI 暂停同步，可能存在再分发许可限制。仅保留原始地址，使用者请按其许可自取。 |  |  |
 | HalfLife | [原始](https://raw.githubusercontent.com/o0HalfLife0o/list/main/ad.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/HalfLife.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/HalfLife.txt) | [加速③](https://raw.cosr.eu.org/HalfLife.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/HalfLife.txt) |
 | CJX's Annoyance List | [原始](https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt) | [加速①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/CJX's_Annoyance_List.txt) | [加速②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/CJX's_Annoyance_List.txt) | [加速③](https://raw.cosr.eu.org/CJX's_Annoyance_List.txt) | [加速④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/CJX's_Annoyance_List.txt) |

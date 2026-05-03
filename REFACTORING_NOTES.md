@@ -10,9 +10,8 @@
 
 **重构前：** 236 行的 index.html，内联 CSS（50 行）和 JavaScript（130 行）
 **重构后：** 模块化结构，文件分离：
-- `index.html`（67 行）— 简洁的语义化 HTML
-- `assets/styles.css`（191 行）— 分区组织的 CSS
-- `assets/script.js`（318 行）— 带 JSDoc 文档的 JavaScript
+- `index.html`（533 行）— 语义化 HTML，使用 Tailwind CSS CDN
+- `assets/script.js`（366 行）— 带 JSDoc 文档的 JavaScript
 
 **收益：**
 - 更好的可维护性和可读性
@@ -80,7 +79,6 @@ const CACHE_NAME = 'adblock-accel-v1';
 const urlsToCache = [
   '/',
   '/index.html',
-  '/assets/styles.css',
   '/assets/script.js',
   '/manifest.json'
 ];

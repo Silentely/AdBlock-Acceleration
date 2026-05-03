@@ -22,7 +22,7 @@
 
 International/China accelerated ad filtering rule subscriptions for popular tools (AdGuard, uBlock Origin, AdGuard Home, etc.):
 - Zero-proxy fast updates: distributed via multiple mirrors to significantly reduce failures and waiting time.
-- Multi-mirror redundancy: ① GHUCS, ② jsDelivr (cached, usually faster); ③ Render, ④ 7ed (no cache, stronger freshness).
+- Multi-mirror redundancy: ① GHUCS, ② jsDelivr (cached, usually faster); ③ cosr, ④ gitmirror (no cache, stronger freshness).
 - One-click copy & search: a web index provides mirror selector, instant search, and single/bulk copy.
 
 # Announcement  
@@ -65,9 +65,9 @@ The project uses GitHub Actions to download the latest rules every 6 hours every
 The rules are distributed in conjunction with a globally accelerated CDN provided by multiple sites:
 
 ①[GHUCS](https://raw.githubusercontents.com) (With cache)  
-②[JsDelivr](https://www.jsdelivr.com) (With cache)  
-③[Render](https://render.com) (No cache)  
-④[7ed](https://www.7ed.net) (No cache)   
+②[jsDelivr](https://www.jsdelivr.com) (With cache)  
+③[cosr](https://raw.cosr.eu.org) (No cache)  
+④[gitmirror](https://www.gitmirror.com) (No cache)   
 
 The result is that all ad-blocking rules can be updated within seconds.
 
@@ -104,10 +104,8 @@ Tip: You can keep multiple mirror URLs for the same rule as redundancy, or one p
 
 ### 🌐 Mirror selection tips
 - For speed: prefer ① GHUCS, ② jsDelivr (cached, high hit rate).
-- For freshness: prefer ③ Render, ④ 7ed (no cache, usually more up-to-date).
+- For freshness: prefer ③ cosr, ④ gitmirror (no cache, usually more up-to-date).
 - If a mirror is blocked or slow in your network, switch to another. In mainland China, consider also keeping one no-cache mirror as a backup.
-
-## 📃 List of rules
 
 ## Web index page (rule index with copy/search)
 
@@ -128,7 +126,7 @@ Tip: You can keep multiple mirror URLs for the same rule as redundancy, or one p
 | AdGuard DNS Filter | [original](https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/AdGuard_Simplified_Domain_Names_Filter.txt) <sub>[copy](index.html?mirror=ghucs&copy=AdGuard_Simplified_Domain_Names_Filter.txt)</sub> | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/AdGuard_Simplified_Domain_Names_Filter.txt) <sub>[copy](index.html?mirror=jsdelivr&copy=AdGuard_Simplified_Domain_Names_Filter.txt)</sub> | [accelerated③](https://raw.cosr.eu.org/AdGuard_Simplified_Domain_Names_Filter.txt) <sub>[copy](index.html?mirror=cosr&copy=AdGuard_Simplified_Domain_Names_Filter.txt)</sub> | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/AdGuard_Simplified_Domain_Names_Filter.txt) <sub>[copy](index.html?mirror=gitmirror&copy=AdGuard_Simplified_Domain_Names_Filter.txt)</sub> |
 | Anti-AD | [original](https://anti-ad.net/easylist.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Anti_AD_Easylist.txt) <sub>[copy](index.html?mirror=ghucs&copy=Anti_AD_Easylist.txt)</sub> | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Anti_AD_Easylist.txt) <sub>[copy](index.html?mirror=jsdelivr&copy=Anti_AD_Easylist.txt)</sub> | [accelerated③](https://raw.cosr.eu.org/Anti_AD_Easylist.txt) <sub>[copy](index.html?mirror=cosr&copy=Anti_AD_Easylist.txt)</sub> | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Anti_AD_Easylist.txt) <sub>[copy](index.html?mirror=gitmirror&copy=Anti_AD_Easylist.txt)</sub> |
 | EasyList China | [original](https://easylist-downloads.adblockplus.org/easylistchina.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/EasyList_China.txt) <sub>[copy](index.html?mirror=ghucs&copy=EasyList_China.txt)</sub> | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/EasyList_China.txt) <sub>[copy](index.html?mirror=jsdelivr&copy=EasyList_China.txt)</sub> | [accelerated③](https://raw.cosr.eu.org/EasyList_China.txt) <sub>[copy](index.html?mirror=cosr&copy=EasyList_China.txt)</sub> | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/EasyList_China.txt) <sub>[copy](index.html?mirror=gitmirror&copy=EasyList_China.txt)</sub> |
-| EasyPrivacy | [original](https://easylist-downloads.adblockplus.org/easyprivacy.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/EasyPrivacy.txt) <sub>[copy](index.html?mirror=ghucs&copy=EasyPrivacy.txt)</sub> | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/EasyPrivacy.txt) <sub>[copy](index.html?mirror=jsdelivr&copy=EasyPrivacy.txt)</sub> | [accelerated③](https://raw.cosr.eu.org/EasyPrivacy.txt) <sub>[copy](index.html?mirror=cosr&copy=EasyPrivacy.txt)</sub> | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/EasyPrivacy.txt) <sub>[copy](index.html?mirror=gitmirror&copy=EasyPrivacy.txt)</sub> |
+| EasyPrivacy | [original](https://easylist.to/easylist/easyprivacy.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/EasyPrivacy.txt) <sub>[copy](index.html?mirror=ghucs&copy=EasyPrivacy.txt)</sub> | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/EasyPrivacy.txt) <sub>[copy](index.html?mirror=jsdelivr&copy=EasyPrivacy.txt)</sub> | [accelerated③](https://raw.cosr.eu.org/EasyPrivacy.txt) <sub>[copy](index.html?mirror=cosr&copy=EasyPrivacy.txt)</sub> | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/EasyPrivacy.txt) <sub>[copy](index.html?mirror=gitmirror&copy=EasyPrivacy.txt)</sub> |
 | I Don't Care About Cookies | [original](https://www.i-dont-care-about-cookies.eu/abp) | Sync paused in CI due to redistribution licensing restrictions (only the original address is kept; please follow its license). |
 | HalfLife | [original](https://raw.githubusercontent.com/o0HalfLife0o/list/main/ad.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/HalfLife.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/HalfLife.txt) | [accelerated③](https://raw.cosr.eu.org/HalfLife.txt) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/HalfLife.txt) |
 | CJX's Annoyance List | [original](https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt) | [accelerated①](https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/CJX's_Annoyance_List.txt) | [accelerated②](https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/CJX's_Annoyance_List.txt) | [accelerated③](https://raw.cosr.eu.org/CJX's_Annoyance_List.txt) | [accelerated④](https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/CJX's_Annoyance_List.txt) |

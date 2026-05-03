@@ -8,10 +8,9 @@ Before:
 ├── index.html (236 lines - HTML + CSS + JS all mixed)
 
 After:
-├── index.html (66 lines - clean HTML only)
+├── index.html (Tailwind CSS CDN + inline styles)
 ├── assets/
-│   ├── styles.css (187 lines - organized CSS)
-│   ├── script.js (333 lines - documented JS)
+│   ├── script.js (366 lines - documented JS)
 │   └── favicon.ico
 └── REFACTORING_NOTES.md (comprehensive guide)
 ```
@@ -44,7 +43,7 @@ After:
 
 | Metric | Before | After | Change |
 |--------|--------|-------|--------|
-| index.html lines | 236 | 66 | -72% |
+| index.html lines | 236 | 533 | Tailwind CSS CDN + inline styles |
 | Total lines | 236 | 586 | +148% (but better organized) |
 | Documented functions | 0 | 20+ | ∞ |
 | Error handlers | 2 | 8 | +300% |
@@ -54,9 +53,7 @@ After:
 
 ### For Developers
 ```bash
-# All CSS changes go in:
-assets/styles.css
-
+# All CSS styles are inlined in index.html using Tailwind CSS CDN
 # All JavaScript changes go in:
 assets/script.js
 
@@ -86,10 +83,9 @@ No changes needed! The application works exactly the same way.
 
 ## Files Modified
 
-1. `index.html` - Refactored to use external resources
-2. `assets/styles.css` - NEW - Extracted CSS
-3. `assets/script.js` - NEW - Extracted and improved JavaScript
-4. `REFACTORING_NOTES.md` - NEW - Strategic recommendations
+1. `index.html` - Refactored to use Tailwind CSS CDN
+2. `assets/script.js` - NEW - Extracted and improved JavaScript
+3. `REFACTORING_NOTES.md` - NEW - Strategic recommendations
 
 ## No Breaking Changes
 
@@ -102,7 +98,7 @@ This refactoring maintains 100% backward compatibility:
 ## Future-Proof Benefits
 
 ### Easier to Add Features
-- Want dark mode improvements? Edit `assets/styles.css`
+- Want dark mode improvements? Edit Tailwind config in `index.html`
 - Want new search features? Edit `assets/script.js`
 - Want to change layout? Edit `index.html`
 
@@ -149,12 +145,17 @@ const rules = [
 ```
 
 ### Updating Styles
-Theme colors are CSS variables in `assets/styles.css`:
-```css
-:root {
-  --bg: #ffffff;
-  --fg: #0b0e14;
-  /* Modify colors here */
+Theme colors are configured via Tailwind CSS in `index.html`:
+```javascript
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: '#3B82F6',
+        // Modify colors here
+      },
+    },
+  },
 }
 ```
 

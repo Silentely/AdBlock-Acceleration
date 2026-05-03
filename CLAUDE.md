@@ -34,7 +34,7 @@ graph TD
 |---------|----------|------|
 | `/` | HTML/JS/CSS | 项目根目录，包含 Web 索引页和规则文件 |
 | `/assets/` | JavaScript | 前端交互逻辑，负责规则展示、搜索、复制功能 |
-| `/` (规则文件) | TXT | 22 个广告过滤规则文件，由 CI 自动更新 |
+| `/` (规则文件) | TXT | 24 条广告过滤规则（定义在 script.js 中），由 CI 自动更新 |
 | `/.github/workflows/` | YAML | GitHub Actions 自动化工作流，定时抓取规则 |
 
 ## 运行与开发
