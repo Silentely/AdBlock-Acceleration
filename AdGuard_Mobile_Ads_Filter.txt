@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: XaNqfJpHIQF+7e/abDHeuw
-! Diff-Path: ../patches/11/11-s-1777746434-3600.patch
+! Checksum: e+xh520seuMg8T+1Usx4/g
+! Diff-Path: ../patches/11/11-s-1777891724-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.69.47
-! TimeUpdated: 2026-05-02T18:24:28+00:00
+! Version: 2.0.69.49
+! TimeUpdated: 2026-05-04T10:45:27+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2443,6 +2443,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+greatandhra.com##.mob-Ad
 meteo60.fr##.encart750x300
 meteo60.fr##.encart336SmartVertical
 m.soundcloud.com##div[class^="BannerAd"]
@@ -2615,8 +2616,6 @@ baseballchannel.jp###sp_all_header
 ||cdn.sinparty.com^$subdocument,domain=imgbox.com
 imgbox.com##a[href^="https://sinparty.com/"]
 imgbox.com##._ln-floater
-abtranny.com##.header_mobile:has(> div.ad__title)
-abtranny.com##.video__wrapper > div.wrapper:has(> section div.ad__title)
 abtranny.com##.video-page__info > div.headline:style(margin-top: 0 !important;)
 tapatalk.com###TapatalkFooterMobileAds
 nfl.com##.flex.justify-center.lg\:my-8:has(> #adv_league)
@@ -4616,7 +4615,6 @@ wsj.com##div[class^="WhatsNewsTheme"] > div[class]:has(div[class] > div[class^="
 amp.dantri.com.vn##div[id^="xds-"]
 outdoorlife.com###empire-unit-footer-close-btn
 outdoorlife.com##div[id^="empire-unit-sticky_footer__mobile"]
-manysex.com,xjav.tube,aniporn.com##.header__item
 esquire.com##section > div[class*="css"]:has(> div.ad-container)
 thegreatoutdoorsmag.com,amateurphotographer.com##.post-content-ad
 themanual.com##body .dtads-mobile
@@ -8163,14 +8161,15 @@ contexto.me##.top-ad-padding:style(padding-top: 15px !important;)
 ! NOTE: Regular rules end ⬆️
 ! !SECTION: Regular rules
 !
-! TXXX network/tubecorp
+! TXXX network/tubecorp/Adultnext
 bdsmx.tube,manysex.com,manysex.tube,inporn.com##.video__wrapper > div.header__item
 txxxporn.tube,txxx.*##.video-conten > div[class] > div[class]:has(> div[class] > div[style="height: 100px;"])
 ourgay.tube,xshemale.tube,pornl.tube,fuxxx.com,keporn.vip,keporn.com,peporn.com,teen21.com,pornuse.com,uanal.com##.content > [class$="wrapper"] > section
 desi-porn.tube##.content > div > div[class]:has(> div[class] > div.da-container)
 voyeurhit.tube,voyeurhit.com##a[class^="tag"][target="_blank"]
-hotmovs.tube,hotmovs.com,hdzog.tube,hdzog.com##div[class^="tag"] > a[href][target="_blank"]
-txxxporn.tube,txxx.*##div[class^="links"] > [href][target="_blank"]
+hclips.com,hotmovs.tube,hotmovs.com,hdzog.tube,hdzog.com##div[class^="tag"] > a[href][target="_blank"]
+abbdsm.com,abgay.tube,abjav.com,abxxx.com,abmilf.com,abtranny.com,manysex.com,xjav.tube,aniporn.com##.header__item
+transtxxx.com,txxxporn.tube,txxx.*##div[class^="links"] > [href][target="_blank"]
 ! pornhub.com
 pornhub.com,pornhub.org##div[class]:has(> ins.adsbytrafficjunky)
 pornhub.com,pornhub.org##.eudsaLink
