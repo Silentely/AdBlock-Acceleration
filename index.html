@@ -521,6 +521,232 @@
     <p class="mt-6 text-sm text-slate-400 animate-slide-up" style="animation-delay: 0.2s;">
       <strong class="text-slate-300">说明：</strong>上方"镜像"决定"复制"按钮输出的链接前缀。大小/时间来自仓库根目录的 manifest.json。
     </p>
+
+    <!-- 优化建议 1: 镜像切换功能说明 -->
+    <section class="mt-8 glass-card rounded-xl p-6 animate-slide-up" style="animation-delay: 0.25s;" aria-labelledby="mirror-guide-heading">
+      <h2 id="mirror-guide-heading" class="font-heading text-lg font-bold text-slate-900 dark:text-white mb-3">
+        多镜像加速 — 为什么需要多个加速 URL？
+      </h2>
+      <p class="text-sm text-slate-600 dark:text-slate-300 mb-4">
+        由于 GFW 对 raw.githubusercontent.com 的封锁/限速，单一 CDN 源可能出现更新失败。
+        本项目提供 <strong>4 个独立 CDN 镜像</strong>，建议为同一规则同时添加 2–3 个镜像 URL，
+        当某个源失效时可自动切换备用源，确保订阅持续可用。
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+        <div class="glass-card rounded-lg p-3">
+          <div class="font-semibold text-blue-600 dark:text-blue-400">GHUCS</div>
+          <div class="text-slate-500 dark:text-slate-400 mt-1">raw.githubusercontents.com</div>
+          <div class="text-slate-400 dark:text-slate-500 mt-1">GitHub 官方 CDN，稳定性高</div>
+        </div>
+        <div class="glass-card rounded-lg p-3">
+          <div class="font-semibold text-blue-600 dark:text-blue-400">jsDelivr</div>
+          <div class="text-slate-500 dark:text-slate-400 mt-1">cdn.jsdelivr.net</div>
+          <div class="text-slate-400 dark:text-slate-500 mt-1">全球 CDN，国内偶有波动</div>
+        </div>
+        <div class="glass-card rounded-lg p-3">
+          <div class="font-semibold text-blue-600 dark:text-blue-400">cosr</div>
+          <div class="text-slate-500 dark:text-slate-400 mt-1">raw.cosr.eu.org</div>
+          <div class="text-slate-400 dark:text-slate-500 mt-1">欧洲节点，国内访问友好</div>
+        </div>
+        <div class="glass-card rounded-lg p-3">
+          <div class="font-semibold text-blue-600 dark:text-blue-400">gitmirror</div>
+          <div class="text-slate-500 dark:text-slate-400 mt-1">raw.gitmirror.com</div>
+          <div class="text-slate-400 dark:text-slate-500 mt-1">GitHub 镜像，备用方案</div>
+        </div>
+      </div>
+      <p class="mt-3 text-xs text-slate-400 dark:text-slate-500">
+        提示：点击上方"镜像"下拉框切换源，"复制"按钮会输出当前选中镜像的加速 URL。建议同时收藏多个镜像链接备用。
+      </p>
+    </section>
+
+    <!-- 优化建议 3: 中国专用规则推荐 -->
+    <section class="mt-6 glass-card rounded-xl p-6 animate-slide-up" style="animation-delay: 0.3s;" aria-labelledby="china-rules-heading">
+      <h2 id="china-rules-heading" class="font-heading text-lg font-bold text-slate-900 dark:text-white mb-3">
+        推荐中国用户订阅
+      </h2>
+      <p class="text-sm text-slate-600 dark:text-slate-300 mb-4">
+        以下规则专门针对中文网站广告和追踪器优化，建议中国用户在标准 EasyList 基础上额外订阅：
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+        <div class="glass-card rounded-lg p-3 flex items-start gap-3">
+          <span class="badge shrink-0">必备</span>
+          <div>
+            <div class="font-semibold text-slate-900 dark:text-white">EasyList China</div>
+            <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">中文网站广告过滤基础规则，覆盖国内主流站点</div>
+          </div>
+        </div>
+        <div class="glass-card rounded-lg p-3 flex items-start gap-3">
+          <span class="badge shrink-0">必备</span>
+          <div>
+            <div class="font-semibold text-slate-900 dark:text-white">AdGuard Chinese Filter</div>
+            <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">AdGuard 专心中文广告过滤，覆盖面更广</div>
+          </div>
+        </div>
+        <div class="glass-card rounded-lg p-3 flex items-start gap-3">
+          <span class="badge shrink-0">推荐</span>
+          <div>
+            <div class="font-semibold text-slate-900 dark:text-white">乘风通用广告规则</div>
+            <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">国内社区维护，更新频繁，补充国内小众站点</div>
+          </div>
+        </div>
+        <div class="glass-card rounded-lg p-3 flex items-start gap-3">
+          <span class="badge shrink-0">推荐</span>
+          <div>
+            <div class="font-semibold text-slate-900 dark:text-white">ADgk / 百度广告屏蔽</div>
+            <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">屏蔽百度搜索结果中的百家号推广内容</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 优化建议 5: 工具配置教程 -->
+    <section class="mt-6 glass-card rounded-xl p-6 animate-slide-up" style="animation-delay: 0.35s;" aria-labelledby="setup-guide-heading">
+      <h2 id="setup-guide-heading" class="font-heading text-lg font-bold text-slate-900 dark:text-white mb-3">
+        配置教程 — 如何导入加速订阅
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+        <!-- uBlock Origin -->
+        <div class="glass-card rounded-lg p-4">
+          <h3 class="font-heading font-semibold text-slate-900 dark:text-white mb-2">uBlock Origin</h3>
+          <ol class="list-decimal list-inside space-y-1 text-xs text-slate-600 dark:text-slate-300">
+            <li>右键 uBO 图标 → 仪表盘（Dashboard）</li>
+            <li>切换到 Filter lists 标签</li>
+            <li>展开 Custom 区域 → 点击 Import</li>
+            <li>粘贴加速 URL（一行一个）</li>
+            <li>点击 Apply changes → Update now</li>
+          </ol>
+        </div>
+        <!-- AdGuard 浏览器 -->
+        <div class="glass-card rounded-lg p-4">
+          <h3 class="font-heading font-semibold text-slate-900 dark:text-white mb-2">AdGuard 浏览器扩展</h3>
+          <ol class="list-decimal list-inside space-y-1 text-xs text-slate-600 dark:text-slate-300">
+            <li>打开 AdGuard 设置页面</li>
+            <li>左侧菜单 → 过滤器</li>
+            <li>自定义过滤器 → 添加过滤器</li>
+            <li>粘贴加速 URL</li>
+            <li>等待订阅同步完成</li>
+          </ol>
+        </div>
+        <!-- AdGuard Home -->
+        <div class="glass-card rounded-lg p-4">
+          <h3 class="font-heading font-semibold text-slate-900 dark:text-white mb-2">AdGuard Home (DNS)</h3>
+          <ol class="list-decimal list-inside space-y-1 text-xs text-slate-600 dark:text-slate-300">
+            <li>登录 AdGuard Home 管理面板</li>
+            <li>Filters → DNS blocklists</li>
+            <li>Add blocklist → 粘贴加速 URL</li>
+            <li>Save &amp; Update 强制刷新</li>
+            <li>建议配置上游 DNS（如 114.114.114.114）</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 优化建议 8: 兼容性矩阵 -->
+    <section class="mt-6 glass-card rounded-xl p-6 animate-slide-up" style="animation-delay: 0.4s;" aria-labelledby="compat-heading">
+      <h2 id="compat-heading" class="font-heading text-lg font-bold text-slate-900 dark:text-white mb-3">
+        兼容性矩阵
+      </h2>
+      <p class="text-sm text-slate-600 dark:text-slate-300 mb-3">
+        各规则与广告拦截工具的兼容性（&#10003; = 支持，— = 不适用）：
+      </p>
+      <div class="table-container">
+        <table class="text-xs">
+          <thead>
+            <tr>
+              <th class="!text-xs">规则</th>
+              <th class="!text-xs text-center">uBlock Origin</th>
+              <th class="!text-xs text-center">AdGuard 浏览器</th>
+              <th class="!text-xs text-center">AdGuard Home</th>
+              <th class="!text-xs text-center">AdGuard APP</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>AdGuard Base Filter</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td></tr>
+            <tr><td>EasyList / EasyPrivacy</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td></tr>
+            <tr><td>EasyList China</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td></tr>
+            <tr><td>AdGuard Chinese Filter</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td></tr>
+            <tr><td>uBlock filters</td><td class="text-center">&#10003;</td><td class="text-center">—</td><td class="text-center">—</td><td class="text-center">—</td></tr>
+            <tr><td>Fanboy\'s Annoyances</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td></tr>
+            <tr><td>CJX\'s Annoyance List</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td></tr>
+            <tr><td>乘风规则 / ADgk</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td></tr>
+            <tr><td>StevenBlack / Hblock (hosts)</td><td class="text-center">—</td><td class="text-center">—</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td></tr>
+            <tr><td>AdGuard DNS Filter</td><td class="text-center">—</td><td class="text-center">—</td><td class="text-center">&#10003;</td><td class="text-center">&#10003;</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 优化建议 7: 性能影响提示 -->
+    <section class="mt-6 glass-card rounded-xl p-6 animate-slide-up" style="animation-delay: 0.45s;" aria-labelledby="perf-heading">
+      <h2 id="perf-heading" class="font-heading text-lg font-bold text-slate-900 dark:text-white mb-3">
+        性能建议
+      </h2>
+      <div class="text-sm text-slate-600 dark:text-slate-300 space-y-2">
+        <p><strong>规则数量影响加载速度：</strong>浏览器扩展加载过多规则会占用内存并降低页面加载速度。建议采用"内置规则 + 2–4 条补充"的策略。</p>
+        <p><strong>推荐组合示例：</strong></p>
+        <ul class="list-disc list-inside text-xs text-slate-500 dark:text-slate-400 ml-2">
+          <li>基础：EasyList + EasyPrivacy + AdGuard Base Filter（内置已含，无需重复添加）</li>
+          <li>中国用户加：EasyList China + AdGuard Chinese Filter</li>
+          <li>可选补充：乘风规则 或 Fanboy's Annoyances（二选一即可）</li>
+          <li>DNS 用户：StevenBlack 或 Hblock（AdGuard Home 专用）</li>
+        </ul>
+        <p><strong>更新频率：</strong>本项目通过 GitHub Actions 每 6 小时自动同步上游规则，确保时效性。</p>
+      </div>
+    </section>
+
+    <!-- 优化建议 6: 故障排除 FAQ -->
+    <section class="mt-6 glass-card rounded-xl p-6 animate-slide-up" style="animation-delay: 0.5s;" aria-labelledby="faq-heading">
+      <h2 id="faq-heading" class="font-heading text-lg font-bold text-slate-900 dark:text-white mb-4">
+        常见问题（FAQ）
+      </h2>
+      <div class="space-y-4 text-sm">
+        <details class="glass-card rounded-lg">
+          <summary class="p-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">
+            更新失败怎么办？
+          </summary>
+          <div class="px-4 pb-4 text-slate-600 dark:text-slate-300 text-xs space-y-1">
+            <p>1. 检查当前镜像是否可用 — 在浏览器中直接访问加速 URL 确认</p>
+            <p>2. 切换到其他镜像源 — 点击页面顶部"镜像"下拉框选择备用源</p>
+            <p>3. 为同一规则添加多个镜像 URL 实现冗余备份</p>
+            <p>4. AdGuard Home 用户：检查 Query Log 中的错误日志</p>
+          </div>
+        </details>
+        <details class="glass-card rounded-lg">
+          <summary class="p-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">
+            规则不生效？
+          </summary>
+          <div class="px-4 pb-4 text-slate-600 dark:text-slate-300 text-xs space-y-1">
+            <p>1. 确认已点击"Update now"或"Save &amp; Update"强制刷新</p>
+            <p>2. 检查规则是否与已启用的内置规则冲突</p>
+            <p>3. 尝试清除扩展缓存后重新订阅</p>
+            <p>4. 确认加速 URL 可正常访问（非 404/超时）</p>
+          </div>
+        </details>
+        <details class="glass-card rounded-lg">
+          <summary class="p-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">
+            如何检查更新状态？
+          </summary>
+          <div class="px-4 pb-4 text-slate-600 dark:text-slate-300 text-xs space-y-1">
+            <p>1. 本页面顶部的"更新时间"徽章显示最近同步时间</p>
+            <p>2. uBlock Origin：Dashboard → Filter lists 查看各规则的上次更新时间</p>
+            <p>3. AdGuard Home：Filters 页面查看各订阅的同步状态</p>
+          </div>
+        </details>
+        <details class="glass-card rounded-lg">
+          <summary class="p-4 cursor-pointer font-semibold text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400">
+            哪个镜像速度最快？
+          </summary>
+          <div class="px-4 pb-4 text-slate-600 dark:text-slate-300 text-xs space-y-1">
+            <p>速度因地区和网络环境而异，建议：</p>
+            <p>1. 国内用户优先尝试 cosr 和 gitmirror</p>
+            <p>2. jsDelivr 全球覆盖好，国内偶尔波动</p>
+            <p>3. GHUCS 为 GitHub 官方 CDN，稳定性最高</p>
+            <p>4. 最佳方案：同时添加 2–3 个镜像，让工具自动选择可用源</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
   </main>
 
   <!-- Toast Notification -->
