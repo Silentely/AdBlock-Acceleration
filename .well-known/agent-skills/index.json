@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agentskills.io/schemas/index-v0.2.0.json",
+  "name": "AdBlock Acceleration Agent Skills",
+  "description": "广告过滤规则加速订阅服务的 Agent 技能集",
+  "version": "1.0.0",
+  "skills": [
+    {
+      "name": "list-rules",
+      "type": "tool",
+      "description": "列出所有可用的广告过滤规则，返回名称、文件名、大小、更新时间和原始地址",
+      "url": "https://silentely.github.io/AdBlock-Acceleration/.well-known/agent-skills/index.json",
+      "sha256": "pending"
+    },
+    {
+      "name": "get-mirror-url",
+      "type": "tool",
+      "description": "根据规则文件名和镜像源，返回加速后的下载 URL",
+      "url": "https://silentely.github.io/AdBlock-Acceleration/.well-known/agent-skills/index.json",
+      "sha256": "pending"
+    },
+    {
+      "name": "verify-integrity",
+      "type": "tool",
+      "description": "通过 checksums.txt 或 manifest.json 验证规则文件的完整性（SHA256）",
+      "url": "https://silentely.github.io/AdBlock-Acceleration/.well-known/agent-skills/index.json",
+      "sha256": "pending"
+    },
+    {
+      "name": "subscribe-rule",
+      "type": "workflow",
+      "description": "为广告拦截工具（AdGuard/uBlock Origin）配置订阅源，使用加速镜像替代原始地址",
+      "url": "https://silentely.github.io/AdBlock-Acceleration/.well-known/agent-skills/index.json",
+      "sha256": "pending"
+    }
+  ]
+}

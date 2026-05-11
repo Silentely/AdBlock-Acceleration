@@ -1,0 +1,52 @@
+{
+  "schema": "https://modelcontextprotocol.io/schemas/2025-03-26/server-card.json",
+  "name": "AdBlock Acceleration",
+  "description": "提供广告过滤规则文件的加速订阅服务，支持多镜像分发，解决中国大陆用户更新缓慢的痛点。",
+  "version": "1.0.0",
+  "repository": "https://github.com/Silentely/AdBlock-Acceleration",
+  "capabilities": {
+    "tools": [
+      {
+        "name": "list-rules",
+        "description": "列出所有可用的广告过滤规则及其元数据（大小、更新时间、哈希）",
+        "inputSchema": {
+          "type": "object",
+          "properties": {}
+        }
+      },
+      {
+        "name": "get-rule-url",
+        "description": "获取指定规则文件的加速镜像 URL",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "rule-name": {
+              "type": "string",
+              "description": "规则文件名，如 AdGuard_Base_Filter.txt"
+            },
+            "mirror": {
+              "type": "string",
+              "enum": ["ghucs", "jsdelivr", "cosr", "gitmirror"],
+              "description": "镜像源选择，默认 cosr"
+            }
+          },
+          "required": ["rule-name"]
+        }
+      },
+      {
+        "name": "get-checksum",
+        "description": "获取指定规则文件的 SHA256 校验和",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "rule-name": {
+              "type": "string",
+              "description": "规则文件名"
+            }
+          },
+          "required": ["rule-name"]
+        }
+      }
+    ]
+  }
+}

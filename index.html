@@ -6,6 +6,13 @@
   <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
   <title>AdBlock Acceleration - 规则索引</title>
 
+  <!-- Agent Discovery: Link 关系 (RFC 8288 / RFC 9727) -->
+  <meta name="link-rel:api-catalog" content="/.well-known/api-catalog" />
+  <meta name="link-rel:service-doc" content="/README.md" />
+  <meta name="link-rel:mcp-server-card" content="/.well-known/mcp/server-card.json" />
+  <meta name="link-rel:agent-skills" content="/.well-known/agent-skills/index.json" />
+  <meta name="link-rel:sitemap" content="/sitemap.xml" />
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -528,5 +535,82 @@
 
   <!-- Script -->
   <script src="./assets/script.js"></script>
+
+  <!-- WebMCP: 向 AI agent 暴露站点工具 -->
+  <script>
+    (function initWebMCP() {
+      if (!navigator.modelContext?.provideContext) return;
+
+      const SITE_BASE = location.origin + location.pathname.replace(/\/[^/]*$/, '/');
+      const MIRROR_MAP = {
+        ghucs: (f) => `https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/${encodeURIComponent(f)}`,
+        jsdelivr: (f) => `https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/${encodeURIComponent(f)}`,
+        cosr: (f) => `https://raw.cosr.eu.org/${encodeURIComponent(f)}`,
+        gitmirror: (f) => `https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/${encodeURIComponent(f)}`,
+      };
+
+      navigator.modelContext.provideContext({
+        name: 'AdBlock Acceleration',
+        description: '广告过滤规则加速订阅服务，提供多镜像分发的规则文件下载地址',
+        tools: [
+          {
+            name: 'list-rules',
+            description: '列出所有可用的广告过滤规则及其元数据',
+            inputSchema: { type: 'object', properties: {} },
+            execute: async () => {
+              const res = await fetch(SITE_BASE + 'manifest.json', { cache: 'no-store' });
+              const manifest = await res.json();
+              return {
+                updatedAt: manifest.updatedAt,
+                ruleCount: manifest.files.length,
+                rules: manifest.files.map(f => ({
+                  file: f.file,
+                  size: f.bytes,
+                  lastModified: f.mtime,
+                  sha256: f.sha256
+                }))
+              };
+            }
+          },
+          {
+            name: 'get-rule-url',
+            description: '获取指定规则文件的加速镜像 URL',
+            inputSchema: {
+              type: 'object',
+              properties: {
+                'rule-name': { type: 'string', description: '规则文件名，如 AdGuard_Base_Filter.txt' },
+                mirror: { type: 'string', enum: ['ghucs', 'jsdelivr', 'cosr', 'gitmirror'], description: '镜像源，默认 cosr' }
+              },
+              required: ['rule-name']
+            },
+            execute: async (args) => {
+              const mirror = args.mirror || 'cosr';
+              const builder = MIRROR_MAP[mirror];
+              if (!builder) return { error: `未知镜像: ${mirror}，可选: ghucs, jsdelivr, cosr, gitmirror` };
+              return { url: builder(args['rule-name']), mirror };
+            }
+          },
+          {
+            name: 'get-checksum',
+            description: '获取指定规则文件的 SHA256 校验和',
+            inputSchema: {
+              type: 'object',
+              properties: {
+                'rule-name': { type: 'string', description: '规则文件名' }
+              },
+              required: ['rule-name']
+            },
+            execute: async (args) => {
+              const res = await fetch(SITE_BASE + 'manifest.json', { cache: 'no-store' });
+              const manifest = await res.json();
+              const file = manifest.files.find(f => f.file === args['rule-name']);
+              if (!file) return { error: `未找到规则: ${args['rule-name']}` };
+              return { file: file.file, sha256: file.sha256, size: file.bytes };
+            }
+          }
+        ]
+      });
+    })();
+  </script>
 </body>
 </html>
