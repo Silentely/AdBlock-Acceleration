@@ -1,9 +1,15 @@
 {
   "schema": "https://modelcontextprotocol.io/schemas/2025-03-26/server-card.json",
-  "name": "AdBlock Acceleration",
+  "serverInfo": {
+    "name": "AdBlock Acceleration",
+    "version": "1.0.0"
+  },
   "description": "提供广告过滤规则文件的加速订阅服务，支持多镜像分发，解决中国大陆用户更新缓慢的痛点。",
-  "version": "1.0.0",
   "repository": "https://github.com/Silentely/AdBlock-Acceleration",
+  "transport": {
+    "type": "webmcp",
+    "url": "https://silentely.github.io/AdBlock-Acceleration/"
+  },
   "capabilities": {
     "tools": [
       {
