@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: nAldFbOLTz9S3n2S7IzeGA
-! Diff-Path: ../patches/11/11-s-1779124042-3600.patch
+! Checksum: St5WL58pgN/WTp6Lwuqf3Q
+! Diff-Path: ../patches/11/11-s-1779189178-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.69.75
-! TimeUpdated: 2026-05-18T17:03:57+00:00
+! Version: 2.0.69.78
+! TimeUpdated: 2026-05-19T11:09:23+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2447,6 +2447,8 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+ebaumsworld.com##.mobile-ad-space
+xxxtik.com##.navigation-container > a[href][rel="nofollow"][target="_blank"]
 news.mynavi.jp##.gn-scroll-catch-ad
 navitime.co.jp###inview-koten
 tugatech.com.pt##body > div#header::before:style(display: none !important;)
@@ -2455,7 +2457,7 @@ karapaia.com##.kb-links
 jukenbbs.com##div[style="padding:25px 0; text-align:center;"]
 jukenbbs.com##div[style="padding:25px 0; text-align:center;"] + hr
 appagg.com##.ftblad ~ div[class][style*="box-shadow:none"]:has(> div[class] ins.adsbygoogle)
-appagg.com##.hbody > .si_list > .si_li:has(> div[class] ins.adsbygoogle)
+appagg.com##.si_list > .si_li:has(> div[class] ins.adsbygoogle)
 atlas.taboolanews.com##section[aria-label="Advertisement"]
 porntourist.com##.header__bar > div.bar > a[href][target="_blank"][rel="nofollow"]
 2ch.logpo.jp##.AmazonItems
@@ -8186,7 +8188,7 @@ txxxporn.tube,txxx.*##.video-conten > div[class] > div[class]:has(> div[class] >
 porn-latina.com,gfthai.com,lesbigo.com,boobse.com,ourgay.tube,xshemale.tube,pornl.tube,fuxxx.com,keporn.vip,keporn.com,peporn.com,teen21.com,pornuse.com,uanal.com##.content > [class$="wrapper"] > section
 desi-porn.tube##.content > div > div[class]:has(> div[class] > div.da-container)
 voyeurhit.tube,voyeurhit.com##a[class^="tag"][target="_blank"]
-hclips.com,hotmovs.tube,hotmovs.com,hdzog.tube,hdzog.com##div[class^="tag"] > a[href][target="_blank"]
+xjav.tube,hclips.com,hotmovs.tube,hotmovs.com,hdzog.tube,hdzog.com##div[class^="tag"] > a[href][target="_blank"]
 gettranny.com,blackporn.tube,abbdsm.com,abgay.tube,abjav.com,abxxx.com,abmilf.com,abtranny.com,manysex.com,xjav.tube,aniporn.com##.header__item
 mrgay.tube,transtxxx.com,txxxporn.tube,txxx.*##div[class^="links"] > [href][target="_blank"]
 ! pornhub.com
