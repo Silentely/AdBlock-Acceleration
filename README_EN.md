@@ -206,6 +206,10 @@ Submit the rules that you think you need to update for acceleration. The followi
   (with supplementary terms), any profit-making activity is considered a commercial purpose.
 - Please use this project in compliance with local laws and regulations.
 
+## Code of Conduct
+
+This project follows the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md).
+
 <p align="center">
   <img src="https://github.com/docker/dockercraft/raw/master/docs/img/contribute.png?raw=true" alt="贡献图示">
 </p>

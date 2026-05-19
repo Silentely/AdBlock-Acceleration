@@ -246,6 +246,10 @@ sha256sum -c checksums.txt
   (增加附属条款)，凡是**任何盈利的活动皆属于商业用途**。
 - 请在遵守当地相关法律法规的前提下使用本项目。
 
+## Code of Conduct
+
+本项目遵循 [Contributor Covenant 行为准则](CODE_OF_CONDUCT.md)。
+
 <p align="center">
   <img src="https://github.com/docker/dockercraft/raw/master/docs/img/contribute.png?raw=true" alt="贡献图示">
 </p>
