@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: aVNczU8sW49wOB7mCQSarg
-! Diff-Path: ../patches/11/11-s-1779196732-3600.patch
+! Checksum: L3lWkECTOuHHyrlAn0LxoA
+! Diff-Path: ../patches/11/11-s-1779268722-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.69.79
-! TimeUpdated: 2026-05-19T13:15:24+00:00
+! Version: 2.0.69.80
+! TimeUpdated: 2026-05-20T09:15:26+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2447,6 +2447,12 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+plus-msg.auone.jp##.news__rectangle-ad--under-first
+plus-msg.auone.jp##.news__genre-item--taboola-ads
+plus-msg.auone.jp##.news__genre-item--ads
+plus-msg.auone.jp##.ad__under-article-content
+pornocarioca.com##.pc-info-box__clickad
+pornocarioca.com##.top-banner--mobile
 eda.yandex.ru##main > div[style^="margin-bottom:"]:has(> div > ul.scroll-snap-slider button[aria-label="Акция"] > div > img[src*="get-market-adv"]):remove()
 ebaumsworld.com##.mobile-ad-space
 xxxtik.com##.navigation-container > a[href][rel="nofollow"][target="_blank"]
@@ -4148,7 +4154,7 @@ grapee.jp##.comment > aside:has(> div.OUTBRAIN)
 ||frontend.vh.yandex.ru/player/*&adConfig=$domain=mentoday.ru
 quotidiano.net##+js(set-local-storage-item, pwa_show, true)
 akashi-journal.com###custom_html-46
-topics.smt.docomo.ne.jp,bayburtmedya.com,m.business-gazeta.ru##.banner
+plus-msg.auone.jp,topics.smt.docomo.ne.jp,bayburtmedya.com,m.business-gazeta.ru##.banner
 privatehomeclips.com##.video__wrapper > section[style="display: flex;"]
 m.tsumanne.net##object[data*="/ad.html"]
 inrlp.de##div[class^="w4_Mobile_Pos"]
