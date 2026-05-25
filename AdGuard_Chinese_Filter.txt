@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: TYrhkptZfYIsjX9FJMKIrQ
-! Diff-Path: ../patches/224/224-s-1779665395-3600.patch
+! Checksum: ViAZD/96wA4FNlN3KuDn7w
+! Diff-Path: ../patches/224/224-s-1779708688-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.59.44
-! TimeUpdated: 2026-05-24T23:27:18+00:00
+! Version: 2.1.59.45
+! TimeUpdated: 2026-05-25T11:28:38+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1134,7 +1134,6 @@ freedidi.com##.spm-on:has(> div[class^="spm"] > .spm-body > a[target="_blank"])
 ||m.qishuba.com/jump/
 ssm.fun##.cAnnouncements
 ssm.fun##.cAnnouncementsContent
-ping0.cc##a[rel="noopener nofollow"][target="_blank"]:has(> .closead)
 123pan.com,123865.com##+js(no-window-open-if)
 123pan.com,123865.com##.bg_svip_block_ads
 ||static.dhsz.cn^$image,domain=123865.com|123pan.com
@@ -1175,7 +1174,8 @@ vpstop.cn##.sidebar > div.uk-card:contains(赞助商家)
 huavod.com##a[href^="https://lesi198.com"]
 ||static.okokserver.com/uploads/lesi/lesi.mp4$media
 ||zhanlangcdnimg.top^$image,domain=91av51.com
-||cdn.ping0.cc/images/ax/*.gif$~3p
+||cdn.ping0.cc/images/dx/*.gif$~3p
+ping0.cc##a[rel="noopener nofollow"][target="_blank"]:has(> [class^="close"])
 tieba.baidu.com##div[data-key^="ad__"]
 ||ac-baidu.90dao.com/inject.js
 iyf.tv##a[target="_blank"] > img[class^="extended-pr"]
@@ -5336,6 +5336,10 @@ newduba.cn###jq_youxi
 ||iap2e750o.com^
 ||og2ebeuxa.com^
 ||dmyzf4op0.com^
+||lj43bm3y8.com^
+||oi0wm8b09.com^
+||vhwrju18p.com^
+||z9o0rgee8.com^
 ||wdp5rczwlp.com^
 ||w4nw434j7n.com^
 ||opendsp.vip^
