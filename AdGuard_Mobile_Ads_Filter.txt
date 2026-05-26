@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: sCazJ6KTvuXCvWRc4ACuEA
-! Diff-Path: ../patches/11/11-s-1779780312-3600.patch
+! Checksum: WCntq9KMEd/6Y5c7zg+0oQ
+! Diff-Path: ../patches/11/11-s-1779801090-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.69.90
-! TimeUpdated: 2026-05-26T07:21:48+00:00
+! Version: 2.0.69.91
+! TimeUpdated: 2026-05-26T13:08:19+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2450,6 +2450,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+teamtalk.com##main > div > .bs_hint[style^="height:"]
 freesoft-100.com###header_ad_text
 inews.hket.com##.adunit.detail-page[data-admap]
 football365.com##div[style="height: 300px;"]
@@ -2511,7 +2512,7 @@ pchome.megatime.com.tw##center[style="border-bottom:1px #d3d3d3 solid;"]
 hotokami.jp##.spots__main > div.block:has(> div.flex > div[onclick^="gtag"] > a[href*="utm_campaign"])
 techblog.gr##div[class^="single-mobile-billboard"]
 smartapps.baidu.com##.mount-fc-promo-wrapper
-||staff.livedoor.blog/slot-fallback.js
+||staff.livedoor.blog/slot-fallback$script
 keiba-umanami.com,2chblog.jp,blog.jp,blog.livedoor.jp,bloggeek.jp,blogism.jp,blogo.jp,blogstation.jp,blogto.jp,cafeblog.jp,corpblog.jp,diary.to,doorblog.jp,dreamlog.jp,gger.jp,golog.jp,ldblog.jp,liblo.jp,livedoor.biz,livedoor.blog,myjournal.jp,mynikki.jp,officeblog.jp,officialblog.jp,publog.jp,storeblog.jp,teamblog.jp,techblog.jp,weblog.to,xxxblog.jp,youblog.jp,mona-news.com##.slot-insert
 vocus.cc##.editor-content-block > div[style]:has(> #vocus_m_reading_parallax_middle)
 hotukdeals.com##.js-threadList > div:not([class]):not([id]):has(> .box--contents > div[class] > .slot--bg)
@@ -2846,8 +2847,8 @@ h1g.jp##div[style^="width:300px;height:280px"]
 futbolperuano.com##header.sticky-top:style(top: 0 !important;)
 sxyprn.net,sxyprn.com##.tbd
 mydramalist.com##div:has(> div[style="min-height:327px;"]:only-child)
-coloradoan.com##.gnt_x__bvc:has(> aside[aria-label="advertisement"])
-coloradoan.com##aside[aria-label="advertisement"]
+hoopshype.com,coloradoan.com##.gnt_x__bvc:has(> aside[aria-label="advertisement"])
+hoopshype.com,coloradoan.com##aside[aria-label="advertisement"]
 capetownetc.com##.mobile-advertisements
 famitsu.com##section[class^="Top_topHeaderBanner"]
 famitsu.com##div[class^="ArticleDetailMiddleRectangle_container_"]
