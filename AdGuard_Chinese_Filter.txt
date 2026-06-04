@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: JwkSpUGAFnohLjDnuTU5vA
-! Diff-Path: ../patches/224/224-s-1780501410-3600.patch
+! Checksum: 7yqiyzI4EsccnBPeB5Rezg
+! Diff-Path: ../patches/224/224-s-1780530061-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.59.91
-! TimeUpdated: 2026-06-03T15:40:42+00:00
+! Version: 2.1.59.94
+! TimeUpdated: 2026-06-03T23:38:23+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -302,8 +302,8 @@ jav224.shop,ttp229.shop,clp126.shop,hsq233.shop##+js(no-setTimeout-if, ](getComp
 ! https://github.com/AdguardTeam/AdguardFilters/issues/228610
 ! https://github.com/AdguardTeam/AdguardFilters/issues/228606
 huaren.live,huavod.com##+js(no-setTimeout-if, bait.offsetHeight===0)
-huavod.top,huavod.net,huaren.live,huavod.com##+js(addEventListener-defuser, DOMContentLoaded, showModal)
-huavod.top,huavod.net,huaren.live,huavod.com##div[id^="anti-adblock-"]
+huavod.cc,huavod.top,huavod.net,huaren.live,huavod.com##+js(addEventListener-defuser, DOMContentLoaded, showModal)
+huavod.cc,huavod.top,huavod.net,huaren.live,huavod.com##div[id^="anti-adblock-"]
 huaren.live,huavod.com#@#.ad_unit
 ||static.okokserver.com/js/anti/adblocker.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/228259
@@ -1161,7 +1161,7 @@ jav224.shop,ttp229.shop,clp126.shop,hsq233.shop##+js(abort-current-script, docum
 surumi.shop###container > .art-video-player + div[id][style^="position: absolute;"][style*="z-index: 999"]
 wnacg.com##a[href*="erodatalabs.com"]
 free.com.tw##.advads-entity-placement
-huavod.top,huaren.live,huavod.com,huavod.net##a[href^="/go/baba/"]
+huavod.cc,huavod.top,huaren.live,huavod.com,huavod.net##a[href^="/go/baba/"]
 *$script,xhr,3p,domain=m.niupizhi.net
 ||m.niupizhi.net/lokedpgdjs
 ||cdn.rrmj.plus/ad_4k.mp4$media,redirect=noop-0.1s.mp3,domain=yichengwlkj.com
@@ -3196,8 +3196,9 @@ netfly.*,netfly.tv##div[class*="tt-"] > a[target="_blank"] > img
 netfly.*,netfly.tv##div[class*="tt-"] > a[target="_blank"] + span.tt-icon-close
 ! https://github.com/AdguardTeam/AdguardFilters/issues/219444
 ! https://github.com/AdguardTeam/AdguardFilters/issues/210237
-||static.okokserver.com/uploads/lesi/$xhr,redirect=noop.txt,domain=huaren.live|huavod.net|huavod.com|huavod.top
-huavod.top,huavod.net,huavod.com,huaren.live##+js(set-constant, ConFig.ad_duration_ms, 0)
+||static.okokserver.com/uploads/lesi/$xhr,redirect=noop.txt,domain=huaren.live|huavod.net|huavod.com|huavod.top|huavod.cc
+huavod.cc,huavod.top,huavod.net,huavod.com,huaren.live##+js(set-constant, ConFig.ad_duration_ms, 0)
+!+ NOT_PLATFORM(ext_chromium_mv3, ext_ff)
 ! TODO: remove hints when this issue is resolved - https://github.com/AdguardTeam/Scriptlets/issues/517
 !+ NOT_PLATFORM(windows, mac, android, cli)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/177520
@@ -5344,6 +5345,12 @@ newduba.cn###jq_youxi
 .z.dkt-ib.com
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$3p
+||branch20.top^
+||m3v8x28jut.com^
+||dd81bp3qbj.com^
+||pxlizduukhnpps.com^
+||va3yq7si6w.com^
+||xgsspao.com^
 ||nbwsj9gnd.com^
 ||t19olm6fd.com^
 ||dukwznn0x.com^
