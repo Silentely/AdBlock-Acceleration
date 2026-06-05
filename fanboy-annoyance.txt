@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: lYXYTWNt/BGP3chGRu7JIA
-! Version: 202606050400
+! Checksum: kALN1M77u20J1Id1MdnpfA
+! Version: 202606050925
 ! Title: Fanboy's Annoyance List
-! Last modified: 2026-06-05 04:00 UTC
+! Last modified: 2026-06-05 09:25 UTC
 ! Expires: 9 days (update frequency)
 ! Homepage: https://easylist.to/
 ! License: http://creativecommons.org/licenses/by/3.0/
@@ -41074,7 +41074,7 @@ jibjab.com##+js(set-local-storage-item, cookie_banner:hidden, true)
 solana.com##+js(set-local-storage-item, cookie_consent, 1)
 fadxploit.my.id,goodpods.com##+js(set-local-storage-item, cookie_consent, accepted)
 rig-flip.com##+js(set-local-storage-item, cookie_consent, declined)
-vibeslist.ai##+js(set-local-storage-item, cookie_consent, denied)
+luel.ai,vibeslist.ai##+js(set-local-storage-item, cookie_consent, denied)
 6amgroup.com,chipcitycookies.com,go.bkk.hu,happiful.com,moondao.com,worldlibertyfinancial.com##+js(set-local-storage-item, cookie_consent, false)
 search.odin.io,ukrinform.ua##+js(set-local-storage-item, cookie_consent, granted)
 granola.ai,hatchet.run,polar.sh,posthog.com##+js(set-local-storage-item, cookie_consent, no)
@@ -54479,6 +54479,10 @@ reddit.com##+js(prevent-addEventListener, touchmove)
 reddit.com##+js(remove-class, rpl-scroll-lock, body, stay)
 reddit.com##+js(remove-class, scroll-is-blocked, body, stay)
 reddit.com#?#.rpl-bottom-sheet:has-text(Get the app)
+! facebook
+facebook.com##+js(rc, prevent-scrolling, body, stay)
+facebook.com#?#.bottom.fixed-container.m:has(span.f2:has-text(Open app))
+facebook.com#?#.dialog-screen.bg-s1.m:has(span.f2:has-text(Get app))
 ! tiktok
 tiktok.com##+js(set-session-storage-item, webapp_first_open_cta, 1)
 tiktok.com##.e1pecv674.css-99ed1t-DivFooterGuide
