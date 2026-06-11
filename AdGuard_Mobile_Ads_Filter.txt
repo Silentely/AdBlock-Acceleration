@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: NJlk0mF5SrwiMMAR7HllXg
-! Diff-Path: ../patches/11/11-s-1781077247-3600.patch
+! Checksum: 3k6ta3n95aCW/jdt3yKdQw
+! Diff-Path: ../patches/11/11-s-1781118217-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.70.22
-! TimeUpdated: 2026-06-10T07:37:50+00:00
+! Version: 2.0.70.23
+! TimeUpdated: 2026-06-10T19:00:20+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1176,6 +1176,7 @@ westseattleblog.com#@#.header-ad
 ! START: Yandex
 !
 ! ya.ru - main page
+ya.ru##div[class*="search"][class*="__wrapper"] + div[class*="-"]:has(> div > div[class*="content"] > div[class*="_state_"] > button[aria-label="Действия с рекламой"])
 ya.ru##services-feed div.banner
 !
 ! Yandex.Search
