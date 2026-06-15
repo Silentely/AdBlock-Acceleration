@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: SmQ8Niqrp8RkGWP9nSohRg
-! Diff-Path: ../patches/224/224-s-1781503106-3600.patch
+! Checksum: 5/y9HLhH1gxc/BuK+HUYRw
+! Diff-Path: ../patches/224/224-s-1781522029-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.60.48
-! TimeUpdated: 2026-06-15T05:55:37+00:00
+! Version: 2.1.60.50
+! TimeUpdated: 2026-06-15T11:11:23+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -303,7 +303,9 @@ jav224.shop,ttp229.shop,clp126.shop,hsq233.shop#@#.ad-unit:not(.textads)
 jav224.shop,ttp229.shop,clp126.shop,hsq233.shop##+js(no-setTimeout-if, ](getComputedStyle\,)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/228610
 ! https://github.com/AdguardTeam/AdguardFilters/issues/228606
-huaren.live,huavod.com##+js(no-setTimeout-if, bait.offsetHeight===0)
+huavod.cc,huavod.top,huavod.net,huaren.live,huavod.com##+js(abort-on-stack-trace, document.querySelector, isAdblocked)
+huavod.cc,huavod.top,huavod.net,huaren.live,huavod.com##+js(abort-current-script, MutationObserver, isAdblocked)
+huavod.cc,huavod.top,huavod.net,huaren.live,huavod.com##+js(no-setTimeout-if, /bait\.offsetHeight===0|isAdblocked|requestAnimationFrame\(/)
 huavod.cc,huavod.top,huavod.net,huaren.live,huavod.com##+js(addEventListener-defuser, DOMContentLoaded, showModal)
 huavod.cc,huavod.top,huavod.net,huaren.live,huavod.com##div[id^="anti-adblock-"]
 huaren.live,huavod.com#@#.ad_unit
@@ -1123,6 +1125,11 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+haokan.baidu.com###art-player-wrapper > div[class^="ArtVideo_"][class*="-pause-ad"]
+haokan.baidu.com##div[class^="videoList_videolist__"] > div[class^="videoList_videolist-item__"]:has(> div[class^="videoList_videolist-aditem__"])
+haokan.baidu.com##div[class^="video_land_pageBottomGuesslike__"] ul[class^="GuessLike_guess-list__"] > li[class^="GuessLike_guess-item__"]:not([vid]):empty
+haokan.baidu.com##div[class^="video_land_pageBottomGuesslike__"] ul[class^="GuessLike_guess-list__"] > li[class^="GuessLike_guess-item__"]:not([vid]):has(> div[class^="adItem_"])
+haokan.baidu.com##div[class^="guessLike_guess-like-index__"] ul[class^="guessLike_guess-list__"] > li[class^="guessLike_guess-item__"]:not([vid]):has(> div[class^="guessLike_guess-item-link__q"]:only-child)
 techorange.com##div.elementor-widget > div.elementor-widget-container:has(> a[href*="utm_campaign"] > img)
 techorange.com##a[href^="https://supr.link/"]
 supertaste.tvbs.com.tw##.min-h-\[15\.625rem\]
@@ -5376,6 +5383,10 @@ newduba.cn###jq_youxi
 ||redtvxjmgjbtlw.com^
 ||division43.top^
 ||bowo666.com^
+||7w7kditsz.com^
+||9obmf866d.com^
+||pkytxfiin.com^
+||bahpqcq.com^
 ||subtraction59.com^
 ||1u6hvoykk3.com^
 ||7q2701vx8e.com^
@@ -15161,7 +15172,7 @@ cnbeta.com.tw##.cb-help
 cnbeta.com.tw##.meta > .fr
 333ood.com###appBox
 333ood.com##div[style$="display: block;"]
-baidu.com##.tieba-pause-ad-container
+baidu.com##div[class*="tieba-pause-ad-container"]
 laozuo.org###focusslide
 laozuo.org##.container[style="margin-bottom: 3px;"]
 laozuo.org##.widget_ui_orbui

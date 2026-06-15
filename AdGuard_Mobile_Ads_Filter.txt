@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: S0DLjD9+ZptNSzwFWpGCWw
-! Diff-Path: ../patches/11/11-s-1781263527-3600.patch
+! Checksum: nnORFGL4D7OHv0K5rYPFCQ
+! Diff-Path: ../patches/11/11-s-1781522027-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.70.26
-! TimeUpdated: 2026-06-12T11:22:13+00:00
+! Version: 2.0.70.28
+! TimeUpdated: 2026-06-15T11:11:01+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1082,6 +1082,8 @@
 ! Bad: ||ad.doubleclick.net^ (should be in adservers.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/233611
+pornhex.com##+js(no-setTimeout-if, /AdBlock/i)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/231354
 sht-link.com##+js(prevent-fetch, adsbygoogle)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/230216
@@ -2457,6 +2459,8 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+google.com##div[data-id="mosaic"] > div > div > div[class][style^="max-width:100vw;box-sizing:border-box;height:100%;"]:has(> div:not([data-attrid]) > div[style="height:100%"] a[href^="/aclk?sa="])
+pornhex.com##body > div.items-center:has(> a[href^="https://pornhex.com/o/"][target="_blank"])
 sondakika.com##.MSK_VIDEO
 televisiononline.gratis##div.adsense_bajomenu
 digitalspy.com##section div[class^="css-"]:not([data-theme-key], [data-vars-cta]):has(> .ad-container)
