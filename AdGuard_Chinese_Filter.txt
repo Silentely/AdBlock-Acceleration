@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: EE3H06EloThf+YlDC5UCmw
-! Diff-Path: ../patches/224/224-s-1781572501-3600.patch
+! Checksum: NWQZ5bc00hGoZATcKc6JHw
+! Diff-Path: ../patches/224/224-s-1781606690-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.60.52
-! TimeUpdated: 2026-06-16T01:12:21+00:00
+! Version: 2.1.60.54
+! TimeUpdated: 2026-06-16T10:41:59+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1125,6 +1125,9 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+webtech360.com##.service-box
+360lele.cc##.container > div[id]:has(> div[style*="width: 100vw; position: relative;"] > span + img)
+sunnylife.tw##div[style="min-width: 300px; min-height:400px;"]
 haokan.baidu.com###art-player-wrapper > div[class^="ArtVideo_"][class*="-pause-ad"]
 haokan.baidu.com##div[class^="videoList_videolist__"] > div[class^="videoList_videolist-item__"]:has(> div[class^="videoList_videolist-aditem__"])
 haokan.baidu.com##div[class^="video_land_pageBottomGuesslike__"] ul[class^="GuessLike_guess-list__"] > li[class^="GuessLike_guess-item__"]:not([vid]):empty
@@ -3141,9 +3144,10 @@ banzhu1111111.com,banzhu2222222.com,banzhu3333333.com,banzhu4444444.com,banzhu55
 ! https://github.com/AdguardTeam/AdguardFilters/issues/217901
 /^https:\/\/www\.xiguashuwu\.com\/[a-z]{15,20}\/[a-z]{15,20}\.js\?v=/$script,domain=xiguashuwu.com
 ! Specific rules to avoid redirects on tap with very similar scripts
-huoqwk.com,wap.biqugewx.info##+js(no-setTimeout-if, addEventListener("touchstart")
+360lele.cc,huoqwk.com,wap.biqugewx.info##+js(no-setTimeout-if, addEventListener("touchstart")
 enhuku.com##+js(set-constant, adObj, noopFunc)
 m.13xsw.com,wap.yushuwu.cloud##+js(addEventListener-defuser, touchend, clientheight)
+*$script,xhr,image,3p,domain=360lele.cc
 *$script,xhr,3p,domain=m.1024txt.com
 *$script,3p,domain=m.roushuwu.vip
 m.1024txt.com##+js(abort-on-stack-trace, document.createElement, /(?=^(?![\s\S]*(static|jquery)))/)
@@ -5385,6 +5389,8 @@ newduba.cn###jq_youxi
 ||multiplication29.top^
 ||dneimig.com^
 ||xt8esrr.com^
+||ei6udchhys.com^
+||7ho8oc3svg.com^
 ||sxq9xn7t3.com^
 ||qls7v6jd3.com^
 ||1k2uh20wr.com^
