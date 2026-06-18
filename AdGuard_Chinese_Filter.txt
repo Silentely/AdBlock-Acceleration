@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: PFfXuKuUAwuD4N1DG9S4nw
-! Diff-Path: ../patches/224/224-s-1781761541-3600.patch
+! Checksum: DromcSwO4ZQ+kBYNyNKbyw
+! Diff-Path: ../patches/224/224-s-1781775675-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.60.61
-! TimeUpdated: 2026-06-18T05:42:54+00:00
+! Version: 2.1.60.62
+! TimeUpdated: 2026-06-18T09:38:04+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1915,13 +1915,13 @@ wealth.com.tw###root > div[class] > div[class]:matches-css(z-index: 4):has(> but
 wealth.com.tw###root div[class]:matches-css(row-gap: 13px) > div[class]:matches-css(row-gap: 6px):has(> div[class]:matches-css(width: 300px))
 wealth.com.tw###root div[class]:matches-css(position: relative) > div[class]:matches-css(justify-content: center):has(> div[class]:matches-css(width: 300px))
 wealth.com.tw###root div[class]:matches-css(padding-left: 70px) > div[class]:matches-css(column-gap: 30px):has(> div[class]:matches-css(align-items: center))
+wealth.com.tw##div[class]:has(> div[class] > div[class^="rytass-ad-manager-"]:only-child)
 9xav.cc##div[class]:not([class*=" "]):has(> span[class*=" "] > a[href^="https://"][target="_blank"])
 hdmoli.com##.row > div.myui-panel:has(div[style^="text-align:"] > a[href][target="_blank"] > img#index_banner)
 porn5f.com##.row:has(> div.col-lg-3 > div[style] > div.carousel-inner > p.ad-title)
 zhidao.baidu.com##.wgt-ads
 ct.999wan.wang##.container .card:has(> .card-body > .flex-fill > #ad_text)
 fox-saying.com###sidebar__inner > #links-row-1 > .box.folder:has(> h4:contains(AD))
-wealth.com.tw##div[class]:has(> div[class] > div[class^="rytass-ad-manager-"]:only-child)
 pixnet.net###main > div.header-fixed-area:has(> div#header-ad-fixed)
 ptthito.com###main-content > div[style*="margin-top:"]:not([class]):has(> .adsbygoogle)
 o8tv.com##.container > .row > .myui-panel-bg:has(> .myui-panel-box > .myui-panel_bd > .myui-vodlist > .col-lg-8 > .myui-vodlist__box > a[target="_blank"])
@@ -5393,6 +5393,7 @@ newduba.cn###jq_youxi
 ||10eni3ogoo.com^
 ||gun2v2neoo.com^
 ||c6nxtri65t.com^
+||bikemanw.com^
 ||remainder38.com^
 ||11rhol0ni.com^
 ||fwbdfg5n6.com^
