@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: gESqqvx1sN9l36xMamr18w
-! Diff-Path: ../patches/224/224-s-1781826049-3600.patch
+! Checksum: xGxF3f23gcePyOgOMZQBcg
+! Diff-Path: ../patches/224/224-s-1781848386-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.60.64
-! TimeUpdated: 2026-06-18T23:38:13+00:00
+! Version: 2.1.60.67
+! TimeUpdated: 2026-06-19T05:50:16+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1126,6 +1126,8 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+moegirl.org.cn##+js(addEventListener-defuser, DOMContentLoaded, sponsored)
+moegirl.org.cn##.moeautotrans-side-ad
 ||yilufff.com^$domain=xiaoaimh.com
 xiaoaimh.com##.flex-cols.tops
 webtech360.com##.service-box
@@ -5386,6 +5388,10 @@ newduba.cn###jq_youxi
 ||cupfox.app^$3p
 ||1cimslrk3.com^
 ||gie0izinx.com^
+||quotient75.com^
+||rdntpbeivqbjhi.com^
+||nhwqjyn.icu^
+||lvykdmk.icu^
 ||bjsr03odzu.com^
 ||rhaol5omof.com^
 ||gklsfigkom.com^
@@ -15056,6 +15062,9 @@ meijutt.*/js/pcjs/
 ||tcptest.cn/prod-api/web/adLinks/
 ||r3sub.com/nb/
 huaren.live##.pause-love
+jucha.com##.money_item
+mixytalk.com##.result-inline-ad
+mixytalk.com###ad-interstitial
 69tang.org##a[id^="imgs_link"]
 techritual.com##.th-single-ad
 xchina.co##.photo-items > .auto-height
