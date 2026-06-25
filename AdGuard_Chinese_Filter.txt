@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: N8WJyasu4UgICAhCqKVlfw
-! Diff-Path: ../patches/224/224-s-1782299353-3600.patch
+! Checksum: 68LGnljEc2jRGBVr5ilRHw
+! Diff-Path: ../patches/224/224-s-1782344013-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.60.91
-! TimeUpdated: 2026-06-24T11:06:58+00:00
+! Version: 2.1.60.93
+! TimeUpdated: 2026-06-24T23:31:07+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1128,6 +1128,7 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+fxshu.top##.com_t > div[id]:has(> div[style*="width: 100vw; position: relative;"] > span + img)
 assume.gguaklar.cc,51cg1.com,51baoliao01.com,91cg1.com##.recommend-layer
 assume.gguaklar.cc,51cg1.com,51baoliao01.com,91cg1.com###adFloat
 ||scriptcat.org/api/*/advertise?
@@ -3158,10 +3159,10 @@ banzhu1111111.com,banzhu2222222.com,banzhu3333333.com,banzhu4444444.com,banzhu55
 ! https://github.com/AdguardTeam/AdguardFilters/issues/217901
 /^https:\/\/www\.xiguashuwu\.com\/[a-z]{15,20}\/[a-z]{15,20}\.js\?v=/$script,domain=xiguashuwu.com
 ! Specific rules to avoid redirects on tap with very similar scripts
-360lele.cc,huoqwk.com,wap.biqugewx.info##+js(no-setTimeout-if, addEventListener("touchstart")
+fxshu.top,360lele.cc,huoqwk.com,wap.biqugewx.info##+js(no-setTimeout-if, addEventListener("touchstart")
 enhuku.com##+js(set-constant, adObj, noopFunc)
 m.13xsw.com,wap.yushuwu.cloud##+js(addEventListener-defuser, touchend, clientheight)
-*$script,xhr,image,3p,domain=360lele.cc
+*$script,xhr,image,3p,domain=360lele.cc|fxshu.top
 *$script,xhr,3p,domain=m.1024txt.com
 *$script,3p,domain=m.roushuwu.vip|xiaoaimh.com
 m.1024txt.com##+js(abort-on-stack-trace, document.createElement, /(?=^(?![\s\S]*(static|jquery)))/)
@@ -5394,6 +5395,9 @@ newduba.cn###jq_youxi
 .z.dkt-ib.com
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$3p
+||equation33.com^
+||cbjk6j85d.com^
+||d4ehbdtlw.com^
 ||zrosq6dsha.com^
 ||zju16obqzy.com^
 ||od6992uotl.com^
