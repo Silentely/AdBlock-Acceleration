@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: uSDCM4rWANf6QvvmGYOEEA
-! Diff-Path: ../patches/11/11-s-1782472162-3600.patch
+! Checksum: paRRgLWxtRMhCRHEd68IHQ
+! Diff-Path: ../patches/11/11-s-1782495691-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.70.49
-! TimeUpdated: 2026-06-26T11:06:05+00:00
+! Version: 2.0.70.52
+! TimeUpdated: 2026-06-26T17:38:29+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1354,7 +1354,7 @@ m.viptube.com##+js(set-constant, player.postitialTimeout, 0)
 thestudentroom.co.uk##+js(remove-class, fixed_ad, #header.fixed_ad)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120699
 ! popup on back/erobanach.com overlay
-openloadpro.com,erobanach.com##+js(addEventListener-defuser, , returnAd)
+erobanach.com##+js(addEventListener-defuser, , returnAd)
 erobanach.com##+js(abort-on-property-write, hidden)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119596
 lepoint.fr##+js(remove-class, hasStickyHead, body.hasStickyHead)
@@ -1700,8 +1700,8 @@ news.owata-net.com##html[style="overflow: hidden;"]:style(overflow: auto!importa
 coolaler.com##.message-inner:style(display: flex !important;)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120699
 ! https://github.com/AdguardTeam/AdguardFilters/issues/114749
-openloadpro.com,jav.direct###is_w_area:style(display: none!important;)
-openloadpro.com,jav.direct##.inv_scroll_cancel:style(overflow: auto !important; height: auto !important;)
+jav.direct###is_w_area:style(display: none!important;)
+jav.direct##.inv_scroll_cancel:style(overflow: auto !important; height: auto !important;)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/92726
 izi.ua##div[class^="ProductFooter__root-"]:style(height: 0 !important;)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/92579
@@ -2057,6 +2057,8 @@ deviantart.com##div[class*="dp-ad-"]:style(height: 0!important; width: 0!importa
 !
 !
 !
+! https://github.com/uBlockOrigin/uAssets/issues/33466
+sp.seiga.nicovideo.jp##.owner_thumbnail:style(top: 20px !important;)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/233208
 oricon.co.jp##div.comment-btn-s:style(float: initial !important; width: 90% !important;)
 ! counter Japanese filter for mobile layout
@@ -2448,7 +2450,7 @@ handelsblatt.com,moyens.net,ign.com,gazeteduvar.com.tr,innpoland.pl,wired.com,sp
 ! ##.ads
 keisanki.me,kalporn.com,canalporno.com,serviporno.com,livechat-ero.net,kingautos.net,ranky-ranking.net,memo.onl.jp,daily-sun.com,home.kingsoft.jp,berkem.ru,pixiv.net,cartoonpornvideos.com,m.economictimes.com,m.mistrzowie.org,up.ymgt.xyz,google.de,www-bento-de.cdn.ampproject.org,m-economictimes-com.cdn.ampproject.org,winfuture.de##.ads
 ! ##.ad
-healthyplace.com,qlife.jp,wiki.yjsnpi.nu,opinion.cw.com.tw,aidoly.net,celeby-media.net,kyun2-girls.com,hapiee.com,2ch-c.net,4p.de,www-cbc-ca.cdn.ampproject.org,m.geboren.am,dictionary.com,transfermarkt.de,iyf.tv,macwelt.de,pcwelt.de,xataka.com.mx,shikiho.toyokeizai.net,newsee-media.com,rank1-media.com,m.proporn.com,sugoren.com,dailynewsonline.jp,yakuji.co.jp,asahi.com,m.winporn.com,slate.com,sankei.com,gameranbu.jp,seiga.nicovideo.jp,m.arukikata.co.jp,setn.com,hatenadiary.com,hatenadiary.jp,syosetu.org##.ad
+healthyplace.com,qlife.jp,wiki.yjsnpi.nu,opinion.cw.com.tw,aidoly.net,celeby-media.net,kyun2-girls.com,hapiee.com,2ch-c.net,4p.de,www-cbc-ca.cdn.ampproject.org,m.geboren.am,dictionary.com,transfermarkt.de,iyf.tv,macwelt.de,pcwelt.de,xataka.com.mx,shikiho.toyokeizai.net,newsee-media.com,rank1-media.com,m.proporn.com,sugoren.com,dailynewsonline.jp,yakuji.co.jp,asahi.com,m.winporn.com,slate.com,sankei.com,gameranbu.jp,m.arukikata.co.jp,setn.com,hatenadiary.com,hatenadiary.jp,syosetu.org##.ad
 ! ##.Ad
 chip.de,gamesworld.de,fnn.jp##.Ad
 ! ##body .banner
@@ -2459,6 +2461,8 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+sp.seiga.nicovideo.jp##.ad:style(display: none !important;)
+businesstoday.in##.ad_pg_btm
 setn.com##.news-area-ad
 eleconomista.es##.article_Outbrain
 planetf1.com##main > div > .bs_hint[style="height: 300px;"]
