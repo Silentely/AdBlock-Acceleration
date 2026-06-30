@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: SR/O0ZsvltOZ7hqo2JNFiQ
-! Diff-Path: ../patches/224/224-s-1782811085-3600.patch
+! Checksum: ih5ZShE1tFyUN3F9iHjijw
+! Diff-Path: ../patches/224/224-s-1782831705-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.61.15
-! TimeUpdated: 2026-06-30T09:15:00+00:00
+! Version: 2.1.61.17
+! TimeUpdated: 2026-06-30T14:59:01+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1128,6 +1128,9 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+jptt.tv##+js(set-constant, player.adList, {})
+jptt.tv###vast_video_loading_f-player:style(display: none !important;)
+jptt.tv##.fluid_nonLinear_ad
 ||gamersky.com/web/getJS?url=*.gamersky.com*newAd
 ||gamersky.com/web/getJS?url=*.gamersky.com*banner
 gamersky.com##+js(abort-current-script, localStorage, showAd)
@@ -3391,6 +3394,7 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_chinese
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/234622
 ! https://github.com/AdguardTeam/AdguardFilters/issues/231576
 thebaynet.com#@#.ad-above-footer
 ! https://github.com/AdguardTeam/AdguardFilters/issues/228922
@@ -5402,6 +5406,8 @@ newduba.cn###jq_youxi
 ||puk9mpb8dm.com^
 ||ufurlokhqd.com^
 ||tawjmkk1p6.com^
+||0nyzdw2maq.com^
+||eo2eaqg5no.com^
 ||e3eb4eq0v.com^
 ||opposite36.top^
 ||067oij53m.com^
@@ -14927,7 +14933,7 @@ meijutt.*/js/pcjs/
 ||tcptest.cn/prod-api/web/adLinks/
 ||r3sub.com/nb/
 ||xwcm.net/caches/ahm.
-||gamersky.com/@display/pc/
+||ab3de9.gamersky.com^
 huaren.live##.pause-love
 yahoo.com##.pointer-events-auto.h-\[91px\]
 jucha.com##.money_item
