@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: IPwq9a3pu6Q43nv4Zf5E3A
-! Diff-Path: ../patches/224/224-s-1782918622-3600.patch
+! Checksum: Hn+OMC1NFTu+k++A8jDpbA
+! Diff-Path: ../patches/224/224-s-1782976709-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.61.22
-! TimeUpdated: 2026-07-01T15:05:20+00:00
+! Version: 2.1.61.24
+! TimeUpdated: 2026-07-02T07:15:33+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -292,6 +292,8 @@
 ! Bad: ||ad.doubleclick.net^ (should be in adservers.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/234769
+soft8ware.com##+js(no-setTimeout-if, triggerAdBlockModal)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/233129
 laosu.tech##+js(addEventListener-defuser, DOMContentLoaded, detectAdBlocker)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/230872
@@ -1129,6 +1131,8 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+cmoney.tw##.stockGrid__topbar
+soft8ware.com##ins.adsbygoogle
 hanjuk.com##+js(abort-current-script, document.createElement, new Function)
 hanjuk.com##[style^="display: block; z-index: 2147483646; position: fixed; user-select: none;"]
 hanjuk.com##body > [style^="display: block; width: 100%; height: 131px;"]
@@ -5405,6 +5409,10 @@ newduba.cn###jq_youxi
 .z.dkt-ib.com
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$3p
+||cyu6bl939o.com^
+||yahzsa6o2o.com^
+||rsfzjtdmbmxdfq.com^
+||rhombus74.com^
 ||1k1bd77k9.com^
 ||tpjhxbwkvjjvtq.com^
 ||kgou4s5dz.com^
