@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: R4QD1ULiDEffaxd/kbdhCA
-! Diff-Path: ../patches/11/11-s-1783323898-3600.patch
+! Checksum: LY4thF3Ubaf/K5mgyHQrcA
+! Diff-Path: ../patches/11/11-s-1783357712-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.70.69
-! TimeUpdated: 2026-07-06T07:41:45+00:00
+! Version: 2.0.70.72
+! TimeUpdated: 2026-07-06T17:05:29+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2510,7 +2510,6 @@ haberler.com##.new3card:has(> .MHH_VIDEO)
 haberler.com##.mobile-reklam-card
 haberler.com##.MHL_VIDEO
 clutchpoints.com##.not-prose > div.md\:hidden:has(script[src^="https://subscribe-forms.beehiiv.com/"])
-clutchpoints.com##div.flex.border:has(> div[class] > .ad-slot)
 gbnews.com##.ad-sticky-footer-mobile
 hochi.news##.sub__head:has(+ .job-list-wrap)
 hochi.news##div[style="min-width:320px;min-height:160px;text-align:center;margin:20px 0 0 0;"]
@@ -8537,6 +8536,8 @@ livejournal.com##div[id^="billboard_mobile_"]
 !
 !
 !+ NOT_OPTIMIZED
+stackoverflow.com##.js-sidebar-zone
+!+ NOT_OPTIMIZED
 hatenadiary.org,hatenablog.com,hatenablog.jp,hateblo.jp##.ad
 !+ NOT_OPTIMIZED
 itc.ua##.image-100
@@ -8697,7 +8698,6 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_mobile
 ! https://github.com/AdguardTeam/AdguardFilters/issues/166767
 ! https://github.com/AdguardTeam/AdguardFilters/issues/155542
 ! https://github.com/AdguardTeam/AdguardFilters/issues/154955
-! https://github.com/AdguardTeam/AdguardFilters/issues/153135
 ! https://play.google.com/store/apps/details?id=com.cashwalk.cashwalk
 ||adcenter-api.cashwalk.co^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/149253
