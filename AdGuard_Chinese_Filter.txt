@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: eC7lm1pHXittwMDv5KJe/A
-! Diff-Path: ../patches/224/224-s-1783609780-3600.patch
+! Checksum: v+Sa2CCnb6+ApRnZkjpWNQ
+! Diff-Path: ../patches/224/224-s-1783644552-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.61.55
-! TimeUpdated: 2026-07-09T15:06:47+00:00
+! Version: 2.1.61.58
+! TimeUpdated: 2026-07-10T00:46:38+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1131,6 +1131,7 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+stock-calculator.net##.grid > div > div.overflow-hidden:has(> div.inset-0 > ins.adsbygoogle)
 ||testingcf.jsdelivr.net/gh/softwaredefinevehicle/static/lozad.min.js
 .gif|$image,3p,domain=91porny.com
 91porny.com##div[data-nosnippet]:has(div.row a[href][rel^="noopener"])
@@ -3662,7 +3663,6 @@ bmvc2020-conference.com#@#div[id][style="width: 100%;"] > iframe[scrolling="no"]
 :866/o.js$script,3p
 /phoenix-share/js/code.123.bg.
 .com/co/$domain=1anime.me
-/CC6F9ACB52D1582671AFEA808AFE10FE.gif
 .top/herebyad
 ||subhd.*/kaiyad.
 /js/clickadu.js
@@ -5355,7 +5355,6 @@ newduba.cn###jq_youxi
 ###index_banner[src*=".imgdd.com"]
 ###ad-float.kyty
 ##.banner-adv-new
-##p > a[href^="/AllRes/Vlog"]
 ##.m0auto > div:not([class]):not([id]) > div > .swiper-initialized
 ##.grid > .m0auto > div > .grid + div:not([class]):not([id])
 ##body[ontouchstart] > .wrap > div[id^="content_"][style="display: block;"]
@@ -5413,6 +5412,11 @@ newduba.cn###jq_youxi
 .z.dkt-ib.com
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$3p
+||drawknife37.top^
+||xjh4uvv1ew.com^
+||zdjcxtteffxrri.com^
+||5ho41ueq7w.com^
+||2u2wyftqmr.com^
 ||scraper29.top^
 ||fqwv7k7ex.com^
 ||wbraekvint.com^
@@ -15012,7 +15016,6 @@ meijutt.*/js/pcjs/
 ||gliacloud.com^$domain=thisiscm.com|twword.com
 ||cilipa.com^*0.js
 ||ttks.tw/js/otherad.
-||*.mp4$redirect=noop-0.1s.mp3,domain=huavod.com|huaren.live,media
 ||pan0304.com/ads.
 ||mwka.cc/static/gg.
 ||okokserver.com/uploads/lesi/
@@ -15026,6 +15029,7 @@ meijutt.*/js/pcjs/
 ||r3sub.com/nb/
 ||xwcm.net/caches/ahm.
 ||ab3de9.gamersky.com^
+169bbs.com##.a_f
 huaren.live##.pause-love
 huavod.com###player-vip
 yahoo.com##.pointer-events-auto.h-\[91px\]
