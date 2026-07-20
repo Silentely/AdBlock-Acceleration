@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: 4N1pu+RY+jR8tJc8omQhwg
-! Diff-Path: ../patches/11/11-s-1784524869-3600.patch
+! Checksum: RotgkMAuSFlqKOJYvzyN9Q
+! Diff-Path: ../patches/11/11-s-1784545689-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.70.91
-! TimeUpdated: 2026-07-20T05:17:59+00:00
+! Version: 2.0.70.93
+! TimeUpdated: 2026-07-20T11:04:48+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2462,6 +2462,10 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+context.reverso.net##.more-examples-message
+context.reverso.net##.rca-no-ads-mobile
+xmegadrive.com##iframe[src^="https://n2.clips4sale.com/a/"]
+elchorrillero.com##.card2:has(> .cardBody2 > a[href^="https://static.elchorrillero.com/clk/"] img)
 matomeantena.com##li.list-group-item:has(a[href^="https://adhub.porcino-kinoko.workers.dev/"])
 ntv.co.jp###ntv_setAD_SP_300_250
 onejailbreak.com##div.post > div.mt-3:has(> ins.adsbygoogle)
@@ -8554,7 +8558,7 @@ livejournal.com##div[id^="billboard_mobile_"]
 !+ NOT_OPTIMIZED
 stackoverflow.com##.js-sidebar-zone
 !+ NOT_OPTIMIZED
-hatenadiary.org,hatenablog.com,hatenablog.jp,hateblo.jp##.ad
+hatenadiary.jp,hatenadiary.org,hatenablog.com,hatenablog.jp,hateblo.jp##.ad:remove()
 !+ NOT_OPTIMIZED
 itc.ua##.image-100
 !+ NOT_OPTIMIZED
