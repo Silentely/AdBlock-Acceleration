@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: iXJwc252LjUgiJVQM+IvXg
-! Diff-Path: ../patches/11/11-s-1784637628-3600.patch
+! Checksum: dg2sc5ToCDpo48ty5UAY+w
+! Diff-Path: ../patches/11/11-s-1784648418-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.70.98
-! TimeUpdated: 2026-07-21T12:37:17+00:00
+! Version: 2.0.71.0
+! TimeUpdated: 2026-07-21T15:37:11+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2058,6 +2058,9 @@ deviantart.com##div[class*="dp-ad-"]:style(height: 0!important; width: 0!importa
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/236078
+ismedia.jp#@#.ad-billboard
+ismedia.jp##.ad-billboard:style(margin-top: -40px !important;)
 ! https://github.com/uBlockOrigin/uAssets/issues/33466
 sp.seiga.nicovideo.jp##.owner_thumbnail:style(top: 20px !important;)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/233208
@@ -2462,6 +2465,10 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+pinterest.*###homefeed > div > div[data-test-id="max-width-container"] > div > div[role="list"] > div[role="listitem"]:has(> div[data-grid-item-idx] > div[data-pin-id] div[data-test-id="related-pins-name"])
+zoznam.sk##.adv
+ismedia.jp###taboola-below-article-thumbanails-high
+ismedia.jp##.m-sponsord
 kayak.com##div[class$="-mod-map-toggler"] > div[class$="-inner"] > div:not([class*="-container"]):has(div[class$="-ad-marking"])
 der-postillon.com##.iqd-dynamic-slot
 context.reverso.net##.more-examples-message
