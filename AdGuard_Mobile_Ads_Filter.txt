@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: AKCqMnVxKLmsjIo4z5uvCw
-! Diff-Path: ../patches/11/11-s-1785086890-3600.patch
+! Checksum: HeyX79MFPmQwXnXf5uw5/w
+! Diff-Path: ../patches/11/11-s-1785150658-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.71.5
-! TimeUpdated: 2026-07-26T17:25:35+00:00
+! Version: 2.0.71.7
+! TimeUpdated: 2026-07-27T11:07:26+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2468,6 +2468,9 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+automaton-media.com##.cd-bk
+zoomit.ir##.w-full[class*="hidden"][class*="empty"]
+zoomit.ir##div[class^="AdvertisingStickyMobile"]
 dic.pixiv.net##div[class="h-\[50px\]"]
 dic.pixiv.net##div.h-\[250px\]:has(> div[style^="display: block;"] > iframe[data-uid])
 pinterest.*###homefeed > div > div[data-test-id="max-width-container"] > div > div[role="list"] > div[role="listitem"]:has(> div[data-grid-item-idx] > div[data-pin-id] div[data-test-id="related-pins-name"])
