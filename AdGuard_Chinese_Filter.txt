@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: OXF/iGXHzOUIAOCizl02vw
-! Diff-Path: ../patches/224/224-s-1785222130-3600.patch
+! Checksum: L8ilqNiR+vN8ZiR7h2szaw
+! Diff-Path: ../patches/224/224-s-1785229459-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.62.70
-! TimeUpdated: 2026-07-28T06:59:21+00:00
+! Version: 2.1.62.72
+! TimeUpdated: 2026-07-28T09:01:27+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -20,6 +20,8 @@
 ! Bad: /banner.jpg (should be in general_url.txt)
 ! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
 !
+||3iulae112b.com^
+||n6pwo7whs2.com^
 ||qbhsocu.com^
 ||umini.shujupie.com^
 ||rgzz3rs.icu^
@@ -1131,6 +1133,9 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+.gif|$image,3p,domain=25img.com
+*$script,xhr,3p,domain=25img.com
+||25img.com/nnn2/189guding.js
 housefeel.com.tw##body:style(overflow: auto !important;)
 housefeel.com.tw##.retentionModal:style(display: none !important;)
 housefeel.com.tw##a.cursor-pointer:has(img[src^="https://console.images.stockfeelgroup.com/ads/"])
@@ -5432,6 +5437,9 @@ newduba.cn###jq_youxi
 ||dszvvdcmzxztte.com^
 ||rgdnlzsth.icu^
 ||h9w02sx7t9.com^
+||tfjhjrqmu.icu^
+||zp8roiukic.com^
+||3iulae112b.com^
 ||bushhammer01.top^
 ||5b2de2d8g.com^
 ||4rzph5ytr.com^
@@ -22630,6 +22638,8 @@ fcenxe*.top/$script,xhr,3p
 ||2kans.*/biquge_m/js/tools.js
 ||xqishen.com^*/1
 ||xqishen.com^*/0
+||qishen123.com^*/1
+||qishen123.com^*/0
 ||wodeshucheng5.com^*/1
 ||wodeshucheng5.com^*/0
 ||niepo.net/api/arrayid/analytics.
