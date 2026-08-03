@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: hfdqn0JY9pfcm+hfCD5hZQ
-! Diff-Path: ../patches/11/11-s-1785762680-3600.patch
+! Checksum: n2JqDi3NBupBqlrY4nU30Q
+! Diff-Path: ../patches/11/11-s-1785769708-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.71.23
-! TimeUpdated: 2026-08-03T13:08:46+00:00
+! Version: 2.0.71.24
+! TimeUpdated: 2026-08-03T15:05:21+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2468,6 +2468,8 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+zaikai.jp##div.ad_inner_post
+reddit-matome.com##.rss-iframe
 kinmaweb.jp###sp_top_pickup
 idnes.cz##.ank0a1it0n
 idnes.cz###r-toucharticlenative
@@ -6508,7 +6510,7 @@ ameblo.jp##.skinOpacity.skin-mod-bg-color > article > div[class^="_"] > header +
 ameblo.jp##.PhotoSwipeBlock > div:last-of-type > p:empty + div.pickCreative_root[style="font-size:0"]
 ameblo.jp##body .skinBody2 > div[style="overflow: hidden;"] > main + aside[class^="_"]
 ameblo.jp##.PhotoSwipeBlock > div.pickCreative_root
-ameblo.jp##._popIn_recommend_footer
+zaikai.jp,ameblo.jp##._popIn_recommend_footer
 ameblo.jp##.PhotoSwipeBlock > div[style*="max-height: 280px;"]
 ameblo.jp##div[data-slot="injected"][style^="min-height: 430px"]
 ameblo.jp##div[class^="_"] > aside[class^="_"] section > div[class^="_"] > a[href^="https://dokusho-ojikan.jp/ameba_manga_login"]:only-child
