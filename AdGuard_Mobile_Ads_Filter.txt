@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: RorY33261SpmD+h1q4hADg
-! Diff-Path: ../patches/11/11-s-1785916910-3600.patch
+! Checksum: kIlyKZtZYL6E5ylv5UCUxg
+! Diff-Path: ../patches/11/11-s-1786098306-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.71.28
-! TimeUpdated: 2026-08-05T07:58:50+00:00
+! Version: 2.0.71.30
+! TimeUpdated: 2026-08-07T10:21:58+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1264,6 +1264,7 @@ turbopages.org##.page__result > div[class*="type_native"]
 ##.b-mobile-spots
 ###ad_inview_area
 ! Tegna Inc.
+##body > div.page[data-ux-tracking-url^="https://abtesting.tegnadigital.com/"] > .page__top > .universal-ad
 ##body > div.page[data-kochava-app-guid^="kotegna-web-prod-"] > .page__top > .universal-ad
 ! Sinclair, Inc
 ##div[class^="MidArticleAdUnit_mobile_"]
@@ -2468,6 +2469,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+aftership.com##div[class^="ptp-ad"]
 suckinghat.com##.spot-block:has([data-zoneid])
 blog.livedoor.jp##header.section-box > #ad
 ||farsroid.com/wp-content/uploads/farsroid-ads-
@@ -2502,7 +2504,7 @@ dic.pixiv.net##div[class="h-\[50px\]"]
 dic.pixiv.net##div.h-\[250px\]:has(> div[style^="display: block;"] > iframe[data-uid])
 pinterest.*###homefeed > div > div[data-test-id="max-width-container"] > div > div[role="list"] > div[role="listitem"]:has(> div[data-grid-item-idx] > div[data-pin-id] div[data-test-id="related-pins-name"])
 zoznam.sk##.adv
-ismedia.jp###taboola-below-article-thumbanails-high
+ismedia.jp###taboola-below-article-thumbnails-high
 ismedia.jp##.m-sponsord
 kayak.com##div[class$="-mod-map-toggler"] > div[class$="-inner"] > div:not([class*="-container"]):has(div[class$="-ad-marking"])
 der-postillon.com##.iqd-dynamic-slot
