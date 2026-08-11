@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: u9zG8gTkmm26pxdFuIeyUA
-! Diff-Path: ../patches/11/11-s-1786375730-3600.patch
+! Checksum: 1JVA/jtszVZCf6umYB7OMA
+! Diff-Path: ../patches/11/11-s-1786440424-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.71.32
-! TimeUpdated: 2026-08-10T15:25:49+00:00
+! Version: 2.0.71.34
+! TimeUpdated: 2026-08-11T09:23:51+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2469,6 +2469,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+yuga.ru##.mobile_fox
 ura.news##div[class^="publication-top-advertisement_publication-top-advertisement__"]
 aftership.com##div[class^="ptp-ad"]
 suckinghat.com##.spot-block:has([data-zoneid])
@@ -3052,6 +3053,8 @@ financial-field.com###glia-custom-container
 financial-field.com##.ats-placeholder
 financial-field.com##.fluct-overlay
 thehealthsite.com##.footerNav-add
+ekonomist.com.tr##.container > div[style*="min-height:"]:has(> .nts-ad)
+ekonomist.com.tr##div[style*="height:"][style*="margin-bottom:"]:has(> .nts-ad)
 ekonomist.com.tr##div.display-mobile:has(> div.empower-ad)
 leslez.com##.opt
 talk.jp##.comments > div[class^="display_container"]:not(.comment)
