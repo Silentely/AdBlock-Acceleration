@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: 7leKxOrgjssY6OFJ0RuHwA
-! Diff-Path: ../patches/224/224-s-1786407999-3600.patch
+! Checksum: BDYGw6WUkW4GNhGpXosOhA
+! Diff-Path: ../patches/224/224-s-1786426267-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.63.17
-! TimeUpdated: 2026-08-11T00:24:04+00:00
+! Version: 2.1.63.20
+! TimeUpdated: 2026-08-11T05:28:27+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1195,8 +1195,13 @@ haokan.baidu.com##div[class^="video_land_pageBottomGuesslike__"] ul[class^="Gues
 haokan.baidu.com##div[class^="guessLike_guess-like-index__"] ul[class^="guessLike_guess-list__"] > li[class^="guessLike_guess-item__"]:not([vid]):has(> div[class^="guessLike_guess-item-link__q"]:only-child)
 techorange.com##div.elementor-widget > div.elementor-widget-container:has(> a[href*="utm_campaign"] > img)
 techorange.com##a[href^="https://supr.link/"]
+||sdk.tvbs.com.tw/ad/v*/ad-sdk.min.js
 supertaste.tvbs.com.tw##.min-h-\[15\.625rem\]
-supertaste.tvbs.com.tw##div[class]:has(> div[id^="supertaste_"])
+supertaste.tvbs.com.tw##.min-h-\[250px\]
+supertaste.tvbs.com.tw###article-content > div[class^="py-"]:has(> div[id^="supertaste_"])
+supertaste.tvbs.com.tw##aside > div[id^="supertaste_"]
+supertaste.tvbs.com.tw##aside > section:has(> div[id^="taboola-"])
+supertaste.tvbs.com.tw##footer > section:has(> div[id^="taboola-"])
 ||pic.deueza.cn/*.gif$domain=mqoeomads.cc
 mqoeomads.cc##div.dx-banner-item
 mqoeomads.cc##.dx-recommend-icons
@@ -5441,6 +5446,10 @@ newduba.cn###jq_youxi
 ||cupfox.app^$3p
 ||95ktftpt6.com^
 ||dhrbpvqqoovnxm.com^
+||ped146qez.com^
+||54igqsjd9.com^
+||rn30y7u7h.com^
+||in5nx9xbd.com^
 ||7996epzfh.com^
 ||itm1yqknq.com^
 ||qnw0cru1i5.com^
@@ -22327,7 +22336,7 @@ bing.com##.b_algo:has(.b_ads1line)
 bing.com##li[class="b_algo"]:has(.b_attribution[data-partnertag]+p[class])
 bing.com##.sb_form_placeholder:has(>.ad-ghost-slug)
 bing.com###b_results > li:has(.b_adProvider)
-bing.com,~www.bing.com##.b_algo:has(p[style="display: none !important;"])
+bing.com##.b_algo:has(.sb_adTA_title_link_cn)
 !#Bingfeng.tw
 bingfeng.tw###adbt
 bingfeng.tw##.wow-ad-link
