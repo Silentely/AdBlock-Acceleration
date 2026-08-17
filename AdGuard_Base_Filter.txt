@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: lwZb3WwK8XWxITk6oXfeGw
-! Diff-Path: ../patches/2/2-s-1786965183-3600.patch
+! Checksum: sDRfr6IBMqQ4Bu9bv+5YrQ
+! Diff-Path: ../patches/2/2-s-1786972937-3600.patch
 ! Title: AdGuard Base filter + EasyList
 ! Description: EasyList + AdGuard English filter. This filter is necessary for quality ad blocking.
-! Version: 2.4.84.37
-! TimeUpdated: 2026-08-17T11:09:14+00:00
+! Version: 2.4.84.39
+! TimeUpdated: 2026-08-17T13:19:30+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -10912,6 +10912,8 @@ youporn.com##+js(remove-node-text, script, /window\.[\s\S]*?_zone_[\s\S]*?{"zone
 !
 ! NOTE: Regular rules
 !
+! https://github.com/easylist/easylist/issues/24919
+modelviewer.lol##+js(addEventListener-defuser, DOMContentLoaded, ad-alternatives)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/238338
 @@||tempmail.ninja^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/238330
@@ -37751,6 +37753,9 @@ $subdocument,3p,denyallow=disqus.com,domain=love4u.net
 !
 ! NOTE: Specific rules
 !
+theroot.com##div[class*="-banner-container"]
+theroot.com##div[id^="therootads-"]
+theroot.com##.top_ad_slideshow_desktop
 primewire.*,primewire.pw##+js(remove-attr, href, div.embed-player > a[href][target*="blank"])
 wallscloud.net##.grid-row > figure:has(> div.item > div.wc-ad)
 wallscloud.net###res-com-block > div.visible-lg-block:has(> center > ins)
@@ -58927,6 +58932,7 @@ thestar.com,thespec.com,therecord.com,thepeterboroughexaminer.com,stcatharinesst
 thestar.com,thespec.com,therecord.com,thepeterboroughexaminer.com,stcatharinesstandard.ca,niagarafallsreview.ca,wellandtribune.ca,bramptonguardian.com,caledonenterprise.com,cambridgetimes.ca,durhamregion.com,flamboroughreview.com,guelphmercury.com,hamiltonnews.com,insidehalton.com,insideottawavalley.com,mississauga.com,muskokaregion.com,mykawartha.com,newhamburgindependent.ca,niagarathisweek.com,northbaynipissing.com,northumberlandnews.com,orangeville.com,ourwindsor.ca,parrysound.com,sachem.ca,simcoe.com,theifp.ca,toronto.com,waterloochronicle.ca,yorkregion.com,legacy.com,edition.pagesuite-professional.co.uk,hub.metroland.com##.adLabelWrapper
 !
 ! Australian Community Media
+armidaleexpress.com.au,bendigoadvertiser.com.au,canberratimes.com.au,centralwesterndaily.com.au,crookwellgazette.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,portnews.com.au,thecourier.com.au,thesenior.com.au##.sticky.bottom-0
 armidaleexpress.com.au,bendigoadvertiser.com.au,canberratimes.com.au,centralwesterndaily.com.au,crookwellgazette.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,portnews.com.au,thecourier.com.au,thesenior.com.au##.lg\:min-w-mrec.lg\:sticky
 armidaleexpress.com.au,bendigoadvertiser.com.au,canberratimes.com.au,centralwesterndaily.com.au,crookwellgazette.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,portnews.com.au,thecourier.com.au,thesenior.com.au###billboard-container
 armidaleexpress.com.au,bendigoadvertiser.com.au,canberratimes.com.au,centralwesterndaily.com.au,crookwellgazette.com.au,dailyadvertiser.com.au,dailyliberal.com.au,examiner.com.au,illawarramercury.com.au,newcastleherald.com.au,portnews.com.au,thecourier.com.au,thesenior.com.au##div[id^="newswell-"][id$="-container"]
@@ -82548,6 +82554,7 @@ browsershots.org#@#.advert_area
 ||287o8ff2pyl3ht.cfd^
 ||288ze6cfvyocywwm5zhb48pnjgx9j41x.cfd^
 ||28a0578796.com^
+||28breh9l7zjuqeeiyp8.rest^
 ||28cb84740b.com^
 ||28f810077f.com^
 ||290d8227a2.com^
@@ -85505,6 +85512,7 @@ browsershots.org#@#.advert_area
 ||aribo.xyz^
 ||arid-smell.pro^
 ||aridianlousingunpured.qpon^
+||arijhpvidfqkk.online^
 ||arikiculls.cyou^
 ||arimaspdeek.com^
 ||ariotgribble.com^
@@ -87149,6 +87157,7 @@ browsershots.org#@#.advert_area
 ||bkllgmvwovnxo.online^
 ||bkmmafrixfake.website^
 ||bknegcvfkxvsm.space^
+||bkobvbznffrqy.website^
 ||bkpmmpsqgluwj.online^
 ||bkprozoneludwig.cyou^
 ||bkqodnnsomnon.website^
@@ -89184,6 +89193,7 @@ browsershots.org#@#.advert_area
 ||ciyxejfqrtvqq.site^
 ||cizljqtencvma.website^
 ||cj2550.com^
+||cj6rg2tyiqlte4hpxp1.cfd^
 ||cjatrtlyqngiv.site^
 ||cjdisuisubvkq.website^
 ||cjenrzakbgvkk.site^
@@ -90595,6 +90605,7 @@ browsershots.org#@#.advert_area
 ||cvngacuwqodke.site^
 ||cvpdkmzxvnzng.online^
 ||cvqfwzrnkvtun.website^
+||cvqrhdgxvxk.com^
 ||cvsvdjrrfv.com^
 ||cvuestnhwbnix.site^
 ||cvwgltvuviniv.space^
@@ -91455,6 +91466,7 @@ browsershots.org#@#.advert_area
 ||dghrvnqutzcim.site^
 ||dgmmntcknzljy.space^
 ||dgodzdhqdzowy.online^
+||dgoynwlmoxgsx.space^
 ||dgsgecwesbkh.com^
 ||dgtsowpvnhodi.site^
 ||dgvhzcxksncni.website^
@@ -94102,6 +94114,7 @@ browsershots.org#@#.advert_area
 ||etymaorpheuscotise.cyou^
 ||etymonsibycter.com^
 ||etzfcwsafuw.com^
+||etzuqprynhyfx.site^
 ||eu52jz9y1o2mju4rizc.cfd^
 ||eu8759jwcy6q6nw.rest^
 ||euchresgnarly.qpon^
@@ -96112,6 +96125,7 @@ browsershots.org#@#.advert_area
 ||fzioggf.com^
 ||fzlpixsrxtixp.site^
 ||fzltkaptycrlv.website^
+||fzoggyqmjxyhg.space^
 ||fzomznhnpgxee.website^
 ||fzsibfirjxbto.website^
 ||fzvqmzsidkjgx.space^
@@ -97084,6 +97098,7 @@ browsershots.org#@#.advert_area
 ||gpkaqgiumdkcr.website^
 ||gpkbyhhxhpzod.space^
 ||gpkrolnkolc.com^
+||gplglitiflfgv.space^
 ||gpmodmpdrwbrx.space^
 ||gpndmekruvrzt.site^
 ||gpnsmlkgttmjd.site^
@@ -98194,6 +98209,7 @@ browsershots.org#@#.advert_area
 ||hibawsvdvfsul.site^
 ||hibegyqmbinwo.site^
 ||hibids10.com^
+||hibofgpudxxdv.com^
 ||hiboowbrkegop.site^
 ||hibuncishawy.shop^
 ||hicnwrwfphkyz.website^
@@ -98451,6 +98467,7 @@ browsershots.org#@#.advert_area
 ||hockeyhavoc.com^
 ||hockeysfooldom.cyou^
 ||hoctor-pharity.xyz^
+||hocusedasaphiccourter.cyou^
 ||hocusesfifer.qpon^
 ||hoddenaccinge.cyou^
 ||hoddernong.shop^
@@ -101999,6 +102016,7 @@ browsershots.org#@#.advert_area
 ||koiaripolymny.com^
 ||koifpdfagsxjk.website^
 ||koilonupas.cfd^
+||koilonuppers.cfd^
 ||koio36.com^
 ||koitay.cyou^
 ||kokamaharden.shop^
@@ -107796,6 +107814,7 @@ browsershots.org#@#.advert_area
 ||ordosswirrer.cyou^
 ||oredwearerangust.qpon^
 ||orest-vlv.com^
+||oresyipqzckyl.site^
 ||orexincrake.cyou^
 ||orfa1st5.de^
 ||orgamyfeminiehatchet.cyou^
@@ -112719,6 +112738,7 @@ browsershots.org#@#.advert_area
 ||roadwaspfang.com^
 ||roagrofoogrobo.com^
 ||roamedtiffie.com^
+||roanokebkcypasso.cfd^
 ||roasted-job.pro^
 ||roasted-standard.pro^
 ||roasteddefraud.shop^
@@ -119294,6 +119314,7 @@ browsershots.org#@#.advert_area
 ||uswgjyclbvtjj.space^
 ||uswvvrisswcbd.site^
 ||usybvizjdfyur.website^
+||usyuqcezbvhqr.online^
 ||usztvnmmlukau.website^
 ||uszxsqvpukbwz.website^
 ||utagyernjwdnw.website^
@@ -120095,6 +120116,7 @@ browsershots.org#@#.advert_area
 ||vjwnqxbxvvcng.space^
 ||vjyljycvfcfrj.online^
 ||vjzlvloavqarr.space^
+||vkaabtxifs.in^
 ||vkaszkwyibcwl.site^
 ||vkatqrbcrdyta.site^
 ||vkdenxezhjhgg.site^
@@ -124208,6 +124230,7 @@ browsershots.org#@#.advert_area
 ||zuzonmzap.com^
 ||zuzrwanpi.in^
 ||zvcmkhcsycilj.website^
+||zvcrucqetjbbo.space^
 ||zvdvxrykeaetq.website^
 ||zvekujanpxsfq.website^
 ||zvetokr2hr8pcng09.com^
@@ -137248,6 +137271,7 @@ hwcooling.net##.heureka-affiliate-category
 filecrypt.cc,filecrypt.co##.hghspd
 filecrypt.cc,filecrypt.co##.hghspd + *
 daijiworld.com##.hidden-xs > [href]
+modelviewer.lol##.hidden.mb-3.md\:block
 miragenews.com##.hide-in-mob
 moneycontrol.com,windowsreport.com##.hide-mobile
 gadgethacks.com##.hide-on-empty
@@ -139032,6 +139056,7 @@ thechinaproject.com##.sticky-spacer
 oilcity.news##.sticky-sponsors-large
 jpost.com##.sticky-top-banner
 litecoin-faucet.com##.sticky-top1
+modelviewer.lol##.sticky.top-5.p-3.min-h-0.mr-4
 economictimes.indiatimes.com##.stickyAd
 theblock.co##.stickyFooter
 everythingrf.com##.stickyRHSAds
