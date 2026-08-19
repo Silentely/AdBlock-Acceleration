@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: DsV8IXoLDJl9dlDbKttb4Q
-! Diff-Path: ../patches/224/224-s-1787066117-3600.patch
+! Checksum: 4vUUIVSN+VRtooTTUb3cHw
+! Diff-Path: ../patches/224/224-s-1787113243-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.63.73
-! TimeUpdated: 2026-08-18T15:12:07+00:00
+! Version: 2.1.63.75
+! TimeUpdated: 2026-08-19T04:17:31+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1138,6 +1138,11 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+||testingcf.jsdelivr.net/gh/softwaredefinevehicle/*/wp-slimstat.js
+91porny.com##body.modal-open:style(overflow: auto !important;)
+91porny.com##.modal-backdrop:style(display: none !important;)
+91porny.com###warningModal:style(display: none !important;)
+91porny.com###video-play + div[data-nosnippet]
 techbang.com##.content-top
 techbang.com##.ads-reserve
 ||manhuaren.com/wx20190904.js
@@ -5449,6 +5454,9 @@ newduba.cn###jq_youxi
 .z.dkt-ib.com
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$3p
+||rkdyj4usf.com^
+||b11yn56zn.com^
+||stepladder46.top^
 ||epalepnn55.com^
 ||5wkni37mso.com^
 ||ehh91kb6ic.com^
@@ -15051,6 +15059,7 @@ meijutt.*/js/pcjs/
 ||teacher.php.cn/php/
 ||right.com.cn/forum/data/attachment/common/template/boardimg_20260602yahb3wsd.
 169bbs.com##.a_f
+techbang.com##.ads-reserve
 json.cn##.show-hide-adv
 heimamo.top###right-panel
 huaren.live##.pause-love
