@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: MyHKJ4oZ4LBM9ejFl6jzmg
-! Diff-Path: ../patches/11/11-s-1787732480-3600.patch
+! Checksum: C2WbnP356MLvluW6IMpKwQ
+! Diff-Path: ../patches/11/11-s-1787842173-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.71.52
-! TimeUpdated: 2026-08-26T08:18:30+00:00
+! Version: 2.0.71.54
+! TimeUpdated: 2026-08-27T14:45:43+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2468,6 +2468,9 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+deview.co.jp##.sp-break-ad-text
+deview.co.jp##.overlay_container
+automaton-media.com###main ~ div[data-block] .gspb_button_wrapper > a[href="#popup"]
 weathernews.jp###yahoo_ad
 worldfn.net##.blogroll_ads
 kursiv.media##.section-header.widgets-title-mobile
@@ -3395,7 +3398,7 @@ nuipogoda.ru##div[id][style^="left:"][style*="height:"]:style(height: auto !impo
 porndroids.com##.links-out__disclaimer
 porndroids.com##.wrapper > aside[class]:has(> header.aan__header)
 ap7am.com##.first-ad-adp
-hentailib.net##center > div[style^="width:300px;height:"]
+yaoilib.net,hentailib.*,ranobelib.me,mangalib.*,anilib.me##header + div[style] > div > div:has(script[data-ts-spot])
 vnexpress.net##section[class*="section_ads"]
 5wip-file.ru##a[target="_blank"][class="blue_btn"]
 babesource.tv##.block-player:style(padding-top: 0 !important;)
