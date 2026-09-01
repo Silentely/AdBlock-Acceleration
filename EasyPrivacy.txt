@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202609010249
+! Version: 202609011040
 ! Title: EasyPrivacy
-! Last modified: 01 Sep 2026 02:49 UTC
+! Last modified: 01 Sep 2026 10:40 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 7d972a85180ee4a8285798f8398642a9546d3293
+! Commit: 94a7d8a601fd4c58e2cc8588cc237a1f3b9d8ed0
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -9300,7 +9300,7 @@ omni.soundestlink.com$image
 ||perr.l-agent.me^
 ||perr.l-err.biz^
 ! Block ping
-$ping,third-party
+*$ping,third-party
 ! https://www.opensubtitles.org/
 $third-party,xmlhttprequest,domain=opensubtitles.org
 ! Oracle
@@ -13738,6 +13738,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ablida.net^$third-party
 ||adc-srv.net/retargeting.php
 ||adm24.de/hp_counter/$third-party
+||adnz.co/semantiq/semantiq.js
 ||advantage.digitalsunray.com^
 ||aftonbladet.se/trafikfonden/
 ||agitos.de/content/track?
@@ -15194,6 +15195,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||apigw.scmp.com/metrics/monitoring
 ||apigw.scmp.com/pwa-v2-unleash-proxy/proxy/client/metrics
 ||aplus.aliexpress.$image,ping,~third-party
+||aplus.aliexpress.com^$ping
 ||aplus.qwen.ai/aplus.monitor.load_cna_success?
 ||aplus.qwen.ai/aplus.monitor.log_arrival_rate
 ||apm.qwant.com^
@@ -17230,6 +17232,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||xero.com/api/events/
 ||xfinity.com/event/
 ||xhamster.com/api/$ping
+||xhamster.com/api/v1/player/metrics
 ||xhamsterlive.com/pixel/
 ||xhcdn.com/js/*.track.min.js
 ||xing.com/logjam/
@@ -53722,6 +53725,7 @@ aliexpress.com,aliexpress.ru,aliexpress.us##+js(set, navigator.bluetooth, undefi
 ||cltr.willhaben.at^
 ||cmp2.channelpartner.de^
 ||cnt.wetteronline.de^
+||collector.orf.at^
 ||comparis.ch/comparis/Tracking/
 ||computerbase.de/analytics
 ||computerbase.de/api2/$ping,xmlhttprequest
@@ -53784,6 +53788,9 @@ aliexpress.com,aliexpress.ru,aliexpress.us##+js(set, navigator.bluetooth, undefi
 ||k-aktuell.de/monitoring?
 ||kaufland.de/uts/events/
 ||leipziger-stadtplan.com/t.gif
+||ligainsider.de/*.gif?d=
+||ligainsider.de/adblock-event/
+||ligainsider.de/li-check
 ||llntrack.messe-duesseldorf.de^
 ||lokalwerben.t-online.de^
 ||lynx.gruender.de^
