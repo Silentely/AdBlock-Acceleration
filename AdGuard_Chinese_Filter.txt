@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: Eq0H0tZMCWBeF06gPy8biw
-! Diff-Path: ../patches/224/224-s-1788312439-3600.patch
+! Checksum: Ii8UtQablLvzQ9zTtXJ+EQ
+! Diff-Path: ../patches/224/224-s-1788340849-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.64.56
-! TimeUpdated: 2026-09-02T01:25:03+00:00
+! Version: 2.1.64.59
+! TimeUpdated: 2026-09-02T09:17:35+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -773,7 +773,8 @@ popbee.com##.adblocker
 ! 17kp.vip
 icu##.banner-layout-box
 ! 91porny
-! https://github.com/AdguardTeam/AdguardFilters/issues/190664
+##html[lang="zh-cn"] > body  > header.Mobile-Header + main > div[id][class]
+##.videoPlayContainer > div#video-play + div[data-nosnippet]
 ##.row > div.colVideoList:has(> div.video-elem > a[target="_blank"])
 !---------------------------------------------------------------------------!
 !-------------- General javascript, CSS and HTML extensions ----------------!
@@ -1154,7 +1155,6 @@ flyert.com.cn##div[style^="width:300px;height:90px;"]
 91porny.com##body.modal-open:style(overflow: auto !important;)
 91porny.com##.modal-backdrop:style(display: none !important;)
 91porny.com###warningModal:style(display: none !important;)
-91porny.com###video-play + div[data-nosnippet]
 techbang.com##.content-top
 ||manhuaren.com/wx20190904.js
 digvps.com##aside[data-slot="right"][aria-label] > div > a[target="_blank"]
@@ -5448,7 +5448,7 @@ newduba.cn###jq_youxi
 ##.newsAD
 ##.art-layer-ad
 ##._v_ad_container
-###__nuxt > div > .footer
+###__nuxt > div > .footer > .floatWindow + div:not([class]):not([id])
 ##.kkb-href
 ##.kkm-href
 ##a[href*="/122.51.121.126:"]
@@ -5475,6 +5475,8 @@ newduba.cn###jq_youxi
 ||dynamo57.com^
 ||locknut29.com^
 ||ez2q38b1ik.com^
+||qwt9oyg741.com^
+||11fkkw8h3i.com^
 ||or6p0f4i8.com^
 ||btm9uso7t.com^
 ||saddlebag32.com^
@@ -14938,6 +14940,8 @@ meijutt.*/js/pcjs/
 ||teacher.php.cn/php/
 ||right.com.cn/forum/data/attachment/common/template/boardimg_20260602yahb3wsd.
 169bbs.com##.a_f
+kanju.ai##.movie-player-info-ad-grid
+kanju.ai##.movie-player-info-ad-heading
 fuliba2023.net,fuliba2025.net,fuliba.net##.article-topbanner
 techbang.com##.ads-reserve
 json.cn##.show-hide-adv
