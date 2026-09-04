@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: R8CpObnOImmNhB4gVObnXw
-! Diff-Path: ../patches/224/224-s-1788485090-3600.patch
+! Checksum: Ot/ym8T6E+3JCDOkeJ+GCA
+! Diff-Path: ../patches/224/224-s-1788510224-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.64.68
-! TimeUpdated: 2026-09-04T01:21:56+00:00
+! Version: 2.1.64.71
+! TimeUpdated: 2026-09-04T08:20:40+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -3457,6 +3457,8 @@ adguard.info,adguard.com,adguard.app##.hello_from_adguard_chinese
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/240228
+forums.digitalspy.com#@#body .has-ad
 ! https://github.com/AdguardTeam/AdguardFilters/issues/236844
 @@||2ipcore.com^$domain=2ip.ru
 ! https://github.com/AdguardTeam/AdguardFilters/issues/234663
@@ -5390,8 +5392,6 @@ newduba.cn###jq_youxi
 ###index_banner[src*=".imgdd.com"]
 ###ad-float.kyty
 ##.banner-adv-new
-##.m0auto > div:not([class]):not([id]) > div > .swiper-initialized
-##.grid > .m0auto > div > .grid + div:not([class]):not([id])
 ##a[href^="/archives/"] > .post-card > .blog-background[style*="gif;base64"]
 ###banner_links.banner-container
 ##.a-media.ex-728-90
@@ -5451,6 +5451,8 @@ newduba.cn###jq_youxi
 ||pavxtxikkjrdfy.com^
 ||cq5nsp7kya.com^
 ||hjlra23r7r.com^
+||0x79jjyph7.com^
+||avqb7vrufi.com^
 ||c2vodqlmy.com^
 ||605abezk8.com^
 ||enwwlcrxi.com^
@@ -14269,8 +14271,6 @@ meijutt.*/js/pcjs/
 ||synacast.com^
 ||syseen.com/content/uploadfile/*/hongbao.png
 ||sysin.org/img/promotion-
-||szaction.cc/public/*/plugins/
-||szaction.cc/public/*/assets/js/custom/tt.
 ||szfcol.com/images/wxright240.jpg
 ||szfcol.com/js/siteAd.js
 ||szgpmy.com/js/
@@ -22458,6 +22458,10 @@ hpjav.tv##body > div[style^="position: fixed;"]
 ##style + .topd + .bottomd
 !#k
 !#l
+!#maomiav.com
+##body > noscript + #root > div > div > .grid + div[role] + div + div
+##body > noscript + #root > div > div > .grid + div[role] + div
+##body > noscript + #root > div > div > .grid > .m0auto > div > div:last-child
 !#Mining
 !#Mmvip
 .com/js/ddd.js
