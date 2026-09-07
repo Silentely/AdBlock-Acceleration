@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: rNxPaV2ESZymsr42eWGO7A
-! Diff-Path: ../patches/224/224-s-1788744718-3600.patch
+! Checksum: Mzcu4SztfTrNfKyNPyfP5w
+! Diff-Path: ../patches/224/224-s-1788773020-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.64.87
-! TimeUpdated: 2026-09-07T01:28:57+00:00
+! Version: 2.1.64.90
+! TimeUpdated: 2026-09-07T09:21:20+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5454,6 +5454,9 @@ newduba.cn###jq_youxi
 ||rwjfbjhktsftpe.com^
 ||8lj6g9gz4.com^
 ||d3q5v0ai8.com^
+||743w3z7pv.com^
+||heky0uxng.com^
+||zig1te84n.com^
 ||dm03ef9xf1.com^
 ||ltnkpzlinptlde.com^
 ||y84shrg6ui.com^
@@ -14960,8 +14963,10 @@ meijutt.*/js/pcjs/
 ||teacher.php.cn/php/
 ||right.com.cn/forum/data/attachment/common/template/boardimg_20260602yahb3wsd.
 ||ping0.cc/images/gx/*.gif
+||gd-singapore.com/data/1724/aimg/rloadbnus-ibc26.
 ping0.cc##.xeeles
 ping0.cc###adjright
+xifanacg.com##.head-more-a ~ .swiper-slide
 169bbs.com##.a_f
 kanju.ai##.movie-player-info-ad-grid
 kanju.ai##.movie-player-info-ad-heading
@@ -22798,9 +22803,10 @@ qq.com#@#.side_ad
 ##.txp_ad_center
 !#Rewrite filters
 !#Rouman5.com
+##a[href^="/api/hop/"] > img[src*=".xyz/m/"]
+||rn221.xyz^*.gif
 ||kelv47.xyz^*.gif
 ||towm85.xyz^*.gif
-/_next/static/chunks/00zo5_naxp4vi.
 ##a[href^="/api/jump/"] > img[src*=".xyz/m/"]
 !#Sejie.com
 173.192.147.21,sejie.com,sejie3.us,thesoccerline.com###wp > br
