@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: QG5upNTMLtICeVhNRmHSpg
-! Diff-Path: ../patches/11/11-s-1789399188-3600.patch
+! Checksum: RZ75BpXP/wJs4YMuo//I8w
+! Diff-Path: ../patches/11/11-s-1789453732-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.71.99
-! TimeUpdated: 2026-09-14T15:16:02+00:00
+! Version: 2.0.72.1
+! TimeUpdated: 2026-09-15T06:25:22+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2471,6 +2471,10 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+eclat.hpplus.jp##.l-banner-top
+runnersworld.de##.commercial
+runnersworld.de##div[data-mps_adwrapper]
+mainichikirei.jp##div[style^="text-align:center; margin-top:"]
 finance.yahoo.co.jp##div[class^="styles-module"] > div._MMON_noh1b_1
 tokyoartbeat.com##.adHeightSmall
 sabah.com.tr##.promo
@@ -3005,7 +3009,6 @@ calciomercato.com##div[class^="mobile-sticky_"]
 jauns.lv##div[class*="min-h-[300px]"]
 the-ans.jp##.sp-overlay
 shufoo.net###headerad_banner
-m.gsmarena.com##body:style(margin-top: 0 !important; margin-bottom: 275px !important;)
 m.gsmarena.com##.adv-mid
 m.gsmarena.com##body::after
 m.gsmarena.com##body::before
