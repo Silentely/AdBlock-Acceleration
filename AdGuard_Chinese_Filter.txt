@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: XRKWNPANtVm0iGyeEEwilA
-! Diff-Path: ../patches/224/224-s-1789547063-3600.patch
+! Checksum: Qy/zOcRiY7A/og2KxK/Nsg
+! Diff-Path: ../patches/224/224-s-1789568380-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.65.41
-! TimeUpdated: 2026-09-16T08:21:18+00:00
+! Version: 2.1.65.44
+! TimeUpdated: 2026-09-16T14:16:31+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -762,6 +762,8 @@ popbee.com##.adblocker
 ! Bad: example.org##.adv (should be in specific.txt)
 !
 !
+##.content-ad-stack
+##a[class="home-ad-banner"]
 ##body > div#inplayer[align="center"]
 ##.Zi_ad_a_H
 ##a[href^="https://adm.beimg.com/"]
@@ -1080,6 +1082,8 @@ _click*(com?
 /js/profit.js$~3p
 /db.js?_dc=
 !
+/static/js/pages/dialogAd.js
+/static/js/squarePromo.
 /tt/ttfc.html?sc=$document,popup
 /ts/ttfc.html?sc=$document,popup
 /tj/tongji.js?v=$3p
@@ -1140,6 +1144,7 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+huangguoai.com##.hg-ssp-slot
 programme.tvb.com##.tvb-ads--empty
 mscw-guidebook.com##.plaza-ad-wrap
 adersaytech.com##.adersay-ad
@@ -5417,6 +5422,11 @@ newduba.cn###jq_youxi
 ||5e770lhs7b.com^
 ||hweiopvvxd.icu^
 ||s11henoe9i.com^
+||l0npl51iwv.com^
+||vlrvrntcxjljnu.com^
+||5tf1zp1jgb.com^
+||gnczi.cn^
+||9s3g5vd8or.com^
 ||f3wl3q92p.com^
 ||midship24.com^
 ||mzuwfvo2e.com^
