@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: 7Fi4cCXF7ZRE1Ovd/t0pDA
-! Diff-Path: ../patches/224/224-s-1789608582-3600.patch
+! Checksum: uLTJzOfvIlyTKxoJWGz7VA
+! Diff-Path: ../patches/224/224-s-1789654786-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.65.48
-! TimeUpdated: 2026-09-17T01:26:24+00:00
+! Version: 2.1.65.51
+! TimeUpdated: 2026-09-17T14:17:20+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2033,8 +2033,6 @@ md.hkgolden.com###viewpage > .post:has(> :is(div[id^="div-gpt-"], .hkg-ad))
 ifeng.com##div[class^="index_yaowen_center"] div[class^="index_news_list_"]:has(a[target="_blank"] + img[src^="https://x0.ifengimg.com/feprod/"])
 dcard.tw##div[role="main"] div[class^="atm_26_"]:has(> div[class^="atm_26_"] > div[style="min-height:90px"] > div[id^="div-gpt-ad"])
 jiayongluyou.com##.widget_html_myimg:has(> ins.adsbygoogle)
-sogi.com.tw##.editable > div.text-center:has(> div.d-inline-block > div[id^="div-gpt-ad"])
-sogi.com.tw###main > div.container:has(> div#ad)
 csgoob.com##div[class^="dark:shadow-none"]:has(> div.ant-carousel)
 csgoob.com##div[class^="dark:shadow-none"]:has(> div.ant-ribbon-wrapper)
 csgoob.com##div[class^="dark:shadow"]:has(> a[href^="https://www.k7csgo.com/"][target="_blank"])
@@ -2529,7 +2527,9 @@ sohu.com##a[href*="_Click_Flow_recommend_"]
 coolsaid.com##iframe[src="http://coolsaid.com/gmifr_lei.html"]
 ||suibianlu.com/zb_users/ad/
 zhidao.baidu.com###qb-content div.businessvip-wrapper
-sogi.com.tw##div[class="row my-2 ad-slot-970"]
+sogi.com.tw##.ad-slot-970
+sogi.com.tw###main > div.container:has(> div#ad)
+sogi.com.tw##.editable > div.text-center:has(> div.d-inline-block > div[id^="div-gpt-ad"])
 surirt.com,520cc.cc,v.5278.mobi,jizz99.com,bonbonyou.com,in99.org,av99.us,jav777.xyz,520call.me,hboav.com###inplayer
 finance.sina.com.cn##div[data-sudaclick="right_ads2_p"]
 finance.sina.com.cn##.tg_bank_top
@@ -5417,6 +5417,11 @@ newduba.cn###jq_youxi
 .z.dkt-ib.com
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$3p
+||95d684gnf.com^
+||fe7xxmtg3.com^
+||zdr6wn2f5.com^
+||j17xor750.com^
+||2ypqjxnzo.com^
 ||bridge32.top^
 ||yl9c8v1le.com^
 ||vapvllaajrhhzc.com^
@@ -22366,7 +22371,6 @@ yemancomic.com##.z-index-99 > a
 ||xdyn0*jy.com^$script,xhr,3p
 ||xscp0*xq.com^$script,xhr,3p
 ||hhba0*kdh.com^$script,xhr,3p
-fcenxe*.top/$script,xhr,3p
 ||55561.net/ml.
 ||miaoshu6.com/static/js/read.
 .net/themes/jieqi/wap/js/test.
