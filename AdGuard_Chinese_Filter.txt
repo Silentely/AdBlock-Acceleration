@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: l4GQmwUuA7r7K4+9ZK7+kQ
-! Diff-Path: ../patches/224/224-s-1789946167-3600.patch
+! Checksum: 3jnYXn+ued6IowUZoOSklw
+! Diff-Path: ../patches/224/224-s-1789982689-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.65.68
-! TimeUpdated: 2026-09-20T23:13:14+00:00
+! Version: 2.1.65.71
+! TimeUpdated: 2026-09-21T09:21:37+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1144,6 +1144,12 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+.gif^$image,3p,domain=4hu.tv|g655p8.com|d44t95.com
+g655p8.com,d44t95.com,4hu.tv##div[class^="pg-v-sec-"]
+g655p8.com,d44t95.com,4hu.tv###__nuxt ~ div[data-tag]
+g655p8.com,d44t95.com,4hu.tv##+js(set-local-storage-item, /^__ad/, $remove$)
+g655p8.com,d44t95.com,4hu.tv##+js(set-constant, Object.prototype.getAd, noopFunc)
+g655p8.com,d44t95.com,4hu.tv##+js(no-setTimeout-if, getAd)
 ikanbot.com##+js(no-window-open-if, _blank)
 ||ikanbot.com/resources/common.js?v=$script
 huangguoai.com##.hg-ssp-slot
@@ -5423,6 +5429,9 @@ newduba.cn###jq_youxi
 ||cupfox.app^$3p
 ||gangplank39.com^
 ||ug2k8bslb.com^
+||vzzvfpvwyyhfvo.com^
+||cqg8zmtt3.com^
+||zyy25t69u.com^
 ||gunwale68.top^
 ||pmt0g2rugw.com^
 ||xwddvfoasvtxjo.com^
@@ -13644,6 +13653,7 @@ meijutt.*/js/pcjs/
 ||qunar.com/vataframe/b.html?
 ||qunlove.com^*.gif
 ||qwblog.cn/localfile/20200612230036.gif
+||qy0.ru/data/t/*.gif
 ||qy0.ru/data/game/
 ||qy1.ru/data/game/
 ||qyun.vip/pic/*.gif
