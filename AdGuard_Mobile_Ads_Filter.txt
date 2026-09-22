@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: VGD37qBb/a56KCveKl5ClQ
-! Diff-Path: ../patches/11/11-s-1790014884-3600.patch
+! Checksum: w8WMPN2COuH+tZZ9DxzcBw
+! Diff-Path: ../patches/11/11-s-1790068180-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.72.16
-! TimeUpdated: 2026-09-21T18:17:47+00:00
+! Version: 2.0.72.18
+! TimeUpdated: 2026-09-22T09:06:05+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2474,7 +2474,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 telugutimes.net##.tt-sticky-footer-ad
 jikayosha.jp##.photo-ad__fv
 elle.com###gpt-ad-tmu
-benesse.ne.jp##.l-container > div.mb_xsmall
+benesse.ne.jp##.l-container > div.mb_xsmall[style="min-height: 180px;"]
 benesse.ne.jp##.ad-empty
 delishkitchen.tv##.indexes-ad-insert
 kyounoryouri.jp##.ad-top-border
@@ -8407,6 +8407,7 @@ contexto.me##.top-ad-padding:style(padding-top: 15px !important;)
 ! !SECTION: Regular rules
 !
 ! TXXX network/tubecorp/Adultnext
+inporn.com##.video__wrapper > div[class]:not(.wrapper)
 tporn.xxx##.video__header
 mrgay.com,mrgay.tube,bdsmx.tube,manysex.com,manysex.tube,inporn.com##.video__wrapper > div.header__item
 txxxporn.tube,txxx.*##.video-conten > div[class] > div[class]:has(> div[class] > div[style="height: 100px;"])
