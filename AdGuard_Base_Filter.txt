@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: Bd/O9TQSzwe5Uw+9ioAjCQ
-! Diff-Path: ../patches/2/2-s-1790068183-3600.patch
+! Checksum: laKzzgMp98V1Xy2m9lYmsg
+! Diff-Path: ../patches/2/2-s-1790086145-3600.patch
 ! Title: AdGuard Base filter + EasyList
 ! Description: EasyList + AdGuard English filter. This filter is necessary for quality ad blocking.
-! Version: 2.4.92.23
-! TimeUpdated: 2026-09-22T09:05:36+00:00
+! Version: 2.4.92.28
+! TimeUpdated: 2026-09-22T14:05:57+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -23,6 +23,7 @@
 !
 !
 !
+||alaphoid.com^
 ||colossalteacher.com^
 ||curl.springinure.com^$3p
 ||0xclicks.com^
@@ -13089,6 +13090,10 @@ youporn.com##+js(remove-node-text, script, /window\.[\s\S]*?_zone_[\s\S]*?{"zone
 !
 ! NOTE: Regular rules
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/241720
+ff14-tools.com#@##adsbox
+ff14-tools.com#@#.ad-slot
+ff14-tools.com##+js(prevent-fetch, adm.shinobi.jp)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/242157
 download.sex###siteGate
 ! https://github.com/AdguardTeam/AdguardFilters/issues/241632
@@ -15158,9 +15163,9 @@ dankmemer.lol##+js(set-constant, npDetect.blocking, false)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/175901
 ! https://github.com/AdguardTeam/AdguardFilters/issues/171299
 ! https://github.com/AdguardTeam/AdguardFilters/issues/163976
-hunkypinoy.com,ispazio.net,meilleure-innovation.com,frankiepeach.com,refifa.com,techcentral.co.za,codingstella.com,mobilanyheter.net,how2electronics.com,webassistanceita.com,androidowy.pl,geekermag.com##body:style(overflow: auto !important;)
-hunkypinoy.com,ispazio.net,meilleure-innovation.com,frankiepeach.com,refifa.com,techcentral.co.za,codingstella.com,mobilanyheter.net,how2electronics.com,webassistanceita.com,androidowy.pl,geekermag.com###detect-modal:style(display: none !important;)
-hunkypinoy.com,ispazio.net,meilleure-innovation.com,frankiepeach.com,refifa.com,techcentral.co.za,codingstella.com,mobilanyheter.net,how2electronics.com,webassistanceita.com,androidowy.pl,geekermag.com##+js(abort-on-stack-trace, document.createElement, doTest)
+kk24.info,hunkypinoy.com,ispazio.net,meilleure-innovation.com,frankiepeach.com,refifa.com,techcentral.co.za,codingstella.com,mobilanyheter.net,how2electronics.com,webassistanceita.com,androidowy.pl,geekermag.com##body:style(overflow: auto !important;)
+kk24.info,hunkypinoy.com,ispazio.net,meilleure-innovation.com,frankiepeach.com,refifa.com,techcentral.co.za,codingstella.com,mobilanyheter.net,how2electronics.com,webassistanceita.com,androidowy.pl,geekermag.com###detect-modal:style(display: none !important;)
+kk24.info,hunkypinoy.com,ispazio.net,meilleure-innovation.com,frankiepeach.com,refifa.com,techcentral.co.za,codingstella.com,mobilanyheter.net,how2electronics.com,webassistanceita.com,androidowy.pl,geekermag.com##+js(abort-on-stack-trace, document.createElement, doTest)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/177324
 ! https://github.com/AdguardTeam/AdguardFilters/issues/175839
 gamaverse.com,html5.gamedistribution.com###gd__adblocker__overlay
@@ -22670,6 +22675,8 @@ mob.hr##.side_banner
 !
 ! NOTE: Czech and Slovakian
 !
+eurozpravy.cz##.main__bg__wrapper
+eurozpravy.cz##.sticky-column__content.sticky-column__content--sticky
 svetserialu.io,svetserialu.to,svetserialu.*##.alert_premiumExpired
 svetserialu.io,svetserialu.to,svetserialu.*##body > .loader ~ div[class][style*="z-index"]:not([id])
 infotbal.cz##div[data-elementor-type="wp-page"] > .elementor-section[data-settings*="background_background"]:has(.reklama-wrapper)
@@ -27872,7 +27879,8 @@ zgorzelec.info##.l-zgad
 zgorzelec.info##[ng-if="ctrl.variant=='home_promotion'"]
 ||zgorzelec.info/api/1/ads/
 ||zgorzelec.info/api/1/smalladds/
-lubin.pl##a.gofollow[data-track]
+kk24.info##.a-wrap
+kk24.info,lubin.pl##a.gofollow[data-track]
 lubin.pl##.textwidget > div.addblock
 wiemy.to##.wt-one
 vider.pl###video_reklamy
@@ -39745,7 +39753,7 @@ variety.com##+js(abort-current-script, document.createElement, HTMLIFrameElement
 ! Postmedia Network
 ! https://github.com/AdguardTeam/AdguardFilters/issues/239894
 ||phewcutlet.com^$domain=pembrokeobserver.com
-/^https:\/\/[a-z]{3,}\.[a-z]{7,}\.com\/[a-z]{3,}\/[a-f0-9]{8}\.js$/$script,3p,match-case,domain=calgaryherald.com|calgarysun.com|canada.com|canoe.com|driving.ca|edmontonjournal.com|edmontonsun.com|financialpost.com|leaderpost.com|lfpress.com|montrealgazette.com|nationalpost.com|ontariofarmer.com|ottawacitizen.com|ottawasun.com|pembrokeobserver.com|thegrowthop.com|theprovince.com|thestarphoenix.com|tj.news|torontosun.com|vancouversun.com|windsorstar.com|winnipegsun.com|intelligencer.ca|owensoundsuntimes.com|thewhig.com
+/^https:\/\/[a-z]{3,}\.[a-z]{7,}\.com\/[a-z]{3,}\/[a-f0-9]{8}\.js$/$script,3p,match-case,domain=calgaryherald.com|calgarysun.com|canada.com|canoe.com|driving.ca|edmontonjournal.com|edmontonsun.com|financialpost.com|leaderpost.com|lfpress.com|montrealgazette.com|nationalpost.com|ontariofarmer.com|ottawacitizen.com|ottawasun.com|pembrokeobserver.com|thegrowthop.com|theprovince.com|thestarphoenix.com|tj.news|torontosun.com|vancouversun.com|windsorstar.com|winnipegsun.com|intelligencer.ca|owensoundsuntimes.com|thewhig.com|recorder.ca
 ! https://github.com/AdguardTeam/AdguardFilters/issues/224513
 ||fokstatic.nl/fp/global/*adshield.js
 ! adthrive/Raptive
@@ -40146,6 +40154,8 @@ $image,3p,denyallow=googleapis.com,domain=vipbox1.org
 !
 ! NOTE: Specific rules
 !
+wineverygame.com##.weg-ac--amazon
+||red.lu-games.com/landing-$all
 3dporndude.com##.ribbon
 3dporndude.com##.thumb-itm.pignr
 download.sex##.feed-ad-card
@@ -50693,7 +50703,7 @@ issuu.com##section[aria-label="Advert"]
 issuu.com###ad-primis-wide
 emporis.com###partner
 raabta.net###text-html-widget-3
-omg.blog,uxwing.com,fontesk.com,iplocation.net,pureinfotech.com,insurance-space.xyz,igeeksblog.com##div[id^="bsa-zone_"]
+dash.infinityfree.com,omg.blog,uxwing.com,fontesk.com,iplocation.net,pureinfotech.com,insurance-space.xyz,igeeksblog.com##div[id^="bsa-zone_"]
 calculator.net##div[style^="padding-top:10px"][style*="min-height:280px"]
 aroged.com##div[itemprop="articleBody"] > div.quads-location ~ center
 aviability.com##.a180
@@ -60879,9 +60889,9 @@ chatgpt.com##div[class]:has(> button[class] > span.text-nowrap > svg.icon-sm > u
 chatgpt.com##div[class]:has(> div.flex > button[aria-label="Ad options"])
 !
 ! Postmedia.com
-midnorthmonitor.com,timminspress.com,stthomastimesjournal.com,thepost.on.ca,thesudburystar.com,windsorstar.com,vermilionstandard.com,nantonnews.com,vancouversun.com,hannaherald.com,4runner6g.com,fortmcmurraytoday.com,airdrieecho.com,calgaryherald.com,calgarysun.com,canoe.com,chathamdailynews.ca,clintonnewsrecord.com,cochranetimes.com,coldlakesun.com,communitypress.ca,countymarket.ca,countyweeklynews.ca,dailyheraldtribune.com,devondispatch.ca,draytonvalleywesternreview.com,driving.ca,edmontonexaminer.com,edmontonjournal.com,edmontonsun.com,elliotlakestandard.ca,fairviewpost.com,financialpost.com,fortmcmurraytoday.com,fortsaskatchewanrecord.com,gananoquereporter.com,goderichsignalstar.com,highrivertimes.com,kincardinenews.com,lakeshoreadvance.com,leaderpost.com,leducrep.com,lfpress.com,lucknowsentinel.com,mayerthorpefreelancer.com,melfortjournal.com,mitchelladvocate.com,napaneeguide.com,nationalpost.com,norfolkandtillsonburgnews.com,northernnews.ca,nugget.ca,ontariofarmer.com,ottawacitizen.com,ottawasun.com,parisstaronline.com,peacecountrysun.com,pembrokeobserver.com,pinchercreekecho.com,princegeorgepost.com,prrecordgazette.com,recorder.ca,saltwire.com,saultstar.com,saultthisweek.com,seaforthhuronexpositor.com,sherwoodparknews.com,shorelinebeacon.com,simcoereformer.ca,sprucegroveexaminer.com,stonyplainreporter.com,stratfordbeaconherald.com,thebeaumontnews.ca,thechronicle-online.com,thecragandcanyon.ca,theobserver.ca,theprovince.com,thestarphoenix.com,thewhig.com,tj.news,todaysfarmer.ca,vulcanadvocate.com,wallaceburgcourierpress.com,wetaskiwintimes.com,whitecourtstar.com,wiartonecho.com,woodstocksentinelreview.com,brantfordexpositor.ca##.epaper-widget
-midnorthmonitor.com,timminspress.com,stthomastimesjournal.com,thepost.on.ca,thesudburystar.com,windsorstar.com,vermilionstandard.com,nantonnews.com,vancouversun.com,hannaherald.com,4runner6g.com,fortmcmurraytoday.com,airdrieecho.com,calgaryherald.com,calgarysun.com,canoe.com,chathamdailynews.ca,clintonnewsrecord.com,cochranetimes.com,coldlakesun.com,communitypress.ca,countymarket.ca,countyweeklynews.ca,dailyheraldtribune.com,devondispatch.ca,draytonvalleywesternreview.com,driving.ca,edmontonexaminer.com,edmontonjournal.com,edmontonsun.com,elliotlakestandard.ca,fairviewpost.com,financialpost.com,fortmcmurraytoday.com,fortsaskatchewanrecord.com,gananoquereporter.com,goderichsignalstar.com,highrivertimes.com,kincardinenews.com,lakeshoreadvance.com,leaderpost.com,leducrep.com,lfpress.com,lucknowsentinel.com,mayerthorpefreelancer.com,melfortjournal.com,mitchelladvocate.com,napaneeguide.com,nationalpost.com,norfolkandtillsonburgnews.com,northernnews.ca,nugget.ca,ontariofarmer.com,ottawacitizen.com,ottawasun.com,parisstaronline.com,peacecountrysun.com,pembrokeobserver.com,pinchercreekecho.com,princegeorgepost.com,prrecordgazette.com,recorder.ca,saltwire.com,saultstar.com,saultthisweek.com,seaforthhuronexpositor.com,sherwoodparknews.com,shorelinebeacon.com,simcoereformer.ca,sprucegroveexaminer.com,stonyplainreporter.com,stratfordbeaconherald.com,thebeaumontnews.ca,thechronicle-online.com,thecragandcanyon.ca,theobserver.ca,theprovince.com,thestarphoenix.com,thewhig.com,tj.news,todaysfarmer.ca,vulcanadvocate.com,wallaceburgcourierpress.com,wetaskiwintimes.com,whitecourtstar.com,wiartonecho.com,woodstocksentinelreview.com##.widget--local-business
-midnorthmonitor.com,4runner6g.com,fortmcmurraytoday.com,airdrieecho.com,calgaryherald.com,calgarysun.com,canoe.com,chathamdailynews.ca,clintonnewsrecord.com,cochranetimes.com,coldlakesun.com,communitypress.ca,countymarket.ca,countyweeklynews.ca,dailyheraldtribune.com,devondispatch.ca,draytonvalleywesternreview.com,driving.ca,edmontonexaminer.com,edmontonjournal.com,edmontonsun.com,elliotlakestandard.ca,fairviewpost.com,financialpost.com,fortmcmurraytoday.com,fortsaskatchewanrecord.com,gananoquereporter.com,goderichsignalstar.com,highrivertimes.com,kincardinenews.com,lakeshoreadvance.com,leaderpost.com,leducrep.com,lfpress.com,lucknowsentinel.com,mayerthorpefreelancer.com,melfortjournal.com,mitchelladvocate.com,napaneeguide.com,nationalpost.com,norfolkandtillsonburgnews.com,northernnews.ca,nugget.ca,ontariofarmer.com,ottawacitizen.com,ottawasun.com,parisstaronline.com,peacecountrysun.com,pembrokeobserver.com,pinchercreekecho.com,princegeorgepost.com,prrecordgazette.com,recorder.ca,saltwire.com,saultstar.com,saultthisweek.com,seaforthhuronexpositor.com,sherwoodparknews.com,shorelinebeacon.com,simcoereformer.ca,sprucegroveexaminer.com,stonyplainreporter.com,stratfordbeaconherald.com,thebeaumontnews.ca,thechronicle-online.com,thecragandcanyon.ca,theobserver.ca,theprovince.com,thestarphoenix.com,thewhig.com,tj.news,todaysfarmer.ca,vulcanadvocate.com,wallaceburgcourierpress.com,wetaskiwintimes.com,whitecourtstar.com,wiartonecho.com,woodstocksentinelreview.com##section[aria-describedby^="advertisment"]
+cochranetimespost.ca,midnorthmonitor.com,timminspress.com,stthomastimesjournal.com,thepost.on.ca,thesudburystar.com,windsorstar.com,vermilionstandard.com,nantonnews.com,vancouversun.com,hannaherald.com,4runner6g.com,fortmcmurraytoday.com,airdrieecho.com,calgaryherald.com,calgarysun.com,canoe.com,chathamdailynews.ca,clintonnewsrecord.com,cochranetimes.com,coldlakesun.com,communitypress.ca,countymarket.ca,countyweeklynews.ca,dailyheraldtribune.com,devondispatch.ca,draytonvalleywesternreview.com,driving.ca,edmontonexaminer.com,edmontonjournal.com,edmontonsun.com,elliotlakestandard.ca,fairviewpost.com,financialpost.com,fortmcmurraytoday.com,fortsaskatchewanrecord.com,gananoquereporter.com,goderichsignalstar.com,highrivertimes.com,kincardinenews.com,lakeshoreadvance.com,leaderpost.com,leducrep.com,lfpress.com,lucknowsentinel.com,mayerthorpefreelancer.com,melfortjournal.com,mitchelladvocate.com,napaneeguide.com,nationalpost.com,norfolkandtillsonburgnews.com,northernnews.ca,nugget.ca,ontariofarmer.com,ottawacitizen.com,ottawasun.com,parisstaronline.com,peacecountrysun.com,pembrokeobserver.com,pinchercreekecho.com,princegeorgepost.com,prrecordgazette.com,recorder.ca,saltwire.com,saultstar.com,saultthisweek.com,seaforthhuronexpositor.com,sherwoodparknews.com,shorelinebeacon.com,simcoereformer.ca,sprucegroveexaminer.com,stonyplainreporter.com,stratfordbeaconherald.com,thebeaumontnews.ca,thechronicle-online.com,thecragandcanyon.ca,theobserver.ca,theprovince.com,thestarphoenix.com,thewhig.com,tj.news,todaysfarmer.ca,vulcanadvocate.com,wallaceburgcourierpress.com,wetaskiwintimes.com,whitecourtstar.com,wiartonecho.com,woodstocksentinelreview.com,brantfordexpositor.ca##.epaper-widget
+cochranetimespost.ca,midnorthmonitor.com,timminspress.com,stthomastimesjournal.com,thepost.on.ca,thesudburystar.com,windsorstar.com,vermilionstandard.com,nantonnews.com,vancouversun.com,hannaherald.com,4runner6g.com,fortmcmurraytoday.com,airdrieecho.com,calgaryherald.com,calgarysun.com,canoe.com,chathamdailynews.ca,clintonnewsrecord.com,cochranetimes.com,coldlakesun.com,communitypress.ca,countymarket.ca,countyweeklynews.ca,dailyheraldtribune.com,devondispatch.ca,draytonvalleywesternreview.com,driving.ca,edmontonexaminer.com,edmontonjournal.com,edmontonsun.com,elliotlakestandard.ca,fairviewpost.com,financialpost.com,fortmcmurraytoday.com,fortsaskatchewanrecord.com,gananoquereporter.com,goderichsignalstar.com,highrivertimes.com,kincardinenews.com,lakeshoreadvance.com,leaderpost.com,leducrep.com,lfpress.com,lucknowsentinel.com,mayerthorpefreelancer.com,melfortjournal.com,mitchelladvocate.com,napaneeguide.com,nationalpost.com,norfolkandtillsonburgnews.com,northernnews.ca,nugget.ca,ontariofarmer.com,ottawacitizen.com,ottawasun.com,parisstaronline.com,peacecountrysun.com,pembrokeobserver.com,pinchercreekecho.com,princegeorgepost.com,prrecordgazette.com,recorder.ca,saltwire.com,saultstar.com,saultthisweek.com,seaforthhuronexpositor.com,sherwoodparknews.com,shorelinebeacon.com,simcoereformer.ca,sprucegroveexaminer.com,stonyplainreporter.com,stratfordbeaconherald.com,thebeaumontnews.ca,thechronicle-online.com,thecragandcanyon.ca,theobserver.ca,theprovince.com,thestarphoenix.com,thewhig.com,tj.news,todaysfarmer.ca,vulcanadvocate.com,wallaceburgcourierpress.com,wetaskiwintimes.com,whitecourtstar.com,wiartonecho.com,woodstocksentinelreview.com##.widget--local-business
+cochranetimespost.ca,midnorthmonitor.com,4runner6g.com,fortmcmurraytoday.com,airdrieecho.com,calgaryherald.com,calgarysun.com,canoe.com,chathamdailynews.ca,clintonnewsrecord.com,cochranetimes.com,coldlakesun.com,communitypress.ca,countymarket.ca,countyweeklynews.ca,dailyheraldtribune.com,devondispatch.ca,draytonvalleywesternreview.com,driving.ca,edmontonexaminer.com,edmontonjournal.com,edmontonsun.com,elliotlakestandard.ca,fairviewpost.com,financialpost.com,fortmcmurraytoday.com,fortsaskatchewanrecord.com,gananoquereporter.com,goderichsignalstar.com,highrivertimes.com,kincardinenews.com,lakeshoreadvance.com,leaderpost.com,leducrep.com,lfpress.com,lucknowsentinel.com,mayerthorpefreelancer.com,melfortjournal.com,mitchelladvocate.com,napaneeguide.com,nationalpost.com,norfolkandtillsonburgnews.com,northernnews.ca,nugget.ca,ontariofarmer.com,ottawacitizen.com,ottawasun.com,parisstaronline.com,peacecountrysun.com,pembrokeobserver.com,pinchercreekecho.com,princegeorgepost.com,prrecordgazette.com,recorder.ca,saltwire.com,saultstar.com,saultthisweek.com,seaforthhuronexpositor.com,sherwoodparknews.com,shorelinebeacon.com,simcoereformer.ca,sprucegroveexaminer.com,stonyplainreporter.com,stratfordbeaconherald.com,thebeaumontnews.ca,thechronicle-online.com,thecragandcanyon.ca,theobserver.ca,theprovince.com,thestarphoenix.com,thewhig.com,tj.news,todaysfarmer.ca,vulcanadvocate.com,wallaceburgcourierpress.com,wetaskiwintimes.com,whitecourtstar.com,wiartonecho.com,woodstocksentinelreview.com##section[aria-describedby^="advertisment"]
 !
 ! LinkU
 khaddavi.net##+js(set-constant, ads, {})
@@ -85545,6 +85555,7 @@ browsershots.org#@#.advert_area
 ||3rw0usds.xyz^
 ||3tevcpuk4hrrh5i.rest^
 ||3u3ymbqj.xyz^
+||3uovpvhi8flm6ktzmzn.cfd^
 ||3w68w4vke65o2o.cfd^
 ||3wr110.net^
 ||3x8ffj7bx8vjgo67f8fkjm.rest^
@@ -86600,6 +86611,7 @@ browsershots.org#@#.advert_area
 ||acevupgymfcdc.website^
 ||acgugjkxtebno.site^
 ||achaetabuceros.qpon^
+||achaquetips.cfd^
 ||acharyastonilypageboy.cyou^
 ||achateprepaid.cfd^
 ||achatesgushily.cfd^
@@ -86657,6 +86669,7 @@ browsershots.org#@#.advert_area
 ||acquistbite.cfd^
 ||acquitsdubb.qpon^
 ||acquitsurfspeeding.com^
+||acqvzaqhsdmap.online^
 ||acraniahueybedlam.cfd^
 ||acrdfrcfapzvn.site^
 ||acreakkolas.cfd^
@@ -87899,6 +87912,7 @@ browsershots.org#@#.advert_area
 ||alyfdrzipjquz.online^
 ||alypinsaeume.cyou^
 ||alysson.de^
+||alzbmeaqrwync.space^
 ||alzilcohddyyx.online^
 ||alzlwkybyara.top^
 ||alzuogujpnija.website^
@@ -88027,6 +88041,7 @@ browsershots.org#@#.advert_area
 ||amxrtb.com^
 ||amyelicsteidrachel.cfd^
 ||amylatedecesshoidens.cfd^
+||amyloncarvy.cyou^
 ||amyrinamirayspa.cyou^
 ||amzelathold.cfd^
 ||amzfepdudlyvb.site^
@@ -88083,6 +88098,7 @@ browsershots.org#@#.advert_area
 ||anergiamabble.shop^
 ||anewfeedliberty.com^
 ||anfzdatekjeck.space^
+||angarebkikuyu.shop^
 ||angelabedsautopsy.com^
 ||angelaencouraging.com^
 ||angelesfoldingpatsy.com^
@@ -89871,6 +89887,7 @@ browsershots.org#@#.advert_area
 ||bellyinternsulphur.com^
 ||belongingstransform.com^
 ||belongshoutingunpens.qpon^
+||belordrabato.cyou^
 ||belovedset.com^
 ||beltcological.com^
 ||beltenefloit.com^
@@ -90305,6 +90322,7 @@ browsershots.org#@#.advert_area
 ||bityalezjdkmo.online^
 ||biucjsmmvnzbm.online^
 ||biunialzygoidbuhls.cfd^
+||bivocalconsy.cyou^
 ||bivvmhkimlqzq.store^
 ||bixapamfwltkk.space^
 ||biyrseggdidiy.site^
@@ -90550,6 +90568,7 @@ browsershots.org#@#.advert_area
 ||blurbreimbursetrombone.com^
 ||blurredpool.com^
 ||blurrerdogman.cfd^
+||blushesreownloobies.cfd^
 ||blustercartedfulfils.qpon^
 ||blutrk.click^
 ||blwadijbvbttx.space^
@@ -90648,6 +90667,7 @@ browsershots.org#@#.advert_area
 ||boarchoribi.qpon^
 ||boarderoomph.cyou^
 ||boardingstocking.com^
+||boardyforbid.cfd^
 ||boarshrubforemost.com^
 ||boaststockingsaucer.com^
 ||boatcontinuing.com^
@@ -90876,6 +90896,7 @@ browsershots.org#@#.advert_area
 ||bouffecubans.cfd^
 ||bougefill.cyou^
 ||bougieshepcats.com^
+||bouhdkatefma.com^
 ||bouhoagy.net^
 ||boulesechoingpood.cyou^
 ||boulevardrunningprofane.com^
@@ -91222,6 +91243,7 @@ browsershots.org#@#.advert_area
 ||brushertuftier.shop^
 ||brushtriplehorns.com^
 ||brusklylawton.com^
+||brutdzo.cfd^
 ||bruteportrait.com^
 ||brutestintdollops.cyou^
 ||brutishlylifevoicing.com^
@@ -91287,6 +91309,7 @@ browsershots.org#@#.advert_area
 ||bthuoevvwlvjt.site^
 ||bthyrdluzhjvm.website^
 ||bthythvdrdbud.space^
+||btioqcomkck.in^
 ||btjcjbqpmjzhk.website^
 ||btkkzsdpmpmxi.online^
 ||btkpfrvcrfbvx.site^
@@ -93612,6 +93635,7 @@ browsershots.org#@#.advert_area
 ||cornealtextlet.qpon^
 ||cornedmurrina.com^
 ||corneey.com^
+||corneinmotacil.qpon^
 ||cornelapaise.cyou^
 ||corneredtomb.com^
 ||cornerrosel.cyou^
@@ -93691,6 +93715,7 @@ browsershots.org#@#.advert_area
 ||cotxriwmudsth.website^
 ||coucalhidated.com^
 ||couchedbicarbs.cfd^
+||coucheehyalins.shop^
 ||couchpigful.qpon^
 ||coueovendry.cfd^
 ||cougarsblaflum.shop^
@@ -94983,6 +95008,7 @@ browsershots.org#@#.advert_area
 ||deemphotousage.com^
 ||deemsariana.cyou^
 ||deepcloudfield.com^
+||deepenrumperjesuits.qpon^
 ||deeperregardingcontend.com^
 ||deepingcormous.qpon^
 ||deepinghachepogey.cyou^
@@ -96754,6 +96780,7 @@ browsershots.org#@#.advert_area
 ||dust-0001.delorazahnow.workers.dev^
 ||dustmancarian.cyou^
 ||dustourrenewer.qpon^
+||dustuckiodates.cfd^
 ||dustyrender.com^
 ||dutchedkaildil.cyou^
 ||dutchrelay.com^
@@ -97877,6 +97904,7 @@ browsershots.org#@#.advert_area
 ||eocenearmine.cyou^
 ||eociugytvzhad.website^
 ||eockzywbeujiq.website^
+||eocmatfoypeduo.com^
 ||eoctphzgwgmnd.site^
 ||eodnprwxgjixj.online^
 ||eoejzyqfdmidn.space^
@@ -98489,6 +98517,7 @@ browsershots.org#@#.advert_area
 ||extinguishbethpasta.com^
 ||extinguishsufferingsalty.com^
 ||extortionbudnumerous.com^
+||extqoqykkcpmo.space^
 ||extracloyingcyano.cfd^
 ||extractfirmer.qpon^
 ||extraitjejunum.qpon^
@@ -98778,6 +98807,7 @@ browsershots.org#@#.advert_area
 ||fashionedstrengthen.com^
 ||fashorthal.cfd^
 ||fasolabegulf.cyou^
+||fasolahuscarl.com^
 ||fasoptima.shop^
 ||fastapi.net^
 ||fastblow.com^
@@ -98845,6 +98875,7 @@ browsershots.org#@#.advert_area
 ||fbeaaxgpaqwxx.space^
 ||fbetlixgee.eu^
 ||fbfejxqozbxrc.site^
+||fbhuhqsoqtl.com^
 ||fbispdrlpngqv.space^
 ||fbjeomydohwbo.space^
 ||fbmibawlpfwee.online^
@@ -98869,6 +98900,7 @@ browsershots.org#@#.advert_area
 ||fccinteractive.com^
 ||fcciyjcrcopsw.online^
 ||fcf18679b7.com^
+||fcfelxzilblvm.site^
 ||fcfgnzaozklfp.space^
 ||fcgzdkcxihgag.space^
 ||fcharspeeder.com^
@@ -99400,6 +99432,7 @@ browsershots.org#@#.advert_area
 ||flakygombay.cfd^
 ||flakysidearm.qpon^
 ||flambeemienemptily.cyou^
+||flamboyant-signal.pro^
 ||flamboyantdescription.com^
 ||flamboyanthopefully.com^
 ||flamechannel.com^
@@ -100173,6 +100206,7 @@ browsershots.org#@#.advert_area
 ||fuck-dating.com^
 ||fuckthat.xyz^
 ||fuclctdrjcvhs.online^
+||fucosealsine.qpon^
 ||fucouselfship.shop^
 ||fucwufaprni.com^
 ||fudderresewn.cyou^
@@ -100465,6 +100499,7 @@ browsershots.org#@#.advert_area
 ||gaflphlwqqhch.site^
 ||gageeweeble.qpon^
 ||gahkoekeybyxv.online^
+||gahtvomccwidd.online^
 ||gaidulbkchamq.space^
 ||gaietyunhappy.com^
 ||gaikufbdsfprf.space^
@@ -100652,6 +100687,7 @@ browsershots.org#@#.advert_area
 ||gazfleetly.cyou^
 ||gazkohjzcdbty.online^
 ||gazmoons.com^
+||gazozfasti.cyou^
 ||gb1aff.com^
 ||gbads.net^
 ||gbblpbibctqex.site^
@@ -100750,6 +100786,7 @@ browsershots.org#@#.advert_area
 ||gegori.xyz^
 ||gegqyfewpclyb.site^
 ||geheyfesters.cfd^
+||geisonimbark.shop^
 ||gejxhiimncfxu.site^
 ||gekeebsirs.com^
 ||gekkotappthu.cyou^
@@ -101031,6 +101068,7 @@ browsershots.org#@#.advert_area
 ||ginchoirblessed.com^
 ||ginetemormonspreknew.qpon^
 ||gingalbarky.com^
+||gingerycobwebs.com^
 ||gingeryproette.cfd^
 ||gingubbin.com^
 ||ginnertruancy.cfd^
@@ -102036,6 +102074,7 @@ browsershots.org#@#.advert_area
 ||gxfftsdvmekwu.site^
 ||gxfrctjcgfstn.website^
 ||gxlyxvjvwmbff.store^
+||gxmfsfhhtrvom.online^
 ||gxnpgk3vtf679fh8ej4q7.cfd^
 ||gxo55rmwxnkrfx3w8.cfd^
 ||gxobicxhusdnt.space^
@@ -102058,6 +102097,7 @@ browsershots.org#@#.advert_area
 ||gybmppuezjtqe.space^
 ||gycrrespjfqwk.store^
 ||gyfgwpqnkitsd.website^
+||gygkxnbxdigylb.com^
 ||gygplfimptkaj.website^
 ||gyhitscnehrid.online^
 ||gyipdlomyttqb.online^
@@ -102395,6 +102435,7 @@ browsershots.org#@#.advert_area
 ||haveameet.com^
 ||havenclick.com^
 ||havenyl.xyz^
+||haverdentata.cfd^
 ||haversalgieba.qpon^
 ||havetestifyharriet.com^
 ||havingunderwear.com^
@@ -102726,6 +102767,7 @@ browsershots.org#@#.advert_area
 ||hghit.com^
 ||hghuegejrukmo.site^
 ||hgisekhkuhrlo.online^
+||hgodftnaeacbd.site^
 ||hgolecgocxwio.space^
 ||hgovyniielsax.site^
 ||hgoxvtdgfcdlg.website^
@@ -103699,6 +103741,7 @@ browsershots.org#@#.advert_area
 ||hzhmfexz.com^
 ||hzhtnsqgkmcau.website^
 ||hzlhxlivfnxur.site^
+||hzliysssgeygx.online^
 ||hzlswdkrcutie.website^
 ||hznenxxzupeym.site^
 ||hzpvxwmljizrl.online^
@@ -104773,6 +104816,7 @@ browsershots.org#@#.advert_area
 ||iotizegushercainism.qpon^
 ||iovfyeauzktts.site^
 ||iowtsnicked.shop^
+||ioxytdliephpc.site^
 ||ioynumodqydgd.site^
 ||ip186269007.ahcdn.com^
 ||ipaaxvmhvodxj.site^
@@ -105955,6 +105999,7 @@ browsershots.org#@#.advert_area
 ||jraqvedgjkznw.space^
 ||jravekvrvywkq.top^
 ||jrbbavkejwloz.top^
+||jrbbavkejwlqy.top^
 ||jrhameobeihmv.space^
 ||jrjexx.com^
 ||jrjmgjfefawpy.site^
@@ -105980,6 +106025,7 @@ browsershots.org#@#.advert_area
 ||jrvrkzrqomqwy.top^
 ||jrwbwckkpjjud.website^
 ||jrybwitdqjjuo.store^
+||jryqrelkejpgg.space^
 ||jryqypkoskqmo.site^
 ||jrzrqi0au.com^
 ||jrzwrjgxhzotx.site^
@@ -106140,6 +106186,7 @@ browsershots.org#@#.advert_area
 ||juqbheahnq.in^
 ||juqzuljruojt.com^
 ||juraraleucon.cfd^
+||juratorvomitos.shop^
 ||juratsjiao.cfd^
 ||jurishammy.cyou^
 ||jursp.com^
@@ -106380,6 +106427,7 @@ browsershots.org#@#.advert_area
 ||kalganscope.com^
 ||kalianapremio.qpon^
 ||kaliansloftmenfun.cyou^
+||kaliansubmode.qpon^
 ||kalmiasparple.shop^
 ||kalmukhydra.cfd^
 ||kalsnyivgripw.site^
@@ -106613,6 +106661,7 @@ browsershots.org#@#.advert_area
 ||kevilresew.cyou^
 ||kevyngoober.shop^
 ||kewjptxneqwyg.space^
+||kexmsourcesissu.qpon^
 ||kexojito.com^
 ||kexoncqnunjhn.online^
 ||kexospmgqfuub.online^
@@ -108501,6 +108550,7 @@ browsershots.org#@#.advert_area
 ||lmhvhlxacgtmb.site^
 ||lmiatiqshwntg.space^
 ||lmjvywakjupgv.site^
+||lmjwechm.com^
 ||lmkpqizlvbpck.space^
 ||lmlirxrgiowap.online^
 ||lmngvqqskhppa.online^
@@ -109972,6 +110022,7 @@ browsershots.org#@#.advert_area
 ||mgkjakbwzcrla.online^
 ||mgladthereisso.com^
 ||mgnmjkwnaoanu.website^
+||mgqepowprkovh.online^
 ||mgrafmxbsgjma.store^
 ||mgreyouth.cfd^
 ||mgsnicqdeydae.space^
@@ -110767,6 +110818,7 @@ browsershots.org#@#.advert_area
 ||mqdmupawljale.site^
 ||mqdownload.com^
 ||mqedledjjjdad.website^
+||mqedxwrfksyzy.site^
 ||mqellzroaxnfy.online^
 ||mqfxbyjglyswlb.com^
 ||mqhcucabqhcwx.website^
@@ -111783,6 +111835,7 @@ browsershots.org#@#.advert_area
 ||nhatsadwafljs.site^
 ||nhbavbqogc.com^
 ||nhbfgogbsmnifv.com^
+||nhczsqgzpvejk.com^
 ||nhh8ue2leutpkj1hziel.cfd^
 ||nhhclkljqimut.online^
 ||nhhnebxgqxtqp.space^
@@ -112457,6 +112510,7 @@ browsershots.org#@#.advert_area
 ||nuqowwbceaj.in^
 ||nuqwe.com^
 ||nuqxpulhjilij.space^
+||nuqybxhg5chpqerfqeo.rest^
 ||nurbljwhtkhhs.space^
 ||nurbscfcwsggp.site^
 ||nurgyloyssaim.online^
@@ -114107,6 +114161,7 @@ browsershots.org#@#.advert_area
 ||paaeeets.net^
 ||paartureen.cyou^
 ||pabalosel.cfd^
+||pacasjxynqbnc.online^
 ||pacayajudases.cfd^
 ||paceaskhari.com^
 ||pacekami.com^
@@ -115646,6 +115701,7 @@ browsershots.org#@#.advert_area
 ||pomeloglinse.cfd^
 ||pomeloplasmsdarkly.cfd^
 ||pomelring.shop^
+||pompanooinksbombus.qpon^
 ||pompbeacon.com^
 ||pompomspottled.shop^
 ||pompoverlax.qpon^
@@ -116442,6 +116498,7 @@ browsershots.org#@#.advert_area
 ||ptlzzxpbpglzq.site^
 ||ptmbqrzsbevkh.store^
 ||ptmnd.com^
+||ptmsaizsfobeys.com^
 ||ptnjphvurekdw.space^
 ||ptoixcq2qn6puqe5vjfb.cfd^
 ||ptomw.com^
@@ -117868,11 +117925,13 @@ browsershots.org#@#.advert_area
 ||rasalasagnizes.qpon^
 ||rasantisotypepelanos.cfd^
 ||rascalwitsirksome.com^
+||rasennadapifer.cfd^
 ||rashcolonizeexpand.com^
 ||rashlyblowfly.com^
 ||raspconfirmationtroops.com^
 ||rasperitylus.qpon^
 ||rasperspalter.cyou^
+||raspertollman.cyou^
 ||raspfact.com^
 ||rasprepress.com^
 ||rasqeemrfzdoq.website^
@@ -118103,6 +118162,7 @@ browsershots.org#@#.advert_area
 ||rebozosmatches.cyou^
 ||rebrandkaolins.cfd^
 ||rebsoljuhmrdy.com^
+||rebudpotboy.cyou^
 ||rebukedelinquent.com^
 ||rebutvarment.com^
 ||rebuylengest.cfd^
@@ -118230,6 +118290,7 @@ browsershots.org#@#.advert_area
 ||redustrentee.cfd^
 ||redustsinters.com^
 ||redwingmagazine.com^
+||redwoodpatrols.cyou^
 ||redwudsabana.com^
 ||reeboksyd.cfd^
 ||reebr.com^
@@ -118878,6 +118939,7 @@ browsershots.org#@#.advert_area
 ||rihhfqeqwimni.website^
 ||rihurxgrxghfh.online^
 ||rikishatasajo.qpon^
+||rikshaalertedkowbird.qpon^
 ||rilletincaic.cyou^
 ||rillsgraeme.cfd^
 ||rilnkygbfbvru.site^
@@ -118979,6 +119041,7 @@ browsershots.org#@#.advert_area
 ||rkexjrw6mcv4v978ri3xivgxgl.cfd^
 ||rkezuvqtxgltl.online^
 ||rkfttejbisaww.online^
+||rkguiclqwuhju.site^
 ||rkgwzfwjgk.com^
 ||rkhkriqfbomgl.website^
 ||rkjtlnfhsocoz.store^
@@ -119330,6 +119393,7 @@ browsershots.org#@#.advert_area
 ||rqerokcafoadv.space^
 ||rqialsrmwwxbx.website^
 ||rqitcbzevctjq.space^
+||rqjctgqqwmzsu.online^
 ||rqjpjwzmehrti.space^
 ||rqjtrvoltgzey.site^
 ||rqjziglrehnil.website^
@@ -119704,6 +119768,7 @@ browsershots.org#@#.advert_area
 ||rypmbgkfsnkjg.space^
 ||ryqtxakilhprz.site^
 ||ryrfwrxuhdaeb.website^
+||ryrgmzvkqhgni.site^
 ||ryscxxxelrsdw.space^
 ||rytadlqujhwsz.site^
 ||rytinaparred.cfd^
@@ -122486,6 +122551,7 @@ browsershots.org#@#.advert_area
 ||sthhbqpjfdves.space^
 ||stibbleberede.cyou^
 ||stichidlateran.cyou^
+||stickeningnue.qpon^
 ||stickeryarkand.cfd^
 ||stickingallot.com^
 ||stickingholdingconcussion.com^
@@ -125671,6 +125737,7 @@ browsershots.org#@#.advert_area
 ||ugmqisybzpplo.space^
 ||ugnyuemxxrdsv.site^
 ||ugpexbthrsyak.space^
+||ugprn729ec8g8br.rest^
 ||ugrgujwxjxsuf.space^
 ||ugroocuw.net^
 ||ugsedtbzqfgnr.space^
@@ -126299,6 +126366,7 @@ browsershots.org#@#.advert_area
 ||unwantedpointingwaspish.com^
 ||unwaryusurers.shop^
 ||unwdvbixtcrdk.space^
+||unweavederiv.com^
 ||unwelcometown.com^
 ||unweptamyris.cfd^
 ||unwieldytowel.pro^
@@ -126693,6 +126761,7 @@ browsershots.org#@#.advert_area
 ||uuxgtmgrxflig.store^
 ||uuxwydleeeqdg.online^
 ||uuyo1tcbil8c4l8u2qy6qqkw.cfd^
+||uuzkcflc.com^
 ||uvbiyrhzsqcoq.space^
 ||uvcpbgemww35v6.rest^
 ||uvdyihuopafgc.site^
@@ -126700,6 +126769,7 @@ browsershots.org#@#.advert_area
 ||uveazsrcwpbff.site^
 ||uveitisabaffingine.cyou^
 ||uvfckyovekkqh.space^
+||uvfzcbheprsab.site^
 ||uvhmsovvhfdzo.site^
 ||uvhrjgnstmxxz.space^
 ||uvinlbbdauxyy.site^
@@ -126946,6 +127016,7 @@ browsershots.org#@#.advert_area
 ||varshacundy.com^
 ||vartoken.com^
 ||varussighty.cyou^
+||varvedrought.cyou^
 ||varyingwolfsmile.com^
 ||varyresponsible.com^
 ||vasculajudith.cyou^
@@ -126983,6 +127054,7 @@ browsershots.org#@#.advert_area
 ||vbeeeleqvjeaz.top^
 ||vbeeeleqvjelq.top^
 ||vbfssjmbsukaw.site^
+||vbggtxpiiqnod.online^
 ||vbjibjsftqxkq.site^
 ||vbjuqguxmgrhk.site^
 ||vblaejlytzpwh.online^
@@ -127393,6 +127465,7 @@ browsershots.org#@#.advert_area
 ||vindictivemopenthrone.com^
 ||vinealdisneyoscars.cyou^
 ||vinegardaring.com^
+||vinetpolloi.cfd^
 ||vinettaahaaina.shop^
 ||viniertrover.cyou^
 ||vinit.cloud^
@@ -128026,6 +128099,7 @@ browsershots.org#@#.advert_area
 ||vzofbsmlnuumm.space^
 ||vzstscoagbdvv.online^
 ||vztformhlflsz.website^
+||vzv2ikh5t4kbm5wy.cfd^
 ||vzvzjlzzjfodn.space^
 ||vzwskvcarieny.website^
 ||vzwvakkmefryp.space^
@@ -128273,6 +128347,7 @@ browsershots.org#@#.advert_area
 ||wauymtjmufunv.site^
 ||wavedindifferenceharm.com^
 ||waveetiquette.com^
+||waveoffprolegs.shop^
 ||wavermiddayboundary.com^
 ||waverybatts.cfd^
 ||wavingauradignity.com^
@@ -129014,6 +129089,7 @@ browsershots.org#@#.advert_area
 ||wjibjvgebkolf.space^
 ||wjiebpblheplc.site^
 ||wjljwqbrwllzw.top^
+||wjljwqbrwlmej.top^
 ||wjmepiytpjiki.website^
 ||wjmghujaluysu.online^
 ||wjopvkcozzxif.online^
@@ -130722,6 +130798,7 @@ browsershots.org#@#.advert_area
 ||ydyywadl.com^
 ||ydzgtvxtyeqzr.site^
 ||ye4e5zkg4u6zi6x3p7rzz59wqrviqgq.cfd^
+||yeatthetics.shop^
 ||yeatzjxlgjxsp.site^
 ||yectwxcyecvqb.site^
 ||yecytiqior.net^
@@ -131180,6 +131257,7 @@ browsershots.org#@#.advert_area
 ||yrixtfepqyfqx.site^
 ||yrjeagvel.com^
 ||yrjlryrvowjzd.website^
+||yrkfzlzccqtek.space^
 ||yrkikbyasyvwb.online^
 ||yrlkmglnttcve.online^
 ||yronesefurther.org^
@@ -131282,6 +131360,7 @@ browsershots.org#@#.advert_area
 ||yuwbmzjqimdmn.space^
 ||yuwseujcjavak.space^
 ||yuwtlkeagkqi.com^
+||yuylxumqqrmnv.space^
 ||yuyykdjtkdpat.store^
 ||yuztrvzsjtfgo.space^
 ||yvbcuorcvinxz.online^
@@ -131994,6 +132073,7 @@ browsershots.org#@#.advert_area
 ||zpmuyjqwbxidg.online^
 ||zpnfabznyzmuc.site^
 ||zppvjakzlptsd.site^
+||zpqdgwcusmklx.site^
 ||zpqfqxoczrwfq.space^
 ||zpsmdryujwkoz.site^
 ||zpuavdcswqnml.online^
@@ -134177,6 +134257,7 @@ browsershots.org#@#.advert_area
 ||puzzledrally.com^
 ||quietlythough.com^
 ||rampfat.com^
+||referwhen.com^
 ||sanssnow.com^
 ||scientificfor.com^
 ||scowlswitchmore.com^
@@ -140507,7 +140588,7 @@ $3p,xhr,domain=mega4upload.net
 ||cdn.ex.co^$3p
 ||cdn.thejournal.ie/media/hpto/$image
 ||connatix.com^$3p,domain=~accuweather.com|~businessinsider.de|~bz-berlin.de|~cheddar.tv|~deadline.com|~elnuevoherald.com|~finanzen.net|~fitbook.de|~heraldsun.com|~hollywoodreporter.com|~huffpost.com|~lmaoden.tv|~loot.tv|~miamiherald.com|~myhomebook.de|~olhardigital.com.br|~petbook.de|~sacbee.com|~stylebook.de|~techbook.de|~travelbook.de|~welt.de
-||content.viralize.tv/display/
+||content.viralize.tv/display^$domain=~fr.de
 ||delivery.vidible.tv/jsonp/
 ||dywolfer.de^
 ||embed.ex.co^$3p
