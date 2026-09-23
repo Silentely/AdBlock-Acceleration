@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: 7G6xXjWNkDEToxJMXxrBOw
-! Diff-Path: ../patches/11/11-s-1790093432-3600.patch
+! Checksum: fOCs94UTsmt3d0rQhoYoQw
+! Diff-Path: ../patches/11/11-s-1790168967-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.72.20
-! TimeUpdated: 2026-09-22T16:06:34+00:00
+! Version: 2.0.72.24
+! TimeUpdated: 2026-09-23T13:06:04+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2471,6 +2471,8 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+bluebirdbanter.com##div[class]:has(> div[data-concert*="frontpage_hero_mobile"])
+alba.co.jp##li[class^="RelationPostItem_postItemStyle_"]:has(> div[id][style="height: 102px;"])
 wineverygame.com##.weg-mobile-campaign
 telugutimes.net##.tt-sticky-footer-ad
 jikayosha.jp##.photo-ad__fv
@@ -8408,7 +8410,7 @@ contexto.me##.top-ad-padding:style(padding-top: 15px !important;)
 ! !SECTION: Regular rules
 !
 ! TXXX network/tubecorp/Adultnext
-inporn.com##.video__wrapper > div[class]:not(.wrapper)
+in-porn.com,xmilf.com,blackporn.tube,inporn.com##.video__wrapper > div[class]:not(.wrapper)
 tporn.xxx##.video__header
 mrgay.com,mrgay.tube,bdsmx.tube,manysex.com,manysex.tube,inporn.com##.video__wrapper > div.header__item
 txxxporn.tube,txxx.*##.video-conten > div[class] > div[class]:has(> div[class] > div[style="height: 100px;"])
@@ -8677,6 +8679,8 @@ livejournal.com##div[id^="billboard_mobile_"]
 ! END: Livejournal.com
 !
 !
+!+ NOT_OPTIMIZED
+heise.de##.ad-mobile-group-3
 !+ NOT_OPTIMIZED
 stackoverflow.com##.js-sidebar-zone
 !+ NOT_OPTIMIZED
