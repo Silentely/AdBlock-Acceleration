@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: Mr4isoADZNBGle4G7tCTZA
-! Diff-Path: ../patches/11/11-s-1790248135-3600.patch
+! Checksum: a4WYk7hC7AERfHvHQg2kAg
+! Diff-Path: ../patches/11/11-s-1790273398-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.72.28
-! TimeUpdated: 2026-09-24T11:05:42+00:00
+! Version: 2.0.72.30
+! TimeUpdated: 2026-09-24T18:07:02+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2066,6 +2066,8 @@ deviantart.com##div[class*="dp-ad-"]:style(height: 0!important; width: 0!importa
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/242033
+@@||anymind360.com/js/*/ats.js$domain=hotosena.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/236078
 ismedia.jp#@#.ad-billboard
 ismedia.jp##.ad-billboard:style(margin-top: -40px !important;)
@@ -2460,7 +2462,7 @@ ettoday.net,handelsblatt.com,moyens.net,ign.com,gazeteduvar.com.tr,innpoland.pl,
 ! ##.ads
 keisanki.me,kalporn.com,canalporno.com,serviporno.com,livechat-ero.net,kingautos.net,ranky-ranking.net,memo.onl.jp,daily-sun.com,home.kingsoft.jp,berkem.ru,cartoonpornvideos.com,m.economictimes.com,m.mistrzowie.org,up.ymgt.xyz,google.de,www-bento-de.cdn.ampproject.org,m-economictimes-com.cdn.ampproject.org,winfuture.de##.ads
 ! ##.ad
-kurukura.jp,nobico.php.co.jp,healthyplace.com,qlife.jp,wiki.yjsnpi.nu,opinion.cw.com.tw,aidoly.net,celeby-media.net,kyun2-girls.com,hapiee.com,2ch-c.net,4p.de,www-cbc-ca.cdn.ampproject.org,m.geboren.am,dictionary.com,transfermarkt.de,iyf.tv,macwelt.de,pcwelt.de,xataka.com.mx,shikiho.toyokeizai.net,newsee-media.com,rank1-media.com,m.proporn.com,sugoren.com,dailynewsonline.jp,yakuji.co.jp,asahi.com,m.winporn.com,slate.com,sankei.com,gameranbu.jp,m.arukikata.co.jp,setn.com,hatenadiary.com,hatenadiary.jp,syosetu.org##.ad
+hotosena.com,kurukura.jp,nobico.php.co.jp,healthyplace.com,qlife.jp,wiki.yjsnpi.nu,opinion.cw.com.tw,aidoly.net,celeby-media.net,kyun2-girls.com,hapiee.com,2ch-c.net,4p.de,www-cbc-ca.cdn.ampproject.org,m.geboren.am,dictionary.com,transfermarkt.de,iyf.tv,macwelt.de,pcwelt.de,xataka.com.mx,shikiho.toyokeizai.net,newsee-media.com,rank1-media.com,m.proporn.com,sugoren.com,dailynewsonline.jp,yakuji.co.jp,asahi.com,m.winporn.com,slate.com,sankei.com,gameranbu.jp,m.arukikata.co.jp,setn.com,hatenadiary.com,hatenadiary.jp,syosetu.org##.ad
 ! ##.Ad
 chip.de,gamesworld.de,fnn.jp##.Ad
 ! ##body .banner
@@ -2471,6 +2473,9 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+news.yahoo.co.jp###inf_mid a[data-cl-params]
+ladepeche.fr###pub_dfp_footer_sticky-mobile
+hotosena.com##div[class^="ats-"]
 pinterest.*##div[role="listitem"]:has(div[data-test-id="related-pins-name"] > div[role="button"] > div + div > div[style="-webkit-line-clamp: 1;"]):not(:has(a[href*="/pin/"]))
 japanmetal.com##.sp-kohwa-banner
 wallpapers.com##.cd-mobile-creator-ad
