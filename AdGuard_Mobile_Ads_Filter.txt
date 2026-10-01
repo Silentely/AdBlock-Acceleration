@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: MDMbxF4yQKdb3+uch9ouTg
-! Diff-Path: ../patches/11/11-s-1790781048-3600.patch
+! Checksum: ncrhI8SHABIOFlg6iI0rGQ
+! Diff-Path: ../patches/11/11-s-1790867392-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.72.44
-! TimeUpdated: 2026-09-30T15:07:14+00:00
+! Version: 2.0.72.45
+! TimeUpdated: 2026-10-01T15:06:07+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2033,6 +2033,7 @@ deviantart.com##div[class*="dp-ad-"]:style(height: 0!important; width: 0!importa
 @@||ads.cricbuzz.com/adserver/units/mobile/set_ads_values.php
 ! https://github.com/AdguardTeam/AdguardFilters/issues/2697
 ! https://github.com/AdguardTeam/AdguardFilters/issues/2461
+! com.goldtouch.ynet app fails to start
 ! https://forum.adguard.com/index.php?threads/adguard-blocking-news-clips-on-ynet-app.10114/#post-81493
 ! Daily Mail Online
 ! https://github.com/AdguardTeam/AdguardFilters/issues/2462
@@ -2472,6 +2473,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+mamaslatinas.com##.gam-injector__ad-footer-wrapper
 routinehub.co##.rh-ad-slot
 routinehub.co##.rh-anchor__close
 eboblack.com##div.un-card-list > div.min-w-0:has(> .un-card-ad)
