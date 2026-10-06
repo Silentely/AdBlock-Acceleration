@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: kgio4MUe3zRfXLfHqs0iFQ
-! Diff-Path: ../patches/11/11-s-1791213055-3600.patch
+! Checksum: fgq1pnZMwSVBzpNYAkSBBQ
+! Diff-Path: ../patches/11/11-s-1791299443-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.72.54
-! TimeUpdated: 2026-10-05T15:07:05+00:00
+! Version: 2.0.72.56
+! TimeUpdated: 2026-10-06T15:06:44+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2473,6 +2473,8 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+search.yahoo.co.jp##div[class^="TimelineYda_TimelineYda_"]
+nogizaka46link.blog.jp###lite_link:has(> ul > li > a[href^="https://manga-map.com/amazon-"])
 donanimhaber.com##.dh-header-sponsors
 donanimhaber.com##.intro-top-ad
 donanimhaber.com##.text-between-ad
@@ -2635,7 +2637,7 @@ context.reverso.net##.more-examples-message
 context.reverso.net##.rca-no-ads-mobile
 xmegadrive.com##iframe[src^="https://n2.clips4sale.com/a/"]
 elchorrillero.com##.card2:has(> .cardBody2 > a[href^="https://static.elchorrillero.com/clk/"] img)
-matomeantena.com##li.list-group-item:has(a[href^="https://adhub.porcino-kinoko.workers.dev/"])
+matomeantena.com##li:has(a[href^="https://adhub.porcino-kinoko.workers.dev/"])
 ntv.co.jp###ntv_setAD_SP_300_250
 onejailbreak.com##div.post > div.mt-3:has(> ins.adsbygoogle)
 eonline.com##.photo-items__interstitial-ad-content
@@ -8121,7 +8123,6 @@ express.co.uk###taboola-mid-article-thumbnails-outstream:remove()
 express.co.uk##div[data-type="article-body"] .text-description > div:remove()
 delish.com##section > div[class]:has(> div[id^="gpt-ad-"])
 m.cifraclub.com.br##pre > button[type]:contains(Remover anúncio)
-news.denfaminicogamer.jp##.articleList > li > div.amazon-ranking:upward(1)
 doucolle.net###entry:has(> div.entry_box > div.entry_body > a[href^="https://al.dmm.co.jp"]:only-child > img)
 pogomap.info###logobar:has(div#smallmapad)
 appbank.net##.entry-content > div.sp.fixed-height:has( > div[id^="div-gpt-ad"])
