@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: uaAirMrFZ9FGxqpkD12zOw
-! Diff-Path: ../patches/11/11-s-1791572937-3600.patch
+! Checksum: qZwM4z4eoHMc78BCYevzaw
+! Diff-Path: ../patches/11/11-s-1791807180-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.72.63
-! TimeUpdated: 2026-10-09T19:05:18+00:00
+! Version: 2.0.72.66
+! TimeUpdated: 2026-10-12T12:10:32+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2474,6 +2474,9 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+fp1-siken.com,fp2-siken.com,fp3-siken.com,ap-siken.com,db-siken.com,fe-siken.com,itpassportsiken.com,nw-siken.com,pm-siken.com,sc-siken.com,sg-siken.com##.ads_wrap
+asiaflix.net##body > div#af-dl-1[style*="z-index: 999999999999;"]
+cheatingporn.net##aside#sidebar:has(> div.happy-sidebar > script[src*="/invoke.js"])
 bd-bulletin.com##div.text-center > a[href="#"] > img[src^="/templates/bulletine-mob/"]
 mangaz.com##.premiumbanner
 mangaz.com##+js(adjust-setInterval, countdown)
@@ -3134,7 +3137,7 @@ futbolperuano.com##header.sticky-top:style(top: 0 !important;)
 sxyprn.net,sxyprn.com##.tbd
 mydramalist.com##div:has(> div[style="min-height:327px;"]:only-child)
 hoopshype.com,coloradoan.com##.gnt_x__bvc:has(> aside[aria-label="advertisement"])
-hoopshype.com,coloradoan.com##aside[aria-label="advertisement"]
+detroitnews.com,hoopshype.com,coloradoan.com##aside[aria-label="advertisement"]
 capetownetc.com##.mobile-advertisements
 famitsu.com##section[class^="Top_topHeaderBanner"]
 famitsu.com##div[class^="ArticleDetailMiddleRectangle_container_"]
