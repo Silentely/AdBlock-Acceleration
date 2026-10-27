@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: ZM84CxJFR2mtc6zgj6oWoA
-! Diff-Path: ../patches/11/11-s-1793034925-3600.patch
+! Checksum: rHKVIMkyGuiYS/ksCt9i0w
+! Diff-Path: ../patches/11/11-s-1793082155-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.73.1
-! TimeUpdated: 2026-10-26T17:11:12+00:00
+! Version: 2.0.73.2
+! TimeUpdated: 2026-10-27T06:18:32+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2478,6 +2478,10 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+pornhub.com###mobileContainer.notPremium:style(padding-top: 0px !important;)
+pornhub.com###mobileContainer.notPremium > div[class$="ad"]:has(> div.watchpageAd):style(height: 0px !important;)
+rbc.ru##.ui-branding-logo
+rbc.ru##.indicators-bar-branding
 russiatoday.ru##.sparrow-banner
 dengekionline.com##div[class$="_headerBannerForSp"]
 dengekionline.com##div[class$="_pickUpBannerForSp"]
