@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: Vi9zGetfWMiVFVlTreG6cg
-! Diff-Path: ../patches/11/11-s-1793128390-3600.patch
+! Checksum: YP9iIPNyCRpKhngxpEIn3w
+! Diff-Path: ../patches/11/11-s-1793200335-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.73.6
-! TimeUpdated: 2026-10-27T19:09:13+00:00
+! Version: 2.0.73.11
+! TimeUpdated: 2026-10-28T15:09:22+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2480,9 +2480,15 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+kako.5ch.io##.h-\[100px\]
+kako.5ch.io##.h-\[260px\]
+ichioshi.allabout.co.jp###ma_ad_container
+mfuns.net##.m-adwork
+m.tvdirekt.de##div[id^="adWebWrapper"]
+tvtoday.de##mobile-sticky-ad
 gamingbible.com##div[class^="advert-placeholder"]
 rakkokeyword.com##.rakko-sp-wrapper
-twidouga.net###video-grid > div.grid-item--wide[style]:not([data-id])
+twidouga.net##.max-w-screen-xl > div[style*="margin"]:has(> div[id^="bnc_ad_"])
 game-info.wiki,playing.wiki,seesaawiki.jp##div[style="width:300px; height:250px; "]
 m.iceporn.net##+js(set-cookie, pop_show, 3)
 m.iceporn.net##+js(set-cookie-reload, no_postitial_video, 1)
@@ -2492,7 +2498,8 @@ pornhub.com###mobileContainer.notPremium > div[class$="ad"]:has(> div.watchpageA
 rbc.ru##.ui-branding-logo
 rbc.ru##.indicators-bar-branding
 russiatoday.ru##.sparrow-banner
-dengekionline.com##div[class*="BannerForSp"]
+dengekionline.com##div[class$="_headerBannerForSp"]
+dengekionline.com##div[class$="_pickUpBannerForSp"]
 memo.wiki##div[style="width:300px; height:250px; "]
 erogamescape.dyndns.org##div[id^="mobile_ad_"]
 2dfan.com##.nexus-banner-ad
