@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: m9dwRKgr3ynYRobJ9CDzwQ
-! Diff-Path: ../patches/224/224-s-1793574706-3600.patch
+! Checksum: ulS2QKwKQc2juw74Yd3fXw
+! Diff-Path: ../patches/224/224-s-1793614399-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.68.70
-! TimeUpdated: 2026-11-01T23:08:14+00:00
+! Version: 2.1.68.76
+! TimeUpdated: 2026-11-02T10:09:50+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -310,6 +310,8 @@ laosu.tech##+js(addEventListener-defuser, DOMContentLoaded, detectAdBlocker)
 freedidi.com##+js(abort-on-property-read, SPM_CONFIG.adblockOnly)
 ||freedidi.com/wp-content/plugins/abn-wall/assets/abn-wall.
 ! https://github.com/AdguardTeam/AdguardFilters/issues/230535
+wxredian.com##.adblock-warning:style(display: none !important;)
+wxredian.com##body:style(overflow: auto !important;)
 wxredian.com##+js(set-constant, checkAdScript, noopFunc)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/229384
 jav224.shop,ttp229.shop,clp126.shop,hsq233.shop#@#.ad-unit:not(.textads)
@@ -1146,6 +1148,7 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+wenshushu.cn##.cont-right .mer-item
 31w3.cn##.van-popup
 31w3.cn##.van-overlay
 31w3.cn##.sticky-banner-wrap
@@ -5112,6 +5115,10 @@ newduba.cn###jq_youxi
 ||mgu14s8c5h.com^
 ||refrigerator16.com^
 ||fwbvjxsmvznfpu.com^
+||p0m1qlvawp.com^
+||xkp30u4pxh.com^
+||22n5xlc6n0.com^
+||uxee5bmf1k.com^
 ||nq6jitu4y.com^
 ||08137tabw.com^
 ||tableware66.com^
@@ -13723,7 +13730,7 @@ meijutt.*/js/pcjs/
 ||xdnice.com/themes/xdnice/public/assets/images/quna.png
 ||xdnice.com/themes/xdnice/public/assets/images/xdnice.png
 ||xdyjt.com^
-||xfvod.pro/images/ad/
+||xfvod.pro*/images/ad/
 ||xghylt.com/api.php?mod=ad&adid=
 ||xhymsq.com/data/attachment/portal/
 ||xiacaidd.com/xiacai/ad/
@@ -13946,6 +13953,7 @@ meijutt.*/js/pcjs/
 ||159i.net/ads/
 ||girigirilove.com^*/appConfigData?key=adver_
 ||yszzq.com/Style/js/date.
+||yxxq59.cc/static/images/ads/
 159i.net##.a3
 szxx.com.cn###A0
 szxx.com.cn###A1
