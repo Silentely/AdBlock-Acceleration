@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: uECNw0UrtElyEWvGUKHlfg
-! Diff-Path: ../patches/224/224-s-1793704310-3600.patch
+! Checksum: v03Dv/OXBvv0NegsSw5uNw
+! Diff-Path: ../patches/224/224-s-1793725968-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.68.82
-! TimeUpdated: 2026-11-03T11:09:08+00:00
+! Version: 2.1.68.84
+! TimeUpdated: 2026-11-03T17:09:20+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1148,6 +1148,7 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+huavod.net##.hr-slot-box
 wenshushu.cn##.cont-right .mer-item
 31w3.cn##.van-popup
 31w3.cn##.van-overlay
@@ -2656,6 +2657,11 @@ league-funny.com##.google_more
 league-funny.com##.widgetBox.w300600
 league-funny.com##.widgetBox.w728Bottom
 league-funny.com##.right > .fansCard
+league-funny.com##div[class*="h-[250px]"]:has(> div[id^="div-gpt-"]:only-child)
+league-funny.com##section.w-full > .border-b:has(> .hidden > div[id^="div-gpt-"]:only-child)
+league-funny.com###feedDetail > div:not([class], [id], [data-html-content]):has(> #PC_AD_Block)
+league-funny.com##+js(json-prune, pageProps.adSystem props.pageProps.adSystem)
+league-funny.com##+js(set-constant, __NEXT_DATA__.props.pageProps.adSystem, [])
 avbebe.com###wrapper > div[align="center"]
 avbebe.com###content > div.single-post > div[align="center"]
 avbebe.com##.sidebar > .xoxo > li[id^="text-"]
