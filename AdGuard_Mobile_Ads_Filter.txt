@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: K2ODEAnYScNonK0O+SiqUw
-! Diff-Path: ../patches/11/11-s-1793790785-3600.patch
+! Checksum: 5Ih2t4JjKKBt2hx3+PiB7Q
+! Diff-Path: ../patches/11/11-s-1793794571-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.73.25
-! TimeUpdated: 2026-11-04T11:09:20+00:00
+! Version: 2.0.73.26
+! TimeUpdated: 2026-11-04T12:11:49+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2481,6 +2481,8 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+famitsu.com##div[class^="ArticleDetailMiddleRectangle-"]
+famitsu.com##div[class^="HeaderBannerForSp-"]
 metasrc.com##div[data-ad-disabled]
 goal.com##div[class*="-mpu-mobile_"]
 techspot.com##.product-wrapper > div[style]:has(> .tsadinc)
