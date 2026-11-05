@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: 7P+dFOfusTV0917bYs5v2w
-! Diff-Path: ../patches/224/224-s-1793873618-3600.patch
+! Checksum: 4zKNjRL6T8I3Ouie8TS3xQ
+! Diff-Path: ../patches/224/224-s-1793887931-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.68.95
-! TimeUpdated: 2026-11-05T10:09:48+00:00
+! Version: 2.1.68.98
+! TimeUpdated: 2026-11-05T14:09:22+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -1148,6 +1148,7 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+||ksou.tv/api/v1/ad/
 huavod.net##.hr-slot-box
 wenshushu.cn##.cont-right .mer-item
 31w3.cn##.van-popup
@@ -5126,7 +5127,11 @@ newduba.cn###jq_youxi
 ||alhgxftiz.com^
 ||qh7ptb6mc.com^
 ||3r6fs2855.com^
+||06f2egypr.com^
+||uibpd67j6.com^
+||3g0p5hjwa.com^
 ||inequation23.com^
+||494b6x7u8.com^
 ||mzzueflt.com^
 ||o9m5znv8ta.com^
 ||bshhyxoy62.com^
@@ -21259,8 +21264,6 @@ ykxs.cc##a[href^="javascript"]
 ##div[style^="line-height"][style*="http"][style$="fixed;"]
 ##iframe[src*=".xxmh"][src*="?u="]
 ##script + .dbfh
-wss://*.*.top/$3p
-wss://*.top/|
 yydstxt*.com/js/cdn.
 yydstxt*.com/js/html
 ||0sxs.com/js/all.
