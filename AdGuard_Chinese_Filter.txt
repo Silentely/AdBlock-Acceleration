@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: xsNasRQX6Q2fFWEVkCjxhw
-! Diff-Path: ../patches/224/224-s-1794456831-3600.patch
+! Checksum: hHpFlhnYIh9w9T/n+O/njg
+! Diff-Path: ../patches/224/224-s-1794485757-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.69.39
-! TimeUpdated: 2026-11-12T04:10:11+00:00
+! Version: 2.1.69.42
+! TimeUpdated: 2026-11-12T12:12:25+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -819,10 +819,10 @@ x99av.com##+js(set-constant, ADSOBJET, {})
 ! https://github.com/AdguardTeam/AdguardFilters/issues/160509
 embedrise.com##+js(no-window-open-if)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/158639
-yfsp.tv,aiyifan.tv,iyf.tv##+js(abort-on-stack-trace, Object.prototype.pgmp, invokeInterstitial)
-yfsp.tv,aiyifan.tv,iyf.tv##.bg-overlayer:style(pointer-events: unset !important;)
-yfsp.tv,aiyifan.tv,iyf.tv##+js(remove-class, publicplay, #main-player)
-yfsp.tv,aiyifan.tv,iyf.tv##+js(abort-on-property-read, Object.prototype.ShouldLoadAds)
+kubb.tv,yfsp.tv,aiyifan.tv,iyf.tv##+js(abort-on-stack-trace, Object.prototype.pgmp, invokeInterstitial)
+kubb.tv,yfsp.tv,aiyifan.tv,iyf.tv##.bg-overlayer:style(pointer-events: unset !important;)
+kubb.tv,yfsp.tv,aiyifan.tv,iyf.tv##+js(remove-class, publicplay, #main-player)
+kubb.tv,yfsp.tv,aiyifan.tv,iyf.tv##+js(abort-on-property-read, Object.prototype.ShouldLoadAds)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/154174
 9xav.cc##+js(remove-class, q-body--prevent-scroll, body)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/150757
@@ -1149,6 +1149,7 @@ ipv6.baidu.com,www.baidu.com,www1.baidu.com,xueshu.baidu.com###content_left > .r
 !
 ! NOTE: Specific rules
 !
+cars.tvbs.com.tw##div[class]:has(> div[class^="min-h-"] > div[id^="car_"][id*="_read_"])
 ||sudugu.cc/scripts/yuedu.js
 ||ksou.tv/api/v1/ad/
 huavod.net##.hr-slot-box
@@ -2037,8 +2038,8 @@ sohu.com##.news-wrapper > .news-box:has(> div[id^="taboola-below-article-widget"
 ||user.042.cn/adver/adver.js
 ||cloud.tencent.com/developer/api/common/getAds
 ||cloud.tencent.com/developer/api/common/getOneAds
-yfsp.tv,aiyifan.tv,iyf.tv##.video-player > .dabc > .ng-star-inserted[style="position: relative;"]
-yfsp.tv,aiyifan.tv,iyf.tv##.video-player + div.ps > div:has(> div.bb)
+kubb.tv,yfsp.tv,aiyifan.tv,iyf.tv##.video-player > .dabc > .ng-star-inserted[style="position: relative;"]
+kubb.tv,yfsp.tv,aiyifan.tv,iyf.tv##.video-player + div.ps > div:has(> div.bb)
 ||head4.net/ad_
 yiyouliao.com##.yyl-weiruan-ads-list-item:has(> div#small1)
 yiyouliao.com##.yyl-weiruan-video-list-item:has(> div#small2)
@@ -5110,6 +5111,8 @@ newduba.cn###jq_youxi
 ||eraf2uzhji.com^
 ||multiplicator98.com^
 ||waj301k9sb.com^
+||4ae8xsq18s.com^
+||bb5uxk0dfa.com^
 ||g4dgp989f.com^
 ||parallelepiped48.com^
 ||ke8me98qh.com^
