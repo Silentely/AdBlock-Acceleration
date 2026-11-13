@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: DeQyf/0l8wjFtKmdbAuhTg
-! Version: 202611122050
+! Checksum: haUxy3CpLxzljJhSLYkVcA
+! Version: 202611131350
 ! Title: Fanboy's Annoyance List
-! Last modified: 2026-11-12 20:50 UTC
+! Last modified: 2026-11-13 13:50 UTC
 ! Expires: 9 days (update frequency)
 ! Homepage: https://easylist.to/
 ! License: http://creativecommons.org/licenses/by/3.0/
@@ -56078,6 +56078,10 @@ sp.nicovideo.jp###jsAppModalWithLogin
 sp.nicovideo.jp##.is-fixed body:not(.player-horizontal):has(#jsAppModalWithLogin):style(position: static !important; width: unset !important;)
 sp.nicovideo.jp##.is-fixed:has(#jsAppModalWithLogin):style(position: static !important; width: unset !important;)
 sp.nicovideo.jp##body.hdNoFixed.watch:has(#jsAppModalWithLogin):style(padding-top: unset !important; overflow: auto !important; min-height: unset !important;)
+! 17.live
+17.live##div[data-testid="mobileBlock"]:has(> div > div > button[data-ga-event-label="download_app_msite"])
+17.live##div[data-testid="mobileBlock"]:has(> div > div > button[data-ga-event-label="download_app_msite"]) + div > div > nav:style(top: 0 !important;)
+17.live##div[data-testid="mobileBlock"]:has(> div > div > button[data-ga-event-label="download_app_msite"]) + div:style(min-height: 100% !important;)
 !---------------------------------Allowlists----------------------------------!
 ! fanboy_notifications_allowlist.txt
 @@||braze.com/api/$domain=dairyqueen.com|deezer.com
