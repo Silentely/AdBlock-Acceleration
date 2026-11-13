@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: b/SxCTozAB71CpFbI23uig
-! Diff-Path: ../patches/224/224-s-1794496404-3600.patch
+! Checksum: Ie3msLTUr25veSsAG+mwjA
+! Diff-Path: ../patches/224/224-s-1794535959-3600.patch
 ! Title: AdGuard Chinese filter
 ! Description: EasyList China + AdGuard Chinese filter. Filter list that specifically removes ads on websites in Chinese language.
-! Version: 2.1.69.43
-! TimeUpdated: 2026-11-12T15:09:22+00:00
+! Version: 2.1.69.45
+! TimeUpdated: 2026-11-13T02:10:17+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -5107,6 +5107,9 @@ newduba.cn###jq_youxi
 ||cnzz.trafficmanager.net^
 ||hash.trafficmanager.net^
 ||trafficmanager.net/o.js
+||intercede77.com^
+||lzcr41vbp.com^
+||pfh01c50p.com^
 ||3pq0vah1e0.com^
 ||eraf2uzhji.com^
 ||multiplicator98.com^
@@ -20014,10 +20017,10 @@ guailie.com#@#.google-ad
 ##body > meta[name="robots"] + script + #__nuxt + #teleports ~ div[class] > span[aria-hidden="true"] + div[class] + div[class]
 ##body > meta[name="robots"] + script + #__nuxt + #teleports ~ div[class] > span[aria-hidden="true"] + div[class]
 ##body > meta[name="robots"] + script + #__nuxt > div > .container > div[class^="menu-"] + div + div[class^="pg-v-sec-"][style*="important"]
-##body > #__nuxt:first-child > div > .container > .top-menu + div[class]
 ##body > #__nuxt:first-child > div > .container > div[class^="pg-"] > div[style*="important"]
-##body > #__nuxt:first-child > div > .footer > .floatWindow + div[data-tag]
 ##body > #__nuxt:first-child ~ div[class] > div > div > button[aria-label] + div[class]
+##body > meta[name="robots"] + script + #__nuxt > div > .container > .top-menu + div[class]
+##body > meta[name="robots"] + script + #__nuxt > div > .footer > .floatWindow + div[data-tag]
 ||cszpra.com^*.gif
 !#58.com
 58.com###rightRetui
