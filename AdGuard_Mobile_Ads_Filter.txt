@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: p7qT0OItJL02qE8z1N69yg
-! Diff-Path: ../patches/11/11-s-1794741019-3600.patch
+! Checksum: yD8gyJPLRXwaxQt9RxKzZw
+! Diff-Path: ../patches/11/11-s-1794810124-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.73.46
-! TimeUpdated: 2026-11-15T11:07:17+00:00
+! Version: 2.0.73.48
+! TimeUpdated: 2026-11-16T06:17:45+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2484,6 +2484,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+rtl.de##div[class^="combi-ad_"]
 iamgujarat.com,indiatimes.com,samayam.com,vijaykarnataka.com##div[class^="mrec"]
 iamgujarat.com,indiatimes.com,vijaykarnataka.com,maharashtratimes.com##.carousalad
 iamgujarat.com,indiatimes.com,samayam.com,maharashtratimes.com##.mid-taboola
@@ -4541,7 +4542,7 @@ grapee.jp##.comment > aside:has(> div.OUTBRAIN)
 ||frontend.vh.yandex.ru/player/*&adConfig=$domain=mentoday.ru
 quotidiano.net##+js(set-local-storage-item, pwa_show, true)
 akashi-journal.com###custom_html-46
-plus-msg.auone.jp,topics.smt.docomo.ne.jp,bayburtmedya.com,m.business-gazeta.ru##.banner
+minkara.carview.co.jp,plus-msg.auone.jp,topics.smt.docomo.ne.jp,bayburtmedya.com,m.business-gazeta.ru##.banner
 privatehomeclips.com##.video__wrapper > section[style="display: flex;"]
 m.tsumanne.net##object[data*="/ad.html"]
 inrlp.de##div[class^="w4_Mobile_Pos"]
