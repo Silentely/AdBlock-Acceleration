@@ -1,10 +1,10 @@
 ![Adblock Plus 2.0]
-! Checksum: fZD5JVRIGD8bSDRK5gyDMA
-! Diff-Path: ../patches/11/11-s-1795543994-3600.patch
+! Checksum: JWWtTjzJ145giy4dQPKlAw
+! Diff-Path: ../patches/11/11-s-1795594393-3600.patch
 ! Title: AdGuard Mobile Ads filter
 ! Description: Filter for all known mobile ad networks. Useful for mobile devices.
-! Version: 2.0.73.63
-! TimeUpdated: 2026-11-24T18:10:07+00:00
+! Version: 2.0.73.67
+! TimeUpdated: 2026-11-25T08:10:42+00:00
 ! Expires: 5 days (update frequency)
 ! Homepage: https://github.com/AdguardTeam/AdGuardFilters
 ! License: https://github.com/AdguardTeam/AdguardFilters/blob/master/LICENSE
@@ -2484,6 +2484,7 @@ sp.manga.nicovideo.jp##div[style^="--ads-width:"]
 !
 ! SECTION: Regular rules
 !
+startitup.sk##.siu-taboola-anchor
 dengekionline.com##main[class$="_maincolumn"] div[class*="_wrapper"]:has(> div[class$="_banner"])
 zeebiz.com##div[class^="ads_adsBlock_"]
 ncaa.com##.mobile-persistent-bottom
@@ -3436,7 +3437,7 @@ pornhits.com##.sites__item--hl
 modernliving.jp##div[class^="css-"]:has(> div.ad-disclaimer)
 moovitapp.com##.header-sticky-ad-test:style(top: 0 !important;)
 missavtv.com##iframe[src^="https://creative.rmhfrtnd.com/"]
-cielotv.it##main > div[type="skin"][class^="sc-"]
+cielotv.it##div[class^="AdvBanner_"]
 tu93.org##+js(abort-current-script, document.createElement, )
 ||tu93.org/mobile/w/*.min.js|$script
 ||tj.com.day/js/*.js|$script,3p
@@ -4091,7 +4092,7 @@ przegladsportowy.onet.pl###fixtures-slot:has(> .relative:only-child > .onet-ad:o
 news.m.pchome.com.tw##div[class^="showad_"]
 newsphere.jp##div[style="height: 210px;"]
 shogis.com##.adv300_250
-yourweather.co.uk,theweather.net,tempo.pt,tempo.com,tiempo.com,meteored.*##.pie-pagina:style(margin-bottom: 0 !important;)
+yourweather.co.uk,theweather.net,tempo.pt,tiempo.com,meteored.*##.pie-pagina:style(margin-bottom: 0 !important;)
 s.kakaku.com##.u-bt_ad
 s.kakaku.com##.p-box-foot_item
 dengekionline.com##.gAdBanner
@@ -4294,7 +4295,6 @@ filmvandaag.nl##body #preload-ad-billboard.is-preload-ad
 s.minkabu.jp##.relative.justify-center.overflow-hidden
 figsoku.net###comment-form > a[target="_blank"] > img
 fontech.startitup.sk##div[id^="MOB_fon_art_"]
-fontech.startitup.sk##div[class^="code-block code-block-"][style]
 sp.macour.jp##.ad_macour
 jomo-news.co.jp##.top-genre-articles-item:has(> div[id^="div-gpt-"])
 toyokeizai.net###latest > div.articles-lists__item:has(> div[id^="div-gpt-ad-"])
@@ -8824,6 +8824,8 @@ livejournal.com##div[id^="billboard_mobile_"]
 ! END: Livejournal.com
 !
 !
+!+ NOT_OPTIMIZED
+deltiasgaming.com,soapcentral.com,sportskeeda.com##.vidazoo-player-container
 !+ NOT_OPTIMIZED
 iamgujarat.com,vijaykarnataka.com,maharashtratimes.com,indiatimes.com,samayam.com##.fbnad
 !+ NOT_OPTIMIZED
